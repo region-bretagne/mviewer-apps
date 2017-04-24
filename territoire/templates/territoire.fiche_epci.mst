@@ -10,7 +10,9 @@
 				Qu'est ce que les fiches de l'Observatoire ?
 			</div>
 			<div class="text">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+				Un territoire se caractérise par un certain nombre de paramètres : population, âge, formation, emploi, mobilité, économie, habitat, environnement, culture, services, etc.
+				Les fiches de l’Observatoire présentent, par thématique, les dynamiques territoriales des EPCI et des Pays.  </br></br>
+				Cette collection a vocation à s’enrichir au fur et à mesure. N’hésitez donc pas à nous transmettre vos remarques et suggestions (observatoire@bretagne.bzh)
 			</div>
 		</div>	
 		<div id="telechargement">
@@ -24,12 +26,19 @@
 					</div>
 				</a>
 			</div>
+			<div id="button_link">
+				<a href="https://kartenn.region-bretagne.fr/doc/territoire/epci/economie/{{code_geo}}.pdf" target="_blank">
+					<div class="button" style="background-color:#f39463;">
+						<img src="templates/icon_pdf.svg" style="width:13%;margin-right:4%;">Economie (2017)
+					</div>
+				</a>
+			</div>
 			<div style="color:#555; margin-top:20px; text-align:justify;">
 				Pour obtenir les fiches de l'Observatoire d'un autre EPCI, veuillez sélectionner l'entité désirée sur la carte.
 			</div>
 		</div>
 		<div id="source">
-				<i><span style="font-family:'roboto_bold';">Réalisation:</span> Direction de l'aménagement et de l'égalité - Service connaissance, observation, plannification et prospective | Édition 2016</br><span style="font-family:'roboto_bold';">Contact:</span> observatoire@bretagne.bzh </i>
+				<i><span style="font-family:'roboto_bold';">Réalisation:</span> Direction de l'aménagement et de l'égalité - Service connaissance, observation, plannification et prospective</br><span style="font-family:'roboto_bold';">Contact:</span> observatoire@bretagne.bzh </i>
 		</div>
 
 	</li>
@@ -77,6 +86,7 @@
 			font-family:"roboto_regular";
 			font-size:11px; 
 			color:#555; 
-			margin-top:60%;
+			margin-top:40px;
+			margin-bottom:90px;
 		}
 </style>

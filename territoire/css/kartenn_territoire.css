@@ -129,6 +129,7 @@ p.navbar-text.mv-title{
 
 .form-group label {
 	font-family: 'roboto_bold', Arial, Sans-serif;
+	font-weight: normal!important;
 }
 
 #layers-container .mv-layer-options p {
@@ -549,6 +550,7 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 #help .tab-pane .visuel{
     text-align: center;
 }
+
 
 /*******************************
 -------------CSS Fiche info GML

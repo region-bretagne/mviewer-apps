@@ -39,7 +39,7 @@
     </widgets> 
 
     <themes mini="false">
-        <theme name="Population"  collapsed="false" id="habitant" icon="male">
+        <theme name="Population"  collapsed="false" id="habitant" icon="group">
         	<group name="Structure de la population" id="grp1" >
         		<layer id="rp_struct_pop_geom" name="Part de la population selon la CSP (%)"  visible="false" tiled="false"
 		                searchable="false" queryable="true"
@@ -48,11 +48,11 @@
 		                infoformat="application/vnd.ogc.gml" featurecount="5"
 		                timefilter="true" timeinterval="year" timecontrol="slider" timemin="1999" timemax="2013" timevalues="1999,2008,2013"
 		                style="rphab_txcs1@commune,rphab_txcs2@commune,rphab_txcs3@commune,rphab_txcs4@commune,rphab_txcs5@commune,rphab_txcs6@commune,rphab_txcs7@commune,rphab_txcs8@commune"
-		                stylesalias="Agriculteurs exploitants, Artisans - Commerçants - Chefs d'entreprises, Cadres - Professions intellectuelles, Professions intermédiaires, Employés, Ouvriers, Retraités, Autres sans activité professionnelle"
+		                stylesalias="Agriculteur.rice.s exploitants, Artisan.e.s - Commerçant.e.s - Chef.fe.s d'entreprise, Cadres - Professions intellectuelles supérieures, Professions intermédiaires, Employé.e.s, Ouvrier.ère.s, Retraité.e.s, Autres - Sans activité professionnelle"
 		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="INSEE - Région Bretagne" 
-		                metadata=""
-		                metadata-csw="">
+		                attribution="INSEE (RP) - OpenStreetMap" 
+		                metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=26324529-e0b7-450c-9506-2dcdca608f5f"
+		                metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=26324529-e0b7-450c-9506-2dcdca608f5f">
 		                <template url="apps/region/territoire/templates/territoire.pop.csp.mst"></template>
 		        </layer>
 		        <layer id="rp_struct_pop_geom" name="Part de la population selon la catégorie d'âge (%)"  visible="false" tiled="false"
@@ -64,9 +64,9 @@
 		                style="rphab_tx0014@commune, rphab_tx1529@commune, rphab_tx3044@commune, rphab_tx4559@commune, rphab_tx6074@commune, rphab_tx75p@commune"
 		                stylesalias="0 - 14 ans, 15 -29 ans, 30 - 44 ans, 45 - 59 ans, 60 -74 ans, 75 ans et plus "
 		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="INSEE - Région Bretagne" 
-		                metadata=""
-		                metadata-csw="">
+		                attribution="INSEE (RP) - OpenStreetMap" 
+		                metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=26324529-e0b7-450c-9506-2dcdca608f5f"
+		                metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=26324529-e0b7-450c-9506-2dcdca608f5f">
 		                <template url="apps/region/territoire/templates/territoire.pop.cat_age.mst"></template>
 		        </layer>
 		        <layer id="solde_pop_union_geom" name="Solde de population de 1999 à 2013"  visible="false" tiled="false"
@@ -77,9 +77,9 @@
 		                style="soldepop_naturel9913@commune,soldepop_migrat9913@commune"
 		                stylesalias="Solde naturel, Solde migratoire"
 		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="INSEE - Région Bretagne" 
-		                metadata=""
-		                metadata-csw="">
+		                attribution="INSEE (RP) - OpenStreetMap" 
+		                metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=8ec4dea3-833d-4016-a1dd-06a21830d612"
+		                metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=8ec4dea3-833d-4016-a1dd-06a21830d612">
 		                <template url="apps/region/territoire/templates/territoire.pop.solde.mst"></template>
 		        </layer>
 		        <layer id="rp_struct_pop_evolution_geom" name="Évolution de la population de 2008 à 2013 (%)"  visible="false" tiled="false"
@@ -90,9 +90,9 @@
 		                style="rphab_evol08_13@commune"
 		                stylesalias="Évolution de 2008 à 2013"
 		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="INSEE - Région Bretagne" 
-		                metadata=""
-		                metadata-csw="">
+		                attribution="INSEE (RP) - OpenStreetMap" 
+		                metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=6722241e-978d-4981-95e0-1b89e5dd06f3"
+		                metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=6722241e-978d-4981-95e0-1b89e5dd06f3">
 		                <template url="apps/region/territoire/templates/territoire.pop.evolution.mst"></template>
 		        </layer>
 		        <layer id="rp_struct_pop_geom" name="Densité de population (hab/km²)"  visible="false" tiled="false"
@@ -104,12 +104,12 @@
 		                style="rphab_densite@commune"
 		                stylesalias=""
 		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="INSEE - Région Bretagne" 
-		                metadata=""
-		                metadata-csw="">
+		                attribution="INSEE (RP) - OpenStreetMap" 
+		                metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=26324529-e0b7-450c-9506-2dcdca608f5f"
+		                metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=26324529-e0b7-450c-9506-2dcdca608f5f">
 		                <template url="apps/region/territoire/templates/territoire.pop.densite.mst"></template>
 		        </layer>
-		        <layer id="rp_struct_pop_geom" name="Nombre d'habitants"  visible="false" tiled="false"
+		        <layer id="rp_struct_pop_geom" name="Nombre d'habitant.e.s"  visible="false" tiled="false"
 		                searchable="false" queryable="true"
 		                attributefilter="true" attributefield="level" attributevalues="Commune,EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
 		                infopanel="bottom-panel"
@@ -118,14 +118,14 @@
 		                style="rphab_total@commune" opacity="0.9"
 		                stylesalias=""
 		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="INSEE - Région Bretagne" 
-		                metadata=""
-		                metadata-csw="">
+		                attribution="INSEE (RP) - OpenStreetMap" 
+		                metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=26324529-e0b7-450c-9506-2dcdca608f5f"
+		                metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=26324529-e0b7-450c-9506-2dcdca608f5f">
 		                <template url="apps/region/territoire/templates/territoire.pop.nbr_habitant.mst"></template>
 		        </layer>             
 	        </group>
 	        <group name="Revenu" id="grp2" >
-		        <layer id="revenu_geom" name="Revenu médian (€)"  visible="false" tiled="false"
+		        <layer id="revenu_geom" name="Revenu annuel médian (€)"  visible="false" tiled="false"
 		                searchable="false" queryable="true"
 		                attributefilter="true" attributefield="level" attributevalues="EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
 		                infopanel="bottom-panel"
@@ -133,26 +133,10 @@
 		                style="revenu_median@epci"
 		                stylesalias=""
 		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="DGfip - Région Bretagne" 
-		                metadata=""
-		                metadata-csw="">
+		                attribution="DGFIP - INSEE - OpenStreetMap" 
+						metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=9c29be8b-8ba0-4921-82aa-5ef969504426"
+	                	metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9c29be8b-8ba0-4921-82aa-5ef969504426">
 		                <template url="apps/region/territoire/templates/territoire.pop.revenu.mst"></template>
-		        </layer>
-	        </group>
-	        <group name="Formation" id="grp3" >
-		        <layer id="rp_formation_union_geom" name="Niveau de formation (%)"  visible="false" tiled="false"
-		                searchable="false" queryable="true"
-		                attributefilter="true" attributefield="level" attributevalues="Commune,EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
-		                infopanel="bottom-panel"
-		                infoformat="application/vnd.ogc.gml" featurecount="5"
-		                timefilter="true" timeinterval="year" timecontrol="slider" timemin="2008" timemax="2013" timevalues="2008,2013"
-		                style="rpform_diplmin@commune,rpform_capbep@commune, rpform_bac@commune, rpform_sup@commune"
-		                stylesalias="Aucun diplôme ou au plus BEPC, Certificats d'aptitudes professionnelles - Brevet d'études professionnelles, Baccalauréat (général - technologique - professionnel), Diplôme de l'enseignement supérieur"
-		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="Part des 15 ans ou plus non scolarisés | INSEE - Région Bretagne" 
-		                metadata=""
-		                metadata-csw="">
-		                <template url="apps/region/territoire/templates/territoire.pop.formation.mst"></template>
 		        </layer>
 	        </group>
 	        <group name="Ménages" id="grp4" >
@@ -163,11 +147,11 @@
 		                infoformat="application/vnd.ogc.gml" featurecount="5"
 		                timefilter="true" timeinterval="year" timecontrol="slider" timemin="2008" timemax="2013" timevalues="2008,2013"
 		                style="rpmen_menpseul@commune,rpmen_mensfam@commune,rpmen_mencoupsenf@commune, rpmen_mencoupaenf@commune,rpmen_menfammono@commune"
-		                stylesalias="Ménage d'une personne, Ménage autre sans famille, Couple sans enfant, Couple avec enfant, Famille monoparentale"
+		                stylesalias="Ménage d'une personne, Autre ménage, Couple sans enfant, Couple avec enfant, Famille monoparentale"
 		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="INSEE - Région Bretagne" 
-		                metadata=""
-		                metadata-csw="">
+		                attribution="INSEE (RP) - OpenStreetMap" 
+		                metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=a181e808-68b8-4fc4-b781-78323cf5cb34"
+		                metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a181e808-68b8-4fc4-b781-78323cf5cb34">
 		                <template url="apps/region/territoire/templates/territoire.pop.menage.mst"></template>
 		        </layer>
 		        <layer id="rp_menage_union_geom" name="Nombre de ménages"  visible="false" tiled="false"
@@ -179,9 +163,9 @@
 		                style="rpmen_total@commune" opacity="0.9"
 		                stylesalias=""
 		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="INSEE - Région Bretagne" 
-		                metadata=""
-		                metadata-csw="">
+		                attribution="INSEE (RP) - OpenStreetMap" 
+		                metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=a181e808-68b8-4fc4-b781-78323cf5cb34"
+		                metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a181e808-68b8-4fc4-b781-78323cf5cb34">
 		                <template url="apps/region/territoire/templates/territoire.pop.menage.mst"></template>
 		        </layer> 
 	        </group>                                        
@@ -196,9 +180,9 @@
 	                style="rplog_total@commune" opacity="0.9"
 	                stylesalias=""
 	                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="INSEE - Région Bretagne" 
-	                metadata=""
-	                metadata-csw="">
+	                attribution="INSEE (RP) - OpenStreetMap" 
+	                metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=7ee2db4e-3ac6-4e56-97da-2a16aaafe77c"
+	                metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=7ee2db4e-3ac6-4e56-97da-2a16aaafe77c">
 	                <template url="apps/region/territoire/templates/territoire.log.all.mst"></template>
 	        </layer>
 	        <layer id="rp_logement_union_geom" name="Part des logements selon le statut d'occupation (%)"  visible="false" tiled="false"
@@ -208,11 +192,11 @@
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                timefilter="true" timeinterval="year" timecontrol="slider" timemin="2008" timemax="2013" timevalues="2008,2013"
 	                style="rplog_tx_rp@commune,rplog_tx_rsecocc@commune,rplog_tx_logvac@commune"
-	                stylesalias="Résidences principales, Résidences secondaires occupées, Logements vaccants"
+	                stylesalias="Résidences principales, Résidences secondaires occupées, Logements vacants"
 	                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="INSEE - Région Bretagne" 
-	                metadata=""
-	                metadata-csw="">
+	                attribution="INSEE (RP) - OpenStreetMap" 
+	                metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=7ee2db4e-3ac6-4e56-97da-2a16aaafe77c"
+	                metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=7ee2db4e-3ac6-4e56-97da-2a16aaafe77c">
 	                <template url="apps/region/territoire/templates/territoire.log.all.mst"></template>
 	        </layer>
 	        <layer id="rp_logement_union_geom" name="Part des logements selon le type (%)"  visible="false" tiled="false"
@@ -224,16 +208,30 @@
 	                style="rplog_tx_maison@commune, rplog_tx_appart@commune"
 	                stylesalias="Maison, Appartement"
 	                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="INSEE - Région Bretagne" 
-	                metadata=""
-	                metadata-csw="">
+	                attribution="INSEE (RP) - OpenStreetMap" 
+	                metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=7ee2db4e-3ac6-4e56-97da-2a16aaafe77c"
+	                metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=7ee2db4e-3ac6-4e56-97da-2a16aaafe77c">
 	                <template url="apps/region/territoire/templates/territoire.log.all.mst"></template>
-	        </layer>                                        
+	        </layer> 
+	        <layer id="rp_logement_union_geom" name="Part des logements HLM dans le parc de résidence principale (%)"  visible="false" tiled="false"
+	                searchable="false" queryable="true"
+	                attributefilter="true" attributefield="level" attributevalues="Commune,EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
+	                infopanel="bottom-panel"
+	                infoformat="application/vnd.ogc.gml" featurecount="5"
+	                timefilter="true" timeinterval="year" timecontrol="slider" timemin="2008" timemax="2013" timevalues="2008,2013"
+	                style="rplog_tx_hlm@commune"
+	                stylesalias=""
+	                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+	                attribution="INSEE (RP) - OpenStreetMap" 
+	                metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=7ee2db4e-3ac6-4e56-97da-2a16aaafe77c"
+	                metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=7ee2db4e-3ac6-4e56-97da-2a16aaafe77c">
+	                <template url="apps/region/territoire/templates/territoire.log.hlm.mst"></template>
+	        </layer>                                       
         </theme>
         <theme name="Économie et Emploi"  collapsed="false" id="economie" icon="university">
-        	<group name="Emploi" id="grp1" >
+        	<group name="Emploi total" id="grp1" >
         		<layer id="rp_emploi_union_geom" name="Part des emplois selon le secteur d'activité (%)"  visible="false" tiled="false"
-		                searchable="false" queryable="true"
+		             	searchable="false" queryable="true"
 		                attributefilter="true" attributefield="level" attributevalues="Commune,EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
 		                infopanel="bottom-panel"
 		                infoformat="application/vnd.ogc.gml" featurecount="5"
@@ -241,12 +239,12 @@
 		                style="rpemp_txempltagri@commune,rpemp_txempltindus@commune, rpemp_txempltconst@commune, rpemp_txempltcts@commune, rpemp_txempltapesas@commune"
 		                stylesalias="Agriculture, Industrie, Construction, Commerce - Transports - Services divers, Administration publique - Enseignement - Santé humaine - Action sociale"
 		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="INSEE - Région Bretagne" 
-		                metadata=""
-		                metadata-csw="">
+		                attribution="INSEE (RP) - OpenStreetMap" 
+	                	metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=aa79265a-3179-409b-be99-a95ad6d62f21"
+	                	metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=aa79265a-3179-409b-be99-a95ad6d62f21">
 		                <template url="apps/region/territoire/templates/territoire.eco.nbr_emploi.mst"></template>
 		        </layer>
-		        <layer id="rp_emploi_union_evolution_geom" name="Évolution du nombre d'emplois de 2008 à 2013 (%)"  visible="false" tiled="false"
+		        <layer id="rp_emploi_union_evolution_geom" name="Évolution du nombre d'emplois total de 2008 à 2013 (%)"  visible="false" tiled="false"
 		                searchable="false" queryable="true"
 		                attributefilter="true" attributefield="level" attributevalues="Commune,EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
 		                infopanel="bottom-panel"
@@ -254,12 +252,12 @@
 		                style="rpemp_evol08_13@commune" opacity="1"
 		                stylesalias=""
 		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="INSEE - Région Bretagne" 
-		                metadata=""
-		                metadata-csw="">
+		                attribution="INSEE (RP) - OpenStreetMap" 
+	                	metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=b7674829-6ce0-4bda-a13a-4b2d58083444"
+	                	metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b7674829-6ce0-4bda-a13a-4b2d58083444">
 		                <template url="apps/region/territoire/templates/territoire.eco.ev_emploi.mst"></template>
 		        </layer>
-		        <layer id="rp_emploi_union_geom" name="Nombre d'emplois"  visible="false" tiled="false"
+		        <layer id="rp_emploi_union_geom" name="Nombre d'emplois total"  visible="false" tiled="false"
 		                searchable="false" queryable="true"
 		                attributefilter="true" attributefield="level" attributevalues="Commune,EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
 		                infopanel="bottom-panel"
@@ -268,9 +266,9 @@
 		                style="rpemp_total@commune" opacity="0.9"
 		                stylesalias=""
 		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="INSEE - Région Bretagne" 
-		                metadata=""
-		                metadata-csw="">
+		                attribution="INSEE (RP) - OpenStreetMap" 
+	                	metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=aa79265a-3179-409b-be99-a95ad6d62f21"
+	                	metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=aa79265a-3179-409b-be99-a95ad6d62f21">
 		                <template url="apps/region/territoire/templates/territoire.eco.nbr_emploi.mst"></template>
 		        </layer>		        
 	        </group>
@@ -283,9 +281,9 @@
 		                style="clapent_txagri@commune,clapent_txind@commune,clapent_txconst@commune,clapent_txcts@commune,clapent_txapesas@commune"
 		                stylesalias="Agriculture - Sylviculture et Pêche,Industrie et Artisanat de production, Construction, Commerce - Transports et Services divers, Administration publique - Enseignement - Santé humaine - Action sociale"
 		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="INSEE - Région Bretagne" 
-		                metadata=""
-		                metadata-csw="">
+		                attribution="INSEE (CLAP) - OpenStreetMap" 
+	                	metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=628687c0-c72f-49d9-8cb2-13f445c2744b"
+	                	metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=628687c0-c72f-49d9-8cb2-13f445c2744b">
 		                <template url="apps/region/territoire/templates/territoire.eco.etablissement.mst"></template>
 		        </layer>
         		<layer id="clap_etablissement_union_geom" name="Nombre d'établissements"  visible="false" tiled="false"
@@ -296,49 +294,316 @@
 		                style="clapent_total@commune" opacity="0.9"
 		                stylesalias=""
 		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="INSEE - Région Bretagne" 
-		                metadata=""
-		                metadata-csw="">		                
+		                attribution="INSEE (CLAP) - OpenStreetMap" 
+	                	metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=628687c0-c72f-49d9-8cb2-13f445c2744b"
+	                	metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=628687c0-c72f-49d9-8cb2-13f445c2744b">		                
 		                <template url="apps/region/territoire/templates/territoire.eco.etablissement.mst"></template>
 		        </layer>
 	        </group>                                  
         </theme>
-        <theme name="Marché du travail"  collapsed="false" id="marche_travail" icon="search">                                  
+        <theme name="Marché du travail"  collapsed="false" id="marche_travail" icon="search">
+        	<group name="Chercheur.euse.s d'emploi de catégories ABC" id="grp1">        		
+		        <layer id="demandeur_emploi_geom" name="Typologie des chercheur.euse.s de catégories ABC (%)"  visible="false" tiled="false"
+		                searchable="false" queryable="true"
+		                attributefilter="true" attributefield="level" attributevalues="EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
+		                infopanel="bottom-panel"
+		                infoformat="application/vnd.ogc.gml" featurecount="5"
+		                style="dememp_catabc_fem@epci,dememp_catabc_jeu@epci,dememp_catabc_sen@epci,dememp_catabc_deld@epci" opacity="1"
+		                stylesalias="Part des femmes, Part des jeunes de moins de 25 ans, Part des seniors de plus de 50 ans, Part des chercheur.euse.s de longue durée (+1an)"
+		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+		                attribution="DIRECCTE Bretagne - OpenStreetMap" 
+	                	metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=81e59418-7f70-403c-b062-4fe3144b9f9d"
+	                	metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=81e59418-7f70-403c-b062-4fe3144b9f9d">		 
+		                <template url="apps/region/territoire/templates/territoire.dem_emp.cat_abc.mst"></template>		            
+		        </layer>
+		        <layer id="demandeur_emploi_geom" name="Nombre de chercheur.euse.s de catégories ABC"  visible="false" tiled="false"
+		                searchable="false" queryable="true"
+		                attributefilter="true" attributefield="level" attributevalues="EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
+		                infopanel="bottom-panel"
+		                infoformat="application/vnd.ogc.gml" featurecount="5"
+		                style="dememp_catabc_total@epci" opacity="0.9"
+		                stylesalias=""
+		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+		                attribution="DIRECCTE Bretagne - OpenStreetMap" 
+	                	metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=81e59418-7f70-403c-b062-4fe3144b9f9d"
+	                	metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=81e59418-7f70-403c-b062-4fe3144b9f9d">	
+		                <template url="apps/region/territoire/templates/territoire.dem_emp.cat_abc.mst"></template>		            
+		        </layer>   
+		    </group> 
+		    <group name="Chercheur.euse.s d'emploi de catégorie A" id="grp2">
+		    	<layer id="demandeur_emploi_geom" name="Typologie des chercheur.euse.s de catégorie A (%)"  visible="false" tiled="false"
+		                searchable="false" queryable="true"
+		                attributefilter="true" attributefield="level" attributevalues="EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
+		                infopanel="bottom-panel"
+		                infoformat="application/vnd.ogc.gml" featurecount="5"
+		                style="dememp_cata_fem@epci,dememp_cata_jeu@epci,dememp_cata_sen@epci,dememp_cata_deld@epci" opacity="1"
+		                stylesalias="Part des femmes, Part des jeunes de moins de 25 ans, Part des seniors de plus de 50 ans, Part des chercheur.euse.s de longue durée (+1an)"
+		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+		                attribution="DIRECCTE Bretagne - OpenStreetMap" 
+	                	metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=81e59418-7f70-403c-b062-4fe3144b9f9d"
+	                	metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=81e59418-7f70-403c-b062-4fe3144b9f9d">	
+		                <template url="apps/region/territoire/templates/territoire.dem_emp.cat_a.mst"></template>		            
+		        </layer>
+        		<layer id="demandeur_emploi_geom" name="Nombre de chercheur.euse.s de catégorie A"  visible="false" tiled="false"
+		                searchable="false" queryable="true"
+		                attributefilter="true" attributefield="level" attributevalues="EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
+		                infopanel="bottom-panel"
+		                infoformat="application/vnd.ogc.gml" featurecount="5"
+		                style="dememp_cata_total@epci" opacity="0.9"
+		                stylesalias=""
+		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+		                attribution="DIRECCTE Bretagne - OpenStreetMap" 
+	                	metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=81e59418-7f70-403c-b062-4fe3144b9f9d"
+	                	metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=81e59418-7f70-403c-b062-4fe3144b9f9d">	
+		                <template url="apps/region/territoire/templates/territoire.dem_emp.cat_a.mst"></template>		            
+		        </layer>   
+		    </group>                                  
         </theme>
-
+        <theme name="Éducation"  collapsed="false" id="education" icon="graduation-cap"> 
+		    <layer id="rp_formation_union_geom" name="Niveau de formation (%)"  visible="false" tiled="false"
+		                searchable="false" queryable="true"
+		                attributefilter="true" attributefield="level" attributevalues="Commune,EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
+		                infopanel="bottom-panel"
+		                infoformat="application/vnd.ogc.gml" featurecount="5"
+		                timefilter="true" timeinterval="year" timecontrol="slider" timemin="2008" timemax="2013" timevalues="2008,2013"
+		                style="rpform_diplmin@commune,rpform_capbep@commune, rpform_bac@commune, rpform_sup@commune"
+		                stylesalias="Aucun diplôme ou au plus BEPC, Certificats d'aptitudes professionnelles - Brevet d'études professionnelles, Baccalauréat (général - technologique - professionnel), Diplôme de l'enseignement supérieur"
+		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+		                attribution="INSEE (RP) - OpenStreetMap" 
+		                metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=5542d62f-14df-4e59-968b-c527dbdb45d6"
+		                metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5542d62f-14df-4e59-968b-c527dbdb45d6">
+		                <template url="apps/region/territoire/templates/territoire.pop.formation.mst"></template>
+		    </layer> 
+        	<layer id="poi_etablissement_scolaire" name="Établissements scolaires"  visible="false" tiled="false" 
+				searchable="false" queryable="true" fields="appellatio" aliases="appellatio"
+				attributefilter="true" attributefield="classe" 
+				attributevalues="École maternelle,École élémentaire,Collège,Lycée,EREA"  attributelabel="Filtre" attributestylesync="false" attributefilterenabled="false"
+                infoformat="application/vnd.ogc.gml" featurecount="20"
+				style="etablissement_scolaire_nature"
+				stylesalias=""
+				url="http://kartenn.region-bretagne.fr/geoserver-proxy/interne/wms"
+				attribution="Data.gouv" 
+				metadata="https://www.data.gouv.fr/fr/datasets/adresse-et-geolocalisation-des-etablissements-denseignement-du-premier-et-second-degres/"
+				metadata-csw="" >
+		        <template url="apps/region/transport/templates/transport.poi.etab_scolaire.mst"></template>
+		    </layer>  
+		    <layer id="lycee" name="Lycées"  visible="false" tiled="false"
+                searchable="false" queryable="true" fields="axe" aliases="axe" 
+                attributefilter="true" attributefield="secteur_li" 
+				attributevalues="Public, Privé sous contrat avec l'éducation nationale"  attributelabel="Filtre" attributestylesync="false" attributefilterenabled="false"  
+                infoformat="application/vnd.ogc.gml" featurecount="20"
+                sld="http://kartenn.region-bretagne.fr/mviewer-dev/sld/lycee_secteur.sld" 
+                url="http://ows.region-bretagne.fr:80/geoserver/rb/wms" 
+                attribution="Région Bretagne" 
+                metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=99e78163-ce9a-4eee-9ea0-36afc2a53d25"
+                metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=99e78163-ce9a-4eee-9ea0-36afc2a53d25" >	   
+                <template url="templates/global.lycee.mst"></template> 
+		    </layer>  
+		    <layer id="cfa_site" name="Centre de formation des apprentis"  visible="false" tiled="false"
+                    searchable="false" queryable="true" fields="axe" aliases="axe"   
+                    infoformat="application/vnd.ogc.gml" featurecount="20"
+                    sld="http://kartenn.region-bretagne.fr/mviewer-dev/sld/cfa_site.sld" 
+                    url="http://ows.region-bretagne.fr:80/geoserver/rb/wms"
+                    legendurl="http://kartenn.region-bretagne.fr/doc/icons_region/formation.svg" 
+                    attribution="Région Bretagne" 
+                    metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=f713de6d-1269-40b2-8bd4-3704c106fde6"
+                    metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=f713de6d-1269-40b2-8bd4-3704c106fde6" >
+		            <template url="templates/global.centre_formation_apprenti.mst"></template>
+		    </layer>                             
+        </theme>
+        <theme name="Services"  collapsed="false" id="services" icon="street-view"> 
+        	<!--<layer id="poi_equipement_sport" name="Sports et Loisirs"  visible="false" tiled="false"
+				searchable="false" queryable="true" fields="appellatio" aliases="appellatio"
+                infoformat="application/vnd.ogc.gml" featurecount="20"
+                attributefilter="true" attributefield="classe" 
+				attributevalues=""  attributelabel="Filtre" attributestylesync="false" attributefilterenabled="false"
+				style="transports_equip_sport_defaut"
+				url="http://kartenn.region-bretagne.fr/geoserver-proxy/interne/wms"
+				attribution="Data.gouv" 
+				metadata="https://www.data.gouv.fr/fr/datasets/recensement-des-equipements-sportifs-espaces-et-sites-de-pratiques/"
+				metadata-csw="">
+		        <template url="apps/region/transport/templates/transport.poi.equi_sport.mst"></template>
+		    </layer>-->                               
+        </theme>
+        <theme name="Environnement"  collapsed="false" id="environnement" icon="leaf"> 
+        	<layer id="reserve_naturelle_regionale" name="Réserves naturelles régionales"  visible="false" tiled="false"
+                    searchable="false" queryable="true" fields="axe" aliases="axe"   
+                    infoformat="application/vnd.ogc.gml" featurecount="20"
+                    sld="http://kartenn.region-bretagne.fr/mviewer-dev/sld/reserve_naturelle.sld" 
+                    url="http://ows.region-bretagne.fr:80/geoserver/rb/wms"
+                    legendurl="http://kartenn.region-bretagne.fr/doc/icons_region/reserve_naturelle.svg" 
+                    attribution="Région Bretagne" 
+                    metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=77f8fc52-ae57-41d1-8f08-7b121b013f51"
+                    metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=77f8fc52-ae57-41d1-8f08-7b121b013f51" >
+		            <template url="templates/global.reserve_naturelle_reg.mst"></template>
+		    </layer>                                 
+        </theme>
+        <theme name="Transports"  collapsed="false" id="transport" icon="bus">            
+            <group name="Transport ferroviaire" id="grp1" >
+                <layer id="troncon_ferroviaire" name="Lignes ferroviaires"  visible="false" tiled="false"
+                    searchable="false" queryable="true" fields="axe" aliases="axe" secure="true"
+                    infoformat="application/vnd.ogc.gml" featurecount="20"
+                    style="ligne_ferroviaire_defaut" 
+					stylesalias="Par défaut"
+                    url="http://kartenn.region-bretagne.fr/geoserver-proxy/rb/wms"
+                    attribution="Région Bretagne" 
+					metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=0da27e88-4da6-423e-ba4c-dbcad9128cd2"
+					metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0da27e88-4da6-423e-ba4c-dbcad9128cd2">
+		            <template url="apps/region/transport/templates/transport.ligne_ferroviaire.mst"></template>
+		        </layer>
+                <layer id="arret_ferroviaire" name="Arrêts ferroviaires régionaux"  visible="false" tiled="false" 
+                    searchable="true" queryable="true" fields="" aliases="" secure="true"                   
+                    infoformat="application/vnd.ogc.gml" featurecount="20"
+                    style="arret_ferroviaire_defaut, arret_ferroviaire_nature"
+                    stylesalias="Par défaut,Nature des arrêts ferroviaires"
+                    legendurl="http://kartenn.region-bretagne.fr/doc/icons_region/gare_ter.svg"
+                    url="http://kartenn.region-bretagne.fr/geoserver-proxy/rb/wms"
+                    attribution="Région Bretagne" 
+                    metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=4a9d13f7-17be-4a98-9f8f-907cf223072f"
+					metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=4a9d13f7-17be-4a98-9f8f-907cf223072f" >
+                    <template url="templates/global.arret_ferroviaire.mst"></template>
+                </layer>
+            </group>
+            <group name="Transport routier régional" id="grp2" >                
+                <layer id="ligne_routiere_regionale" name="Lignes routières régionales"  visible="false" tiled="false" 
+                    searchable="false" queryable="true" secure="true"
+                    infoformat="application/vnd.ogc.gml" featurecount="20"
+                    style="ligne_routiere_reg_defaut" 
+                    url="http://kartenn.region-bretagne.fr/geoserver-proxy/rb/wms"
+                    attribution="Région Bretagne" 
+                    metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=d42415dd-f736-4b44-82c6-0259c0a667a3"
+					metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=d42415dd-f736-4b44-82c6-0259c0a667a3">
+		            <template url="apps/region/transport/templates/transport.ligne_routiere_reg.mst"></template>
+		        </layer>
+		        <layer id="arret_routier_regional" name="Arrêts routiers régionaux"  visible="false" tiled="false"
+                    searchable="false" queryable="true" secure="true"
+                    infoformat="application/vnd.ogc.gml" featurecount="20"
+                    style="arret_routier_reg_defaut"
+                    url="http://kartenn.region-bretagne.fr/geoserver-proxy/rb/wms"
+                    legendurl="http://kartenn.region-bretagne.fr/doc/transports/icons/arret_rout_reg.svg"
+                    attribution="Région Bretagne" 
+                    metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=72bdca86-f605-46c8-8b50-a4af3c629020"
+					metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=72bdca86-f605-46c8-8b50-a4af3c629020" >
+		            <template url="apps/region/transport/templates/transport.arret_routier_reg.mst"></template>
+		        </layer>
+			</group>
+			 <group name="Réseau routier principal" id="grp3" >
+                <layer id="route_principale_bdcarto" name="Réseau routier"  visible="false" tiled="false"
+                    searchable="false" queryable="true" secure="true" 
+                    attributefilter="true" attributefield="class_adm" attributevalues="Autoroute,Nationale,Départementale"  attributelabel="Filtre" attributestylesync="false" attributefilterenabled="false"
+                    infoformat="application/vnd.ogc.gml" featurecount="20"
+                    style="route_principale_defaut"
+                    stylesalias=""
+                    url="http://kartenn.region-bretagne.fr/geoserver-proxy/rb/wms"
+                    legendurl=""
+                    attribution="IGN - BD CARTO" 
+                    metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=72bdca86-f605-46c8-8b50-a4af3c629020"
+					metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=72bdca86-f605-46c8-8b50-a4af3c629020" >     
+		        </layer>
+			</group>		
+			<group name="Autres" id="grp4" >		
+                <layer id="aeroports" name="Aéroports et aérodromes"  visible="false" tiled="false"
+                    searchable="false" queryable="true" fields="axe" aliases="axe"
+                    infoformat="application/vnd.ogc.gml" featurecount="20"
+                    sld="http://kartenn.region-bretagne.fr/mviewer-dev/sld/aeroport.sld" 
+                    url="https://geobretagne.fr/geoserver/dreal_b/ows"
+                    legendurl="http://kartenn.region-bretagne.fr/doc/icons_region/aeroport.svg" 
+                    attribution="DREAL Bretagne" 
+                    metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=d09e52c5-080d-4478-ad94-f55de67cafaa"
+                    metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=d09e52c5-080d-4478-ad94-f55de67cafaa" >
+		            <template url="templates/global.aeroport.mst"></template>
+		        </layer>
+                <layer id="gare_maritime" name="Gares maritimes"  visible="false" tiled="false"
+                    searchable="false" queryable="true" fields="axe" aliases="axe"   
+                    infoformat="application/vnd.ogc.gml" featurecount="20"
+                    sld="http://kartenn.region-bretagne.fr/mviewer-dev/sld/gare_maritime.sld" 
+                    url="https://geobretagne.fr/geoserver/dreal_b/ows"
+                    legendurl="http://kartenn.region-bretagne.fr/doc/icons_region/gare_maritime.svg" 
+                    attribution="DREAL Bretagne" 
+                    metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=ffcb4e72-a01b-44f0-8da3-95a5b13c6e42"
+                    metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ffcb4e72-a01b-44f0-8da3-95a5b13c6e42" >
+		            <template url="templates/global.gare_maritime.mst"></template>
+		        </layer>
+		        <layer id="port" name="Ports"  visible="false" tiled="false"
+                    searchable="false" queryable="true" fields="axe" aliases="axe"   
+                    infoformat="application/vnd.ogc.gml" featurecount="20"
+                    sld="http://kartenn.region-bretagne.fr/mviewer-dev/sld/port.sld" 
+                    url="http://ows.region-bretagne.fr:80/geoserver/rb/wms"
+                    legendurl="http://kartenn.region-bretagne.fr/doc/icons_region/port.svg" 
+                    attribution="Région Bretagne" 
+                    metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=c55c4fba-6a37-48ea-8754-a1bf770a684b"
+                    metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c55c4fba-6a37-48ea-8754-a1bf770a684b" >
+		            <template url="templates/global.port.mst"></template>
+		        </layer>	
+            </group>
+        </theme>
         <theme name="Découpages territoriaux"  collapsed="true" id="territoire" icon="globe"> 
+        	<group name="Limites administratives" id="grp1" >
 			<layer id="commune" name="Commune" visible="false" queryable="false" 
                 fields="nom_geo" aliases="Nom" 
                 type="hook" style="" opacity="1" legendurl="apps/region/territoire/img/commune.png" 
                 url="apps/region/territoire/hooks/commune.js" 
                 tooltip="true"
                 attribution="GéoBretagne" 
-                metadata="http://geobretagne.fr/geonetwork/apps/georchestra/?uuid=b08e6cb1-236c-49b7-88f9-42b500d274d5" 
-                metadata-csw="http://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b08e6cb1-236c-49b7-88f9-42b500d274d5"/>	    
+                metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=b08e6cb1-236c-49b7-88f9-42b500d274d5" 
+                metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b08e6cb1-236c-49b7-88f9-42b500d274d5"/>	    
             <layer id="epci" name="Intercommunalité" visible="true" queryable="false" 
                 fields="nom_geo" aliases="Nom" 
                 type="hook" style="" opacity="1" legendurl="apps/region/territoire/img/epci.png" 
                 url="apps/region/territoire/hooks/epci.js" 
                 tooltip="true" tooltipenabled="true"
                 attribution="GéoBretagne" 
-                metadata="http://geobretagne.fr/geonetwork/apps/georchestra/?uuid=2298d744-49cb-4fcb-9487-26f916fecdff" 
-                metadata-csw="http://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=2298d744-49cb-4fcb-9487-26f916fecdff"/>           
+                metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=2298d744-49cb-4fcb-9487-26f916fecdff" 
+                metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=2298d744-49cb-4fcb-9487-26f916fecdff"/>           
             <layer id="pays" name="Pays" visible="false" queryable="false" 
                 fields="nom_geo" aliases="Nom" 
                 type="hook" style="" opacity="1" legendurl="apps/region/territoire/img/pays.png" 
                 url="apps/region/territoire/hooks/pays.js" 
                 tooltip="true"
                 attribution="GéoBretagne" 
-                metadata="http://geobretagne.fr/geonetwork/apps/georchestra/?uuid=9722d181-75f9-40ab-a136-a9f9ed6f29a5" 
-                metadata-csw="http://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9722d181-75f9-40ab-a136-a9f9ed6f29a5"/>
+                metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=9722d181-75f9-40ab-a136-a9f9ed6f29a5" 
+                metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9722d181-75f9-40ab-a136-a9f9ed6f29a5"/>
             <layer id="departement" name="Département" visible="false" queryable="false" 
                 fields="nom_geo" aliases="Nom" 
                 type="hook" style="" opacity="1" legendurl="apps/region/territoire/img/departement.png" 
                 url="apps/region/territoire/hooks/departement.js" 
                 tooltip="true"
                 attribution="GéoBretagne" 
-                metadata="http://geobretagne.fr/geonetwork/apps/georchestra/?uuid=e16d50d4-746d-44e3-a5e7-5fc000f97665" 
-                metadata-csw="http://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=e16d50d4-746d-44e3-a5e7-5fc000f97665"/>    
+                metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=e16d50d4-746d-44e3-a5e7-5fc000f97665" 
+                metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=e16d50d4-746d-44e3-a5e7-5fc000f97665"/> 
+            </group>
+			<group name="Autres" id="grp2" >		        
+		        <layer id="n_unites_urbaines" name="Unité urbaine"  visible="false" tiled="false"
+                    searchable="false" queryable="true" fields="axe" aliases="axe"
+                    infoformat="application/vnd.ogc.gml" featurecount="20"     
+                    url="https://geobretagne.fr/geoserver/dreal_b/ows"
+                    sld="http://kartenn.region-bretagne.fr/mviewer-dev/sld/unite_urbaine.sld"  
+                    attribution="DREAL - GéoBretagne" 
+                    metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=6f79ace8-5aaa-47eb-a2a9-7be9778fc3e7"
+                    metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=6f79ace8-5aaa-47eb-a2a9-7be9778fc3e7" >
+		            <template url="templates/global.unite_urbaine.mst"></template>
+		        </layer>
+		        <layer id="aire_urbaine_bretagne" name="Aire urbaine"  visible="false" tiled="false"
+                    searchable="false" queryable="true" fields="axe" aliases="axe"
+                    infoformat="application/vnd.ogc.gml" featurecount="20"     
+                    url="https://geobretagne.fr/geoserver/insee/ows" 
+                    sld="http://kartenn.region-bretagne.fr/mviewer-dev/sld/aire_urbaine.sld"  
+                    attribution="INSEE - GéoBretagne" 
+                    metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=12ee1299-3f7d-46e7-bd1e-6769b4ca3efd"
+                    metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=12ee1299-3f7d-46e7-bd1e-6769b4ca3efd" >
+		            <template url="templates/global.aire_urbaine.mst"></template>
+		        </layer>
+		        <layer id="zone_emploi_bretagne" name="Zone d'emploi"  visible="false" tiled="false"
+                    searchable="false" queryable="true" fields="axe" aliases="axe"
+                    infoformat="application/vnd.ogc.gml" featurecount="20"     
+                    url="https://geobretagne.fr/geoserver/insee/ows" 
+                    sld="http://kartenn.region-bretagne.fr/mviewer-dev/sld/zone_emploi.sld" 
+                    attribution="INSEE - GéoBretagne" 
+                    metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=de7a586d-fffc-41c0-9c07-1f19c50ea068"
+                    metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=de7a586d-fffc-41c0-9c07-1f19c50ea068" >
+		            <template url="templates/global.zone_emploi.mst"></template>
+		        </layer>
+			</group>       
 		</theme>
 		<theme name="Les fiches de l'Observatoire"  collapsed="true" id="fiche" icon="file-text"> 
 			<layer id="fiche_epci" name="Fiche EPCI" visible="false" queryable="true" 
@@ -346,8 +611,9 @@
                 type="hook" style="" opacity="1" legendurl="apps/region/territoire/img/fiche_epci.png" 
                 url="apps/region/territoire/hooks/fiche_epci.js" 
                 tooltip="true" tooltipenabled="true"
-                attribution="Région Bretagne" metadata="http://geobretagne.fr/geonetwork/apps/georchestra/?uuid=2298d744-49cb-4fcb-9487-26f916fecdff" 
-                metadata-csw="http://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=2298d744-49cb-4fcb-9487-26f916fecdff">
+                attribution="Région Bretagne" 
+                metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=2298d744-49cb-4fcb-9487-26f916fecdff" 
+                metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=2298d744-49cb-4fcb-9487-26f916fecdff">
 				<template url="apps/region/territoire/templates/territoire.fiche_epci.mst"></template>
 			</layer>				
 			<layer id="fiche_pays" name="Fiche pays" visible="false" queryable="true" 
@@ -356,46 +622,11 @@
                 url="apps/region/territoire/hooks/fiche_pays.js" 
                 tooltip="true"
                 attribution="Région Bretagne" 
-                metadata="http://geobretagne.fr/geonetwork/apps/georchestra/?uuid=9722d181-75f9-40ab-a136-a9f9ed6f29a5" 
-                metadata-csw="http://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9722d181-75f9-40ab-a136-a9f9ed6f29a5">
+                metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=9722d181-75f9-40ab-a136-a9f9ed6f29a5" 
+                metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9722d181-75f9-40ab-a136-a9f9ed6f29a5">
                 <template url="apps/region/territoire/templates/mise_a_jour.mst"></template>	
 				<!--<template url="apps/region/territoire/templates/territoire.fiche_pays.mst"></template>-->
 			</layer>	
 		</theme>
-		<!--<theme name="Étiquettes"  collapsed="true" id="etiquette" icon="tag"> 
-			<layer id="commune_bdcarto" name="Libellés des communes"  visible="false" tiled="false"
-				queryable="false" fields="COMMUNE,INSEE_COM,SUPERFICIE" aliases="Nom,Code INSEE,Superficie"
-                infoformat="application/vnd.ogc.gml" featurecount="5"                
-				sld="http://kartenn.region-bretagne.fr/mviewer-dev/sld/territoire_commune_libelle.sld"
-				url="http://geobretagne.fr/geoserver/dreal_b/wms" 
-				attribution="IGN - BDCARTO" 
-				metadata="http://geobretagne.fr/geonetwork/apps/georchestra/?uuid=b08e6cb1-236c-49b7-88f9-42b500d274d5"
-				metadata-csw="http://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b08e6cb1-236c-49b7-88f9-42b500d274d5" />
-			<layer id="EPCI_053" name="Libellés des intercommunalités"  visible="false" tiled="false"
-				queryable="false" fields="NOM_EPCI,SIREN_EPCI" aliases="Nom,SIREN"
-                infoformat="application/vnd.ogc.gml" featurecount="5"
-				sld="http://kartenn.region-bretagne.fr/mviewer-dev/sld/territoire_epci_libelle.sld" 
-				url="http://geobretagne.fr/geoserver/dreal_b/wms" 
-				attribution="GéoBretagne" 
-				metadata="http://geobretagne.fr/geonetwork/apps/georchestra/?uuid=2298d744-49cb-4fcb-9487-26f916fecdff" 
-				metadata-csw="http://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=2298d744-49cb-4fcb-9487-26f916fecdff" />
-			<layer id="n_pays" name="Libellés des pays"  visible="false" tiled="true"
-				queryable="false" fields="NOM_PAYS" aliases="Nom"
-                infoformat="application/vnd.ogc.gml" featurecount="5"             
-				sld="http://kartenn.region-bretagne.fr/mviewer-dev/sld/territoire_pays_libelle.sld"  
-				url="http://geobretagne.fr/geoserver/dreal_b/wms" 
-				attribution="GéoBretagne" 
-				metadata="http://geobretagne.fr/geonetwork/apps/georchestra/?uuid=9722d181-75f9-40ab-a136-a9f9ed6f29a5" 
-				metadata-csw="http://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9722d181-75f9-40ab-a136-a9f9ed6f29a5" />
-			<layer id="FDepartement" name="Libellés des départements"  visible="false" tiled="false"
-				queryable="false" fields="LIBELLE" aliases="Nom"
-                infoformat="application/vnd.ogc.gml" featurecount="5"
-				sld="http://kartenn.region-bretagne.fr/mviewer-dev/sld/territoire_departement_libelle.sld" 
-				url="http://geobretagne.fr/geoserver/dreal_b/wms" 
-				attribution="IGN - BDCARTO" 
-				metadata="http://geobretagne.fr/geonetwork/apps/georchestra/?uuid=e16d50d4-746d-44e3-a5e7-5fc000f97665" 
-				metadata-csw="http://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=e16d50d4-746d-44e3-a5e7-5fc000f97665" />
-					
-		</theme>-->
     </themes>
 </config>
