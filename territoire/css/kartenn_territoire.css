@@ -105,6 +105,11 @@ p.navbar-text.mv-title{
 	color: #f8f8f8;
 }
 
+/* Séparation de la thématique Les fiches de l'Observatoire */
+#theme-layers-fiche{
+	border-top:#777 1.5px dotted!important;
+}
+
 /*******************************
 ------------- BOTTOM PANEL
 ********************************/
@@ -114,8 +119,11 @@ p.navbar-text.mv-title{
 	font-size:13px;
 }
 
-.fa-chevron-circle-down{
-	color:#2d4059;
+.fa-chevron-down{
+	color:#fff;
+}
+#bottom-panel-btn .fa-chevron-down { 
+    background: #2d4059;
 }
 
 /*******************************
