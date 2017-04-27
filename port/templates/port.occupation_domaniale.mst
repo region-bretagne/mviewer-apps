@@ -1,0 +1,104 @@
+{{#features}}
+	<li class="item" style="width:238px;">
+		<h3 class="title-feature">{{lot_societe}}</h3>  
+        
+        <p class="text-feature">		
+			<span style="font-family:'roboto_bold'"> Concession :</span> {{port_aero_concession}}<br/>
+            {{#lot_secteur}}                
+                <span style="font-family:'roboto_bold'"> Secteur :</span> {{lot_secteur}}<br/>
+            {{/lot_secteur}}
+            {{#lot_lot}}                
+                <span style="font-family:'roboto_bold'"> Lot :</span> {{lot_lot}}<br/>
+            {{/lot_lot}}
+            <span style="font-family:'roboto_bold'"> Type de contrat :</span> {{contrat_type}}<br/>
+            <span style="font-family:'roboto_bold'"> Octroi Renouvellement :</span> {{contrat_renou}}<br/>
+            <span style="font-family:'roboto_bold'"> Activité bénéficiaire :</span> {{lot_activite}}<br/>
+            <span style="font-family:'roboto_bold'"> Nature d'installation :</span> {{beneficiaire_install_nature}}<br/>
+            <span style="font-family:'roboto_bold'"> Type d'occupation :</span> {{lot_type}}<br/>
+            <span style="font-family:'roboto_bold'"> Surface :</span> {{lot_surface}}<br/>
+            <span style="font-family:'roboto_bold'"> Locataire :</span> {{lot_locataire}}<br/>
+            <span style="font-family:'roboto_bold'"> Validité du contrat :</span> {{contrat_validite}}<br/>
+            <span style="font-family:'roboto_bold'"> Echéance du contrat :</span> {{contrat_echeance}}<br/>
+            <span style="font-family:'roboto_bold'"> Identifiant :</span> {{idu_num}}<br/>
+        </p>
+      
+        {{#lien}}
+            <img src="{{lien}}" class="img-responsive" data-title="{{lot_societe}}" />
+        {{/lien}}       
+
+        <div class="pictos">
+			{{#doclien}}
+                <a class="floating-box pdf" href="{{doclien}}" target="_blank" title="Télécharger le contrat"></a>
+        	{{/doclien}}            
+			<div class="floating-box" style="background: url(http://kartenn.region-bretagne.fr/img/picto/port/{{contrat_type}}.png) left top no-repeat;background-size: 30px;" />
+			<div class="floating-box concession {{port_aero_concession}}"></div>
+        </div>
+        
+		
+		
+	    
+       
+	</li>
+{{/features}}
+
+<style>
+	.title-feature {
+		color: #2d4059;
+		font-family:"roboto_bold";
+		font-size:23px;
+		margin-bottom:1%;
+		line-height:1;
+	}
+	.text-feature{
+		font-family:"roboto_regular";
+		color:#555;
+		font-size:13px;
+		margin-top:10%;
+	}
+.pictos {
+    padding-left: 50px;
+}
+.floating-box {
+    float: left;
+	left: 50px;    
+    margin: 5px; 
+	width: 30px;
+    height: 30px;       
+}
+.pdf {
+	background: url(http://kartenn.region-bretagne.fr/img/picto/pdf.png) left top no-repeat;
+	background-size: 28px;
+}
+.concession.PECHE {
+    background: url(http://kartenn.region-bretagne.fr/img/picto/port/PEC.png) left top no-repeat;    
+    background-size: 30px;
+}
+.concession.AEROPORT {
+    background: url(http://kartenn.region-bretagne.fr/img/picto/port/AER.png) left top no-repeat;    
+    background-size: 30px;
+}
+.concession.COMMERCE {
+    background: url(http://kartenn.region-bretagne.fr/img/picto/port/COM.png) left top no-repeat;    
+    background-size: 30px;
+}
+.concession.HORS.CONCESSION {
+    background: url(http://kartenn.region-bretagne.fr/img/picto/port/HCO.png) left top no-repeat;    
+    background-size: 30px;
+}
+.concession.HORS.PORT {
+    background: url(http://kartenn.region-bretagne.fr/img/picto/port/HPO.png) left top no-repeat;    
+    background-size: 30px;
+}
+.concession.PARTICULIERE {
+    background: url(http://kartenn.region-bretagne.fr/img/picto/port/PAR.png) left top no-repeat;    
+    background-size: 30px;
+}
+.concession.REPARATION.NAVALE {
+    background: url(http://kartenn.region-bretagne.fr/img/picto/port/REP.png) left top no-repeat;    
+    background-size: 30px;
+}
+.concession.PLAISANCE {
+    background: url(http://kartenn.region-bretagne.fr/img/picto/port/PLA.png) left top no-repeat;    
+    background-size: 30px;
+}
+</style>
