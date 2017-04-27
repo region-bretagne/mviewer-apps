@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="Kartenn Transports" logo="apps/region/transport/img/rb_blanc.svg" help="apps/region/transport/transports_help.html" measuretools="true" exportpng="true" style="apps/region/transport/css/kartenn_transports.css" stats="true" statsurl="../ws/kartenn/log.php"/>
+    <application title="Kartenn Transports" logo="apps/region/global/img/logo/rb_blanc.svg" help="apps/region/transport/transports_help.html" measuretools="true" exportpng="true" style="apps/region/transport/css/kartenn_transports.css" stats="true" statsurl="../ws/kartenn/log.php"/>
     <!--<mapoptions projection="EPSG:2154" extent="145518,6726671,372058,6868691"  />-->
     <mapoptions maxzoom="19" projection="EPSG:3857" center="-220750.13768758904,6144925.57790189" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
   
@@ -29,10 +29,9 @@
             attribution="&lt;a href='http://www.geoportail.fr/' target='_blank'>&lt;img src='http://api.ign.fr/geoportail/api/js/latest/theme/geoportal/img/logo_gp.gif'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
     </baselayers> 
     <authentification url="who" loginurl="?login" logouturl="../j_spring_security_logout" enabled="true"/>
-    <proxy url=""/>
-    <!--<olscompletion url="http://gpp3-wxs.ign.fr/5kiwvtkb2v23y0x8chidxbij/ols/apis/completion"/>-->
-    <olscompletion url="../olscompletion" type="geoportail"/>
-    <!--<olscompletion url="http://api-adresse.data.gouv.fr/search/" type="ban"/>-->
+    <proxy url=""/>  
+    
+    <olscompletion url="http://api-adresse.data.gouv.fr/search/" type="ban"/>
     <elasticsearch url="http://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="fussy_like_this" />
     <searchparameters bbox="true" localities="true" features="true"/>
 	<widgets>

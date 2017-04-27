@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="Kartenn Territoire" logo="" help="apps/region/territoire/territoires_help.html" measuretools="true" exportpng="true" style="apps/region/territoire/css/kartenn_territoire.css" stats="true" statsurl="../ws/kartenn/log.php"/>
+    <application title="Kartenn Territoire" logo="apps/region/global/img/logo/rb_blanc.svg" help="apps/region/territoire/territoires_help.html" measuretools="true" exportpng="true" style="apps/region/territoire/css/kartenn_territoire.css" stats="true" statsurl="../ws/kartenn/log.php"/>
     <!--<mapoptions projection="EPSG:2154" extent="145518,6726671,372058,6868691"  />-->
     <mapoptions maxzoom="19" projection="EPSG:3857" center="-220750.13768758904,6144925.57790189" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
   
@@ -390,7 +390,7 @@
 		    <layer id="lycee" name="Lycées"  visible="false" tiled="false"
                 searchable="false" queryable="true" fields="axe" aliases="axe" 
                 attributefilter="true" attributefield="secteur_li" 
-				attributevalues="Public, Privé sous contrat avec l'éducation nationale"  attributelabel="Filtre" attributestylesync="false" attributefilterenabled="false"  
+				attributevalues="Public,Privé sous contrat avec l'éducation nationale"  attributelabel="Filtre" attributestylesync="false" attributefilterenabled="false"  
                 infoformat="application/vnd.ogc.gml" featurecount="20"
                 sld="http://kartenn.region-bretagne.fr/mviewer-dev/sld/lycee_secteur.sld" 
                 url="http://ows.region-bretagne.fr:80/geoserver/rb/wms" 
