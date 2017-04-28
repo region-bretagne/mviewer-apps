@@ -79,31 +79,31 @@
                     searchable="false" queryable="true" fields="axe" aliases="axe"
                     infoformat="application/vnd.ogc.gml" featurecount="20"     
                     url="https://geobretagne.fr/geoserver/dreal_b/ows"
-                    sld="http://kartenn.region-bretagne.fr/mviewer-dev/sld/unite_urbaine.sld"  
+                    sld="http://kartenn.region-bretagne.fr/styles/unite_urbaine.sld"  
                     attribution="Sources: DREAL - GéoBretagne" 
                     metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=6f79ace8-5aaa-47eb-a2a9-7be9778fc3e7"
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=6f79ace8-5aaa-47eb-a2a9-7be9778fc3e7" >
-		            <template url="templates/global.unite_urbaine.mst"></template>
+		            <template url="apps/region/global/templates/global.unite_urbaine.mst"></template>
 		        </layer>
 		        <layer id="aire_urbaine_bretagne" name="Aire urbaine"  visible="false" tiled="false"
                     searchable="false" queryable="true" fields="axe" aliases="axe"
                     infoformat="application/vnd.ogc.gml" featurecount="20"     
                     url="https://geobretagne.fr/geoserver/insee/ows" 
-                    sld="http://kartenn.region-bretagne.fr/mviewer-dev/sld/aire_urbaine.sld"  
+                    sld="http://kartenn.region-bretagne.fr/styles/aire_urbaine.sld"  
                     attribution="Sources: INSEE - GéoBretagne" 
                     metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=12ee1299-3f7d-46e7-bd1e-6769b4ca3efd"
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=12ee1299-3f7d-46e7-bd1e-6769b4ca3efd" >
-		            <template url="templates/global.aire_urbaine.mst"></template>
+		            <template url="apps/region/global/templates/global.aire_urbaine.mst"></template>
 		        </layer>
 		        <layer id="zone_emploi_bretagne" name="Zone d'emploi"  visible="false" tiled="false"
                     searchable="false" queryable="true" fields="axe" aliases="axe"
                     infoformat="application/vnd.ogc.gml" featurecount="20"     
                     url="https://geobretagne.fr/geoserver/insee/ows" 
-                    sld="http://kartenn.region-bretagne.fr/mviewer-dev/sld/zone_emploi.sld" 
+                    sld="http://kartenn.region-bretagne.fr/styles/zone_emploi.sld" 
                     attribution="Sources: INSEE - GéoBretagne" 
                     metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=de7a586d-fffc-41c0-9c07-1f19c50ea068"
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=de7a586d-fffc-41c0-9c07-1f19c50ea068" >
-		            <template url="templates/global.zone_emploi.mst"></template>
+		            <template url="apps/region/global/templates/global.zone_emploi.mst"></template>
 		        </layer>
 			</group>       
 		</theme>
@@ -460,23 +460,23 @@
                 attributefilter="true" attributefield="secteur_li" 
 				attributevalues="Public,Privé sous contrat avec l'éducation nationale"  attributelabel="Filtre" attributestylesync="false" attributefilterenabled="false"  
                 infoformat="application/vnd.ogc.gml" featurecount="20"
-                sld="http://kartenn.region-bretagne.fr/mviewer-dev/sld/lycee_secteur.sld" 
+                sld="http://kartenn.region-bretagne.fr/styles/lycee_secteur.sld" 
                 url="http://ows.region-bretagne.fr:80/geoserver/rb/wms" 
                 attribution="Source: Région Bretagne" 
                 metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=99e78163-ce9a-4eee-9ea0-36afc2a53d25"
                 metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=99e78163-ce9a-4eee-9ea0-36afc2a53d25" >	   
-                <template url="templates/global.lycee.mst"></template> 
+                <template url="apps/region/global/templates/global.lycee.mst"></template> 
 		    </layer>  
 		    <layer id="cfa_site" name="Centre de formation des apprentis"  visible="false" tiled="false"
                     searchable="false" queryable="true" fields="axe" aliases="axe"   
                     infoformat="application/vnd.ogc.gml" featurecount="20"
-                    sld="http://kartenn.region-bretagne.fr/mviewer-dev/sld/cfa_site.sld" 
+                    sld="http://kartenn.region-bretagne.fr/styles/cfa_site.sld" 
                     url="http://ows.region-bretagne.fr:80/geoserver/rb/wms"
                     legendurl="http://kartenn.region-bretagne.fr/doc/icons_region/formation.svg" 
                     attribution="Source: Région Bretagne" 
                     metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=f713de6d-1269-40b2-8bd4-3704c106fde6"
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=f713de6d-1269-40b2-8bd4-3704c106fde6" >
-		            <template url="templates/global.centre_formation_apprenti.mst"></template>
+		            <template url="apps/region/global/templates/global.centre_formation_apprenti.mst"></template>
 		    </layer>                             
         </theme>
         <!--<theme name="Services"  collapsed="false" id="services" icon="street-view"> 
@@ -497,13 +497,13 @@
         	<layer id="reserve_naturelle_regionale" name="Réserves naturelles régionales"  visible="false" tiled="false"
                     searchable="false" queryable="true" fields="axe" aliases="axe"   
                     infoformat="application/vnd.ogc.gml" featurecount="20"
-                    sld="http://kartenn.region-bretagne.fr/mviewer-dev/sld/reserve_naturelle.sld" 
+                    sld="http://kartenn.region-bretagne.fr/styles/reserve_naturelle.sld" 
                     url="http://ows.region-bretagne.fr:80/geoserver/rb/wms"
                     legendurl="http://kartenn.region-bretagne.fr/doc/icons_region/reserve_naturelle.svg" 
                     attribution="Source: Région Bretagne" 
                     metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=77f8fc52-ae57-41d1-8f08-7b121b013f51"
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=77f8fc52-ae57-41d1-8f08-7b121b013f51" >
-		            <template url="templates/global.reserve_naturelle_reg.mst"></template>
+		            <template url="apps/region/global/templates/global.reserve_naturelle_reg.mst"></template>
 		    </layer> 
 		    <layer id="parc_naturel_regional" name="Parcs naturels régionaux"  visible="false" tiled="false"
                     searchable="false" queryable="true" fields="axe" aliases="axe" secure="true"
@@ -514,7 +514,7 @@
                     attribution="Source: Région Bretagne" 
 					metadata=""
 					metadata-csw="">
-		            <template url="templates/global.parc_naturel_regional.mst"></template>
+		            <template url="apps/region/global/templates/global.parc_naturel_regional.mst"></template>
 		        </layer>                                
         </theme>
         <theme name="Transports"  collapsed="false" id="transport" icon="bus">            
@@ -540,7 +540,7 @@
                     attribution="Source: Région Bretagne" 
                     metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=4a9d13f7-17be-4a98-9f8f-907cf223072f"
 					metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=4a9d13f7-17be-4a98-9f8f-907cf223072f" >
-                    <template url="templates/global.arret_ferroviaire.mst"></template>
+                    <template url="apps/region/global/templates/global.arret_ferroviaire.mst"></template>
                 </layer>
             </group>
             <group name="Transport routier régional" id="grp2" >                
@@ -584,37 +584,37 @@
                 <layer id="aeroports" name="Aéroports et aérodromes"  visible="false" tiled="false"
                     searchable="false" queryable="true" fields="axe" aliases="axe"
                     infoformat="application/vnd.ogc.gml" featurecount="20"
-                    sld="http://kartenn.region-bretagne.fr/mviewer-dev/sld/aeroport.sld" 
+                    sld="http://kartenn.region-bretagne.fr/styles/aeroport.sld" 
                     url="https://geobretagne.fr/geoserver/dreal_b/ows"
                     legendurl="http://kartenn.region-bretagne.fr/doc/icons_region/aeroport.svg" 
                     attribution="Source: DREAL Bretagne" 
                     metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=d09e52c5-080d-4478-ad94-f55de67cafaa"
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=d09e52c5-080d-4478-ad94-f55de67cafaa" >
-		            <template url="templates/global.aeroport.mst"></template>
+		            <template url="apps/region/global/templates/global.aeroport.mst"></template>
 		        </layer>
 		    </group>
 		    <group name="Transport maritime" id="grp5" >	    
                 <layer id="gare_maritime" name="Gares maritimes"  visible="false" tiled="false"
                     searchable="false" queryable="true" fields="axe" aliases="axe"   
                     infoformat="application/vnd.ogc.gml" featurecount="20"
-                    sld="http://kartenn.region-bretagne.fr/mviewer-dev/sld/gare_maritime.sld" 
+                    sld="http://kartenn.region-bretagne.fr/styles/gare_maritime.sld" 
                     url="https://geobretagne.fr/geoserver/dreal_b/ows"
                     legendurl="http://kartenn.region-bretagne.fr/doc/icons_region/gare_maritime.svg" 
                     attribution="Source: DREAL Bretagne" 
                     metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=ffcb4e72-a01b-44f0-8da3-95a5b13c6e42"
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ffcb4e72-a01b-44f0-8da3-95a5b13c6e42" >
-		            <template url="templates/global.gare_maritime.mst"></template>
+		            <template url="apps/region/global/templates/global.gare_maritime.mst"></template>
 		        </layer>
 		        <layer id="port" name="Ports"  visible="false" tiled="false"
                     searchable="false" queryable="true" fields="axe" aliases="axe"   
                     infoformat="application/vnd.ogc.gml" featurecount="20"
-                    sld="http://kartenn.region-bretagne.fr/mviewer-dev/sld/port.sld" 
+                    sld="http://kartenn.region-bretagne.fr/styles/port.sld" 
                     url="http://ows.region-bretagne.fr:80/geoserver/rb/wms"
                     legendurl="http://kartenn.region-bretagne.fr/doc/icons_region/port.svg" 
                     attribution="Source: Région Bretagne" 
                     metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=c55c4fba-6a37-48ea-8754-a1bf770a684b"
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c55c4fba-6a37-48ea-8754-a1bf770a684b" >
-		            <template url="templates/global.port.mst"></template>
+		            <template url="apps/region/global/templates/global.port.mst"></template>
 		        </layer>	
             </group>
         </theme>
