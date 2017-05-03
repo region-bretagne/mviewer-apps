@@ -1,6 +1,6 @@
 {
-mviewer.hooks.fiche_epci = {};
-mviewer.hooks.fiche_epci.layer = new ol.layer.Vector({
+mviewer.customLayers.fiche_epci = {};
+mviewer.customLayers.fiche_epci.layer = new ol.layer.Vector({
         source: new ol.source.Vector({
             url: "apps/region/territoire/data/epci_simple.geojson",
             format: new ol.format.GeoJSON()
@@ -15,5 +15,5 @@ style: new ol.style.Style({
           })
 })        
   });
-mviewer.hooks.fiche_epci.handle = false;
+mviewer.customLayers.fiche_epci.handle = false;
 } 
