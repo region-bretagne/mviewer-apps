@@ -23,12 +23,12 @@
 			<div id="button_link">
 				<a href="https://kartenn.region-bretagne.fr/doc/territoire/pays/01-Population.pdf" target="_blank">
 					<div class="button" style="background-color:#268f91;">
-						<img src="templates/icon_pdf.svg" style="width:13%;margin-right:4%;">Population (2016)
+						<img src="apps/region/global/img/icon_pdf.svg" style="width:13%;margin-right:4%;">Population (2016)
 					</div>
 				</a>
 				<a href="https://kartenn.region-bretagne.fr/doc/territoire/pays/01-Economie.pdf" target="_blank">	
 				<div class="button" style="background-color:#f39463;">
-					<img src="templates/icon_pdf.svg" style="width:13%; margin-right:4%;">Économie (2016)
+					<img src="apps/region/global/img/icon_pdf.svg" style="width:13%; margin-right:4%;">Économie (2016)
 				</div>
 				</a>
 			</div>
