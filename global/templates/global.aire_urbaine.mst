@@ -1,6 +1,6 @@
 {{#features}}
 	<li class="item" style="width:238px;">
-		<h3 class="title-feature">{{AIU_NOM}}</h3>
+		<h3 class="title-feature">{{aiu_nom}}</h3>
 
 		<div class="block_def">
 			<h4 class="title_def" style="color:#f39463;"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Aire urbaine</h4>

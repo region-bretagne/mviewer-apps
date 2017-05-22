@@ -74,33 +74,47 @@
                 metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=e16d50d4-746d-44e3-a5e7-5fc000f97665" 
                 metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=e16d50d4-746d-44e3-a5e7-5fc000f97665"/> 
             </group>
-			<group name="Autres" id="grp2" >		        
+			<group name="Autres" id="grp2" >
+				<layer id="bassin_vie" name="Bassin de vie"  visible="false" tiled="false"
+		            searchable="false" queryable="true"		                
+	                infoformat="application/vnd.ogc.gml" featurecount="20"
+	                style="bassin_vie_default"
+	                stylesalias=""
+	                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+	                attribution="Sources: INSEE - GéoBretagne | 2012" 
+	                metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=605b76c9-94cc-4de7-ad62-ca0ec2e4bc97"
+	                metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=605b76c9-94cc-4de7-ad62-ca0ec2e4bc97">
+	                <template url="apps/region/global/templates/global.bassin_vie.mst"></template>
+		        </layer>		        
 		        <layer id="n_unites_urbaines" name="Unité urbaine"  visible="false" tiled="false"
-                    searchable="false" queryable="true" fields="axe" aliases="axe"
+                    searchable="false" queryable="true"
                     infoformat="application/vnd.ogc.gml" featurecount="20"     
                     url="https://geobretagne.fr/geoserver/dreal_b/ows"
                     sld="http://kartenn.region-bretagne.fr/styles/unite_urbaine.sld"  
-                    attribution="Sources: DREAL - GéoBretagne" 
+                    attribution="Sources: DREAL - GéoBretagne | 2015" 
                     metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=6f79ace8-5aaa-47eb-a2a9-7be9778fc3e7"
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=6f79ace8-5aaa-47eb-a2a9-7be9778fc3e7" >
 		            <template url="apps/region/global/templates/global.unite_urbaine.mst"></template>
 		        </layer>
-		        <layer id="aire_urbaine_bretagne" name="Aire urbaine"  visible="false" tiled="false"
-                    searchable="false" queryable="true" fields="axe" aliases="axe"
-                    infoformat="application/vnd.ogc.gml" featurecount="20"     
-                    url="https://geobretagne.fr/geoserver/insee/ows" 
-                    sld="http://kartenn.region-bretagne.fr/styles/aire_urbaine.sld"  
-                    attribution="Sources: INSEE - GéoBretagne" 
-                    metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=12ee1299-3f7d-46e7-bd1e-6769b4ca3efd"
-                    metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=12ee1299-3f7d-46e7-bd1e-6769b4ca3efd" >
-		            <template url="apps/region/global/templates/global.aire_urbaine.mst"></template>
+		        <layer id="aire_urbaine" name="Aire urbaine"  visible="false" tiled="false"
+		                searchable="false" queryable="true"
+		                 attributefilter="true" attributefield="aiu_typologie" 
+						attributevalues="Aire urbaine,Communes multipolarisées des grandes aires urbaines,Autres communes multipolarisées,Communes isolées hors influence des pôles"  attributelabel="Filtre" attributestylesync="false" attributefilterenabled="false"
+		                infoformat="application/vnd.ogc.gml" featurecount="20"
+		                style="aire_urbaine_default, aire_urbaine_typologie"
+		                stylesalias="Par défaut, Typologie des aires urbaines selon l'INSEE"
+		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+		                attribution="Sources: INSEE - GéoBretagne | 2010" 
+		                metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=12ee1299-3f7d-46e7-bd1e-6769b4ca3efd"
+		                metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=12ee1299-3f7d-46e7-bd1e-6769b4ca3efd">
+		                <template url="apps/region/global/templates/global.aire_urbaine.mst"></template>
 		        </layer>
 		        <layer id="zone_emploi_bretagne" name="Zone d'emploi"  visible="false" tiled="false"
                     searchable="false" queryable="true" fields="axe" aliases="axe"
                     infoformat="application/vnd.ogc.gml" featurecount="20"     
                     url="https://geobretagne.fr/geoserver/insee/ows" 
                     sld="http://kartenn.region-bretagne.fr/styles/zone_emploi.sld" 
-                    attribution="Sources: INSEE - GéoBretagne" 
+                    attribution="Sources: INSEE - GéoBretagne | 2010" 
                     metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=de7a586d-fffc-41c0-9c07-1f19c50ea068"
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=de7a586d-fffc-41c0-9c07-1f19c50ea068" >
 		            <template url="apps/region/global/templates/global.zone_emploi.mst"></template>
@@ -193,7 +207,7 @@
 		        </layer>             
 	        </group>
 	        <group name="Revenu" id="grp2" >
-		        <layer id="revenu_geom" name="Revenu annuel médian par unité de consommation (€)"  visible="false" tiled="false"
+		        <layer id="revenu_geom" name="Revenu annuel médian par unité de consommation (€) en 2012"  visible="false" tiled="false"
 		                searchable="false" queryable="true"
 		                attributefilter="true" attributefield="level" attributevalues="EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
 		                infopanel="bottom-panel"
@@ -201,7 +215,7 @@
 		                style="revenu_median@epci"
 		                stylesalias=""
 		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="Sources: DGFIP - INSEE - OpenStreetMap| Traitements: Région Bretagne - Service connaissance, observation, planification et prospective" 
+		                attribution="Sources: DGFIP - INSEE - OpenStreetMap | Millésime: 2012 | Traitements: Région Bretagne - Service connaissance, observation, planification et prospective" 
 						metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=9c29be8b-8ba0-4921-82aa-5ef969504426"
 	                	metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9c29be8b-8ba0-4921-82aa-5ef969504426">
 		                <template url="apps/region/territoire/templates/territoire.pop.revenu.mst"></template>
