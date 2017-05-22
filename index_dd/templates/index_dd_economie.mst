@@ -15,10 +15,10 @@
                     <h4 class="Title"><B>Comment se positionne le territoire ?</B></h4>
                     <div class="row" style="margin-bottom:10.5px;">
 	                    <div class="col-md-3 iconCat">
-	                    	<img src="apps/region/index_dd/img/social_cat_{{categorie}}.svg">
+	                    	<img src="apps/region/index_dd/img/econ_cat_{{categorie}}.svg">
 	                    </div>
 	                    <div class="col-md-9">
-	                    	<h4 class="NameCatSoci" id="name-cat-{{categorie}}"></h4>
+	                    	<h4 class="NameCatEco" id="name-cat-{{categorie}}"></h4>
 	                    	<p class="SubTextJustify" id="cat-{{categorie}}"></p>
 	                    </div>   
 	                </div>                     
@@ -34,7 +34,7 @@
           <div class="panel panel-default">
             <div class="panel-body">
               <h4 class="Title"><b>Quelle est la répartition des indicateurs ?</b></h4>
-              <canvas class="chart" id="RadarChartSoci" width="220" height="190"></canvas> 
+              <canvas class="chart" id="RadarChartEco" width="220" height="190"></canvas> 
               <p class="SubText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>            
             </div>
           </div>
@@ -86,8 +86,8 @@
 	.iconCat{
 		padding:0px;
 	}
-	.NameCatSoci{
-		color:#3DB39E;
+	.NameCatEco{
+		color:#FFD460;
 		font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
       	font-weight: 500;
       	margin: 5px 0px 2px 0px;
@@ -123,8 +123,8 @@
 <script>
 
 	var drawChart = function () {
-	  var ctx = document.getElementById("RadarChartSoci");
-      var RadarChartSoci = new Chart(ctx, {
+	  var ctx = document.getElementById("RadarChartEco");
+      var RadarChartEco = new Chart(ctx, {
           type: 'radar',
           data: {
               labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
@@ -140,12 +140,12 @@
               },
               {                  
                   label: "EPCI",
-                  backgroundColor: "rgba(61, 179, 158, 0.7)",
-                  borderColor: "rgba(61, 179, 158, 1)",
-                  pointBackgroundColor: "rgba(61, 179, 158, 1)",
-                  pointBorderColor: "rgba(61, 179, 158, 1)",
+                  backgroundColor: "rgba(255, 212, 96, 0.7)",
+                  borderColor: "rgba(255, 212, 96, 1)",
+                  pointBackgroundColor: "rgba(255, 212, 96, 1)",
+                  pointBorderColor: "rgba(255, 212, 96, 1)",
                   pointHoverBackgroundColor: "#fff",
-                  pointHoverBorderColor: "rgba(61, 179, 158, 1)",
+                  pointHoverBorderColor: "rgba(255, 212, 96, 1)",
                   data: [20, 59, 90, 81, 56, 55]
               }]
           },
