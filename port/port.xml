@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="Kartenn port et aéroport" logo="apps/region/global/img/logo/rb_blanc.svg" help=""   exportpng="false" measuretools="true"   style="css/themes/blue.css"/>
+    <application title="Kartenn port et aéroport" logo="apps/region/global/img/logo/rb_blanc.svg" help="apps/region/global/region_help.html"   exportpng="false" measuretools="true"   style="apps/region/global/css/blue.css"/>
     <!--<mapoptions projection="EPSG:2154" extent="145518,6726671,372058,6868691"  />-->
     <mapoptions maxzoom="19" projection="EPSG:3857" center="-220750.13768758904,6144925.57790189" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 	<baselayers style="default"><!-- style="default"||gallery" -->            		
@@ -54,7 +54,7 @@
 				attribution="Région Bretagne" 
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=ca6d2fd1-68cd-4265-9453-f40d02400e49" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ca6d2fd1-68cd-4265-9453-f40d02400e49" />  
-			<layer id="aot_mouillage_groupe" name="AOT de mouillage groupé" scalemin="0" scalemax="50000000" visible="false" tiled="false" namespace="rb"
+			<layer id="aot_mouillage_groupe" name="AOT de mouillage groupé" scalemin="0" scalemax="50000000" visible="false" tiled="false" namespace="interne"
 				queryable="false" fields="concession" aliases="Concession" 
                 infoformat="text/html" featurecount="1"
 				style="" 
@@ -62,7 +62,7 @@
 				attribution="Région Bretagne" 
 				metadata="" 
 				metadata-csw="" />
-			<layer id="espace_non_concede" name="Espace non concédé" scalemin="0" scalemax="50000000" visible="false" tiled="false" namespace="rb"
+			<layer id="espace_non_concede" name="Espace non concédé" scalemin="0" scalemax="50000000" visible="false" tiled="false" namespace="interne"
 				queryable="false" fields="concession" aliases="Concession" 
                 infoformat="text/html" featurecount="1"
 				style="" 
@@ -70,7 +70,7 @@
 				attribution="Région Bretagne" 
 				metadata="" 
 				metadata-csw="" />
-			<layer id="hors_emprise_rattache" name="Hors emprise rattaché" scalemin="0" scalemax="50000000" visible="false" tiled="false" namespace="rb"
+			<layer id="hors_emprise_rattache" name="Hors emprise rattaché" scalemin="0" scalemax="50000000" visible="false" tiled="false" namespace="interne"
 				queryable="false" fields="concession" aliases="Concession" 
                 infoformat="text/html" featurecount="1"
 				style="" 
