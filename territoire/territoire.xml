@@ -82,8 +82,8 @@
 	                stylesalias=""
 	                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
 	                attribution="Sources: INSEE - GéoBretagne | 2012" 
-	                metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=605b76c9-94cc-4de7-ad62-ca0ec2e4bc97"
-	                metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=605b76c9-94cc-4de7-ad62-ca0ec2e4bc97">
+	                metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=a536027f-7a66-4422-86b6-5cde9c35baec"
+	                metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a536027f-7a66-4422-86b6-5cde9c35baec">
 	                <template url="apps/region/global/templates/global.bassin_vie.mst"></template>
 		        </layer>		        
 		        <layer id="n_unites_urbaines" name="Unité urbaine"  visible="false" tiled="false"
@@ -390,6 +390,7 @@
 		                attributefilter="true" attributefield="level" attributevalues="EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
 		                infopanel="bottom-panel"
 		                infoformat="application/vnd.ogc.gml" featurecount="5"
+		                timefilter="true" timeinterval="month" timecontrol="calendar" timemin="2017-02-01" timemax="2017-04-01" 
 		                style="dememp_catabc_fem@epci,dememp_catabc_jeu@epci,dememp_catabc_sen@epci,dememp_catabc_deld@epci" opacity="1"
 		                stylesalias="Part des femmes, Part des jeunes de moins de 25 ans, Part des seniors de plus de 50 ans, Part des chercheur.euse.s de longue durée (+1an)"
 		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
@@ -403,6 +404,7 @@
 		                attributefilter="true" attributefield="level" attributevalues="EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
 		                infopanel="bottom-panel"
 		                infoformat="application/vnd.ogc.gml" featurecount="5"
+		                timefilter="true" timeinterval="month" timecontrol="calendar" timemin="2017-02-01" timemax="2017-04-01" 
 		                style="dememp_catabc_total@epci" opacity="0.9"
 		                stylesalias=""
 		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
@@ -418,6 +420,7 @@
 		                attributefilter="true" attributefield="level" attributevalues="EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
 		                infopanel="bottom-panel"
 		                infoformat="application/vnd.ogc.gml" featurecount="5"
+		                timefilter="true" timeinterval="month" timecontrol="calendar" timemin="2017-02-01" timemax="2017-04-01" 
 		                style="dememp_cata_fem@epci,dememp_cata_jeu@epci,dememp_cata_sen@epci,dememp_cata_deld@epci" opacity="1"
 		                stylesalias="Part des femmes, Part des jeunes de moins de 25 ans, Part des seniors de plus de 50 ans, Part des chercheur.euse.s de longue durée (+1an)"
 		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
@@ -431,6 +434,7 @@
 		                attributefilter="true" attributefield="level" attributevalues="EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
 		                infopanel="bottom-panel"
 		                infoformat="application/vnd.ogc.gml" featurecount="5"
+		                timefilter="true" timeinterval="month" timecontrol="calendar" timemin="2017-02-01" timemax="2017-04-01" 
 		                style="dememp_cata_total@epci" opacity="0.9"
 		                stylesalias=""
 		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
