@@ -1,6 +1,6 @@
 {{#features}}
 	<li class="item" style="width:238px;">
-		<h3 class="title-feature">{{libbv}}</h3>
+		<h3 class="title-feature">{{nom_bv}}</h3>
 		<div class="block_def">
 			<h4 class="title_def" style="color:#268f91;"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Bassin de vie</h4>
 			<p >Le bassin de vie constitue le plus petit territoire sur lequel les habitants ont accès aux équipements et services les plus courants.</br> On délimite ses contours en plusieurs étapes. On définit tout d’abord un pôle de services comme une commune ou unité urbaine disposant d’au moins 16 des 31 équipements intermédiaires. Les zones d’influence de chaque pôle de services sont ensuite délimitées en regroupant les communes les plus proches, la proximité se mesurant en temps de trajet, par la route à heure creuse. Ainsi, pour chaque commune et pour chaque équipement non présent sur la commune, on détermine la commune la plus proche proposant cet équipement. Les équipements intermédiaires mais aussi les équipements de proximité sont pris en compte.<br/>
