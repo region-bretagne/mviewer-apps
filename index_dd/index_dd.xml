@@ -34,32 +34,43 @@
 
     <themes mini="false">    
     	<theme name="Dimension sociale"  collapsed="false" id="social" icon="group">
-		        <layer id="test_dim_geom" name="Education et Formation"  visible="true" tiled="false"
+		        <layer id="idd_dim_social_geom" name="Éducation et Formation"  visible="true" tiled="false"
 	              	searchable="false" queryable="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
-	                style="index_soc_educaforma"
+	                style="idd_social_indg"
 	                stylesalias=""
 	                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
 	                attribution="Index" 
 	                metadata=""
 	                metadata-csw="">
-	                <template url="apps/region/index_dd/templates/index_dd_social_educaforma.mst"></template>
+	                <template url="apps/region/index_dd/templates/index_dd_social_indg.mst"></template>
 		        </layer>
         </theme>	
         <theme name="Dimension économique"  collapsed="false" id="economie" icon="institution">
-		        <layer id="test_dim_geom" name="Accès à l'emploi"  visible="false" tiled="false"
+		        <layer id="idd_dim_eco_geom" name="Accès à l'emploi"  visible="false" tiled="false"
 	              	searchable="false" queryable="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
-	                style="index_eco_accesemp"
+	                style="idd_eco_inda"
 	                stylesalias=""
 	                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
 	                attribution="Index" 
 	                metadata=""
 	                metadata-csw="">
-	                <template url="apps/region/index_dd/templates/index_dd_economie_accesemp.mst"></template>
+	                <template url="apps/region/index_dd/templates/index_dd_economie_inda.mst"></template>
 		        </layer>
+		        <!--<layer id="idd_dim_eco_geom" name="Ancrange local et robustesse du tissu économique"  visible="false" tiled="false"
+	              	searchable="false" queryable="true"
+	                infoformat="application/vnd.ogc.gml" featurecount="5"
+	                style="idd_eco_indb"
+	                stylesalias=""
+	                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+	                attribution="Index" 
+	                metadata=""
+	                metadata-csw="">
+	                <template url="apps/region/index_dd/templates/index_dd_economie_indb.mst"></template>
+		        </layer>-->
         </theme>
-		<theme name="Dimension environnementale"  collapsed="false" id="environnement" icon="leaf">
+		<!--<theme name="Dimension environnementale"  collapsed="false" id="environnement" icon="leaf">
 		        <layer id="test_dim_geom" name="Sous dimension A"  visible="false" tiled="false"
 	              	searchable="false" queryable="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
@@ -84,7 +95,7 @@
 	                metadata-csw="">
 	                <template url="apps/region/index_dd/templates/index_dd_democratie.mst"></template>
 		        </layer>
-        </theme>
+        </theme>-->
         <theme name="Découpages territoriaux"  collapsed="true" id="territoire" icon="globe">
 			<layer id="commune" name="Commune" visible="false" queryable="false" 
                 fields="nom_geo" aliases="Nom" 
