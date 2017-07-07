@@ -46,7 +46,7 @@
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     style="transports_ligne_ferr_defaut, transports_ligne_ferr_typologie" 
 					stylesalias="Par défaut,Type d'infrastructures"
-                    url="http://kartenn.region-bretagne.fr/geoserver-proxy/rb/wms"
+                    url="http://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Région Bretagne" 
 					metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=0da27e88-4da6-423e-ba4c-dbcad9128cd2"
 					metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0da27e88-4da6-423e-ba4c-dbcad9128cd2">
@@ -58,7 +58,7 @@
                     style="transports_arret_ferr_defaut, transports_arret_ferr_borne,transports_arret_ferr_guichet,transports_arret_ferr_info_dynami,transports_arret_ferr_nature,transports_arret_ferr_parking,transports_arret_ferr_velo,transports_arret_ferr_pmr"
                     stylesalias="Par défaut, Distributeur automatique de billet, Guichet, Information dynamique,Nature des arrêts ferroviaires,Parking voiture,Parking vélo, Assistance PMR"
                     legendurl="http://kartenn.region-bretagne.fr/doc/transports/icons/gare.svg"
-                    url="http://kartenn.region-bretagne.fr/geoserver-proxy/rb/wms"
+                    url="http://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Région Bretagne" 
                     metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=4a9d13f7-17be-4a98-9f8f-907cf223072f"
 					metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=4a9d13f7-17be-4a98-9f8f-907cf223072f" >
@@ -68,7 +68,7 @@
                     searchable="false" queryable="false" fields="nom_pa" aliases="nom_pa"
                     infoformat="text/html" featurecount="20"
                     style="transports_pem_defaut"
-                    url="http://kartenn.region-bretagne.fr/geoserver-proxy/rb/wms"
+                    url="http://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Région Bretagne" 
                     metadata=""
                     metadata-csw="" />
@@ -78,7 +78,7 @@
                     searchable="false" queryable="true" secure="true"
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     style="transports_arret_rout_defaut"
-                    url="http://kartenn.region-bretagne.fr/geoserver-proxy/rb/wms"
+                    url="http://ows.region-bretagne.fr/geoserver/rb/wms"
                     legendurl="http://kartenn.region-bretagne.fr/doc/transports/icons/arret_rout_reg.svg"
                     attribution="Région Bretagne" 
                     metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=72bdca86-f605-46c8-8b50-a4af3c629020"
@@ -89,7 +89,7 @@
                     searchable="false" queryable="true" secure="true"
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     style="transports_ligne_rout_reg_defaut" 
-                    url="http://kartenn.region-bretagne.fr/geoserver-proxy/rb/wms"
+                    url="http://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Région Bretagne" 
                     metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=d42415dd-f736-4b44-82c6-0259c0a667a3"
 					metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=d42415dd-f736-4b44-82c6-0259c0a667a3">
@@ -385,7 +385,7 @@
 				searchable="false" queryable="true" fields="appellatio" aliases="appellatio"
                 infoformat="application/vnd.ogc.gml" featurecount="20"
 				style="transports_ptus"
-				url="http://kartenn.region-bretagne.fr/geoserver-proxy/rb/wms"
+				url="http://ows.region-bretagne.fr/geoserver/rb/wms"
 				attribution="Région Bretagne" 
 				metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=972de151-f31e-4246-97b7-e1438a50e9dd"
 				metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=972de151-f31e-4246-97b7-e1438a50e9dd">
