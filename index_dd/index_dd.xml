@@ -33,8 +33,8 @@
     </widgets> 
 
     <themes mini="false">    
-    	<theme name="Dimension sociale"  collapsed="false" id="social" icon="group">
-		        <layer id="idd_dim_social_geom" name="Éducation et Formation"  visible="true" tiled="false"
+    	<theme name="Dimension sociale"  collapsed="true" id="social" icon="group">
+		        <layer id="idd_dim_social_geom" name="Éducation et Formation"  visible="false" tiled="false"
 	              	searchable="false" queryable="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="idd_social_indg"
@@ -47,7 +47,7 @@
 		        </layer>
         </theme>	
         <theme name="Dimension économique"  collapsed="false" id="economie" icon="institution">
-		        <layer id="idd_dim_eco_geom" name="Accès à l'emploi"  visible="false" tiled="false"
+		        <layer id="idd_dim_eco_geom" name="Accès à l'emploi"  visible="true" tiled="false"
 	              	searchable="false" queryable="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="idd_eco_inda"
