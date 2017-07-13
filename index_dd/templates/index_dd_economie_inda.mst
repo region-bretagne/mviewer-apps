@@ -153,7 +153,7 @@
           data: {
               labels: data.chart_eco_a.labels,
               datasets: [{
-                  label: "Lorem Ipsumne des territoires",
+                  label: "Moyenne des territoires",
                   backgroundColor: "rgba(45, 64, 89, 0)",
                   borderColor: "rgba(45, 64, 89, 1)",
                   pointBackgroundColor: "rgba(45, 64, 89, 1)",
