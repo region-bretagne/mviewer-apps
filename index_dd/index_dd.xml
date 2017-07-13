@@ -39,7 +39,7 @@
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="idd_social_indg"
 	                stylesalias=""
-	                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 	                attribution="Index" 
 	                metadata=""
 	                metadata-csw="">
@@ -52,23 +52,23 @@
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="idd_eco_inda"
 	                stylesalias=""
-	                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 	                attribution="Index" 
 	                metadata=""
 	                metadata-csw="">
 	                <template url="apps/region/index_dd/templates/index_dd_economie_inda.mst"></template>
 		        </layer>
-		        <!--<layer id="idd_dim_eco_geom" name="Ancrange local et robustesse du tissu économique"  visible="false" tiled="false"
+		        <layer id="idd_dim_eco_geom" name="Ancrange local et robustesse du tissu économique"  visible="false" tiled="false"
 	              	searchable="false" queryable="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="idd_eco_indb"
 	                stylesalias=""
-	                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 	                attribution="Index" 
 	                metadata=""
 	                metadata-csw="">
 	                <template url="apps/region/index_dd/templates/index_dd_economie_indb.mst"></template>
-		        </layer>-->
+		        </layer>
         </theme>
 		<!--<theme name="Dimension environnementale"  collapsed="false" id="environnement" icon="leaf">
 		        <layer id="test_dim_geom" name="Sous dimension A"  visible="false" tiled="false"

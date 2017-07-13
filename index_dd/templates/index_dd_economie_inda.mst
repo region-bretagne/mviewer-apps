@@ -34,7 +34,7 @@
           <div class="panel panel-default">
             <div class="panel-body">
               <h4 class="Title"><b>Quelle est la répartition des indicateurs ?</b></h4>
-              <canvas class="chart" id="RadarChartEco" data-codegeo="{{code_geo}}" data-a1="{{a1_ind}}" data-a2="{{a2_ind}}" data-a3="{{a3_ind}}" width="220" height="189"></canvas>
+              <canvas class="chart" id="RadarChartEcoA" data-codegeo="{{code_geo}}" data-a1="{{a1_ind}}" data-a2="{{a2_ind}}" data-a3="{{a3_ind}}" width="220" height="189"></canvas>
               <p class="ChartLabel">
               	Indicateur 1: Evolution du nombre de DEFM de cat. ABC </br>Indicateur 2: Taux d'emploi </br>Indicateur 3: Part des salarié.e.s en CDI 
               </p> 
@@ -52,6 +52,11 @@
 <style>
 	.panel-body{
 		padding:10px;
+	}
+	.panel-default{
+		border-radius: 2px;
+    	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+    	border: 1px solid #eee!important;
 	}
 	.select-feature{
 		color: #2D4059;
@@ -103,22 +108,22 @@
       	margin: 5px 0px 2px 0px;
 	}
 	#name-cat-A:after{
-		content:"Bien";
+		content:"Lorem Ipsum";
 	}
 	#name-cat-B:after{
-		content:"Moyen";
+		content:"Lorem Ipsum";
 	}
 	#name-cat-C:after{
-		content:"A améliorer";
+		content:"Lorem Ipsum";
 	}
 	#cat-A:after{
-		content:"Pour cette sous-dimension, l'entité se situe au dessus du 3ème décile (Q3)";
+		content:"Pour cette sous-dimension, l'entité se situe au dessus du 3ème quartile (Q3)";
 	}
 	#cat-B:after{
-		content:"Pour cette sous-dimension, l'entité se situe entre le premier et le troisième décile (Q1 et Q3)";
+		content:"Pour cette sous-dimension, l'entité se situe entre le premier et le troisième quartile (Q1 et Q3)";
 	}
 	#cat-C:after{
-		content:"Pour cette sous-dimension, l'entité se situe en dessous du 1er décile (Q1)";
+		content:"Pour cette sous-dimension, l'entité se situe en dessous du 1er quartile (Q1)";
 	}
 	#idChart{
 		margin-bottom:100px;
@@ -128,26 +133,27 @@
 
 
 <script>
-	var getData = function () {
-		var code_geo = $("#RadarChartEco").attr("data-codegeo");
-		var data = {chart_eco_1: {labels:["Indicateur 1","Indicateur 2","Indicateur 3"], data: {datasets:[[parseFloat($("#RadarChartEco").attr("data-a1")),parseFloat($("#RadarChartEco").attr("data-a2")),parseFloat($("#RadarChartEco").attr("data-a3"))]]}}};
+	var indicateur_a = {};
+	indicateur_a.getData = function () {
+		var code_geo = $("#RadarChartEcoA").attr("data-codegeo");
+		var data = {chart_eco_a: {labels:["Indicateur 1","Indicateur 2","Indicateur 3"], data: {datasets:[[parseFloat($("#RadarChartEcoA").attr("data-a1")),parseFloat($("#RadarChartEcoA").attr("data-a2")),parseFloat($("#RadarChartEcoA").attr("data-a3"))]]}}};
 		console.log(data);
 		//drawChart(data);	
 
 		$.getJSON( "../ws/index_dd/data_eco_template.php", function(data2) {
 	                    console.log(data2);
-	                    drawChart(data, data2);	       
+	                    indicateur_a.drawChart(data, data2);	       
 	    });
 	};	 	
 
-	var drawChart = function (data, data2) {
-	var ctx = document.getElementById("RadarChartEco");
-    var RadarChartEco = new Chart(ctx, {
+	indicateur_a.drawChart = function (data, data2) {
+	var ctx = document.getElementById("RadarChartEcoA");
+    var RadarChartEcoA = new Chart(ctx, {
           type: 'radar',
           data: {
-              labels: data.chart_eco_1.labels,
+              labels: data.chart_eco_a.labels,
               datasets: [{
-                  label: "Moyenne des territoires",
+                  label: "Lorem Ipsumne des territoires",
                   backgroundColor: "rgba(45, 64, 89, 0)",
                   borderColor: "rgba(45, 64, 89, 1)",
                   pointBackgroundColor: "rgba(45, 64, 89, 1)",
@@ -164,7 +170,7 @@
                   pointBorderColor: "rgba(255, 212, 96, 1)",
                   pointHoverBackgroundColor: "#fff",
                   pointHoverBorderColor: "rgba(255, 212, 96, 1)",
-                  data: data.chart_eco_1.data.datasets[0]
+                  data: data.chart_eco_a.data.datasets[0]
               }]
           },
           options: {
@@ -196,10 +202,10 @@
     };  
 
     if  (typeof Chart === 'function') {
-			getData();
+			indicateur_a.getData();
 	} else {
 			$.get('https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js', function() {
-				getData();
+				indicateur_a.getData();
     		
 			}); 
 	}

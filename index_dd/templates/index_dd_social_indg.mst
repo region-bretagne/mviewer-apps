@@ -34,9 +34,9 @@
           <div class="panel panel-default">
             <div class="panel-body">
               <h4 class="Title"><b>Quelle est la répartition des indicateurs ?</b></h4>
-              <canvas class="chart" id="RadarChartSoci" data-codegeo="{{code_geo}}" data-g1="{{g1_ind}}" data-g2="{{g2_val}}" data-g3="{{g3_val}}" width="220" height="189"></canvas> 
+              <canvas class="chart" id="RadarChartSociG" data-codegeo="{{code_geo}}" data-g1="{{g1_ind}}" data-g2="{{g2_ind}}" data-g3="" width="220" height="188"></canvas> 
               <p class="ChartLabel">
-              	Indicateur 1: Population de 15-50 ans non scolarisée sans aucun diplôme </br>Indicateur 2: Indice de diplôme </br>Indicateur 3: Indice d'éducation 
+              	Indicateur 1: Population de 15-50 ans non scolarisée sans aucun diplôme </br>Indicateur 2: Indice de diplôme </br>Indicateur 3: 
               </p> 
               <!--<p class="SubText">
               	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
@@ -52,6 +52,11 @@
 <style>
 	.panel-body{
 		padding:10px;
+	}
+	.panel-default{
+		border-radius: 2px;
+    	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+    	border: 1px solid #eee!important;
 	}
 	.select-feature{
 		color: #2D4059;
@@ -103,22 +108,22 @@
       	margin: 5px 0px 2px 0px;
 	}
 	#name-cat-A:after{
-		content:"Bien";
+		content:"Lorem Ipsum";
 	}
 	#name-cat-B:after{
-		content:"Moyen";
+		content:"Lorem Ipsum";
 	}
 	#name-cat-C:after{
-		content:"A améliorer";
+		content:"Lorem Ipsum";
 	}
 	#cat-A:after{
-		content:"Pour cette sous-dimension, l'entité se situe au dessus du 3ème décile (Q3)";
+		content:"Pour cette sous-dimension, l'entité se situe au dessus du 3ème quartile (Q3)";
 	}
 	#cat-B:after{
-		content:"Pour cette sous-dimension, l'entité se situe entre le premier et le troisième décile (Q1 et Q3)";
+		content:"Pour cette sous-dimension, l'entité se situe entre le premier et le troisième quartile (Q1 et Q3)";
 	}
 	#cat-C:after{
-		content:"Pour cette sous-dimension, l'entité se situe en dessous du 1er décile (Q1)";
+		content:"Pour cette sous-dimension, l'entité se situe en dessous du 1er quartile (Q1)";
 	}
 	.chart{
 		margin-bottom:15px;
@@ -131,26 +136,27 @@
    
 
 <script>
-	var getData = function () {
-		var code_geo = $("#RadarChartSoci").attr("data-codegeo");
-		var data = {chart_social_1: {labels:["Indicateur 1","Indicateur 2","Indicateur 3"], data: {datasets:[[parseFloat($("#RadarChartSoci").attr("data-g1")),parseFloat($("#RadarChartSoci").attr("data-g2")),parseFloat($("#RadarChartSoci").attr("data-g3"))]]}}};
+    var indicateur_g = {};
+	indicateur_g.getData = function () {
+		var code_geo = $("#RadarChartSociG").attr("data-codegeo");
+		var data = {chart_social_g: {labels:["Indicateur 1","Indicateur 2"], data: {datasets:[[parseFloat($("#RadarChartSociG").attr("data-g1")),parseFloat($("#RadarChartSociG").attr("data-g2"))]]}}};
 		 console.log(data);
 		 //drawChart(data);
 
 		$.getJSON( "../ws/index_dd/data_social_template.php", function(data2) {
 	                    console.log(data2);
-	                    drawChart(data, data2);	       
+	                    indicateur_g.drawChart(data, data2);	       
 	    });
 	}; 
 
 
 
-	var drawChart = function (data, data2) {
-	var ctx = document.getElementById("RadarChartSoci");
-    var RadarChartSoci = new Chart(ctx, {
+	indicateur_g.drawChart = function (data, data2) {
+	var ctx = document.getElementById("RadarChartSociG");
+    var RadarChartSociG = new Chart(ctx, {
           type: 'radar',
           data: {
-              labels: data.chart_social_1.labels,
+              labels: data.chart_social_g.labels,
               datasets: [{
                   label: "Moyenne des territoires",
                   backgroundColor: "rgba(45, 64, 89, 0)",
@@ -169,7 +175,7 @@
                   pointBorderColor: "rgba(61, 179, 158, 1)",
                   pointHoverBackgroundColor: "#fff",
                   pointHoverBorderColor: "rgba(61, 179, 158, 1)",
-                  data: data.chart_social_1.data.datasets[0]
+                  data: data.chart_social_g.data.datasets[0]
               }]
           },
           options: {
@@ -196,10 +202,10 @@
     };  
 
     if  (typeof Chart === 'function') {
-			getData();
+			indicateur_g.getData();
 	} else {
 			$.get('https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js', function() {
-				getData();
+				indicateur_g.getData();
     		
 			}); 
 	}

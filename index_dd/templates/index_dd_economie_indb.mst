@@ -34,7 +34,7 @@
           <div class="panel panel-default">
             <div class="panel-body">
               <h4 class="Title"><b>Quelle est la répartition des indicateurs ?</b></h4>
-              <canvas class="chart" id="RadarChartEco" data-codegeo="{{code_geo}}" data-b1="{{b1_ind}}" data-b2="{{b2_ind}}" data-b3="{{b3_ind}}" width="220" height="189"></canvas>
+              <canvas class="chart" id="RadarChartEcoB" data-codegeo="{{code_geo}}" data-b1="{{b1_ind}}" data-b2="{{b2_ind}}" data-b3="{{b3_ind}}" width="220" height="189"></canvas>
               <p class="ChartLabel">
               	Indicateur 1: Indice d'Herfindalh (secteur)</br>Indicateur 2: Indice d'Herfindalh (taille) </br>Indicateur 3: Evolution de l'emploi de 2008 à 2013
               </p> 
@@ -52,6 +52,11 @@
 <style>
 	.panel-body{
 		padding:10px;
+	}
+	.panel-default{
+		border-radius: 2px;
+    	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+    	border: 1px solid #eee!important;
 	}
 	.select-feature{
 		color: #2D4059;
@@ -103,22 +108,22 @@
       	margin: 5px 0px 2px 0px;
 	}
 	#name-cat-A:after{
-		content:"Bien";
+		content:"Lorem Ipsum";
 	}
 	#name-cat-B:after{
-		content:"Moyen";
+		content:"Lorem Ipsum";
 	}
 	#name-cat-C:after{
-		content:"A améliorer";
+		content:"Lorem Ipsum";
 	}
 	#cat-A:after{
-		content:"Pour cette sous-dimension, l'entité se situe au dessus du 3ème décile (Q3)";
+		content:"Pour cette sous-dimension, l'entité se situe au dessus du 3ème quartile (Q3)";
 	}
 	#cat-B:after{
-		content:"Pour cette sous-dimension, l'entité se situe entre le premier et le troisième décile (Q1 et Q3)";
+		content:"Pour cette sous-dimension, l'entité se situe entre le premier et le troisième quartile (Q1 et Q3)";
 	}
 	#cat-C:after{
-		content:"Pour cette sous-dimension, l'entité se situe en dessous du 1er décile (Q1)";
+		content:"Pour cette sous-dimension, l'entité se situe en dessous du 1er quartile (Q1)";
 	}
 	#idChart{
 		margin-bottom:100px;
@@ -128,28 +133,34 @@
 
 
 <script>
-	var getData = function () {
-		var code_geo = $("#RadarChartEco").attr("data-codegeo");
-		var data = {chart_eco_1: {labels:["Indicateur 1","Indicateur 2","Indicateur 3"], data: {datasets:[[parseFloat($("#RadarChartEco").attr("data-a1")),parseFloat($("#RadarChartEco").attr("data-a2")),parseFloat($("#RadarChartEco").attr("data-a3"))]]}}};
+	var indicateur_b = {};
+	indicateur_b.getData = function () {
+		var code_geo = $("#RadarChartEcoB").attr("data-codegeo");
+		var data = {chart_eco_b: {labels:["Indicateur 1","Indicateur 2","Indicateur 3"], data: {datasets:[[parseFloat($("#RadarChartEcoB").attr("data-b1")),parseFloat($("#RadarChartEcoB").attr("data-b2")),parseFloat($("#RadarChartEcoB").attr("data-b3"))]]}}};
 		console.log(data);
-		drawChart(data);	
+		//drawChart(data);	
+
+		$.getJSON( "../ws/index_dd/data_eco_template.php", function(data2) {
+	                    console.log(data2);
+	                    indicateur_b.drawChart(data, data2);	       
+	    });
 	};	 	
 
-	var drawChart = function (data) {
-	var ctx = document.getElementById("RadarChartEco");
-    var RadarChartEco = new Chart(ctx, {
+	indicateur_b.drawChart = function (data, data2) {
+	var ctx = document.getElementById("RadarChartEcoB");
+    var RadarChartEcoB = new Chart(ctx, {
           type: 'radar',
           data: {
-              labels: data.chart_eco_1.labels,
+              labels: data.chart_eco_b.labels,
               datasets: [{
-                  label: "Moyenne des territoires",
+                  label: "Lorem Ipsumne des territoires",
                   backgroundColor: "rgba(45, 64, 89, 0)",
                   borderColor: "rgba(45, 64, 89, 1)",
                   pointBackgroundColor: "rgba(45, 64, 89, 1)",
                   pointBorderColor: "rgba(45, 64, 89, 1)",
                   pointHoverBackgroundColor: "#fff",
                   pointHoverBorderColor: "rgba(45, 90, 89, 1)",
-                  data: [0.2,1,0.8]
+                  data: data2.data_avg_b
               },
               {                  
                   label: "EPCI",
@@ -159,7 +170,7 @@
                   pointBorderColor: "rgba(255, 212, 96, 1)",
                   pointHoverBackgroundColor: "#fff",
                   pointHoverBorderColor: "rgba(255, 212, 96, 1)",
-                  data: data.chart_eco_1.data.datasets[0]
+                  data: data.chart_eco_b.data.datasets[0]
               }]
           },
           options: {
@@ -171,23 +182,30 @@
             scale: {
                 ticks: {
                     beginAtZero: true,
-                    max:1.5,
-                    stepSize:0.4
+                    max:1,
+                    stepSize:0.2
                 },
                 pointLabels:{
                 	fontSize:10
                 }
             },
-            responsive: true
+            responsive: true,
+          	tooltips: {
+              callbacks: {
+                  label: function(tooltipItem, data) {
+                      return data.datasets[tooltipItem.datasetIndex].label +': ' + parseFloat(tooltipItem.yLabel.toFixed(2)).toLocaleString();
+                  }
+              }
+          	}
           }
       });
     };  
 
     if  (typeof Chart === 'function') {
-			getData();
+			indicateur_b.getData();
 	} else {
 			$.get('https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js', function() {
-				getData();
+				indicateur_b.getData();
     		
 			}); 
 	}
