@@ -39,7 +39,7 @@
 			{{#plan}}
                 <a class="floating-box pdf" href="{{plan}}" target="_blank" title="Télécharger le contrat bénéficiaire"></a>
         	{{/plan}}            
-
+			<br/>
 			<div class="floating-box" style="background: url(http://kartenn.region-bretagne.fr/img/picto/port/{{contrat_type}}.png) left top no-repeat;background-size: 30px;" />
 			<div class="floating-box concession {{port_aero_concession}}"></div>
         </div>
