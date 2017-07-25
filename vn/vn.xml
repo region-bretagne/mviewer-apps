@@ -22,7 +22,7 @@
             attribution="&lt;a href='http://www.geoportail.fr/' target='_blank'>&lt;img src='http://api.ign.fr/geoportail/api/js/latest/theme/geoportal/img/logo_gp.gif'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
     </baselayers> 
     <authentification url="who" loginurl="?login" logouturl="../j_spring_security_logout" enabled="true"/>
-    <proxy url="../proxy/?url="/>
+    <!--<proxy url="../proxy/?url="/>-->
     <!--<olscompletion url="http://gpp3-wxs.ign.fr/5kiwvtkb2v23y0x8chidxbij/ols/apis/completion"/>-->
     <olscompletion url="http://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par l'API adresse.data.gouv.fr"/>
     <elasticsearch url="http://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="fussy_like_this" />
@@ -32,7 +32,7 @@
     </widgets> 
 
     <themes>
-            <theme name="Patrimoine bâti"  collapsed="true" id="pat_bati">
+            <theme name="Patrimoine bâti"  collapsed="true" id="pat_bati" icon="building">
                 <layer id="maison_eclusiere_aap" name="Appels à projets maisons éclusières" visible="false" tiled="false" namespace="rb"
 					searchable="true" queryable="true"
                     infoformat="text/html" featurecount="20"
@@ -58,7 +58,7 @@
 					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=29ebaa3e-eaac-4c9e-bc8e-07bfbff89b41"
 					metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=29ebaa3e-eaac-4c9e-bc8e-07bfbff89b41" />  
         </theme> 
-            <theme name="Patrimoine arboré"  collapsed="true" id="pat_arbre"> 
+            <theme name="Patrimoine arboré"  collapsed="true" id="pat_arbre" icon="tree"> 
                 <layer id="arbre_individuel_vn" name="Arbre individuel" visible="false" tiled="true" namespace="rb"
 					queryable="true"
                     infoformat="text/html" featurecount="20"
@@ -84,7 +84,7 @@
 					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=3e21dfe0-6124-4af0-b893-c5b0b23869a7"
 					metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=3e21dfe0-6124-4af0-b893-c5b0b23869a7" />  
         </theme> 
-            <theme name="Signalisation"  collapsed="true" id="signalisation"> 
+            <theme name="Signalisation"  collapsed="true" id="signalisation" icon="arrows"> 
                <layer id="borne_km_vn" name="Bornes Kilométriques" visible="false" tiled="false" namespace="rb"
 					queryable="true" 
                     infoformat="text/html" featurecount="20"
@@ -119,12 +119,12 @@
 					metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=770bb8b9-270c-459e-bba0-bda60472c253" />  
 
         </theme> 
-        <theme name="Equipements"  collapsed="true" id="equipement"> 
+        <theme name="Equipements"  collapsed="true" id="equipement" icon="plug"> 
                 <layer id="mobilier_vn" name="Mobiliers" visible="false" tiled="false" namespace="rb"
 					queryable="true" 
                     infoformat="text/html" featurecount="20"
 					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
-					style="" 
+					style="" attributefilter="true" attributevalues="Banc,Poubelle,Table" attributefield="type_mob"
 					attribution="Région Bretagne" 
 					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5d46b3e3-3a21-4f78-978d-fb38027ca971"
 					metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=5d46b3e3-3a21-4f78-978d-fb38027ca971" />  
@@ -194,7 +194,7 @@
 					metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=adb30135-871b-4d5d-94d9-b95f90a24d62" />  
 
         </theme> 
-        <theme name="Infrastructures Nautiques"  collapsed="true" id="nautique"> 
+        <theme name="Infrastructures Nautiques"  collapsed="true" id="nautique" icon="ship"> 
                 <layer id="ecluse" name="Ecluse - Trafic annuel" visible="true" tiled="false" namespace="rb"
 					queryable="true"
                     searchable="true" infoformat="text/html" featurecount="20"
@@ -289,7 +289,7 @@
 					queryable="false"
                     infoformat="text/html" featurecount="20"
 					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
-					style="voie_navigable_proprietaire" 
+					style="voie_navigable_proprietaire,voie_navigable" stylesalias="Propriétaire,Normal"
 					attribution="Région Bretagne" 
 					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=7cab44b0-4639-43f2-a824-3eecb7d3bf66"
 					metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=7cab44b0-4639-43f2-a824-3eecb7d3bf66" /> 
@@ -302,7 +302,7 @@
 					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ce651579-c92a-474d-aee1-6e44b5f55579"
 					metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=ce651579-c92a-474d-aee1-6e44b5f55579" />                      
         </theme> 
-            <theme name="Domanialité"  collapsed="true" id="domanialite"> 
+            <theme name="Domanialité"  collapsed="true" id="domanialite" icon="wrench"> 
                 <layer id="prelevement_rejet_vn" name="Prélèvements et rejets" visible="false" tiled="false"
 					queryable="true"
                     secure="true"
@@ -349,7 +349,7 @@
 					metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=515cf06a-fc63-4059-9813-be6c57695eca"
 					metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=515cf06a-fc63-4059-9813-be6c57695eca" />                    
         </theme> 
-        <theme name="Cadastre"  collapsed="true" id="cadastre"> 
+        <theme name="Cadastre"  collapsed="true" id="cadastre" icon="square"> 
              <layer id="CP.CadastralBuilding" name="Bâti" scalemin="0" scalemax="25000" visible="false" tiled="true"
 				queryable="false" fields="" aliases=""
                 infoformat="application/vnd.ogc.gml" featurecount="5"                
@@ -501,10 +501,10 @@
 				attribution="GéoBretagne" 
 				metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=0ea1db4c-da8a-471f-aac6-62de4c97d87b" 
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0ea1db4c-da8a-471f-aac6-62de4c97d87b" />
-            <layer id="FDepartement" name="Département" visible="false" tiled="false"
+			<layer id="FDepartement" name="Département" visible="false" tiled="false"
 				queryable="true" fields="NOM_PAYS" aliases="Nom"
-                infoformat="text/html" featurecount="5"
-				style="dep_region" 
+                infoformat="text/html" featurecount="1"
+				style="" 
 				url="http://kartenn.region-bretagne.fr/geob_dreal_b" 
 				attribution="IGN - BDCARTO" 
 				metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=e16d50d4-746d-44e3-a5e7-5fc000f97665" 
