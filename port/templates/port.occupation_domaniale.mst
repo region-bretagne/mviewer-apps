@@ -31,15 +31,15 @@
                 <a class="floating-box pdf" href="{{contrat_benef}}" target="_blank" title="Télécharger le contrat bénéficiaire"></a>
         	{{/contrat_benef}}
 			{{#contrat_loc}}
-                <a class="floating-box pdf" href="{{contrat_loc}}" target="_blank" title="Télécharger le contrat bénéficiaire"></a>
+                <a class="floating-box pdf" href="{{contrat_loc}}" target="_blank" title="Télécharger le contrat de location"></a>
         	{{/contrat_loc}}            
 			{{#fiche}}
-                <a class="floating-box pdf" href="{{fiche}}" target="_blank" title="Télécharger le contrat bénéficiaire"></a>
+                <a class="floating-box pdf" href="{{fiche}}" target="_blank" title="Télécharger la fiche"></a>
         	{{/fiche}}            
 			{{#plan}}
-                <a class="floating-box pdf" href="{{plan}}" target="_blank" title="Télécharger le contrat bénéficiaire"></a>
+                <a class="floating-box pdf" href="{{plan}}" target="_blank" title="Télécharger le plan"></a>
         	{{/plan}}            
-
+			<br/>
 			<div class="floating-box" style="background: url(http://kartenn.region-bretagne.fr/img/picto/port/{{contrat_type}}.png) left top no-repeat;background-size: 30px;" />
 			<div class="floating-box concession {{port_aero_concession}}"></div>
         </div>
