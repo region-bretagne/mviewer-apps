@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="Patrimoine culturel" logo="apps/region/global/img/logo/rb_blanc.svg" help="mviewer_help.html" exportpng="false" style="css/themes/alizarin.css" measuretools="true" />
+    <application title="Patrimoine culturel" logo="apps/region/global/img/logo/rb_blanc.svg" help="mviewer_help.html" exportpng="false" style="apps/region/patrimoine/css/kartenn_patrimoine.css" measuretools="true" />
     <mapoptions maxzoom="20" projection="EPSG:3857" center="-291072,6187119" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery"><!-- style="default"||gallery" -->     
@@ -54,6 +54,14 @@
 				attribution="Service de l'inventaire : Région Bretagne" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" /> 
+            <layer id="recensement_patrimoine_operation" name="Baie du Mont Saint Michel" visible="false" tiled="false" 
+				searchable="false" queryable="true" 
+				infoformat="text/html" featurecount="20"
+                style="recensement_baie_du_mt_st_michel"  legendurl=""
+				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attribution="Service de l'inventaire : Région Bretagne" 
+				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
+				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" /> 
             <layer id="recensement_patrimoine_operation" name="Croix et calvaires de Guer et de la Gacilly" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
 				infoformat="text/html" featurecount="20"
@@ -74,6 +82,30 @@
 				searchable="false" queryable="true" 
 				infoformat="text/html" featurecount="20"
                 style="recensement_patrimoine_sports"  legendurl="http://kartenn.region-bretagne.fr/img/legend/etablissements_nautiques.png"
+				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attribution="Service de l'inventaire : Région Bretagne" 
+				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
+				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" /> 
+            <layer id="recensement_patrimoine_operation" name="Maisons à pan de bois de Quimper" visible="false" tiled="false" 
+				searchable="false" queryable="true" 
+				infoformat="text/html" featurecount="20"
+                style="recensement_maisons_pans_de_bois_quimper"  legendurl=""
+				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attribution="Service de l'inventaire : Région Bretagne" 
+				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
+				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" /> 
+            <layer id="recensement_patrimoine_operation" name="Patrimoine dansé et vestimentaire de Bretagne" visible="false" tiled="false" 
+				searchable="false" queryable="true" 
+				infoformat="text/html" featurecount="20"
+                style="recensement_heritaj"  legendurl="http://kartenn.region-bretagne.fr/img/legend/heritaj.png"
+				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attribution="Service de l'inventaire : Région Bretagne" 
+				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
+				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" /> 
+            <layer id="recensement_patrimoine_operation" name="Patrimoine linier et chanvrier en Bretagne" visible="false" tiled="false" 
+				searchable="false" queryable="true" 
+				infoformat="text/html" featurecount="20"
+                style="recensement_pat_linier_chanvrier"  legendurl=""
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution="Service de l'inventaire : Région Bretagne" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
@@ -118,10 +150,34 @@
 				attribution="Service de l'inventaire : Région Bretagne" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" /> 
+            <layer id="recensement_patrimoine_operation" name="Val d'Ille Aubigné" visible="false" tiled="false" 
+				searchable="false" queryable="true" 
+				infoformat="text/html" featurecount="20"
+                style="recensement_val_ille_aubigne"  legendurl=""
+				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attribution="Service de l'inventaire : Région Bretagne" 
+				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
+				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" /> 
+            <layer id="recensement_patrimoine_operation" name="Vallée du Scorff" visible="false" tiled="false" 
+				searchable="false" queryable="true" 
+				infoformat="text/html" featurecount="20"
+                style="recensement_vallee_du_scorff"  legendurl=""
+				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attribution="Service de l'inventaire : Région Bretagne" 
+				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
+				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" /> 
             <layer id="recensement_patrimoine_operation" name="Ville de Dinan" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
 				infoformat="text/html" featurecount="20"
                 style="recensement_dinan"  legendurl="http://kartenn.region-bretagne.fr/img/legend/ville_de_dinan.png"
+				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attribution="Service de l'inventaire : Région Bretagne" 
+				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
+				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" /> 
+            <layer id="recensement_patrimoine_operation" name="Ville de Saint-Brieuc" visible="false" tiled="false" 
+				searchable="false" queryable="true" 
+				infoformat="text/html" featurecount="20"
+                style="recensement_ville_st_brieuc"  legendurl=""
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution="Service de l'inventaire : Région Bretagne" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
@@ -134,15 +190,7 @@
 				attribution="Service de l'inventaire : Région Bretagne" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" /> 
-            <layer id="recensement_patrimoine_operation" name="Patrimoine dansé et vestimentaire de Bretagne" visible="false" tiled="false" 
-				searchable="false" queryable="true" 
-				infoformat="text/html" featurecount="20"
-                style="recensement_heritaj"  legendurl="http://kartenn.region-bretagne.fr/img/legend/heritaj.png"
-				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
-				attribution="Service de l'inventaire : Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" /> 
-				</theme>
+		</theme>
         <theme name="Etudes topographiques"  collapsed="true" id="etudes">         
 			<layer id="etude_patrimoine_architecture" name="Architecture" visible="true" tiled="true"
 				queryable="true" searchable="true"
