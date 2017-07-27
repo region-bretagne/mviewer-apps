@@ -1,5 +1,11 @@
 Migration application Patrimoine TODO LIST :
 
-- legendurl
-- L'ordre d'affichage des couches est inversé par rapport à la V1
-- Fiches différentes selon la thématique ?s
+- legendurl => ne fonctionne que s'il n'y a pas de style défini
+- Fiches différentes selon la thématique ?
+- Enlever icon => les rendre transparent dans le CSS
+- CSS : mettre en gras italique le nom des groupes
+- Clic sur titre pour lien fiche pas intuitif (ex : recensement)
+- Sous groupe inverse l'ordre d'affichage des couches => FAIT
+- Par couche, possibilité de filtrer l'affichage. Ex : je tape 'maison', EL cherche dans les champs de recherche définis. Il affiche en live le résultat
+	=> Problème CACHE donc de performance donc lent. Voir niveau communal. => V3 ?
+- 3ème niveau ?
