@@ -195,11 +195,11 @@
 
         </theme> 
         <theme name="Infrastructures Nautiques"  collapsed="true" id="nautique" icon="ship"> 
-                <layer id="ecluse" name="Ecluse - Trafic annuel" visible="true" tiled="false" namespace="rb"
-					queryable="true"
-                    searchable="true" infoformat="text/html" featurecount="20"
+                <layer id="ecluse_trafic" name="Ecluse - Trafic annuel" visible="true" tiled="false" namespace="rb"
+					queryable="true" searchable="true" infoformat="text/html" featurecount="20"
+					timefilter="true" timeinterval="year" timecontrol="slider" timemin="2002" timemax="2016" timevalues="2002,2004,2006,2008,2010,2012,2014,2016"
 					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
-					style="ecluse_trafic_echelle" legendurl="http://kartenn.region-bretagne.fr/img/legend/ecluse_trafic.png"
+					style="ecluse_trafic_millesime" legendurl="http://kartenn.region-bretagne.fr/img/legend/ecluse_trafic.png"
 					attribution="Région Bretagne" 
 					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=774a2065-339f-4802-a50f-4b84b6ca249f"
 					metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=774a2065-339f-4802-a50f-4b84b6ca249f" />  
