@@ -230,21 +230,23 @@
 					metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=ce651579-c92a-474d-aee1-6e44b5f55579" />                      
         </theme> 
         <theme name="Infrastructures Nautiques"  collapsed="true" id="nautique" icon="ship"> 
-                <layer id="ecluse" name="Ecluse" visible="true" tiled="false" 
+                <layer id="ecluse" name="Ecluse" visible="false" tiled="false" 
 					queryable="true" searchable="true" infoformat="text/html" featurecount="20"
 					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 					style="ecluse_style,ecluse_proprietaire,ecluse_trafic_echelle" stylesalias="Défaut,Propriétaire,Trafic"
 					attribution="Région Bretagne" 
 					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=774a2065-339f-4802-a50f-4b84b6ca249f"
 					metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=774a2065-339f-4802-a50f-4b84b6ca249f" />  
-                <layer id="ecluse_trafic" name="Ecluse - Trafic annuel" visible="false" tiled="false" 
-					queryable="true" infoformat="text/html" featurecount="20"
+                <layer id="ecluse_trafic" name="Ecluse - Trafic annuel" visible="true" tiled="false" 
+					queryable="true" infoformat="application/vnd.ogc.gml" infopanel="bottom-panel" featurecount="20"
 					timefilter="true" timeinterval="year" timecontrol="slider" timemin="2002" timemax="2016" timevalues="2002,2004,2006,2008,2010,2012,2014,2016"
 					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 					style="ecluse_trafic_millesime" legendurl="http://kartenn.region-bretagne.fr/img/legend/ecluse_trafic.png"
 					attribution="Région Bretagne" 
 					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=774a2065-339f-4802-a50f-4b84b6ca249f"
-					metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=774a2065-339f-4802-a50f-4b84b6ca249f" />  
+					metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=774a2065-339f-4802-a50f-4b84b6ca249f" > 
+		            <template url="apps/region/vn/templates/vn.ecluse_trafic.mst"></template>
+				</layer>		
                 <layer id="port_vn" name="Ports et mouillages " visible="false" tiled="false" 
 					queryable="true" 
                     infoformat="text/html" featurecount="20"

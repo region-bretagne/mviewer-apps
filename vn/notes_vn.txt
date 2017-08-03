@@ -21,6 +21,15 @@ Couleurs etat :
 4/ Moyen #e3c213
 5/ Bon #6e8225
 
+Graphe trafic :
+xml :
+	infopanel="bottom-panel" : afficher le panel en bas
+	pointer sur le template mst
+mst :
+	lien vers le php(ws)
+ws :
+	php + html + javascript
+
 Filtre sur brigade
 attributefilter="true" attributefield="brigade" attributevalues="Evran,Hennebont,Josselin,Mons,Pontivy,Redon,Saint-Germain"
 
