@@ -9,7 +9,7 @@
 		font-family:'roboto_medium'">{{trafic}} passages</span></span>
 			</div>	
 		</div>
-		<iframe class="iframe_bottom" src="http://172.16.10.31/ws/vn/iframe_ecluse_trafic.php?id_ecluse={{id_ecluse}}&time={{millesime}}"></iframe>
+		<iframe class="iframe_bottom" src="../ws/vn/iframe_ecluse_trafic.php?id_ecluse={{id_ecluse}}&time={{millesime}}"></iframe>
 					
 	</li>
 		
