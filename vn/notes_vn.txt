@@ -1,10 +1,59 @@
 Migration application VN TODO LIST :
 
-- Légende Ecluse : legendurl
+LE :
+- Intérêt infobulle bief ou écluse ?
+- Graphes écluse trafic : modèle circulation TER
+	- 1 graphe annuel en ligne
+	- 1 graphe par mois de l'année sélectionnée
+- Fiche écluse : se rapprocher de la fiche arrêt ferroviaire
+- Toutes les couches de la catégorie équipements : ajout analyse par état
+	=> Fait sur mobilier
+- Regroupement des bornes multi-services en 1 couche puis analyse par type (elec/eau/eu) + style par défaut + fiche d'information à reprendre
+- Regroupement toilette/douche en sanitaires
+- filtre atributaire bief, batiment et sanitaires par brigade fait
+- patrimoine arboré par diametre ou essence : SF sur QGIS
+- Lien elasticsearch
+
+Couleurs etat :
+1/ Ne sais pas ou Non renseigné ou vide #bbbbbb
+2/ Très dégradé / HS #b0252e
+3/ Dégradé #cf7a26
+4/ Moyen #e3c213
+5/ Bon #6e8225
+
+Graphe trafic :
+xml :
+	infopanel="bottom-panel" : afficher le panel en bas
+	pointer sur le template mst
+mst :
+	lien vers le php(ws)
+ws :
+	php + html + javascript
+
+Filtre sur brigade
+attributefilter="true" attributefield="brigade" attributevalues="Evran,Hennebont,Josselin,Mons,Pontivy,Redon,Saint-Germain"
+
+SP :
+- Authentification ne fonctionne plus
+- coordonnées GPS dans la fiche
 - L'ordre d'affichage des couches est inversé par rapport à la V1
 	=> Voir avec Sébastien si possible inverser. Ne semble pas logique. Valider avec Samuel le nouvel ordre d'affichage
 - Export légende
-- Test multisymbologies sur couche voie_navigable
-- Test filtre sur couche mobilier
-- Trafic : voir couche avec dimension temporelle
-- Intérêt infobulle bief ou écluse ?
+- Selection rubrique entière pas possible
+
+
+!! Après migration, à supprimer sur GeoServer :
+
+couches :
+-sanitaire_wc_vn
+-sanitaire_douche_vn
+-borne_eu_vn
+-borne_eau_vn
+-borne_elec_vn
+
+styles : 
+-point_eau_navigant
+-point_electricite
+-point_eu_vn
+-douche
+-sanitaires
