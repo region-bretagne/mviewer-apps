@@ -34,7 +34,7 @@ Filtre sur brigade
 attributefilter="true" attributefield="brigade" attributevalues="Evran,Hennebont,Josselin,Mons,Pontivy,Redon,Saint-Germain"
 
 SP :
-- Authentification ne fonctionne plus
+- Authentification
 - coordonnées GPS dans la fiche
 - L'ordre d'affichage des couches est inversé par rapport à la V1
 	=> Voir avec Sébastien si possible inverser. Ne semble pas logique. Valider avec Samuel le nouvel ordre d'affichage
