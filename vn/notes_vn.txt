@@ -2,17 +2,21 @@ Migration application VN TODO LIST :
 
 LE :
 - Intérêt infobulle bief ou écluse ?
-- Graphes écluse trafic : modèle circulation TER
-	- 1 graphe annuel en ligne
-	- 1 graphe par mois de l'année sélectionnée
-- Fiche écluse : se rapprocher de la fiche arrêt ferroviaire
+- MST reste à faire :
+	- Logos etat pour mobilier, sanitaires, pks
+	- logos WC / EAU / Douche pour sanitaires
+	- logos eau / elec / eau usé pour bornes multiservices
+	- trafic ecocompteurs
+	- arrondir surface étang 
+	- Couches globales
+	- Cocuhes patrimoine naturel, sites et paysages	
+
+			
 - Toutes les couches de la catégorie équipements : ajout analyse par état
 	=> Fait sur mobilier
-- Regroupement des bornes multi-services en 1 couche puis analyse par type (elec/eau/eu) + style par défaut + fiche d'information à reprendre
-- Regroupement toilette/douche en sanitaires
-- filtre atributaire bief, batiment et sanitaires par brigade fait
+- Regroupement des bornes multi-services en 1 couche puis analyse par type (elec/eau/eu) + style par défaut 
+	=> Fait
 - patrimoine arboré par diametre ou essence : SF sur QGIS
-- Lien elasticsearch
 
 Couleurs etat :
 1/ Ne sais pas ou Non renseigné ou vide #bbbbbb
@@ -35,7 +39,6 @@ attributefilter="true" attributefield="brigade" attributevalues="Evran,Hennebont
 
 SP :
 - Authentification
-- coordonnées GPS dans la fiche
 - L'ordre d'affichage des couches est inversé par rapport à la V1
 	=> Voir avec Sébastien si possible inverser. Ne semble pas logique. Valider avec Samuel le nouvel ordre d'affichage
 - Export légende

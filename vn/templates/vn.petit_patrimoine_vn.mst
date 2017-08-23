@@ -1,0 +1,82 @@
+{{#features}}
+	<li class="item" style="width:238px;">
+		<h3 class="title-feature">{{description}}</h3>
+        {{#photo}}                
+			<img src="{{photo}}" class="img-responsive" />
+        {{/photo}}                
+		<p class="text-feature">		
+			<span style="font-family:'roboto_bold'"> Commune :</span> {{commune}}<br/>
+			{{#observation}}                
+			<span style="font-family:'roboto_bold'"> Remarque :</span> {{observation}}<br/>
+			{{/observation}}                
+       </p>
+
+
+	</li>
+{{/features}}
+
+<style>
+	.title-feature {
+		color: #032e46;
+		font-family:"roboto_bold";
+		font-size:23px;
+		margin-bottom:1%;
+		line-height:1;
+	}
+	.subtitle-feature {
+		color: #032e46;
+		font-family:"roboto_bold";
+		font-size:18px;
+		margin-top:7%;
+		line-height:1;
+	}
+	.text-feature{
+		font-family:"roboto_regular";
+		color:#555;
+		font-size:13px;
+		margin-top:10%;
+	}
+	.info.N {
+   		background-image: url(http://kartenn.region-bretagne.fr/doc/transports/icons/non_1.png);
+   		background-size: 16px;
+    	background-repeat: no-repeat;
+   	    background-position-x: 0px;
+   	    margin-bottom:3px;
+	}
+	.info.O {
+   		background-image: url(http://kartenn.region-bretagne.fr/doc/transports/icons/oui.png);
+   		background-size: 16px;
+    	background-repeat: no-repeat;
+   	    background-position-x: 0px;
+   	    margin-bottom:3px;
+	}
+	.but_link{
+	    padding:10px 0 10px 0;
+	    font-size:13px;
+	    font-family:'roboto_regular', Arial, Sans-serif;
+	   	background:rgba(3, 46, 70, 0.9);
+	    color:#fff;
+	    width:100px;
+	    border:1px solid #032e46;
+	    margin-left: 25%;
+	}
+	.but_link:hover{
+	    background:rgba(3, 46, 70, 1);
+	    border:1px solid #032e46;
+	}
+	.but_link p{
+	  margin: 0;
+	  text-align:center;
+	  color:#fff;
+	} 
+	.but_link a{
+	  color: #fff;
+	}
+	.but_link a:hover{
+	  color:#fff;
+	}
+	.but_link a:focus{
+	  color:#fff; 
+	}
+
+</style>

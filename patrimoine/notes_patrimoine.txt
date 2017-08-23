@@ -2,7 +2,6 @@ Migration application Patrimoine TODO LIST :
 
 - legendurl => ne fonctionne que s'il n'y a pas de style défini
 - Fiches différentes selon la thématique ?
-- Enlever icon => les rendre transparent dans le CSS
 - CSS : mettre en gras italique le nom des groupes
 - Clic sur titre pour lien fiche pas intuitif (ex : recensement)
 - Sous groupe inverse l'ordre d'affichage des couches => FAIT
@@ -10,3 +9,7 @@ Migration application Patrimoine TODO LIST :
 	=> Problème CACHE donc de performance donc lent. Voir niveau communal. => V3 ?
 - 3ème niveau ?
 	=> SP/LE NON
+
+AA :
+- Enlever icon => les rendre transparent dans le CSS
+
