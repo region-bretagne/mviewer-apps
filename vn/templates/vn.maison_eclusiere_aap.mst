@@ -9,12 +9,11 @@
 			<span style="font-family:'roboto_bold'"> Activités :</span> {{activite}}<br/>
 			<span style="font-family:'roboto_bold'"> Type :</span> {{aap}}<br/>
 			{{#site_web}}
-
 			<div class="but_link">	
 				<p> <a href="{{site_web}}" target=_blank"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Site Web</a>
 				</p>
 			</div>			
-			{{/site_web}}                
+			{{/site_web}}
        </p>
 
 	</li>
