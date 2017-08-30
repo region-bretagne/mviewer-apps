@@ -9,7 +9,7 @@ LE :
 	- trafic ecocompteurs
 	- arrondir surface étang 
 	- Couches globales
-	- Cocuhes patrimoine naturel, sites et paysages	
+	- Couches patrimoine naturel, sites et paysages	
 
 			
 - Toutes les couches de la catégorie équipements : ajout analyse par état
@@ -39,10 +39,7 @@ attributefilter="true" attributefield="brigade" attributevalues="Evran,Hennebont
 
 SP :
 - Authentification
-- L'ordre d'affichage des couches est inversé par rapport à la V1
-	=> Voir avec Sébastien si possible inverser. Ne semble pas logique. Valider avec Samuel le nouvel ordre d'affichage
 - Export légende
-- Selection rubrique entière pas possible
 
 
 !! Après migration, à supprimer sur GeoServer :
