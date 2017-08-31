@@ -41,18 +41,7 @@
     <themes>
         <theme name="Infrastructures de transports"  collapsed="false" id="transport" icon="train">            
             <group name="Transports ferroviaires" id="grp1" >
-                <layer id="troncon_ferroviaire" name="Lignes ferroviaires"  visible="true" tiled="false"
-                    searchable="false" queryable="true" fields="axe" aliases="axe" secure="true"
-                    infoformat="application/vnd.ogc.gml" featurecount="20"
-                    style="transports_ligne_ferr_defaut, transports_ligne_ferr_typologie" 
-					stylesalias="Par défaut,Type d'infrastructures"
-                    url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-                    attribution="Région Bretagne" 
-					metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=0da27e88-4da6-423e-ba4c-dbcad9128cd2"
-					metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0da27e88-4da6-423e-ba4c-dbcad9128cd2">
-		            <template url="apps/region/transport/templates/transport.ligne_ferroviaire.mst"></template>
-		        </layer>
-                <layer id="arret_ferroviaire" name="Arrêts ferroviaires régionaux"  visible="true" tiled="false" 
+            	<layer id="arret_ferroviaire" name="Arrêts ferroviaires régionaux"  visible="true" tiled="false" 
                     searchable="true" queryable="true" fields="" aliases="" secure="true"                   
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     style="transports_arret_ferr_defaut, transports_arret_ferr_borne,transports_arret_ferr_guichet,transports_arret_ferr_info_dynami,transports_arret_ferr_nature,transports_arret_ferr_parking,transports_arret_ferr_velo,transports_arret_ferr_pmr,transports_arret_ferr_tgv"
@@ -72,6 +61,17 @@
                     attribution="Région Bretagne" 
                     metadata=""
                     metadata-csw="" />
+                <layer id="troncon_ferroviaire" name="Lignes ferroviaires"  visible="true" tiled="false"
+                    searchable="false" queryable="true" fields="axe" aliases="axe" secure="true"
+                    infoformat="application/vnd.ogc.gml" featurecount="20"
+                    style="transports_ligne_ferr_defaut, transports_ligne_ferr_typologie" 
+					stylesalias="Par défaut,Type d'infrastructures"
+                    url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+                    attribution="Région Bretagne" 
+					metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=0da27e88-4da6-423e-ba4c-dbcad9128cd2"
+					metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0da27e88-4da6-423e-ba4c-dbcad9128cd2">
+		            <template url="apps/region/transport/templates/transport.ligne_ferroviaire.mst"></template>
+		        </layer>  
             </group>
             <group name="Transports routiers régionaux" id="grp2" >
                 <layer id="arret_routier_regional" name="Arrêts routiers régionaux"  visible="false" tiled="false"
@@ -97,17 +97,7 @@
 		        </layer>
 			</group>
 			<group name="Transports routiers départementaux" id="grp3" >
-                <layer id="ligne_routiere_departementale" name="Lignes routières départementales"  visible="false" tiled="false" secure="true"
-                    searchable="false" queryable="true" fields="axe" aliases="axe"
-                    infoformat="application/vnd.ogc.gml" featurecount="20"
-                    style="transports_ligne_rout_dep_defaut" 
-                    url="http://kartenn.region-bretagne.fr/geoserver-proxy/interne/wms"
-                    attribution="Région Bretagne - GéoBretagne" 
-                    metadata=""
-                    metadata-csw="" >
-		            <template url="apps/region/transport/templates/transport.ligne_routiere_dep.mst"></template>
-		        </layer>
-		        <layer id="arret_routier_departemental" name="Arrêts routiers départementaux"  visible="false" tiled="false" secure="true"
+				<layer id="arret_routier_departemental" name="Arrêts routiers départementaux"  visible="false" tiled="false" secure="true"
                     searchable="false" queryable="true" fields="axe" aliases="axe"
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     style="transports_arret_rout_dep_defaut"
@@ -118,6 +108,16 @@
                     metadata-csw="">
 		            <template url="apps/region/transport/templates/transport.arret_routier_dep.mst"></template>
 		        </layer>
+                <layer id="ligne_routiere_departementale" name="Lignes routières départementales"  visible="false" tiled="false" secure="true"
+                    searchable="false" queryable="true" fields="axe" aliases="axe"
+                    infoformat="application/vnd.ogc.gml" featurecount="20"
+                    style="transports_ligne_rout_dep_defaut" 
+                    url="http://kartenn.region-bretagne.fr/geoserver-proxy/interne/wms"
+                    attribution="Région Bretagne - GéoBretagne" 
+                    metadata=""
+                    metadata-csw="" >
+		            <template url="apps/region/transport/templates/transport.ligne_routiere_dep.mst"></template>
+		        </layer>		        
 			</group>		
 			<group name="Autres" id="grp4" >		
                 <layer id="aeroports" name="Aéroports et aérodromes"  visible="false" tiled="false"
