@@ -3,16 +3,17 @@
 		<h3 class="title-feature">Sanitaires</h3>
 		<p class="text-feature">	
 			<span style="font-family:'roboto_bold'"> Equipements : </span>
-			{{#wc}}                
-				WC 
-			{{/wc}}      
-			{{#eau}}                
-				EAU 
-			{{/eau}}   
-			{{#douche}}                
-				DOUCHE
-			{{/douche}}   
-			<br/>
+				<div >
+				{{#wc}}
+					<img src="apps/region/vn/img/sanitaires.svg" width="75">
+				{{/wc}}      
+				{{#eau}}                
+					<img src="apps/region/vn/img/point_eau_randonneur.svg" width="75">
+				{{/eau}}   
+				{{#douche}}                
+					<img src="apps/region/vn/img/douche.svg" width="75">
+				{{/douche}}   
+				</div>
 			{{#gestion}}                
 				<span style="font-family:'roboto_bold'"> Gestionnaire :</span> {{gestionnaire}}<br/>
 			{{/gestion}}                
@@ -48,20 +49,6 @@
 		color:#555;
 		font-size:13px;
 		margin-top:10%;
-	}
-	.info.N {
-   		background-image: url(http://kartenn.region-bretagne.fr/doc/transports/icons/non_1.png);
-   		background-size: 16px;
-    	background-repeat: no-repeat;
-   	    background-position-x: 0px;
-   	    margin-bottom:3px;
-	}
-	.info.O {
-   		background-image: url(http://kartenn.region-bretagne.fr/doc/transports/icons/oui.png);
-   		background-size: 16px;
-    	background-repeat: no-repeat;
-   	    background-position-x: 0px;
-   	    margin-bottom:3px;
 	}
 	.but_link{
 	    padding:10px 0 10px 0;

@@ -4,12 +4,9 @@ LE :
 - Intérêt infobulle bief ou écluse ?
 - MST reste à faire :
 	- Logos etat pour mobilier, sanitaires, pks
-	- logos WC / EAU / Douche pour sanitaires
 	- logos eau / elec / eau usé pour bornes multiservices
 	- trafic ecocompteurs
 	- arrondir surface étang 
-	- Couches globales
-	- Couches patrimoine naturel, sites et paysages	
 
 			
 - Toutes les couches de la catégorie équipements : ajout analyse par état
@@ -17,6 +14,7 @@ LE :
 - Regroupement des bornes multi-services en 1 couche puis analyse par type (elec/eau/eu) + style par défaut 
 	=> Fait
 - patrimoine arboré par diametre ou essence : SF sur QGIS
+	=> Problème de cache
 
 Couleurs etat :
 1/ Ne sais pas ou Non renseigné ou vide #bbbbbb
