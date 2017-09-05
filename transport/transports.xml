@@ -6,7 +6,7 @@
   
 	<baselayers style="default"><!-- style="default"||gallery" -->            		
         <baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="GéoPortail" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
-            url="http://kartenn.region-bretagne.fr/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
+            url="https://kartenn.region-bretagne.fr/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
             attribution="&lt;a href='http://www.geoportail.fr/' target='_blank'>&lt;img src='http://api.ign.fr/geoportail/api/js/latest/theme/geoportal/img/logo_gp.gif'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
         <!--<baselayer  type="WMTS" id="etatmajor" label="Carte de l'état-major (1820-1866)" title="GéoPortail" maxscale="25000" thumbgallery="img/basemap/etatmajor.jpg"
             url="../wmts" layers="GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR40" format="image/jpeg" visible="false" fromcapacity="false"
@@ -25,14 +25,14 @@
 			url="http://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png" 
 			attribution="© MapQuest. Données : les contributeurs d'&lt;a href='http://www.openstreetmap.org/' target='_blank'>OpenStreetMap &lt;/a>,  &lt;a href='http://www.openstreetmap.org/copyright' target='_blank'>ODbL &lt;/a>" visible="false"/>       
         <baselayer  type="WMTS" id="scan2" label="Cartes IGN" title="GéoPortail" maxscale="2000" thumbgallery="img/basemap/scan.jpg"
-            url="http://kartenn.region-bretagne.fr/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.MAPS" format="image/jpeg" visible="false" fromcapacity="false"
+            url="https://kartenn.region-bretagne.fr/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.MAPS" format="image/jpeg" visible="false" fromcapacity="false"
             attribution="&lt;a href='http://www.geoportail.fr/' target='_blank'>&lt;img src='http://api.ign.fr/geoportail/api/js/latest/theme/geoportal/img/logo_gp.gif'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
     </baselayers> 
     <authentification url="who" loginurl="?login" logouturl="../j_spring_security_logout" enabled="true"/>
     <proxy url=""/>  
     
     <olscompletion url="http://api-adresse.data.gouv.fr/search/" type="ban"/>
-    <elasticsearch url="http://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="fussy_like_this" />
+    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="fussy_like_this" />
     <searchparameters bbox="true" localities="true" features="true"/>
 	<widgets>
        <!--<widget name="gauge"/>-->       
@@ -46,18 +46,18 @@
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     style="transports_arret_ferr_defaut, transports_arret_ferr_borne,transports_arret_ferr_guichet,transports_arret_ferr_info_dynami,transports_arret_ferr_nature,transports_arret_ferr_parking,transports_arret_ferr_velo,transports_arret_ferr_pmr,transports_arret_ferr_tgv"
                     stylesalias="Par défaut, Distributeur automatique de billet, Guichet, Information dynamique,Nature des arrêts ferroviaires,Parking voiture,Parking vélo, Assistance PMR, Arrêts desservis par le TGV"
-                    legendurl="http://kartenn.region-bretagne.fr/doc/transports/icons/gare.svg"
-                    url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+                    legendurl="https://kartenn.region-bretagne.fr/doc/transports/icons/gare.svg"
+                    url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Région Bretagne" 
-                    metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=4a9d13f7-17be-4a98-9f8f-907cf223072f"
-					metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=4a9d13f7-17be-4a98-9f8f-907cf223072f" >
+                    metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=4a9d13f7-17be-4a98-9f8f-907cf223072f"
+					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=4a9d13f7-17be-4a98-9f8f-907cf223072f" >
                     <template url="apps/region/transport/templates/transport.arret_ferroviaire.mst"></template>
                 </layer>
                 <layer id="pem" name="Pôles d'échanges multimodaux"  visible="false" tiled="false"
                     searchable="false" queryable="false" fields="nom_pa" aliases="nom_pa"
                     infoformat="text/html" featurecount="20"
                     style="transports_pem_defaut"
-                    url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+                    url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Région Bretagne" 
                     metadata=""
                     metadata-csw="" />
@@ -66,10 +66,10 @@
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     style="transports_ligne_ferr_defaut, transports_ligne_ferr_typologie" 
 					stylesalias="Par défaut,Type d'infrastructures"
-                    url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+                    url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Région Bretagne" 
-					metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=0da27e88-4da6-423e-ba4c-dbcad9128cd2"
-					metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0da27e88-4da6-423e-ba4c-dbcad9128cd2">
+					metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=0da27e88-4da6-423e-ba4c-dbcad9128cd2"
+					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0da27e88-4da6-423e-ba4c-dbcad9128cd2">
 		            <template url="apps/region/transport/templates/transport.ligne_ferroviaire.mst"></template>
 		        </layer>  
             </group>
@@ -78,21 +78,21 @@
                     searchable="false" queryable="true" secure="true"
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     style="transports_arret_rout_defaut"
-                    url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-                    legendurl="http://kartenn.region-bretagne.fr/doc/transports/icons/arret_rout_reg.svg"
+                    url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+                    legendurl="https://kartenn.region-bretagne.fr/doc/transports/icons/arret_rout_reg.svg"
                     attribution="Région Bretagne" 
-                    metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=72bdca86-f605-46c8-8b50-a4af3c629020"
-					metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=72bdca86-f605-46c8-8b50-a4af3c629020" >
+                    metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=72bdca86-f605-46c8-8b50-a4af3c629020"
+					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=72bdca86-f605-46c8-8b50-a4af3c629020" >
 		            <template url="apps/region/transport/templates/transport.arret_routier_reg.mst"></template>
 		        </layer>
                 <layer id="ligne_routiere_regionale" name="Lignes routières régionales"  visible="false" tiled="false" 
                     searchable="false" queryable="true" secure="true"
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     style="transports_ligne_rout_reg_defaut" 
-                    url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+                    url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Région Bretagne" 
-                    metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=d42415dd-f736-4b44-82c6-0259c0a667a3"
-					metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=d42415dd-f736-4b44-82c6-0259c0a667a3">
+                    metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=d42415dd-f736-4b44-82c6-0259c0a667a3"
+					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=d42415dd-f736-4b44-82c6-0259c0a667a3">
 		            <template url="apps/region/transport/templates/transport.ligne_routiere_reg.mst"></template>
 		        </layer>
 			</group>
@@ -101,8 +101,8 @@
                     searchable="false" queryable="true" fields="axe" aliases="axe"
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     style="transports_arret_rout_dep_defaut"
-                    legendurl="http://kartenn.region-bretagne.fr/doc/transports/icons/arret_rout_dep.svg" 
-                    url="http://kartenn.region-bretagne.fr/geoserver-proxy/interne/wms"
+                    legendurl="https://kartenn.region-bretagne.fr/doc/transports/icons/arret_rout_dep.svg" 
+                    url="../geoserver-proxy/interne/wms"
                     attribution="Région Bretagne - GéoBretagne" 
                     metadata=""
                     metadata-csw="">
@@ -112,7 +112,7 @@
                     searchable="false" queryable="true" fields="axe" aliases="axe"
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     style="transports_ligne_rout_dep_defaut" 
-                    url="http://kartenn.region-bretagne.fr/geoserver-proxy/interne/wms"
+                    url="../geoserver-proxy/interne/wms"
                     attribution="Région Bretagne - GéoBretagne" 
                     metadata=""
                     metadata-csw="" >
@@ -123,9 +123,9 @@
                 <layer id="aeroports" name="Aéroports et aérodromes"  visible="false" tiled="false"
                     searchable="false" queryable="true" fields="axe" aliases="axe"
                     infoformat="application/vnd.ogc.gml" featurecount="20"
-                    sld="http://kartenn.region-bretagne.fr/styles/aeroport.sld" 
+                    sld="https://kartenn.region-bretagne.fr/styles/aeroport.sld" 
                     url="https://geobretagne.fr/geoserver/dreal_b/ows"
-                    legendurl="http://kartenn.region-bretagne.fr/doc/transports/icons/aeroport.svg" 
+                    legendurl="https://kartenn.region-bretagne.fr/doc/transports/icons/aeroport.svg" 
                     attribution="DREAL Bretagne" 
                     metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=d09e52c5-080d-4478-ad94-f55de67cafaa"
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=d09e52c5-080d-4478-ad94-f55de67cafaa" >
@@ -134,9 +134,9 @@
                 <layer id="gare_maritime" name="Gares maritimes"  visible="false" tiled="false"
                     searchable="false" queryable="true" fields="axe" aliases="axe"   
                     infoformat="application/vnd.ogc.gml" featurecount="20"
-                    sld="http://kartenn.region-bretagne.fr/styles/gare_maritime.sld" 
+                    sld="https://kartenn.region-bretagne.fr/styles/gare_maritime.sld" 
                     url="https://geobretagne.fr/geoserver/dreal_b/ows"
-                    legendurl="http://kartenn.region-bretagne.fr/doc/transports/icons/gare_marit.svg" 
+                    legendurl="https://kartenn.region-bretagne.fr/doc/transports/icons/gare_marit.svg" 
                     attribution="DREAL Bretagne" 
                     metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=ffcb4e72-a01b-44f0-8da3-95a5b13c6e42"
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ffcb4e72-a01b-44f0-8da3-95a5b13c6e42" >
@@ -146,8 +146,8 @@
                     searchable="false" queryable="true" fields="axe" aliases="axe"
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     style="transports_aire_covoiturage" 
-                    url="http://kartenn.region-bretagne.fr/geoserver-proxy/interne/wms"
-                    legendurl="http://kartenn.region-bretagne.fr/doc/transports/icons/aire_covoiturage.svg" 
+                    url="../geoserver-proxy/interne/wms"
+                    legendurl="https://kartenn.region-bretagne.fr/doc/transports/icons/aire_covoiturage.svg" 
                     attribution="Région Bretagne - GéoBretagne" 
                     metadata=""
                     metadata-csw="" >
@@ -163,10 +163,10 @@
 				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2006" timemax="2017" timevalues="2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017"
 				style="transports_circulation_ete_lun,transports_circulation_ete_mar,transports_circulation_ete_mer,transports_circulation_ete_jeu,transports_circulation_ete_ven, transports_circulation_ete_sam, transports_circulation_ete_dim "
                 stylesalias="Lundi,Mardi,Mercredi,Jeudi,Vendredi,Samedi,Dimanche"
-				url="http://kartenn.region-bretagne.fr/geoserver-proxy/interne/wms"
+				url="../geoserver-proxy/interne/wms"
 				attribution="Région Bretagne" 
-				metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=63ce0894-0277-4d36-af03-36c2a0764911"
-				metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=63ce0894-0277-4d36-af03-36c2a0764911">
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=63ce0894-0277-4d36-af03-36c2a0764911"
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=63ce0894-0277-4d36-af03-36c2a0764911">
 		        <template url="apps/region/transport/templates/transport.circulation_ter_ete.mst"></template>
 		    </layer>					
 			<layer id="circulation_ter_hiver" name="Nombre de trains par jour en hiver"  visible="false" tiled="false"  secure="true"
@@ -176,10 +176,10 @@
 				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2006" timemax="2017" timevalues="2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017"
 				style="transports_circulation_hiv_lun, transports_circulation_hiv_mar, transports_circulation_hiv_mer, transports_circulation_hiv_jeu, transports_circulation_hiv_ven, transports_circulation_hiv_sam, transports_circulation_hiv_dim  "
 				stylesalias="Lundi,Mardi,Mercredi,Jeudi,Vendredi,Samedi,Dimanche"
-				url="http://kartenn.region-bretagne.fr/geoserver-proxy/interne/wms"
+				url="../geoserver-proxy/interne/wms"
 				attribution="Région Bretagne" 
-				metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=f95227d1-9fe9-43dd-a6fc-5d5e9d829f3e"
-				metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=f95227d1-9fe9-43dd-a6fc-5d5e9d829f3e">
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=f95227d1-9fe9-43dd-a6fc-5d5e9d829f3e"
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=f95227d1-9fe9-43dd-a6fc-5d5e9d829f3e">
 		        <template url="apps/region/transport/templates/transport.circulation_ter_hiver.mst"></template>
 		    </layer>					
         </theme>
@@ -188,10 +188,10 @@
                 infoformat="application/vnd.ogc.gml" featurecount="20"
 				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2013" timemax="2017" timevalues="2013,2014,2015,2016,2017"
 				style="transports_travaux_gare"
-				url="http://kartenn.region-bretagne.fr/geoserver-proxy/interne/wms"
+				url="../geoserver-proxy/interne/wms"
 				attribution="Région Bretagne" 
-				metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=54249ce5-b101-4bab-835e-cb59700bf7b1"
-				metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=54249ce5-b101-4bab-835e-cb59700bf7b1">
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=54249ce5-b101-4bab-835e-cb59700bf7b1"
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=54249ce5-b101-4bab-835e-cb59700bf7b1">
 		        <template url="apps/region/transport/templates/transport.travaux_gare.mst"></template>
 		    </layer>	
 			<layer id="travaux_troncon_geom" name="Tronçons ferroviaires"  visible="false" tiled="false" secure="true"
@@ -199,10 +199,10 @@
                 infoformat="application/vnd.ogc.gml" featurecount="20"
 				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2012" timemax="2017" timevalues="2012,2013,2014,2015,2016,2017"
 				style="transports_travaux_troncons"
-				url="http://kartenn.region-bretagne.fr/geoserver-proxy/interne/wms"
+				url="../geoserver-proxy/interne/wms"
 				attribution="Région Bretagne" 
-				metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=b96a9a45-9f26-424d-8af4-343a042ee8ca"
-				metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b96a9a45-9f26-424d-8af4-343a042ee8ca">
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=b96a9a45-9f26-424d-8af4-343a042ee8ca"
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b96a9a45-9f26-424d-8af4-343a042ee8ca">
 		        <template url="apps/region/transport/templates/transport.travaux_troncon.mst"></template>
 		    </layer>				
 				
@@ -214,10 +214,10 @@
                 infoformat="application/vnd.ogc.gml" featurecount="20"
 				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2009" timemax="2016" timevalues="2009,2010,2011,2012,2013,2014,2015,2016"
 				style="transports_aristote_an"
-				url="http://kartenn.region-bretagne.fr/geoserver-proxy/interne/wms"
+				url="../geoserver-proxy/interne/wms"
 				attribution="Région Bretagne" 
-				metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=f0e4f993-0e15-4fcd-8dfb-265fb17cd216"
-				metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=f0e4f993-0e15-4fcd-8dfb-265fb17cd216">
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=f0e4f993-0e15-4fcd-8dfb-265fb17cd216"
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=f0e4f993-0e15-4fcd-8dfb-265fb17cd216">
 		        <template url="apps/region/transport/templates/transport.aristote_annuel.mst"></template>
 		    </layer>					
         </theme>
@@ -228,10 +228,10 @@
 				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2012" timemax="2016" timevalues="2012,2013,2014,2015,2016"
 				style="transports_freq_jour_categorie,transports_freq_jour_totale,transports_freq_jour_h6_h9,transports_freq_jour_h16_h19"
 				stylesalias="Catégorie,Total, Entre 6h et 9h, Entre 16h et 19h"
-				url="http://kartenn.region-bretagne.fr/geoserver-proxy/interne/wms"
+				url="../geoserver-proxy/interne/wms"
 				attribution="Région Bretagne" 
-				metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=4337c740-f031-4a61-a7b6-0052e0d24e20"
-				metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=4337c740-f031-4a61-a7b6-0052e0d24e20">
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=4337c740-f031-4a61-a7b6-0052e0d24e20"
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=4337c740-f031-4a61-a7b6-0052e0d24e20">
 		        <template url="apps/region/transport/templates/transport.frequ_gare_journ.mst"></template>
 		    </layer>				
         </theme>
@@ -242,10 +242,10 @@
                 infoformat="application/vnd.ogc.gml" featurecount="20"
 				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2012" timemax="2016" timevalues="2012,2013,2014,2015,2016"
 				style="transports_korrigo_an"
-				url="http://kartenn.region-bretagne.fr/geoserver-proxy/interne/wms"
+				url="../geoserver-proxy/interne/wms"
 				attribution="Région Bretagne" 
-				metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=067c6ebe-d17f-4c89-ab53-c68a5fd96643"
-				metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=067c6ebe-d17f-4c89-ab53-c68a5fd96643">
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=067c6ebe-d17f-4c89-ab53-c68a5fd96643"
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=067c6ebe-d17f-4c89-ab53-c68a5fd96643">
 		        <template url="apps/region/transport/templates/transport.korrigo_annuel.mst"></template>
 		    </layer>
 			<layer id="korrigo_valid_plage_heure_annuelle_geom" name="Moyenne annuelle des validations par plage horaire"  visible="false" tiled="false" secure="true"
@@ -255,10 +255,10 @@
 				style="transports_korrigo_moins_h6,transports_korrigo_h6_h9, transports_korrigo_h9_h16, transports_korrigo_h16_h19, transports_korrigo_plus_h19"
 				stylesalias="Avant 6h,Entre 6h et 9h,Entre 9h et 16h,Entre 16h et 19h,Après 19h"
 				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2012" timemax="2016" timevalues="2012,2013,2014,2015,2016"
-				url="http://kartenn.region-bretagne.fr/geoserver-proxy/interne/wms"
+				url="../geoserver-proxy/interne/wms"
 				attribution="Région Bretagne" 
-				metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=4477c443-7924-4644-a01b-f66c14e93107"
-				metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=4477c443-7924-4644-a01b-f66c14e93107">
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=4477c443-7924-4644-a01b-f66c14e93107"
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=4477c443-7924-4644-a01b-f66c14e93107">
 		        <template url="apps/region/transport/templates/transport.korrigo_heure.mst"></template>
 		    </layer>
         </theme>		
@@ -270,7 +270,7 @@
                 infoformat="application/vnd.ogc.gml" featurecount="20"
                 style="etablissement_scolaire_nature"
                 stylesalias=""
-                url="http://kartenn.region-bretagne.fr/geoserver-proxy/interne/wms"
+                url="../geoserver-proxy/interne/wms"
                 attribution="Source: Data.gouv" 
                 metadata="https://www.data.gouv.fr/fr/datasets/adresse-et-geolocalisation-des-etablissements-denseignement-du-premier-et-second-degres/"
                 metadata-csw="" >
@@ -280,7 +280,7 @@
 				searchable="false" queryable="true" fields="appellatio" aliases="appellatio"
                 infoformat="application/vnd.ogc.gml" featurecount="20"
 				style="transports_administration_defaut"
-				url="http://kartenn.region-bretagne.fr/geoserver-proxy/interne/wms"
+				url="../geoserver-proxy/interne/wms"
 				attribution="BreizhGo" 
 				metadata=""
 				metadata-csw="" >
@@ -290,7 +290,7 @@
 				searchable="false" queryable="true" fields="appellatio" aliases="appellatio"
                 infoformat="application/vnd.ogc.gml" featurecount="20"
 				style="transports_patrimoine_naturel_defaut"
-				url="http://kartenn.region-bretagne.fr/geoserver-proxy/interne/wms"
+				url="../geoserver-proxy/interne/wms"
 				attribution="OpenData Tourisme Bretagne" 
 				metadata="http://www.data-tourisme-bretagne.com/data-presentation-ux/#/tourismebretagne/datasets/patnaturelBREfr/views/desc"
 				metadata-csw="">
@@ -300,7 +300,7 @@
 				searchable="false" queryable="true" fields="appellatio" aliases="appellatio"
                 infoformat="application/vnd.ogc.gml" featurecount="20"
 				style="transports_patrimoine_culturel_defaut"
-				url="http://kartenn.region-bretagne.fr/geoserver-proxy/interne/wms"
+				url="../geoserver-proxy/interne/wms"
 				attribution="BreizhGo" 
 				metadata=""
 				metadata-csw="">
@@ -310,7 +310,7 @@
 				searchable="false" queryable="true" fields="appellatio" aliases="appellatio"
                 infoformat="application/vnd.ogc.gml" featurecount="20"
 				style="transports_equip_sport_defaut"
-				url="http://kartenn.region-bretagne.fr/geoserver-proxy/interne/wms"
+				url="../geoserver-proxy/interne/wms"
 				attribution="Data.gouv" 
 				metadata="https://www.data.gouv.fr/fr/datasets/recensement-des-equipements-sportifs-espaces-et-sites-de-pratiques/"
 				metadata-csw="">
@@ -319,88 +319,88 @@
         </theme>
 		<theme name="Population"  collapsed="false" id="population" icon="male"> 
 			<layer id="rp_struct_pop_geom" name="Densité de population (hab/km²)"  visible="false" tiled="false"
-		                searchable="false" queryable="true"
-		                attributefilter="true" attributefield="level" attributevalues="Commune,EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
-		                infopanel="bottom-panel"
-		                infoformat="application/vnd.ogc.gml" featurecount="5"
-		                timefilter="true" timeinterval="year" timecontrol="slider" timemin="1999" timemax="2013" timevalues="1999,2008,2013"
-		                style="rphab_densite@commune"
-		                stylesalias=""
-		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="INSEE - Région Bretagne" 
-		                metadata=""
-		                metadata-csw="">
-		                <template url="apps/region/territoire/templates/territoire.pop.densite.mst"></template>
+				searchable="false" queryable="true"
+				attributefilter="true" attributefield="level" attributevalues="Commune,EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
+				infopanel="bottom-panel"
+				infoformat="application/vnd.ogc.gml" featurecount="5"
+				timefilter="true" timeinterval="year" timecontrol="slider" timemin="1999" timemax="2013" timevalues="1999,2008,2013"
+				style="rphab_densite@commune"
+				stylesalias=""
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+				attribution="INSEE - Région Bretagne" 
+				metadata=""
+				metadata-csw="">
+				<template url="apps/region/territoire/templates/territoire.pop.densite.mst"></template>
 		    </layer>
 			<layer id="rp_struct_pop_geom" name="Part de la population selon la catégorie d'âge (%)"  visible="false" tiled="false"
-		                searchable="false" queryable="true"
-		                attributefilter="true" attributefield="level" attributevalues="Commune,EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
-		                infopanel="bottom-panel"
-		                infoformat="application/vnd.ogc.gml" featurecount="5"
-		                timefilter="true" timeinterval="year" timecontrol="slider" timemin="1999" timemax="2013" timevalues="1999,2008,2013"
-		                style="rphab_tx0014@commune, rphab_tx1529@commune, rphab_tx3044@commune, rphab_tx4559@commune, rphab_tx6074@commune, rphab_tx75p@commune"
-		                stylesalias="0 - 14 ans, 15 -29 ans, 30 - 44 ans, 45 - 59 ans, 60 -74 ans, 75 ans et plus "
-		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="INSEE - Région Bretagne" 
-		                metadata=""
-		                metadata-csw="">
-		                <template url="apps/region/territoire/templates/territoire.pop.cat_age.mst"></template>
+				searchable="false" queryable="true"
+				attributefilter="true" attributefield="level" attributevalues="Commune,EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
+				infopanel="bottom-panel"
+				infoformat="application/vnd.ogc.gml" featurecount="5"
+				timefilter="true" timeinterval="year" timecontrol="slider" timemin="1999" timemax="2013" timevalues="1999,2008,2013"
+				style="rphab_tx0014@commune, rphab_tx1529@commune, rphab_tx3044@commune, rphab_tx4559@commune, rphab_tx6074@commune, rphab_tx75p@commune"
+				stylesalias="0 - 14 ans, 15 -29 ans, 30 - 44 ans, 45 - 59 ans, 60 -74 ans, 75 ans et plus "
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+				attribution="INSEE - Région Bretagne" 
+				metadata=""
+				metadata-csw="">
+				<template url="apps/region/territoire/templates/territoire.pop.cat_age.mst"></template>
 		    </layer>	
 		</theme>		
         <theme name="Découpages territoriaux"  collapsed="true" id="territoire" icon="globe"> 
-		<group name="Limites administratives" id="grp1" >
-			<layer id="commune" name="Commune" visible="false" queryable="false" 
-                fields="nom_geo" aliases="Nom" 
-                type="customlayer" style="" opacity="1" legendurl="apps/region/transport/img/commune.png" 
-                url="apps/region/transport/customlayers/commune.js" 
-                tooltip="true"
-                attribution="GéoBretagne" 
-                metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=b08e6cb1-236c-49b7-88f9-42b500d274d5" 
-                metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b08e6cb1-236c-49b7-88f9-42b500d274d5"/>	    
-            <layer id="epci" name="Intercommunalité" visible="false" queryable="false" 
-                fields="nom_geo" aliases="Nom" 
-                type="customlayer" style="" opacity="1" legendurl="apps/region/transport/img/epci.png" 
-                url="apps/region/transport/customlayers/epci.js" 
-                tooltip="true" tooltipenabled="true"
-                attribution="GéoBretagne" 
-                metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=2298d744-49cb-4fcb-9487-26f916fecdff" 
-                metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=2298d744-49cb-4fcb-9487-26f916fecdff"/>           
-            <layer id="pays" name="Pays" visible="false" queryable="false" 
-                fields="nom_geo" aliases="Nom" 
-                type="customlayer" style="" opacity="1" legendurl="apps/region/transport/img/pays.png" 
-                url="apps/region/transport/customlayers/pays.js" 
-                tooltip="true"
-                attribution="GéoBretagne" 
-                metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=9722d181-75f9-40ab-a136-a9f9ed6f29a5" 
-                metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9722d181-75f9-40ab-a136-a9f9ed6f29a5"/>
-            <layer id="departement" name="Département" visible="false" queryable="false" 
-                fields="nom_geo" aliases="Nom" 
-                type="customlayer" style="" opacity="1" legendurl="apps/region/transport/img/departement.png" 
-                url="apps/region/transport/customlayers/departement.js" 
-                tooltip="true"
-                attribution="GéoBretagne" 
-                metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=e16d50d4-746d-44e3-a5e7-5fc000f97665" 
-                metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=e16d50d4-746d-44e3-a5e7-5fc000f97665"/>
-		</group>
-		<group name="Périmètres d'action" id="grp2" >
-			<layer id="ptu" name="Ressorts territoriaux AOM"  visible="false" tiled="false" secure="true"
-				searchable="false" queryable="true" fields="appellatio" aliases="appellatio"
-                infoformat="application/vnd.ogc.gml" featurecount="20"
-				style="transports_ptus"
-				url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-				attribution="Région Bretagne" 
-				metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=972de151-f31e-4246-97b7-e1438a50e9dd"
-				metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=972de151-f31e-4246-97b7-e1438a50e9dd">
-                <template url="apps/region/transport/templates/transport.ptu.mst"></template>
-            </layer>        
-		</group>	
-        <group name="Autres" id="grp3" >
+			<group name="Limites administratives" id="grp1" >
+				<layer id="commune" name="Commune" visible="false" queryable="false" 
+					fields="nom_geo" aliases="Nom" 
+					type="customlayer" style="" opacity="1" legendurl="apps/region/transport/img/commune.png" 
+					url="apps/region/transport/customlayers/commune.js" 
+					tooltip="true"
+					attribution="GéoBretagne" 
+					metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=b08e6cb1-236c-49b7-88f9-42b500d274d5" 
+					metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b08e6cb1-236c-49b7-88f9-42b500d274d5"/>	    
+				<layer id="epci" name="Intercommunalité" visible="false" queryable="false" 
+					fields="nom_geo" aliases="Nom" 
+					type="customlayer" style="" opacity="1" legendurl="apps/region/transport/img/epci.png" 
+					url="apps/region/transport/customlayers/epci.js" 
+					tooltip="true" tooltipenabled="true"
+					attribution="GéoBretagne" 
+					metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=2298d744-49cb-4fcb-9487-26f916fecdff" 
+					metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=2298d744-49cb-4fcb-9487-26f916fecdff"/>           
+				<layer id="pays" name="Pays" visible="false" queryable="false" 
+					fields="nom_geo" aliases="Nom" 
+					type="customlayer" style="" opacity="1" legendurl="apps/region/transport/img/pays.png" 
+					url="apps/region/transport/customlayers/pays.js" 
+					tooltip="true"
+					attribution="GéoBretagne" 
+					metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=9722d181-75f9-40ab-a136-a9f9ed6f29a5" 
+					metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9722d181-75f9-40ab-a136-a9f9ed6f29a5"/>
+				<layer id="departement" name="Département" visible="false" queryable="false" 
+					fields="nom_geo" aliases="Nom" 
+					type="customlayer" style="" opacity="1" legendurl="apps/region/transport/img/departement.png" 
+					url="apps/region/transport/customlayers/departement.js" 
+					tooltip="true"
+					attribution="GéoBretagne" 
+					metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=e16d50d4-746d-44e3-a5e7-5fc000f97665" 
+					metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=e16d50d4-746d-44e3-a5e7-5fc000f97665"/>
+			</group>
+			<group name="Périmètres d'action" id="grp2" >
+				<layer id="ptu" name="Ressorts territoriaux AOM"  visible="false" tiled="false" secure="true"
+					searchable="false" queryable="true" fields="appellatio" aliases="appellatio"
+					infoformat="application/vnd.ogc.gml" featurecount="20"
+					style="transports_ptus"
+					url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+					attribution="Région Bretagne" 
+					metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=972de151-f31e-4246-97b7-e1438a50e9dd"
+					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=972de151-f31e-4246-97b7-e1438a50e9dd">
+					<template url="apps/region/transport/templates/transport.ptu.mst"></template>
+				</layer>        
+			</group>	
+			<group name="Autres" id="grp3" >
                 <layer id="bassin_vie" name="Bassin de vie"  visible="false" tiled="false"
                     searchable="false" queryable="true"                     
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     style="bassin_vie_default"
                     stylesalias=""
-                    url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+                    url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Sources: INSEE - GéoBretagne | 2012" 
                     metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=a536027f-7a66-4422-86b6-5cde9c35baec"
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a536027f-7a66-4422-86b6-5cde9c35baec">
@@ -410,30 +410,30 @@
                     searchable="false" queryable="true"
                     infoformat="application/vnd.ogc.gml" featurecount="20"     
                     url="https://geobretagne.fr/geoserver/dreal_b/ows"
-                    sld="http://kartenn.region-bretagne.fr/styles/unite_urbaine.sld"  
+                    sld="https://kartenn.region-bretagne.fr/styles/unite_urbaine.sld"  
                     attribution="Sources: DREAL - GéoBretagne | 2015" 
                     metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=6f79ace8-5aaa-47eb-a2a9-7be9778fc3e7"
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=6f79ace8-5aaa-47eb-a2a9-7be9778fc3e7" >
                     <template url="apps/region/global/templates/global.unite_urbaine.mst"></template>
                 </layer>
                 <layer id="aire_urbaine" name="Aire urbaine"  visible="false" tiled="false"
-                        searchable="false" queryable="true"
-                         attributefilter="true" attributefield="aiu_typologie" 
-                        attributevalues="Aire urbaine,Communes multipolarisées des grandes aires urbaines,Autres communes multipolarisées,Communes isolées hors influence des pôles"  attributelabel="Filtre" attributestylesync="false" attributefilterenabled="false"
-                        infoformat="application/vnd.ogc.gml" featurecount="20"
-                        style="aire_urbaine_default, aire_urbaine_typologie"
-                        stylesalias="Par défaut, Typologie des aires urbaines selon l'INSEE"
-                        url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-                        attribution="Sources: INSEE - GéoBretagne | 2010" 
-                        metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=12ee1299-3f7d-46e7-bd1e-6769b4ca3efd"
-                        metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=12ee1299-3f7d-46e7-bd1e-6769b4ca3efd">
-                        <template url="apps/region/global/templates/global.aire_urbaine.mst"></template>
+					searchable="false" queryable="true"
+					attributefilter="true" attributefield="aiu_typologie" 
+					attributevalues="Aire urbaine,Communes multipolarisées des grandes aires urbaines,Autres communes multipolarisées,Communes isolées hors influence des pôles"  attributelabel="Filtre" attributestylesync="false" attributefilterenabled="false"
+					infoformat="application/vnd.ogc.gml" featurecount="20"
+					style="aire_urbaine_default, aire_urbaine_typologie"
+					stylesalias="Par défaut, Typologie des aires urbaines selon l'INSEE"
+					url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+					attribution="Sources: INSEE - GéoBretagne | 2010" 
+					metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=12ee1299-3f7d-46e7-bd1e-6769b4ca3efd"
+					metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=12ee1299-3f7d-46e7-bd1e-6769b4ca3efd">
+					<template url="apps/region/global/templates/global.aire_urbaine.mst"></template>
                 </layer>
                 <layer id="zone_emploi_bretagne" name="Zone d'emploi"  visible="false" tiled="false"
                     searchable="false" queryable="true" fields="axe" aliases="axe"
                     infoformat="application/vnd.ogc.gml" featurecount="20"     
                     url="https://geobretagne.fr/geoserver/insee/ows" 
-                    sld="http://kartenn.region-bretagne.fr/styles/zone_emploi.sld" 
+                    sld="https://kartenn.region-bretagne.fr/styles/zone_emploi.sld" 
                     attribution="Sources: INSEE - GéoBretagne | 2010" 
                     metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=de7a586d-fffc-41c0-9c07-1f19c50ea068"
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=de7a586d-fffc-41c0-9c07-1f19c50ea068" >

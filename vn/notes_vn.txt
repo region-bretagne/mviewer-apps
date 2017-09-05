@@ -14,7 +14,7 @@ LE :
 - Regroupement des bornes multi-services en 1 couche puis analyse par type (elec/eau/eu) + style par défaut 
 	=> Fait
 - patrimoine arboré par diametre ou essence : SF sur QGIS
-	=> Problème de cache
+	=> Problème de cache. On affiche la couche qu'en deça une échelle
 
 Couleurs etat :
 1/ Ne sais pas ou Non renseigné ou vide #bbbbbb
