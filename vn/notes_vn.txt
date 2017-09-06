@@ -4,12 +4,9 @@ LE :
 - Intérêt infobulle bief ou écluse ?
 - MST reste à faire :
 	- Logos etat pour mobilier, sanitaires, pks
-	- logos WC / EAU / Douche pour sanitaires
 	- logos eau / elec / eau usé pour bornes multiservices
 	- trafic ecocompteurs
 	- arrondir surface étang 
-	- Couches globales
-	- Cocuhes patrimoine naturel, sites et paysages	
 
 			
 - Toutes les couches de la catégorie équipements : ajout analyse par état
@@ -17,6 +14,7 @@ LE :
 - Regroupement des bornes multi-services en 1 couche puis analyse par type (elec/eau/eu) + style par défaut 
 	=> Fait
 - patrimoine arboré par diametre ou essence : SF sur QGIS
+	=> Problème de cache. On affiche la couche qu'en deça une échelle
 
 Couleurs etat :
 1/ Ne sais pas ou Non renseigné ou vide #bbbbbb
@@ -39,10 +37,7 @@ attributefilter="true" attributefield="brigade" attributevalues="Evran,Hennebont
 
 SP :
 - Authentification
-- L'ordre d'affichage des couches est inversé par rapport à la V1
-	=> Voir avec Sébastien si possible inverser. Ne semble pas logique. Valider avec Samuel le nouvel ordre d'affichage
 - Export légende
-- Selection rubrique entière pas possible
 
 
 !! Après migration, à supprimer sur GeoServer :

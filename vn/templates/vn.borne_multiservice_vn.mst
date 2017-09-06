@@ -1,7 +1,10 @@
 {{#features}}
 	<li class="item" style="width:238px;">
 		<h3 class="title-feature">Borne multiservice</h3>
-		<p class="text-feature">	
+			<div class="eau {{eau}}"><span style="margin-left:20px;"></span></div>
+			<div class="elec {{elec}}"><span style="margin-left:20px;"></span></div>
+			<div class="eu {{eu}}"><span style="margin-left:20px;"></span></div>
+		<p class="text-feature">
 			{{#t_robinet}}                
 				<span style="font-family:'roboto_bold'"> Type de robinets :</span> {{t_robinet}}<br/>
 			{{/t_robinet}}
@@ -24,6 +27,9 @@
 {{/features}}
 
 <style>
+	.ligne{
+		display: inline-block;
+	}
 	.title-feature {
 		color: #032e46;
 		font-family:"roboto_bold";
@@ -44,20 +50,37 @@
 		font-size:13px;
 		margin-top:10%;
 	}
-	.info.N {
-   		background-image: url(http://kartenn.region-bretagne.fr/doc/transports/icons/non_1.png);
-   		background-size: 16px;
+	.eau.Non {
+	}
+	.eau.Oui {
+   		background-image: url(apps/region/vn/img/point_eau_navigant.svg);
+   		background-size: 75px;
     	background-repeat: no-repeat;
    	    background-position-x: 0px;
    	    margin-bottom:3px;
+		height:75px;
 	}
-	.info.O {
-   		background-image: url(http://kartenn.region-bretagne.fr/doc/transports/icons/oui.png);
-   		background-size: 16px;
+	.elec.Non {
+	}
+	.elec.Oui {
+   		background-image: url(apps/region/vn/img/electricite.svg);
+   		background-size: 75px;
     	background-repeat: no-repeat;
    	    background-position-x: 0px;
    	    margin-bottom:3px;
+		height:75px;
 	}
+	.eu.Non {
+	}
+	.eu.Oui {
+   		background-image: url(apps/region/vn/img/eaux_usees.svg);
+   		background-size: 75px;
+    	background-repeat: no-repeat;
+   	    background-position-x: 0px;
+   	    margin-bottom:3px;
+		height:75px;
+	}
+
 	.but_link{
 	    padding:10px 0 10px 0;
 	    font-size:13px;
