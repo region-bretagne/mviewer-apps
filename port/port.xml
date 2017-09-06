@@ -32,8 +32,8 @@
 				stylesalias="Par défaut, Type contrats, Validité contrats, Type concession"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=43ce0e25-ef3c-4e88-a546-6197e1f84d99" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=43ce0e25-ef3c-4e88-a546-6197e1f84d99">
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=43ce0e25-ef3c-4e88-a546-6197e1f84d99" 
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=43ce0e25-ef3c-4e88-a546-6197e1f84d99">
                 <template url="apps/region/port/templates/port.occupation_domaniale.mst"></template>
               </layer>  
 			<layer id="concession" name="Concessions" scalemin="0" scalemax="50000000" visible="false" tiled="false" namespace="rb"
@@ -42,8 +42,8 @@
 				style="" 
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution="Région Bretagne" 
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=9ee47f66-a2b2-40a8-a5cf-82f7fae4cbac" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9ee47f66-a2b2-40a8-a5cf-82f7fae4cbac">
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=9ee47f66-a2b2-40a8-a5cf-82f7fae4cbac" 
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9ee47f66-a2b2-40a8-a5cf-82f7fae4cbac">
                 <template url="apps/region/port/templates/port.concession.mst"></template>
               </layer>  
 			<layer id="contour_port_aero" name="Contour Port et Aéroport" scalemin="0" scalemax="50000000" visible="true" tiled="false" namespace="rb"
@@ -52,8 +52,8 @@
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="contour_port_aero_rouge" 
 				attribution="Région Bretagne" 
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=ca6d2fd1-68cd-4265-9453-f40d02400e49" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ca6d2fd1-68cd-4265-9453-f40d02400e49" />  
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=ca6d2fd1-68cd-4265-9453-f40d02400e49" 
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ca6d2fd1-68cd-4265-9453-f40d02400e49" />  
 			<layer id="aot_mouillage_groupe" name="AOT de mouillage groupé" scalemin="0" scalemax="50000000" visible="false" tiled="false" namespace="interne"
 				queryable="false" fields="concession" aliases="Concession" 
                 infoformat="text/html" featurecount="1"
@@ -94,8 +94,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>    
 			<layer id="mesure_environnementale_sediment_2015" name="2015"  visible="false" tiled="false"
@@ -108,8 +108,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>    
 			<layer id="mesure_environnementale_sediment_2014" name="2014"  visible="false" tiled="false"
@@ -122,8 +122,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>     
 			<layer id="mesure_environnementale_sediment_2013" name="2013"  visible="false" tiled="false"
@@ -136,8 +136,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>    
 			<layer id="mesure_environnementale_sediment_2012" name="2012"  visible="false" tiled="false"
@@ -150,8 +150,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>    
 			<layer id="mesure_environnementale_sediment_2011" name="2011"  visible="false" tiled="false"
@@ -164,8 +164,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>    
 			<layer id="mesure_environnementale_sediment_2010" name="2010"  visible="false" tiled="false"
@@ -178,8 +178,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>     
 			<layer id="mesure_environnementale_sediment_2009" name="2009"  visible="false" tiled="false"
@@ -192,8 +192,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>     
 			<layer id="mesure_environnementale_sediment_2008" name="2008"  visible="false" tiled="false"
@@ -206,8 +206,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>    
 			<layer id="mesure_environnementale_sediment_2007" name="2007"  visible="false" tiled="false"
@@ -220,8 +220,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>      
 			<layer id="mesure_environnementale_sediment_2006" name="2006"  visible="false" tiled="false"
@@ -234,8 +234,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>     
 			<layer id="mesure_environnementale_sediment_2005" name="2005"  visible="false" tiled="false"
@@ -248,8 +248,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>    
 			<layer id="mesure_environnementale_sediment_2004" name="2004"  visible="false" tiled="false"
@@ -262,8 +262,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>    
 			<layer id="mesure_environnementale_sediment_2003" name="2003"  visible="false" tiled="false"
@@ -276,8 +276,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>     
 			<layer id="mesure_environnementale_sediment_2002" name="2002"  visible="false" tiled="false"
@@ -290,8 +290,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>     
 			<layer id="mesure_environnementale_sediment_2001" name="2001"  visible="false" tiled="false"
@@ -304,8 +304,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>     
 			<layer id="mesure_environnementale_sediment_2000" name="2000"  visible="false" tiled="false"
@@ -318,8 +318,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>    
 			<layer id="mesure_environnementale_sediment_1999" name="1999"  visible="false" tiled="false"
@@ -332,8 +332,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>      
 			<layer id="mesure_environnementale_sediment_1998" name="1998"  visible="false" tiled="false"
@@ -346,8 +346,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>     
 			<layer id="mesure_environnementale_sediment_1997" name="1997"  visible="false" tiled="false"
@@ -360,8 +360,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>     
 			<layer id="mesure_environnementale_sediment_1996" name="1996"  visible="false" tiled="false"
@@ -374,8 +374,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>     
 			<layer id="mesure_environnementale_sediment_1992" name="1992"  visible="false" tiled="false"
@@ -388,8 +388,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>     
 
@@ -405,8 +405,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=fcbeeb28-be10-4eff-b0e7-b761429fa3aa"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=fcbeeb28-be10-4eff-b0e7-b761429fa3aa">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=fcbeeb28-be10-4eff-b0e7-b761429fa3aa"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=fcbeeb28-be10-4eff-b0e7-b761429fa3aa">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>    
 			<layer id="mesure_environnementale_eau_2014" name="2014"  visible="false" tiled="false"
@@ -419,8 +419,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=fcbeeb28-be10-4eff-b0e7-b761429fa3aa"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=fcbeeb28-be10-4eff-b0e7-b761429fa3aa">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=fcbeeb28-be10-4eff-b0e7-b761429fa3aa"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=fcbeeb28-be10-4eff-b0e7-b761429fa3aa">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>    
 			<layer id="mesure_environnementale_eau_2013" name="2013"  visible="false" tiled="false"
@@ -433,8 +433,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=fcbeeb28-be10-4eff-b0e7-b761429fa3aa"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=fcbeeb28-be10-4eff-b0e7-b761429fa3aa">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=fcbeeb28-be10-4eff-b0e7-b761429fa3aa"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=fcbeeb28-be10-4eff-b0e7-b761429fa3aa">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>    > 
 			<layer id="mesure_environnementale_eau_2012" name="2012"  visible="false" tiled="false"
@@ -447,8 +447,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=fcbeeb28-be10-4eff-b0e7-b761429fa3aa"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=fcbeeb28-be10-4eff-b0e7-b761429fa3aa">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=fcbeeb28-be10-4eff-b0e7-b761429fa3aa"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=fcbeeb28-be10-4eff-b0e7-b761429fa3aa">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>    
 			<layer id="mesure_environnementale_eau_2011" name="2011"  visible="false" tiled="false"
@@ -461,8 +461,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=fcbeeb28-be10-4eff-b0e7-b761429fa3aa"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=fcbeeb28-be10-4eff-b0e7-b761429fa3aa">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=fcbeeb28-be10-4eff-b0e7-b761429fa3aa"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=fcbeeb28-be10-4eff-b0e7-b761429fa3aa">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>    
 			<layer id="mesure_environnementale_eau_2010" name="2010"  visible="false" tiled="false"
@@ -475,8 +475,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=fcbeeb28-be10-4eff-b0e7-b761429fa3aa"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=fcbeeb28-be10-4eff-b0e7-b761429fa3aa">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=fcbeeb28-be10-4eff-b0e7-b761429fa3aa"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=fcbeeb28-be10-4eff-b0e7-b761429fa3aa">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>    
 			<layer id="mesure_environnementale_eau_2008" name="2008"  visible="false" tiled="false"
@@ -489,8 +489,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=fcbeeb28-be10-4eff-b0e7-b761429fa3aa"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=fcbeeb28-be10-4eff-b0e7-b761429fa3aa">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=fcbeeb28-be10-4eff-b0e7-b761429fa3aa"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=fcbeeb28-be10-4eff-b0e7-b761429fa3aa">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>    
 			<layer id="mesure_environnementale_eau_2007" name="2007"  visible="false" tiled="false"
@@ -503,8 +503,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=fcbeeb28-be10-4eff-b0e7-b761429fa3aa"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=fcbeeb28-be10-4eff-b0e7-b761429fa3aa">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=fcbeeb28-be10-4eff-b0e7-b761429fa3aa"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=fcbeeb28-be10-4eff-b0e7-b761429fa3aa">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>
 		</theme>
@@ -518,8 +518,8 @@
 				style="" 
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=8620c0c4-2fc8-42ba-a4ce-acacd950273e"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=8620c0c4-2fc8-42ba-a4ce-acacd950273e" />  
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=8620c0c4-2fc8-42ba-a4ce-acacd950273e"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=8620c0c4-2fc8-42ba-a4ce-acacd950273e" />  
 			<layer id="site_immersion_provenance" name="Provenance des sédiments" visible="false" tiled="false"
 				queryable="true" fields="" aliases="" 
 				secure="true"
@@ -529,8 +529,8 @@
 				style="" 
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=7e4cc8d0-642b-4b56-b521-a13c688ec882"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=7e4cc8d0-642b-4b56-b521-a13c688ec882" />  
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=7e4cc8d0-642b-4b56-b521-a13c688ec882"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=7e4cc8d0-642b-4b56-b521-a13c688ec882" />  
 		</theme>
 		<theme name="Infrastructures"  id="Infrastructures" collapsed="true" icon="home">
 			<layer id="infrastructure_port" name="Infrastructures" visible="false" tiled="false"
@@ -541,8 +541,8 @@
 				style="" 
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=17f623e6-ac00-42a4-90e3-abd2a945c758"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=17f623e6-ac00-42a4-90e3-abd2a945c758" />  
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=17f623e6-ac00-42a4-90e3-abd2a945c758"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=17f623e6-ac00-42a4-90e3-abd2a945c758" />  
 			<layer id="port" name="Ports" visible="false" tiled="false" namespace="rb"
 				queryable="true" fields="" aliases="" 
                 searchable="true"
@@ -551,8 +551,8 @@
 				style="" 
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c55c4fba-6a37-48ea-8754-a1bf770a684b"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=c55c4fba-6a37-48ea-8754-a1bf770a684b" />  
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c55c4fba-6a37-48ea-8754-a1bf770a684b"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=c55c4fba-6a37-48ea-8754-a1bf770a684b" />  
 			<layer id="ports_DPM" name="Domaine public maritime" visible="false" tiled="false" namespace="dreal_b"
 				queryable="true" fields="" aliases="" 
                 searchable="true"
@@ -573,8 +573,8 @@
 				style="" 
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ffebd1ad-f123-46d8-9982-0c21764652e2"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=ffebd1ad-f123-46d8-9982-0c21764652e2" />  
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ffebd1ad-f123-46d8-9982-0c21764652e2"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=ffebd1ad-f123-46d8-9982-0c21764652e2" />  
 			<layer id="sage_dreal" name="SAGE" visible="false" tiled="true" namespace="dreal_b"
 				queryable="true" fields="" aliases="" 
                 searchable="true"
