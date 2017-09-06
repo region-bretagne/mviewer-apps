@@ -287,53 +287,53 @@
        <theme name="Tourisme"  collapsed="true" id="tourisme" icon="suitcase"> 
             <layer id="destination_touristique" name="Destinations touristiques" visible="false" tiled="false"
 				queryable="true"
-                infoformat="text/html" featurecount="20" 
+                infoformat="application/vnd.ogc.gml" featurecount="20" 
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style=""
 				attribution="Région Bretagne" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=677d4e97-82bc-4d64-b11c-167f423900ae"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=677d4e97-82bc-4d64-b11c-167f423900ae" />	
+				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=677d4e97-82bc-4d64-b11c-167f423900ae" >	
+				<template url="apps/region/global/templates/global.destination_touristique.mst"></template>
+			</layer>
         </theme>
         <theme name="Sites régionaux"  collapsed="true" id="sites" icon="institution"> 
             <layer id="site_region" name="Sites région" visible="true" tiled="false"
 				queryable="true"
-                infoformat="text/html" featurecount="20" 
+                infoformat="application/vnd.ogc.gml" featurecount="20" 
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style=""
 				attribution="Région Bretagne" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a6dde882-4334-4ce0-909f-adb8597ada97"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=a6dde882-4334-4ce0-909f-adb8597ada97" />	
+				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=a6dde882-4334-4ce0-909f-adb8597ada97" >	
+				<template url="apps/region/global/templates/global.site_region.mst"></template>
+			</layer>
         </theme>
-        <theme name="Limites cadastrales"  collapsed="true" id="cadastre" icon="globe">  
-			<layer id="CP.CadastralZoning" name="Sections" scalemin="0" scalemax="50000" visible="false" tiled="false"
-				queryable="false" fields="label,nom_commune" aliases="Section,Commune"
-                infoformat="application/vnd.ogc.gml" featurecount="5"
-				style="" legendurl="http://kartenn.region-bretagne.fr/img/legend/cadastre_section.png"
-				sld="http://kartenn.region-bretagne.fr/styles/cadastre_section_rb.sld" 
-				url="https://geobretagne.fr/geoserver/cadastre/wms" 
-				attribution="DGFIP" 
-				metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=0ca82e1d-b487-4879-8185-56b7c4e1a948" 
-				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0ca82e1d-b487-4879-8185-56b7c4e1a948" />                        
-            <layer id="CP.CadastralBuilding" name="Bâti" scalemin="0" scalemax="25000" visible="false" tiled="true"
+        <theme name="Limites cadastrales"  collapsed="true" id="cadastre" icon="square"> 
+             <layer id="CP.CadastralBuilding" name="Bâti" scalemin="0" scalemax="25000" visible="false" tiled="true"
 				queryable="false" fields="" aliases=""
                 infoformat="application/vnd.ogc.gml" featurecount="5"                
-				style="" legendurl="http://kartenn.region-bretagne.fr/img/legend/cadastre_bati.png"
-				sld="http://kartenn.region-bretagne.fr/styles/cadastre_bati_rb.sld" 
+				style="cadastre_bati_type" legendurl=""
 				url="https://geobretagne.fr/geoserver/cadastre/wms" 
 				attribution="DGFIP" 
 				metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=0ca82e1d-b487-4879-8185-56b7c4e1a948"
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0ca82e1d-b487-4879-8185-56b7c4e1a948" />	
-            <layer id="CP.CadastralParcel" name="Parcelle cadastrale" scalemin="0" scalemax="25000" visible="false" tiled="true"
-				queryable="true" fields="label,nom_commune,areavalue" aliases="Parcelle,Commune,Surface" 
-                searchable="true" searchid="inspireid"
-                infoformat="application/vnd.ogc.gml" featurecount="5"             
-				style="" legendurl="http://kartenn.region-bretagne.fr/img/legend/cadastre_parcelle.png"
-				sld="http://kartenn.region-bretagne.fr/styles/cadastre_parcelle_rb.sld" 
+            <layer id="CP.CadastralParcel" name="Parcelle cadastrale" scalemin="0" scalemax="50000" visible="false" tiled="true"
+				queryable="true" fields="label,nom_commune,areavalue" aliases="Parcelle,Commune,Surface"
+                infoformat="text/html" featurecount="5"             
+				style=""
 				url="https://geobretagne.fr/geoserver/cadastre/wms" 
 				attribution="DGFIP" 
 				metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=0ca82e1d-b487-4879-8185-56b7c4e1a948" 
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0ca82e1d-b487-4879-8185-56b7c4e1a948" />
-		</theme>
+			<layer id="CP.CadastralZoning" name="Sections" scalemin="0" scalemax="50000" visible="false" tiled="false"
+				queryable="false" fields="label,nom_commune" aliases="Section,Commune"
+                infoformat="application/vnd.ogc.gml" featurecount="5"
+				style="cadastre_section_marron"
+				url="https://geobretagne.fr/geoserver/cadastre/wms" 
+				attribution="DGFIP" 
+				metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=0ca82e1d-b487-4879-8185-56b7c4e1a948" 
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0ca82e1d-b487-4879-8185-56b7c4e1a948" />                        
+        </theme> 
         <theme name="Limites administratives"  collapsed="true" id="territoire" icon="globe">  
 			<layer id="commune_bdcarto" name="Commune" visible="false" tiled="false"
 				queryable="true" fields="COMMUNE,INSEE_COM,SUPERFICIE" aliases="Nom,Code INSEE,Superficie"

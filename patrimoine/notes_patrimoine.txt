@@ -1,6 +1,5 @@
 Migration application Patrimoine TODO LIST :
 
-- Fiches différentes selon la thématique
 - Par couche, possibilité de filtrer l'affichage. Ex : je tape 'maison', EL cherche dans les champs de recherche définis. Il affiche en live le résultat
 	=> Problème CACHE donc de performance donc lent. Voir niveau communal. => V3 ?
 - 3ème niveau ?

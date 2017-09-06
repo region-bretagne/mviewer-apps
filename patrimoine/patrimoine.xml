@@ -74,7 +74,7 @@
 				attribution="Service de l'inventaire : Région Bretagne" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" > 
-		        <template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
+		        <template url="apps/region/patrimoine/templates/patrimoine.four_goemon.mst"></template>
 			</layer>						
 			<layer id="recensement_patrimoine_operation" name="Etablissements nautiques" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
@@ -104,7 +104,7 @@
 				attribution="Service de l'inventaire : Région Bretagne" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" > 
-		        <template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
+		        <template url="apps/region/patrimoine/templates/patrimoine.heritaj.mst"></template>
 			</layer>						
             <layer id="recensement_patrimoine_operation" name="Patrimoine linier et chanvrier en Bretagne" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
@@ -114,7 +114,7 @@
 				attribution="Service de l'inventaire : Région Bretagne" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" > 
-		        <template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
+		        <template url="apps/region/patrimoine/templates/patrimoine.linier_chanvrier.mst"></template>
 			</layer>						
             <layer id="recensement_patrimoine_operation" name="PNR Golfe du Morbihan" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
@@ -124,7 +124,7 @@
 				attribution="Service de l'inventaire : Région Bretagne" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" > 
-		        <template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
+		        <template url="apps/region/patrimoine/templates/patrimoine.pnr_golfe.mst"></template>
 			</layer>						
             <layer id="recensement_patrimoine_operation" name="Pontivy Communauté" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
@@ -134,7 +134,7 @@
 				attribution="Service de l'inventaire : Région Bretagne" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" > 
-		        <template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
+		        <template url="apps/region/patrimoine/templates/patrimoine.pontivy.mst"></template>
 			</layer>						
             <layer id="recensement_patrimoine_operation" name="Quimperlé Communauté" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
@@ -144,7 +144,7 @@
 				attribution="Service de l'inventaire : Région Bretagne" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" > 
-		        <template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
+		        <template url="apps/region/patrimoine/templates/patrimoine.quimperle.mst"></template>
 			</layer>						
             <layer id="recensement_patrimoine_operation" name="Recensement des patrimoines maritimes et estuariens du Pays de Morlaix" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
@@ -154,7 +154,7 @@
 				attribution="Service de l'inventaire : Région Bretagne" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" > 
-		        <template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
+		        <template url="apps/region/patrimoine/templates/patrimoine.pays_morlaix.mst"></template>
 			</layer>						
             <layer id="recensement_patrimoine_operation" name="Rennes Métropole" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
@@ -164,7 +164,7 @@
 				attribution="Service de l'inventaire : Région Bretagne" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" > 
-		        <template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
+		        <template url="apps/region/patrimoine/templates/patrimoine.rennes_metropole.mst"></template>
 			</layer>						
             <layer id="recensement_patrimoine_operation" name="Val d'Ille Aubigné" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
@@ -174,7 +174,7 @@
 				attribution="Service de l'inventaire : Région Bretagne" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" > 
-		        <template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
+		        <template url="apps/region/patrimoine/templates/patrimoine.valdille_aubigne.mst"></template>
 			</layer>						
             <layer id="recensement_patrimoine_operation" name="Vallée du Scorff" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
@@ -184,7 +184,7 @@
 				attribution="Service de l'inventaire : Région Bretagne" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" > 
-		        <template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
+		        <template url="apps/region/patrimoine/templates/patrimoine.vallee_scorff.mst"></template>
 			</layer>						
             <layer id="recensement_patrimoine_operation" name="Ville de Dinan" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
@@ -194,7 +194,7 @@
 				attribution="Service de l'inventaire : Région Bretagne" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" > 
-		        <template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
+		        <template url="apps/region/patrimoine/templates/patrimoine.dinan.mst"></template>
 			</layer>						
             <layer id="recensement_patrimoine_operation" name="Ville de Saint-Brieuc" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
@@ -204,7 +204,7 @@
 				attribution="Service de l'inventaire : Région Bretagne" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" > 
-		        <template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
+		        <template url="apps/region/patrimoine/templates/patrimoine.saint_brieuc.mst"></template>
 			</layer>						
             <layer id="recensement_patrimoine_operation" name="Voies navigables" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
@@ -214,7 +214,7 @@
 				attribution="Service de l'inventaire : Région Bretagne" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" > 
-		        <template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
+		        <template url="apps/region/patrimoine/templates/patrimoine.vn.mst"></template>
 			</layer>						
             <layer id="recensement_patrimoine_operation" name="Baie du Mont Saint Michel" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
