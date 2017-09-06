@@ -75,7 +75,8 @@
                 metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=91117783-14f0-409c-961e-9d2645f248ea"/>  
 		</theme>
         <theme name="OCS Morbihan 2013"  collapsed="true" id="theaia" icon="camera"><!-- icon="camerabullhorn" -->
-                <layer id="ocs56_couverture" name="Couverture"  visible="false" tiled="true" searchable="false" queryable="true" infoformat="application/vnd.ogc.gml" featurecount="20"
+                <layer id="ocs56_couverture" name="Couverture"  visible="false" tiled="true" searchable="false" queryable="true" infoformat="application/vnd.ogc.gml" 
+                        featurecount="20" dynamiclegend="true"
                          url="http://ows.region-bretagne.fr/geoserver/tmp/wms" attribution="Source: Mégalis Bretagne et collectivités bretonnes"
                          metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=ffcb4e72-a01b-44f0-8da3-95a5b13c6e42" metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ffcb4e72-a01b-44f0-8da3-95a5b13c6e42" >
 					<template url="apps/region/ocs56/templates/ocs.couverture.mst"></template>
