@@ -6,7 +6,7 @@
 		</p>
 		<h4 class="subtitle-feature">En {{annee}} :</h4>
 		<p class="text-feature" style="margin-top:0px;"> <i>Sources: Chiffres calculés à partir des données Korrigo </i></p>
-		<iframe style="border:none; height:350px; margin-top:10px;" src="http://kartenn.region-bretagne.fr/ws/transports/iframe_freq_journaliere.php?uic={{code_uic}}&time={{time_d}}"></iframe>
+		<iframe style="border:none; height:350px; margin-top:10px;" src="https://kartenn.region-bretagne.fr/ws/transports/iframe_freq_journaliere.php?uic={{code_uic}}&time={{time_d}}"></iframe>
 	</li>
 {{/features}}
 
