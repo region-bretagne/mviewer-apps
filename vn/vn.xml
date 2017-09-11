@@ -67,8 +67,8 @@
 			</layer>		
         </theme> 
 		<theme name="Patrimoine arboré"  collapsed="true" id="pat_arbre" icon="tree"> 
-			<layer id="arbre_individuel_vn" name="Arbre individuel" visible="false" tiled="true" 
-				queryable="true"
+			<layer id="arbre_individuel_vn" name="Arbre individuel" visible="false" tiled="false" 
+				queryable="true" scalemin="0" scalemax="20000"
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="arbre_type_vn,arbre_individuel_essence" stylesalias="Defaut,Essence" 
