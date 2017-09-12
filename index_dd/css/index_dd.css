@@ -25,16 +25,16 @@ p.navbar-text.mv-title{
 }
 
 .navbar-default{
-	border-color:#2d4059;
+	border-color:#213042;
 }
 
 #mv-navbar{
-	border-color:#2d4059;
-	background-color: #2d4059;
+	border-color:#213042;
+	background-color: #213042;
 }
 
 .navbar-header.fixed-brand{
-	background-color: #2d4059;
+	background-color: #213042;
 }
 	
 #mv-navbar a.navbar-brand, .mv-title{
@@ -57,26 +57,26 @@ p.navbar-text.mv-title{
 }
 
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
-	background-color:#2d4059;
+	background-color:#213042;
 }
 
 .ol-control button {
   color: #fff!important;
-  background-color: #2d4059!important;
+  background-color: #213042!important;
 }
 
 .ol-control button:focus, .ol-control button:hover {  
-  background-color: #2d4059;
+  background-color: #213042;
 }
 
 .gml-item-title {    
     font-family: 'roboto_regular', Arial, Sans-serif;
-	color:#2d4059;
+	color:#213042;
     font-size: 24px;
 }
 
 .popup-content .nav-tabs > li.active > a, .popup-content .nav-tabs > li.active > a:hover, .popup-content .nav-tabs > li.active > a:focus { 
-  border-left: thick solid #2d4059!important;
+  border-left: thick solid #213042!important;
 }
 
 #sidebar-wrapper{
@@ -104,8 +104,8 @@ p.navbar-text.mv-title{
 }
 
 #menu li a:hover{
-	border-left:#2d4059 0px solid;
-	background:#2d4059;
+	border-left:#213042 0px solid;
+	background:#213042;
 	color: #f8f8f8;
 }
 
@@ -115,7 +115,7 @@ p.navbar-text.mv-title{
 ********************************/
 #bottom-panel .mv-header h5{
 	font-family:'roboto_bold', Arial, Sans-serif;
-	color: #2d4059;	
+	color: #213042;	
 	font-size:13px;
 }
 
@@ -123,7 +123,7 @@ p.navbar-text.mv-title{
 	color:#fff;
 }
 #bottom-panel-btn .fa-chevron-down { 
-    background: #2d4059;
+    background: #213042;
 }
 
 /*******************************
@@ -133,13 +133,13 @@ p.navbar-text.mv-title{
 h3.title{
 	font-family: 'roboto_regular', Arial, Sans-serif;
 	font-size: 24px;
-	color:#2d4059;
+	color:#213042;
 	}
 	
 h4.title{
     font-family: 'roboto_regular', Arial, Sans-serif;
     font-size: 16px;
-    color:#2d4059;
+    color:#213042;
 }
 
 .info{
@@ -151,7 +151,7 @@ h4.title{
 }	
 
 #right-panel .mv-header {  
-  background-color: #2d4059;
+  background-color: #213042;
   color: #fff;  
 }
 
@@ -173,7 +173,7 @@ h4.title{
 ********************************/
 
 #layers-container a {
-	color: #2d4059;
+	color: #213042;
 	font-family: 'roboto_bold', Arial, Sans-serif;
 }
 
@@ -209,27 +209,27 @@ h4.title{
 
 /* Opacité */
 .mv-layer-options  .slider-selection{
-	background:#2d4059;	
+	background:#213042;	
 }
 
 .mv-layer-options .slider-handle {
-    background: #2d4059;
+    background: #213042;
 }
 
 .mv-layer-options .tooltip-inner{
-	background-color:#2d4059;
+	background-color:#213042;
 	border-radius: 4px;
 	font-family: 'roboto_regular', Arial, Sans-serif;
 }
 
 .mv-layer-options .tooltip.top .tooltip-arrow{
-	border-top-color:#2d4059;
+	border-top-color:#213042;
 }
 
 /* Temporalité */ 
 
 .mv-layer-options  .form-group-timer .slider-selection{
-	background:#2d4059;
+	background:#213042;
 	-webkit-box-shadow:inset 0 0px 0 rgba(0,0,0,0);
 }
 
@@ -238,34 +238,34 @@ h4.title{
 }
 
 .slider-tick.round.in-selection{
-	background: #2d4059;
+	background: #213042;
 	background-image: none;
 	-webkit-box-shadow:inset 0 0px 0 rgba(0,0,0,0);
 }
 
 .form-group-timer .slider-tick.round{
-	background:#2d4059;
+	background:#213042;
 	background-image:none;
 	-webkit-box-shadow:inset 0 0px 0 rgba(0,0,0,0);
 	opacity: 1;
 }
 
 .form-group-timer .tooltip.bottom .tooltip-arrow{
-	border-bottom-color:#2d4059;
+	border-bottom-color:#213042;
 }
 
 .mv-layer-options  .form-group-timer .slider-track-high{
-	background:#2d4059;	
+	background:#213042;	
 }
 
 #layers-container-box-header {
-  background-color: #2d4059;
+  background-color: #213042;
 }
 
 span.mv-time-player-selection {
     color: #fff;
     font-size: 13px;
-    background-color: #2d4059;
+    background-color: #213042;
 }
 
 /*******************************
@@ -277,7 +277,7 @@ ul#basemapslist p {
 }
 
 ul#basemapslist  li.active{	
-    border:2px #2d4059 outset;    
+    border:2px #213042 outset;    
 }
 
 .ol-scale-line-inner{
@@ -309,17 +309,17 @@ ul#basemapslist  li.active{
 ------------- BUTTON RIGHT TOOLBAR
 ********************************/
 #toolstoolbar.btn-warning{
-	background-color: #2d4059;
-	border-color: #2d4059;
+	background-color: #213042;
+	border-color: #213042;
 }
 
 #toolstoolbar.btn-warning:hover{
-	background-color: #2d4059;
-	border-color: #2d4059;
+	background-color: #213042;
+	border-color: #213042;
 }
 
 #alerts-zone .alert.alert-info {
-  background-color: #2d4059;
+  background-color: #213042;
   color: #fff;
 }
 
@@ -329,38 +329,38 @@ ul#basemapslist  li.active{
 }
 
 .datepicker .active {
-    background-color: #2d4059!important;
+    background-color: #213042!important;
 }
 
 .leftpanel-btn:hover {
-   color: #2d4059;
+   color: #213042;
 }
 
 /* Buttons tools*/
 #drawtoolsoptions .btn-default.active, #drawtoolsoptions .btn-default:active, #drawtoolsoptions .btn-default.focus, #drawtoolsoptions .btn-default:focus {
-	background-color:#2d4059;
-	border-color:#2d4059;
+	background-color:#213042;
+	border-color:#213042;
 }
 
 /* Tooltip measure */
 
 .tooltip2 {
-  background: #2d4059;
+  background: #213042;
   font-family: 'roboto_regular', Arial, Sans-serif;
 }
 
 .tooltip-measure-static {
-  background-color: #2d4059;
+  background-color: #213042;
   font-family: 'roboto_regular', Arial, Sans-serif;
 }
 
 .tooltip-measure:before,
 .tooltip-measure-static:before {
-  border-top: 6px solid #2d4059;
+  border-top: 6px solid #213042;
 }
 
 .tooltip-measure-static:before {
-  border-top-color: #2d4059;
+  border-top-color: #213042;
 }
 
  /* custom-tooltip-feature */
@@ -374,15 +374,15 @@ ul#basemapslist  li.active{
 }
 
 .tooltip.right .tooltip-feature.tooltip-arrow {
-    border-right-color: #2d4059; 
+    border-right-color: #213042; 
 }
 
 .tooltip.top .tooltip-feature.tooltip-arrow {
-    border-top-color: #2d4059; 
+    border-top-color: #213042; 
 }
 
 .tooltip.left .tooltip-feature.tooltip-arrow {
-    border-left-color: #2d4059; 
+    border-left-color: #213042; 
 }
 
 .tooltip-feature h5 {
@@ -395,7 +395,7 @@ ul#basemapslist  li.active{
 
 /* Custom-tooltip-infopanel */
 .mv-tooltip.tooltip-inner {
-    background-color: #2d4059;
+    background-color: #213042;
     padding: 8px 8px 8px;
     color: #fff;
     font-family: "roboto_regular", Arial, Sans-serif;
@@ -404,15 +404,15 @@ ul#basemapslist  li.active{
 }
 
 .tooltip.right .mv-tooltip.tooltip-arrow {
-    border-right-color: #2d4059; 
+    border-right-color: #213042; 
 }
 
 .tooltip.top .mv-tooltip.tooltip-arrow {
-    border-top-color: #2d4059; 
+    border-top-color: #213042; 
 }
 
 .tooltip.left .mv-tooltip.tooltip-arrow {
-    border-left-color: #2d4059; 
+    border-left-color: #213042; 
 }
 
 /*******************************
@@ -433,34 +433,34 @@ ul#searchparameters{
 /* Search toolbar */
 
 li.geoportail.list-group-item.disabled{
-	background-color:#2d4059;
-	border-color:#2d4059;
+	background-color:#213042;
+	border-color:#213042;
 	color: white!important;
 	font-family: 'roboto_bold', Arial, Sans-serif!important;
 }
 
 li.elasticsearch.list-group-item.disabled{
-	background-color:#2d4059!important;
-	border-color:#2d4059;
+	background-color:#213042!important;
+	border-color:#213042;
 	color: white!important;
 	font-family: 'roboto_bold', Arial, Sans-serif!important;
 }
 
 #searchresults li a:hover{
 	font-family:'roboto_bold', Arial, Sans-serif!important;
-	color:#2d4059!important;
+	color:#213042!important;
 }
 
 .popup-content .nav-tabs .active .glyphicon, .popup-content .nav-tabs .active .fa {
-  color: #2d4059;  
+  color: #213042;  
 }
 
 a:hover{
-	color: #2d4059;
+	color: #213042;
 }
 
 #searchtool .btn-default{
-	color:#2d4059;
+	color:#213042;
 }
 
 #parameterspanel .modal-header{
@@ -499,7 +499,7 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn{
 	min-width:34px;
 	border: 0px!important;
 	font-family: 'roboto_black', Arial, Sans-serif;
-	color:#2d4059;
+	color:#213042;
 	font-size: 15px;
 }
 
@@ -519,7 +519,7 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 }
 
 #help .nav-tabs{
-	border-bottom: 2px solid #2d4059;
+	border-bottom: 2px solid #213042;
 }
 
 #help .nav-tabs>li>a{
@@ -528,42 +528,42 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 }
 
 #help .nav-tabs>li.active>a{
-	background-color: #2d4059;
-	border-color: #2d4059;
+	background-color: #213042;
+	border-color: #213042;
 	color: white!important;
 }
 
 #help .nav-tabs>li>a:hover{
-	border-color: #eee #eee #2d4059!important;
+	border-color: #eee #eee #213042!important;
 }
 
 #help a:hover{
-	color: #2d4059!important;
+	color: #213042!important;
 }
 
 #help .modal-title{
     font-size: 25px;
     font-family: 'roboto_bold', Arial, Sans-serif;
-    color: #2d4059;
+    color: #213042;
 }
 
 #help .tab-pane h4{
 	font-family: 'roboto_bold', Arial, Sans-serif;
-    color: #2d4059;
+    color: #213042;
     font-size: 22px;
     margin-top: 20px;
 }
 
 #help .tab-pane h5{
 	font-family: 'roboto_bold', Arial, Sans-serif;
-    color: #2d4059;
+    color: #213042;
     font-size: 16px;
     margin-bottom: 2px;
 }
 
 #help .tab-pane h6{
 	font-family: 'roboto_bold', Arial, Sans-serif;
-    color: #2d4059;
+    color: #213042;
     font-size: 14px;
     margin-bottom: 2px;
 }
@@ -602,12 +602,12 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
     border-top: 1.1em solid rgba(3, 46, 70, 0.2);
     border-right: 1.1em solid rgba(3, 46, 70, 0.2);
     border-bottom: 1.1em solid rgba(3, 46, 70, 0.2);
-    border-left: 1.1em solid #2d4059;
+    border-left: 1.1em solid #213042;
 }
 
 .mv-iframe-indicator .loader {     
     border-top: 1.1em solid rgba(3, 46, 70, 0.2);
     border-right: 1.1em solid rgba(3, 46, 70, 0.2);
     border-bottom: 1.1em solid rgba(3, 46, 70, 0.2);
-    border-left: 1.1em solid #2d4059;
+    border-left: 1.1em solid #213042;
 }
