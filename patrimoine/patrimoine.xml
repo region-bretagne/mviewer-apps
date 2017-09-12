@@ -36,7 +36,7 @@
        <!--<widget name="gauge"/>-->
     </widgets> 
      <themes>
-       <theme name="Dossiers 'papier' avant 2000"  collapsed="true" id="papier" icon="book"> 
+       <theme name="Dossiers 'papier' avant 2000"  collapsed="true" id="papier" icon="caret-right"> 
             <layer id="inventaire_papiers" name="Dossiers 'papiers' avant 2000" visible="true" tiled="false"
 				queryable="true" infoformat="text/html" featurecount="20" 
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
@@ -45,7 +45,7 @@
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=e2588666-6b16-4d5a-bca2-5e927bc0a922"
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=e2588666-6b16-4d5a-bca2-5e927bc0a922" /> 
         </theme>
-        <theme name="Recensement avant études"  collapsed="true" id="recensement"> 
+        <theme name="Recensement avant études"  collapsed="true" id="recensement" icon="caret-right"> 
             <layer id="recensement_patrimoine" name="Recensement avant études" visible="false" tiled="true" 
 				searchable="true" queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
@@ -227,7 +227,7 @@
 		        <template url="apps/region/patrimoine/templates/patrimoine.saint_brieuc.mst"></template>
 			</layer>
 		</theme>
-        <theme name="Etudes topographiques"  collapsed="true" id="etudes">         
+        <theme name="Etudes topographiques"  collapsed="true" id="etudes" icon="caret-right">         
 			<layer id="etude_patrimoine_architecture" name="Architecture" visible="true" tiled="true"
 				queryable="true" searchable="true"
                 infoformat="application/vnd.ogc.gml" featurecount="50"
@@ -249,7 +249,7 @@
 		        <template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_mobilier.mst"></template>
 			</layer>
         </theme>
-        <theme name="Enquêtes thématiques"  collapsed="true" id="enq_thema">
+        <theme name="Enquêtes thématiques"  collapsed="true" id="enq_thema" icon="caret-right">
 			<group name="Architecture civile" id="archi_civile">
 				<layer id="etude_patrimoine_simple" name="Châteaux du 19ème siècle" visible="false" tiled="false"
 					queryable="true"
@@ -508,7 +508,7 @@
 				</layer>
 			</group>
         </theme>
-	<theme name="Edifices protégés MH"  collapsed="true" id="mh"> 
+	<theme name="Edifices protégés MH"  collapsed="true" id="mh" icon="caret-right"> 
 		<layer id="bretagne_immeuble_mh" name="Immeubles MH (source Etat)" visible="false" tiled="false"
 			queryable="true" fields="SITE" aliases="Site"
 			infoformat="text/html" featurecount="5"             
@@ -518,7 +518,7 @@
 			metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=de78afa5839169ff11e427d411c4f28b25460619" 
 			metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=de78afa5839169ff11e427d411c4f28b25460619" />
     </theme>
-	<theme name="Carte archéologique"  collapsed="true" id="archeo"> 
+	<theme name="Carte archéologique"  collapsed="true" id="archeo" icon="caret-right"> 
 		<layer id="site" name="Carte archéologique (source Etat)" visible="false" tiled="false"
 			queryable="true" fields="SITE" aliases="Site"
 			infoformat="text/html" featurecount="5"             
@@ -528,7 +528,7 @@
 			metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=cd3bc8a0-a3b0-4c0e-bcc4-df7fbb8c213b" 
 			metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=cd3bc8a0-a3b0-4c0e-bcc4-df7fbb8c213b" />
     </theme>
-	<theme name="Informations territoriales"  collapsed="true" id="territoire" icon="globe">  
+	<theme name="Informations territoriales"  collapsed="true" id="territoire" icon="caret-right">  
         <layer id="courbes-20m-10m-aoa" name="Courbes de niveaux" visible="false" tiled="true"
 				queryable="false" fields="" aliases=""
                 infoformat="text/html" featurecount="1"
