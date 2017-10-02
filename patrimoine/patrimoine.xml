@@ -236,6 +236,7 @@
 				searchable="false" queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+				legendurl="http://kartenn.region-bretagne.fr/img/legend/saint_brieuc.png"
 				filter="operation='Ville de Saint-Brieuc'"
 				attribution="Service de l'inventaire : Région Bretagne" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
