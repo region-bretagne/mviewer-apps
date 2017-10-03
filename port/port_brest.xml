@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
     <application title="Port de Brest" logo="apps/region/global/img/logo/rb_blanc.svg" help="apps/region/global/global_help.html"   exportpng="true" measuretools="true" style="apps/region/global/css/blue.css"/>
-    <mapoptions maxzoom="18" projection="EPSG:3857" center="-499572,6170777" zoom="13" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
+    <mapoptions maxzoom="18" projection="EPSG:3857" center="-494815,6170666" zoom="13" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 	<baselayers style="gallery"><!-- style="default"||gallery" -->            		
         <baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="GéoPortail" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
             url="../wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"

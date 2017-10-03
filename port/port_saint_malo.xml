@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
     <application title="Port de Saint-Malo" logo="apps/region/global/img/logo/rb_blanc.svg" help="apps/region/global/global_help.html"   exportpng="true" measuretools="true" style="apps/region/global/css/blue.css"/>
-    <mapoptions maxzoom="18" projection="EPSG:3857" center="-228489,6214781" zoom="13" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
+    <mapoptions maxzoom="18" projection="EPSG:3857" center="-224763,6214846" zoom="13" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery"><!-- style="default"||gallery" -->            		
         <baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="GéoPortail" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
