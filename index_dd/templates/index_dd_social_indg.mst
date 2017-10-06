@@ -34,9 +34,9 @@
           <div class="panel panel-default">
             <div class="panel-body">
               <h4 class="Title"><b>Quelle est la répartition des indicateurs ?</b></h4>
-              <canvas class="chart" id="RadarChartSociG" data-codegeo="{{code_geo}}" data-g1="{{g1_ind}}" data-g2="{{g2_ind}}" data-g3="" width="220" height="188"></canvas> 
+              <canvas class="chart" id="RadarChartSociG" data-codegeo="{{code_geo}}" data-g1="{{g1_ind}}" data-g2="{{g2_ind}}" data-g3="{{g3_ind}}" width="220" height="188"></canvas> 
               <p class="ChartLabel">
-              	Indicateur 1: Population de 15-50 ans non scolarisée sans aucun diplôme </br>Indicateur 2: Indice de diplôme </br>Indicateur 3: 
+              	Indicateur 1: Population de 15-50 ans non scolarisée sans aucun diplôme </br>Indicateur 2: Indice de diplôme </br>Indicateur 3: Part des apprenti.e.s parmi la population active occupée 
               </p> 
               <!--<p class="SubText">
               	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
@@ -139,7 +139,7 @@
     var indicateur_g = {};
 	indicateur_g.getData = function () {
 		var code_geo = $("#RadarChartSociG").attr("data-codegeo");
-		var data = {chart_social_g: {labels:["Indicateur 1","Indicateur 2"], data: {datasets:[[parseFloat($("#RadarChartSociG").attr("data-g1")),parseFloat($("#RadarChartSociG").attr("data-g2"))]]}}};
+		var data = {chart_social_g: {labels:["Indicateur 1","Indicateur 2","Indicateur 3"], data: {datasets:[[parseFloat($("#RadarChartSociG").attr("data-g1")),parseFloat($("#RadarChartSociG").attr("data-g2")),parseFloat($("#RadarChartSociG").attr("data-g3"))]]}}};
 		 console.log(data);
 		 //drawChart(data);
 
@@ -182,7 +182,7 @@
             scale: {
                 ticks: {
                     beginAtZero: true,
-                    max:1.2,
+                    max:1,
                     stepSize:0.2
                 },
                 pointLabels:{

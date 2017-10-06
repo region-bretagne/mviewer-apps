@@ -2,17 +2,19 @@ Migration application VN TODO LIST :
 
 LE :
 - Intérêt infobulle bief ou écluse ?
-- Graphes écluse trafic : modèle circulation TER
-	- 1 graphe annuel en ligne
-	- 1 graphe par mois de l'année sélectionnée
-- Fiche écluse : se rapprocher de la fiche arrêt ferroviaire
+- MST reste à faire :
+	- Logos etat pour mobilier, sanitaires, pks
+	- logos eau / elec / eau usé pour bornes multiservices
+	- trafic ecocompteurs
+	- arrondir surface étang 
+
+			
 - Toutes les couches de la catégorie équipements : ajout analyse par état
 	=> Fait sur mobilier
-- Regroupement des bornes multi-services en 1 couche puis analyse par type (elec/eau/eu) + style par défaut + fiche d'information à reprendre
-- Regroupement toilette/douche en sanitaires
-- filtre atributaire bief, batiment et sanitaires par brigade fait
+- Regroupement des bornes multi-services en 1 couche puis analyse par type (elec/eau/eu) + style par défaut 
+	=> Fait
 - patrimoine arboré par diametre ou essence : SF sur QGIS
-- Lien elasticsearch
+	=> Problème de cache. On affiche la couche qu'en deça une échelle
 
 Couleurs etat :
 1/ Ne sais pas ou Non renseigné ou vide #bbbbbb
@@ -21,16 +23,21 @@ Couleurs etat :
 4/ Moyen #e3c213
 5/ Bon #6e8225
 
+Graphe trafic :
+xml :
+	infopanel="bottom-panel" : afficher le panel en bas
+	pointer sur le template mst
+mst :
+	lien vers le php(ws)
+ws :
+	php + html + javascript
+
 Filtre sur brigade
 attributefilter="true" attributefield="brigade" attributevalues="Evran,Hennebont,Josselin,Mons,Pontivy,Redon,Saint-Germain"
 
 SP :
-- Authentification ne fonctionne plus
-- coordonnées GPS dans la fiche
-- L'ordre d'affichage des couches est inversé par rapport à la V1
-	=> Voir avec Sébastien si possible inverser. Ne semble pas logique. Valider avec Samuel le nouvel ordre d'affichage
+- Authentification
 - Export légende
-- Selection rubrique entière pas possible
 
 
 !! Après migration, à supprimer sur GeoServer :

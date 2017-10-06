@@ -109,6 +109,18 @@ p.navbar-text.mv-title{
 	color: #f8f8f8;
 }
 
+/* Supression des icônes dans le menu de navigation */
+/*#menu span.fa-stack{
+	display: none;
+	margin:0px!important;
+}
+
+#menu>li>a{
+	padding-top: 8px!important;
+    padding-bottom: 8px!important;
+    text-indent: 10px!important;
+}*/
+
 /*******************************
 ------------- BOTTOM PANEL
 ********************************/

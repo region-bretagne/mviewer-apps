@@ -1,0 +1,43 @@
+{{#features}}
+	<li class="item" style="width:238px;">
+		<h3 class="title-feature">{{nom_batiment}}</h3>
+		{{#image}}
+			<img src="{{image}}" class="img-responsive" style="margin-top:5%;" />
+		{{/image}}
+		
+
+		<p class="text-feature">		
+			<span style="font-family:'roboto_bold'"> Type :</span> {{type}}<br/>
+			<span style="font-family:'roboto_bold'"> Adresse :</span> {{adresse}} {{code_postal}} {{ville}}<br/>
+			{{#telephone}}
+				<span style="font-family:'roboto_bold'"> Téléphone :</span> {{telephone}}<br/>
+			{{/telephone}}
+			{{#fax}}
+			<span style="font-family:'roboto_bold'"> Fax :</span> {{fax}}<br/>
+			{{/fax}}
+       </p>
+	</li>
+{{/features}}
+
+<style>
+	.title-feature {
+		color: #000000;
+		font-family:"roboto_bold";
+		font-size:23px;
+		margin-bottom:1%;
+		line-height:1;
+	}
+	.subtitle-feature {
+		color: #000000;
+		font-family:"roboto_bold";
+		font-size:18px;
+		margin-top:7%;
+		line-height:1;
+	}
+	.text-feature{
+		font-family:"roboto_regular";
+		color:#555;
+		font-size:13px;
+		margin-top:10%;
+	}	
+</style>

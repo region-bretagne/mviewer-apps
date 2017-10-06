@@ -34,6 +34,17 @@
 
     <themes mini="false">    
     	<theme name="Dimension sociale"  collapsed="true" id="social" icon="group">
+    			<layer id="idd_dim_social_geom" name="Inégalités, pauvreté et exclusion"  visible="false" tiled="false"
+	              	searchable="false" queryable="true"
+	                infoformat="application/vnd.ogc.gml" featurecount="5"
+	                style="idd_social_inde"
+	                stylesalias=""
+	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+	                attribution="Index" 
+	                metadata=""
+	                metadata-csw="">
+	                <template url="apps/region/index_dd/templates/index_dd_social_inde.mst"></template>
+		        </layer>
 		        <layer id="idd_dim_social_geom" name="Éducation et Formation"  visible="false" tiled="false"
 	              	searchable="false" queryable="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
@@ -44,7 +55,7 @@
 	                metadata=""
 	                metadata-csw="">
 	                <template url="apps/region/index_dd/templates/index_dd_social_indg.mst"></template>
-		        </layer>
+		        </layer>		        
         </theme>	
         <theme name="Dimension économique"  collapsed="false" id="economie" icon="institution">
 		        <layer id="idd_dim_eco_geom" name="Accès à l'emploi"  visible="true" tiled="false"

@@ -1,0 +1,113 @@
+{{#features}}
+	<li class="item" style="width:238px;">
+		<h3 class="title-feature">Borne multiservice</h3>
+			<div class="eau {{eau}}"><span style="margin-left:20px;"></span></div>
+			<div class="elec {{elec}}"><span style="margin-left:20px;"></span></div>
+			<div class="eu {{eu}}"><span style="margin-left:20px;"></span></div>
+		<p class="text-feature">
+			{{#t_robinet}}                
+				<span style="font-family:'roboto_bold'"> Type de robinets :</span> {{t_robinet}}<br/>
+			{{/t_robinet}}
+			{{#n_robinet}}                
+				<span style="font-family:'roboto_bold'"> Nombre de robinets :</span> {{n_robinet}}<br/>
+			{{/n_robinet}}                
+			{{#t_prise}}                
+				<span style="font-family:'roboto_bold'"> Type de prises :</span> {{t_prise}}<br/>
+			{{/t_prise}}
+			{{#n_prise}}                
+				<span style="font-family:'roboto_bold'"> Nombre de prises :</span> {{n_prise}}<br/>
+			{{/n_prise}}                
+			{{#observation}}                
+				<span style="font-family:'roboto_bold'"> Observations :</span> {{observation}}<br/>
+			{{/observation}}                
+       </p>
+
+
+	</li>
+{{/features}}
+
+<style>
+	.ligne{
+		display: inline-block;
+	}
+	.title-feature {
+		color: #032e46;
+		font-family:"roboto_bold";
+		font-size:23px;
+		margin-bottom:1%;
+		line-height:1;
+	}
+	.subtitle-feature {
+		color: #032e46;
+		font-family:"roboto_bold";
+		font-size:18px;
+		margin-top:7%;
+		line-height:1;
+	}
+	.text-feature{
+		font-family:"roboto_regular";
+		color:#555;
+		font-size:13px;
+		margin-top:10%;
+	}
+	.eau.Non {
+	}
+	.eau.Oui {
+   		background-image: url(apps/region/vn/img/point_eau_navigant.svg);
+   		background-size: 75px;
+    	background-repeat: no-repeat;
+   	    background-position-x: 0px;
+   	    margin-bottom:3px;
+		height:75px;
+	}
+	.elec.Non {
+	}
+	.elec.Oui {
+   		background-image: url(apps/region/vn/img/electricite.svg);
+   		background-size: 75px;
+    	background-repeat: no-repeat;
+   	    background-position-x: 0px;
+   	    margin-bottom:3px;
+		height:75px;
+	}
+	.eu.Non {
+	}
+	.eu.Oui {
+   		background-image: url(apps/region/vn/img/eaux_usees.svg);
+   		background-size: 75px;
+    	background-repeat: no-repeat;
+   	    background-position-x: 0px;
+   	    margin-bottom:3px;
+		height:75px;
+	}
+
+	.but_link{
+	    padding:10px 0 10px 0;
+	    font-size:13px;
+	    font-family:'roboto_regular', Arial, Sans-serif;
+	   	background:rgba(3, 46, 70, 0.9);
+	    color:#fff;
+	    width:100px;
+	    border:1px solid #032e46;
+	    margin-left: 25%;
+	}
+	.but_link:hover{
+	    background:rgba(3, 46, 70, 1);
+	    border:1px solid #032e46;
+	}
+	.but_link p{
+	  margin: 0;
+	  text-align:center;
+	  color:#fff;
+	} 
+	.but_link a{
+	  color: #fff;
+	}
+	.but_link a:hover{
+	  color:#fff;
+	}
+	.but_link a:focus{
+	  color:#fff; 
+	}
+
+</style>
