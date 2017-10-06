@@ -93,12 +93,12 @@
 							<template url="apps/region/ocs56/templates/ocs.artificialisation.mst"></template>
 				</layer> 				
         </theme>			
-		<theme name="OCS satellite Theia"  collapsed="true" id="theia" icon="camera">
+<!-- 		<theme name="OCS satellite Theia"  collapsed="true" id="theia" icon="camera">
                 <layer id="S2_2016_AllFeatures" name="Carte d'occupation des sols 2016"  visible="false" tiled="true" searchable="false" queryable="false" legendurl="apps/region/ocs56/img/ocs_theia.png"
 						 url="http://cyan.ups-tlse.fr:8080/geoserver/Theia_OSO/wms" attribution="Source: Théia">
 					<template url="apps/region/ocs56/templates/ocs.couverture.mst"></template>
                 </layer>
-         </theme>
+         </theme> -->
 		<theme name="OCS Costel"  collapsed="true" id="costel" icon="camera">
                 <layer id="costel_2005_dreal" name="Carte d'occupation des sols 2005"  visible="false" tiled="true" searchable="false" queryable="false" legendurl="apps/region/ocs56/img/ocs_theia.png"
 						 url="https://geobretagne.fr:443/geoserver/dreal_b/wms" attribution="Source: Costel">
