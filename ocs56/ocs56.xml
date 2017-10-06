@@ -82,7 +82,7 @@
                 </layer>
 				<layer id="ocs_indice_union_geom" name="Classification des couvertures"  visible="true" tiled="false"
 							searchable="false" queryable="true"
-							attributefilter="true" attributefield="level" attributevalues="Commune,EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
+							attributefilter="true" attributefield="level" attributevalues="Commune,EPCI,SCOT,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
 							infopanel="bottom-panel"
 							infoformat="application/vnd.ogc.gml" featurecount="5"
 							style="ocstxartific@commune,ocstxagri@commune,ocstxespnat@commune,ocstxeau@commune,ocstxforets@commune,ocstxsolsnus@commune"

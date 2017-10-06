@@ -18,7 +18,7 @@
 			<iframe class="iframe_bottom"src="../ws/ocs56/ocs.ind.pays.php?code_geo={{code_geo}}"></iframe>
 		{{/Pays}}
 		{{#SCOT}}
-			<iframe class="iframe_bottom"src="../ws/territoire/pop.formation.scot.php?code_geo={{code_geo}}&time={{datation}}"></iframe>
+			<iframe class="iframe_bottom"src="../ws/ocs56/ocs.ind.scot.php?code_geo={{code_geo}}"></iframe>
 		{{/SCOT}}				
 	</li>
 		
