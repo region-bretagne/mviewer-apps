@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="Patrimoine culturel" logo="apps/region/global/img/logo/rb_blanc.svg" help="mviewer_help.html" exportpng="true" style="apps/region/patrimoine/css/kartenn_patrimoine.css" measuretools="true" togglealllayersfromtheme="true"/>
+    <application title="Patrimoine culturel" logo="apps/region/global/img/logo/rb_blanc.svg" help="apps/region/patrimoine/patrimoine_help.html" exportpng="true" style="apps/region/patrimoine/css/kartenn_patrimoine.css" measuretools="true" togglealllayersfromtheme="true"/>
     <mapoptions maxzoom="20" projection="EPSG:3857" center="-291072,6187119" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery"><!-- style="default"||gallery" -->     

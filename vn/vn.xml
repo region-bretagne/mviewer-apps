@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="Kartenn VN" logo="apps/region/global/img/logo/rb_blanc.svg" help="mviewer_help.html" measuretools="true" legend="true" popup="false" exportpng="true" legendasimage="true" coordinates="true" togglealllayersfromtheme="true" style="apps/region/vn/css/vn.css"/>
+    <application title="Kartenn VN" logo="apps/region/global/img/logo/rb_blanc.svg" help="apps/region/global/global_help.html" measuretools="true" legend="true" popup="false" exportpng="true" legendasimage="true" coordinates="true" togglealllayersfromtheme="true" style="apps/region/vn/css/vn.css"/>
     <mapoptions maxzoom="20" projection="EPSG:3857" center="-291072,6187119" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery">
@@ -315,7 +315,7 @@
 			<layer id="bief" name="Bief" visible="false" tiled="false" 
 				searchable="true" queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
-				url="https://ows.region-bretagne.fr/geoserver/rb/wms" style="bief,bief_enjeu_bio" stylesalias="Defaut,Enjeu Bio"  
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" style="bief_defaut,bief_enjeu_bio" stylesalias="Défaut,Enjeu bio"  
 				attributefilter="true" attributefield="brigade" attributevalues="Evran,Hennebont,Josselin,Mons,Pontivy,Redon,Saint-Germain"
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=403d129b-e8ca-48ff-81a9-77401c1d933b"
