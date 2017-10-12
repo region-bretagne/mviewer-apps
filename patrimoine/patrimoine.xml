@@ -111,6 +111,17 @@
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" > 
 		        <template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
 			</layer>
+            <layer id="recensement_patrimoine" name="Inventaire du patrimoine culturel maritime de l'estuaire de Tréguier" visible="false" tiled="false" 
+				searchable="false" queryable="true" 
+				infoformat="application/vnd.ogc.gml" featurecount="20"
+                legendurl=""
+				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+				filter="operation LIKE '%Tréguier'"
+				attribution="Service de l'inventaire : Région Bretagne" 
+				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
+				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" > 
+		        <template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
+			</layer>
             <layer id="recensement_patrimoine" name="Maisons à pan de bois de Quimper" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
