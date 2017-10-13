@@ -25,7 +25,7 @@
     <authentification url="who" loginurl="?login" logouturl="../j_spring_security_logout" enabled="true"/>
     <olscompletion url="../olscompletion"/>
 
-    <themes>
+    <themes mini="true">
         <theme name="Sites régionaux"  collapsed="true" id="sites" icon="home"> 
             <layer id="site_region" name="Sites région" scalemin="0" scalemax="50000000" visible="true" tiled="false" namespace="rb"
 				queryable="true" fields="nom_batiment,adresse,code_postal,ville,telephone" aliases="Batiment,Adresse,Code Postal,Ville,Téléphone"
