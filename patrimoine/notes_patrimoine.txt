@@ -5,5 +5,4 @@ Migration application Patrimoine TODO LIST :
 - 3ème niveau ?
 	=> SP/LE NON
 
-AA :
 - Ordre affichage différent selon zoom : exemple commune de Berrien
