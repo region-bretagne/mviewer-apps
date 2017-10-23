@@ -145,7 +145,7 @@
 				queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-				style="mobilier_etat,mobilier" stylesalias="Etat,Type" 
+				style="mobilier,mobilier_etat" stylesalias="Type,Etat" 
 				attributefilter="true" attributevalues="Très dégradé,Dégradé,Moyen,Bon" attributefield="etat"
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5d46b3e3-3a21-4f78-978d-fb38027ca971"
@@ -203,16 +203,16 @@
 			</layer>							
         </theme> 
         <theme name="Infrastructures Nautiques"  collapsed="true" id="nautique" icon="ship"> 
-			<layer id="ecluse" name="Ecluse" visible="false" tiled="false" dynamiclegend="true"
+			<layer id="ecluse" name="Ecluse" visible="true" tiled="false" dynamiclegend="true"
 				queryable="true" searchable="true" infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-				style="ecluse_style,ecluse_proprietaire,ecluse_trafic_echelle" stylesalias="Défaut,Propriétaire,Trafic"
+				style="ecluse_proprietaire" 
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=774a2065-339f-4802-a50f-4b84b6ca249f"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=774a2065-339f-4802-a50f-4b84b6ca249f"> 
 				<template url="apps/region/vn/templates/vn.ecluse.mst"></template>
 			</layer>		
-			<layer id="ecluse_trafic" name="Ecluse - Trafic annuel" visible="true" tiled="false" 
+			<layer id="ecluse_trafic" name="Ecluse - Trafic annuel" visible="false" tiled="false" 
 				queryable="true" infoformat="application/vnd.ogc.gml" infopanel="bottom-panel" featurecount="20"
 				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2002" timemax="2016" timevalues="2002,2004,2006,2008,2010,2012,2014,2016"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
@@ -523,17 +523,17 @@
 				<template url="apps/region/vn/templates/vn.zone_frayere_56.mst"></template>
 			</layer>		
         </theme> 
-		<theme name="Géodésie" id="geodesie">
-			<!--GetCapabilities http://geodesie.ign.fr/cgi-bin/mapserv?map=/var/webapp/lib/visugeod/mapfile_bdg.map&REQUEST=GetCapabilities&SERVICE=WMS  -->
-			<!--<layer id="sit_rdf" name="sit_rdf" visible="false" tiled="false"
+		<!--<theme name="Géodésie" id="geodesie">
+			GetCapabilities http://geodesie.ign.fr/cgi-bin/mapserv?map=/var/webapp/lib/visugeod/mapfile_bdg.map&REQUEST=GetCapabilities&SERVICE=WMS  
+			<layer id="sit_rdf" name="sit_rdf" visible="false" tiled="false"
 				queryable="true" 
                 infoformat="text/html" featurecount="5"                
 				style="" 
 				url="http://geodesie.ign.fr/cgi-bin/mapserv?map=/var/webapp/lib/visugeod/mapfile_bdg.map" 
 				attribution="IGN" 
 				metadata=""
-				metadata-csw="" />	-->		
-		</theme>
+				metadata-csw="" />	
+		</theme>-->
         <theme name="Limites administratives"  collapsed="true" id="territoire" icon="globe">
 			<layer id="commune_bdcarto" name="Commune" visible="false" tiled="false"
 				queryable="true" fields="COMMUNE,INSEE_COM,SUPERFICIE" aliases="Nom,Code INSEE,Superficie"
