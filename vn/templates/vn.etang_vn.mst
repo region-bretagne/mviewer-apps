@@ -3,6 +3,10 @@
 		<h3 class="title-feature">{{nom}}</h3>
 		<p class="text-feature">	
 			<span style="font-family:'roboto_bold'"> Surface :</span> {{surface}} m²<br/>		
+			{{#enjeu_bio}}                
+				<span style="font-family:'roboto_bold'"> Enjeux biodiversité :</span> {{enjeu_bio}}<br/>
+			{{/enjeu_bio}}                
+
        </p>
 
 

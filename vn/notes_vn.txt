@@ -11,6 +11,9 @@ LE :
 - Toutes les couches de la catégorie équipements : ajout analyse par état
 	=> Fait sur mobilier
 
+Géodésie : problème de projection. Il faudrait que l'IGN déclare 3857
+
+	
 Couleurs etat :
 1/ Ne sais pas ou Non renseigné ou vide #bbbbbb
 2/ Très dégradé / HS #b0252e

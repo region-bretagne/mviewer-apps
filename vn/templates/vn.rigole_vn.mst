@@ -4,7 +4,10 @@
 		<p class="text-feature">	
 			{{#longueur}}                
 				<span style="font-family:'roboto_bold'"> Longueur :</span> {{longueur}} m<br/>
-			{{/longueur}}                
+			{{/longueur}}  
+			{{#enjeu_bio}}                
+				<span style="font-family:'roboto_bold'"> Enjeux biodiversité :</span> {{enjeu_bio}}<br/>
+			{{/enjeu_bio}}                
 			{{#remarque}}                
 				<span style="font-family:'roboto_bold'"> Remarques :</span> {{remarque}}<br/>
 			{{/remarque}}                
