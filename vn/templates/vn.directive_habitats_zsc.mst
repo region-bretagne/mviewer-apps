@@ -1,18 +1,13 @@
 {{#features}}
 	<li class="item" style="width:238px;">
 		<h3 class="title-feature">{{NOM}}</h3>
-
-		<p class="text-feature">	
+		</br>
 			{{#URL_INPN}}                
-			<div id="button_link">
-				<a href="{{URL_INPN}}" target="_blank" style="color:#ffffff;">
-					<div class="button" style="background-color:#72487f;">
-						<img src="https://observatoiredesforets.files.wordpress.com/2014/05/logo-inpn-xl.jpg" style="width:13%;margin-right:4%;">Fiche INPN
-					</div>
-				</a>
-			</div>
+			<div class="but_link">	
+				<p> <a href="{{URL_INPN}}" target=_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Lien vers INPN</a>
+				</p>
+			</div>			
 			{{/URL_INPN}}                
-       </p>
 
 
 	</li>
