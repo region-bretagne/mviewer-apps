@@ -4,7 +4,6 @@ LE :
 - Intérêt infobulle bief ou écluse ?
 - MST reste à faire :
 	- Logos etat pour mobilier, sanitaires, pks
-	- logos eau / elec / eau usé pour bornes multiservices
 	- trafic ecocompteurs
 	- arrondir surface étang 
 
