@@ -164,12 +164,12 @@
 		                metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=6722241e-978d-4981-95e0-1b89e5dd06f3">
 		                <template url="apps/region/territoire/templates/territoire.pop.evolution.mst"></template>
 		        </layer>		        
-		        <layer id="solde_pop_union_geom" name="Solde de population de 1999 à 2013"  visible="false" tiled="false"
+		        <layer id="rp_solde_pop_union_geom" name="Solde de population de 2009 à 2014"  visible="false" tiled="false"
 		                searchable="false" queryable="true"
 		                attributefilter="true" attributefield="level" attributevalues="Commune,EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
 		                infopanel="bottom-panel"
 		                infoformat="application/vnd.ogc.gml" featurecount="5"
-		                style="soldepop_naturel9913@commune,soldepop_migrat9913@commune"
+		                style="soldepop_naturel@commune,soldepop_migratoire@commune"
 		                stylesalias="Solde naturel, Solde migratoire"
 		                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
 		                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service connaissance, observation, planification et prospective" 

@@ -4,18 +4,15 @@ LE :
 - Intérêt infobulle bief ou écluse ?
 - MST reste à faire :
 	- Logos etat pour mobilier, sanitaires, pks
-	- logos eau / elec / eau usé pour bornes multiservices
 	- trafic ecocompteurs
 	- arrondir surface étang 
 
-			
 - Toutes les couches de la catégorie équipements : ajout analyse par état
 	=> Fait sur mobilier
-- Regroupement des bornes multi-services en 1 couche puis analyse par type (elec/eau/eu) + style par défaut 
-	=> Fait
-- patrimoine arboré par diametre ou essence : SF sur QGIS
-	=> Problème de cache. On affiche la couche qu'en deça une échelle
 
+Géodésie : problème de projection. Il faudrait que l'IGN déclare 3857
+
+	
 Couleurs etat :
 1/ Ne sais pas ou Non renseigné ou vide #bbbbbb
 2/ Très dégradé / HS #b0252e
@@ -34,11 +31,6 @@ ws :
 
 Filtre sur brigade
 attributefilter="true" attributefield="brigade" attributevalues="Evran,Hennebont,Josselin,Mons,Pontivy,Redon,Saint-Germain"
-
-SP :
-- Authentification
-- Export légende
-
 
 !! Après migration, à supprimer sur GeoServer :
 

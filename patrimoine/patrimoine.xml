@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="Patrimoine culturel" logo="apps/region/global/img/logo/rb_blanc.svg" help="mviewer_help.html" exportpng="true" style="apps/region/patrimoine/css/kartenn_patrimoine.css" measuretools="true" togglealllayersfromtheme="true"/>
+    <application title="Patrimoine culturel" logo="apps/region/global/img/logo/rb_blanc.svg" help="apps/region/patrimoine/patrimoine_help.html" exportpng="true" style="apps/region/patrimoine/css/kartenn_patrimoine.css" measuretools="true" togglealllayersfromtheme="true"/>
     <mapoptions maxzoom="20" projection="EPSG:3857" center="-291072,6187119" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery"><!-- style="default"||gallery" -->     
@@ -40,7 +40,7 @@
             <layer id="inventaire_papiers" name="Dossiers 'papiers' avant 2000" visible="true" tiled="false"
 				queryable="true" infoformat="text/html" featurecount="20" 
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
-				style=""
+	
 				attribution="Région Bretagne" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=e2588666-6b16-4d5a-bca2-5e927bc0a922"
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=e2588666-6b16-4d5a-bca2-5e927bc0a922" /> 
@@ -49,7 +49,7 @@
             <layer id="recensement_patrimoine" name="Recensement avant études" visible="false" tiled="true" 
 				searchable="true" queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
-                style=""  legendurl="http://kartenn.region-bretagne.fr/img/legend/recensement.png"
+                legendurl="http://kartenn.region-bretagne.fr/img/legend/recensement.png"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution="Service de l'inventaire : Région Bretagne" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
@@ -111,10 +111,21 @@
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" > 
 		        <template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
 			</layer>
+            <layer id="recensement_patrimoine" name="Inventaire du patrimoine culturel maritime de l'estuaire de Tréguier" visible="false" tiled="false" 
+				searchable="false" queryable="true" 
+				infoformat="application/vnd.ogc.gml" featurecount="20"
+                legendurl="http://kartenn.region-bretagne.fr/img/legend/association_oceanide.png"
+				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+				filter="operation LIKE '%Tréguier'"
+				attribution="Service de l'inventaire : Région Bretagne" 
+				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
+				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" > 
+		        <template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
+			</layer>
             <layer id="recensement_patrimoine" name="Maisons à pan de bois de Quimper" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
-                legendurl=""
+                legendurl="http://kartenn.region-bretagne.fr/img/legend/maisons_quimper.png"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				filter="operation='Maisons à pan de bois de Quimper'"
 				attribution="Service de l'inventaire : Région Bretagne" 
@@ -136,7 +147,7 @@
             <layer id="recensement_patrimoine" name="Patrimoine linier et chanvrier en Bretagne" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
-                legendurl=""
+                legendurl="http://kartenn.region-bretagne.fr/img/legend/inventaire_patrimoine_culturel_linier_chanvrier_bretagne.png"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				filter="operation='Patrimoine linier et chanvrier en Bretagne'"
 				attribution="Service de l'inventaire : Région Bretagne" 
@@ -406,7 +417,6 @@
 					queryable="true"
 					searchable="true" legendurl="http://kartenn.region-bretagne.fr/img/legend/croix_et_calvaires_association.png"
 					infoformat="text/html" featurecount="20"
-					style="" 
 					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 					attribution="Association croix et calvaires de Bretagne" 
 					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=90468f5b-eef8-452d-9443-060870b51332"
@@ -478,7 +488,6 @@
 				<layer id="etude_patrimoine_simple" name="Ardoisières du Centre Bretagne" visible="false" tiled="false"
 					queryable="true"
 					infoformat="application/vnd.ogc.gml" featurecount="50" legendurl="http://kartenn.region-bretagne.fr/img/legend/ardoisieres.png"
-					style="patrimoine_thematique_ardoise_centroide" 
 					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 					filter="cadre_etude LIKE '%enquête thématique régionale%' AND affixe_cadre_etude LIKE '%ardoisières du Centre Bretagne%'"
 					attribution="Service de l'inventaire : Région Bretagne" 
@@ -532,7 +541,6 @@
 		<layer id="bretagne_immeuble_mh" name="Immeubles MH (source Etat)" visible="false" tiled="false"
 			queryable="true" fields="SITE" aliases="Site"
 			infoformat="text/html" featurecount="5"             
-			style=""
 			url="https://geobretagne.fr/geoserver/drac/wms" 
 			attribution="DRAC" 
 			metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=de78afa5839169ff11e427d411c4f28b25460619" 
@@ -542,7 +550,6 @@
 		<layer id="site" name="Carte archéologique (source Etat)" visible="false" tiled="false"
 			queryable="true" fields="SITE" aliases="Site"
 			infoformat="text/html" featurecount="5"             
-			style=""
 			url="https://geobretagne.fr/geoserver/drac/wms" 
 			attribution="DRAC" 
 			metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=cd3bc8a0-a3b0-4c0e-bcc4-df7fbb8c213b" 
@@ -552,7 +559,6 @@
         <layer id="courbes-20m-10m-aoa" name="Courbes de niveaux" visible="false" tiled="true"
 				queryable="false" fields="" aliases=""
                 infoformat="text/html" featurecount="1"
-				style="" 
 				url="https://geobretagne.fr/geoserver/alti/wms" 
 				attribution="Mégalis Bretagne" 
 				metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=b25d9b2c-369d-49b3-8e61-7ea47b89dbda" 
@@ -560,7 +566,6 @@
         <layer id="FDepartement" name="Département" visible="false" tiled="false"
 				queryable="true" fields="NOM_PAYS" aliases="Nom"
                 infoformat="text/html" featurecount="1"
-				style="" 
 				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
 				attribution="IGN - BDCARTO" 
 				metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=e16d50d4-746d-44e3-a5e7-5fc000f97665" 
@@ -577,7 +582,6 @@
 				queryable="true" fields="nom" aliases="Nom"
                 infoformat="text/html" featurecount="20" 
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
-				style=""
 				attribution="Région Bretagne" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=677d4e97-82bc-4d64-b11c-167f423900ae"
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=677d4e97-82bc-4d64-b11c-167f423900ae" />	

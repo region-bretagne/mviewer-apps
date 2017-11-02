@@ -5,6 +5,4 @@ Migration application Patrimoine TODO LIST :
 - 3ème niveau ?
 	=> SP/LE NON
 
-AA :
-- Enlever icon => les rendre transparent dans le CSS
-
+- Ordre affichage différent selon zoom : exemple commune de Berrien

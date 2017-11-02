@@ -156,7 +156,7 @@
 		        </layer>
         </theme>	
         <theme name="Transport fluvial"  collapsed="true" id="maritime" icon="ship"> 
-			<layer id="ecluse" name="Ecluse" visible="false" tiled="false" 
+			<layer id="ecluse" name="Ecluse" visible="false" tiled="false" dynamiclegend="true"
 				queryable="true" searchable="true" infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="ecluse_style,ecluse_proprietaire" stylesalias="Défaut,Propriétaire"

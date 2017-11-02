@@ -1,17 +1,13 @@
 {{#features}}
 	<li class="item" style="width:238px;">
 		<h3 class="title-feature">{{nom}}</h3>
-		<p class="text-feature">	
-			{{#longueur}}                
-				<span style="font-family:'roboto_bold'"> Longueur :</span> {{longueur}} m<br/>
-			{{/longueur}}  
-			{{#enjeu_bio}}                
-				<span style="font-family:'roboto_bold'"> Enjeux biodiversité :</span> {{enjeu_bio}}<br/>
-			{{/enjeu_bio}}                
-			{{#remarque}}                
-				<span style="font-family:'roboto_bold'"> Remarques :</span> {{remarque}}<br/>
-			{{/remarque}}                
-       </p>
+		</br>
+			{{#URL_INPN}}                
+			<div class="but_link">	
+				<p> <a href="{{URL_INPN}}" target=_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Lien vers INPN</a>
+				</p>
+			</div>			
+			{{/URL_INPN}}                
 
 
 	</li>
