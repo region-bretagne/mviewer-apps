@@ -32,7 +32,7 @@
     <proxy url=""/>  
     
     <olscompletion url="http://api-adresse.data.gouv.fr/search/" type="ban"/>
-    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="fussy_like_this" />
+    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="1.4" />
     <searchparameters bbox="true" localities="true" features="true"/>
 	<widgets>
        <!--<widget name="gauge"/>-->       

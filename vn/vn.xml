@@ -25,7 +25,7 @@
     <authentification url="who" loginurl="?login" logouturl="../j_spring_security_logout" enabled="true"/>
     <!--<proxy url="../proxy/?url="/>-->
     <olscompletion url="http://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par l'API adresse.data.gouv.fr"/>
-    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="fussy_like_this" />
+    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="1.4" />
     <searchparameters bbox="false" localities="true" features="true"/>
 
     <themes>
