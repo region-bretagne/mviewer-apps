@@ -25,7 +25,7 @@
     <authentification url="who" loginurl="?login" logouturl="../j_spring_security_logout" enabled="true"/>
     <proxy url="../proxy/?url="/>
     <olscompletion url="http://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par l'API adresse.data.gouv.fr"/>
-    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="1.4" />
+    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="current" />
     <searchparameters bbox="false" localities="true" features="true"/>
 
     <themes>
@@ -209,7 +209,7 @@
 			</layer>		
 			<layer id="ecluse_trafic" name="Ecluse - Trafic annuel" visible="false" tiled="false" 
 				queryable="true" infoformat="application/vnd.ogc.gml" infopanel="bottom-panel" featurecount="20"
-				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2002" timemax="2016" timevalues="2002,2004,2006,2008,2010,2012,2014,2016"
+				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2003" timemax="2017" timevalues="2003,2005,2007,2009,2011,2013,2015,2017" 
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="ecluse_trafic_millesime" 
 				attribution="Région Bretagne" 
