@@ -348,7 +348,7 @@
 					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 					filter="cadre_etude LIKE '%enquête thématique régionale%' AND affixe_cadre_etude LIKE '%Inventaire des commanderies templières et hospitalières de Bretagne%'"
 					attribution="Service de l'inventaire : Région Bretagne" 
-					metadata="http://patrimoine.region-bretagne.fr/gertrude-diffusion/dossier/les-edifices-religieux-publics-dans-le-finistere-1801-1905-inventaire-et-diagnostic/ba840d05-71a9-4625-bec2-69ccd10a47fc"
+					metadata="http://patrimoine.region-bretagne.fr/gertrude-diffusion/dossier/inventaire-des-commanderies-templieres-et-hospitalieres-de-bretagne/c353a495-7162-46aa-8789-b0e012962f39"
 					metadata-csw="" >
 					<template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
 				</layer>
