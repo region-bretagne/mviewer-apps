@@ -40,7 +40,7 @@
 				sld="http://kartenn.region-bretagne.fr/styles/commune_region_large.sld" 
 				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
 				attribution="IGN - BDCARTO" 
-				metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=b08e6cb1-236c-49b7-88f9-42b500d274d5"
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/b08e6cb1-236c-49b7-88f9-42b500d274d5"
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b08e6cb1-236c-49b7-88f9-42b500d274d5" />
 			<layer id="EPCI_053" name="Intercommunalité actuelle" scalemin="0" scalemax="50000000" visible="false" tiled="false"
 				queryable="true" fields="NOM_EPCI,SIREN_EPCI" aliases="Nom,SIREN"
@@ -48,7 +48,7 @@
 				sld="http://kartenn.region-bretagne.fr/styles/epci_region_large.sld" 
 				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
 				attribution="GéoBretagne" 
-				metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=2298d744-49cb-4fcb-9487-26f916fecdff" 
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/2298d744-49cb-4fcb-9487-26f916fecdff" 
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=2298d744-49cb-4fcb-9487-26f916fecdff" />			
             <layer id="n_pays" name="Pays" scalemin="0" scalemax="50000000" visible="false" tiled="true"
 				queryable="true" fields="LIBELLE" aliases="Nom"
@@ -56,7 +56,7 @@
 				sld="http://kartenn.region-bretagne.fr/styles/pays_region_large.sld" 
 				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
 				attribution="GéoBretagne" 
-				metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=9722d181-75f9-40ab-a136-a9f9ed6f29a5" 
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/9722d181-75f9-40ab-a136-a9f9ed6f29a5" 
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9722d181-75f9-40ab-a136-a9f9ed6f29a5" />
             <layer id="FDepartement" name="Département" scalemin="0" scalemax="50000000" visible="false" tiled="false"
 				queryable="true" fields="NOM_PAYS" aliases="Nom"
@@ -64,7 +64,7 @@
 				sld="http://kartenn.region-bretagne.fr/styles/DEPARTEMENT_style_large.sld" 
 				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
 				attribution="IGN - BDCARTO" 
-				metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=e16d50d4-746d-44e3-a5e7-5fc000f97665" 
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/e16d50d4-746d-44e3-a5e7-5fc000f97665" 
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=e16d50d4-746d-44e3-a5e7-5fc000f97665" />
         </theme>
         <theme name="Eau"  id="eau" collapsed="false" icon="tint">
@@ -114,7 +114,7 @@
 				style="polygon_vert" 
 				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
 				attribution="Région Bretagne" 
-				metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=f13ca5d3-56a2-4b8d-9ea0-fefd436b9549" 
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/f13ca5d3-56a2-4b8d-9ea0-fefd436b9549" 
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=f13ca5d3-56a2-4b8d-9ea0-fefd436b9549" />
 			<layer id="sage_information" name="Avancement SAGE au 01/01/2017" scalemin="0" scalemax="50000000" visible="false" tiled="false" namespace="interne"
 				queryable="true" fields="nom" aliases="nom"
@@ -133,7 +133,7 @@
 				style="" 
 				url="https://geobretagne.fr/geoserver/bretagneenvironnement/wms" 
 				attribution="Bretagne Environnement" 
-				metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=18ba6d96-2482-4231-acb8-a61c05883eac"
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/18ba6d96-2482-4231-acb8-a61c05883eac"
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=18ba6d96-2482-4231-acb8-a61c05883eac" />
 			<layer id="reservoirs_biodiversite_SRCE" name="Réservoirs biodiversité" scalemin="0" scalemax="50000000" visible="false" tiled="false"
 				queryable="true" fields="INDICE" aliases="Indice"
@@ -141,7 +141,7 @@
 				style="" 
 				url="https://geobretagne.fr/geoserver/bretagneenvironnement/wms" 
 				attribution="Bretagne Environnement" 
-				metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=0782851a-f952-4aae-99ee-5c3bcc321b6e"
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/0782851a-f952-4aae-99ee-5c3bcc321b6e"
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0782851a-f952-4aae-99ee-5c3bcc321b6e" />
 			<layer id="gep_SRCE" name="GEP" scalemin="0" scalemax="50000000" visible="false" tiled="false"
 				queryable="true" fields="INDICE" aliases="Indice"
@@ -149,7 +149,7 @@
 				style="" 
 				url="https://geobretagne.fr/geoserver/bretagneenvironnement/wms" 
 				attribution="Bretagne Environnement" 
-				metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=c5054e2d-4897-4f4f-9079-6b1bc580cff2"
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/c5054e2d-4897-4f4f-9079-6b1bc580cff2"
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c5054e2d-4897-4f4f-9079-6b1bc580cff2" />
             <layer id="reserve_naturelle_regionale" name="Réserve Naturelle Régionale" visible="false" tiled="false" namespace="rb"
 				queryable="true" fields="rnr_nom,image,url" aliases="Nom,photo,Détails"
@@ -180,7 +180,7 @@
 				style="" 
 				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
 				attribution="DREAL" 
-				metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=91117783-14f0-409c-961e-9d2645f248ea"
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/91117783-14f0-409c-961e-9d2645f248ea"
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=91117783-14f0-409c-961e-9d2645f248ea" />
         </theme>
         
@@ -202,7 +202,7 @@
 				style="" 
 				url="https://geobretagne.fr/geoserver/draaf/wms" 
 				attribution="DREAL" 
-				metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=456caab7-8cd4-4112-9be8-6af37232be25"
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/456caab7-8cd4-4112-9be8-6af37232be25"
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=456caab7-8cd4-4112-9be8-6af37232be25" />
 			<layer id="l_paec2016_perim_eau_s_r53" name="PAEC enjeu eau" scalemin="0" scalemax="50000000" visible="false" tiled="false"
 				queryable="true" fields="" aliases=""
@@ -210,7 +210,7 @@
 				style="" 
 				url="https://geobretagne.fr/geoserver/draaf/wms" 
 				attribution="DREAL" 
-				metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=f74ee06f-97be-4fd4-b258-894bda44af3d"
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/f74ee06f-97be-4fd4-b258-894bda44af3d"
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=f74ee06f-97be-4fd4-b258-894bda44af3d" />
 			<layer id="l_paec2016_perim_phyto_s_r53" name="PAEC enjeu phyto" scalemin="0" scalemax="50000000" visible="false" tiled="false"
 				queryable="true" fields="" aliases=""
@@ -218,7 +218,7 @@
 				style="" 
 				url="https://geobretagne.fr/geoserver/draaf/wms" 
 				attribution="DREAL" 
-				metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=0405ecd8-9cbe-446e-a714-faf4c129cd74"
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/0405ecd8-9cbe-446e-a714-faf4c129cd74"
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0405ecd8-9cbe-446e-a714-faf4c129cd74" />
 			<layer id="l_paec2016_perim_biodiv_s_r53" name="PAEC enjeu biodiversité" scalemin="0" scalemax="50000000" visible="false" tiled="false"
 				queryable="true" fields="" aliases=""
@@ -226,7 +226,7 @@
 				style="" 
 				url="https://geobretagne.fr/geoserver/draaf/wms" 
 				attribution="DREAL" 
-				metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=91f11c02-a116-42bb-ab18-b9199b7830d0"
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/91f11c02-a116-42bb-ab18-b9199b7830d0"
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=91f11c02-a116-42bb-ab18-b9199b7830d0" />
         </theme>   
         <theme name="Assainissement"  collapsed="true" id="assainissement">
