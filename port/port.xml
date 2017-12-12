@@ -75,7 +75,7 @@
 				metadata-csw="" />
 
 		</theme>
-        <!--<theme name="Qualité des sédiments"  collapsed="true" id="sediments"  icon="database"> 
+        <theme name="Qualité des sédiments"  collapsed="true" id="sediments"  icon="database"> 
 			<layer id="mesure_environnementale_sediment" name="Global"  visible="false" tiled="false"
 				queryable="true" fields="id,latitude,longitude,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,X,Y,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
                 style="port_mesures_sed_general" 
@@ -524,7 +524,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=7e4cc8d0-642b-4b56-b521-a13c688ec882"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=7e4cc8d0-642b-4b56-b521-a13c688ec882" />  
-		</theme>-->
+		</theme>
 		<theme name="Infrastructures"  id="Infrastructures" collapsed="true" icon="home">
 			<layer id="infrastructure_port" name="Infrastructures" visible="false" tiled="false"
 				queryable="true" fields="" aliases="" 
