@@ -6,13 +6,13 @@
 				<span style="font-family:'roboto_bold'"> Localisation :</span> {{localisation}}<br/>
 			{{/localisation}}                
 			{{#beneficiaire}}                
-				<span style="font-family:'roboto_bold'"> Bénéficiaire :</span> {{beneficiaire}}<br/>
+				<span style="font-family:'roboto_bold'"> BÃ©nÃ©ficiaire :</span> {{beneficiaire}}<br/>
 			{{/beneficiaire}}                
 			{{#date_effet}}                
 				<span style="font-family:'roboto_bold'"> Date effet :</span> {{date_effet}}<br/>
 			{{/date_effet}}                
 			{{#date_echeance}}                
-				<span style="font-family:'roboto_bold'"> Date échéance :</span> {{date_echeance}}<br/>
+				<span style="font-family:'roboto_bold'"> Date Ã©chÃ©ance :</span> {{date_echeance}}<br/>
 			{{/date_echeance}}                
 			{{#remarque}}                
 				<span style="font-family:'roboto_bold'"> Remarques :</span> {{remarque}}<br/>
