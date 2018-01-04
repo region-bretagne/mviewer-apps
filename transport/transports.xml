@@ -102,7 +102,7 @@
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     style="transports_arret_rout_dep_defaut"
                     legendurl="https://kartenn.region-bretagne.fr/doc/transports/icons/arret_rout_dep.svg" 
-                    url="../geoserver-proxy/interne/wms"
+                    url="../geoserver-proxy/rb/wms"
                     attribution="Région Bretagne - GéoBretagne" 
                     metadata=""
                     metadata-csw="">
@@ -112,7 +112,7 @@
                     searchable="false" queryable="true" fields="axe" aliases="axe"
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     style="transports_ligne_rout_dep_defaut" 
-                    url="../geoserver-proxy/interne/wms"
+                    url="../geoserver-proxy/rb/wms"
                     attribution="Région Bretagne - GéoBretagne" 
                     metadata=""
                     metadata-csw="" >
