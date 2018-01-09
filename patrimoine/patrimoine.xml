@@ -413,17 +413,6 @@
 					metadata-csw="" >
 					<template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
 				</layer>
-				<layer id="recensement_patrimoine" name="Croix... Guer et La Gacilly (recensés)" visible="false" tiled="false" 
-					searchable="false" queryable="true" 
-					infoformat="application/vnd.ogc.gml" featurecount="20"
-					legendurl="http://kartenn.region-bretagne.fr/img/legend/croix_et_calvaires_guer_la_gacilly.png"
-					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
-					filter="operation='Croix et calvaires de Guer et de la Gacilly'"
-					attribution="Service de l'inventaire : Région Bretagne" 
-					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
-					metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" > 
-					<template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
-				</layer>
 				<layer id="croix_calvaire" name="Croix et calvaires (association)" visible="false" tiled="false" 
 					queryable="true"
 					searchable="true" legendurl="http://kartenn.region-bretagne.fr/img/legend/croix_et_calvaires_association.png"
