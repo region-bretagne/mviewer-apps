@@ -232,6 +232,17 @@
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" > 
 		        <template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
 			</layer>
+            <layer id="recensement_patrimoine" name="Ville d'Elven" visible="false" tiled="false" 
+				searchable="false" queryable="true" 
+				infoformat="application/vnd.ogc.gml" featurecount="20"
+                legendurl="http://kartenn.region-bretagne.fr/img/legend/ville_elven.png"
+				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+				filter="operation='Ville d''Elven'"
+				attribution="Service de l'inventaire : Région Bretagne" 
+				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
+				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" > 
+		        <template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
+			</layer>
             <layer id="recensement_patrimoine" name="Ville de Dinan" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
@@ -400,16 +411,6 @@
 					filter="cadre_etude LIKE '%enquête thématique régionale%' AND affixe_cadre_etude LIKE '%stalles médiévales de l''ancien duché de Bretagne%'"
 					attribution="Service de l'inventaire : Région Bretagne" 
 					metadata="http://patrimoine.region-bretagne.fr/gertrude-diffusion/dossier/les-stalles-en-bretagne/f2596507-5a6b-4360-b0eb-69eb100ab7a2"
-					metadata-csw="" >
-					<template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
-				</layer>
-				<layer id="etude_patrimoine_simple" name="Croix... Guer et La Gacilly (étudiés)" visible="false" tiled="false"
-					queryable="true"
-					infoformat="application/vnd.ogc.gml" featurecount="50" legendurl="http://kartenn.region-bretagne.fr/img/legend/croix_et_calvaires_guer_la_gacilly_etudies.png"
-					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
-					filter="cadre_etude LIKE '%enquête thématique départementale%' AND affixe_cadre_etude LIKE '%Croix et calvaires de Guer et de la Gacilly%'"
-					attribution="Service de l'inventaire : Région Bretagne" 
-					metadata="http://patrimoine.region-bretagne.fr/gertrude-diffusion/dossier/presentation-de-l-inventaire-topo-thematique-croix-et-calvaires-de-guer-et-de-la-gacilly/4daed753-e014-4212-b6af-90a35b215788"
 					metadata-csw="" >
 					<template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
 				</layer>
