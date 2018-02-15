@@ -177,7 +177,34 @@
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c74aad0d-d6ba-4455-8948-3b68b8d32ea0"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=c74aad0d-d6ba-4455-8948-3b68b8d32ea0" >  
 				<template url="apps/region/vn/templates/vn.borne_multiservice_vn.mst"></template>
-			</layer>							
+			</layer>	
+			<layer id="cale_mise_eau_vn" name="Cale de mise à l'eau" visible="false" tiled="false" 
+				queryable="true" 
+				infoformat="application/vnd.ogc.gml" featurecount="20"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attribution="Région Bretagne" 
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5c8894b5-4375-4b77-96ea-a2b627f0c914"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=5c8894b5-4375-4b77-96ea-a2b627f0c914" >  
+				<template url="apps/region/vn/templates/vn.cale_mise_eau_vn.mst"></template>
+			</layer>		
+			<layer id="quai_ponton_vn" name="Quai et ponton" visible="false" tiled="false" 
+				queryable="true" 
+				infoformat="application/vnd.ogc.gml" featurecount="20"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attribution="Région Bretagne" 
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a44cc5d7-ecb6-451b-b805-1ecf52c30aab"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=a44cc5d7-ecb6-451b-b805-1ecf52c30aab" >  
+				<template url="apps/region/vn/templates/vn.quai_ponton_vn.mst"></template>
+			</layer>		
+			<layer id="ponton_attente_vn" name="Ponton d'attente" visible="false" tiled="false" 
+				queryable="true" 
+				infoformat="application/vnd.ogc.gml" featurecount="20"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attribution="Région Bretagne" 
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=68b88c6b-a65b-4107-b4d8-b3ae7ce9b9e4"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=68b88c6b-a65b-4107-b4d8-b3ae7ce9b9e4" >
+				<template url="apps/region/vn/templates/vn.ponton_attente_vn.mst"></template>
+			</layer>					
 			<layer id="ecocompteur_vn" name="Ecocompteurs" visible="false" tiled="false" 
 				queryable="true"
 				infoformat="application/vnd.ogc.gml" featurecount="20"
@@ -195,9 +222,10 @@
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=adb30135-871b-4d5d-94d9-b95f90a24d62"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=adb30135-871b-4d5d-94d9-b95f90a24d62" >  
 				<template url="apps/region/vn/templates/vn.ecocompteur_trafic.mst"></template>
-			</layer>							
+			</layer>
+			
         </theme> 
-        <theme name="Infrastructures Nautiques"  collapsed="true" id="nautique" icon="ship"> 
+        <theme name="Infrastructures"  collapsed="true" id="infrastructures" icon="ship"> 
 			<layer id="ecluse" name="Ecluse" visible="true" tiled="false" dynamiclegend="true"
 				queryable="true" searchable="true" infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
@@ -226,33 +254,6 @@
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=58b54106-d25b-463d-9f85-0833aa7c8959" >
 				<template url="apps/region/vn/templates/vn.port_vn.mst"></template>
 			</layer>		
-			<layer id="cale_mise_eau_vn" name="Cale de mise à l'eau" visible="false" tiled="false" 
-				queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
-				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-				attribution="Région Bretagne" 
-				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5c8894b5-4375-4b77-96ea-a2b627f0c914"
-				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=5c8894b5-4375-4b77-96ea-a2b627f0c914" >  
-				<template url="apps/region/vn/templates/vn.cale_mise_eau_vn.mst"></template>
-			</layer>		
-			<layer id="quai_ponton_vn" name="Quai et ponton" visible="false" tiled="false" 
-				queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
-				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-				attribution="Région Bretagne" 
-				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a44cc5d7-ecb6-451b-b805-1ecf52c30aab"
-				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=a44cc5d7-ecb6-451b-b805-1ecf52c30aab" >  
-				<template url="apps/region/vn/templates/vn.quai_ponton_vn.mst"></template>
-			</layer>		
-			<layer id="ponton_attente_vn" name="Ponton d'attente" visible="false" tiled="false" 
-				queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
-				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-				attribution="Région Bretagne" 
-				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=68b88c6b-a65b-4107-b4d8-b3ae7ce9b9e4"
-				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=68b88c6b-a65b-4107-b4d8-b3ae7ce9b9e4" >
-				<template url="apps/region/vn/templates/vn.ponton_attente_vn.mst"></template>
-			</layer>		
 			<layer id="aire_retournement_vn" name="Aire de retournement " visible="false" tiled="false" 
 				queryable="false" 
 				infoformat="text/html" featurecount="20"
@@ -260,8 +261,6 @@
 				attribution="Région Bretagne" 
 				metadata-csw=""
 				metadata="" />
-        </theme> 
-        <theme name="Infrastructures Hydrauliques"  collapsed="true" id="hydraulique"> 
 			<layer id="ouvrage_hydraulique_secondaire_vn" name="Ouvrages hydrauliques secondaires" visible="false" tiled="false" 
 				queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
