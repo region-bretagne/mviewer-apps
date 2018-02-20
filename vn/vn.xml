@@ -495,12 +495,28 @@
 				queryable="true"
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-				 
 				attribution="Fédération départementale pêche 56" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=659e1a01-6e5e-40f4-9ce9-24a9622b4b47"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=659e1a01-6e5e-40f4-9ce9-24a9622b4b47" >    
 				<template url="apps/region/vn/templates/vn.zone_frayere_56.mst"></template>
 			</layer>		
+			<layer id="faune" name="Faune" visible="false" tiled="false" 
+				queryable="true" style="faune_categorie,faune_enjeu" stylesalias="Catégorie,Enjeu"
+				infoformat="application/vnd.ogc.gml" featurecount="20"
+				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+				attribution="Région Bretagne" 
+				metadata-csw=""
+				metadata="" >    
+				<template url="apps/region/vn/templates/vn.faune.mst"></template>
+			</layer>		
+			<layer id="flore_patrimoniale_alertes" name="Couche d'alerte - flore patrimoniale" visible="false" tiled="false" 
+				queryable="false"
+				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+				attribution="Région Bretagne" 
+				metadata-csw=""
+				metadata="" >    
+			</layer>
+
         </theme> 
 		<!--<theme name="Géodésie" id="geodesie">
 			<layer id="sit_rdf" name="sit_rdf" visible="false" tiled="false"
