@@ -14,6 +14,14 @@
 				</p>
 			</div>			
 			{{/site_web}}
+			<br/>
+			{{#lien_pdf}}
+			<div class="but_link">	
+				<p> <a href="{{lien_pdf}}" target=_blank"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> COT </a>
+				</p>
+			</div>			
+			{{/lien_pdf}}
+
        </p>
 
 	</li>

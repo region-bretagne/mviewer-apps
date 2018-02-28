@@ -30,16 +30,6 @@
 
     <themes>
 		<theme name="Patrimoine bâti"  collapsed="true" id="pat_bati" icon="building">
-			<layer id="maison_eclusiere_aap" name="Appels à projets maisons éclusières" visible="false" tiled="false" 
-				searchable="true" queryable="true"
-				infoformat="application/vnd.ogc.gml" featurecount="20"
-				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-				attribution="Région Bretagne" 
-				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b62a6ef0-2cb4-44f0-b679-1d06b027e0ea"
-				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=b62a6ef0-2cb4-44f0-b679-1d06b027e0ea" >  
-				<template url="apps/region/vn/templates/vn.maison_eclusiere_aap.mst"></template>
-			</layer>		
-				
 			<layer id="batiment_vn" name="Bâtiments" visible="false" tiled="false" 
 				searchable="true" queryable="true" fields="nom,affecta,photo" aliases="Nom, Affectation,Photo"
 				infoformat="application/vnd.ogc.gml" featurecount="20"
@@ -50,7 +40,6 @@
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=b0265f77-f69f-4433-b79e-47bd59af7e71">  
 				<template url="apps/region/vn/templates/vn.batiment_vn.mst"></template>
 			</layer>		
-				
 			<layer id="petit_patrimoine_vn" name="Petit Patrimoine" visible="false" tiled="false" 
 				queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
@@ -326,6 +315,15 @@
 			</layer>
         </theme> 
 		<theme name="Domanialité"  collapsed="true" id="domanialite" icon="wrench"> 
+			<layer id="maison_eclusiere_aap" name="Appels à projets maisons éclusières" visible="false" tiled="false" 
+				searchable="true" queryable="true" secure="true"
+				infoformat="application/vnd.ogc.gml" featurecount="20"
+				url="../geoserver-proxy/interne/wms" 
+				attribution="Région Bretagne" 
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b62a6ef0-2cb4-44f0-b679-1d06b027e0ea"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=b62a6ef0-2cb4-44f0-b679-1d06b027e0ea" >  
+				<template url="apps/region/vn/templates/vn.maison_eclusiere_aap.mst"></template>
+			</layer>		
 			<layer id="prelevement_rejet_vn" name="Prélèvements et rejets" visible="false" tiled="false"
 				queryable="true"
 				secure="true"
