@@ -7,7 +7,8 @@
 		<p class="text-feature">		
 			{{#datation_principale}}                
 				<span style="font-family:'roboto_bold'"> Datation :</span> {{datation_principale}}<br/>
-			{{/datation_principale}}                
+			{{/datation_principale}}     
+			<span style="font-family:'roboto_bold'"> Commune : </span>{{commune}}<br/>			
 			<span style="font-family:'roboto_bold'"> Localisation :</span> {{adresse}} {{lieudit}} {{commune}}<br/>
 			{{#lien_dossier}}
 			<div class="but_link">	

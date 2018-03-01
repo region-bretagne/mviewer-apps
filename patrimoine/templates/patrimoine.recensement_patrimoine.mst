@@ -4,7 +4,8 @@
         {{#photo_1}}                
 			<img src="{{photo_1}}" class="img-responsive" />
         {{/photo_1}}                
-		<p class="text-feature">		
+		<p class="text-feature">	
+			<span style="font-family:'roboto_bold'"> Commune : </span>{{commune}}<br/>			
 			{{#localisation}}                
 				<span style="font-family:'roboto_bold'"> Localisation :</span> {{localisation}}<br/>
 			{{/localisation}}                

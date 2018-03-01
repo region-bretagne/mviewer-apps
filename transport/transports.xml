@@ -32,7 +32,7 @@
     <proxy url=""/>  
     
     <olscompletion url="http://api-adresse.data.gouv.fr/search/" type="ban"/>
-    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="fussy_like_this" />
+    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="current" />
     <searchparameters bbox="true" localities="true" features="true"/>
 	<widgets>
        <!--<widget name="gauge"/>-->       
@@ -102,7 +102,7 @@
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     style="transports_arret_rout_dep_defaut"
                     legendurl="https://kartenn.region-bretagne.fr/doc/transports/icons/arret_rout_dep.svg" 
-                    url="../geoserver-proxy/interne/wms"
+                    url="../geoserver-proxy/rb/wms"
                     attribution="Région Bretagne - GéoBretagne" 
                     metadata=""
                     metadata-csw="">
@@ -112,7 +112,7 @@
                     searchable="false" queryable="true" fields="axe" aliases="axe"
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     style="transports_ligne_rout_dep_defaut" 
-                    url="../geoserver-proxy/interne/wms"
+                    url="../geoserver-proxy/rb/wms"
                     attribution="Région Bretagne - GéoBretagne" 
                     metadata=""
                     metadata-csw="" >
@@ -127,7 +127,7 @@
                     url="https://geobretagne.fr/geoserver/dreal_b/ows"
                     legendurl="https://kartenn.region-bretagne.fr/doc/transports/icons/aeroport.svg" 
                     attribution="DREAL Bretagne" 
-                    metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=d09e52c5-080d-4478-ad94-f55de67cafaa"
+                    metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/d09e52c5-080d-4478-ad94-f55de67cafaa"
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=d09e52c5-080d-4478-ad94-f55de67cafaa" >
 		            <template url="apps/region/transport/templates/transport.aeroport.mst"></template>
 		        </layer>
@@ -138,7 +138,7 @@
                     url="https://geobretagne.fr/geoserver/dreal_b/ows"
                     legendurl="https://kartenn.region-bretagne.fr/doc/transports/icons/gare_marit.svg" 
                     attribution="DREAL Bretagne" 
-                    metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=ffcb4e72-a01b-44f0-8da3-95a5b13c6e42"
+                    metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/ffcb4e72-a01b-44f0-8da3-95a5b13c6e42"
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ffcb4e72-a01b-44f0-8da3-95a5b13c6e42" >
 		            <template url="apps/region/transport/templates/transport.gare_maritime.mst"></template>
 		        </layer>	
@@ -355,7 +355,7 @@
 					url="apps/region/transport/customlayers/commune.js" 
 					tooltip="true"
 					attribution="GéoBretagne" 
-					metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=b08e6cb1-236c-49b7-88f9-42b500d274d5" 
+					metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/b08e6cb1-236c-49b7-88f9-42b500d274d5" 
 					metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b08e6cb1-236c-49b7-88f9-42b500d274d5"/>	    
 				<layer id="epci" name="Intercommunalité" visible="false" queryable="false" 
 					fields="nom_geo" aliases="Nom" 
@@ -363,7 +363,7 @@
 					url="apps/region/transport/customlayers/epci.js" 
 					tooltip="true" tooltipenabled="true"
 					attribution="GéoBretagne" 
-					metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=2298d744-49cb-4fcb-9487-26f916fecdff" 
+					metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/2298d744-49cb-4fcb-9487-26f916fecdff" 
 					metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=2298d744-49cb-4fcb-9487-26f916fecdff"/>           
 				<layer id="pays" name="Pays" visible="false" queryable="false" 
 					fields="nom_geo" aliases="Nom" 
@@ -371,7 +371,7 @@
 					url="apps/region/transport/customlayers/pays.js" 
 					tooltip="true"
 					attribution="GéoBretagne" 
-					metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=9722d181-75f9-40ab-a136-a9f9ed6f29a5" 
+					metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/9722d181-75f9-40ab-a136-a9f9ed6f29a5" 
 					metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9722d181-75f9-40ab-a136-a9f9ed6f29a5"/>
 				<layer id="departement" name="Département" visible="false" queryable="false" 
 					fields="nom_geo" aliases="Nom" 
@@ -379,7 +379,7 @@
 					url="apps/region/transport/customlayers/departement.js" 
 					tooltip="true"
 					attribution="GéoBretagne" 
-					metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=e16d50d4-746d-44e3-a5e7-5fc000f97665" 
+					metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/e16d50d4-746d-44e3-a5e7-5fc000f97665" 
 					metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=e16d50d4-746d-44e3-a5e7-5fc000f97665"/>
 			</group>
 			<group name="Périmètres d'action" id="grp2" >
@@ -402,7 +402,7 @@
                     stylesalias=""
                     url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Sources: INSEE - GéoBretagne | 2012" 
-                    metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=a536027f-7a66-4422-86b6-5cde9c35baec"
+                    metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/a536027f-7a66-4422-86b6-5cde9c35baec"
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a536027f-7a66-4422-86b6-5cde9c35baec">
                     <template url="apps/region/global/templates/global.bassin_vie.mst"></template>
                 </layer>                
@@ -412,7 +412,7 @@
                     url="https://geobretagne.fr/geoserver/dreal_b/ows"
                     sld="https://kartenn.region-bretagne.fr/styles/unite_urbaine.sld"  
                     attribution="Sources: DREAL - GéoBretagne | 2015" 
-                    metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=6f79ace8-5aaa-47eb-a2a9-7be9778fc3e7"
+                    metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/6f79ace8-5aaa-47eb-a2a9-7be9778fc3e7"
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=6f79ace8-5aaa-47eb-a2a9-7be9778fc3e7" >
                     <template url="apps/region/global/templates/global.unite_urbaine.mst"></template>
                 </layer>
@@ -425,7 +425,7 @@
 					stylesalias="Par défaut, Typologie des aires urbaines selon l'INSEE"
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 					attribution="Sources: INSEE - GéoBretagne | 2010" 
-					metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=12ee1299-3f7d-46e7-bd1e-6769b4ca3efd"
+					metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/12ee1299-3f7d-46e7-bd1e-6769b4ca3efd"
 					metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=12ee1299-3f7d-46e7-bd1e-6769b4ca3efd">
 					<template url="apps/region/global/templates/global.aire_urbaine.mst"></template>
                 </layer>
@@ -435,7 +435,7 @@
                     url="https://geobretagne.fr/geoserver/insee/ows" 
                     sld="https://kartenn.region-bretagne.fr/styles/zone_emploi.sld" 
                     attribution="Sources: INSEE - GéoBretagne | 2010" 
-                    metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=de7a586d-fffc-41c0-9c07-1f19c50ea068"
+                    metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/de7a586d-fffc-41c0-9c07-1f19c50ea068"
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=de7a586d-fffc-41c0-9c07-1f19c50ea068" >
                     <template url="apps/region/global/templates/global.zone_emploi.mst"></template>
                 </layer>
