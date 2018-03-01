@@ -18,11 +18,11 @@
                 <div class="category-dim">         
                     <h4 class="Title"><B>Comment se positionne le territoire ?</B></h4>
 	                <div class="iconCat" style="margin:20px;">
-	                    <img src="apps/region/index_dd/img/social_cat_{{categorie_g}}.svg" style="width: 280px;">
+	                    <img src="apps/region/index_dd/img/social_cat_{{categorie_i}}.svg" style="width: 280px;">
 	                </div>
 	                <div class="textCat">
-	                    <h4 class="NameCatSoci" id="name-cat-{{categorie_g}}"></h4>
-	                    <p class="SubTextJustify" id="cat-{{categorie_g}}"></p>
+	                    <h4 class="NameCatSoci" id="name-cat-{{categorie_i}}"></h4>
+	                    <p class="SubTextJustify" id="cat-{{categorie_i}}"></p>
 	                </div>               
                 </div>
             </div>
@@ -35,9 +35,9 @@
           <div class="panel panel-default">
             <div class="panel-body">
               <h4 class="Title"><b>Quelle est la répartition des indicateurs ?</b></h4>
-              <canvas class="chart" id="RadarChartSociG" data-codegeo="{{code_geo}}" data-g1="{{g1_ind}}" data-g2="{{g2_ind}}" data-g3="{{g3_ind}}" width="220" height="188"></canvas> 
+              <canvas class="chart" id="RadarChartSociI" data-codegeo="{{code_geo}}" data-i1="{{i1_ind}}" data-i2="{{i2_ind}}" data-i3="{{i3_ind}}" width="220" height="188"></canvas> 
               <p class="ChartLabel">
-              	Indicateur 1: Population de 15-50 ans non scolarisée sans aucun diplôme </br>Indicateur 2: Indice de diplôme </br>Indicateur 3: Part des apprenti.e.s parmi la population active occupée 
+              	Indicateur 1: Taux d'élèves du 1er degré en classe bilingue de breton </br>Indicateur 2: Taux d'élèves du 2nd degré en classe bilingue de breton </br>Indicateur 3: Part de la population (15ans et +) suivant des cours du soir de breton
               </p> 
               <!--<p class="SubText">
               	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
@@ -150,27 +150,27 @@
    
 
 <script>
-    var indicateur_g = {};
-	indicateur_g.getData = function () {
-		var code_geo = $("#RadarChartSociG").attr("data-codegeo");
-		var data = {chart_social_g: {labels:["Indicateur 1","Indicateur 2","Indicateur 3"], data: {datasets:[[parseFloat($("#RadarChartSociG").attr("data-g1")),parseFloat($("#RadarChartSociG").attr("data-g2")),parseFloat($("#RadarChartSociG").attr("data-g3"))]]}}};
+    var indicateur_i = {};
+	indicateur_i.getData = function () {
+		var code_geo = $("#RadarChartSociI").attr("data-codegeo");
+		var data = {chart_social_i: {labels:["Indicateur 1","Indicateur 2","Indicateur 3"], data: {datasets:[[parseFloat($("#RadarChartSociI").attr("data-i1")),parseFloat($("#RadarChartSociI").attr("data-i2")),parseFloat($("#RadarChartSociI").attr("data-i3"))]]}}};
 		 console.log(data);
 		 //drawChart(data);
 
 		$.getJSON( "../ws/index_dd/data_social_template.php", function(data2) {
 	                    console.log(data2);
-	                    indicateur_g.drawChart(data, data2);	       
+	                    indicateur_i.drawChart(data, data2);	       
 	    });
 	}; 
 
 
 
-	indicateur_g.drawChart = function (data, data2) {
-	var ctx = document.getElementById("RadarChartSociG");
-    var RadarChartSociG = new Chart(ctx, {
+	indicateur_i.drawChart = function (data, data2) {
+	var ctx = document.getElementById("RadarChartSociI");
+    var RadarChartSociI = new Chart(ctx, {
           type: 'radar',
           data: {
-              labels: data.chart_social_g.labels,
+              labels: data.chart_social_i.labels,
               datasets: [{
                   label: "Moyenne des territoires",
                   backgroundColor: "rgba(45, 64, 89, 0)",
@@ -179,7 +179,7 @@
                   pointBorderColor: "rgba(45, 64, 89, 1)",
                   pointHoverBackgroundColor: "#fff",
                   pointHoverBorderColor: "rgba(45, 90, 89, 1)",
-                  data: data2.data_avg_g
+                  data: data2.data_avg_i
               },
               {                  
                   label: "EPCI",
@@ -189,7 +189,7 @@
                   pointBorderColor: "rgba(61, 179, 158, 1)",
                   pointHoverBackgroundColor: "#fff",
                   pointHoverBorderColor: "rgba(61, 179, 158, 1)",
-                  data: data.chart_social_g.data.datasets[0]
+                  data: data.chart_social_i.data.datasets[0]
               }]
           },
           options: {
@@ -216,10 +216,10 @@
     };  
 
     if  (typeof Chart === 'function') {
-			indicateur_g.getData();
+			indicateur_i.getData();
 	} else {
 			$.get('https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js', function() {
-				indicateur_g.getData();
+				indicateur_i.getData();
     		
 			}); 
 	}

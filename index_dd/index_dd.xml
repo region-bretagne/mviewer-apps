@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="" logo="img/no_logo.svg" help="" measuretools="true" exportpng="true" style="apps/region/index_dd/css/index_dd.css" stats="true" statsurl="../ws/kartenn/log.php"/>
+    <application title="" logo="img/no_logo.svg" help="apps/region/index_dd/indexdd_help.html" measuretools="true" exportpng="true" style="apps/region/index_dd/css/index_dd.css" stats="true" statsurl="../ws/kartenn/log.php"/>
     <!--<mapoptions projection="EPSG:2154" extent="145518,6726671,372058,6868691"  />-->
     <mapoptions maxzoom="19" projection="EPSG:3857" center="-220750.13768758904,6144925.57790189" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
   
@@ -40,10 +40,21 @@
 	                style="idd_social_inde"
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="Index" 
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017" 
 	                metadata=""
 	                metadata-csw="">
 	                <template url="apps/region/index_dd/templates/index_dd_social_inde.mst"></template>
+		        </layer>
+		        <layer id="idd_dim_social_geom" name="Santé"  visible="false" tiled="false"
+	              	searchable="false" queryable="true"
+	                infoformat="application/vnd.ogc.gml" featurecount="5"
+	                style="idd_social_indf"
+	                stylesalias=""
+	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017" 
+	                metadata=""
+	                metadata-csw="">
+	                <template url="apps/region/index_dd/templates/index_dd_social_indf.mst"></template>
 		        </layer>
 		        <layer id="idd_dim_social_geom" name="Éducation et Formation"  visible="false" tiled="false"
 	              	searchable="false" queryable="true"
@@ -51,10 +62,32 @@
 	                style="idd_social_indg"
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="Index" 
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017"
 	                metadata=""
 	                metadata-csw="">
 	                <template url="apps/region/index_dd/templates/index_dd_social_indg.mst"></template>
+		        </layer>
+		        <layer id="idd_dim_social_geom" name="Loisirs, culture et patrimoine"  visible="false" tiled="false"
+	              	searchable="false" queryable="true"
+	                infoformat="application/vnd.ogc.gml" featurecount="5"
+	                style="idd_social_indh"
+	                stylesalias=""
+	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017" 
+	                metadata=""
+	                metadata-csw="">
+	                <template url="apps/region/index_dd/templates/index_dd_social_indh.mst"></template>
+		        </layer>
+		        <layer id="idd_dim_social_geom" name="Langues de Bretagne"  visible="false" tiled="false"
+	              	searchable="false" queryable="true"
+	                infoformat="application/vnd.ogc.gml" featurecount="5"
+	                style="idd_social_indi"
+	                stylesalias=""
+	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017" 
+	                metadata=""
+	                metadata-csw="">
+	                <template url="apps/region/index_dd/templates/index_dd_social_indi.mst"></template>
 		        </layer>		        
         </theme>	
         <theme name="Dimension économique"  collapsed="false" id="economie" icon="institution">
@@ -64,7 +97,7 @@
 	                style="idd_eco_inda"
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="Index" 
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017"
 	                metadata=""
 	                metadata-csw="">
 	                <template url="apps/region/index_dd/templates/index_dd_economie_inda.mst"></template>
@@ -75,14 +108,36 @@
 	                style="idd_eco_indb"
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="Index" 
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017"
 	                metadata=""
 	                metadata-csw="">
 	                <template url="apps/region/index_dd/templates/index_dd_economie_indb.mst"></template>
 		        </layer>
+		        <layer id="idd_dim_eco_geom" name="Qualité de l'emploi et des conditions de travail"  visible="false" tiled="false"
+	              	searchable="false" queryable="true"
+	                infoformat="application/vnd.ogc.gml" featurecount="5"
+	                style="idd_eco_indc"
+	                stylesalias=""
+	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017"
+	                metadata=""
+	                metadata-csw="">
+	                <template url="apps/region/index_dd/templates/index_dd_economie_indc.mst"></template>
+		        </layer>
+		        <layer id="idd_dim_eco_geom" name="Développement économique responsable, activités pour la transition énergétique et écologique"  visible="false" tiled="false"
+	              	searchable="false" queryable="true"
+	                infoformat="application/vnd.ogc.gml" featurecount="5"
+	                style="idd_eco_indd"
+	                stylesalias=""
+	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017"
+	                metadata=""
+	                metadata-csw="">
+	                <template url="apps/region/index_dd/templates/index_dd_economie_indd.mst"></template>
+		        </layer>
         </theme>
-		<!--<theme name="Dimension environnementale"  collapsed="false" id="environnement" icon="leaf">
-		        <layer id="test_dim_geom" name="Sous dimension A"  visible="false" tiled="false"
+		<theme name="Dimension environnementale"  collapsed="false" id="environnement" icon="leaf">
+		        <!--<layer id="test_dim_geom" name="Sous dimension A"  visible="false" tiled="false"
 	              	searchable="false" queryable="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="index_envir_sd1"
@@ -92,10 +147,10 @@
 	                metadata=""
 	                metadata-csw="">
 	                <template url="apps/region/index_dd/templates/index_dd_environnement.mst"></template>
-		        </layer>
+		        </layer>-->
         </theme>                
         <theme name="Dimension démocratique"  collapsed="false" id="democratie" icon="comments">
-		        <layer id="test_dim_geom" name="Sous dimension D"  visible="false" tiled="false"
+		        <!--<layer id="test_dim_geom" name="Sous dimension D"  visible="false" tiled="false"
 	              	searchable="false" queryable="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="index_demo_sd1"
@@ -105,7 +160,7 @@
 	                metadata=""
 	                metadata-csw="">
 	                <template url="apps/region/index_dd/templates/index_dd_democratie.mst"></template>
-		        </layer>
+		        </layer>-->
         </theme>-->
         <theme name="Découpages territoriaux"  collapsed="true" id="territoire" icon="globe">
 			<layer id="commune" name="Commune" visible="false" queryable="false" 

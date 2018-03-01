@@ -515,7 +515,7 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 
 #help .modal-content{
 	font-family: 'roboto_regular', Arial, Sans-serif!important;
-	height: 880px;
+	height: auto;
 }
 
 #help .nav-tabs{
@@ -547,39 +547,39 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
     color: #213042;
 }
 
-#help .tab-pane h4{
+#help h4{
 	font-family: 'roboto_bold', Arial, Sans-serif;
     color: #213042;
     font-size: 22px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
-#help .tab-pane h5{
+#help h5{
 	font-family: 'roboto_bold', Arial, Sans-serif;
     color: #213042;
     font-size: 16px;
     margin-bottom: 2px;
 }
 
-#help .tab-pane h6{
+#help h6{
 	font-family: 'roboto_bold', Arial, Sans-serif;
     color: #213042;
     font-size: 14px;
     margin-bottom: 2px;
 }
 
-#help .tab-pane p{
+#help p{
     color: #555;
     font-size: 13px;
     text-align: justify;
 }
 
-#help .tab-pane .visuel_tx{
+#help .visuel_tx{
     color: #555;
     font-size: 13px;
 }
 
-#help .tab-pane .visuel{
+#help .visuel{
     text-align: center;
 }
 

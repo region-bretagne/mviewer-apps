@@ -18,11 +18,11 @@
                 <div class="category-dim">         
                     <h4 class="Title"><B>Comment se positionne le territoire ?</B></h4>
 	                <div class="iconCat" style="margin:20px;">
-	                    <img src="apps/region/index_dd/img/social_cat_{{categorie_g}}.svg" style="width: 280px;">
+	                    <img src="apps/region/index_dd/img/social_cat_{{categorie_f}}.svg" style="width: 280px;">
 	                </div>
 	                <div class="textCat">
-	                    <h4 class="NameCatSoci" id="name-cat-{{categorie_g}}"></h4>
-	                    <p class="SubTextJustify" id="cat-{{categorie_g}}"></p>
+	                    <h4 class="NameCatSoci" id="name-cat-{{categorie_f}}"></h4>
+	                    <p class="SubTextJustify" id="cat-{{categorie_f}}"></p> 
 	                </div>               
                 </div>
             </div>
@@ -35,13 +35,10 @@
           <div class="panel panel-default">
             <div class="panel-body">
               <h4 class="Title"><b>Quelle est la répartition des indicateurs ?</b></h4>
-              <canvas class="chart" id="RadarChartSociG" data-codegeo="{{code_geo}}" data-g1="{{g1_ind}}" data-g2="{{g2_ind}}" data-g3="{{g3_ind}}" width="220" height="188"></canvas> 
+              <canvas class="chart" id="RadarChartSociF" data-codegeo="{{code_geo}}" data-f1="{{f1_ind}}" data-f3="{{f3_ind}}" data-f4="{{f4_ind}}" data-f5="{{f5_ind}}" width="220" height="188"></canvas> 
               <p class="ChartLabel">
-              	Indicateur 1: Population de 15-50 ans non scolarisée sans aucun diplôme </br>Indicateur 2: Indice de diplôme </br>Indicateur 3: Part des apprenti.e.s parmi la population active occupée 
-              </p> 
-              <!--<p class="SubText">
-              	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
-              </p>            
+              	Indicateur 1: Indice comparatif de mortalité </br>Indicateur 2: Indice de vieillissement </br>Indicateur 3: Part de la population qui n'a pas eu recours aux soins depuis 2 ans </br>Indicateur 4: Accessibilité potentiel localisé (APL) des médecins généralistes (ETP pour 100 000 hbts)
+              </p>                
             </div>
           </div>
         </div> 
@@ -150,27 +147,27 @@
    
 
 <script>
-    var indicateur_g = {};
-	indicateur_g.getData = function () {
-		var code_geo = $("#RadarChartSociG").attr("data-codegeo");
-		var data = {chart_social_g: {labels:["Indicateur 1","Indicateur 2","Indicateur 3"], data: {datasets:[[parseFloat($("#RadarChartSociG").attr("data-g1")),parseFloat($("#RadarChartSociG").attr("data-g2")),parseFloat($("#RadarChartSociG").attr("data-g3"))]]}}};
+    var indicateur_f = {};
+	indicateur_f.getData = function () {
+		var code_geo = $("#RadarChartSociF").attr("data-codegeo");
+		var data = {chart_social_f: {labels:["Indicateur 1","Indicateur 2","Indicateur 3","Indicateur 4"], data: {datasets:[[parseFloat($("#RadarChartSociF").attr("data-f1")),parseFloat($("#RadarChartSociF").attr("data-f3")),parseFloat($("#RadarChartSociF").attr("data-f4")),parseFloat($("#RadarChartSociF").attr("data-f5"))]]}}};
 		 console.log(data);
 		 //drawChart(data);
 
 		$.getJSON( "../ws/index_dd/data_social_template.php", function(data2) {
 	                    console.log(data2);
-	                    indicateur_g.drawChart(data, data2);	       
+	                    indicateur_f.drawChart(data, data2);	       
 	    });
 	}; 
 
 
 
-	indicateur_g.drawChart = function (data, data2) {
-	var ctx = document.getElementById("RadarChartSociG");
-    var RadarChartSociG = new Chart(ctx, {
+	indicateur_f.drawChart = function (data, data2) {
+	var ctx = document.getElementById("RadarChartSociF");
+    var RadarChartSociF = new Chart(ctx, {
           type: 'radar',
           data: {
-              labels: data.chart_social_g.labels,
+              labels: data.chart_social_f.labels,
               datasets: [{
                   label: "Moyenne des territoires",
                   backgroundColor: "rgba(45, 64, 89, 0)",
@@ -179,7 +176,7 @@
                   pointBorderColor: "rgba(45, 64, 89, 1)",
                   pointHoverBackgroundColor: "#fff",
                   pointHoverBorderColor: "rgba(45, 90, 89, 1)",
-                  data: data2.data_avg_g
+                  data: data2.data_avg_f
               },
               {                  
                   label: "EPCI",
@@ -189,7 +186,7 @@
                   pointBorderColor: "rgba(61, 179, 158, 1)",
                   pointHoverBackgroundColor: "#fff",
                   pointHoverBorderColor: "rgba(61, 179, 158, 1)",
-                  data: data.chart_social_g.data.datasets[0]
+                  data: data.chart_social_f.data.datasets[0]
               }]
           },
           options: {
@@ -216,10 +213,10 @@
     };  
 
     if  (typeof Chart === 'function') {
-			indicateur_g.getData();
+			indicateur_f.getData();
 	} else {
 			$.get('https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js', function() {
-				indicateur_g.getData();
+				indicateur_f.getData();
     		
 			}); 
 	}

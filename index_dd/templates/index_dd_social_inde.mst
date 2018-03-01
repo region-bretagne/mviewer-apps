@@ -1,7 +1,12 @@
 {{#features}}
 	<li class="item" style="">
+		<!-- NameDim-->
+		<div class="name-dim">
+			<h4>- Dimension sociale -</h4>			
+		</div>
+		<!-- ./NameDim-->
 		<!-- SelectFeature-->
-		<div class="select-feature"
+		<div class="select-feature">
 			<h3><span class="glyphicon glyphicon-map-marker" aria-hidden="true"><span class="TitleFeature"> {{nom_geo}}</span></h3>
 		</div>	
 		<!-- ./SelectFeature-->
@@ -10,20 +15,16 @@
         <div id="idCategory">
           <div class="panel panel-default">
             <div class="panel-body">
-             <div class="col-md-12 col-lg-12">
                 <div class="category-dim">         
                     <h4 class="Title"><B>Comment se positionne le territoire ?</B></h4>
-                    <div class="row" style="margin-bottom:10.5px;">
-	                    <div class="col-md-3 iconCat">
-	                    	<img src="apps/region/index_dd/img/social_cat_{{categorie_g}}.svg">
-	                    </div>
-	                    <div class="col-md-9">
-	                    	<h4 class="NameCatSoci" id="name-cat-{{categorie_g}}"></h4>
-	                    	<p class="SubTextJustify" id="cat-{{categorie_g}}"></p>
-	                    </div>   
-	                </div>                     
+	                <div class="iconCat" style="margin:20px;">
+	                    <img src="apps/region/index_dd/img/social_cat_{{categorie_e}}.svg" style="width: 280px;">
+	                </div>
+	                <div class="textCat">
+	                    <h4 class="NameCatSoci" id="name-cat-{{categorie_e}}"></h4>
+	                    <p class="SubTextJustify" id="cat-{{categorie_e}}"></p>
+	                </div>               
                 </div>
-            </div>
             </div>
           </div>
         </div>
@@ -36,7 +37,7 @@
               <h4 class="Title"><b>Quelle est la répartition des indicateurs ?</b></h4>
               <canvas class="chart" id="RadarChartSociE" data-codegeo="{{code_geo}}" data-e1="{{e1_ind}}" data-e2="{{e2_ind}}" data-e3="{{e3_ind}}" data-e4="{{e4_ind}}" data-e5="{{e5_ind}}" width="220" height="188"></canvas> 
               <p class="ChartLabel">
-              	Indicateur 1: Niveau des inégalités (écart inter-déciles) - 1er et 9e décile </br>Indicateur 2: Taux de pauvreté </br>Indicateur 3: Revenu médian par unité de consommation </br>Indicateur 4: Part des jeunes (15-24ans) ni en emploi ni en formation </br>Indicateur 5: Part de familles monoparentales
+              	Indicateur 1: Niveau des inégalités (écart inter-déciles) - 1er et 9e décile </br>Indicateur 2: Taux de pauvreté </br>Indicateur 3: Revenu médian par unité de consommation </br>Indicateur 4: Part des jeunes (15-24ans) ni en emploi ni en formation </br>Indicateur 5: Part de ménages monoparentales
               </p> 
               <!--<p class="SubText">
               	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
@@ -57,6 +58,18 @@
 		border-radius: 2px;
     	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
     	border: 1px solid #eee!important;
+	}
+	.name-dim{
+		background-color: #3db39e;
+    	padding: 1px;
+    	text-align: center;
+    	text-transform: uppercase;
+	}
+	.name-dim h4{
+		color: white;
+		font-size: 14px;
+		font-family:"roboto_bold";
+		letter-spacing: 1px;
 	}
 	.select-feature{
 		color: #2D4059;
@@ -99,31 +112,32 @@
       color: #555;
 	}
 	.iconCat{
-		padding:0px;
+		text-align: center;
 	}
 	.NameCatSoci{
 		color:#3DB39E;
 		font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+		text-align: center;		
       	font-weight: 500;
-      	margin: 5px 0px 2px 0px;
+      	margin: 5px 0px 5px 0px;
 	}
 	#name-cat-A:after{
-		content:"Lorem Ipsum";
+		content:"Territoires équilibrés";
 	}
 	#name-cat-B:after{
-		content:"Lorem Ipsum";
+		content:"Territoires intermédiaires";
 	}
 	#name-cat-C:after{
-		content:"Lorem Ipsum";
+		content:"Territoires fragiles";
 	}
 	#cat-A:after{
-		content:"Pour cette sous-dimension, l'entité se situe au dessus du 3ème quartile (Q3)";
+		content:"Les territoires équilibrés représentent les territoires affichant l'indice le plus élevé: dans le classement des EPCI bretons, le territoire fait partie de la première partie de tableau (dans les 15 premiers).";
 	}
 	#cat-B:after{
-		content:"Pour cette sous-dimension, l'entité se situe entre le premier et le troisième quartile (Q1 et Q3)";
+		content:"Les territoires intermédiaires représentent les territoires avec un indice moyen: dans le classement des EPCI bretons, le territoire est compris entre la 16ème et la 45ème place.";
 	}
 	#cat-C:after{
-		content:"Pour cette sous-dimension, l'entité se situe en dessous du 1er quartile (Q1)";
+		content:"Les territoires fragiles représentent les territoires avec un indice faible: dans le classement des EPCI bretons, le territoire fait partie de la dernière partie de tableau (de la 46 à la 59ème place).";
 	}
 	.chart{
 		margin-bottom:15px;
