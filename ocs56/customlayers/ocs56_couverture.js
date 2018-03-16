@@ -63,10 +63,10 @@ mviewer.customLayers.ocs56_couverture.style1 = function (feature, resolution) {
     } else if (resolution > 9) {
             level = "c";
             ref = val.substr(0,3)+"?"+val.substr(4,1)+"?"+val.substr(6,1)+"%"
-    } else if (resolution > 2) {
-            level = "d";
+    } else {
+			level = "d";
             ref = val;
-    }
+	}
 
     feature.getProperties()["label"] = mviewer.customLayers.ocs56_couverture.classification_couverture[level][ref].title;
     var style = new ol.style.Style({
@@ -83,7 +83,7 @@ mviewer.customLayers.ocs56_couverture.style1 = function (feature, resolution) {
 
 mviewer.customLayers.ocs56_couverture.layer = new ol.layer.VectorTile({
       style:  mviewer.customLayers.ocs56_couverture.style1,
-      minResolution: 2,
+      // minResolution: 2,
       maxResolution: 306,
       source: new ol.source.VectorTile({
         tilePixelRatio: 1, // oversampling when > 1

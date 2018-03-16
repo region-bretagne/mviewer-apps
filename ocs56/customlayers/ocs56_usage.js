@@ -88,10 +88,10 @@ mviewer.customLayers.ocs56_usage.style0 = function (feature, resolution) {
             } else {
                 ref = val;
             }
-    }  else if (resolution > 2) {
-            level = "c";
+    } else {
+			level = "d";
             ref = val;
-    }
+	}
     var style;
     if (mviewer.customLayers.ocs56_usage.classification_usage[level][ref]) {
         feature.getProperties()["label"] = mviewer.customLayers.ocs56_usage.classification_usage[level][ref].title;
