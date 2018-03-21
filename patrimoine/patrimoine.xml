@@ -56,6 +56,17 @@
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" >
 		        <template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
 			</layer>	
+			<layer id="recensement_patrimoine" name="Lycées en Bretagne" visible="false" tiled="false" 
+				searchable="false" queryable="true" 
+				infoformat="application/vnd.ogc.gml" featurecount="20"
+				legendurl="http://kartenn.region-bretagne.fr/img/legend/lycee.png"
+				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+				filter="operation='Lycées en Bretagne'"
+				attribution="Service de l'inventaire : Région Bretagne" 
+				metadata=""
+				metadata-csw="" >
+				<template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
+			</layer>
 			<layer id="recensement_patrimoine" name="Patrimoine des sports" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
@@ -330,17 +341,6 @@
 					metadata-csw="" >
 					<template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
 				</layer>
-				<layer id="recensement_patrimoine" name="Patrimoines des sports en Bretagne" visible="false" tiled="false" 
-					searchable="false" queryable="true" 
-					infoformat="application/vnd.ogc.gml" featurecount="20"
-					legendurl="http://kartenn.region-bretagne.fr/img/legend/etablissements_nautiques.png"
-					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
-					filter="operation='Patrimoines des sports en Bretagne'"
-					attribution="Service de l'inventaire : Région Bretagne" 
-					metadata="http://patrimoine.bzh/gertrude-diffusion/dossier/les-centres-nautiques-en-bretagne/bafff2e7-7a6a-4871-ac64-f0c99dd29339"
-					metadata-csw="" >
-					<template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
-				</layer>
 			</group>
 			<group name="Patrimoine religieux" id="archi_religieux"> 
 				<layer id="etude_patrimoine_simple" name="Architecture gothique" visible="false" tiled="false"
@@ -424,11 +424,11 @@
 					metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=90468f5b-eef8-452d-9443-060870b51332" /> 
 			</group>
 			<group name="Patrimoine maritime et fluvial" id="archi_pat_ma_flu"> 
-				<layer id="etude_patrimoine_thematique" name="Canal de Nantes à Brest" visible="false" tiled="false"
+				<layer id="etude_patrimoine_thematique" name="Voies navigables" visible="false" tiled="false"
 					queryable="true"
 					infoformat="application/vnd.ogc.gml" featurecount="50" legendurl="http://kartenn.region-bretagne.fr/img/legend/canal_nantes_brest.png"
 					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
-					filter="cadre_etude LIKE '%enquête thématique régionale%' AND affixe_cadre_etude LIKE '%canal de Nantes à Brest%'"
+					filter="cadre_etude LIKE '%enquête thématique régionale%' AND (affixe_cadre_etude LIKE '%canal de Nantes à Brest%' OR affixe_cadre_etude LIKE 'Voies navigables')"
 					attribution="Service de l'inventaire : Région Bretagne" 
 					metadata="http://patrimoine.bzh/gertrude-diffusion/dossier/presentation-du-canal-de-nantes-a-brest/006678aa-7848-4c14-a633-a59828e97ab3"
 					metadata-csw="" >
