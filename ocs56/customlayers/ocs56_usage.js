@@ -89,7 +89,7 @@ mviewer.customLayers.ocs56_usage.style0 = function (feature, resolution) {
                 ref = val;
             }
     } else {
-			level = "d";
+			level = "c";
             ref = val;
 	}
     var style;
@@ -114,7 +114,7 @@ mviewer.customLayers.ocs56_usage.style0 = function (feature, resolution) {
 
 mviewer.customLayers.ocs56_usage.layer = new ol.layer.VectorTile({
       style:  mviewer.customLayers.ocs56_usage.style0,
-      minResolution: 2,
+      // minResolution: 2,
       maxResolution: 306,
       source: new ol.source.VectorTile({
         tilePixelRatio: 1, // oversampling when > 1
