@@ -1,7 +1,7 @@
 {{#features}}
 	<li class="item" style="">
 		<!-- NameDim-->
-		<div class="name-dim">
+		<div class="name-dim-soc">
 			<h4>- Dimension sociale -</h4>			
 		</div>
 		<!-- ./NameDim-->
@@ -59,13 +59,13 @@
     	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
     	border: 1px solid #eee!important;
 	}
-	.name-dim{
+	.name-dim-soc{
 		background-color: #3db39e;
     	padding: 1px;
     	text-align: center;
     	text-transform: uppercase;
 	}
-	.name-dim h4{
+	.name-dim-soc h4{
 		color: white;
 		font-size: 14px;
 		font-family:"roboto_bold";

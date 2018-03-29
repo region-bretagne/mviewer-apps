@@ -41,7 +41,7 @@
 	                style="idd_social_inde"
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017" 
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018" 
 	                metadata=""
 	                metadata-csw="">
 	                <template url="apps/region/index_dd/templates/index_dd_social_inde.mst"></template>
@@ -52,7 +52,7 @@
 	                style="idd_social_indf"
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017" 
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018" 
 	                metadata=""
 	                metadata-csw="">
 	                <template url="apps/region/index_dd/templates/index_dd_social_indf.mst"></template>
@@ -63,7 +63,7 @@
 	                style="idd_social_indg"
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017"
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018"
 	                metadata=""
 	                metadata-csw="">
 	                <template url="apps/region/index_dd/templates/index_dd_social_indg.mst"></template>
@@ -74,7 +74,7 @@
 	                style="idd_social_indh"
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017" 
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018" 
 	                metadata=""
 	                metadata-csw="">
 	                <template url="apps/region/index_dd/templates/index_dd_social_indh.mst"></template>
@@ -85,7 +85,7 @@
 	                style="idd_social_indi"
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017" 
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018" 
 	                metadata=""
 	                metadata-csw="">
 	                <template url="apps/region/index_dd/templates/index_dd_social_indi.mst"></template>
@@ -98,7 +98,7 @@
 	                style="idd_eco_inda"
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017"
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018"
 	                metadata=""
 	                metadata-csw="">
 	                <template url="apps/region/index_dd/templates/index_dd_economie_inda.mst"></template>
@@ -109,7 +109,7 @@
 	                style="idd_eco_indb"
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017"
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018"
 	                metadata=""
 	                metadata-csw="">
 	                <template url="apps/region/index_dd/templates/index_dd_economie_indb.mst"></template>
@@ -120,7 +120,7 @@
 	                style="idd_eco_indc"
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017"
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018"
 	                metadata=""
 	                metadata-csw="">
 	                <template url="apps/region/index_dd/templates/index_dd_economie_indc.mst"></template>
@@ -131,7 +131,7 @@
 	                style="idd_eco_indd"
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017"
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018"
 	                metadata=""
 	                metadata-csw="">
 	                <template url="apps/region/index_dd/templates/index_dd_economie_indd.mst"></template>
