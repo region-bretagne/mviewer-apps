@@ -362,7 +362,7 @@
 				metadata="" >  
 				<template url="apps/region/vn/templates/vn.limite_dpf.mst"></template>
 			</layer>		
-			<layer id="r53_2015_parcelle_publique" name="Parcelles publiques" visible="false" tiled="false"
+			<layer id="r53_2016_parcelle_publique" name="Parcelles publiques" visible="false" tiled="false"
 				queryable="false"
 				secure="true"
 				infoformat="text/html" featurecount="20"
