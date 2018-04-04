@@ -37,7 +37,7 @@
               <h4 class="Title"><b>Quelle est la répartition des indicateurs ?</b></h4>
               <canvas class="chart" id="RadarChartEcoB" data-codegeo="{{code_geo}}" data-b1="{{b1_ind}}" data-b2="{{b2_ind}}" data-b3="{{b3_ind}}" width="220" height="189"></canvas>
               <p class="ChartLabel">
-              	Indicateur 1: Indice d'Herfindalh (secteur)</br>Indicateur 2: Indice d'Herfindalh (taille) </br>Indicateur 3: Evolution de l'emploi de 2008 à 2013
+              	<span href="#" class="def tooltip-def" data-toggle="tooltipDef" data-placement="top" data-original-title=" L'indice de Herfindhal est un indice mesurant la concentration d'un type d'établissement (selon son secteur d'activité ou sa taille). Il est établi en additionnant le carré des parts de marché (généralement multipliées par 100) de toutes les entreprises du secteur considéré.">Indicateur 1: Indice d'Herfindalh (secteur)</span> </br><span href="#" class="def tooltip-def" data-toggle="tooltipDef" data-placement="top" data-original-title=" L'indice de Herfindhal est un indice mesurant la concentration d'un type d'établissement (selon son secteur d'activité ou sa taille). Il est établi en additionnant le carré des parts de marché (généralement multipliées par 100) de toutes les entreprises du secteur considéré.">Indicateur 2: Indice d'Herfindalh (taille) </span> </br>Indicateur 3: Evolution de l'emploi de 2008 à 2013
               </p>                          
             </div>
           </div>
@@ -142,6 +142,16 @@
 	#idChart{
 		margin-bottom:100px;
 	}
+	.tooltip{
+		position: fixed;
+		z-index: 1000;
+	}
+	.tooltip > .tooltip-inner { 
+	    padding:10px; 
+	}
+	.def:hover {
+		text-decoration: underline;
+	}
 
 </style>
 
@@ -226,3 +236,12 @@
 
 
 </script>
+
+<!-- .Tooltip Def-->
+<script>
+	    $(function()
+	    { 
+	    $(".tooltip-def").tooltip();
+	    });
+</script>
+<!-- ./Tooltip Def-->

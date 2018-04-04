@@ -37,7 +37,7 @@
               <h4 class="Title"><b>Quelle est la répartition des indicateurs ?</b></h4>
               <canvas class="chart" id="RadarChartEcoD" data-codegeo="{{code_geo}}" data-d1="{{d1_ind}}" data-d2="{{d2_ind}}" data-d3="{{d3_ind}}" width="220" height="189"></canvas>
               <p class="ChartLabel">
-              	Indicateur 1: Part d'emplois relevant de l'Economie Sociale et Solidaire (ESS) </br>Indicateur 2: Part de la surface agricole utile (SAU) dans la superficie totale </br>Indicateur 3: Part de la production d'électricité renouvelable rapportée à la consommation électrique totale du territoire
+              	Indicateur 1: Part d'emplois relevant de <span href="#" class="def tooltip-def" data-toggle="tooltipDef" data-placement="top" data-original-title="Branche de l'économie regroupant les organisations privées (entreprises, coopératives, associations, mutuelles ou fondations) qui cherchent à concilier activité économique et équité sociale.">l'Economie Sociale et Solidaire (ESS)</span> </br>Indicateur 2: Part de la surface agricole utile (SAU) dans la superficie totale </br>Indicateur 3: Part de la production d'électricité renouvelable rapportée à la consommation électrique totale du territoire
               </p>                          
             </div>
           </div>
@@ -142,7 +142,16 @@
 	#idChart{
 		margin-bottom:100px;
 	}
-
+	.tooltip{
+		position: fixed;
+		z-index: 1000;
+	}
+	.tooltip > .tooltip-inner { 
+	    padding:10px; 
+	}
+	.def:hover {
+		text-decoration: underline;
+	}
 </style>
 
 
@@ -226,3 +235,12 @@
 
 
 </script>
+
+<!-- .Tooltip Def-->
+<script>
+	    $(function()
+	    { 
+	    $(".tooltip-def").tooltip();
+	    });
+</script>
+<!-- ./Tooltip Def-->
