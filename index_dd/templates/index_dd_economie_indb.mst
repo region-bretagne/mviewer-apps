@@ -57,7 +57,7 @@
     	border: 1px solid #eee!important;
 	}
 	.name-dim-eco{
-		background-color: #FFD460;
+		background-color: #FFC939;
     	padding: 1px;
     	text-align: center;
     	text-transform: uppercase;
@@ -112,7 +112,7 @@
 		text-align: center;
 	}
 	.NameCatEco{
-		color:#FFD460;
+		color:#FFC939;
 		font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
 		text-align: center;		
       	font-weight: 500;
@@ -188,12 +188,12 @@
               },
               {                  
                   label: "EPCI",
-                  backgroundColor: "rgba(255, 212, 96, 0.7)",
-                  borderColor: "rgba(255, 212, 96, 1)",
-                  pointBackgroundColor: "rgba(255, 212, 96, 1)",
-                  pointBorderColor: "rgba(255, 212, 96, 1)",
+                  backgroundColor: "rgba(255, 201, 57, 0.7)",
+                  borderColor: "rgba(255, 201, 57, 1)",
+                  pointBackgroundColor: "rgba(255, 201, 57, 1)",
+                  pointBorderColor: "rgba(255, 201, 57, 1)",
                   pointHoverBackgroundColor: "#fff",
-                  pointHoverBorderColor: "rgba(255, 212, 96, 1)",
+                  pointHoverBorderColor: "rgba(255, 201, 57, 1)",
                   data: data.chart_eco_b.data.datasets[0]
               }]
           },
