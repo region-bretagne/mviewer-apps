@@ -75,7 +75,7 @@ mviewer.customLayers.ocs56_couverture.style1 = function (feature, resolution) {
     }),
     stroke: new ol.style.Stroke({
       color: mviewer.customLayers.ocs56_couverture.classification_couverture[level][ref].fill,
-      width: 0
+      width: 0.001
     })
   });
     return style;
@@ -89,7 +89,7 @@ mviewer.customLayers.ocs56_couverture.layer = new ol.layer.VectorTile({
         tilePixelRatio: 1, // oversampling when > 1
         tileGrid: ol.tilegrid.createXYZ({maxZoom: 20}),
         format: new ol.format.MVT(),
-        url: 'https://ows.region-bretagne.fr/geoserver/gwc/service/tms/1.0.0/rb:ocs56_origine@EPSG%3A3857@pbf/{z}/{x}/{-y}.pbf'
+        url: 'https://ows.region-bretagne.fr/geoserver/gwc/service/tms/1.0.0/rb:ocs56_2013@EPSG%3A3857@pbf/{z}/{x}/{-y}.pbf'
       })
 });
 mviewer.customLayers.ocs56_couverture.handle = false;
