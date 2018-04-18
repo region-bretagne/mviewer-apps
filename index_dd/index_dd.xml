@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="" logo="img/no_logo.svg" help="apps/region/index_dd/indexdd_help.html" measuretools="true" exportpng="true" style="apps/region/index_dd/css/index_dd.css" stats="true" statsurl="../ws/kartenn/log.php"/>
+    <application title=" " logo="img/no_logo.svg" help="apps/region/index_dd/indexdd_help.html" measuretools="true" exportpng="true" style="apps/region/index_dd/css/index_dd.css" stats="true" statsurl="../ws/kartenn/log.php"/>
     <!--<mapoptions projection="EPSG:2154" extent="145518,6726671,372058,6868691"  />-->
     <mapoptions maxzoom="19" projection="EPSG:3857" center="-220750.13768758904,6144925.57790189" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
   
@@ -36,7 +36,7 @@
     <themes mini="false">    
     	<theme name="Dimension sociale"  collapsed="true" id="social" icon="group">
     			<layer id="idd_dim_social_geom" name="Inégalités, pauvreté et exclusion"  visible="false" tiled="false"
-	              	searchable="false" queryable="true"
+	              	searchable="false" queryable="true" exclusive="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="idd_social_inde"
 	                stylesalias=""
@@ -47,7 +47,7 @@
 	                <template url="apps/region/index_dd/templates/index_dd_social_inde.mst"></template>
 		        </layer>
 		        <layer id="idd_dim_social_geom" name="Santé"  visible="false" tiled="false"
-	              	searchable="false" queryable="true"
+	              	searchable="false" queryable="true" exclusive="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="idd_social_indf"
 	                stylesalias=""
@@ -58,7 +58,7 @@
 	                <template url="apps/region/index_dd/templates/index_dd_social_indf.mst"></template>
 		        </layer>
 		        <layer id="idd_dim_social_geom" name="Éducation et Formation"  visible="false" tiled="false"
-	              	searchable="false" queryable="true"
+	              	searchable="false" queryable="true" exclusive="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="idd_social_indg"
 	                stylesalias=""
@@ -69,7 +69,7 @@
 	                <template url="apps/region/index_dd/templates/index_dd_social_indg.mst"></template>
 		        </layer>
 		        <layer id="idd_dim_social_geom" name="Loisirs, culture et patrimoine"  visible="false" tiled="false"
-	              	searchable="false" queryable="true"
+	              	searchable="false" queryable="true" exclusive="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="idd_social_indh"
 	                stylesalias=""
@@ -80,7 +80,7 @@
 	                <template url="apps/region/index_dd/templates/index_dd_social_indh.mst"></template>
 		        </layer>
 		        <layer id="idd_dim_social_geom" name="Langues de Bretagne"  visible="false" tiled="false"
-	              	searchable="false" queryable="true"
+	              	searchable="false" queryable="true" exclusive="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="idd_social_indi"
 	                stylesalias=""
@@ -93,7 +93,7 @@
         </theme>	
         <theme name="Dimension économique"  collapsed="false" id="economie" icon="institution">
 		        <layer id="idd_dim_eco_geom" name="Accès à l'emploi"  visible="false" tiled="false"
-	              	searchable="false" queryable="true"
+	              	searchable="false" queryable="true" exclusive="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="idd_eco_inda"
 	                stylesalias=""
@@ -104,7 +104,7 @@
 	                <template url="apps/region/index_dd/templates/index_dd_economie_inda.mst"></template>
 		        </layer>
 		        <layer id="idd_dim_eco_geom" name="Ancrange local et robustesse du tissu économique"  visible="false" tiled="false"
-	              	searchable="false" queryable="true"
+	              	searchable="false" queryable="true" exclusive="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="idd_eco_indb"
 	                stylesalias=""
@@ -115,7 +115,7 @@
 	                <template url="apps/region/index_dd/templates/index_dd_economie_indb.mst"></template>
 		        </layer>
 		        <layer id="idd_dim_eco_geom" name="Qualité de l'emploi et des conditions de travail"  visible="false" tiled="false"
-	              	searchable="false" queryable="true"
+	              	searchable="false" queryable="true" exclusive="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="idd_eco_indc"
 	                stylesalias=""
@@ -126,7 +126,7 @@
 	                <template url="apps/region/index_dd/templates/index_dd_economie_indc.mst"></template>
 		        </layer>
 		        <layer id="idd_dim_eco_geom" name="Développement économique responsable, activités pour la transition énergétique et écologique"  visible="false" tiled="false"
-	              	searchable="false" queryable="true"
+	              	searchable="false" queryable="true" exclusive="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="idd_eco_indd"
 	                stylesalias=""
