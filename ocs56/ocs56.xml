@@ -27,7 +27,7 @@
     <!--<olscompletion url="http://gpp3-wxs.ign.fr/5kiwvtkb2v23y0x8chidxbij/ols/apis/completion"/>-->
     <!--<olscompletion url="../olscompletion" type="geoportail"/>-->
     <olscompletion url="http://api-adresse.data.gouv.fr/search/" type="ban"/>
-    <elasticsearch url="http://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" doctypes="unite_administrative" linkid="search_id" querymode="fussy_like_this" />
+    <elasticsearch url="http://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" doctypes="unite_administrative" linkid="search_id" querymode="match" version="current" />
     <searchparameters bbox="false" localities="true" features="true" static="true"/>
 	<widgets>
        <!--<widget name="gauge"/>-->       
@@ -109,12 +109,12 @@
 							<template url="apps/region/ocs56/templates/ocs.artificialisation.mst"></template>
 				</layer> 				
         </theme>			
-<!-- 		<theme name="OCS satellite Theia"  collapsed="true" id="theia" icon="camera">
-                <layer id="S2_2016_AllFeatures" name="Carte d'occupation des sols 2016"  visible="false" tiled="true" searchable="false" queryable="false" legendurl="apps/region/ocs56/img/ocs_theia.png"
+		<theme name="OCS satellite Theia"  collapsed="true" id="theia" icon="camera">
+                <layer id="Theia_OSO:OCS_2017_CESBIO_sans_corse_RPG2016_S2A" name="Carte d'occupation des sols 2017"  visible="false" tiled="true" searchable="false" queryable="false" legendurl="apps/region/ocs56/img/ocs_theia.png"
 						 url="http://cyan.ups-tlse.fr:8080/geoserver/Theia_OSO/wms" attribution="Source: Théia">
 					<template url="apps/region/ocs56/templates/ocs.couverture.mst"></template>
                 </layer>
-         </theme> -->
+         </theme>
 		<theme name="OCS Costel"  collapsed="true" id="costel" icon="camera">
                 <layer id="costel_2005_dreal" name="Carte d'occupation des sols 2005"  visible="false" tiled="true" searchable="false" queryable="false" legendurl="apps/region/ocs56/img/ocs_theia.png"
 						 url="https://geobretagne.fr:443/geoserver/dreal_b/wms" attribution="Source: Costel">
