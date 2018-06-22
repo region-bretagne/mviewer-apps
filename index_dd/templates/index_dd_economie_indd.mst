@@ -1,7 +1,7 @@
 {{#features}}
 	<li class="item" style="">
 		<!-- NameDim-->
-		<div class="name-dim">
+		<div class="name-dim-eco">
 			<h4>- Dimension économique -</h4>			
 		</div>
 		<!-- ./NameDim-->
@@ -37,7 +37,7 @@
               <h4 class="Title"><b>Quelle est la répartition des indicateurs ?</b></h4>
               <canvas class="chart" id="RadarChartEcoD" data-codegeo="{{code_geo}}" data-d1="{{d1_ind}}" data-d2="{{d2_ind}}" data-d3="{{d3_ind}}" width="220" height="189"></canvas>
               <p class="ChartLabel">
-              	Indicateur 1: Part d'emplois relevant de l'Economie Sociale et Solidaire (ESS) </br>Indicateur 2: Part de la surface agricole utile (SAU) dans la superficie totale </br>Indicateur 3: Part de la production d'électricité renouvelable rapportée à la consommation électrique totale du territoire
+              	Indicateur 1: Part d'emplois relevant de <span href="#" class="def tooltip-def" data-toggle="tooltipDef" data-placement="top" data-original-title="Branche de l'économie regroupant les organisations privées (entreprises, coopératives, associations, mutuelles ou fondations) qui cherchent à concilier activité économique et équité sociale.">l'Economie Sociale et Solidaire (ESS)</span> </br>Indicateur 2: Part de la surface agricole utile (SAU) dans la superficie totale </br>Indicateur 3: Part de la production d'électricité renouvelable rapportée à la consommation électrique totale du territoire
               </p>                          
             </div>
           </div>
@@ -56,13 +56,13 @@
     	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
     	border: 1px solid #eee!important;
 	}
-	.name-dim{
-		background-color: #FFD460;
+	.name-dim-eco{
+		background-color: #FFC939;
     	padding: 1px;
     	text-align: center;
     	text-transform: uppercase;
 	}
-	.name-dim h4{
+	.name-dim-eco h4{
 		color: white;
 		font-size: 14px;
 		font-family:"roboto_bold";
@@ -112,7 +112,7 @@
 		text-align: center;
 	}
 	.NameCatEco{
-		color:#FFD460;
+		color:#FFC939;
 		font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
 		text-align: center;		
       	font-weight: 500;
@@ -142,7 +142,16 @@
 	#idChart{
 		margin-bottom:100px;
 	}
-
+	.tooltip{
+		position: fixed;
+		z-index: 1000;
+	}
+	.tooltip > .tooltip-inner { 
+	    padding:10px; 
+	}
+	.def:hover {
+		text-decoration: underline;
+	}
 </style>
 
 
@@ -178,12 +187,12 @@
               },
               {                  
                   label: "EPCI",
-                  backgroundColor: "rgba(255, 212, 96, 0.7)",
-                  borderColor: "rgba(255, 212, 96, 1)",
-                  pointBackgroundColor: "rgba(255, 212, 96, 1)",
-                  pointBorderColor: "rgba(255, 212, 96, 1)",
+                  backgroundColor: "rgba(255, 201, 57, 0.7)",
+                  borderColor: "rgba(255, 201, 57, 1)",
+                  pointBackgroundColor: "rgba(255, 201, 57, 1)",
+                  pointBorderColor: "rgba(255, 201, 57, 1)",
                   pointHoverBackgroundColor: "#fff",
-                  pointHoverBorderColor: "rgba(255, 212, 96, 1)",
+                  pointHoverBorderColor: "rgba(255, 201, 57, 1)",
                   data: data.chart_eco_d.data.datasets[0]
               }]
           },
@@ -226,3 +235,12 @@
 
 
 </script>
+
+<!-- .Tooltip Def-->
+<script>
+	    $(function()
+	    { 
+	    $(".tooltip-def").tooltip();
+	    });
+</script>
+<!-- ./Tooltip Def-->

@@ -42,6 +42,11 @@ p.navbar-text.mv-title{
 	font-size: 20px;
 }
 
+/* Transparence du titre*/
+li.navbar-text.mv-title{
+	color: #0000ff00!important;
+}
+
 p.navbar-text.mv-title{
 	font-size: 18px;
 	font-family: 'roboto_bold', Arial, Sans-serif;

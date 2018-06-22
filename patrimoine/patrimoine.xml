@@ -89,6 +89,18 @@
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" > 
 		        <template url="apps/region/patrimoine/templates/patrimoine.vn.mst"></template>
 			</layer>
+            <layer id="recensement_patrimoine" name="Cap Sizun - Pointe du Raz" visible="false" tiled="false" 
+				searchable="false" queryable="true" 
+				infoformat="application/vnd.ogc.gml" featurecount="20"
+                legendurl="http://kartenn.region-bretagne.fr/img/legend/pte_raz_cap_sizun.png"
+				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+				filter="operation='Cap Sizun - Pointe du Raz'"
+				attribution="Service de l'inventaire : Région Bretagne" 
+				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
+				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" > 
+		        <template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
+			</layer>
+
             <!--<layer id="recensement_patrimoine" name="Baie du Mont Saint Michel" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
@@ -474,6 +486,16 @@
 					metadata-csw="" >
 					<template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
 				</layer>-->
+				<layer id="etude_patrimoine_simple" name="PNR Golfe du Morbihan - Patrimoine bâti maritime" visible="false" tiled="false"
+					queryable="true"
+					infoformat="application/vnd.ogc.gml" featurecount="50" legendurl="http://kartenn.region-bretagne.fr/img/legend/PNR_golfe_etudes.png"
+					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+					filter="cadre_etude LIKE '%enquête thématique départementale%' AND affixe_cadre_etude LIKE '% Golfe du Morbihan%'"
+					attribution="Service de l'inventaire : Région Bretagne" 
+					metadata="http://patrimoine.bzh/gertrude-diffusion/dossier/presentation-du-patrimoine-bati-maritime-du-parc-naturel-regional-du-golfe-du-morbihan/81ff3992-ba69-471c-bc4e-9274111427d1"
+					metadata-csw="" >
+					<template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
+				</layer>
 				<layer id="etude_patrimoine_simple" name="Patrimoine maritime culturel" visible="false" tiled="false"
 					queryable="true"
 					infoformat="application/vnd.ogc.gml" featurecount="50" legendurl="http://kartenn.region-bretagne.fr/img/legend/pat_maritime.png"

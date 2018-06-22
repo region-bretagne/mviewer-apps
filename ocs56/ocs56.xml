@@ -96,17 +96,17 @@
                     metadata-csw="">            
                 </layer>
 				<layer id="ocs_indice_union_geom" name="Classification des couvertures"  visible="false" tiled="false"
-							searchable="false" queryable="true"
-							attributefilter="true" attributefield="level" attributevalues="Commune,EPCI,SCOT,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
-							infopanel="bottom-panel"
-							infoformat="application/vnd.ogc.gml" featurecount="5"
-							style="ocstxartific@commune,ocstxagri@commune,ocstxespnat@commune,ocstxeau@commune,ocstxforets@commune,ocstxsolsnus@commune"
-							stylesalias="Taux d'artificialisation,Surfaces agricoles,Espaces naturels,Surfaces en eau,Fôrets, Surfaces en sols nus"
-							url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-							attribution="Sources: Mégalis Bretagne | Traitements: Région Bretagne - Service connaissance, observation, planification et prospective" 
-							metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=5542d62f-14df-4e59-968b-c527dbdb45d6"
-							metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5542d62f-14df-4e59-968b-c527dbdb45d6">
-							<template url="apps/region/ocs56/templates/ocs.artificialisation.mst"></template>
+					searchable="false" queryable="true"
+					attributefilter="true" attributefield="level" attributevalues="Commune,EPCI,SCOT,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
+					infopanel="bottom-panel"
+					infoformat="application/vnd.ogc.gml" featurecount="5"
+					style="ocstxartific@commune,ocstxagri@commune,ocstxespnat@commune,ocstxeau@commune,ocstxforets@commune,ocstxsolsnus@commune"
+					stylesalias="Taux d'artificialisation,Surfaces agricoles,Espaces naturels,Surfaces en eau,Fôrets, Surfaces en sols nus"
+					url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+					attribution="Sources: Mégalis Bretagne | Traitements: Région Bretagne - Service connaissance, observation, planification et prospective" 
+					metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=5542d62f-14df-4e59-968b-c527dbdb45d6"
+					metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5542d62f-14df-4e59-968b-c527dbdb45d6">
+					<template url="apps/region/ocs56/templates/ocs.artificialisation.mst"></template>
 				</layer> 				
         </theme>			
 		<theme name="OCS satellite Theia"  collapsed="true" id="theia" icon="camera">

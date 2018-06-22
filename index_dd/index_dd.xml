@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="" logo="img/no_logo.svg" help="apps/region/index_dd/indexdd_help.html" measuretools="true" exportpng="true" style="apps/region/index_dd/css/index_dd.css" stats="true" statsurl="../ws/kartenn/log.php"/>
+    <application title=" " logo="img/no_logo.svg" help="apps/region/index_dd/indexdd_help.html" measuretools="true" exportpng="true" style="apps/region/index_dd/css/index_dd.css" stats="true" statsurl="../ws/kartenn/log.php"/>
     <!--<mapoptions projection="EPSG:2154" extent="145518,6726671,372058,6868691"  />-->
     <mapoptions maxzoom="19" projection="EPSG:3857" center="-220750.13768758904,6144925.57790189" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
   
@@ -36,104 +36,104 @@
     <themes mini="false">    
     	<theme name="Dimension sociale"  collapsed="true" id="social" icon="group">
     			<layer id="idd_dim_social_geom" name="Inégalités, pauvreté et exclusion"  visible="false" tiled="false"
-	              	searchable="false" queryable="true"
+	              	searchable="false" queryable="true" exclusive="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="idd_social_inde"
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017" 
-	                metadata=""
-	                metadata-csw="">
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018" 
+	                metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b9f0d569-52c2-4200-ab9a-0c3170946271"
+	                metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=b9f0d569-52c2-4200-ab9a-0c3170946271">
 	                <template url="apps/region/index_dd/templates/index_dd_social_inde.mst"></template>
 		        </layer>
 		        <layer id="idd_dim_social_geom" name="Santé"  visible="false" tiled="false"
-	              	searchable="false" queryable="true"
+	              	searchable="false" queryable="true" exclusive="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="idd_social_indf"
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017" 
-	                metadata=""
-	                metadata-csw="">
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018" 
+	                metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b9f0d569-52c2-4200-ab9a-0c3170946271"
+	                metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=b9f0d569-52c2-4200-ab9a-0c3170946271">
 	                <template url="apps/region/index_dd/templates/index_dd_social_indf.mst"></template>
 		        </layer>
 		        <layer id="idd_dim_social_geom" name="Éducation et Formation"  visible="false" tiled="false"
-	              	searchable="false" queryable="true"
+	              	searchable="false" queryable="true" exclusive="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="idd_social_indg"
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017"
-	                metadata=""
-	                metadata-csw="">
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018"
+	                metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b9f0d569-52c2-4200-ab9a-0c3170946271"
+	                metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=b9f0d569-52c2-4200-ab9a-0c3170946271">
 	                <template url="apps/region/index_dd/templates/index_dd_social_indg.mst"></template>
 		        </layer>
 		        <layer id="idd_dim_social_geom" name="Loisirs, culture et patrimoine"  visible="false" tiled="false"
-	              	searchable="false" queryable="true"
+	              	searchable="false" queryable="true" exclusive="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="idd_social_indh"
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017" 
-	                metadata=""
-	                metadata-csw="">
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018" 
+	                metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b9f0d569-52c2-4200-ab9a-0c3170946271"
+	                metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=b9f0d569-52c2-4200-ab9a-0c3170946271">
 	                <template url="apps/region/index_dd/templates/index_dd_social_indh.mst"></template>
 		        </layer>
 		        <layer id="idd_dim_social_geom" name="Langues de Bretagne"  visible="false" tiled="false"
-	              	searchable="false" queryable="true"
+	              	searchable="false" queryable="true" exclusive="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="idd_social_indi"
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017" 
-	                metadata=""
-	                metadata-csw="">
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018" 
+	                metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b9f0d569-52c2-4200-ab9a-0c3170946271"
+	                metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=b9f0d569-52c2-4200-ab9a-0c3170946271">
 	                <template url="apps/region/index_dd/templates/index_dd_social_indi.mst"></template>
 		        </layer>		        
         </theme>	
         <theme name="Dimension économique"  collapsed="false" id="economie" icon="institution">
-		        <layer id="idd_dim_eco_geom" name="Accès à l'emploi"  visible="true" tiled="false"
-	              	searchable="false" queryable="true"
+		        <layer id="idd_dim_eco_geom" name="Accès à l'emploi"  visible="false" tiled="false"
+	              	searchable="false" queryable="true" exclusive="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="idd_eco_inda"
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017"
-	                metadata=""
-	                metadata-csw="">
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018"
+	                metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9b74a9a3-2f8f-45d8-9a26-8bb847422323"
+	                metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=9b74a9a3-2f8f-45d8-9a26-8bb847422323">
 	                <template url="apps/region/index_dd/templates/index_dd_economie_inda.mst"></template>
 		        </layer>
 		        <layer id="idd_dim_eco_geom" name="Ancrange local et robustesse du tissu économique"  visible="false" tiled="false"
-	              	searchable="false" queryable="true"
+	              	searchable="false" queryable="true" exclusive="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="idd_eco_indb"
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017"
-	                metadata=""
-	                metadata-csw="">
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018"
+	                metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9b74a9a3-2f8f-45d8-9a26-8bb847422323"
+	                metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=9b74a9a3-2f8f-45d8-9a26-8bb847422323">
 	                <template url="apps/region/index_dd/templates/index_dd_economie_indb.mst"></template>
 		        </layer>
 		        <layer id="idd_dim_eco_geom" name="Qualité de l'emploi et des conditions de travail"  visible="false" tiled="false"
-	              	searchable="false" queryable="true"
+	              	searchable="false" queryable="true" exclusive="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="idd_eco_indc"
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017"
-	                metadata=""
-	                metadata-csw="">
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018"
+	                metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9b74a9a3-2f8f-45d8-9a26-8bb847422323"
+	                metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=9b74a9a3-2f8f-45d8-9a26-8bb847422323">
 	                <template url="apps/region/index_dd/templates/index_dd_economie_indc.mst"></template>
 		        </layer>
 		        <layer id="idd_dim_eco_geom" name="Développement économique responsable, activités pour la transition énergétique et écologique"  visible="false" tiled="false"
-	              	searchable="false" queryable="true"
+	              	searchable="false" queryable="true" exclusive="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="idd_eco_indd"
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2017"
-	                metadata=""
-	                metadata-csw="">
+	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018"
+	                metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9b74a9a3-2f8f-45d8-9a26-8bb847422323"
+	                metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=9b74a9a3-2f8f-45d8-9a26-8bb847422323">
 	                <template url="apps/region/index_dd/templates/index_dd_economie_indd.mst"></template>
 		        </layer>
         </theme>
@@ -172,7 +172,7 @@
                 attribution="Source: GéoBretagne" 
                 metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/b08e6cb1-236c-49b7-88f9-42b500d274d5" 
                 metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b08e6cb1-236c-49b7-88f9-42b500d274d5"/>	    
-            <layer id="epci" name="Intercommunalité" visible="false" queryable="false" 
+            <layer id="epci" name="Intercommunalité" visible="true" queryable="false" 
                 fields="nom_geo" aliases="Nom" toplayer="true"
                 type="customlayer" style="" opacity="1" legendurl="apps/region/territoire/img/epci.png" 
                 url="apps/region/index_dd/customlayers/epci.js" 
