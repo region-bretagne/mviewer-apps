@@ -37,7 +37,7 @@
               <h4 class="Title"><b>Quelle est la répartition des indicateurs ?</b></h4>
               <canvas class="chart" id="RadarChartSociE" data-codegeo="{{code_geo}}" data-e1="{{e1_ind}}" data-e2="{{e2_ind}}" data-e3="{{e3_ind}}" data-e4="{{e4_ind}}" data-e5="{{e5_ind}}" width="220" height="188"></canvas> 
               <p class="ChartLabel">
-              	Indicateur 1: Niveau des inégalités (écart inter-déciles) - 1er et 9e décile </br>Indicateur 2: Taux de pauvreté </br>Indicateur 3: Revenu médian par unité de consommation </br>Indicateur 4: Part des jeunes (15-24ans) ni en emploi ni en formation </br>Indicateur 5: Part de ménages monoparentales
+              	Indicateur 1: Niveau des inégalités (écart inter-déciles) - 1er et 9e décile </br>Indicateur 2: Taux de pauvreté </br>Indicateur 3: Revenu médian par unité de consommation </br>Indicateur 4: Part des jeunes (15-24ans) ni en emploi ni en formation </br>Indicateur 5: Part des ménages monoparentaux
               </p> 
               <!--<p class="SubText">
               	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit.-->
