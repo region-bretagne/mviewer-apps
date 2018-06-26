@@ -486,6 +486,16 @@
 					metadata-csw="" >
 					<template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
 				</layer>-->
+				<layer id="etude_patrimoine_simple" name="PNR Golfe du Morbihan - Patrimoine bâti maritime" visible="false" tiled="false"
+					queryable="true"
+					infoformat="application/vnd.ogc.gml" featurecount="50" legendurl="http://kartenn.region-bretagne.fr/img/legend/PNR_golfe_etudes.png"
+					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+					filter="cadre_etude LIKE '%enquête thématique départementale%' AND affixe_cadre_etude LIKE '% Golfe du Morbihan%'"
+					attribution="Service de l'inventaire : Région Bretagne" 
+					metadata="http://patrimoine.bzh/gertrude-diffusion/dossier/presentation-du-patrimoine-bati-maritime-du-parc-naturel-regional-du-golfe-du-morbihan/81ff3992-ba69-471c-bc4e-9274111427d1"
+					metadata-csw="" >
+					<template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
+				</layer>
 				<layer id="etude_patrimoine_simple" name="Patrimoine maritime culturel" visible="false" tiled="false"
 					queryable="true"
 					infoformat="application/vnd.ogc.gml" featurecount="50" legendurl="http://kartenn.region-bretagne.fr/img/legend/pat_maritime.png"
