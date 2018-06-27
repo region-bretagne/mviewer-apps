@@ -97,15 +97,37 @@
 		        </layer>
 			</group>
 			<group name="Transports routiers départementaux" id="grp3" >
-				<layer id="arret_routier_departemental" name="Arrêts routiers départementaux"  visible="false" tiled="false" secure="true"
-                    searchable="false" queryable="true" fields="axe" aliases="axe"
+				<layer id="arret_routier_logique_departemental" name="Arrêts routiers logiques départementaux"  visible="false" tiled="false" secure="true"
+                    searchable="false" queryable="true"
+                    infoformat="application/vnd.ogc.gml" featurecount="20"
+                    style="transports_arret_rout_dep_logique_defaut"
+                    legendurl="https://kartenn.region-bretagne.fr/doc/transports/icons/arret_rout_dep.svg" 
+                    url="../geoserver-proxy/rb/wms"
+                    attribution="Région Bretagne - GéoBretagne" 
+					metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=dfd88250-3931-48ba-a77c-a218ae55e0f1"
+					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=dfd88250-3931-48ba-a77c-a218ae55e0f1">
+		            <template url="apps/region/transport/templates/transport.arret_routier_dep.mst"></template>
+		        </layer>
+				<layer id="arret_routier_departemental" name="Arrêts routiers physiques départementaux"  visible="false" tiled="false" secure="true"
+                    searchable="false" queryable="true"
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     style="transports_arret_rout_dep_defaut"
                     legendurl="https://kartenn.region-bretagne.fr/doc/transports/icons/arret_rout_dep.svg" 
                     url="../geoserver-proxy/rb/wms"
                     attribution="Région Bretagne - GéoBretagne" 
-                    metadata=""
-                    metadata-csw="">
+					metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=252ee615-278d-4bc1-b5a7-9ea543348e72"
+					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=252ee615-278d-4bc1-b5a7-9ea543348e72">
+		            <template url="apps/region/transport/templates/transport.arret_routier_dep.mst"></template>
+		        </layer>
+				<layer id="arret_scolaire_bretagne" name="Arrêts scolaires"  visible="false" tiled="false" secure="true"
+                    searchable="false" queryable="true"
+                    infoformat="application/vnd.ogc.gml" featurecount="20"
+                    style="transports_arret_scolaire_defaut"
+                    legendurl="https://kartenn.region-bretagne.fr/doc/transports/icons/transports_arret_scolaire_defaut.svg" 
+                    url="../geoserver-proxy/interne/wms"
+                    attribution="Région Bretagne - GéoBretagne" 
+					metadata=""
+					metadata-csw="">
 		            <template url="apps/region/transport/templates/transport.arret_routier_dep.mst"></template>
 		        </layer>
                 <layer id="ligne_routiere_departementale" name="Lignes routières départementales"  visible="false" tiled="false" secure="true"
