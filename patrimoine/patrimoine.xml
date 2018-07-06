@@ -476,16 +476,16 @@
 					metadata-csw="" >
 					<template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
 				</layer>
-				<!--<layer id="etude_patrimoine_simple" name="Patrimoine balnéaire" visible="false" tiled="false"
+				<layer id="etude_patrimoine_simple" name="Patrimoine balnéaire" visible="false" tiled="false"
 					queryable="true"
 					infoformat="application/vnd.ogc.gml" featurecount="50" legendurl="http://kartenn.region-bretagne.fr/img/legend/pat_balneaire.png"
 					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
-					filter="affixe_cadre_etude LIKE '%recensement du patrimoine balnéaire%'"
+					filter="cadre_etude LIKE '%recensement du patrimoine balnéaire%'"
 					attribution="Service de l'inventaire : Région Bretagne" 
 					metadata="http://patrimoine.bzh/gertrude-diffusion/dossier/presentation-du-patrimoine-balneaire-de-la-cote-d-emeraude/2c354096-cee7-4263-9786-02e479f578ce"
 					metadata-csw="" >
 					<template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
-				</layer>-->
+				</layer>
 				<layer id="etude_patrimoine_simple" name="PNR Golfe du Morbihan - Patrimoine bâti maritime" visible="false" tiled="false"
 					queryable="true"
 					infoformat="application/vnd.ogc.gml" featurecount="50" legendurl="http://kartenn.region-bretagne.fr/img/legend/PNR_golfe_etudes.png"
