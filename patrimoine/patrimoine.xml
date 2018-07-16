@@ -302,7 +302,7 @@
 			</layer>
 			<layer id="etude_patrimoine_mobilier" name="Objets mobiliers" visible="false" tiled="true"
 				queryable="true" searchable="true"
-                infoformat="application/vnd.ogc.gml" featurecount="50"
+                infoformat="application/vnd.ogc.gml" featurecount="99"
 				legendurl="http://kartenn.region-bretagne.fr/img/legend/etudes_objets.png"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution="Service de l'inventaire : Région Bretagne" 
