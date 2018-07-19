@@ -634,6 +634,12 @@
 				attribution="DGFIP" 
 				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/0ca82e1d-b487-4879-8185-56b7c4e1a948" 
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0ca82e1d-b487-4879-8185-56b7c4e1a948" />
+            <layer id="proprietes_region" name="Propriété Région" visible="false" tiled="false"
+				queryable="false"
+				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+				attribution="DGFIP" 
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/0ca82e1d-b487-4879-8185-56b7c4e1a948" 
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0ca82e1d-b487-4879-8185-56b7c4e1a948" />
 			<layer id="CP.CadastralZoning" name="Sections" scalemin="0" scalemax="50000" visible="false" tiled="false"
 				queryable="false" fields="label,nom_commune" aliases="Section,Commune"
                 infoformat="application/vnd.ogc.gml" featurecount="1"
