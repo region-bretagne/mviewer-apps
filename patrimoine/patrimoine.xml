@@ -38,7 +38,7 @@
      <themes>
        <theme name="Dossiers 'papier' avant 2000"  collapsed="true" id="papier" icon="caret-right"> 
             <layer id="inventaire_papiers" name="Dossiers 'papiers' avant 2000" visible="true" tiled="false"
-				queryable="true" infoformat="text/html" featurecount="20" 
+				queryable="true" infoformat="text/html" featurecount="99" 
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 	
 				attribution="Région Bretagne" 
@@ -48,7 +48,7 @@
         <theme name="Recensement avant études"  collapsed="true" id="recensement" icon="caret-right"> 
             <layer id="recensement_patrimoine" name="Recensement avant études" visible="false" tiled="true" 
 				searchable="true" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
+				infoformat="application/vnd.ogc.gml" featurecount="99"
                 legendurl="http://kartenn.region-bretagne.fr/img/legend/recensement.png"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution="Service de l'inventaire : Région Bretagne" 
@@ -58,7 +58,7 @@
 			</layer>	
 			<layer id="recensement_patrimoine" name="Lycées en Bretagne" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
+				infoformat="application/vnd.ogc.gml" featurecount="99"
 				legendurl="http://kartenn.region-bretagne.fr/img/legend/lycee.png"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				filter="operation='Lycées en Bretagne'"
@@ -69,7 +69,7 @@
 			</layer>
 			<layer id="recensement_patrimoine" name="Patrimoine des sports" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
+				infoformat="application/vnd.ogc.gml" featurecount="99"
                 legendurl="http://kartenn.region-bretagne.fr/img/legend/etablissements_nautiques.png"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				filter="operation='Patrimoines des sports en Bretagne'"
@@ -80,7 +80,7 @@
 			</layer>
             <layer id="recensement_patrimoine" name="Voies navigables" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
+				infoformat="application/vnd.ogc.gml" featurecount="99"
                 legendurl="http://kartenn.region-bretagne.fr/img/legend/voies_navigables.png"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				filter="operation='Voies navigables'"
@@ -91,7 +91,7 @@
 			</layer>
             <layer id="recensement_patrimoine" name="Cap Sizun - Pointe du Raz" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
+				infoformat="application/vnd.ogc.gml" featurecount="99"
                 legendurl="http://kartenn.region-bretagne.fr/img/legend/pte_raz_cap_sizun.png"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				filter="operation='Cap Sizun - Pointe du Raz'"
@@ -103,7 +103,7 @@
 
             <!--<layer id="recensement_patrimoine" name="Baie du Mont Saint Michel" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
+				infoformat="application/vnd.ogc.gml" featurecount="99"
                 legendurl=""
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				filter="operation='Baie du Mont-Saint-Michel'"
@@ -114,7 +114,7 @@
 			</layer>-->
             <layer id="recensement_patrimoine" name="Croix et calvaires de Guer et de la Gacilly" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
+				infoformat="application/vnd.ogc.gml" featurecount="99"
                 legendurl="http://kartenn.region-bretagne.fr/img/legend/croix_et_calvaires_guer_la_gacilly.png"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				filter="operation='Croix et calvaires de Guer et de la Gacilly'"
@@ -125,7 +125,7 @@
 			</layer>
             <layer id="recensement_patrimoine" name="Fours à goémon de Bretagne" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
+				infoformat="application/vnd.ogc.gml" featurecount="99"
                 legendurl="http://kartenn.region-bretagne.fr/img/legend/fours_a_goemons.png"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				filter="operation='Fours à goémon de Bretagne'"
@@ -136,7 +136,7 @@
 			</layer>
             <layer id="recensement_patrimoine" name="Inventaire du patrimoine culturel maritime de l'estuaire de Tréguier" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
+				infoformat="application/vnd.ogc.gml" featurecount="99"
                 legendurl="http://kartenn.region-bretagne.fr/img/legend/association_oceanide.png"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				filter="operation LIKE '%Tréguier'"
@@ -147,7 +147,7 @@
 			</layer>
             <layer id="recensement_patrimoine" name="Maisons à pan de bois" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
+				infoformat="application/vnd.ogc.gml" featurecount="99"
                 legendurl="http://kartenn.region-bretagne.fr/img/legend/maisons_quimper.png"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				filter="operation='Maisons à pan de bois'"
@@ -158,7 +158,7 @@
 			</layer>
             <layer id="recensement_patrimoine_operation" name="Patrimoine dansé et vestimentaire de Bretagne" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
+				infoformat="application/vnd.ogc.gml" featurecount="99"
                 legendurl="http://kartenn.region-bretagne.fr/img/legend/heritaj.png"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				filter="operation LIKE 'Heritaj%'"
@@ -169,7 +169,7 @@
 			</layer>
             <layer id="recensement_patrimoine" name="Patrimoine linier et chanvrier en Bretagne" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
+				infoformat="application/vnd.ogc.gml" featurecount="99"
                 legendurl="http://kartenn.region-bretagne.fr/img/legend/inventaire_patrimoine_culturel_linier_chanvrier_bretagne.png"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				filter="operation='Patrimoine linier et chanvrier en Bretagne'"
@@ -180,7 +180,7 @@
 			</layer>
             <layer id="recensement_patrimoine" name="PNR Golfe du Morbihan" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
+				infoformat="application/vnd.ogc.gml" featurecount="99"
                 legendurl="http://kartenn.region-bretagne.fr/img/legend/recensement_pnr_golfe_morbihan.png"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				filter="operation='PNR Golfe du Morbihan - Patrimoine bâti maritime'"
@@ -191,7 +191,7 @@
 			</layer>
             <layer id="recensement_patrimoine" name="Pontivy Communauté" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
+				infoformat="application/vnd.ogc.gml" featurecount="99"
                 legendurl="http://kartenn.region-bretagne.fr/img/legend/pontivy_communaute.png"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				filter="operation='Pontivy Communauté'"
@@ -202,7 +202,7 @@
 			</layer>
             <layer id="recensement_patrimoine" name="Quimperlé Communauté" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
+				infoformat="application/vnd.ogc.gml" featurecount="99"
                 legendurl="http://kartenn.region-bretagne.fr/img/legend/quimperle_communaute.png"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				filter="operation='Quimperlé Communauté'"
@@ -213,7 +213,7 @@
 			</layer>
             <layer id="recensement_patrimoine" name="Recensement des patrimoines maritimes et estuariens du Pays de Morlaix" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
+				infoformat="application/vnd.ogc.gml" featurecount="99"
                 legendurl="http://kartenn.region-bretagne.fr/img/legend/pays_de_morlaix.png"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				filter="operation='Recensement des patrimoines maritimes et estuariens du Pays de Morlaix'"
@@ -224,7 +224,7 @@
 			</layer>
             <layer id="recensement_patrimoine" name="Rennes Métropole" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
+				infoformat="application/vnd.ogc.gml" featurecount="99"
                 legendurl="http://kartenn.region-bretagne.fr/img/legend/rennes_metropole.png"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				filter="operation='Rennes Métropole'"
@@ -235,7 +235,7 @@
 			</layer>
             <!--<layer id="recensement_patrimoine" name="Val d'Ille Aubigné" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
+				infoformat="application/vnd.ogc.gml" featurecount="99"
                 legendurl=""
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				filter="operation='Val d'Ille Aubigné'"
@@ -246,7 +246,7 @@
 			</layer>-->
             <layer id="recensement_patrimoine" name="Vallée du Scorff" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
+				infoformat="application/vnd.ogc.gml" featurecount="99"
                 legendurl="http://kartenn.region-bretagne.fr/img/legend/vallee_du_scorff.png"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				filter="operation='Vallée du Scorff'"
@@ -257,7 +257,7 @@
 			</layer>
             <layer id="recensement_patrimoine" name="Ville d'Elven" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
+				infoformat="application/vnd.ogc.gml" featurecount="99"
                 legendurl="http://kartenn.region-bretagne.fr/img/legend/ville_elven.png"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				filter="operation='Ville d''Elven'"
@@ -268,7 +268,7 @@
 			</layer>
             <layer id="recensement_patrimoine" name="Ville de Dinan" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
+				infoformat="application/vnd.ogc.gml" featurecount="99"
                 legendurl="http://kartenn.region-bretagne.fr/img/legend/ville_de_dinan.png"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				filter="operation='Ville de Dinan'"
@@ -279,7 +279,7 @@
 			</layer>
             <layer id="recensement_patrimoine" name="Ville de Saint-Brieuc" visible="false" tiled="false" 
 				searchable="false" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
+				infoformat="application/vnd.ogc.gml" featurecount="99"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				legendurl="http://kartenn.region-bretagne.fr/img/legend/saint_brieuc.png"
 				filter="operation='Ville de Saint-Brieuc'"
@@ -429,7 +429,7 @@
 				<layer id="croix_calvaire" name="Croix et calvaires (association)" visible="false" tiled="false" 
 					queryable="true"
 					searchable="true" legendurl="http://kartenn.region-bretagne.fr/img/legend/croix_et_calvaires_association.png"
-					infoformat="text/html" featurecount="20"
+					infoformat="text/html" featurecount="99"
 					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 					attribution="Association croix et calvaires de Bretagne" 
 					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=90468f5b-eef8-452d-9443-060870b51332"
@@ -606,7 +606,7 @@
 			metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9722d181-75f9-40ab-a136-a9f9ed6f29a5" />
         <layer id="destination_touristique" name="Destinations touristiques" visible="false" tiled="false"
 			queryable="true" fields="nom" aliases="Nom"
-			infoformat="text/html" featurecount="20" 
+			infoformat="text/html" featurecount="99" 
 			url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 			attribution="Région Bretagne" 
 			metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=677d4e97-82bc-4d64-b11c-167f423900ae"
