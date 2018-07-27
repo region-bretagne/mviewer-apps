@@ -109,7 +109,7 @@
 		            <template url="apps/region/transport/templates/transport.arret_routier_dep.mst"></template>
 		        </layer>
 				<layer id="arret_routier_departemental" name="Arrêts routiers physiques départementaux"  visible="false" tiled="false" secure="true"
-                    searchable="false" queryable="true"
+                    searchable="true" queryable="true"
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     style="transports_arret_rout_dep_defaut"
                     legendurl="https://kartenn.region-bretagne.fr/doc/transports/icons/arret_rout_dep.svg" 

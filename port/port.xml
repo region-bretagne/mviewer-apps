@@ -44,7 +44,7 @@
                 <template url="apps/region/port/templates/port.concession.mst"></template>
             </layer>  
 			<layer id="contour_port_aero" name="Contour Port et Aéroport" visible="true" tiled="false" 
-				queryable="false" fields="site" aliases="Site"
+				searchable="true" queryable="false" fields="site" aliases="Site"
                 infoformat="text/html"              
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="contour_port_aero_rouge" 
