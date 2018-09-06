@@ -10,6 +10,12 @@
 			{{/datation_principale}}
 			<span style="font-family:'roboto_bold'"> Commune : </span>{{commune}}<br/>			
 			<span style="font-family:'roboto_bold'"> Localisation :</span> {{adresse}} {{lieudit}} {{commune}}<br/>
+			{{#cadre_etude}}
+				<span style="font-family:'roboto_bold'"> Enquête(s) :</span> {{cadre_etude}}<br/>
+			{{/cadre_etude}}
+			{{#date_bordereau}}
+				<span style="font-family:'roboto_bold'"> Date(s) de bordereau  :</span> {{date_bordereau}}<br/>
+			{{/date_bordereau}}
 			{{#lien_dossier}}
 			<div class="but_link">
 				<p> <a href="{{lien_dossier}}" target=_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Lien vers dossier</a>
