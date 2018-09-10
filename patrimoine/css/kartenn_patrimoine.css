@@ -272,6 +272,17 @@ h4.title{
 	font-family:'roboto_regular', Arial, Sans-serif;
 	}
 
+.mv-theme.panel-heading{
+	background-color: #2f476c;
+}
+
+h4.panel-title{
+    font-family: 'roboto_regular', Arial, Sans-serif;
+    font-size: 16px;
+	color:#FFFFFF;
+	
+}
+	
 /*******************************
 ------------- POPOVER
 ********************************/
