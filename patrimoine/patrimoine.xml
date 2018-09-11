@@ -94,7 +94,7 @@
 			</layer>
             <layer id="etude_patrimoine_simple" name="Dossiers d'études par domaine" visible="false" tiled="false"
                 queryable="true"
-                infoformat="application/vnd.ogc.gml" featurecount="99" legendurl="http://kartenn.region-bretagne.fr/img/legend/dossiers_d_etudes_par_domaine.png"   
+                infoformat="application/vnd.ogc.gml" featurecount="150" legendurl="http://kartenn.region-bretagne.fr/img/legend/dossiers_d_etudes_par_domaine.png"   
                 attributefilter="true" attributefield="domaine" attributevalues="AUCUN,ARCHITECTURE AGRICOLE,ARCHITECTURE ARTISANALE - COMMERCIALE ET TERTIAIRE,ARCHITECTURE CIVILE PUBLIQUE,ARCHITECTURE DE CULTURE - RECHERCHE - SPORT OU LOISIR,ARCHITECTURE DE JARDIN ET DES ESPACES VERTS,ARCHITECTURE DOMESTIQUE,ARCHITECTURE FISCALE OU FINANCIERE,ARCHITECTURE HOSPITALIERE - D'ASSISTANCE OU DE PROTECTION SOCIALE,ARCHITECTURE INDUSTRIELLE,ARCHITECTURE JUDICIAIRE - PENITENTIAIRE OU DE POLICE,ARCHITECTURE MILITAIRE,ARCHITECTURE MONUMENTALE - COMMEMORATIVE - FUNERAIRE ET VOTIVE,ARCHITECTURE RELIGIEUSE,ARCHITECTURE SCOLAIRE,ARMEMENT,DENOMINATION PROVISOIRE,ELEMENT D'ARCHITECTURE,GENIE CIVIL,INSTRUMENT DE MUSIQUE,INSTRUMENT OU OBJET PEDAGOGIQUE OU SCIENTIFIQUE,MACHINE ENERGETIQUE,MACHINE LIEE A LA PRODUCTION INDUSTRIELLE,MEUBLE DOMESTIQUE,MEUBLE RELIGIEUX,MOBILIER MONUMENTAL OU DE L'ESPACE EXTERIEUR,MOYEN DE TRANSPORT,OBJET CIVIL DOMESTIQUE,OBJET RELIGIEUX,PARTIE OU ELEMENT COMMUN A TOUS LES TYPES D'ARCHITECTURE ET AUX ESPACES AMENAGES,PEINTURE - ARTS GRAPHIQUES ET DES MEDIA,SCULPTURE,TEXTILE - GARNITURE OU VETEMENTS LAICS,TEXTILE RELIGIEUX,URBANISME ET ESPACES AMENAGES"  attributelabel="Domaine" attributestylesync="false" attributefilterenabled="true" attributeoperator="like"
                 url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
                 attribution="Service de l'inventaire : &lt;a href='http://patrimoine.bzh/' target='_blank'>patrimoine.bzh &lt;/a>" 
@@ -114,7 +114,7 @@
 			</layer>
 			<layer id="etude_patrimoine_mobilier" name="Objets mobiliers" visible="false" tiled="true"
 				queryable="true" searchable="true"
-                infoformat="application/vnd.ogc.gml" featurecount="99"
+                infoformat="application/vnd.ogc.gml" featurecount="150"
 				legendurl="http://kartenn.region-bretagne.fr/img/legend/etudes_objets.png"
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution="Service de l'inventaire : Région Bretagne" 
@@ -124,7 +124,7 @@
 			</layer>
             <layer id="etude_patrimoine_simple_thematique" name="Etudes thématiques" visible="false" tiled="false"
                 queryable="true"
-                infoformat="application/vnd.ogc.gml" featurecount="99" legendurl="http://kartenn.region-bretagne.fr/img/legend/enquetes_thematiques.png"                
+                infoformat="application/vnd.ogc.gml" featurecount="150" legendurl="http://kartenn.region-bretagne.fr/img/legend/enquetes_thematiques.png"                
                 attributefilter="true" attributefield="affixe_cadre_etude" attributevalues="aucun,architecture gothique,ardoisières du Centre Bretagne,canal d'Ille-et-Rance,canal de Nantes à Brest,charpente armoricaine,châteaux du 19e siècle en Bretagne,Croix et calvaires de Guer et de la Gacilly,édifices religieux publics dans le Finistère : 1801-1905,églises et chapelles d'Ille-et-Vilaine,églises romanes de Bretagne,fortifications littorales,Heritaj -Inventaire du patrimoine dansé et vestimentaire de Bretagne,Inventaire des châteaux - maisons de maître et maisons d'architecte de Quimper,Inventaire des commanderies templières et hospitalières de Bretagne,Inventaire des fortifications littorales du milieu du 19e siècle dans les îles de Bretagne Sud (1830-1870),Inventaire des fours de goémoniers de Bretagne,Inventaire des manoirs de Quimper,inventaire des phares,Inventaire du patrimoine matériel et immatériel de l'archipel des Glénan,jardins remarquables,Les bateaux du patrimoine,Les coiffes en filet brodé de Bretagne,Les moulins à marée en Bretagne,Les moulins à papier et papeteries industrielles de Bretagne,Les patrimoines maritimes et estuariens du Pays de Morlaix,Lycées en Bretagne,orfèvrerie religieuse de Haute-Bretagne,patrimoine balnéaire,patrimoine de la villégiature sur la Côte de Granit Rose,patrimoine des sports,patrimoine industriel,patrimoine linier et chanvrier de Bretagne,PNR Golfe du Morbihan - Patrimoine bâti maritime,recensement du patrimoine maritime (GÉOMER Brest),stalles médiévales de l'ancien duché de Bretagne,station biologique de Roscoff,Trésors dinannais : Dinan et l’orfèvrerie religieuse au XIXème siècle,Voies navigables"  attributelabel="Thématiques" attributestylesync="false" attributefilterenabled="true" attributeoperator="like"
                 url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
                 attribution="Service de l'inventaire : &lt;a href='http://patrimoine.bzh/' target='_blank'>patrimoine.bzh &lt;/a>" 
