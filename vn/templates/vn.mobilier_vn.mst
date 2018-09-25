@@ -1,6 +1,9 @@
 {{#features}}
 	<li class="item" style="width:238px;">
 		<h3 class="title-feature">{{type_mob}}</h3>
+        {{#photo}}                
+			<img src="{{photo}}" class="img-responsive" />
+        {{/photo}}                
 		<p class="text-feature">	
 			{{#gestionnaire}}                
 				<span style="font-family:'roboto_bold'"> Gestionnaire :</span> {{gestionnaire}}<br/>

@@ -4,6 +4,10 @@
 			<div class="eau {{eau}}"><span style="margin-left:20px;"></span></div>
 			<div class="elec {{elec}}"><span style="margin-left:20px;"></span></div>
 			<div class="eu {{eu}}"><span style="margin-left:20px;"></span></div>
+        {{#photo}}                
+			<img src="{{photo}}" class="img-responsive" />
+        {{/photo}}                
+
 		<p class="text-feature">
 			{{#t_robinet}}                
 				<span style="font-family:'roboto_bold'"> Type de robinets :</span> {{t_robinet}}<br/>

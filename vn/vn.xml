@@ -120,7 +120,7 @@
         </theme> 
         <theme name="Equipements"  collapsed="true" id="equipement" icon="plug"> 
 			<layer id="mobilier_vn" name="Mobiliers" visible="false" tiled="false" 
-				queryable="true" 
+				queryable="true" searchable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="mobilier" stylesalias="Type" 
@@ -147,7 +147,7 @@
 				metadata-csw=""
 				metadata="" />  
 			<layer id="sanitaire_vn" name="Sanitaires" visible="false" tiled="false" 
-				queryable="true"
+				queryable="true" searchable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="sanitaire_wc,sanitaire_douche" stylesalias="WC,Douche" 
@@ -158,7 +158,7 @@
 				<template url="apps/region/vn/templates/vn.sanitaire_vn.mst"></template>
 			</layer>							
 			<layer id="borne_multiservice_vn" name="Bornes multiservices" visible="false" tiled="false" 
-				queryable="true"
+				queryable="true" searchable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="borne_multiservice,borne_eau_navigant,borne_electricite,borne_eu_vn" stylesalias="Defaut,Eau navigant,Electricité,Eaux usées" 
@@ -177,7 +177,7 @@
 				<template url="apps/region/vn/templates/vn.cale_mise_eau_vn.mst"></template>
 			</layer>		
 			<layer id="quai_ponton_vn" name="Quai et ponton" visible="false" tiled="false" 
-				queryable="true" 
+				queryable="true" searchable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution="Région Bretagne" 
@@ -186,7 +186,7 @@
 				<template url="apps/region/vn/templates/vn.quai_ponton_vn.mst"></template>
 			</layer>		
 			<layer id="ponton_attente_vn" name="Ponton d'attente" visible="false" tiled="false" 
-				queryable="true" 
+				queryable="true" searchable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution="Région Bretagne" 
