@@ -17,6 +17,9 @@
 					<img src="apps/region/vn/img/douche.svg" width="75">
 				{{/douche}}   
 				</div>
+			{{#id_plaque}}                
+				<span style="font-family:'roboto_bold'"> Identifiant :</span> {{id_plaque}}<br/>
+			{{/id_plaque}}
 			{{#gestion}}                
 				<span style="font-family:'roboto_bold'"> Gestionnaire :</span> {{gestionnaire}}<br/>
 			{{/gestion}}                

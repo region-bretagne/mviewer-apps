@@ -5,7 +5,10 @@
 			<img src="{{photo}}" class="img-responsive" />
         {{/photo}}                
 		<p class="text-feature">	
-			<span style="font-family:'roboto_bold'"> Rive :</span> {{rive}}<br/>		
+			<span style="font-family:'roboto_bold'"> Rive :</span> {{rive}}<br/>	
+			{{#id_plaque}}                
+				<span style="font-family:'roboto_bold'"> Identifiant :</span> {{id_plaque}}<br/>
+			{{/id_plaque}}			
 			{{#observation}}                
 				<span style="font-family:'roboto_bold'"> Observations :</span> {{observation}}<br/>
 			{{/observation}}                

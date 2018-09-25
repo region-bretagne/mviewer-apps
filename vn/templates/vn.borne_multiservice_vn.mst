@@ -9,6 +9,9 @@
         {{/photo}}                
 
 		<p class="text-feature">
+			{{#id_plaque}}                
+				<span style="font-family:'roboto_bold'"> Identifiant :</span> {{id_plaque}}<br/>
+			{{/id_plaque}}
 			{{#t_robinet}}                
 				<span style="font-family:'roboto_bold'"> Type de robinets :</span> {{t_robinet}}<br/>
 			{{/t_robinet}}

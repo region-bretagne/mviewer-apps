@@ -4,7 +4,10 @@
         {{#photo}}                
 			<img src="{{photo}}" class="img-responsive" />
         {{/photo}}                
-		<p class="text-feature">	
+		<p class="text-feature">
+			{{#id_plaque}}                
+				<span style="font-family:'roboto_bold'"> Identifiant :</span> {{id_plaque}}<br/>
+			{{/id_plaque}}		
 			{{#gestionnaire}}                
 				<span style="font-family:'roboto_bold'"> Gestionnaire :</span> {{gestionnaire}}<br/>
 			{{/gestionnaire}}                

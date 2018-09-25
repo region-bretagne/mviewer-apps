@@ -4,7 +4,10 @@
         {{#photo}}                
 			<img src="{{photo}}" class="img-responsive" />
         {{/photo}}                
-		<p class="text-feature">	
+		<p class="text-feature">
+			{{#id_plaque}}                
+				<span style="font-family:'roboto_bold'"> Identifiant :</span> {{id_plaque}}<br/>
+			{{/id_plaque}}		
 			{{#ss_type}}                
 				<span style="font-family:'roboto_bold'"> Sous type :</span> {{ss_type}}<br/>
 			{{/ss_type}}           
