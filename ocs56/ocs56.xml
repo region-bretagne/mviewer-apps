@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="Démonstrateur occupation du sol" logo="" help="true" measuretools="true" exportpng="true" style="apps/region/ocs56/css/ocs.css" />    
+    <application title="Démonstrateur occupation du sol" logo="" help="true" measuretools="true" exportpng="false" style="apps/region/ocs56/css/ocs.css" />    
     <mapoptions maxzoom="19" projection="EPSG:3857" center="-304831,6056870" zoom="9" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
   
 	<baselayers style="gallery"><!-- style="default"||gallery" -->            		
@@ -83,8 +83,8 @@
                     expanded="true"
                     tooltip="true" tooltipenabled="true" tooltipcontent="{{label}} "
                     attribution="Source: Mégalis" 
-                    metadata="" 
-                    metadata-csw="">
+                    metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/16f61c29-160b-4406-8c49-a89de2eb47d4" 
+                    metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=16f61c29-160b-4406-8c49-a89de2eb47d4">
                     <template url="apps/region/ocs56/templates/ocs.couverture.mst"></template>
                 </layer>
                 <layer id="ocs56_usage" name="Usage" visible="false" queryable="true"
@@ -92,8 +92,8 @@
                     url="apps/region/ocs56/customlayers/ocs56_usage.js"
                     tooltip="true" tooltipenabled="true" tooltipcontent="{{label}} "
                     attribution="Source: Mégalis" 
-                    metadata="" 
-                    metadata-csw="">            
+                    metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/16f61c29-160b-4406-8c49-a89de2eb47d4" 
+                    metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=16f61c29-160b-4406-8c49-a89de2eb47d4">
                 </layer>
 				<layer id="ocs_indice_union_geom" name="Classification des couvertures"  visible="false" tiled="false"
 					searchable="false" queryable="true"
@@ -104,20 +104,21 @@
 					stylesalias="Taux d'artificialisation,Surfaces agricoles,Espaces naturels,Surfaces en eau,Fôrets, Surfaces en sols nus"
 					url="http://ows.region-bretagne.fr/geoserver/rb/wms"
 					attribution="Sources: Mégalis Bretagne | Traitements: Région Bretagne - Service connaissance, observation, planification et prospective" 
-					metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=5542d62f-14df-4e59-968b-c527dbdb45d6"
-					metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5542d62f-14df-4e59-968b-c527dbdb45d6">
+					metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/16f61c29-160b-4406-8c49-a89de2eb47d4"
+					metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=16f61c29-160b-4406-8c49-a89de2eb47d4">
 					<template url="apps/region/ocs56/templates/ocs.artificialisation.mst"></template>
 				</layer> 				
         </theme>			
 		<theme name="OCS satellite Theia"  collapsed="true" id="theia" icon="camera">
-                <layer id="Theia_OSO:OCS_2017_CESBIO_sans_corse_RPG2016_S2A" name="Carte d'occupation des sols 2017"  visible="false" tiled="true" searchable="false" queryable="false" legendurl="apps/region/ocs56/img/ocs_theia.png"
+                <layer id="Theia_OSO:OCS_2017_CESBIO" name="Carte d'occupation des sols 2017"  visible="false" tiled="true" searchable="false" queryable="false" legendurl="apps/region/ocs56/img/ocs_theia.png"
 						 url="http://cyan.ups-tlse.fr:8080/geoserver/Theia_OSO/wms" attribution="Source: Théia">
-					<template url="apps/region/ocs56/templates/ocs.couverture.mst"></template>
                 </layer>
          </theme>
 		<theme name="OCS Costel"  collapsed="true" id="costel" icon="camera">
                 <layer id="costel_2005_dreal" name="Carte d'occupation des sols 2005"  visible="false" tiled="true" searchable="false" queryable="false" legendurl="apps/region/ocs56/img/ocs_theia.png"
-						 url="https://geobretagne.fr:443/geoserver/dreal_b/wms" attribution="Source: Costel">
+					url="https://geobretagne.fr:443/geoserver/dreal_b/wms" attribution="Source: Costel"
+					metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/66ae7ed3-cffe-4eb7-ba78-94480cd1b527"
+					metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=66ae7ed3-cffe-4eb7-ba78-94480cd1b527">						 
 					<template url="apps/region/ocs56/templates/ocs.couverture.mst"></template>
                 </layer>
          </theme>			 
