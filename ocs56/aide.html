@@ -1,179 +1,36 @@
 <ul class="nav nav-tabs" role="tablist">    
-	<li role="presentation" class="active"><a href="#h_kartenn" aria-controls="profile" role="tab" data-toggle="tab"><span class="fa fa-book"></span> Démonstrateur OCS</a></li>
-    <li role="presentation" ><a href="#h_aide" aria-controls="messages" role="tab" data-toggle="tab"><span class="fa fa-question"></span> Aide</a></li>
-    <li role="presentation" ><a href="#h_definition" aria-controls="profile" role="tab" data-toggle="tab"><span class="fa fa-search"></span> Lexique</a></li>
+	<li role="presentation" class="active"><a href="#h_kartenn" aria-controls="profile" role="tab" data-toggle="tab"><span class="fa fa-book"></span> A propos</a></li>
     <li role="presentation" ><a href="#h_credits" aria-controls="settings" role="tab" data-toggle="tab"><span class="fa fa-creative-commons"></span> Crédits</a></li>   
 </ul>
 
  <!-- Tab panes -->
 <div class="tab-content">
 	<div role="tabpanel" class="tab-pane active" id="h_kartenn">
-        <h4>À propos de Kartenn Territoires</h4>
+        <h4>À propos</h4>
         <div class="propos">
-        	<h5>Qu'est ce que Kartenn Territoires ?</h5>
-        	<p>Kartenn Territoires est une application cartographique permettant la consultation, la comparaison et l’analyse de divers données statistiques. Grâce à la carte, il est possible d'accéder à plusieurs informations sur des thématiques variées : population, logement, économie, etc. Dans la mesure du possible, ces indicateurs sont disponibles à plusieurs échelles du territoire breton : les communes, les intercommunalités et les pays.</p>
-        </div>	
+        	<h5>Pourquoi un démonstrateur ?</h5>
+				<p>Ce démonstrateur a pour but la consultation de la couverture et l'usage des sols du Morbihan.</br>
+				Expérimentation initiée en 2016 par le groupe de travail du pôle métier du Morbihan, un modèle d'occupation du sol a été produit en 2017 selon les prescriptions nationales pour la production des bases de données d’occupation des sols à grande échelle.</br>
+				Il a vocation à être enrichi par d'autres indicateurs définis par le groupe de travail départemental ou validés au niveau national via le groupe de travail de la commission nationale de l'information géographique (CNIG).</p>
+		</div>	
         <div class="visuel">
-	        	<div class="col-sm-4">
+		<p>Une classification de couverture en 6 classes par échelle territoriale : communal, EPCI, Pays et SCOT a été réalisée pour représenter des premiers indicateurs de consommation des espaces.</p>
+	        	<div class="col-sm-6">
 	        		<img src="apps/region/territoire/img/ind_carto2.svg" width="90px">
 	        		<h6>Indicateurs cartographiques</h6>
-	        		<div class="visuel_tx">Les indicateurs sont disponibles dans le menu déroulant situé à gauche de l'application. Dans la plupart des cas, ceux-ci offrent plusieurs analyses cartographiques.</div>
+						<div class="visuel_tx">Les indicateurs sont disponibles dans le menu déroulant situé à gauche de l'application. Dans la plupart des cas, ceux-ci offrent plusieurs analyses cartographiques.</div>
 	        	</div>
-	        	<div class="col-sm-4">
+	        	<div class="col-sm-6" style="margin-bottom:25px;">
 	        		<img src="apps/region/territoire/img/graphique2.svg" width="90px">
 	        		<h6>Graphiques</h6>
 	        		<div class="visuel_tx">Pour obtenir davantage d'informations, il est possible en cliquant sur une entité, d'afficher des graphiques, des chiffres clés associés à l'indicateur cartographique visualisé.</div>
 	        	</div>
-	        	<div class="col-sm-4" style="margin-bottom:25px;">
-	        		<img src="apps/region/territoire/img/fiche_territoire2.svg" width="90px">
-	        		<h6>Fiches de l'Observatoire</h6>
-	        		<div class="visuel_tx">Les fiches de l'Observatoire, disponibles pour l'échelon des intercommunalités et des pays, sont accessibles en téléchargement dans Kartenn Territoires via le menu déroulant.</div>
-	        	</div>
 	    </div> 
-	    <div class="source">
-        	<h5>D’où proviennent les données ?</h5>
-        	<p>Les données sont dans la plupart du temps, issues de l'Institut National de la statistique et des études économiques (INSEE). Pour en savoir plus sur la source des données utilisées, les métadonnées sont accessibles dans les options des couches via l'icône <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>.</p>
-        </div>
 		<div class="contact">
         	<h5>Une suggestion, une question, un problème ?</h5>
         	<p>N’hésitez à nous contacter sur sig@bretagne.bzh pour nous faire part de vos remarques ou questions !</p>
         </div>
     </div>  
-    <div role="tabpanel" class="tab-pane" id="h_aide">
-        <h4>Aide </h4>
-        <div class=" row help_movie">
-        	<!--VIDEO 1-->
-        	<div class="col-md-6 movie">
-        		 <div align="center">
-    				<video class="img-responsive" controls="controls">
-			        	<source src="apps/region/territoire/img/KT_fonctionnalite_basique.mp4" type="video/mp4">
-			        </video>			        
-			    </div>
-			    <h5><span class="fa fa-video-camera"></span> <u>Vidéo 1:</u> Les fonctionnalités basiques</h5> 
-			    <p>Zoom avant et arrière - Changement de fond de plan - Recherche des entités - Mesures - Export et partage de la carte</p> 			       
-		    </div>   
-		    <!--./VIDEO 1-->
-		    <!--VIDEO 2-->
-        	<div class="col-md-6 movie">
-        		 <div align="center">
-    				<video class="img-responsive" controls="controls">
-			        	<source src="apps/region/territoire/img/KT_navigation_ind.mp4" type="video/mp4">
-			        </video>			        
-			    </div>
-			    <h5><span class="fa fa-video-camera"></span> <u>Vidéo 2:</u> Naviguer dans l'outil</h5> 
-			    <p>Sélectionner une thématique - Afficher un indicateur - Supprimer un indicateur de la carte</p>	       
-		    </div>   
-		    <!--./VIDEO 2-->
-		</div>   
-		 <div class=" row help_movie">
-		    <!--VIDEO 3-->
-        	<div class="col-md-6 movie">
-        		 <div align="center">
-    				<video class="img-responsive" controls="controls">
-			        	<source src="apps/region/territoire/img/KT_gestion_option.mp4" type="video/mp4">
-			        </video>			        
-			    </div>
-			    <h5><span class="fa fa-video-camera"></span> <u>Vidéo 3:</u> Gérer les options d'une couche géographique</h5> 
-			    <p>Modifier l'ordre des couches - Gérer l'opacité - Modifier l'analyse cartographique - Changer l'échelle géographique de visualisation - Faire varier la donnée dans le temps - Consulter la métadonnée</p>	       
-		    </div>   
-		    <!--./VIDEO 3-->
-		    <!--VIDEO 4-->
-        	<div class="col-md-6 movie">
-        		 <div align="center">
-    				<video class="img-responsive" controls="controls">
-			        	<source src="apps/region/territoire/img/KT_interrogation_couche.mp4" type="video/mp4">
-			        </video>			        
-			    </div>
-			    <h5><span class="fa fa-video-camera"></span> <u>Vidéo 4:</u> Intérroger une entité</h5> 
-			    <p>Consulter la fenêtre d'information - Naviguer entre les fenêtres d'information - Consulter les graphiques et les chiffres clés</p>	       
-		    </div>   
-		    <!--./VIDEO 4-->
-		</div>    
-		<div class=" row help_movie">    
-		    <!--VIDEO 5-->
-        	<div class="col-md-6 movie">
-        		 <div align="center">
-    				<video class="img-responsive" controls="controls">
-			        	<source src="apps/region/territoire/img/KT_fiche_observ.mp4" type="video/mp4">
-			        </video>			        
-			    </div>
-			    <h5><span class="fa fa-video-camera"></span> <u>Vidéo 5:</u> Consulter les fiches de l'observatoire</h5> 
-			    <p>Fiches de l'observatoire - Intercommunalités - Chiffres clés et graphiques - Consultation et téléchargement en .PDF</p>	       
-		    </div>   
-		    <!--./VIDEO 5-->		    
-        	<!--VIDEO 6-->
-        	<div class="col-md-6 movie">
-        		 <div align="center">
-    				<video class="img-responsive" controls="controls">
-			        	<source src="apps/region/territoire/img/KT_aide.mp4" type="video/mp4">
-			        </video>			        
-			    </div>
-			    <h5><span class="fa fa-video-camera"></span> <u>Vidéo 6:</u> Accéder à la documentation</h5> 
-			    <p>A propos de Kartenn Territoires - Aide vidéo et pdf - Lexique et définitions - Crédits</p> 			       
-		    </div>   
-		    <!--./VIDEO 6--> 
-        </div>
-        <div style="padding:20px;" >
-			<a href="https://kartenn.region-bretagne.fr/doc/aide_kartenn_avril2017.pdf" target="_blank">
-				<div class="help_button" style="background-color:#268f91; text-align:center; border-radius:4px; padding:7px; color:white;">
-					<img src="apps/region/global/img/icon_pdf.svg" style="width:35px;margin-right:10px;">Consulter l'aide d'utilisation de Kartenn (.PDF)
-				</div>
-			</a>
-		</div>        
-    </div>  
-    <div role="tabpanel" class="tab-pane" id="h_definition">
-        <h4>Lexique </h4>
-        <div class="row">
-            <div class="col-sm-5" style="padding-right:0px;">
-                <h6>APESAS</h6>
-                <p>Administration publique, Enseignement, Santé humaine et Action sociale </p>
-                <h6>BEPC</h6>
-                <p>Brevet d'Études du Premier Cycle</p>
-                <h6>Chercheur.euse d’emploi de catégorie A</h6>
-                <p>Chercheur.euse d'emploi tenu.e de faire des actes positifs de recherche d'emploi, sans emploi</p>     
-                <h6>Chercheur.euse d’emploi de catégorie B</h6>
-                <p>Chercheur.euse d'emploi tenu.e de faire des actes positifs de recherche d'emploi, ayant exercé une activité réduite courte (de 78 heures ou moins au cours du mois)</p>
-                <h6>Chercheur.euse d’emploi de catégorie C</h6>
-                <p>Chercheur.euse d'emploi tenus de faire des actes positifs de recherche d'emploi, ayant exercé une activité réduite longue (de plus 78 heures au cours du mois)</p>
-                <h6>Chercheur.euse d’emploi de catégories ABC</h6>
-                <p>Ensemble des chercheur.euse.s d'emploi tenu.e.s de faire des actes positifs de recherche d'emploi</p>
-                <h6>Chercheur.euse d’emploi de longue durée (DELD)</h6>
-                <p>Chercheur.euse d’emploi inscrit.e en catégories A, B ou C depuis plus d’un an</p>
-                <h6>CSP</h6>
-                <p>Catégorie socio-professionnelle</p>
-                <h6>CTS</h6>
-                <p>Commerce, Transports et Services divers</p>
-                <h6>Emploi total </h6>
-                <p>Emplois des salarié.e.s et des indépendant.e.s</p>
-                <h6>Logement vacant</h6>
-                <p>Un logement vacant est un logement inoccupé se trouvant dans l'un des cas suivants :</br>
-                    - proposé à la vente, à la location ;</br>
-                    - déjà attribué à un acheteur.euse ou un locataire et en attente d'occupation;</br>
-                    - en attente de règlement de succession ;</br>
-                    - conservé par un employeur pour un usage futur au profit d'un de ses employé.e.s ;</br>
-                    - gardé vacant et sans affectation précise par le propriétaire (exemple un logement très vétuste...)</p>
-            </div>
-            <div class="col-sm-offset-1 col-sm-5" style="padding-right:0px;"> 
-                <h6>Ménage</h6>
-                <p>Un ménage est un ensemble de personnes partageant le même logement et participant à son économie </p>
-                <h6>Revenu fiscal par unité de consommation</h6>
-                <p>Le revenu fiscal par unité de  consommation (UC) est le revenu du ménage rapporté au nombre d’unités de consommation qui le composent.</br>
-                    Par convention, le nombre d’unités de consommation d’un « ménage fiscal » est évalué de la manière suivante :</br>
-                    - le premier adulte du ménage compte pour une unité de consommation ;</br>
-                    - les autres personnes de 14 ans ou plus comptent chacune pour 0,5 ;</br>
-                    - les enfants de moins de 14 ans comptent chacun pour 0,3.</br>
-                    Le revenu fiscal exprimé par UC présente l’avantage de prendre en compte les diverses compositions des ménages et donc les économies d’échelle liées à la vie en groupe.</p>
-                <h6>Revenu médian</h6>
-                <p>Le revenu médian est le revenu qui partage la population en deux parties égales. Ainsi, la médiane est le revenu au-dessous duquel se situent 50 % des personnes et au-dessus duquel se situe l'autre l'autre moitié de la population</p>
-                <h6>Solde naturel</h6>
-                <p>Le solde naturel est la différence entre le nombre de naissances et le nombre de décès enregistrés au cours d'une période</p>
-                <h6>Solde migratoire </h6>
-                <p>Le solde migratoire est la différence entre le nombre de personnes qui sont entrées sur le territoire et le nombre de personnes qui en sont sorties au cours de l'année</p> 
-                <h6>Zone d'emploi, Aire urbaine, Unité urbaine, Bassin de vie</h6>
-                <p><i>Voir les fenêtres d'information des couches géographiques</i></p>
-            </div>
-        </div>
-    </div>
     <div role="tabpanel" class="tab-pane" id="h_credits">
         <h4>Crédits </h4>
         <div class="row">
@@ -212,5 +69,4 @@
             </div>
         </div>
     </div>
-    
 </div>
