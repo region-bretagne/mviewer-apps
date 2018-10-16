@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="Démonstrateur occupation du sol" logo="" help="true" measuretools="true" exportpng="false" style="apps/region/ocs56/css/ocs.css" />    
+    <application title="Démonstrateur occupation du sol" logo="" help="apps/region/ocs56/aide.html" measuretools="true" exportpng="false" style="apps/region/ocs56/css/ocs.css" />    
     <mapoptions maxzoom="19" projection="EPSG:3857" center="-304831,6056870" zoom="9" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
   
 	<baselayers style="gallery"><!-- style="default"||gallery" -->            		
