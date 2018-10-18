@@ -633,4 +633,8 @@ p.text{
 	font-size:38px; 
 	margin-top:-13px; 
 	margin-bottom:-8px;
-}			
+}
+
+.panel-heading.mv-theme {
+    background: #69003f;
+}
