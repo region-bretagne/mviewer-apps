@@ -83,7 +83,7 @@
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" > 
 		        <template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
 			</layer>-->
-            <layer id="etude_patrimoine_simple" name="Dossiers d'études complet" visible="true" tiled="true"
+            <layer id="etude_patrimoine_simple" name="Dossiers d'études" visible="true" tiled="true"
                 queryable="true"
                 infoformat="application/vnd.ogc.gml" featurecount="99" legendurl="http://kartenn.region-bretagne.fr/img/legend/chateaux_19e.png"   
                 url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
