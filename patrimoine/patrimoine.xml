@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="Patrimoine culturel" logo="apps/region/global/img/logo/rb_blanc.svg" help="apps/region/patrimoine/patrimoine_help.html" showhelp="true" exportpng="true" style="apps/region/patrimoine/css/kartenn_patrimoine.css" measuretools="true" togglealllayersfromtheme="true" stats="true" statsurl="../ws/kartenn/log.php" templaterightinfopanel="accordion"/>
+    <application title="Patrimoine culturel" logo="apps/region/global/img/logo/rb_blanc.svg" titlehelp="À propos de Kartenn Patrimoine Culturel" help="apps/region/patrimoine/patrimoine_help.html" showhelp="true" exportpng="true" style="apps/region/patrimoine/css/kartenn_patrimoine.css" measuretools="true" togglealllayersfromtheme="true" stats="true" statsurl="../ws/kartenn/log.php" templaterightinfopanel="accordion"/>
     <mapoptions maxzoom="20" projection="EPSG:3857" center="-287709,6137894" zoom="9" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery"><!-- style="default"||gallery" -->     
@@ -39,6 +39,20 @@
 				attribution="Service de l'inventaire : &lt;a href='http://patrimoine.bzh/' target='_blank'>patrimoine.bzh &lt;/a>" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=e2588666-6b16-4d5a-bca2-5e927bc0a922"
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=e2588666-6b16-4d5a-bca2-5e927bc0a922" /> 
+            <layer id="inventaire" name="Rechercher des éléments patrimoniaux" visible="true" queryable="true"
+                type="customlayer" opacity="0.9"
+                url="apps/region/patrimoine/addons/recherche/layer/inventaire.js"
+                customcontrol="true"
+                customcontrolpath="apps/region/patrimoine/addons/recherche/html"
+                vectorlegend="false"
+                legendurl="apps/region/patrimoine/addons/recherche/recensement_etudes.jpg"
+                expanded="true"
+                tooltip="true" tooltipenabled="true" tooltipcontent="{{title}} "
+                attribution="Source: Région Bretagne"
+                metadata=""
+                metadata-csw="">
+                <template url="apps/region/patrimoine/addons/recherche/inventaire.mst" />
+            </layer>
             <layer id="recensement_patrimoine" name="Recensement avant études" visible="false" tiled="true" 
 				searchable="true" queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="99"
@@ -83,7 +97,7 @@
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" > 
 		        <template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
 			</layer>-->
-            <layer id="etude_patrimoine_simple" name="Dossiers d'études" visible="true" tiled="true"
+            <layer id="etude_patrimoine_simple" name="Dossiers d'études" visible="false" tiled="true"
                 queryable="true"
                 infoformat="application/vnd.ogc.gml" featurecount="99" legendurl="http://kartenn.region-bretagne.fr/img/legend/chateaux_19e.png"   
                 url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
@@ -451,14 +465,15 @@
     </theme>
 
 	<theme name="Découpages territoriaux"  collapsed="true" id="territoire" icon="caret-right">  
-        <layer 
-            id="napoleo"
+        <layer id="napoleo"
             legendurl="img/blank.gif"
             name="Cadastre ancien TA (zoomer)"
             type="customlayer"
-            url="customlayers/napoleo.js"
+            url="apps/region/patrimoine/addons/napoleon/layer/napoleo.js"
             customcontrol="true"
-            visible="false"     
+            customcontrolpath="apps/region/patrimoine/addons/napoleon/html"
+            expanded="true"
+            visible="false"
             metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b4080a88-798d-4533-9582-ec9a985d8102"
 			metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b4080a88-798d-4533-9582-ec9a985d8102"
             attribution="Région Bretagne"
