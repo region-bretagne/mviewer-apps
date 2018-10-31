@@ -133,13 +133,22 @@
                 <layer id="ligne_routiere_departementale" name="Lignes routières départementales"  visible="false" tiled="false" secure="true"
                     searchable="false" queryable="true" fields="axe" aliases="axe"
                     infoformat="application/vnd.ogc.gml" featurecount="20"
-                    style="transports_ligne_rout_dep_defaut" 
+                    style="ligne_interurbain_saison" 
                     url="../geoserver-proxy/rb/wms"
                     attribution="Région Bretagne - GéoBretagne" 
                     metadata=""
                     metadata-csw="" >
 		            <template url="apps/region/transport/templates/transport.ligne_routiere_dep.mst"></template>
 		        </layer>		        
+                <layer id="ligne_tad_bretagne" name="Transport à la demande"  visible="false" tiled="false" secure="true"
+                    searchable="false" queryable="true" 
+                    infoformat="application/vnd.ogc.gml" featurecount="20"
+                    url="../geoserver-proxy/rb/wms"
+                    attribution="Région Bretagne - GéoBretagne" 
+                    metadata=""
+                    metadata-csw="" >
+		        </layer>		        
+
 			</group>		
 			<group name="Autres" id="grp4" >		
                 <layer id="aeroports" name="Aéroports et aérodromes"  visible="false" tiled="false"
