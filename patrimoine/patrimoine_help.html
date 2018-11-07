@@ -1,62 +1,168 @@
-<ul class="nav nav-tabs" role="tablist">    
-	<li role="presentation" class="active"><a href="#h_kartenn" aria-controls="profile" role="tab" data-toggle="tab"><span class="fa fa-book"></span> Présentation</a></li>
-    <!--<li role="presentation" ><a href="#h_aide" aria-controls="messages" role="tab" data-toggle="tab"><span class="fa fa-question"></span> Aide</a></li>-->
-    <li role="presentation" ><a href="#h_credits" aria-controls="settings" role="tab" data-toggle="tab"><span class="fa fa-creative-commons"></span> Crédits</a></li>   
+<ul class="nav nav-tabs" role="tablist">
+	<li role="presentation" class="active"><a href="#h_kartenn" aria-controls="profile" role="tab" data-toggle="tab"><span class="fa fa-book"></span> Introduction</a></li>
+    <li role="presentation" ><a href="#h_aide" aria-controls="messages" role="tab" data-toggle="tab"><span class="fa fa-question"></span> Présentation</a></li>
+    <li role="presentation" ><a href="#h_credits" aria-controls="settings" role="tab" data-toggle="tab"><span class="fa fa-creative-commons"></span> Crédits</a></li>
 </ul>
 
  <!-- Tab panes -->
 <div class="tab-content">
-	<div role="tabpanel" class="tab-pane active" id="h_kartenn">
-        <h4>À propos de Kartenn Patrimoine Culturel</h4>
-        <iframe src="apps/region/patrimoine/kartenn_patrimoine.pdf" width="800" height="600" align="middle"></iframe>
-    </div>  
-    <!--<div role="tabpanel" class="tab-pane" id="h_aide">
-        <h4>Aide </h4>
-        <div class=" row help_movie">
-        	<div class="col-md-6 movie">
-        		 <div align="center">
-    				<video class="img-responsive" controls="controls">
-			        	<source src="apps/region/territoire/img/KT_fonctionnalite_basique.mp4" type="video/mp4">
-			        </video>			        
-			    </div>
-			    <h5><span class="fa fa-video-camera"></span> <u>Vidéo 1:</u> Les fonctionnalités basiques</h5> 
-			    <p>Zoom avant et arrière - Changement de fond de plan - Recherche des entités - Mesures - Export et partage de la carte</p> 			       
-		    </div>   
-        	<div class="col-md-6 movie">
-        		 <div align="center">
-    				<video class="img-responsive" controls="controls">
-			        	<source src="apps/region/territoire/img/KT_navigation_ind.mp4" type="video/mp4">
-			        </video>			        
-			    </div>
-			    <h5><span class="fa fa-video-camera"></span> <u>Vidéo 2:</u> Naviguer dans l'outil</h5> 
-			    <p>Sélectionner une thématique - Afficher un indicateur - Supprimer un indicateur de la carte</p>	       
-		    </div>   
-		</div>   
-		 <div class=" row help_movie">
-        	<div class="col-md-6 movie">
-        		 <div align="center">
-    				<video class="img-responsive" controls="controls">
-			        	<source src="apps/region/territoire/img/KT_gestion_option.mp4" type="video/mp4">
-			        </video>			        
-			    </div>
-			    <h5><span class="fa fa-video-camera"></span> <u>Vidéo 3:</u> Gérer les options d'une couche géographique</h5> 
-			    <p>Modifier l'ordre des couches - Gérer l'opacité - Modifier l'analyse cartographique - Changer l'échelle géographique de visualisation - Faire varier la donnée dans le temps - Consulter la métadonnée</p>	       
-		    </div>   
-		</div> 
-        <div style="padding:20px;" >
-            <a href="https://kartenn.region-bretagne.fr/doc/aide_kartenn_avril2017.pdf" target="_blank">
-                <div class="help_button" style="background-color:#252525; text-align:center; border-radius:4px; padding:7px; color:white;">
-                    <img src="apps/region/global/img/icon_pdf.svg" style="width:35px;margin-right:10px;">Consulter l'aide d'utilisation de Kartenn (.PDF)
+    <div role="tabpanel" class="tab-pane active" id="h_kartenn">
+        <div class="container-fluid">
+            <div class="row" style="padding-top: 20px;">
+                <div class="col-md-8">
+                    <img src="apps/region/patrimoine/img/recensement_etudes.png" class="center-block img-responsive"/>
                 </div>
-            </a>
-        </div>   
-		 
-    </div>  -->
+                <div class="col-md-4">
+                    <h4>« Recenser, étudier, faire connaître »</h4>
+                    <h6>André Malraux</h6>
+                    <p style="padding-top: 20px;">
+Plus de 130 000 dossiers ont été constitués depuis la création du service régional de l'Inventaire en Bretagne en 1964 : textes, photographies, plans, cartes, reproductions de documents anciens alimentent un fonds de données patrimoniales exceptionnel, véritables archives architecturales et formidable outil de connaissance des territoires.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+	<div role="tabpanel" class="tab-pane" id="h_aide">
+        <h4>Présentation</h4>
+        <!--<iframe src="apps/region/patrimoine/kartenn_patrimoine.pdf" width="800" height="600" align="middle"></iframe>-->
+        <p>
+        L'Inventaire du patrimoine culturel est une compétence de la Région qui <strong>recense, étudie et fait
+connaître</strong> les éléments du patrimoine qui présentent un intérêt culturel, historique ou scientifique.
+Complémentaire du site de diffusion des dossiers d'études <strong><a href="http://patrimoine.bzh" target="_blank" >patrimoine.bzh</a></strong> et de notre
+<strong><a href="http://phototheque-patrimoine.bretagne.bzh/" target="_blank">photothèque</a></strong>, ce visualiseur cartographique, développé en interne par le service SIG de la Région
+Bretagne, est dédié principalement à la projection des données de l'Inventaire et de ses nombreux
+partenaires.
+        </p>
+
+<h6>Il permet :</h6>
+<ul>
+<li>une restitution territoriale l'ensemble des données géolocalisées d'Inventaire (et notamment les
+données de recensement ne figurant pas dans patrimoine.bzh)</li>
+<li>par un jeu de superposition, la mise en perspective d'autres sources, tels que les propriétés ou autres
+domaines de compétences de la Région (éducation, transports, voies navigables, environnement,
+tourisme, ...) ou ceux gérés par l'Etat (édifices protégés MH, sites archéologiques, sites inscrits ou
+classés, …).</li>
+</ul>
+
+<p>
+<strong>Cet outil s’organise autour de différentes rubriques</strong>, permettant la superposition des données de
+source et de nature variées, en restituant les différentes phases d'enquêtes, tout en contextualisant
+ainsi davantage les dossiers d'étude. Ces rubriques sont :
+</p>
+<ul>
+    <li>
+        <h4 class="list-heading">Inventaire du patrimoine Bretagne</h4>
+        <ul>
+            <li>
+            1 couche ‘Dossiers papiers’ présentant les communes étudiées avant l'utilisation du dossier
+            électronique d'Inventaire (dossiers consultables au centre de documentation de l’Inventaire).
+            </li>
+            <li>
+            3 couches ‘Recensement avant études’, ‘Recensement par opération’ et ‘Recensement par domaine’
+            constituées des éléments recensés au préalable avant chaque étude (recensement exhaustif ou
+            repérage thématique).
+            Fonction « Lien vers notice » permettant le renvoi vers la fiche de recensement au format html
+            imprimable.
+            </li>
+            <li>
+            1 couche simplifiée ‘Dossiers d’études complet’ et ‘Dossiers d’études par domaine’ restituant sous
+            forme de points l'ensemble des « études ». Élaborés à l'issue de la phase de recensement, ces dossiers
+            topographiques ou thématiques livrent une connaissance inédite reposant sur une lecture attentive in
+            situ et des recherches en archives.
+            Fonction « Lien vers dossier » permettant le renvoi vers le dossier complet sur patrimoine.bzh
+            </li>
+            <li>
+            2 couches spécifiques ‘architecture’ et ‘objets mobiliers’ avec leur géométrie d'origine présentant
+            selon le niveau de zoom les dossiers de présentation et de synthèse, ou les dossiers « individuels »
+            d’études topographiques.
+            Fonction « Lien vers dossier » permettant le renvoi vers le dossier complet sur patrimoine.bzh
+            </li>
+            <li>
+             1 couche unique ‘Etudes thématiques’ sous forme de points de l'ensemble des enquêtes
+            thématiques. Fonction « Lien vers dossier » permettant le renvoi vers le dossier complet sur
+            patrimoine.bzh
+            </li>
+            <li>
+            1 couche spéciale ‘Croix et calvaires’ présentant le résultat d’un partenariat avec l’association Croix
+            et calvaires de Bretagne sur cette thématique (avec renvoi vers leur site
+            </li>
+        </ul>
+    </li>
+    <li>
+        <h4 class="list-heading">Autres politiques régionales</h4>
+        <ul>
+            <li>Formation : lycées</li>
+            <li>Transports : aéroports et aérodromes, ports, arrêts et lignes ferroviaires…</li>
+            <li>Voies navigables : cours d’eau, canaux, rigoles, écluses et sites d’écluses, biefs, déversoirs, cales, bornes, étangs d’alimentation, ouvrages hydrauliques...</li>
+            <li>Environnement : parcs régionaux, réserves naturelles, sites de préservation du patrimoine naturel (sites inscrits et classés), …</li>
+            <li>Réseaux labellisés : soutien de la Région aux réseaux des Villes d’art et d’histoire, Villes historiques, Petites Cités de caractère, Communes du patrimoine rural</li>
+        </ul>
+    </li>
+    <li>
+        <h4 class="list-heading">Protections patrimoniales gérées par l’Etat</h4>
+        <ul>
+            <li>Edifices protégés au titre des Monuments Historiques, servitude immeubles MH</li>
+            <li>Carte archéologique et zones de présomption de prescriptions archéologiques</li>
+        </ul>
+    </li>
+    <li>
+        <h4 class="list-heading">Découpages territoriaux et informations géographiques</h4>
+        <ul>
+            <li>les tableaux d’assemblages des cadastres anciens</li>
+            <li>le cadastre moderne bâti et parcellaire</li>
+            <li>les destinations touristiques</li>
+            <li>les contours administratifs des communes, intercommunalités, cantons, départements, pays, …</li>
+            <li>les courbes de niveaux</li>
+        </ul>
+    </li>
+</ul>
+<div class="jumbotron">
+    <div class="container">
+        <h4 class="list-heading">Autres fonctions</h4>
+        <ul>
+            <li>une bulle en bas à droite pour accéder à différents fonds de carte</li>
+            <li>une règle pour paramétrer le niveau d’opacité des couches</li>
+            <li>la possibilité par un cliquer-glisser de modifier l’ordre d’affichage des couches</li>
+            <li>la possibilité de « partager cette carte » en créant un lien permanent (ex : intégration directe dans un site externe) et celle d’«exporter une carte» au format image</li>
+            <li>
+                <h5>l’accès, selon les couches, via le symbole ‘+’ à un menu déroulant pour sélectionner :</h5>
+                <ul>
+                    <li>une opération (recensement par opération, études thématiques).
+                    <li>un domaine précis (recensement par domaine, dossiers d’études par domaine)
+                    <li>selon le niveau de zoom, au cadastre ancien de la commune souhaitée</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<p>
+<strong>Pour télécharger l’ensemble des données de l’Inventaire</strong></br>
+(formats GEOJSON WGS84 ou SHAPE Lambert93), connectez-vous à : <a href="https://geobretagne.fr" target="_blank">GeoBretagne</a>
+</p>
+<p>
+Pour toutes demandes complémentaires : <a href="mailto:inventaire.patrimoine@bretagne.bzh">inventaire.patrimoine@bretagne.bzh</a>
+</p>
+
+
+
+
+        <style>
+            a {
+                color: #BA88A4;
+            }
+        </style>
+
+    </div>
+
     <div role="tabpanel" class="tab-pane" id="h_credits">
         <h4>Crédits </h4>
         <div class="row">
-            <div class="col-sm-5" style="padding-left:0px;"> 
-                <div style="text-align-last:center;">       	
+            <div class="col-sm-5" style="padding-left:0px;">
+                <div style="text-align-last:center;">
                     <p>Kartenn est une initiative de la Région Bretagne</br>
                     <img src="apps/region/territoire/img/logo_region_555.svg" width="120px;" style="margin:5px;"></br>
                     Conseil régional de Bretagne </br>
@@ -90,5 +196,5 @@
             </div>
         </div>
     </div>
-    
+
 </div>
