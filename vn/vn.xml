@@ -476,6 +476,7 @@
 				queryable="true" fields="type, photo" aliases="Type, Photo"
 				infoformat="application/vnd.ogc.gml" featurecount="5"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attributefilter="true" attributevalues="Chassé,Réserve de chasse" attributefield="description"
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=1ba4c535-4ea5-414a-93ce-acee5f2395fe"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=1ba4c535-4ea5-414a-93ce-acee5f2395fe" >  
