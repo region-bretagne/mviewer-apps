@@ -6,9 +6,9 @@
             {{#denomination}}
                 <span> Dénomination :</span> {{denomination}}<br/>
             {{/denomination}}
-			{{#datation}}
+			<!--{{#datation}}
 				<span> Datation :</span> {{datation}}<br/>
-			{{/datation}}
+			{{/datation}}-->
 			{{#murs}}
 				<span> Materiaux murs:</span> {{murs}}<br/>
 			{{/murs}}
