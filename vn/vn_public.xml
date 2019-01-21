@@ -28,11 +28,11 @@
     <themes>
         <theme name="Voies navigables"  collapsed="false" id="vn" icon="ship">
 			<layer id="mobilier_vn" name="Mobiliers" visible="false" tiled="false" 
-				queryable="true" 
+				queryable="true" searchable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-				style="mobilier_etat,mobilier" stylesalias="Etat,Type" 
-				attributefilter="true" attributevalues="Très dégradé,Dégradé,Moyen,Bon" attributefield="etat"
+				style="mobilier" stylesalias="Type" 
+				attributefilter="true" attributevalues="Très dégradé / HS,Dégradé,Moyen,Bon" attributefield="etat"
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5d46b3e3-3a21-4f78-978d-fb38027ca971"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=5d46b3e3-3a21-4f78-978d-fb38027ca971" > 

@@ -412,7 +412,7 @@
 				attribution="DRAC" 
 				metadata="" 
 				metadata-csw="" />
-            <layer id="Sites_inscrits__surfacique_" name="Sites inscrits" visible="false" tiled="true"
+            <layer id="Sites_inscrits" name="Sites inscrits" visible="false" tiled="true"
 				queryable="false" fields="SITE" aliases="Site"
                 infoformat="application/vnd.ogc.gml" featurecount="5"             
 				useproxy="true"
