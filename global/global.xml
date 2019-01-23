@@ -131,7 +131,7 @@
 		            <template url="apps/region/global/templates/global.aeroport.mst"></template>
 		    </layer>
         </theme>
-        <theme name="Transport maritime"  collapsed="true" id="mer" icon="support">
+        <theme name="Transport maritime"  collapsed="true" id="mer" icon="far fa-life-ring">
         	<layer id="gare_maritime" name="Gares maritimes"  visible="false" tiled="false"
                     searchable="false" queryable="true" fields="axe" aliases="axe"   
                     infoformat="application/vnd.ogc.gml" featurecount="20"
@@ -350,7 +350,7 @@
 				<template url="apps/region/global/templates/global.destination_touristique.mst"></template>
 			</layer>
         </theme>
-        <theme name="Sites régionaux"  collapsed="true" id="sites" icon="institution"> 
+        <theme name="Sites régionaux"  collapsed="true" id="sites" icon="fas fa-university"> 
             <layer id="site_region" name="Sites région" visible="true" tiled="false"
 				queryable="true"
                 infoformat="application/vnd.ogc.gml" featurecount="20" 

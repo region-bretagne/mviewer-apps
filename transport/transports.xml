@@ -186,7 +186,7 @@
 		        </layer>	
             </group>
         </theme>
-		<theme name="Circulation TER annuelle"  collapsed="false" id="train" icon="code-fork">   
+		<theme name="Circulation TER annuelle"  collapsed="false" id="train" icon="fas fa-code-branch">   
 			<layer id="circulation_ter_ete" name="Nombre de trains par jour en été"  visible="false" tiled="false" secure="true"
 				searchable="false" queryable="true" fields="appellatio" aliases="appellatio"
 				infopanel="bottom-panel"
@@ -252,7 +252,7 @@
 		        <template url="apps/region/transport/templates/transport.aristote_annuel.mst"></template>
 		    </layer>					
         </theme>
-        <theme name="Fréquentation journalière"  collapsed="false" id="freq_jour" icon="group">
+        <theme name="Fréquentation journalière"  collapsed="false" id="freq_jour" icon="fas fa-layer-group">
 			<layer id="freq_journaliere" name="Nombre moyen de montées par jour"  visible="false" tiled="false" secure="true"
 				searchable="false" queryable="true" fields="appellatio" aliases="appellatio"
                 infoformat="application/vnd.ogc.gml" featurecount="20"

@@ -80,7 +80,7 @@
 				<template url="apps/region/vn/templates/vn.peuplement_vn.mst"></template>
 			</layer>		
         </theme> 
-		<theme name="Signalisation"  collapsed="true" id="signalisation" icon="arrows"> 
+		<theme name="Signalisation"  collapsed="true" id="signalisation" icon="fas fa-arrows-alt"> 
 		    <layer id="borne_km_vn" name="Bornes Kilométriques" visible="false" tiled="false" 
 				queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"

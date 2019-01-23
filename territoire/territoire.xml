@@ -124,7 +124,7 @@
 		        </layer>
 			</group>       
 		</theme>
-        <theme name="Population"  collapsed="false" id="habitant" icon="group">
+        <theme name="Population"  collapsed="false" id="habitant" icon="fas fa-users">
         	<group name="Structure de la population" id="grp1" >        		
 		        <layer id="rp_struct_pop_geom" name="Nombre d'habitant.e.s"  visible="false" tiled="false"
 		                searchable="false" queryable="true"
@@ -637,7 +637,7 @@
 		        </layer>	
             </group>
         </theme>
-		<theme name="Les fiches de l'Observatoire"  collapsed="true" id="fiche" icon="file-text"> 
+		<theme name="Les fiches de l'Observatoire"  collapsed="true" id="fiche" icon="far fa-file-pdf"> 
 			<layer id="fiche_epci" name="Fiche EPCI" visible="false" queryable="true" 
                 fields="nom_geo" aliases="Nom" 
                 type="customlayer" style="" opacity="1" legendurl="apps/region/territoire/img/fiche_epci.png" 
