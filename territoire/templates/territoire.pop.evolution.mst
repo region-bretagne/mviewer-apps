@@ -5,7 +5,7 @@
 				<div class="title-feature">{{nom_geo}}</div>
 			</div>
 			<div class=" col-xs-3">
-				<span class="critere glyphicon glyphicon-map-marker" aria-hidden="true"><span id="text">{{level}}</span></span><span class="critere glyphicon glyphicon-calendar" aria-hidden="true" style="margin-left:10px;"><span id="text">2014</span></span>
+				<span class="critere glyphicon glyphicon-map-marker" aria-hidden="true"><span id="text">{{level}}</span></span><span class="critere glyphicon glyphicon-calendar" aria-hidden="true" style="margin-left:10px;"><span id="text">2015</span></span>
 			</div>	
 		</div>
 		{{#Commune}}
