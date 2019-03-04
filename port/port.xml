@@ -77,7 +77,7 @@
 				metadata-csw="" />
 
 		</theme>
-        <theme name="Qualité des sédiments"  collapsed="true" id="sediments"  icon="database"> 
+        <!--<theme name="Qualité des sédiments"  collapsed="true" id="sediments"  icon="database"> 
 			<layer id="mesure_environnementale_sediment" name="Global"  visible="false" tiled="false"
 				queryable="true" fields="id,latitude,longitude,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,X,Y,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
                 style="port_mesures_sed_general" 
@@ -504,7 +504,7 @@
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=fcbeeb28-be10-4eff-b0e7-b761429fa3aa">
                 <template url="apps/region/port/templates/port.sediment.mst"></template>
               </layer>
-		</theme>
+		</theme>-->
 		<theme name="Dragages"  id="Dragages" collapsed="true" icon="trash" >
 			<layer id="site_immersion" name="Sites d'immersion" visible="false" tiled="false"
 				queryable="true" fields="" aliases="" 
