@@ -3,7 +3,7 @@
 		<h3 class="title-feature">{{nom}}</h3>
 		<p class="text-feature">
 			<h4 class="sub-title">Localisation</h4>		
-			<span style="font-family:'roboto_bold'"> Commune :</span> {{libelle}}<br/>
+			<span style="font-family:'roboto_bold'"> Commune :</span> {{ville}}<br/>
 			<span style="font-family:'roboto_bold'"> Code postal :</span> {{code_postal}}<br/>
 			<span style="font-family:'roboto_bold'"> Adresse :</span> {{adresse}}<br/><br/>
 			<h4 class="sub-title">Caractéristiques</h4>
