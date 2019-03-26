@@ -15,7 +15,7 @@
             <span style="font-family:'roboto_bold'"> Activité bénéficiaire :</span> {{lot_activite}}<br/>
             <span style="font-family:'roboto_bold'"> Nature d'installation :</span> {{beneficiaire_install_nature}}<br/>
             <span style="font-family:'roboto_bold'"> Type d'occupation :</span> {{lot_type}}<br/>
-            <span style="font-family:'roboto_bold'"> Surface :</span> {{lot_surface}}<br/>
+            <span style="font-family:'roboto_bold'"> Surface :</span> {{lot_surface}} m²<br/>
             <span style="font-family:'roboto_bold'"> Locataire :</span> {{lot_locataire}}<br/>
             <span style="font-family:'roboto_bold'"> Validité du contrat :</span> {{contrat_validite}}<br/>
             <span style="font-family:'roboto_bold'"> Echéance du contrat :</span> {{contrat_echeance}}<br/>
