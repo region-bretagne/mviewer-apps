@@ -9,20 +9,29 @@
 		font-family:'roboto_medium'">{{trafic}} passages</span></span>
 			</div>	
 		</div>
-		<iframe class="iframe_bottom" src="../ws/vn/iframe_ecluse_trafic.php?id_ecluse={{id_ecluse}}&time={{millesime}}"></iframe>
+		<!--<iframe class="iframe_bottom" src="../ws/vn/iframe_ecluse_trafic.php?id_ecluse={{id_ecluse}}&time={{millesime}}"></iframe>-->            
+            <div class="row">
+                <div class="col-md-6 col-lg-6">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="../mreport/#traffic?dataid={{id_ecluse}}&dataviz=chart7"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="../mreport/#traffic?dataid={{id_ecluse}}&dataviz=chart8"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
 					
 	</li>
 		
 {{/features}}
 
 <style>
-	.iframe_bottom{
-		width:970px;
-		height:300px;
-		border: none;
-		overflow:hidden;
-		margin-left:-20px;
-	}
+	
 
 	.title-feature {
 		color: #032e46;
