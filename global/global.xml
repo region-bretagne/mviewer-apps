@@ -424,12 +424,10 @@
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b08e6cb1-236c-49b7-88f9-42b500d274d5" />	
             </group>
 			<group name="Autres" id="grp2" >
-				<layer id="bassin_vie" name="Bassin de vie"  visible="false" tiled="false"
+				<layer id="bassin_vie_bretagne" name="Bassin de vie"  visible="false" tiled="false"
 		            searchable="false" queryable="true"		                
 	                infoformat="application/vnd.ogc.gml" featurecount="20"
-	                style="bassin_vie_default"
-	                stylesalias=""
-	                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+	                url="https://geobretagne.fr/geoserver/insee/wms"
 	                attribution="Sources: INSEE - GéoBretagne | 2012" 
 	                metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/a536027f-7a66-4422-86b6-5cde9c35baec"
 	                metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a536027f-7a66-4422-86b6-5cde9c35baec">
