@@ -5,7 +5,7 @@
 				<div class="title-feature">Trafic annuel aux écluses</div>
 			</div>
 			<div class="col-xs-offset-1 col-xs-7">
-                <a type="button" title="Afficher le rapport" class="btn btn-primary" href="../mreport/#traffic?dataid={{id_ecluse}}" target="_blank">Rapport</a>
+                <a type="button" title="Afficher le rapport" class="btn btn-primary" href="../mreport/#traffic?dataid={{id_ecluse}}&year=2018" target="_blank">Rapport</a>
 				<span class="critere glyphicon glyphicon-map-marker" aria-hidden="true"><span id="text">{{nom}}</span></span><span class="critere glyphicon glyphicon-calendar" aria-hidden="true" style="margin-left:10px;"><span id="text">{{annee}}</span></span><span class="stat glyphicon glyphicon-stats" aria-hidden="true" style="margin-left:10px;"><span id="text" style="
 		font-family:'roboto_medium'">{{trafic}} passages</span></span>
 			</div>	
@@ -19,7 +19,7 @@
                 </div>
                 <div class="col-md-6 col-lg-6">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="../mreport/#traffic?dataid={{id_ecluse}}&dataviz=chart8&time={{millesime}}"></iframe>
+                        <iframe class="embed-responsive-item" src="../mreport/#traffic?dataid={{id_ecluse}}&dataviz=chart8&year={{annee}}"></iframe>
                     </div>
                 </div>
             </div>
