@@ -40,7 +40,7 @@ mviewer.customLayers.ocs56_couverture.classification_couverture.d = {
       "CS2.1.2.1":{"id":30,"title":"Landes","field":"couverture","value":"CS2.1.2.1","fill":"#a8a828","stroke":"#000000", "strokewidth":1,"maxscaledenominator":"10000"},
       "CS2.1.2.2":{"id":31,"title":"Végétation sclérophylle","field":"couverture","value":"CS2.1.2.2","fill":"#adba8a","stroke":"#000000", "strokewidth":1,"maxscaledenominator":"10000"},
       "CS2.1.2.3":{"id":32,"title":"Formations arbustives basses linéaires ou organisées","field":"couverture","value":"CS2.1.2.3","fill":"#ad6659","stroke":"#000000", "strokewidth":1,"maxscaledenominator":"10000"},
-      "CS2.1.2.5":{"id":33,"title":"Fourrés","field":"couverture","value":"CS2.1.2.5","fill":"#adad59","stroke":"#000000#6e6e6e#000000","maxscaledenominator":"10000"},
+      "CS2.1.2.4":{"id":33,"title":"Fourrés","field":"couverture","value":"CS2.1.2.5","fill":"#adad59","stroke":"#000000#6e6e6e#000000","maxscaledenominator":"10000"},
       "CS2.1.3.1":{"id":34,"title":"Autres formations arbustives","field":"couverture","value":"CS2.1.3.1","fill":"#aa66cd","stroke":"#000000", "strokewidth":1,"maxscaledenominator":"10000"},
       "CS2.2.1.1":{"id":35,"title":"Prairies","field":"couverture","value":"CS2.2.1.1","fill":"#a6ff8a","stroke":"#000000", "strokewidth":1,"maxscaledenominator":"10000"},
       "CS2.2.1.2":{"id":36,"title":"Pelouses","field":"couverture","value":"CS2.2.1.2","fill":"#d7ffb5","stroke":"#000000", "strokewidth":1,"maxscaledenominator":"10000"},
