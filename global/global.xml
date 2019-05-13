@@ -44,7 +44,7 @@
             <layer id="lycee" name="Lycées"  visible="false" tiled="false"
                 searchable="false" queryable="true" fields="axe" aliases="axe" 
                 attributefilter="true" attributefield="secteur_li" 
-				attributevalues="Public,Privé sous contrat avec l'éducation nationale"  attributelabel="Filtre" attributestylesync="false" attributefilterenabled="false"  
+				attributevalues="Public,Privé sous contrat avec l'éducation nationale"  attributelabel="Secteur" attributestylesync="false" attributefilterenabled="false"  
                 infoformat="application/vnd.ogc.gml" featurecount="20"
                 sld="http://kartenn.region-bretagne.fr/styles/lycee_secteur.sld" 
                 url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
@@ -356,6 +356,7 @@
                 infoformat="application/vnd.ogc.gml" featurecount="20" 
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style=""
+                attributefilter="true" attributefield="type" attributevalues="Services de la Région,Ports,Subdivisions voies navigables,Aéroports,EMAT,Centres d'exploitation voies navigables,Centres fluvial voies navigables" attributelabel="type"
 				attribution="Région Bretagne" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a6dde882-4334-4ce0-909f-adb8597ada97"
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=a6dde882-4334-4ce0-909f-adb8597ada97" >	
