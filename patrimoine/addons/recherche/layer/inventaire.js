@@ -295,7 +295,11 @@ mviewer.customLayers.inventaire = (function () {
                 } else {
                     html = info.formatHTMLContent(elements, l);
                 }
-                var view = views["right-panel"];
+                var panel = "right-panel";
+                if (configuration.getConfiguration().mobile) {
+                    panel = "modal-panel";
+                }
+                var view = views[panel];
                 view.layers.push({
                     "id": view.layers.length + 1,
                     "firstlayer": false,
