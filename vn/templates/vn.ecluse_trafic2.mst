@@ -12,12 +12,24 @@
 		</div>
 		<!--<iframe class="iframe_bottom" src="../ws/vn/iframe_ecluse_trafic.php?id_ecluse={{id_ecluse}}&time={{millesime}}"></iframe>-->            
             <div class="row">
-                <div class="col-md-6 col-lg-6">
+                <div class="col-md-2 col-lg-2">
+			        {{#photo}}                
+						<img src="{{photo}}" class="img-responsive" style="width:200px;"/>
+					{{/photo}}                
+					<p class="text-feature">		
+						<span style="font-family:'roboto_bold'"> Identifiant :</span> {{id_ecluse}}<br/>
+						<span style="font-family:'roboto_bold'"> Numéro d'écluse :</span> {{num_ecluse}}<br/>
+						<span style="font-family:'roboto_bold'"> Voie navigable :</span> {{voie_navigable}}<br/>
+						<span style="font-family:'roboto_bold'"> Propriétaire :</span> {{proprietaire}}<br/>
+						<span style="font-family:'roboto_bold'"> Gestionnaire :</span> {{gestionnaire}}<br/>
+				   </p>
+                </div>
+                <div class="col-md-5 col-lg-5">
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="../mreport/#traffic?dataid={{id_ecluse}}&dataviz=chart7"></iframe>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-6">
+                <div class="col-md-5 col-lg-5">
                     <div class="embed-responsive embed-responsive-16by9">
                         <iframe class="embed-responsive-item" src="../mreport/#traffic?dataid={{id_ecluse}}&dataviz=chart8&year={{annee}}"></iframe>
                     </div>

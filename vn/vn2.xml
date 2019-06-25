@@ -215,7 +215,17 @@
 			
         </theme> 
         <theme name="Infrastructures"  collapsed="true" id="infrastructures" icon="ship"> 
-			<layer id="ecluse" name="Ecluse" visible="true" tiled="false" dynamiclegend="true"
+			<layer id="ecluse_trafic" name="Ecluse" visible="true" tiled="false" dynamiclegend="true"
+				queryable="true" searchable="true" infoformat="application/vnd.ogc.gml" infopanel="bottom-panel" featurecount="20"
+				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2003" timemax="2017" timevalues="2003,2005,2007,2009,2011,2013,2015,2017"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+				style="ecluse_trafic_millesime,ecluse_proprietaire" stylesalias="Trafic,Propriétaire"
+				attribution="Région Bretagne" 
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=774a2065-339f-4802-a50f-4b84b6ca249f"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=774a2065-339f-4802-a50f-4b84b6ca249f"> 
+				<template url="apps/region/vn/templates/vn.ecluse_trafic2.mst"></template>
+			</layer>		
+			<!--<layer id="ecluse" name="Ecluse" visible="true" tiled="false" dynamiclegend="true"
 				queryable="true" searchable="true" infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 				style="ecluse_proprietaire" 
@@ -233,7 +243,7 @@
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=774a2065-339f-4802-a50f-4b84b6ca249f"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=774a2065-339f-4802-a50f-4b84b6ca249f" > 
 				<template url="apps/region/vn/templates/vn.ecluse_trafic2.mst"></template>
-			</layer>		
+			</layer>-->	
 			<layer id="port_vn" name="Ports et mouillages " visible="false" tiled="false" 
 				queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"

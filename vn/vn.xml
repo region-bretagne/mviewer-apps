@@ -233,7 +233,7 @@
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=774a2065-339f-4802-a50f-4b84b6ca249f"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=774a2065-339f-4802-a50f-4b84b6ca249f" > 
 				<template url="apps/region/vn/templates/vn.ecluse_trafic.mst"></template>
-			</layer>		
+			</layer>
 			<layer id="port_vn" name="Ports et mouillages " visible="false" tiled="false" 
 				queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
@@ -397,7 +397,36 @@
 				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/0ca82e1d-b487-4879-8185-56b7c4e1a948" 
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0ca82e1d-b487-4879-8185-56b7c4e1a948" />                        
         </theme> 
-        <theme name="Patrimoine naturel, sites et paysages"  collapsed="true" id="nature">
+        <theme name="Patrimoine et paysages"  collapsed="true" id="paysage" icon="mountain">
+			<!--Couches en tests-->
+			<layer id="diagnostic_paysager" name="Diagnostic paysager" visible="false" tiled="false" 
+				queryable="true" 
+				infoformat="application/vnd.ogc.gml" featurecount="5"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attribution="Région Bretagne" 
+				metadata-csw=""
+				metadata="">
+				<template url="apps/region/vn/templates/vn.diagnostic_paysager.mst"></template>
+			</layer>		
+
+			<layer id="element_remarquable_paysage" name="Eléments remarquables" visible="false" tiled="false" 
+				queryable="true" 
+				infoformat="application/vnd.ogc.gml" featurecount="5"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attribution="Région Bretagne" 
+				metadata-csw=""
+				metadata="">
+				<template url="apps/region/vn/templates/vn.element_remarquable_paysage.mst"></template>
+			</layer>		
+			<layer id="sequence_paysagere" name="Séquence paysagère" visible="false" tiled="false" 
+				queryable="true" 
+				infoformat="application/vnd.ogc.gml" featurecount="5"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attribution="Région Bretagne" 
+				metadata-csw=""
+				metadata="">
+				<template url="apps/region/vn/templates/vn.sequence_paysagere.mst"></template>
+			</layer>		
             <layer id="bretagne_ac1" name="Servitude immeubles MH" visible="false" tiled="false"
 				queryable="true" fields="SITE" aliases="Site"
                 infoformat="text/html" featurecount="5"             
@@ -410,8 +439,8 @@
                 infoformat="text/html" featurecount="5"             
 				url="https://geobretagne.fr/geoserver/drac/wms" 
 				attribution="DRAC" 
-				metadata="" 
-				metadata-csw="" />
+				metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=ee3d8a9a-eeac-4fdd-8474-4720086f461b"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ee3d8a9a-eeac-4fdd-8474-4720086f461b" />
             <layer id="Sites_inscrits" name="Sites inscrits" visible="false" tiled="true"
 				queryable="false" fields="SITE" aliases="Site"
                 infoformat="application/vnd.ogc.gml" featurecount="5"             
@@ -436,6 +465,9 @@
 				attribution="CARMEN" 
 				metadata="http://metadata.carmen.developpement-durable.gouv.fr/geonetwork-10/srv/fre/metadata.show?uuid=d42013b5-6c2b-4e18-8ddb-db2677860b2d" 
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=d42013b5-6c2b-4e18-8ddb-db2677860b2d" />
+        </theme> 
+
+        <theme name="Patrimoine naturel"  collapsed="true" id="nature" icon="leaf">
             <layer id="znieff1" name="ZNIEFF1" visible="false" tiled="true"
 				queryable="true" fields="NOM" aliases="Nom"
                 infoformat="application/vnd.ogc.gml" featurecount="5"             
@@ -461,7 +493,6 @@
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0b4fe074-5827-47c6-b00e-1c74613ba9cf" >
 				<template url="apps/region/vn/templates/vn.directive_habitats_zsc.mst"></template>
 			</layer>		
-
             <layer id="zps" name="Directive oiseaux (Natura 2000)" visible="false" tiled="true"
 				queryable="true" infoformat="application/vnd.ogc.gml" featurecount="5"             
 				style="polygon_turquoise"
@@ -471,7 +502,6 @@
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ddd7da8e-8275-40db-ab39-b5a3178ab570" >
 				<template url="apps/region/vn/templates/vn.directive_oiseaux_zps.mst"></template>
 			</layer>		
-
 			<layer id="limite_lot_chasse_vn" name="Limite lot de chasse" visible="false" tiled="false" 
 				queryable="true" fields="type, photo" aliases="Type, Photo"
 				infoformat="application/vnd.ogc.gml" featurecount="5"
@@ -509,7 +539,7 @@
 			</layer>
 
         </theme> 
-		<theme name="Géodésie" id="geodesie">
+		<theme name="Géodésie" id="geodesie" icon="map-marker">
 			<layer id="BDGEODESIQUE-RN_BDD-POI_WLD" name="Repère géodésique" visible="false" tiled="false"
 				queryable="true" 
                 infoformat="text/html" featurecount="5"                

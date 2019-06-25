@@ -1,6 +1,6 @@
 {{#features}}
 	<li class="item" style="width:238px;">
-		<iframe class="iframe_right"src="../ws/territoire/mise_a_jour.html"></iframe>
+		<iframe class="iframe_right"src="https://kartenn.region-bretagne.fr/ws/territoire/mise_a_jour.html"></iframe>
 	</li>
 {{/features}}
 

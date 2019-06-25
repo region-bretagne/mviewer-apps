@@ -9,13 +9,13 @@
 			</div>	
 		</div>				
 		{{#Commune}}
-			<iframe class="iframe_bottom"src="../ws/territoire/pop.cat_age.commune.php?code_geo={{code_geo}}&time={{datation}}"></iframe>
+			<iframe class="iframe_bottom"src="https://kartenn.region-bretagne.fr/ws/territoire/pop.cat_age.commune.php?code_geo={{code_geo}}&time={{datation}}"></iframe>
 		{{/Commune}}
 		{{#EPCI}}
-			<iframe class="iframe_bottom"src="../ws/territoire/pop.cat_age.epci.php?code_geo={{code_geo}}&time={{datation}}"></iframe>					
+			<iframe class="iframe_bottom"src="https://kartenn.region-bretagne.fr/ws/territoire/pop.cat_age.epci.php?code_geo={{code_geo}}&time={{datation}}"></iframe>					
 		{{/EPCI}}
 		{{#Pays}}
-			<iframe class="iframe_bottom"src="../ws/territoire/pop.cat_age.pays.php?code_geo={{code_geo}}&time={{datation}}"></iframe>				
+			<iframe class="iframe_bottom"src="https://kartenn.region-bretagne.fr/ws/territoire/pop.cat_age.pays.php?code_geo={{code_geo}}&time={{datation}}"></iframe>				
 		{{/Pays}}		
 	</li>		
 {{/features}}
