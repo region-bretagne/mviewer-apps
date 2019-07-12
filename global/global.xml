@@ -117,6 +117,28 @@
 				metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=d42415dd-f736-4b44-82c6-0259c0a667a3"
 				metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=d42415dd-f736-4b44-82c6-0259c0a667a3">
 			</layer>
+			<layer id="arret_routier_logique_departemental" name="Arrêts routiers logiques départementaux"  visible="false" tiled="false" 
+				searchable="false" queryable="true"
+				infoformat="application/vnd.ogc.gml" featurecount="20"
+				style="transports_arret_rout_dep_logique_defaut"
+				legendurl="https://kartenn.region-bretagne.fr/doc/transports/icons/arret_rout_dep.svg" 
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+				attribution="Région Bretagne - GéoBretagne" 
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=dfd88250-3931-48ba-a77c-a218ae55e0f1"
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=dfd88250-3931-48ba-a77c-a218ae55e0f1">
+				<template url="apps/region/transport/templates/transport.arret_routier_dep.mst"></template>
+			</layer>
+			<layer id="ligne_routiere_departementale" name="Lignes routières départementales"  visible="false" tiled="false" 
+				searchable="false" queryable="true" fields="axe" aliases="axe"
+				infoformat="application/vnd.ogc.gml" featurecount="20"
+				style="ligne_interurbain_saison" 
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+				attribution="Région Bretagne" 
+				metadata=""
+				metadata-csw="" >
+				<template url="apps/region/transport/templates/transport.ligne_routiere_dep.mst"></template>
+			</layer>		        
+
         </theme>
         <theme name="Transport aérien"  collapsed="true" id="avion" icon="plane">
         	<layer id="aeroports" name="Aéroports et aérodromes"  visible="false" tiled="false"
@@ -154,6 +176,13 @@
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c55c4fba-6a37-48ea-8754-a1bf770a684b" >
 		            <template url="apps/region/global/templates/global.port.mst"></template>
 		        </layer>
+		        <layer id="liaison_maritime" name="Liaisons maritimes"  visible="false" tiled="false"
+                    searchable="false" queryable="true" fields="axe" aliases="axe"   
+                    infoformat="application/vnd.ogc.gml" featurecount="20"
+                    url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+                    attribution="Source: Région Bretagne" 
+                    metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/aea4e574-703a-4556-b433-d3d4ebf5ca56"
+                    metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=aea4e574-703a-4556-b433-d3d4ebf5ca56"/>
         </theme>	
         <theme name="Transport fluvial"  collapsed="true" id="maritime" icon="ship"> 
 			<layer id="ecluse" name="Ecluse" visible="false" tiled="false" dynamiclegend="true"
@@ -302,15 +331,15 @@
 				attribution="Région Bretagne" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=e2588666-6b16-4d5a-bca2-5e927bc0a922"
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=e2588666-6b16-4d5a-bca2-5e927bc0a922" /> 
-        	<layer id="etude_patrimoine_thematique" name="Enquêtes thématiques" visible="false" tiled="true"
-				queryable="true"
-                infoformat="text/html" featurecount="50"
-				style="" 
-				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
-				attribution="Service de l'inventaire : Région Bretagne" 
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=29b0ff47-242c-4fc2-91e8-016411d71138"
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585">
-				<template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
+            <layer id="etude_patrimoine_simple_thematique" name="Etudes thématiques" visible="false" tiled="false"
+                queryable="true"
+                infoformat="application/vnd.ogc.gml" featurecount="150" legendurl="http://kartenn.region-bretagne.fr/img/legend/enquetes_thematiques.png"                
+                attributefilter="true" attributefield="affixe_cadre_etude" attributevalues="aucun,architecture gothique,ardoisières du Centre Bretagne,canal d'Ille-et-Rance,canal de Nantes à Brest,charpente armoricaine,châteaux du 19e siècle en Bretagne,Croix et calvaires de Guer et de la Gacilly,édifices religieux publics dans le Finistère : 1801-1905,églises et chapelles d'Ille-et-Vilaine,églises romanes de Bretagne,fortifications littorales,Heritaj -Inventaire du patrimoine dansé et vestimentaire de Bretagne,Inventaire des châteaux - maisons de maître et maisons d'architecte de Quimper,Inventaire des commanderies templières et hospitalières de Bretagne,Inventaire des fortifications littorales du milieu du 19e siècle dans les îles de Bretagne Sud (1830-1870),Inventaire des fours de goémoniers de Bretagne,Inventaire des manoirs de Quimper,inventaire des phares,Inventaire du patrimoine matériel et immatériel de l'archipel des Glénan,jardins remarquables,La statuaire du Christ aux outrages,Les bateaux du patrimoine,Les coiffes en filet brodé de Bretagne,Les moulins à marée en Bretagne,Les moulins à papier et papeteries industrielles de Bretagne,Les patrimoines maritimes et estuariens du Pays de Morlaix,Lycées en Bretagne,orfèvrerie religieuse de Haute-Bretagne,patrimoine balnéaire,patrimoine de la villégiature sur la Côte de Granit Rose,patrimoine des sports,patrimoine industriel,patrimoine linier et chanvrier de Bretagne,PNR Golfe du Morbihan - Patrimoine bâti maritime,recensement du patrimoine maritime (GÉOMER Brest),stalles médiévales de l'ancien duché de Bretagne,station biologique de Roscoff,Trésors dinannais : Dinan et l’orfèvrerie religieuse au XIXème siècle,Voies navigables"  attributelabel="Thématiques" attributestylesync="false" attributefilterenabled="true" attributeoperator="like"
+                url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+                attribution="Service de l'inventaire : &lt;a href='http://patrimoine.bzh/' target='_blank'>patrimoine.bzh &lt;/a>" 
+				metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/a7f46b47-42fc-49b7-9b49-c7c11aee0932"
+				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a7f46b47-42fc-49b7-9b49-c7c11aee0932" >
+                <template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
 			</layer>
         </theme>        
         <theme name="Espaces naturels"  collapsed="true" id="nature" icon="leaf"> 

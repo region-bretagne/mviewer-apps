@@ -528,17 +528,6 @@
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=7e4cc8d0-642b-4b56-b521-a13c688ec882" />  
 		</theme>
 		<theme name="Infrastructures"  id="Infrastructures" collapsed="true" icon="home">
-			<layer id="infrastructure_port" name="Infrastructures" visible="false" tiled="false"
-				queryable="true" fields="" aliases="" 
-                searchable="true"
-				secure="true"				
-                infoformat="application/vnd.ogc.gml" featurecount="20"
-				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-				attribution="Région Bretagne" 
-				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=17f623e6-ac00-42a4-90e3-abd2a945c758"
-				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=17f623e6-ac00-42a4-90e3-abd2a945c758">  
-                <template url="apps/region/port/templates/port.infrastructure.mst"></template>
-              </layer>  
 			<layer id="port" name="Ports" visible="false" tiled="false" 
 				queryable="true" fields="" aliases="" 
                 searchable="true"

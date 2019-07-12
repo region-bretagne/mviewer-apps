@@ -1,33 +1,26 @@
 {{#features}}
-	<li class="item">
-		<div class="row">
-			<div class="col-xs-4">
-				<div class="title-feature">Trafic annuel aux écluses</div>
-			</div>
-			<div class="col-xs-offset-1 col-xs-7">
-				<span class="critere glyphicon glyphicon-map-marker" aria-hidden="true"><span id="text">{{nom}}</span></span><span class="critere glyphicon glyphicon-calendar" aria-hidden="true" style="margin-left:10px;"><span id="text">{{annee}}</span></span><span class="stat glyphicon glyphicon-stats" aria-hidden="true" style="margin-left:10px;"><span id="text" style="
-		font-family:'roboto_medium'">{{trafic}} passages</span></span>
-			</div>	
-		</div>
-		<div style="width:238px;">
-		{{#photo}}
+	<li class="item" style="width:238px;">
+		<h3 class="title-feature">{{nom}}</h3>
+        {{#photo}}                
 			<img src="{{photo}}" class="img-responsive" />
-        {{/photo}}
-		<iframe class="iframe_bottom" src="../ws/vn/iframe_ecluse.php?id_ecluse={{id_ecluse}}&time={{millesime}}"></iframe>
+        {{/photo}}                
+		<p class="text-feature">		
+			<span style="font-family:'roboto_bold'"> Identifiant :</span> {{id_ecluse}}<br/>
+			<span style="font-family:'roboto_bold'"> Numéro d'écluse :</span> {{num_ecluse}}<br/>
+			<span style="font-family:'roboto_bold'"> Voie navigable :</span> {{voie_navigable}}<br/>
+			<span style="font-family:'roboto_bold'"> Propriétaire :</span> {{proprietaire}}<br/>
+			<span style="font-family:'roboto_bold'"> Gestionnaire :</span> {{gestionnaire}}<br/>
+		<div class="but_link">	
+			<p> <a href="http://kartenn.region-bretagne.fr/mreport/#traffic?dataid={{id_ecluse}}&year=2018" target=_blank"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Stats</a>
+			</p>
 		</div>
-	</li>
+       </p>
 
+
+	</li>
 {{/features}}
 
 <style>
-	.iframe_bottom{
-		width:970px;
-		height:300px;
-		border: none;
-		overflow:hidden;
-		margin-left:-20px;
-	}
-
 	.title-feature {
 		color: #032e46;
 		font-family:"roboto_bold";
@@ -35,26 +28,60 @@
 		margin-bottom:1%;
 		line-height:1;
 	}
-		
-	.critere {
-		color: #fff;			
-		font-size:13px;			
-		background-color:#032e46;
-		border-radius:3px;
-		padding:7px 16px 8px 13px;
+	.subtitle-feature {
+		color: #032e46;
+		font-family:"roboto_bold";
+		font-size:18px;
+		margin-top:7%;
+		line-height:1;
 	}
-
-	.stat {
-		border: solid 2px #16a085;
-		color: #16a085;			
-		font-size:13px;			
-		background: #ffffff;
-		border-radius:3px;
-		padding:7px 16px 8px 13px;
-	}
-
-	#text{
+	.text-feature{
 		font-family:"roboto_regular";
-		margin-left:3px;
+		color:#555;
+		font-size:13px;
+		margin-top:10%;
 	}
+	.info.N {
+   		background-image: url(http://kartenn.region-bretagne.fr/doc/transports/icons/non_1.png);
+   		background-size: 16px;
+    	background-repeat: no-repeat;
+   	    background-position-x: 0px;
+   	    margin-bottom:3px;
+	}
+	.info.O {
+   		background-image: url(http://kartenn.region-bretagne.fr/doc/transports/icons/oui.png);
+   		background-size: 16px;
+    	background-repeat: no-repeat;
+   	    background-position-x: 0px;
+   	    margin-bottom:3px;
+	}
+	.but_link{
+	    padding:10px 0 10px 0;
+	    font-size:13px;
+	    font-family:'roboto_regular', Arial, Sans-serif;
+	   	background:rgba(3, 46, 70, 0.9);
+	    color:#fff;
+	    width:100px;
+	    border:1px solid #032e46;
+	    margin-left: 25%;
+	}
+	.but_link:hover{
+	    background:rgba(3, 46, 70, 1);
+	    border:1px solid #032e46;
+	}
+	.but_link p{
+	  margin: 0;
+	  text-align:center;
+	  color:#fff;
+	} 
+	.but_link a{
+	  color: #fff;
+	}
+	.but_link a:hover{
+	  color:#fff;
+	}
+	.but_link a:focus{
+	  color:#fff; 
+	}
+
 </style>
