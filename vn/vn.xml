@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="Kartenn VN" logo="apps/region/global/img/logo/rb_blanc.svg" help="apps/region/global/global_help.html" measuretools="true" legend="true" popup="false" exportpng="true" legendasimage="true" coordinates="true" togglealllayersfromtheme="true" style="apps/region/vn/css/vn.css"/>
+    <application title="Kartenn VN" logo="apps/region/global/img/logo/rb_blanc.svg" help="apps/region/global/global_help.html" measuretools="true" legend="true" popup="false" exportpng="true" legendasimage="true" coordinates="true" togglealllayersfromtheme="true" style="apps/region/vn/css/vn.css" hideprotectedlayers="true"/>
     <mapoptions maxzoom="20" projection="EPSG:3857" center="-291072,6187119" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery">
@@ -215,7 +215,17 @@
 			
         </theme> 
         <theme name="Infrastructures"  collapsed="true" id="infrastructures" icon="ship"> 
-			<layer id="ecluse" name="Ecluse" visible="true" tiled="false" dynamiclegend="true"
+			<layer id="ecluse_trafic" name="Ecluse" visible="true" tiled="false" dynamiclegend="true"
+				queryable="true" searchable="true" infoformat="application/vnd.ogc.gml" featurecount="20"
+				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2004" timemax="2018" timevalues="2004,2006,2008,2010,2012,2014,2016,2018"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+				style="ecluse_trafic_millesime,ecluse_proprietaire" stylesalias="Trafic,Propriétaire"
+				attribution="Région Bretagne" 
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=01a0228d-feb1-4385-9eeb-55062e3f26ed"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=01a0228d-feb1-4385-9eeb-55062e3f26ed"> 
+				<template url="apps/region/vn/templates/vn.ecluse2.mst"></template>
+			</layer>		
+			<!--<layer id="ecluse" name="Ecluse" visible="true" tiled="false" dynamiclegend="true"
 				queryable="true" searchable="true" infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 				style="ecluse_proprietaire" 
@@ -232,8 +242,8 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=774a2065-339f-4802-a50f-4b84b6ca249f"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=774a2065-339f-4802-a50f-4b84b6ca249f" > 
-				<template url="apps/region/vn/templates/vn.ecluse_trafic.mst"></template>
-			</layer>
+				<template url="apps/region/vn/templates/vn.ecluse_trafic2.mst"></template>
+			</layer>-->	
 			<layer id="port_vn" name="Ports et mouillages " visible="false" tiled="false" 
 				queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
@@ -330,8 +340,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw=""
-				metadata="" >
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=46beb167-344c-453f-ad87-ec301f7f27a1"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=46beb167-344c-453f-ad87-ec301f7f27a1" >  
 				<template url="apps/region/vn/templates/vn.prelevement_rejet_vn.mst"></template>
 			</layer>		
 			<layer id="convention_superposition" name="Convention de superposition" visible="false" tiled="false"
@@ -340,8 +350,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw=""
-				metadata="" >
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=038bc3cf-a021-4d9c-9904-6a44644ca9d6"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=038bc3cf-a021-4d9c-9904-6a44644ca9d6" >  
 				<template url="apps/region/vn/templates/vn.convention_superposition.mst"></template>
 			</layer>		
 			<layer id="parcelle_dpf" name="Parcelles cadastrées du DPF" visible="false" tiled="false" namespace="interne"
@@ -350,16 +360,16 @@
 				infoformat="text/html" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw=""
-				metadata="" />                      
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a2fa9b97-b2bb-4b7c-8a34-3733e1559ccc"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=a2fa9b97-b2bb-4b7c-8a34-3733e1559ccc" />  
 			<layer id="limite_dpf" name="DPF" visible="false" tiled="false" namespace="interne"
 				queryable="true"
 				secure="true"
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw=""
-				metadata="" >  
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=7948ca0f-ef9a-4034-a7e7-4976e8de2fe5"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=7948ca0f-ef9a-4034-a7e7-4976e8de2fe5" >  
 				<template url="apps/region/vn/templates/vn.limite_dpf.mst"></template>
 			</layer>		
 			<layer id="r53_2016_parcelle_publique" name="Parcelles publiques" visible="false" tiled="false"
@@ -398,14 +408,14 @@
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0ca82e1d-b487-4879-8185-56b7c4e1a948" />                        
         </theme> 
         <theme name="Patrimoine et paysages"  collapsed="true" id="paysage" icon="mountain">
-			<!--Couches en tests-->
 			<layer id="diagnostic_paysager" name="Diagnostic paysager" visible="false" tiled="false" 
 				queryable="true" 
+				style="diagnostic_paysager_type,diagnostic_paysager_priorite,diagnostic_paysager_categorie" stylesalias="Type,Priorité,Catégorie"
 				infoformat="application/vnd.ogc.gml" featurecount="5"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw=""
-				metadata="">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=2e588420-6ed3-4ed1-a953-2aa45a1f0528"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=2e588420-6ed3-4ed1-a953-2aa45a1f0528" >  
 				<template url="apps/region/vn/templates/vn.diagnostic_paysager.mst"></template>
 			</layer>		
 
@@ -414,8 +424,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="5"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw=""
-				metadata="">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b62a6ef0-2cb4-44f0-b679-1d06b027e0ea"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=b62a6ef0-2cb4-44f0-b679-1d06b027e0ea" >  
 				<template url="apps/region/vn/templates/vn.element_remarquable_paysage.mst"></template>
 			</layer>		
 			<layer id="sequence_paysagere" name="Séquence paysagère" visible="false" tiled="false" 
@@ -423,8 +433,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="5"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw=""
-				metadata="">
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c50d455e-7f58-4a99-a4dc-fe9266b0ea3f"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=c50d455e-7f58-4a99-a4dc-fe9266b0ea3f" >  
 				<template url="apps/region/vn/templates/vn.sequence_paysagere.mst"></template>
 			</layer>		
             <layer id="bretagne_ac1" name="Servitude immeubles MH" visible="false" tiled="false"
@@ -537,9 +547,9 @@
 				metadata-csw=""
 				metadata="" >    
 			</layer>
-
         </theme> 
-		<theme name="Géodésie" id="geodesie" icon="map-marker">
+
+		<theme name="Géodésie" id="geodesie">
 			<layer id="BDGEODESIQUE-RN_BDD-POI_WLD" name="Repère géodésique" visible="false" tiled="false"
 				queryable="true" 
                 infoformat="text/html" featurecount="5"                

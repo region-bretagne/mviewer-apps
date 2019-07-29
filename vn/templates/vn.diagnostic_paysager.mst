@@ -6,7 +6,7 @@
         {{/photo}}                
 		<p class="text-feature">		
 			<span style="font-family:'roboto_bold'"> Type :</span> {{type}}<br/>
-			<span style="font-family:'roboto_bold'"> Sous type d'écluse :</span> {{ss_type}}<br/>
+			<span style="font-family:'roboto_bold'"> Sous type :</span> {{ss_type}}<br/>
 			<span style="font-family:'roboto_bold'"> Catégorie :</span> {{categorie}}<br/>
 			<span style="font-family:'roboto_bold'"> Priorité :</span> {{priorite}}<br/>
 			<span style="font-family:'roboto_bold'"> Gestion :</span> {{gestion}}<br/>

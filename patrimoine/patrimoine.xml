@@ -37,12 +37,15 @@
     <searchparameters bbox="false" localities="true" features="true"/>
      <themes>
        <theme name="Inventaire du patrimoine Bretagne"  collapsed="false" id="inventaire" icon="caret-right"> 
+			<group name="Inventaire papier" id="inventaire_papier"> 
             <layer id="inventaire_papiers" name="Dossiers 'papiers' avant 2000" visible="false" tiled="false"
 				queryable="true" infoformat="text/html" featurecount="20" 
 				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution="Service de l'inventaire : &lt;a href='http://patrimoine.bzh/' target='_blank'>patrimoine.bzh &lt;/a>" 
 				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=e2588666-6b16-4d5a-bca2-5e927bc0a922"
 				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=e2588666-6b16-4d5a-bca2-5e927bc0a922" /> 
+			</group>
+			<group name="Recherche patrimoine" id="recherche"> 
             <layer id="inventaire" name="Rechercher des éléments patrimoniaux" visible="true" queryable="true"
                 type="customlayer" opacity="0.9"
                 url="apps/region/patrimoine/addons/recherche/layer/inventaire.js"
@@ -57,107 +60,100 @@
                 metadata-csw="">
                 <template url="apps/region/patrimoine/addons/recherche/inventaire.mst" />
             </layer>
-            <layer id="recensement_patrimoine" name="Recensement avant études" visible="false" tiled="true" 
-				searchable="true" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="99"
-                legendurl="http://kartenn.region-bretagne.fr/img/legend/recensement.png"
-				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
-				attribution="Service de l'inventaire : &lt;a href='http://patrimoine.bzh/' target='_blank'>patrimoine.bzh &lt;/a>" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" >
-		        <template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
-			</layer>
-			<layer id="recensement_patrimoine" name="Recensement par opération" visible="false" tiled="false" 
-				searchable="false" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="99"
-				legendurl="http://kartenn.region-bretagne.fr/img/legend/recensement_par_operation.png"
-				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
-				attributefilter="true" attributevalues="Aucun,Baraques de Bretagne,Cap Sizun - Pointe du Raz,Commune de Guengat,Croix et calvaires de Guer et de la Gacilly,Fours à goémon de Bretagne,Fours à pain de Bretagne,Heritaj -Inventaire du patrimoine dansé et vestimentaire de Bretagne,Inventaire du patrimoine culturel maritime de l'estuaire de Tréguier,Inventaire du patrimoine de Paimpont,Maisons à pan de bois,Parc naturel régional d'Armorique,Patrimoines des sports en Bretagne,Patrimoine linier et chanvrier en Bretagne,PNR Golfe du Morbihan - Patrimoine bâti maritime,Pontivy Communauté,Projet Rance Côte d'Emeraude,Quimperlé Communauté,Recensement des patrimoines maritimes et estuariens du Pays de Morlaix,Rennes Métropole,Schéma de cohérence territoriale du Trégor,Vallée du Scorff,Val d'Ille-Aubigné,Ville de Dinan,Ville de Montfort-sur-Meu,Ville de Saint-Brieuc,Ville d'Elven,Voies navigables" attributefield="operation" attributefilterenabled="true"
-				attribution="Service de l'inventaire" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" >
-				<template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
-			</layer>
-			<layer id="recensement_patrimoine" name="Recensement par domaine" visible="false" tiled="false" 
-				searchable="false" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="99"
-				legendurl="http://kartenn.region-bretagne.fr/img/legend/recensement_par_domaine.png"
-				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
-				attributefilter="true" attributevalues="AUCUN,ARCHITECTURE AGRICOLE,ARCHITECTURE ARTISANALE - COMMERCIALE ET TERTIAIRE,ARCHITECTURE CIVILE PUBLIQUE,ARCHITECTURE DE CULTURE - RECHERCHE - SPORT OU LOISIR,ARCHITECTURE DE JARDIN ET DES ESPACES VERTS,ARCHITECTURE DOMESTIQUE,ARCHITECTURE FISCALE OU FINANCIERE,ARCHITECTURE HOSPITALIERE - D'ASSISTANCE OU DE PROTECTION SOCIALE,ARCHITECTURE INDUSTRIELLE,ARCHITECTURE JUDICIAIRE - PENITENTIAIRE OU DE POLICE,ARCHITECTURE MILITAIRE,ARCHITECTURE MONUMENTALE - COMMEMORATIVE - FUNERAIRE ET VOTIVE,ARCHITECTURE RELIGIEUSE,ARCHITECTURE SCOLAIRE,ARMEMENT,DENOMINATION PROVISOIRE,ELEMENT D'ARCHITECTURE,GENIE CIVIL,INSTRUMENT DE MUSIQUE,INSTRUMENT OU OBJET PEDAGOGIQUE OU SCIENTIFIQUE,MACHINE ENERGETIQUE,MACHINE LIEE A LA PRODUCTION INDUSTRIELLE,MEUBLE DOMESTIQUE,MEUBLE RELIGIEUX,MOBILIER MONUMENTAL OU DE L'ESPACE EXTERIEUR,MOYEN DE TRANSPORT,OBJET CIVIL DOMESTIQUE,OBJET RELIGIEUX,PARTIE OU ELEMENT COMMUN A TOUS LES TYPES D'ARCHITECTURE ET AUX ESPACES AMENAGES,PEINTURE - ARTS GRAPHIQUES ET DES MEDIA,SCULPTURE,TEXTILE - GARNITURE OU VETEMENTS LAICS,TEXTILE RELIGIEUX,URBANISME ET ESPACES AMENAGES" attributefield="domaine" attributefilterenabled="true"
-				attribution="Service de l'inventaire" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" >
-				<template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
-			</layer>
-
-            <!--<layer id="recensement_patrimoine_operation" name="Patrimoine dansé et vestimentaire de Bretagne" visible="false" tiled="false" 
-				searchable="false" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
-                legendurl="http://kartenn.region-bretagne.fr/img/legend/heritaj.png"
-				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
-				filter="operation LIKE 'Heritaj%'"
-				attribution="Service de l'inventaire" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" > 
-		        <template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
-			</layer>-->
-            <layer id="etude_patrimoine_simple" name="Dossiers d'études" visible="false" tiled="true"
-                queryable="true"
-                infoformat="application/vnd.ogc.gml" featurecount="99" legendurl="http://kartenn.region-bretagne.fr/img/legend/chateaux_19e.png"   
-                url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
-                attribution="Service de l'inventaire : &lt;a href='http://patrimoine.bzh/' target='_blank'>patrimoine.bzh &lt;/a>" 
-				metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/a7f46b47-42fc-49b7-9b49-c7c11aee0932"
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a7f46b47-42fc-49b7-9b49-c7c11aee0932" >
-                <template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
-			</layer>
-            <layer id="etude_patrimoine_simple" name="Dossiers d'études par domaine" visible="false" tiled="false"
-                queryable="true"
-                infoformat="application/vnd.ogc.gml" featurecount="150" legendurl="http://kartenn.region-bretagne.fr/img/legend/dossiers_d_etudes_par_domaine.png"   
-                attributefilter="true" attributefield="domaine" attributevalues="AUCUN,ARCHITECTURE AGRICOLE,ARCHITECTURE ARTISANALE - COMMERCIALE ET TERTIAIRE,ARCHITECTURE CIVILE PUBLIQUE,ARCHITECTURE DE CULTURE - RECHERCHE - SPORT OU LOISIR,ARCHITECTURE DE JARDIN ET DES ESPACES VERTS,ARCHITECTURE DOMESTIQUE,ARCHITECTURE FISCALE OU FINANCIERE,ARCHITECTURE HOSPITALIERE - D'ASSISTANCE OU DE PROTECTION SOCIALE,ARCHITECTURE INDUSTRIELLE,ARCHITECTURE JUDICIAIRE - PENITENTIAIRE OU DE POLICE,ARCHITECTURE MILITAIRE,ARCHITECTURE MONUMENTALE - COMMEMORATIVE - FUNERAIRE ET VOTIVE,ARCHITECTURE RELIGIEUSE,ARCHITECTURE SCOLAIRE,ARMEMENT,DENOMINATION PROVISOIRE,ELEMENT D'ARCHITECTURE,GENIE CIVIL,INSTRUMENT DE MUSIQUE,INSTRUMENT OU OBJET PEDAGOGIQUE OU SCIENTIFIQUE,MACHINE ENERGETIQUE,MACHINE LIEE A LA PRODUCTION INDUSTRIELLE,MEUBLE DOMESTIQUE,MEUBLE RELIGIEUX,MOBILIER MONUMENTAL OU DE L'ESPACE EXTERIEUR,MOYEN DE TRANSPORT,OBJET CIVIL DOMESTIQUE,OBJET RELIGIEUX,PARTIE OU ELEMENT COMMUN A TOUS LES TYPES D'ARCHITECTURE ET AUX ESPACES AMENAGES,PEINTURE - ARTS GRAPHIQUES ET DES MEDIA,SCULPTURE,TEXTILE - GARNITURE OU VETEMENTS LAICS,TEXTILE RELIGIEUX,URBANISME ET ESPACES AMENAGES"  attributelabel="Domaine" attributestylesync="false" attributefilterenabled="true" attributeoperator="like"
-                url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
-                attribution="Service de l'inventaire : &lt;a href='http://patrimoine.bzh/' target='_blank'>patrimoine.bzh &lt;/a>" 
-				metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/a7f46b47-42fc-49b7-9b49-c7c11aee0932"
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a7f46b47-42fc-49b7-9b49-c7c11aee0932" >
-                <template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
-			</layer>
-			<layer id="etude_patrimoine_architecture" name="Architecture" visible="false" tiled="true"
-				queryable="true" searchable="true"
-                infoformat="application/vnd.ogc.gml" featurecount="50"
-				legendurl="http://kartenn.region-bretagne.fr/img/legend/etudes_architecture.png"
-				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
-				attribution="Service de l'inventaire : Région Bretagne" 
-				metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/1b3c63dd-e39e-48f5-ba87-882e09bb084a"
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=1b3c63dd-e39e-48f5-ba87-882e09bb084a" >
-		        <template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
-			</layer>
-			<layer id="etude_patrimoine_mobilier" name="Objets mobiliers" visible="false" tiled="true"
-				queryable="true" searchable="true"
-                infoformat="application/vnd.ogc.gml" featurecount="150"
-				legendurl="http://kartenn.region-bretagne.fr/img/legend/etudes_objets.png"
-				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
-				attribution="Service de l'inventaire : Région Bretagne" 
-				metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/5a6257ee-3fd8-41f2-bb63-55374e7a899a"
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5a6257ee-3fd8-41f2-bb63-55374e7a899a" >
-		        <template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_mobilier.mst"></template>
-			</layer>
-            <layer id="etude_patrimoine_simple_thematique" name="Etudes thématiques" visible="false" tiled="false"
-                queryable="true"
-                infoformat="application/vnd.ogc.gml" featurecount="150" legendurl="http://kartenn.region-bretagne.fr/img/legend/enquetes_thematiques.png"                
-                attributefilter="true" attributefield="affixe_cadre_etude" attributevalues="aucun,architecture gothique,ardoisières du Centre Bretagne,canal d'Ille-et-Rance,canal de Nantes à Brest,charpente armoricaine,châteaux du 19e siècle en Bretagne,Croix et calvaires de Guer et de la Gacilly,édifices religieux publics dans le Finistère : 1801-1905,églises et chapelles d'Ille-et-Vilaine,églises romanes de Bretagne,fortifications littorales,Heritaj -Inventaire du patrimoine dansé et vestimentaire de Bretagne,Inventaire des châteaux - maisons de maître et maisons d'architecte de Quimper,Inventaire des commanderies templières et hospitalières de Bretagne,Inventaire des fortifications littorales du milieu du 19e siècle dans les îles de Bretagne Sud (1830-1870),Inventaire des fours de goémoniers de Bretagne,Inventaire des manoirs de Quimper,inventaire des phares,Inventaire du patrimoine matériel et immatériel de l'archipel des Glénan,jardins remarquables,La statuaire du Christ aux outrages,Les bateaux du patrimoine,Les coiffes en filet brodé de Bretagne,Les moulins à marée en Bretagne,Les moulins à papier et papeteries industrielles de Bretagne,Les patrimoines maritimes et estuariens du Pays de Morlaix,Lycées en Bretagne,orfèvrerie religieuse de Haute-Bretagne,patrimoine balnéaire,patrimoine de la villégiature sur la Côte de Granit Rose,patrimoine des sports,patrimoine industriel,patrimoine linier et chanvrier de Bretagne,PNR Golfe du Morbihan - Patrimoine bâti maritime,recensement du patrimoine maritime (GÉOMER Brest),stalles médiévales de l'ancien duché de Bretagne,station biologique de Roscoff,Trésors dinannais : Dinan et l’orfèvrerie religieuse au XIXème siècle,Voies navigables"  attributelabel="Thématiques" attributestylesync="false" attributefilterenabled="true" attributeoperator="like"
-                url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
-                attribution="Service de l'inventaire : &lt;a href='http://patrimoine.bzh/' target='_blank'>patrimoine.bzh &lt;/a>" 
-				metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/a7f46b47-42fc-49b7-9b49-c7c11aee0932"
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a7f46b47-42fc-49b7-9b49-c7c11aee0932" >
-                <template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
-			</layer>
-			<layer id="croix_calvaire" name="Croix et calvaires (association)" visible="false" tiled="false" 
-				queryable="true"
-				searchable="true" legendurl="http://kartenn.region-bretagne.fr/img/legend/croix_et_calvaires_association.png"
-				infoformat="text/html" featurecount="20"
-				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
-				attribution="Association croix et calvaires de Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=90468f5b-eef8-452d-9443-060870b51332"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=90468f5b-eef8-452d-9443-060870b51332" />
+			</group>
+			<group name="Recensement" id="recensement"> 
+				<layer id="recensement_patrimoine" name="Recensement avant études" visible="false" tiled="true" 
+					searchable="true" queryable="true" 
+					infoformat="application/vnd.ogc.gml" featurecount="99"
+					legendurl="http://kartenn.region-bretagne.fr/img/legend/recensement.png"
+					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+					attribution="Service de l'inventaire : &lt;a href='http://patrimoine.bzh/' target='_blank'>patrimoine.bzh &lt;/a>" 
+					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
+					metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" >
+					<template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
+				</layer>
+				<layer id="recensement_patrimoine" name="Recensement par opération" visible="false" tiled="false" 
+					searchable="false" queryable="true" 
+					infoformat="application/vnd.ogc.gml" featurecount="99"
+					legendurl="http://kartenn.region-bretagne.fr/img/legend/recensement_par_operation.png"
+					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+					attributefilter="true" attributevalues="Aucun,Baraques de Bretagne,Cap Sizun - Pointe du Raz,Commune de Guengat,Croix et calvaires de Guer et de la Gacilly,Fours à goémon de Bretagne,Fours à pain de Bretagne,Heritaj -Inventaire du patrimoine dansé et vestimentaire de Bretagne,Inventaire du patrimoine culturel maritime de l'estuaire de Tréguier,Inventaire du patrimoine de Paimpont,Maisons à pan de bois,Parc naturel régional d'Armorique,Patrimoines des sports en Bretagne,Patrimoine linier et chanvrier en Bretagne,PNR Golfe du Morbihan - Patrimoine bâti maritime,Pontivy Communauté,Projet Rance Côte d'Emeraude,Quimperlé Communauté,Recensement des patrimoines maritimes et estuariens du Pays de Morlaix,Rennes Métropole,Schéma de cohérence territoriale du Trégor,Vallée du Scorff,Val d'Ille-Aubigné,Ville de Dinan,Ville de Montfort-sur-Meu,Ville de Saint-Brieuc,Ville d'Elven,Voies navigables" attributefield="operation" attributefilterenabled="true"
+					attribution="Service de l'inventaire" 
+					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
+					metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" >
+					<template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
+				</layer>
+				<layer id="recensement_patrimoine" name="Recensement par domaine" visible="false" tiled="false" 
+					searchable="false" queryable="true" 
+					infoformat="application/vnd.ogc.gml" featurecount="99"
+					legendurl="http://kartenn.region-bretagne.fr/img/legend/recensement_par_domaine.png"
+					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+					attributefilter="true" attributevalues="AUCUN,ARCHITECTURE AGRICOLE,ARCHITECTURE ARTISANALE - COMMERCIALE ET TERTIAIRE,ARCHITECTURE CIVILE PUBLIQUE,ARCHITECTURE DE CULTURE - RECHERCHE - SPORT OU LOISIR,ARCHITECTURE DE JARDIN ET DES ESPACES VERTS,ARCHITECTURE DOMESTIQUE,ARCHITECTURE FISCALE OU FINANCIERE,ARCHITECTURE HOSPITALIERE - D'ASSISTANCE OU DE PROTECTION SOCIALE,ARCHITECTURE INDUSTRIELLE,ARCHITECTURE JUDICIAIRE - PENITENTIAIRE OU DE POLICE,ARCHITECTURE MILITAIRE,ARCHITECTURE MONUMENTALE - COMMEMORATIVE - FUNERAIRE ET VOTIVE,ARCHITECTURE RELIGIEUSE,ARCHITECTURE SCOLAIRE,ARMEMENT,DENOMINATION PROVISOIRE,ELEMENT D'ARCHITECTURE,GENIE CIVIL,INSTRUMENT DE MUSIQUE,INSTRUMENT OU OBJET PEDAGOGIQUE OU SCIENTIFIQUE,MACHINE ENERGETIQUE,MACHINE LIEE A LA PRODUCTION INDUSTRIELLE,MEUBLE DOMESTIQUE,MEUBLE RELIGIEUX,MOBILIER MONUMENTAL OU DE L'ESPACE EXTERIEUR,MOYEN DE TRANSPORT,OBJET CIVIL DOMESTIQUE,OBJET RELIGIEUX,PARTIE OU ELEMENT COMMUN A TOUS LES TYPES D'ARCHITECTURE ET AUX ESPACES AMENAGES,PEINTURE - ARTS GRAPHIQUES ET DES MEDIA,SCULPTURE,TEXTILE - GARNITURE OU VETEMENTS LAICS,TEXTILE RELIGIEUX,URBANISME ET ESPACES AMENAGES" attributefield="domaine" attributefilterenabled="true"
+					attribution="Service de l'inventaire" 
+					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
+					metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" >
+					<template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
+				</layer>
+			</group>
+			<group name="Etudes" id="etudes"> 
+				<layer id="etude_patrimoine_simple" name="Dossiers d'études" visible="false" tiled="true"
+					queryable="true"
+					infoformat="application/vnd.ogc.gml" featurecount="99" legendurl="http://kartenn.region-bretagne.fr/img/legend/chateaux_19e.png"   
+					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+					attribution="Service de l'inventaire : &lt;a href='http://patrimoine.bzh/' target='_blank'>patrimoine.bzh &lt;/a>" 
+					metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/a7f46b47-42fc-49b7-9b49-c7c11aee0932"
+					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a7f46b47-42fc-49b7-9b49-c7c11aee0932" >
+					<template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
+				</layer>
+				<layer id="etude_patrimoine_simple" name="Dossiers d'études par domaine" visible="false" tiled="false"
+					queryable="true"
+					infoformat="application/vnd.ogc.gml" featurecount="150" legendurl="http://kartenn.region-bretagne.fr/img/legend/dossiers_d_etudes_par_domaine.png"   
+					attributefilter="true" attributefield="domaine" attributevalues="AUCUN,ARCHITECTURE AGRICOLE,ARCHITECTURE ARTISANALE - COMMERCIALE ET TERTIAIRE,ARCHITECTURE CIVILE PUBLIQUE,ARCHITECTURE DE CULTURE - RECHERCHE - SPORT OU LOISIR,ARCHITECTURE DE JARDIN ET DES ESPACES VERTS,ARCHITECTURE DOMESTIQUE,ARCHITECTURE FISCALE OU FINANCIERE,ARCHITECTURE HOSPITALIERE - D'ASSISTANCE OU DE PROTECTION SOCIALE,ARCHITECTURE INDUSTRIELLE,ARCHITECTURE JUDICIAIRE - PENITENTIAIRE OU DE POLICE,ARCHITECTURE MILITAIRE,ARCHITECTURE MONUMENTALE - COMMEMORATIVE - FUNERAIRE ET VOTIVE,ARCHITECTURE RELIGIEUSE,ARCHITECTURE SCOLAIRE,ARMEMENT,DENOMINATION PROVISOIRE,ELEMENT D'ARCHITECTURE,GENIE CIVIL,INSTRUMENT DE MUSIQUE,INSTRUMENT OU OBJET PEDAGOGIQUE OU SCIENTIFIQUE,MACHINE ENERGETIQUE,MACHINE LIEE A LA PRODUCTION INDUSTRIELLE,MEUBLE DOMESTIQUE,MEUBLE RELIGIEUX,MOBILIER MONUMENTAL OU DE L'ESPACE EXTERIEUR,MOYEN DE TRANSPORT,OBJET CIVIL DOMESTIQUE,OBJET RELIGIEUX,PARTIE OU ELEMENT COMMUN A TOUS LES TYPES D'ARCHITECTURE ET AUX ESPACES AMENAGES,PEINTURE - ARTS GRAPHIQUES ET DES MEDIA,SCULPTURE,TEXTILE - GARNITURE OU VETEMENTS LAICS,TEXTILE RELIGIEUX,URBANISME ET ESPACES AMENAGES"  attributelabel="Domaine" attributestylesync="false" attributefilterenabled="true" attributeoperator="like"
+					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+					attribution="Service de l'inventaire : &lt;a href='http://patrimoine.bzh/' target='_blank'>patrimoine.bzh &lt;/a>" 
+					metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/a7f46b47-42fc-49b7-9b49-c7c11aee0932"
+					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a7f46b47-42fc-49b7-9b49-c7c11aee0932" >
+					<template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
+				</layer>
+				<!--<layer id="etude_patrimoine_architecture" name="Architecture" visible="false" tiled="true"
+					queryable="true" searchable="true"
+					infoformat="application/vnd.ogc.gml" featurecount="50"
+					legendurl="http://kartenn.region-bretagne.fr/img/legend/etudes_architecture.png"
+					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+					attribution="Service de l'inventaire : Région Bretagne" 
+					metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/1b3c63dd-e39e-48f5-ba87-882e09bb084a"
+					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=1b3c63dd-e39e-48f5-ba87-882e09bb084a" >
+					<template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
+				</layer>
+				<layer id="etude_patrimoine_mobilier" name="Objets mobiliers" visible="false" tiled="true"
+					queryable="true" searchable="true"
+					infoformat="application/vnd.ogc.gml" featurecount="150"
+					legendurl="http://kartenn.region-bretagne.fr/img/legend/etudes_objets.png"
+					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+					attribution="Service de l'inventaire : Région Bretagne" 
+					metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/5a6257ee-3fd8-41f2-bb63-55374e7a899a"
+					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5a6257ee-3fd8-41f2-bb63-55374e7a899a" >
+					<template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_mobilier.mst"></template>
+				</layer>-->
+				<layer id="etude_patrimoine_simple_thematique" name="Etudes thématiques" visible="false" tiled="false"
+					queryable="true"
+					infoformat="application/vnd.ogc.gml" featurecount="150" legendurl="http://kartenn.region-bretagne.fr/img/legend/enquetes_thematiques.png"                
+					attributefilter="true" attributefield="affixe_cadre_etude" attributevalues="aucun,architecture gothique,ardoisières du Centre Bretagne,canal d'Ille-et-Rance,canal de Nantes à Brest,charpente armoricaine,châteaux du 19e siècle en Bretagne,Croix et calvaires de Guer et de la Gacilly,édifices religieux publics dans le Finistère : 1801-1905,églises et chapelles d'Ille-et-Vilaine,églises romanes de Bretagne,fortifications littorales,Heritaj -Inventaire du patrimoine dansé et vestimentaire de Bretagne,Inventaire des châteaux - maisons de maître et maisons d'architecte de Quimper,Inventaire des commanderies templières et hospitalières de Bretagne,Inventaire des fortifications littorales du milieu du 19e siècle dans les îles de Bretagne Sud (1830-1870),Inventaire des fours de goémoniers de Bretagne,Inventaire des manoirs de Quimper,inventaire des phares,Inventaire du patrimoine matériel et immatériel de l'archipel des Glénan,jardins remarquables,La statuaire du Christ aux outrages,Les bateaux du patrimoine,Les coiffes en filet brodé de Bretagne,Les moulins à marée en Bretagne,Les moulins à papier et papeteries industrielles de Bretagne,Les patrimoines maritimes et estuariens du Pays de Morlaix,Lycées en Bretagne,orfèvrerie religieuse de Haute-Bretagne,patrimoine balnéaire,patrimoine de la villégiature sur la Côte de Granit Rose,patrimoine des sports,patrimoine industriel,patrimoine linier et chanvrier de Bretagne,PNR Golfe du Morbihan - Patrimoine bâti maritime,recensement du patrimoine maritime (GÉOMER Brest),stalles médiévales de l'ancien duché de Bretagne,station biologique de Roscoff,Trésors dinannais : Dinan et l’orfèvrerie religieuse au XIXème siècle,Voies navigables"  attributelabel="Thématiques" attributestylesync="false" attributefilterenabled="true" attributeoperator="like"
+					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+					attribution="Service de l'inventaire : &lt;a href='http://patrimoine.bzh/' target='_blank'>patrimoine.bzh &lt;/a>" 
+					metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/a7f46b47-42fc-49b7-9b49-c7c11aee0932"
+					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a7f46b47-42fc-49b7-9b49-c7c11aee0932" >
+					<template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
+				</layer>
+				<layer id="croix_calvaire" name="Croix et calvaires (association)" visible="false" tiled="false" 
+					queryable="true"
+					searchable="true" legendurl="http://kartenn.region-bretagne.fr/img/legend/croix_et_calvaires_association.png"
+					infoformat="text/html" featurecount="20"
+					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+					attribution="Association croix et calvaires de Bretagne" 
+					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=90468f5b-eef8-452d-9443-060870b51332"
+					metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=90468f5b-eef8-452d-9443-060870b51332" />
+			</group>
 		</theme>
 	<theme name="Autres politiques régionales"  collapsed="true" id="autres" icon="caret-right">
 		<group name="Formation" id="formation"> 
