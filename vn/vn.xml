@@ -219,7 +219,7 @@
 				queryable="true" searchable="true" infoformat="application/vnd.ogc.gml" featurecount="20"
 				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2004" timemax="2018" timevalues="2004,2006,2008,2010,2012,2014,2016,2018"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-				style="ecluse_trafic_millesime,ecluse_proprietaire" stylesalias="Trafic,Propriétaire"
+				style="ecluse_proprietaire,ecluse_trafic_millesime" stylesalias="Propriétaire,Trafic"
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=01a0228d-feb1-4385-9eeb-55062e3f26ed"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=01a0228d-feb1-4385-9eeb-55062e3f26ed"> 
