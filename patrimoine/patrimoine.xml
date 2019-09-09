@@ -99,7 +99,7 @@
 				<layer id="etude_patrimoine_simple" name="Dossiers d'études" visible="false" tiled="true"
 					queryable="true"
 					infoformat="application/vnd.ogc.gml" featurecount="99" legendurl="http://kartenn.region-bretagne.fr/img/legend/chateaux_19e.png"
-					attributefilter="true" attributefield="type_dossier" attributevalues="OeuvreArchitecture,OeuvreObjet" attributelabel="Domaine" attributestylesync="false" attributefilterenabled="true" attributeoperator="like"
+					attributefilter="true" attributefield="type_dossier" attributevalues="OeuvreArchitecture,OeuvreObjet,Mobilier" attributelabel="Domaine" attributestylesync="false" attributefilterenabled="true" attributeoperator="like"
 					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
 					attribution="Service de l'inventaire : &lt;a href='http://patrimoine.bzh/' target='_blank'>patrimoine.bzh &lt;/a>" 
 					metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/a7f46b47-42fc-49b7-9b49-c7c11aee0932"

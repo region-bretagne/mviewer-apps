@@ -372,12 +372,10 @@
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=7948ca0f-ef9a-4034-a7e7-4976e8de2fe5" >  
 				<template url="apps/region/vn/templates/vn.limite_dpf.mst"></template>
 			</layer>		
-			<layer id="r53_2016_parcelle_publique" name="Parcelles publiques" visible="false" tiled="false"
+			<layer id="r53_2017_parcelle_publique" name="Parcelles publiques" visible="false" tiled="false"
 				queryable="false"
-				secure="true"
 				infoformat="text/html" featurecount="20"
-				url="../geoserver-proxy/interne/wms" 
-				legendurl="https://kartenn.region-bretagne.fr/img/legend/parcelles_publiques.png"
+				url="https://geobretagne.fr/geoserver/ff/wms" 
 				attribution="DREAL Bretagne" 
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=515cf06a-fc63-4059-9813-be6c57695eca"
 				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/515cf06a-fc63-4059-9813-be6c57695eca" />                    
