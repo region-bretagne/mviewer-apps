@@ -6,7 +6,7 @@ mviewer.customControls.inventaire = (function() {
 
     var _zoomlevel = false;
 
-    var _defaultValue = "maison,18e siècle,ardoise";
+    var _defaultValue = "";
 
     var _lastValues = false;
 

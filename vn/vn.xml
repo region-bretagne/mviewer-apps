@@ -325,7 +325,7 @@
 			</layer>
         </theme> 
 		<theme name="Domanialité"  collapsed="true" id="domanialite" icon="wrench"> 
-			<layer id="maison_eclusiere_aap" name="Appels à projets maisons éclusières" visible="false" tiled="false" 
+			<layer id="maison_eclusiere_aap" name="Activités maisons éclusières" visible="false" tiled="false" 
 				searchable="true" queryable="true" secure="true"
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
