@@ -18,12 +18,14 @@
                 queryable="true"
                 fields="nom,adresse,photo,lien_fiche,basket_ext"
                 aliases="Nom,Adresse,Photo,lien,Terrain de Basket"
-                visible="true"                
+                visible="true"
                 searchable="true"
                 searchengine="fuse"
                 fusesearchkeys="nom,adresse"
                 fusesearchresult="{{nom}}"
-                attribution="Région Bretagne" />
+                attribution="Région Bretagne">
+                <template url="apps/region/equipements/templates/lycee.mst" />
+            </layer>
             <layer id="eqpts"
                 name="Equipements sportifs"
                 type="customlayer"
@@ -31,9 +33,9 @@
                 url="apps/region/equipements/addons/equipement/layer/eqpts.js"
                 metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=99e78163-ce9a-4eee-9ea0-36afc2a53d25"
                 metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID&amp;ID=99e78163-ce9a-4eee-9ea0-36afc2a53d25"
-                queryable="true"                
-                visible="true"                
-                attribution="Région Bretagne" />       
+                queryable="true"
+                visible="true"
+                attribution="Région Bretagne" />
         </theme>
     </themes>
 </config>
