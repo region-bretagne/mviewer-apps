@@ -7,13 +7,14 @@
 		<p class="text-feature">		
 			<span style="font-family:'roboto_bold'"> Adresse :</span> {{adresse}}<br/>			
 		
-		<h4 class="subtitle-feature">Equipements extérieurs</h4>        
+		<h4 class="subtitle-feature">Equipements en extérieur</h4>        
 	    <div class="info x{{foot_ext}}"><span style="margin-left:20px;">Terrain de football</span></div>
         <div class="info x{{rugby_ext}}"><span style="margin-left:20px;">Terrain de rugby</span></div> 		
-        <div class="info x{{piste}}"><span style="margin-left:20px;">Piste</span></div> 
+        <div class="info x{{handball_ext}}"><span style="margin-left:20px;">Terrain de Handball</span></div>
+        <div class="info x{{piste}}"><span style="margin-left:20px;">Piste</span></div>        
         <div class="info x{{foot_gael_ext}}"><span style="margin-left:20px;">Terrain de football gaélique</span></div>
         
-        <h4 class="subtitle-feature">Equipements intérieurs</h4>
+        <h4 class="subtitle-feature">Equipements en intérieur</h4>
 	    <div class="info x{{gymnase}}"><span style="margin-left:20px;">Gymnase</span></div>
         
         {{#lien_fiche}}
@@ -24,6 +25,9 @@
        {{/lien_fiche}}
 
        </p>
+       
+       <h4 class="subtitle-feature">Autres sites extérieurs utilisés</h4>        
+	    <div class=""><span style="margin-left:20px;">...</span></div>
        
 		
 	 </br></br></br></br></br>

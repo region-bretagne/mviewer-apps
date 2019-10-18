@@ -4,34 +4,48 @@ mviewer.customLayers.lycee_eqpts = (function () {
 
 var _legend = { items: [] };
 
-var _stylePublic = [new ol.style.Style({
+var style0 = [new ol.style.Style({
     image: new ol.style.Circle({
         fill: new ol.style.Fill({
-            color: 'rgba(255, 118, 117,1.0)'
+            color: 'rgba(232, 65, 24,1.0)'
         }),
         stroke: new ol.style.Stroke({
             color: "#ffffff",
             width: 4
         }),
-        radius: 9
+        radius: 10
     })
 })];
 
-var _stylePrive = [new ol.style.Style({
+var style1 = [new ol.style.Style({
     image: new ol.style.Circle({
         fill: new ol.style.Fill({
-            color: 'rgba(99, 110, 114,1.0)'
+            color: 'rgba(251, 197, 49,1.0)'
         }),
         stroke: new ol.style.Stroke({
             color: "#ffffff",
             width: 4
         }),
-        radius: 9
+        radius: 10
     })
 })];
 
-_legend.items.push({styles:_stylePublic, label: "Public", geometry: "Point"});
-_legend.items.push({styles:_stylePrive, label: "Privé", geometry: "Point"});
+var style2 = [new ol.style.Style({
+    image: new ol.style.Circle({
+        fill: new ol.style.Fill({
+            color: 'rgba(68, 189, 50,1.0)'
+        }),
+        stroke: new ol.style.Stroke({
+            color: "#ffffff",
+            width: 4
+        }),
+        radius: 10
+    })
+})];
+
+_legend.items.push({styles:style0, label: "Aucun équipement", geometry: "Point"});
+_legend.items.push({styles:style1, label: "Equipements partiels", geometry: "Point"});
+_legend.items.push({styles:style2, label: "Equipements complets", geometry: "Point"});
 
 var _layer = new ol.layer.Vector({
         source: new ol.source.Vector({
@@ -40,10 +54,12 @@ var _layer = new ol.layer.Vector({
         }),
         style: function(feature, resolution) {
             var stl;
-            if(feature.get('secteur_li') === 'Public') {
-                stl = _stylePublic;
-            } else if(feature.get('secteur_li') === "Privé sous contrat avec l'éducation nationale") {
-                stl = _stylePrive;
+            if(feature.get('gymnase') === 'oui' && feature.get('terrain ext') === 'oui') {
+                stl = style2;
+            } else if(feature.get('gymnase') === 'oui' || feature.get('terrain ext') === 'oui') {
+                stl = style1;
+            } else {
+                stl = style0;                
             }
             return stl;
         }
