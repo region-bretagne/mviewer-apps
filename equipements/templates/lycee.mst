@@ -7,20 +7,24 @@
 		<p class="text-feature">		
 			<span style="font-family:'roboto_bold'"> Adresse :</span> {{adresse}}<br/>			
 		
-		<h4 class="subtitle-feature">Equipements</h4>        
+		<h4 class="subtitle-feature">Equipements extérieurs</h4>        
 	    <div class="info x{{foot_ext}}"><span style="margin-left:20px;">Terrain de football</span></div>
-        <div class="info x{{rugby_ext}}"><span style="margin-left:20px;">Terrain de rugby</span></div>
- 		<div class="info x{{gymnase}}"><span style="margin-left:20px;">Gymnase</span></div>
+        <div class="info x{{rugby_ext}}"><span style="margin-left:20px;">Terrain de rugby</span></div> 		
         <div class="info x{{piste}}"><span style="margin-left:20px;">Piste</span></div> 
         <div class="info x{{foot_gael_ext}}"><span style="margin-left:20px;">Terrain de football gaélique</span></div>
-
-       </p>
-       {{#lien_fiche}}
+        
+        <h4 class="subtitle-feature">Equipements intérieurs</h4>
+	    <div class="info x{{gymnase}}"><span style="margin-left:20px;">Gymnase</span></div>
+        
+        {{#lien_fiche}}
        <div class="but_link">	
 			<p> <a href="{{lien_fiche}}" target=_blank"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Etude patrimoniale</a>
 			</p>
 	   </div>
        {{/lien_fiche}}
+
+       </p>
+       
 		
 	 </br></br></br></br></br>
 
@@ -67,10 +71,9 @@
 	    font-size:13px;
 	    font-family:'roboto_regular', Arial, Sans-serif;
 	   	background:rgba(3, 46, 70, 0.9);
-	    color:#fff;
-	    width:100px;
+	    color:#fff;	    
 	    border:1px solid #032e46;
-	    margin-left: 25%;
+	    margin: 10px 25px 10px 25px;
 	}
 	.but_link:hover{
 	    background:rgba(3, 46, 70, 1);
