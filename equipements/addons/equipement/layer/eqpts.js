@@ -4,71 +4,91 @@ mviewer.customLayers.eqpts = (function () {
     var _legend = { items: [] };
 
 
-    var _stylePrive = [new ol.style.Style({
-        image: new ol.style.Circle({
-            fill: new ol.style.Fill({
-                color: 'rgba(99, 110, 114,1.0)'
+    var _gymnase = [new ol.style.Style({
+        image: new ol.style.RegularShape({
+          fill: new ol.style.Fill({
+                color: 'rgba(127, 143, 166,1.0)'
             }),
-            stroke: new ol.style.Stroke({
-                color: "#ffffff",
+          stroke: new ol.style.Stroke({
+                color: "#ededed",
                 width: 3
             }),
-            radius: 9
+          points: 5,
+          radius: 13,
+          radius2: 6,
+          angle: 0
+        })
+    })];
+    
+    var _selectionStyle = [new ol.style.Style({
+        image: new ol.style.RegularShape({
+          fill: new ol.style.Fill({
+                color: 'rgba(47, 54, 64,0)'
+            }),
+          stroke: new ol.style.Stroke({
+                color: 'rgba(47, 54, 64,1.0)',
+                width: 3
+            }),
+          points: 5,
+          radius: 18,
+          radius2: 9,
+          angle: 0
         })
     })];
 
-    var _o = [new ol.style.Style({
-        image: new ol.style.Circle({
-            fill: new ol.style.Fill({
-                color: 'rgba(110, 42, 114,1.0)'
-            }),
-            stroke: new ol.style.Stroke({
-                color: "#ff0000",
-                width: 4
-            }),
-            radius: 9
-        })
-    })];
+
     var _piscine = [new ol.style.Style({
-        image: new ol.style.Circle({
-            fill: new ol.style.Fill({
-                color: 'rgba(78, 197, 241,1.0)'
+        image: new ol.style.RegularShape({
+          fill: new ol.style.Fill({
+                color: 'rgba(0, 168, 255,1.0)'
             }),
-            stroke: new ol.style.Stroke({
+          stroke: new ol.style.Stroke({
                 color: "#ededed",
                 width: 3
             }),
-            radius: 9
+          points: 5,
+          radius: 13,
+          radius2: 6,
+          angle: 0
         })
     })];
+
     var _stade = [new ol.style.Style({
-        image: new ol.style.Circle({
-            fill: new ol.style.Fill({
-                color: 'rgba(13, 242, 200,1.0)'
+        image: new ol.style.RegularShape({
+          fill: new ol.style.Fill({
+                color: 'rgba(68, 189, 50,1.0)'
             }),
-            stroke: new ol.style.Stroke({
+          stroke: new ol.style.Stroke({
                 color: "#ededed",
                 width: 3
             }),
-            radius: 9
+          points: 5,
+          radius: 13,
+          radius2: 6,
+          angle: 0
         })
     })];
     var _complexe = [new ol.style.Style({
-        image: new ol.style.Circle({
-            fill: new ol.style.Fill({
-                color: 'rgba(247, 255, 10,1.0)'
+        image: new ol.style.RegularShape({
+          fill: new ol.style.Fill({
+                color: 'rgba(232, 65, 24,1.0)'
             }),
-            stroke: new ol.style.Stroke({
+          stroke: new ol.style.Stroke({
                 color: "#ededed",
                 width: 3
             }),
-            radius: 9
+          points: 5,
+          radius: 13,
+          radius2: 6,
+          angle: 0
         })
     })];
 
+
+
     _legend.items.push({styles:_piscine, label: "Piscines", geometry: "Point"});
     _legend.items.push({styles:_stade, label: "Stades", geometry: "Point"});
-    _legend.items.push({styles:_stylePrive, label: "Gymnases", geometry: "Point"});
+    _legend.items.push({styles:_gymnase, label: "Gymnases", geometry: "Point"});
     _legend.items.push({styles:_complexe, label: "Complexes", geometry: "Point"});
 
     var _source = new ol.source.Vector({
@@ -87,7 +107,7 @@ mviewer.customLayers.eqpts = (function () {
                 } else if(feature.get("type d'équipement") === "complexe"){
                     stl=_complexe;
                 } else {
-                    stl = _stylePrive;
+                    stl = _gymnase;
                 }
                 return stl;
             }
@@ -99,7 +119,7 @@ mviewer.customLayers.eqpts = (function () {
         features.forEach(function(feature){
             if (feature.getProperties()["usage lycée"] === rne) {
                 var b = feature.clone();
-                b.setStyle(_o);
+                b.setStyle(_selectionStyle);
                 selected.push(b);
             }
 
