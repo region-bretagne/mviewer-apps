@@ -2,8 +2,8 @@ mviewer.customLayers.eqpts = (function () {
 
 
     var _legend = { items: [] };
-    
-    
+
+
     var _stylePrive = [new ol.style.Style({
         image: new ol.style.Circle({
             fill: new ol.style.Fill({
@@ -16,7 +16,7 @@ mviewer.customLayers.eqpts = (function () {
             radius: 9
         })
     })];
-    
+
     var _o = [new ol.style.Style({
         image: new ol.style.Circle({
             fill: new ol.style.Fill({
@@ -65,17 +65,17 @@ mviewer.customLayers.eqpts = (function () {
             radius: 9
         })
     })];
-    
+
     _legend.items.push({styles:_piscine, label: "Piscines", geometry: "Point"});
     _legend.items.push({styles:_stade, label: "Stades", geometry: "Point"});
     _legend.items.push({styles:_stylePrive, label: "Gymnases", geometry: "Point"});
     _legend.items.push({styles:_complexe, label: "Complexes", geometry: "Point"});
-    
+
     var _source = new ol.source.Vector({
         url: "apps/region/equipements/eqpts.geojson",
         format: new ol.format.GeoJSON()
     });
-    
+
     var _layer = new ol.layer.Vector({
             source: _source,
             style: function(feature,resolution) {
@@ -92,35 +92,31 @@ mviewer.customLayers.eqpts = (function () {
                 return stl;
             }
     });
-    
+
     var _selection = function(rne) {
         var features = _source.getFeatures();
+        var selected = [];
         features.forEach(function(feature){
-    
             if (feature.getProperties()["usage lycée"] === rne) {
-                console.log(feature);
-                feature.setStyle(_o);
-            }else if(feature.get("type d'équipement") === 'piscine') {
-                feature.setStyle(_piscine);
-            } else if(feature.get("type d'équipement").substr(0,feature.get("type d'équipement").indexOf(" ")) === "stade" || feature.get("type d'équipement") === "stade"){
-                feature.setStyle(_stade);
-            } else if(feature.get("type d'équipement") === "complexe"){
-                feature.setStyle(_complexe);
-            } else {
-                feature.setStyle(_stylePrive);
+                var b = feature.clone();
+                b.setStyle(_o);
+                selected.push(b);
             }
-    
+
         });
-    
+        console.log(selected);
+        var _sourceOverlay = mviewer.getSourceOverlay();
+        _sourceOverlay.clear();
+        _sourceOverlay.addFeatures(selected);
+
     };
-    
-    
+
+
     return {
             layer: _layer,
             handle: false,
             legend: _legend,
             selection: _selection
         };
-    
+
     }());
-    
