@@ -107,6 +107,15 @@
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=58e1b1a6-2cf7-4088-b59a-bdc1c7526e3c"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=58e1b1a6-2cf7-4088-b59a-bdc1c7526e3c" >  
 				<template url="apps/region/vn/templates/vn.signaletique_navigation_vn.mst"></template>
+			</layer>
+		    <layer id="signalisation_vvv" name="Signalisation Véloroutes-Voies Vertes – V42 (section Taden/Redon)" visible="false" tiled="false" 
+				queryable="true" 
+				infoformat="application/vnd.ogc.gml" featurecount="20"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attribution="Région Bretagne" 
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=cccdcc37-cc6f-4c0d-b327-8557004abdb4"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=cccdcc37-cc6f-4c0d-b327-8557004abdb4" >  
+				<template url="apps/region/vn/templates/vn.signalisation_vvv.mst"></template>
 			</layer>		
 		    <layer id="bouee_vn" name="Bouées" visible="false" tiled="false" 
 				queryable="true" 
@@ -387,23 +396,23 @@
 				style="cadastre_bati_type" legendurl=""
 				url="https://geobretagne.fr/geoserver/cadastre/wms" 
 				attribution="DGFIP" 
-				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/0ca82e1d-b487-4879-8185-56b7c4e1a948"
-				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0ca82e1d-b487-4879-8185-56b7c4e1a948" />	
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/91811bc9-308a-4ddb-9c15-c69b3c0bb067"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=91811bc9-308a-4ddb-9c15-c69b3c0bb067" />	
             <layer id="CP.CadastralParcel" name="Parcelle cadastrale" scalemin="0" scalemax="50000" visible="false" tiled="true"
 				queryable="true" fields="label,nom_commune,areavalue" aliases="Parcelle,Commune,Surface"
                 infoformat="text/html" featurecount="5"             
 				url="https://geobretagne.fr/geoserver/cadastre/wms" 
 				attribution="DGFIP" 
-				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/0ca82e1d-b487-4879-8185-56b7c4e1a948" 
-				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0ca82e1d-b487-4879-8185-56b7c4e1a948" />
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/caec5bfd-e05c-4af3-9190-9736fb56f988" 
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=caec5bfd-e05c-4af3-9190-9736fb56f988" />
 			<layer id="CP.CadastralZoning" name="Sections" scalemin="0" scalemax="50000" visible="false" tiled="false"
 				queryable="false" fields="label,nom_commune" aliases="Section,Commune"
                 infoformat="application/vnd.ogc.gml" featurecount="5"
 				style="cadastre_section_marron"
 				url="https://geobretagne.fr/geoserver/cadastre/wms" 
 				attribution="DGFIP" 
-				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/0ca82e1d-b487-4879-8185-56b7c4e1a948" 
-				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0ca82e1d-b487-4879-8185-56b7c4e1a948" />                        
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/63c700b1-943d-4409-88f0-2bdf904208bd" 
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=63c700b1-943d-4409-88f0-2bdf904208bd" />                        
         </theme> 
         <theme name="Patrimoine et paysages"  collapsed="true" id="paysage" icon="mountain">
 			<layer id="diagnostic_paysager" name="Diagnostic paysager" visible="false" tiled="false" 
