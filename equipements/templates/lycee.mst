@@ -1,0 +1,101 @@
+{{#features}}
+	<li class="item" style="width:238px;">
+		<h3 class="title-feature">{{nom}}</h3>
+        {{#photo}}                
+			<img src="{{photo}}" class="img-responsive" />
+        {{/photo}}                
+		<p class="text-feature">		
+			<span style="font-family:'roboto_bold'"> Adresse :</span> {{adresse}}<br/>			
+		
+		<h4 class="subtitle-feature">Equipements en extérieur</h4>        
+	    <div class="info x{{foot_ext}}"><span style="margin-left:20px;">Terrain de football</span></div>
+        <div class="info x{{rugby_ext}}"><span style="margin-left:20px;">Terrain de rugby</span></div> 		
+        <div class="info x{{handball_ext}}"><span style="margin-left:20px;">Terrain de Handball</span></div>
+        <div class="info x{{piste}}"><span style="margin-left:20px;">Piste</span></div>        
+        <div class="info x{{foot_gael_ext}}"><span style="margin-left:20px;">Terrain de football gaélique</span></div>
+        
+        <h4 class="subtitle-feature">Equipements en intérieur</h4>
+	    <div class="info x{{gymnase}}"><span style="margin-left:20px;">Gymnase</span></div>
+        
+        {{#lien_fiche}}
+       <div class="but_link">	
+			<p> <a href="{{lien_fiche}}" target=_blank"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Etude patrimoniale</a>
+			</p>
+	   </div>
+       {{/lien_fiche}}
+
+       </p>
+       
+       <h4 class="subtitle-feature">Autres sites extérieurs utilisés</h4>        
+	    <div class=""><span style="margin-left:20px;">...</span></div>
+       
+		
+	 </br></br></br></br></br>
+
+	</li>
+{{/features}}
+
+<style>
+	.title-feature {
+		color: #032e46;
+		font-family:"roboto_bold";
+		font-size:23px;
+		margin-bottom:1%;
+		line-height:1;
+	}
+	.subtitle-feature {
+		color: #032e46;
+		font-family:"roboto_bold";
+		font-size:18px;
+		margin-top:7%;
+		line-height:1;
+	}
+	.text-feature{
+		font-family:"roboto_regular";
+		color:#555;
+		font-size:13px;
+		margin-top:10%;
+	}
+	.info.x, .info.xnon {
+   		background-image: url(https://kartenn.region-bretagne.fr/doc/transports/icons/non_1.png);
+   		background-size: 16px;
+    	background-repeat: no-repeat;
+   	    background-position-x: 0px;
+   	    margin-bottom:3px;
+	}
+	.info.xoui,.info.x1,.info.x2,.info.x3,.info.x4 {
+   		background-image: url(https://kartenn.region-bretagne.fr/doc/transports/icons/oui.png);
+   		background-size: 16px;
+    	background-repeat: no-repeat;
+   	    background-position-x: 0px;
+   	    margin-bottom:3px;
+	}
+	.but_link{
+	    padding:10px 0 10px 0;
+	    font-size:13px;
+	    font-family:'roboto_regular', Arial, Sans-serif;
+	   	background:rgba(3, 46, 70, 0.9);
+	    color:#fff;	    
+	    border:1px solid #032e46;
+	    margin: 10px 25px 10px 25px;
+	}
+	.but_link:hover{
+	    background:rgba(3, 46, 70, 1);
+	    border:1px solid #032e46;
+	}
+	.but_link p{
+	  margin: 0;
+	  text-align:center;
+	  color:#fff;
+	} 
+	.but_link a{
+	  color: #fff;
+	}
+	.but_link a:hover{
+	  color:#fff;
+	}
+	.but_link a:focus{
+	  color:#fff; 
+	}
+
+</style>
