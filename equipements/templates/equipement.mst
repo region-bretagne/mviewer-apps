@@ -5,11 +5,12 @@
 		<p class="text-feature">		
 			<span style="font-family:'roboto_bold'"> Adresse :</span> {{adresse}}<br/>			
             <span style="font-family:'roboto_bold'"> Propriétaire :</span> {{propriétaire}}
-		<h4 class="subtitle-feature">Types de salles/terrains :</h4>        
-	    <div id="types">
-            <span style="margin-left:20px;">{{type de salles/terrains}}</span>
-        </div>
-        
+		{{#type de salles/terrains}}
+			<h4 class="subtitle-feature">Types de salles/terrains :</h4>        
+			<div id="types">
+				<span style="margin-left:20px;">{{type de salles/terrains}}</span>
+			</div>
+        {{/type de salles/terrains}}
 
        </p>
        {{#lien_fiche}}
