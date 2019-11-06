@@ -1,0 +1,85 @@
+{{#features}}
+	<li class="item">
+		<h3 class="title-feature">{{nom_com}}</h3>
+        <h4 class="subtitle-feature">Type candidatures</h4>                    
+		<p class="text-feature">		
+			{{#typ_cand17}}<span style="font-family:'roboto_bold'"> Candidature 2017 :</span> {{typ_cand17}}<br/>	{{/typ_cand17}}		
+            {{#typ_cand19}}<span style="font-family:'roboto_bold'"> Candidature 2019 :</span> {{typ_cand19}}<br/> {{/typ_cand19}}
+		</p>
+        <h4 class="subtitle-feature">Finances</h4>   
+		<p class="text-feature">		
+			<span style="font-family:'roboto_bold'"> Soutien financier :</span> {{soutien_financier_global}} €<br/>
+			<span style="font-family:'roboto_bold'"> Dont soutien région :</span> {{dt_soutien_region}} €<br/>			
+		</p>
+
+        <div class="description-feature">	
+        <h4 class="subtitle-feature">Descriptif de l'opération</h4>   
+		<p>
+			{{{descriptif_projet}}}</br>
+		</p>
+		</div>
+
+	</li>
+{{/features}}
+
+<style>
+	.title-feature {
+		color: #032e46;
+		font-family:"roboto_bold";
+		font-size:23px;
+		margin-bottom:1%;
+		line-height:1;
+	}
+	.subtitle-feature {
+		color: #032e46;
+		font-family:"roboto_bold";
+		font-size:18px;
+		margin-top:7%;
+		line-height:1;
+	}
+	.text-feature{
+		font-family:"roboto_regular";
+		color:#555;
+		font-size:13px;
+		margin-top:5%;
+	}
+	.description-feature{
+		font-family:"roboto_regular";
+		color:#555;
+		font-size:11px;
+		margin-top:5%;
+	}
+	.but_link{
+	    padding:10px 0 10px 0;
+	    font-size:13px;
+	    font-family:'roboto_regular', Arial, Sans-serif;
+	   	background:rgba(3, 46, 70, 0.9);
+	    color:#fff;
+	    width:100px;
+	    border:1px solid #032e46;
+	    margin-left: 25%;
+	}
+	.but_link:hover{
+	    background:rgba(3, 46, 70, 1);
+	    border:1px solid #032e46;
+	}
+	.but_link p{
+	  margin: 0;
+	  text-align:center;
+	  color:#fff;
+	} 
+	.but_link a{
+	  color: #fff;
+	}
+	.but_link a:hover{
+	  color:#fff;
+	}
+	.but_link a:focus{
+	  color:#fff; 
+	}
+    #types p::first-letter,
+    h3::first-letter{
+        text-transform:uppercase;
+    }
+
+</style>

@@ -590,11 +590,11 @@
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     style="route_principale_defaut"
                     stylesalias=""
-                    url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+                    url="http://ows.region-bretagne.fr/geoserver/interne/wms"
                     legendurl=""
                     attribution="Sources: IGN - BD CARTO" 
-                    metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=72bdca86-f605-46c8-8b50-a4af3c629020"
-					metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=72bdca86-f605-46c8-8b50-a4af3c629020" >     
+                    metadata=""
+					metadata-csw="" >     
 		        </layer>
 			</group>		
 			<group name="Transport aérien" id="grp4" >		
