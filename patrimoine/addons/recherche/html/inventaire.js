@@ -7,6 +7,7 @@ mviewer.customControls.inventaire = (function() {
     var _zoomlevel = false;
 
     var _defaultValue = "maison,18e siècle,ardoise";
+    var _defaultValue = false;
 
     var _lastValues = false;
 
@@ -102,6 +103,8 @@ mviewer.customControls.inventaire = (function() {
                 $("#inventaire_search_queries").tagsinput("add", {value: value, nor: value});
             });
             _defaultValue = false;
+            _updateLayer();
+        } else {
             _updateLayer();
         }
         $("#inventaire_search_queries").on('itemAdded', function(event) {
