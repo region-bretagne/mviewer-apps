@@ -1,17 +1,19 @@
 {{#features}}
 	<li class="item" style="width:238px;">
 		<h3 class="title-feature">{{nom}}</h3>
-        {{#photo}}                
+        {{#photo}}
 			<img src="{{photo}}" class="img-responsive" />
-        {{/photo}}                
-		<p class="text-feature">		
+        {{/photo}}
+		<p class="text-feature">
 			<span style="font-family:'roboto_bold'"> Identifiant :</span> {{id_ecluse}}<br/>
 			<span style="font-family:'roboto_bold'"> Numéro d'écluse :</span> {{num_ecluse}}<br/>
 			<span style="font-family:'roboto_bold'"> Voie navigable :</span> {{voie_navigable}}<br/>
 			<span style="font-family:'roboto_bold'"> Propriétaire :</span> {{proprietaire}}<br/>
 			<span style="font-family:'roboto_bold'"> Gestionnaire :</span> {{gestionnaire}}<br/>
-			<span style="font-family:'roboto_bold'"> Trafic 2016 :</span> {{trafic}}<br/>
-
+		<div class="but_link">
+			<p> <a href="http://kartenn.region-bretagne.fr/mreport/trafic/{{id_ecluse}}" target=_blank"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Stats</a>
+			</p>
+		</div>
        </p>
 
 
@@ -71,7 +73,7 @@
 	  margin: 0;
 	  text-align:center;
 	  color:#fff;
-	} 
+	}
 	.but_link a{
 	  color: #fff;
 	}
@@ -79,7 +81,7 @@
 	  color:#fff;
 	}
 	.but_link a:focus{
-	  color:#fff; 
+	  color:#fff;
 	}
 
 </style>
