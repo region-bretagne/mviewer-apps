@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title=" " logo="img/no_logo.svg" help="apps/region/index_dd/indexdd_help.html" measuretools="true" exportpng="true" style="apps/region/index_dd/css/index_dd.css" stats="true" statsurl="../ws/kartenn/log.php"/>
+    <application title=" " logo="img/no_logo.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/index_dd/indexdd_help.html" measuretools="true" exportpng="true" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/index_dd/css/index_dd.css" stats="true" statsurl="../ws/kartenn/log.php"/>
     <!--<mapoptions projection="EPSG:2154" extent="145518,6726671,372058,6868691"  />-->
     <mapoptions maxzoom="19" projection="EPSG:3857" center="-220750.13768758904,6144925.57790189" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
   
 	<baselayers style="default"><!-- style="default"||gallery" -->            		
         <baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="GéoPortail" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
-            url="http://kartenn.region-bretagne.fr/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
+            url="https://kartennn.region-bretagne.fr/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
             attribution="&lt;a href='http://www.geoportail.fr/' target='_blank'>&lt;img src='http://api.ign.fr/geoportail/api/js/latest/theme/geoportal/img/logo_gp.gif'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
         <baselayer  type="fake" id="fake" label="Carroyage" title="Carroyage" thumbgallery="img/basemap/grid.png" visible="false"  />
         <baselayer  type="OSM" id="darkmatter" label="Dark Matter" title="CartoDb" thumbgallery="img/basemap/darkmatter.png" 
@@ -19,14 +19,14 @@
 			url="http://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png" 
 			attribution="© MapQuest. Données : les contributeurs d'&lt;a href='http://www.openstreetmap.org/' target='_blank'>OpenStreetMap &lt;/a>,  &lt;a href='http://www.openstreetmap.org/copyright' target='_blank'>ODbL &lt;/a>" visible="false"/>     
         <baselayer  type="WMTS" id="scan2" label="Cartes IGN" title="GéoPortail" maxscale="2000" thumbgallery="img/basemap/scan.jpg"
-            url="http://kartenn.region-bretagne.fr/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.MAPS" format="image/jpeg" visible="false" fromcapacity="false"
+            url="https://kartennn.region-bretagne.fr/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.MAPS" format="image/jpeg" visible="false" fromcapacity="false"
             attribution="&lt;a href='http://www.geoportail.fr/' target='_blank'>&lt;img src='http://api.ign.fr/geoportail/api/js/latest/theme/geoportal/img/logo_gp.gif'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
     </baselayers> 
     <proxy url=""/>
     <!--<olscompletion url="http://gpp3-wxs.ign.fr/5kiwvtkb2v23y0x8chidxbij/ols/apis/completion"/>-->
     <!--<olscompletion url="../olscompletion" type="geoportail"/>-->
     <olscompletion url="http://api-adresse.data.gouv.fr/search/" type="ban"/>
-    <elasticsearch url="http://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" doctypes="unite_administrative" linkid="search_id" querymode="match" version="current" />
+    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" doctypes="unite_administrative" linkid="search_id" querymode="match" version="current" />
     <searchparameters bbox="false" localities="true" features="true" static="true"/>
     
 	<widgets>
@@ -42,9 +42,9 @@
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018" 
-	                metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b9f0d569-52c2-4200-ab9a-0c3170946271"
-	                metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=b9f0d569-52c2-4200-ab9a-0c3170946271">
-	                <template url="apps/region/index_dd/templates/index_dd_social_inde.mst"></template>
+	                metadata="https://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b9f0d569-52c2-4200-ab9a-0c3170946271"
+	                metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=b9f0d569-52c2-4200-ab9a-0c3170946271">
+	                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/index_dd/templates/index_dd_social_inde.mst"></template>
 		        </layer>
 		        <layer id="idd_dim_social_geom" name="Santé"  visible="false" tiled="false"
 	              	searchable="false" queryable="true" exclusive="true"
@@ -53,9 +53,9 @@
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018" 
-	                metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b9f0d569-52c2-4200-ab9a-0c3170946271"
-	                metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=b9f0d569-52c2-4200-ab9a-0c3170946271">
-	                <template url="apps/region/index_dd/templates/index_dd_social_indf.mst"></template>
+	                metadata="https://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b9f0d569-52c2-4200-ab9a-0c3170946271"
+	                metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=b9f0d569-52c2-4200-ab9a-0c3170946271">
+	                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/index_dd/templates/index_dd_social_indf.mst"></template>
 		        </layer>
 		        <layer id="idd_dim_social_geom" name="Éducation et Formation"  visible="false" tiled="false"
 	              	searchable="false" queryable="true" exclusive="true"
@@ -64,9 +64,9 @@
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018"
-	                metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b9f0d569-52c2-4200-ab9a-0c3170946271"
-	                metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=b9f0d569-52c2-4200-ab9a-0c3170946271">
-	                <template url="apps/region/index_dd/templates/index_dd_social_indg.mst"></template>
+	                metadata="https://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b9f0d569-52c2-4200-ab9a-0c3170946271"
+	                metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=b9f0d569-52c2-4200-ab9a-0c3170946271">
+	                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/index_dd/templates/index_dd_social_indg.mst"></template>
 		        </layer>
 		        <layer id="idd_dim_social_geom" name="Loisirs, culture et patrimoine"  visible="false" tiled="false"
 	              	searchable="false" queryable="true" exclusive="true"
@@ -75,9 +75,9 @@
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018" 
-	                metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b9f0d569-52c2-4200-ab9a-0c3170946271"
-	                metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=b9f0d569-52c2-4200-ab9a-0c3170946271">
-	                <template url="apps/region/index_dd/templates/index_dd_social_indh.mst"></template>
+	                metadata="https://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b9f0d569-52c2-4200-ab9a-0c3170946271"
+	                metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=b9f0d569-52c2-4200-ab9a-0c3170946271">
+	                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/index_dd/templates/index_dd_social_indh.mst"></template>
 		        </layer>
 		        <layer id="idd_dim_social_geom" name="Langues de Bretagne"  visible="false" tiled="false"
 	              	searchable="false" queryable="true" exclusive="true"
@@ -86,9 +86,9 @@
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018" 
-	                metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b9f0d569-52c2-4200-ab9a-0c3170946271"
-	                metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=b9f0d569-52c2-4200-ab9a-0c3170946271">
-	                <template url="apps/region/index_dd/templates/index_dd_social_indi.mst"></template>
+	                metadata="https://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b9f0d569-52c2-4200-ab9a-0c3170946271"
+	                metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=b9f0d569-52c2-4200-ab9a-0c3170946271">
+	                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/index_dd/templates/index_dd_social_indi.mst"></template>
 		        </layer>		        
         </theme>	
         <theme name="Dimension économique"  collapsed="false" id="economie" icon="institution">
@@ -99,9 +99,9 @@
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018"
-	                metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9b74a9a3-2f8f-45d8-9a26-8bb847422323"
-	                metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=9b74a9a3-2f8f-45d8-9a26-8bb847422323">
-	                <template url="apps/region/index_dd/templates/index_dd_economie_inda.mst"></template>
+	                metadata="https://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9b74a9a3-2f8f-45d8-9a26-8bb847422323"
+	                metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=9b74a9a3-2f8f-45d8-9a26-8bb847422323">
+	                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/index_dd/templates/index_dd_economie_inda.mst"></template>
 		        </layer>
 		        <layer id="idd_dim_eco_geom" name="Ancrange local et robustesse du tissu économique"  visible="false" tiled="false"
 	              	searchable="false" queryable="true" exclusive="true"
@@ -110,9 +110,9 @@
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018"
-	                metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9b74a9a3-2f8f-45d8-9a26-8bb847422323"
-	                metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=9b74a9a3-2f8f-45d8-9a26-8bb847422323">
-	                <template url="apps/region/index_dd/templates/index_dd_economie_indb.mst"></template>
+	                metadata="https://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9b74a9a3-2f8f-45d8-9a26-8bb847422323"
+	                metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=9b74a9a3-2f8f-45d8-9a26-8bb847422323">
+	                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/index_dd/templates/index_dd_economie_indb.mst"></template>
 		        </layer>
 		        <layer id="idd_dim_eco_geom" name="Qualité de l'emploi et des conditions de travail"  visible="false" tiled="false"
 	              	searchable="false" queryable="true" exclusive="true"
@@ -121,9 +121,9 @@
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018"
-	                metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9b74a9a3-2f8f-45d8-9a26-8bb847422323"
-	                metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=9b74a9a3-2f8f-45d8-9a26-8bb847422323">
-	                <template url="apps/region/index_dd/templates/index_dd_economie_indc.mst"></template>
+	                metadata="https://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9b74a9a3-2f8f-45d8-9a26-8bb847422323"
+	                metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=9b74a9a3-2f8f-45d8-9a26-8bb847422323">
+	                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/index_dd/templates/index_dd_economie_indc.mst"></template>
 		        </layer>
 		        <layer id="idd_dim_eco_geom" name="Développement économique responsable, activités pour la transition énergétique et écologique"  visible="false" tiled="false"
 	              	searchable="false" queryable="true" exclusive="true"
@@ -132,9 +132,9 @@
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 	                attribution="Traitements: Observatoire des territoires bretons - Groupe thématique Index du développement durable | Édition 2018"
-	                metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9b74a9a3-2f8f-45d8-9a26-8bb847422323"
-	                metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=9b74a9a3-2f8f-45d8-9a26-8bb847422323">
-	                <template url="apps/region/index_dd/templates/index_dd_economie_indd.mst"></template>
+	                metadata="https://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9b74a9a3-2f8f-45d8-9a26-8bb847422323"
+	                metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=9b74a9a3-2f8f-45d8-9a26-8bb847422323">
+	                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/index_dd/templates/index_dd_economie_indd.mst"></template>
 		        </layer>
         </theme>
 		<theme name="Dimension environnementale"  collapsed="false" id="environnement" icon="leaf">
@@ -143,11 +143,11 @@
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="index_envir_sd1"
 	                stylesalias=""
-	                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 	                attribution="Index" 
 	                metadata=""
 	                metadata-csw="">
-	                <template url="apps/region/index_dd/templates/index_dd_environnement.mst"></template>
+	                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/index_dd/templates/index_dd_environnement.mst"></template>
 		        </layer>-->
         </theme>                
         <theme name="Dimension démocratique"  collapsed="false" id="democratie" icon="comments">
@@ -156,42 +156,42 @@
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                style="index_demo_sd1"
 	                stylesalias=""
-	                url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 	                attribution="Index" 
 	                metadata=""
 	                metadata-csw="">
-	                <template url="apps/region/index_dd/templates/index_dd_democratie.mst"></template>
+	                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/index_dd/templates/index_dd_democratie.mst"></template>
 		        </layer>-->
         </theme>-->
         <theme name="Découpages territoriaux"  collapsed="true" id="territoire" icon="globe">
 			<layer id="commune" name="Commune" visible="false" queryable="false" 
                 fields="nom_geo" aliases="Nom" 
-                type="customlayer" style="" opacity="1" legendurl="apps/region/territoire/img/commune.png" 
-                url="apps/region/index_dd/customlayers/commune.js" 
+                type="customlayer" style="" opacity="1" legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/img/commune.png" 
+                url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/index_dd/customlayers/commune.js" 
                 tooltip="true"
                 attribution="Source: GéoBretagne" 
                 metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/b08e6cb1-236c-49b7-88f9-42b500d274d5" 
                 metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b08e6cb1-236c-49b7-88f9-42b500d274d5"/>	    
             <layer id="epci" name="Intercommunalité" visible="true" queryable="false" 
                 fields="nom_geo" aliases="Nom" toplayer="true"
-                type="customlayer" style="" opacity="1" legendurl="apps/region/territoire/img/epci.png" 
-                url="apps/region/index_dd/customlayers/epci.js" 
+                type="customlayer" style="" opacity="1" legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/img/epci.png" 
+                url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/index_dd/customlayers/epci.js" 
                 tooltip="true" tooltipenabled="true"
                 attribution="Source: GéoBretagne" 
                 metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/2298d744-49cb-4fcb-9487-26f916fecdff" 
                 metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=2298d744-49cb-4fcb-9487-26f916fecdff"/>          
             <layer id="pays" name="Pays" visible="false" queryable="false" 
                 fields="nom_geo" aliases="Nom" 
-                type="customlayer" style="" opacity="1" legendurl="apps/region/territoire/img/pays.png" 
-                url="apps/region/index_dd/customlayers/pays.js" 
+                type="customlayer" style="" opacity="1" legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/img/pays.png" 
+                url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/index_dd/customlayers/pays.js" 
                 tooltip="true"
                 attribution="Source: GéoBretagne" 
                 metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/9722d181-75f9-40ab-a136-a9f9ed6f29a5" 
                 metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9722d181-75f9-40ab-a136-a9f9ed6f29a5"/>
             <layer id="departement" name="Département" visible="false" queryable="false" 
                 fields="nom_geo" aliases="Nom" 
-                type="customlayer" style="" opacity="1" legendurl="apps/region/territoire/img/departement.png" 
-                url="apps/region/index_dd/customlayers/departement.js" 
+                type="customlayer" style="" opacity="1" legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/img/departement.png" 
+                url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/index_dd/customlayers/departement.js" 
                 tooltip="true"
                 attribution="Source: GéoBretagne" 
                 metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/e16d50d4-746d-44e3-a5e7-5fc000f97665" 

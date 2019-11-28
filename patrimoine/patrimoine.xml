@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="Patrimoine culturel" logo="apps/region/global/img/logo/rb_blanc.svg" titlehelp="À propos de Kartenn Patrimoine Culturel" help="apps/region/patrimoine/patrimoine_help.html" showhelp="false" exportpng="true" style="apps/region/patrimoine/css/kartenn_patrimoine.css" measuretools="true" togglealllayersfromtheme="true" stats="true" statsurl="../ws/kartenn/log.php" templaterightinfopanel="accordion"/>
+    <application title="Patrimoine culturel" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" titlehelp="À propos de Kartenn Patrimoine Culturel" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/patrimoine_help.html" showhelp="false" exportpng="true" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/css/kartenn_patrimoine.css" measuretools="true" togglealllayersfromtheme="true" stats="true" statsurl="../ws/kartenn/log.php" templaterightinfopanel="accordion"/>
     <mapoptions maxzoom="20" projection="EPSG:3857" center="-287709,6137894" zoom="9" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery"><!-- style="default"||gallery" -->     
@@ -19,7 +19,7 @@
 			attribution="&lt;a href='https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/137efc4d-9ffa-4bb5-822c-b8bf65ca9633' target='_blank' >David Rumsey&lt;/a>"/>
 		<baselayer  type="WMS" id="photo2" label="Photo aérienne 1950" title="GéoBretagne" thumbgallery="img/basemap/ortho-ancien.jpg" 
 			url="https://tile.geobretagne.fr/gwc02/service/wms" layers="satellite-ancien" format="image/jpeg" visible="false" 
-			attribution="&lt;a href='http://applications.region-bretagne.fr/geonetwork/?uuid=048622c5-b333-4c2b-94ec-40a41608dc06' target='_blank' >Partenaires GéoBretagne - IGN&lt;/a>"/>      
+			attribution="&lt;a href='https://applications.region-bretagne.fr/geonetwork/?uuid=048622c5-b333-4c2b-94ec-40a41608dc06' target='_blank' >Partenaires GéoBretagne - IGN&lt;/a>"/>      
         <baselayer  type="OSM" id="osm1" label="OpenStreetMap" title="OpenStreetMap" thumbgallery="img/basemap/osm.png" 
 			url="http://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png" 
 			attribution="Données : les contributeurs d'&lt;a href='http://www.openstreetmap.org/' target='_blank'>OpenStreetMap &lt;/a>,  &lt;a href='http://www.openstreetmap.org/copyright' target='_blank'>ODbL &lt;/a>" visible="true"/>
@@ -40,120 +40,120 @@
 			<group name="Inventaire papier" id="inventaire_papier"> 
             <layer id="inventaire_papiers" name="Dossiers 'papiers' avant 2000" visible="false" tiled="false"
 				queryable="true" infoformat="text/html" featurecount="20" 
-				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution="Service de l'inventaire : &lt;a href='http://patrimoine.bzh/' target='_blank'>patrimoine.bzh &lt;/a>" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=e2588666-6b16-4d5a-bca2-5e927bc0a922"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=e2588666-6b16-4d5a-bca2-5e927bc0a922" /> 
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=e2588666-6b16-4d5a-bca2-5e927bc0a922"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=e2588666-6b16-4d5a-bca2-5e927bc0a922" /> 
 			</group>
 			<group name="Recensement et études" id="recherche"> 
             <layer id="inventaire" name="Rechercher des éléments patrimoniaux" visible="true" queryable="true"
                 type="customlayer" opacity="0.9"
-                url="apps/region/patrimoine/addons/recherche/layer/inventaire.js"
+                url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/addons/recherche/layer/inventaire.js"
                 customcontrol="true"
-                customcontrolpath="apps/region/patrimoine/addons/recherche/html"
+                customcontrolpath="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/addons/recherche/html"
                 vectorlegend="false"
-                legendurl="apps/region/patrimoine/addons/recherche/recensement_etudes.jpg"
+                legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/addons/recherche/recensement_etudes.jpg"
                 expanded="true"
                 tooltip="true" tooltipenabled="true" tooltipcontent="{{title}} "
                 attribution="Source: Région Bretagne"
                 metadata=""
                 metadata-csw="">
-                <template url="apps/region/patrimoine/addons/recherche/inventaire.mst" />
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/addons/recherche/inventaire.mst" />
             </layer>
 			</group>
 			<group name="Recensement avant études" id="recensement"> 
 				<layer id="recensement_patrimoine" name="Recensement avant études" visible="false" tiled="true" 
 					searchable="true" queryable="true" 
 					infoformat="application/vnd.ogc.gml" featurecount="99"
-					legendurl="http://kartenn.region-bretagne.fr/img/legend/recensement.png"
-					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+					legendurl="https://kartennn.region-bretagne.fr/img/legend/recensement.png"
+					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 					attribution="Service de l'inventaire : &lt;a href='http://patrimoine.bzh/' target='_blank'>patrimoine.bzh &lt;/a>" 
-					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
-					metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" >
-					<template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
+					metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
+					metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" >
+					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
 				</layer>
 				<layer id="recensement_patrimoine" name="Recensement par opération" visible="false" tiled="false" 
 					searchable="false" queryable="true" 
 					infoformat="application/vnd.ogc.gml" featurecount="99"
-					legendurl="http://kartenn.region-bretagne.fr/img/legend/recensement_par_operation.png"
-					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+					legendurl="https://kartennn.region-bretagne.fr/img/legend/recensement_par_operation.png"
+					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 					attributefilter="true" attributevalues="Aucun,Baraques de Bretagne,Cap Sizun - Pointe du Raz,Commune de Guengat,Croix et calvaires de Guer et de la Gacilly,Fours à goémon de Bretagne,Fours à pain de Bretagne,Heritaj -Inventaire du patrimoine dansé et vestimentaire de Bretagne,Inventaire des perrés cales et autres maçonneries des rives de Rance,Inventaire du patrimoine culturel maritime de l'estuaire de Tréguier,Inventaire du patrimoine de Paimpont,Inventaire du patrimoine industriel – Fougères,Lannion-Trégor Communauté,Maisons à pan de bois,Parc naturel régional d'Armorique,Patrimoines des sports en Bretagne,Patrimoine linier et chanvrier en Bretagne,PNR Golfe du Morbihan - Patrimoine bâti maritime,Pontivy Communauté,Projet Rance Côte d'Emeraude,Quimperlé Communauté,Recensement des patrimoines maritimes et estuariens du Pays de Morlaix,Rennes Métropole,Schéma de cohérence territoriale du Trégor,Vallée du Scorff,Val d'Ille-Aubigné,Ville de Dinan,Ville de Montfort-sur-Meu,Ville de Saint-Brieuc,Ville d'Elven,Voies navigables" attributefield="operation" attributefilterenabled="true"
 					attribution="Service de l'inventaire" 
-					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
-					metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" >
-					<template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
+					metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
+					metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" >
+					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
 				</layer>
 				<layer id="recensement_patrimoine" name="Recensement par domaine" visible="false" tiled="false" 
 					searchable="false" queryable="true" 
 					infoformat="application/vnd.ogc.gml" featurecount="99"
-					legendurl="http://kartenn.region-bretagne.fr/img/legend/recensement_par_domaine.png"
-					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+					legendurl="https://kartennn.region-bretagne.fr/img/legend/recensement_par_domaine.png"
+					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 					attributefilter="true" attributevalues="AUCUN,ARCHITECTURE AGRICOLE,ARCHITECTURE ARTISANALE - COMMERCIALE ET TERTIAIRE,ARCHITECTURE CIVILE PUBLIQUE,ARCHITECTURE DE CULTURE - RECHERCHE - SPORT OU LOISIR,ARCHITECTURE DE JARDIN ET DES ESPACES VERTS,ARCHITECTURE DOMESTIQUE,ARCHITECTURE FISCALE OU FINANCIERE,ARCHITECTURE HOSPITALIERE - D'ASSISTANCE OU DE PROTECTION SOCIALE,ARCHITECTURE INDUSTRIELLE,ARCHITECTURE JUDICIAIRE - PENITENTIAIRE OU DE POLICE,ARCHITECTURE MILITAIRE,ARCHITECTURE MONUMENTALE - COMMEMORATIVE - FUNERAIRE ET VOTIVE,ARCHITECTURE RELIGIEUSE,ARCHITECTURE SCOLAIRE,ARMEMENT,DENOMINATION PROVISOIRE,ELEMENT D'ARCHITECTURE,GENIE CIVIL,INSTRUMENT DE MUSIQUE,INSTRUMENT OU OBJET PEDAGOGIQUE OU SCIENTIFIQUE,MACHINE ENERGETIQUE,MACHINE LIEE A LA PRODUCTION INDUSTRIELLE,MEUBLE DOMESTIQUE,MEUBLE RELIGIEUX,MOBILIER MONUMENTAL OU DE L'ESPACE EXTERIEUR,MOYEN DE TRANSPORT,OBJET CIVIL DOMESTIQUE,OBJET RELIGIEUX,PARTIE OU ELEMENT COMMUN A TOUS LES TYPES D'ARCHITECTURE ET AUX ESPACES AMENAGES,PEINTURE - ARTS GRAPHIQUES ET DES MEDIA,SCULPTURE,TEXTILE - GARNITURE OU VETEMENTS LAICS,TEXTILE RELIGIEUX,URBANISME ET ESPACES AMENAGES" attributefield="domaine" attributefilterenabled="true"
 					attribution="Service de l'inventaire" 
-					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
-					metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" >
-					<template url="apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
+					metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0cf6de5d-9746-44d8-b003-a2dae2e7e585"
+					metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0cf6de5d-9746-44d8-b003-a2dae2e7e585" >
+					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/templates/patrimoine.recensement_patrimoine.mst"></template>
 				</layer>
 			</group>
 			<group name="Etudes" id="etudes"> 
 				<layer id="etude_patrimoine_simple" name="Dossiers d'études" visible="false" tiled="true"
 					queryable="true"
-					infoformat="application/vnd.ogc.gml" featurecount="99" legendurl="http://kartenn.region-bretagne.fr/img/legend/chateaux_19e.png"
+					infoformat="application/vnd.ogc.gml" featurecount="99" legendurl="https://kartennn.region-bretagne.fr/img/legend/chateaux_19e.png"
 					attributefilter="true" attributefield="type_dossier" attributevalues="OeuvreArchitecture,OeuvreObjet,Mobilier" attributelabel="Domaine" attributestylesync="false" attributefilterenabled="true" attributeoperator="like"
-					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 					attribution="Service de l'inventaire : &lt;a href='http://patrimoine.bzh/' target='_blank'>patrimoine.bzh &lt;/a>" 
-					metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/a7f46b47-42fc-49b7-9b49-c7c11aee0932"
-					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a7f46b47-42fc-49b7-9b49-c7c11aee0932" >
-					<template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
+					metadata="https://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/a7f46b47-42fc-49b7-9b49-c7c11aee0932"
+					metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a7f46b47-42fc-49b7-9b49-c7c11aee0932" >
+					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
 				</layer>
 				<layer id="etude_patrimoine_simple" name="Dossiers d'études par domaine" visible="false" tiled="false"
 					queryable="true"
-					infoformat="application/vnd.ogc.gml" featurecount="150" legendurl="http://kartenn.region-bretagne.fr/img/legend/dossiers_d_etudes_par_domaine.png"   
+					infoformat="application/vnd.ogc.gml" featurecount="150" legendurl="https://kartennn.region-bretagne.fr/img/legend/dossiers_d_etudes_par_domaine.png"   
 					attributefilter="true" attributefield="domaine" attributevalues="AUCUN,ARCHITECTURE AGRICOLE,ARCHITECTURE ARTISANALE - COMMERCIALE ET TERTIAIRE,ARCHITECTURE CIVILE PUBLIQUE,ARCHITECTURE DE CULTURE - RECHERCHE - SPORT OU LOISIR,ARCHITECTURE DE JARDIN ET DES ESPACES VERTS,ARCHITECTURE DOMESTIQUE,ARCHITECTURE FISCALE OU FINANCIERE,ARCHITECTURE HOSPITALIERE - D'ASSISTANCE OU DE PROTECTION SOCIALE,ARCHITECTURE INDUSTRIELLE,ARCHITECTURE JUDICIAIRE - PENITENTIAIRE OU DE POLICE,ARCHITECTURE MILITAIRE,ARCHITECTURE MONUMENTALE - COMMEMORATIVE - FUNERAIRE ET VOTIVE,ARCHITECTURE RELIGIEUSE,ARCHITECTURE SCOLAIRE,ARMEMENT,DENOMINATION PROVISOIRE,ELEMENT D'ARCHITECTURE,GENIE CIVIL,INSTRUMENT DE MUSIQUE,INSTRUMENT OU OBJET PEDAGOGIQUE OU SCIENTIFIQUE,MACHINE ENERGETIQUE,MACHINE LIEE A LA PRODUCTION INDUSTRIELLE,MEUBLE DOMESTIQUE,MEUBLE RELIGIEUX,MOBILIER MONUMENTAL OU DE L'ESPACE EXTERIEUR,MOYEN DE TRANSPORT,OBJET CIVIL DOMESTIQUE,OBJET RELIGIEUX,PARTIE OU ELEMENT COMMUN A TOUS LES TYPES D'ARCHITECTURE ET AUX ESPACES AMENAGES,PEINTURE - ARTS GRAPHIQUES ET DES MEDIA,SCULPTURE,TEXTILE - GARNITURE OU VETEMENTS LAICS,TEXTILE RELIGIEUX,URBANISME ET ESPACES AMENAGES"  attributelabel="Domaine" attributestylesync="false" attributefilterenabled="true" attributeoperator="like"
-					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 					attribution="Service de l'inventaire : &lt;a href='http://patrimoine.bzh/' target='_blank'>patrimoine.bzh &lt;/a>" 
-					metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/a7f46b47-42fc-49b7-9b49-c7c11aee0932"
-					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a7f46b47-42fc-49b7-9b49-c7c11aee0932" >
-					<template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
+					metadata="https://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/a7f46b47-42fc-49b7-9b49-c7c11aee0932"
+					metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a7f46b47-42fc-49b7-9b49-c7c11aee0932" >
+					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
 				</layer>
 				<!--<layer id="etude_patrimoine_architecture" name="Architecture" visible="false" tiled="true"
 					queryable="true" searchable="true"
 					infoformat="application/vnd.ogc.gml" featurecount="50"
-					legendurl="http://kartenn.region-bretagne.fr/img/legend/etudes_architecture.png"
-					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+					legendurl="https://kartennn.region-bretagne.fr/img/legend/etudes_architecture.png"
+					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 					attribution="Service de l'inventaire : Région Bretagne" 
-					metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/1b3c63dd-e39e-48f5-ba87-882e09bb084a"
-					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=1b3c63dd-e39e-48f5-ba87-882e09bb084a" >
-					<template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
+					metadata="https://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/1b3c63dd-e39e-48f5-ba87-882e09bb084a"
+					metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=1b3c63dd-e39e-48f5-ba87-882e09bb084a" >
+					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
 				</layer>
 				<layer id="etude_patrimoine_mobilier" name="Objets mobiliers" visible="false" tiled="true"
 					queryable="true" searchable="true"
 					infoformat="application/vnd.ogc.gml" featurecount="150"
-					legendurl="http://kartenn.region-bretagne.fr/img/legend/etudes_objets.png"
-					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+					legendurl="https://kartennn.region-bretagne.fr/img/legend/etudes_objets.png"
+					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 					attribution="Service de l'inventaire : Région Bretagne" 
-					metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/5a6257ee-3fd8-41f2-bb63-55374e7a899a"
-					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5a6257ee-3fd8-41f2-bb63-55374e7a899a" >
-					<template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_mobilier.mst"></template>
+					metadata="https://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/5a6257ee-3fd8-41f2-bb63-55374e7a899a"
+					metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5a6257ee-3fd8-41f2-bb63-55374e7a899a" >
+					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/templates/patrimoine.etude_patrimoine_mobilier.mst"></template>
 				</layer>-->
 				<layer id="etude_patrimoine_simple_thematique" name="Etudes thématiques" visible="false" tiled="false"
 					queryable="true"
-					infoformat="application/vnd.ogc.gml" featurecount="150" legendurl="http://kartenn.region-bretagne.fr/img/legend/enquetes_thematiques.png"                
+					infoformat="application/vnd.ogc.gml" featurecount="150" legendurl="https://kartennn.region-bretagne.fr/img/legend/enquetes_thematiques.png"                
 					attributefilter="true" attributefield="affixe_cadre_etude" attributevalues="aucun,architecture gothique,ardoisières du Centre Bretagne,canal d'Ille-et-Rance,canal de Nantes à Brest,charpente armoricaine,châteaux du 19e siècle en Bretagne,Croix et calvaires de Guer et de la Gacilly,édifices religieux publics dans le Finistère : 1801-1905,églises et chapelles d'Ille-et-Vilaine,églises romanes de Bretagne,fortifications littorales,Heritaj -Inventaire du patrimoine dansé et vestimentaire de Bretagne,Inventaire des châteaux - maisons de maître et maisons d'architecte de Quimper,Inventaire des commanderies templières et hospitalières de Bretagne,Inventaire des fortifications littorales du milieu du 19e siècle dans les îles de Bretagne Sud (1830-1870),Inventaire des fours de goémoniers de Bretagne,Inventaire des manoirs de Quimper,inventaire des phares,Inventaire du patrimoine matériel et immatériel de l'archipel des Glénan,jardins remarquables,La statuaire du Christ aux outrages,Les bateaux du patrimoine,Les coiffes en filet brodé de Bretagne,Les moulins à marée en Bretagne,Les moulins à papier et papeteries industrielles de Bretagne,Les patrimoines maritimes et estuariens du Pays de Morlaix,Lycées en Bretagne,orfèvrerie religieuse de Haute-Bretagne,patrimoine balnéaire,patrimoine de la villégiature sur la Côte de Granit Rose,patrimoine des sports,patrimoine industriel,patrimoine linier et chanvrier de Bretagne,PNR Golfe du Morbihan - Patrimoine bâti maritime,recensement du patrimoine maritime (GÉOMER Brest),stalles médiévales de l'ancien duché de Bretagne,station biologique de Roscoff,Trésors dinannais : Dinan et l’orfèvrerie religieuse au XIXème siècle,Voies navigables"  attributelabel="Thématiques" attributestylesync="false" attributefilterenabled="true" attributeoperator="like"
-					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 					attribution="Service de l'inventaire : &lt;a href='http://patrimoine.bzh/' target='_blank'>patrimoine.bzh &lt;/a>" 
-					metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/a7f46b47-42fc-49b7-9b49-c7c11aee0932"
-					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a7f46b47-42fc-49b7-9b49-c7c11aee0932" >
-					<template url="apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
+					metadata="https://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/a7f46b47-42fc-49b7-9b49-c7c11aee0932"
+					metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a7f46b47-42fc-49b7-9b49-c7c11aee0932" >
+					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
 				</layer>
 				<layer id="croix_calvaire" name="Croix et calvaires (association)" visible="false" tiled="false" 
 					queryable="true"
-					searchable="true" legendurl="http://kartenn.region-bretagne.fr/img/legend/croix_et_calvaires_association.png"
+					searchable="true" legendurl="https://kartennn.region-bretagne.fr/img/legend/croix_et_calvaires_association.png"
 					infoformat="text/html" featurecount="20"
-					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 					attribution="Association croix et calvaires de Bretagne" 
-					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=90468f5b-eef8-452d-9443-060870b51332"
-					metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=90468f5b-eef8-452d-9443-060870b51332" />
+					metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=90468f5b-eef8-452d-9443-060870b51332"
+					metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=90468f5b-eef8-452d-9443-060870b51332" />
 			</group>
 		</theme>
 	<theme name="Autres politiques régionales"  collapsed="true" id="autres" icon="caret-right">
@@ -163,58 +163,58 @@
                 attributefilter="true" attributefield="secteur_li" 
 				attributevalues="Public,Privé sous contrat avec l'éducation nationale"  attributelabel="Filtre" attributestylesync="false" attributefilterenabled="false"  
                 infoformat="application/vnd.ogc.gml" featurecount="20"
-                url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+                url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
                 attribution="Source: Région Bretagne" 
-                metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=99e78163-ce9a-4eee-9ea0-36afc2a53d25"
-                metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=99e78163-ce9a-4eee-9ea0-36afc2a53d25" >	   
-                <template url="apps/region/global/templates/global.lycee.mst"></template> 
+                metadata="https://kartennn.region-bretagne.fr/geonetwork/?uuid=99e78163-ce9a-4eee-9ea0-36afc2a53d25"
+                metadata-csw="https://kartennn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=99e78163-ce9a-4eee-9ea0-36afc2a53d25" >	   
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.lycee.mst"></template> 
 		    </layer>  
         </group>
 		<group name="Transport" id="transport">
                 <layer id="aeroports" name="Aéroports et aérodromes"  visible="false" tiled="false"
                     searchable="false" queryable="true" fields="axe" aliases="axe"
                     infoformat="application/vnd.ogc.gml" featurecount="20"
-                    sld="http://kartenn.region-bretagne.fr/styles/aeroport.sld" 
+                    sld="https://kartennn.region-bretagne.fr/styles/aeroport.sld" 
                     url="https://geobretagne.fr/geoserver/dreal_b/ows"
-                    legendurl="http://kartenn.region-bretagne.fr/doc/icons_region/aeroport.svg" 
+                    legendurl="https://kartennn.region-bretagne.fr/doc/icons_region/aeroport.svg" 
                     attribution="Source: DREAL Bretagne" 
                     metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/d09e52c5-080d-4478-ad94-f55de67cafaa"
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=d09e52c5-080d-4478-ad94-f55de67cafaa" >
-		            <template url="apps/region/global/templates/global.aeroport.mst"></template>
+		            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.aeroport.mst"></template>
 		        </layer>
 		        <layer id="port" name="Ports"  visible="false" tiled="false"
                     searchable="false" queryable="true" fields="axe" aliases="axe"   
                     infoformat="application/vnd.ogc.gml" featurecount="20"
-                    sld="http://kartenn.region-bretagne.fr/styles/port.sld" 
-                    url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-                    legendurl="http://kartenn.region-bretagne.fr/doc/icons_region/port.svg" 
+                    sld="https://kartennn.region-bretagne.fr/styles/port.sld" 
+                    url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+                    legendurl="https://kartennn.region-bretagne.fr/doc/icons_region/port.svg" 
                     attribution="Source: Région Bretagne" 
                     metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/c55c4fba-6a37-48ea-8754-a1bf770a684b"
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c55c4fba-6a37-48ea-8754-a1bf770a684b" >
-		            <template url="apps/region/global/templates/global.port.mst"></template>
+		            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.port.mst"></template>
 		        </layer>
                 <layer id="arret_ferroviaire" name="Arrêts ferroviaires régionaux"  visible="false" tiled="false" 
                     searchable="true" queryable="true" fields="" aliases="" secure="true"                   
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     style="arret_ferroviaire_defaut, arret_ferroviaire_nature, arret_ferroviaire_tgv"
                     stylesalias="Par défaut,Nature des arrêts ferroviaires, Arrêts desservis par le TGV"
-                    legendurl="http://kartenn.region-bretagne.fr/doc/icons_region/gare_ter.svg"
-                    url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+                    legendurl="https://kartennn.region-bretagne.fr/doc/icons_region/gare_ter.svg"
+                    url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Source: Région Bretagne" 
-                    metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=4a9d13f7-17be-4a98-9f8f-907cf223072f"
-					metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=4a9d13f7-17be-4a98-9f8f-907cf223072f" >
-                    <template url="apps/region/global/templates/global.arret_ferroviaire.mst"></template>
+                    metadata="https://kartennn.region-bretagne.fr/geonetwork/?uuid=4a9d13f7-17be-4a98-9f8f-907cf223072f"
+					metadata-csw="https://kartennn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=4a9d13f7-17be-4a98-9f8f-907cf223072f" >
+                    <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.arret_ferroviaire.mst"></template>
                 </layer>
                 <layer id="troncon_ferroviaire" name="Lignes ferroviaires"  visible="false" tiled="false"
                     searchable="false" queryable="true" fields="axe" aliases="axe" secure="true"
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     style="ligne_ferroviaire_defaut" 
 					stylesalias="Par défaut"
-                    url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+                    url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Source: Région Bretagne" 
-					metadata="http://kartenn.region-bretagne.fr/geonetwork/?uuid=0da27e88-4da6-423e-ba4c-dbcad9128cd2"
-					metadata-csw="http://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0da27e88-4da6-423e-ba4c-dbcad9128cd2">
-		            <template url="apps/region/transport/templates/transport.ligne_ferroviaire.mst"></template>
+					metadata="https://kartennn.region-bretagne.fr/geonetwork/?uuid=0da27e88-4da6-423e-ba4c-dbcad9128cd2"
+					metadata-csw="https://kartennn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0da27e88-4da6-423e-ba4c-dbcad9128cd2">
+		            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.ligne_ferroviaire.mst"></template>
 		        </layer>
         </group>
 		<group name="Voies navigables" id="vn"> 
@@ -226,7 +226,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b0265f77-f69f-4433-b79e-47bd59af7e71"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=b0265f77-f69f-4433-b79e-47bd59af7e71">  
-				<template url="apps/region/vn/templates/vn.batiment_vn.mst"></template>
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.batiment_vn.mst"></template>
 			</layer>
 			<layer id="bief" name="Biefs" visible="false" tiled="false" 
 				searchable="true" queryable="true" 
@@ -236,7 +236,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=403d129b-e8ca-48ff-81a9-77401c1d933b"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=403d129b-e8ca-48ff-81a9-77401c1d933b" >
-				<template url="apps/region/vn/templates/vn.bief.mst"></template>
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.bief.mst"></template>
 			</layer>	
 		    <layer id="borne_km_vn" name="Bornes Kilométriques" visible="false" tiled="false" 
 				queryable="true" 
@@ -245,7 +245,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a09e5878-739c-46aa-ad0b-ace03ffe3886"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=a09e5878-739c-46aa-ad0b-ace03ffe3886" >  
-				<template url="apps/region/vn/templates/vn.borne_km_vn.mst"></template>
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.borne_km_vn.mst"></template>
 			</layer>
 			<layer id="cale_mise_eau_vn" name="Cales de mise à l'eau" visible="false" tiled="false" 
 				queryable="true" 
@@ -254,7 +254,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5c8894b5-4375-4b77-96ea-a2b627f0c914"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=5c8894b5-4375-4b77-96ea-a2b627f0c914" >  
-				<template url="apps/region/vn/templates/vn.cale_mise_eau_vn.mst"></template>
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.cale_mise_eau_vn.mst"></template>
 			</layer>
 			<layer id="ecluse" name="Ecluses" visible="false" tiled="false" dynamiclegend="true"
 				queryable="true" searchable="true" infoformat="application/vnd.ogc.gml" featurecount="20"
@@ -262,7 +262,7 @@
 				attribution="Source: Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=774a2065-339f-4802-a50f-4b84b6ca249f"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=774a2065-339f-4802-a50f-4b84b6ca249f"> 
-				<template url="apps/region/vn/templates/vn.ecluse.mst"></template>
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.ecluse.mst"></template>
 			</layer>
 			<layer id="etang_vn" name="Etangs" visible="false" tiled="false" 
 				queryable="true"
@@ -271,7 +271,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ce651579-c92a-474d-aee1-6e44b5f55579"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=ce651579-c92a-474d-aee1-6e44b5f55579" >  
-				<template url="apps/region/vn/templates/vn.etang_vn.mst"></template>
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.etang_vn.mst"></template>
 			</layer>
 			<layer id="petit_patrimoine_vn" name="Petit Patrimoine" visible="false" tiled="false" 
 				queryable="true" 
@@ -280,7 +280,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=29ebaa3e-eaac-4c9e-bc8e-07bfbff89b41"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=29ebaa3e-eaac-4c9e-bc8e-07bfbff89b41">  
-				<template url="apps/region/vn/templates/vn.petit_patrimoine_vn.mst"></template>
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.petit_patrimoine_vn.mst"></template>
 			</layer>
 			<layer id="port_vn" name="Ports et mouillages " visible="false" tiled="false" 
 				queryable="true" 
@@ -289,7 +289,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=58b54106-d25b-463d-9f85-0833aa7c8959"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=58b54106-d25b-463d-9f85-0833aa7c8959" >
-				<template url="apps/region/vn/templates/vn.port_vn.mst"></template>
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.port_vn.mst"></template>
 			</layer>
 			<layer id="quai_ponton_vn" name="Quais et pontons" visible="false" tiled="false" 
 				queryable="true" 
@@ -298,7 +298,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a44cc5d7-ecb6-451b-b805-1ecf52c30aab"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=a44cc5d7-ecb6-451b-b805-1ecf52c30aab" >  
-				<template url="apps/region/vn/templates/vn.quai_ponton_vn.mst"></template>
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.quai_ponton_vn.mst"></template>
 			</layer>
 			<layer id="rigole_vn" name="Rigoles" visible="false" tiled="false" 
 				queryable="true"
@@ -307,7 +307,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5eb6ce3e-3d01-4116-8cdc-8dc486842660"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=5eb6ce3e-3d01-4116-8cdc-8dc486842660" >  
-				<template url="apps/region/vn/templates/vn.rigole_vn.mst"></template>
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.rigole_vn.mst"></template>
 			</layer>
 		    <layer id="signaletique_touristique_vn" name="Signalétique touristique" visible="false" tiled="false" 
 				queryable="true" 
@@ -316,7 +316,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ef335ae2-a6e2-4eb6-8edf-5fb30ac3ee9f"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=ef335ae2-a6e2-4eb6-8edf-5fb30ac3ee9f" >  
-				<template url="apps/region/vn/templates/vn.signaletique_touristique_vn.mst"></template>
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.signaletique_touristique_vn.mst"></template>
 			</layer>
 			<layer id="voie_navigable" name="Voies navigables" visible="false" tiled="false" 
 				queryable="false"
@@ -330,7 +330,7 @@
 		    <layer id="cours_eau_principal" name="Cours d'eau"  visible="false" tiled="false"
 				searchable="false" queryable="true" fields="toponyme" aliases="toponyme" secure="true"
 				infoformat="application/vnd.ogc.gml" featurecount="20"
-				url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 				attribution="Source: IGN BD CARTO" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5277c410-2799-4d6b-9066-3b4946f23345"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=5277c410-2799-4d6b-9066-3b4946f23345" >  
@@ -338,24 +338,24 @@
         	<layer id="reserve_naturelle_regionale" name="Réserves naturelles régionales"  visible="false" tiled="false"
                     searchable="false" queryable="true"					
                     infoformat="application/vnd.ogc.gml" featurecount="20"
-                    sld="http://kartenn.region-bretagne.fr/styles/reserve_naturelle.sld" 
-                    url="http://ows.region-bretagne.fr/geoserver/rb/wms"
-                    legendurl="http://kartenn.region-bretagne.fr/doc/icons_region/reserve_naturelle.svg" 
+                    sld="https://kartennn.region-bretagne.fr/styles/reserve_naturelle.sld" 
+                    url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+                    legendurl="https://kartennn.region-bretagne.fr/doc/icons_region/reserve_naturelle.svg" 
                     attribution="Source: Région Bretagne" 
                     metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/77f8fc52-ae57-41d1-8f08-7b121b013f51"
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=77f8fc52-ae57-41d1-8f08-7b121b013f51" >
-		            <template url="apps/region/global/templates/global.reserve_naturelle_reg.mst"></template>
+		            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.reserve_naturelle_reg.mst"></template>
 		    </layer> 
 		    <layer id="parc_naturel_regional" name="Parcs naturels régionaux"  visible="false" tiled="false"
                     searchable="false" queryable="true" fields="axe" aliases="axe" secure="true"
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     style="pnr_defaut" 
 					stylesalias=""
-                    url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+                    url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Source: Région Bretagne" 
 					metadata=""
 					metadata-csw="">
-		            <template url="apps/region/global/templates/global.parc_naturel_regional.mst"></template>
+		            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.parc_naturel_regional.mst"></template>
 		    </layer>        
             <layer id="Sites_inscrits__surfacique_" name="Sites inscrits" visible="false" tiled="true"
 				queryable="false" fields="SITE" aliases="Site"
@@ -402,34 +402,34 @@
         	<layer id="petite_cite_caractere" name="Petites cités de caractère"  visible="false" tiled="false"
                     searchable="false" queryable="true" fields="nom" aliases="nom"   
                     infoformat="application/vnd.ogc.gml"
-                    url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+                    url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Source: Région Bretagne" 
-					metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/dfa0cbd4-b57a-4699-a429-200e4249a03b"
-					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=dfa0cbd4-b57a-4699-a429-200e4249a03b">
+					metadata="https://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/dfa0cbd4-b57a-4699-a429-200e4249a03b"
+					metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=dfa0cbd4-b57a-4699-a429-200e4249a03b">
 		    </layer> 
         	<layer id="commune_patrimoine_rural" name="Communes du patrimoine rural"  visible="false" tiled="false"
                     searchable="false" queryable="true" fields="nom" aliases="nom"   
                     infoformat="application/vnd.ogc.gml"
-                    url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+                    url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Source: Région Bretagne" 
-					metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/be4a37ee-3962-4075-9a89-0fa6de21c461"
-					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=be4a37ee-3962-4075-9a89-0fa6de21c461">
+					metadata="https://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/be4a37ee-3962-4075-9a89-0fa6de21c461"
+					metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=be4a37ee-3962-4075-9a89-0fa6de21c461">
 		    </layer> 
         	<layer id="ville_historique_bretagne" name="Villes historiques"  visible="false" tiled="false"
                     searchable="false" queryable="true" fields="nom" aliases="nom"   
                     infoformat="application/vnd.ogc.gml"
-                    url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+                    url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Source: Région Bretagne" 
-					metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/febed499-493b-4ff2-8725-128ac58cf86f"
-					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=febed499-493b-4ff2-8725-128ac58cf86f">
+					metadata="https://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/febed499-493b-4ff2-8725-128ac58cf86f"
+					metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=febed499-493b-4ff2-8725-128ac58cf86f">
 		    </layer> 
         	<layer id="ville_metropole_pays_art_histoire" name="Villes et pays d'art et d'histoire"  visible="false" tiled="false"
                     searchable="false" queryable="true" fields="nom" aliases="nom"   
                     infoformat="application/vnd.ogc.gml" featurecount="20"
-                    url="http://ows.region-bretagne.fr/geoserver/rb/wms"
+                    url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Source: Région Bretagne" 
-					metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/31bc7ffc-815b-4c60-98fa-e3e4741611e1"
-					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=31bc7ffc-815b-4c60-98fa-e3e4741611e1">
+					metadata="https://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/31bc7ffc-815b-4c60-98fa-e3e4741611e1"
+					metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=31bc7ffc-815b-4c60-98fa-e3e4741611e1">
 		    </layer> 
         </group>
     </theme>
@@ -477,13 +477,13 @@
             legendurl="img/blank.gif"
             name="Cadastre ancien TA (zoomer)"
             type="customlayer"
-            url="apps/region/patrimoine/addons/napoleon/layer/napoleo.js"
+            url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/addons/napoleon/layer/napoleo.js"
             customcontrol="true"
-            customcontrolpath="apps/region/patrimoine/addons/napoleon/html"
+            customcontrolpath="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/addons/napoleon/html"
             expanded="true"
             visible="false"
-            metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b4080a88-798d-4533-9582-ec9a985d8102"
-			metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b4080a88-798d-4533-9582-ec9a985d8102"
+            metadata="https://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b4080a88-798d-4533-9582-ec9a985d8102"
+			metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b4080a88-798d-4533-9582-ec9a985d8102"
             attribution="Région Bretagne"
             queryable="false">
         </layer>
@@ -505,22 +505,22 @@
         <layer id="destination_touristique" name="Destinations touristiques" visible="false" tiled="false"
 			queryable="true" fields="nom" aliases="Nom"
 			infoformat="text/html" featurecount="20" 
-			url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+			url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 			attribution="Région Bretagne" 
-			metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=677d4e97-82bc-4d64-b11c-167f423900ae"
-			metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=677d4e97-82bc-4d64-b11c-167f423900ae" />	
+			metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=677d4e97-82bc-4d64-b11c-167f423900ae"
+			metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=677d4e97-82bc-4d64-b11c-167f423900ae" />	
 		<layer id="commune" name="Commune" visible="false" queryable="false" 
 			fields="nom_geo" aliases="Nom" 
-			type="customlayer" style="" opacity="1" legendurl="apps/region/territoire/img/commune.png" 
-			url="apps/region/territoire/customlayers/commune.js" 
+			type="customlayer" style="" opacity="1" legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/img/commune.png" 
+			url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/customlayers/commune.js" 
 			tooltip="true" tooltipenabled="true"
 			attribution="Source: GéoBretagne" 
 			metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/b08e6cb1-236c-49b7-88f9-42b500d274d5" 
 			metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b08e6cb1-236c-49b7-88f9-42b500d274d5"/>	    
 		<layer id="epci" name="Intercommunalité" visible="false" queryable="false" 
 			fields="nom_geo" aliases="Nom" toplayer="true"
-			type="customlayer" style="" opacity="1" legendurl="apps/region/territoire/img/epci.png" 
-			url="apps/region/territoire/customlayers/epci.js" 
+			type="customlayer" style="" opacity="1" legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/img/epci.png" 
+			url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/customlayers/epci.js" 
 			tooltip="true" tooltipenabled="true"
 			attribution="Source: GéoBretagne" 
 			metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/2298d744-49cb-4fcb-9487-26f916fecdff" 
@@ -533,20 +533,20 @@
 			attribution="GéoBretagne" 
 			metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/0ea1db4c-da8a-471f-aac6-62de4c97d87b" 
 			metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0ea1db4c-da8a-471f-aac6-62de4c97d87b" >
-			<template url="apps/region/global/templates/global.canton.mst"></template>
+			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.canton.mst"></template>
 		</layer>
 		<layer id="pays" name="Pays" visible="false" queryable="false" 
 			fields="nom_geo" aliases="Nom" 
-			type="customlayer" style="" opacity="1" legendurl="apps/region/territoire/img/pays.png" 
-			url="apps/region/territoire/customlayers/pays.js" 
+			type="customlayer" style="" opacity="1" legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/img/pays.png" 
+			url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/customlayers/pays.js" 
 			tooltip="true" tooltipenabled="true"
 			attribution="Source: GéoBretagne" 
 			metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/9722d181-75f9-40ab-a136-a9f9ed6f29a5" 
 			metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9722d181-75f9-40ab-a136-a9f9ed6f29a5"/>
 		<layer id="departement" name="Département" visible="false" queryable="false" 
 			fields="nom_geo" aliases="Nom" 
-			type="customlayer" style="" opacity="1" legendurl="apps/region/territoire/img/departement.png" 
-			url="apps/region/territoire/customlayers/departement.js" 
+			type="customlayer" style="" opacity="1" legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/img/departement.png" 
+			url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/customlayers/departement.js" 
 			tooltip="true" tooltipenabled="true"
 			attribution="Source: GéoBretagne" 
 			metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/e16d50d4-746d-44e3-a5e7-5fc000f97665" 

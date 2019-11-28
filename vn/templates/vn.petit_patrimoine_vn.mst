@@ -37,14 +37,14 @@
 		margin-top:10%;
 	}
 	.info.N {
-   		background-image: url(http://kartenn.region-bretagne.fr/doc/transports/icons/non_1.png);
+   		background-image: url(https://kartennn.region-bretagne.fr/doc/transports/icons/non_1.png);
    		background-size: 16px;
     	background-repeat: no-repeat;
    	    background-position-x: 0px;
    	    margin-bottom:3px;
 	}
 	.info.O {
-   		background-image: url(http://kartenn.region-bretagne.fr/doc/transports/icons/oui.png);
+   		background-image: url(https://kartennn.region-bretagne.fr/doc/transports/icons/oui.png);
    		background-size: 16px;
     	background-repeat: no-repeat;
    	    background-position-x: 0px;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="kart'eau" logo="apps/region/global/img/logo/rb_blanc.svg" help="mviewer_help.html" exportpng="false" measuretools="true" legend="true" legendasimage="false" popup="false"/>
+    <application title="kart'eau" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="mviewer_help.html" exportpng="false" measuretools="true" legend="true" legendasimage="false" popup="false"/>
     <mapoptions maxzoom="20" projection="EPSG:3857" center="-291072,6187119" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery">
@@ -9,7 +9,7 @@
             attribution="&lt;a href='http://www.geoportail.fr/' target='_blank'>&lt;img src='http://api.ign.fr/geoportail/api/js/latest/theme/geoportal/img/logo_gp.gif'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
         <baselayer  type="WMS" id="photo2" label="Photo aérienne 1950" title="GéoBretagne" thumbgallery="img/basemap/ortho-ancien.jpg" 
 			url="https://tile.geobretagne.fr/gwc02/service/wms" layers="satellite-ancien" format="image/jpeg" visible="false" 
-			attribution="&lt;a href='http://applications.region-bretagne.fr/geosource/apps/search/?uuid=048622c5-b333-4c2b-94ec-40a41608dc06' target='_blank' >Partenaires GéoBretagne - IGN&lt;/a>"/>      
+			attribution="&lt;a href='https://applications.region-bretagne.fr/geosource/apps/search/?uuid=048622c5-b333-4c2b-94ec-40a41608dc06' target='_blank' >Partenaires GéoBretagne - IGN&lt;/a>"/>      
         <baselayer  type="OSM" id="osm1" label="OpenStreetMap" title="OpenStreetMap" thumbgallery="img/basemap/osm.png" 
 			url="http://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png" 
 			attribution="Données : les contributeurs d'&lt;a href='http://www.openstreetmap.org/' target='_blank'>OpenStreetMap &lt;/a>,  &lt;a href='http://www.openstreetmap.org/copyright' target='_blank'>ODbL &lt;/a>" visible="true"/>
@@ -26,7 +26,7 @@
     <!--<proxy url="../proxy/?url="/>-->
     <!--<olscompletion url="http://gpp3-wxs.ign.fr/5kiwvtkb2v23y0x8chidxbij/ols/apis/completion"/>-->
     <olscompletion url="../olscompletion"/>
-    <elasticsearch url="http://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="fussy_like_this" />
+    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="fussy_like_this" />
     <searchparameters bbox="false" localities="true" features="false"/>
 	<widgets>
        <!--<widget name="gauge"/>-->       
@@ -37,7 +37,7 @@
 			<layer id="commune_bdcarto" name="Commune" scalemin="0" scalemax="50000000" visible="false" tiled="false"
 				queryable="true" fields="COMMUNE,INSEE_COM,SUPERFICIE" aliases="Nom,Code INSEE,Superficie"
                 infoformat="text/html" featurecount="1" style=""
-				sld="http://kartenn.region-bretagne.fr/styles/commune_region_large.sld" 
+				sld="https://kartennn.region-bretagne.fr/styles/commune_region_large.sld" 
 				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
 				attribution="IGN - BDCARTO" 
 				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/b08e6cb1-236c-49b7-88f9-42b500d274d5"
@@ -45,7 +45,7 @@
 			<layer id="EPCI_053" name="Intercommunalité actuelle" scalemin="0" scalemax="50000000" visible="false" tiled="false"
 				queryable="true" fields="NOM_EPCI,SIREN_EPCI" aliases="Nom,SIREN"
                 infoformat="text/html" featurecount="1" style=""
-				sld="http://kartenn.region-bretagne.fr/styles/epci_region_large.sld" 
+				sld="https://kartennn.region-bretagne.fr/styles/epci_region_large.sld" 
 				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
 				attribution="GéoBretagne" 
 				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/2298d744-49cb-4fcb-9487-26f916fecdff" 
@@ -53,7 +53,7 @@
             <layer id="n_pays" name="Pays" scalemin="0" scalemax="50000000" visible="false" tiled="true"
 				queryable="true" fields="LIBELLE" aliases="Nom"
                 infoformat="text/html" featurecount="1" style=""     
-				sld="http://kartenn.region-bretagne.fr/styles/pays_region_large.sld" 
+				sld="https://kartennn.region-bretagne.fr/styles/pays_region_large.sld" 
 				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
 				attribution="GéoBretagne" 
 				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/9722d181-75f9-40ab-a136-a9f9ed6f29a5" 
@@ -61,7 +61,7 @@
             <layer id="FDepartement" name="Département" scalemin="0" scalemax="50000000" visible="false" tiled="false"
 				queryable="true" fields="NOM_PAYS" aliases="Nom"
                 infoformat="text/html" featurecount="1" style=""
-				sld="http://kartenn.region-bretagne.fr/styles/DEPARTEMENT_style_large.sld" 
+				sld="https://kartennn.region-bretagne.fr/styles/DEPARTEMENT_style_large.sld" 
 				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
 				attribution="IGN - BDCARTO" 
 				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/e16d50d4-746d-44e3-a5e7-5fc000f97665" 
@@ -71,7 +71,7 @@
 		   <layer id="riviere_masse_eau_proche" name="Masse d'eau proche bon état" scalemin="0" scalemax="50000000" visible="true" tiled="false" namespace="interne"
 				queryable="true" fields="nom" aliases="nom"
 				infoformat="text/html" featurecount="5"
-				url="http://ows.region-bretagne.fr/geoserver/interne/wms" 
+				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
 				style="" 
 				attribution="Région Bretagne" 
 				metadata-csw=""
@@ -79,23 +79,23 @@
 			<layer id="passe_poisson_vn" name="Passes à poisson" scalemin="0" scalemax="50000000" visible="false" tiled="false" namespace="rb"
 				queryable="true" fields="ident" aliases="ident"
 				infoformat="text/html" featurecount="20"
-				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=f1d5b549-64cb-4ccc-9281-5b56b97c7183"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=f1d5b549-64cb-4ccc-9281-5b56b97c7183" />  
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=f1d5b549-64cb-4ccc-9281-5b56b97c7183"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=f1d5b549-64cb-4ccc-9281-5b56b97c7183" />  
 			<layer id="bief" name="Voies navigables Région" scalemin="0" scalemax="50000000" visible="false" tiled="false" namespace="rb"
 				searchable="true" queryable="true" fields="nom" aliases="Nom"
 				infoformat="text/html" featurecount="20"
-				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=403d129b-e8ca-48ff-81a9-77401c1d933b"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=403d129b-e8ca-48ff-81a9-77401c1d933b" />
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=403d129b-e8ca-48ff-81a9-77401c1d933b"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=403d129b-e8ca-48ff-81a9-77401c1d933b" />
 			<layer id="riviere_etat_ecologique" name="Rivière : état écologique 2011-2013" scalemin="0" scalemax="50000000" visible="true" tiled="false" namespace="interne"
 				queryable="true" fields="nom" aliases="nom"
 				infoformat="text/html" featurecount="5"
-				url="http://ows.region-bretagne.fr/geoserver/interne/wms" 
+				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
 				style="" 
 				attribution="Région Bretagne" 
 				metadata-csw=""
@@ -103,7 +103,7 @@
 			<layer id="bassin_versant_carmen" name="Bassins versants bretons" scalemin="0" scalemax="50000000" visible="true" tiled="false" namespace="interne"
 				queryable="true" fields="nom" aliases="nom"
 				infoformat="text/html" featurecount="5"
-				url="http://ows.region-bretagne.fr/geoserver/interne/wms" 
+				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
 				style="" 
 				attribution="CARMEN" 
 				metadata-csw=""
@@ -119,7 +119,7 @@
 			<layer id="sage_information" name="Avancement SAGE au 01/01/2017" scalemin="0" scalemax="50000000" visible="false" tiled="false" namespace="interne"
 				queryable="true" fields="nom" aliases="nom"
 				infoformat="text/html" featurecount="5"
-				url="http://ows.region-bretagne.fr/geoserver/interne/wms" 
+				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
 				style="" 
 				attribution="Région Bretagne" 
 				metadata-csw=""
@@ -156,16 +156,16 @@
                 searchable="true"
                 opacity="1" 
                 infoformat="application/vnd.ogc.gml" featurecount="20"
-				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="" 
 				attribution="Région Bretagne" 
-				metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=77f8fc52-ae57-41d1-8f08-7b121b013f51"
-				metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=77f8fc52-ae57-41d1-8f08-7b121b013f51" />	
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=77f8fc52-ae57-41d1-8f08-7b121b013f51"
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=77f8fc52-ae57-41d1-8f08-7b121b013f51" />	
             <layer id="parc_naturel_regional" name="Parc Naturel Régional" visible="false" tiled="false" namespace="rb"
 				queryable="true" fields="pnr_nom" aliases="Nom"
                 searchable="true" opacity="1" 
                 infoformat="application/vnd.ogc.gml"
-				url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="" 
 				attribution="Région Bretagne" 
 				metadata-csw=""
@@ -188,11 +188,11 @@
                 <layer id="gizc" name="Projets GIZC" scalemin="0" scalemax="50000000" visible="false" tiled="false" namespace="rb"
 					queryable="true" fields="ident" aliases="ident"
                     infoformat="text/html" featurecount="20"
-					url="http://ows.region-bretagne.fr/geoserver/rb/wms" 
+					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 					style="" 
 					attribution="Région Bretagne" 
-					metadata-csw="http://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ffebd1ad-f123-46d8-9982-0c21764652e2"
-					metadata="http://applications.region-bretagne.fr/geonetwork/?uuid=ffebd1ad-f123-46d8-9982-0c21764652e2" />  
+					metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ffebd1ad-f123-46d8-9982-0c21764652e2"
+					metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=ffebd1ad-f123-46d8-9982-0c21764652e2" />  
         </theme>
 
         <theme name="Agriculture"  collapsed="true" id="agriculture">
@@ -233,7 +233,7 @@
                 <layer id="station_epuration_priorite_geom" name="Stations d'épuration : priorité 2016 - 2018" scalemin="0" scalemax="50000000" visible="false" tiled="false" namespace="rb"
 					queryable="true" fields="ident" aliases="ident"
                     infoformat="text/html" featurecount="20"
-					url="http://ows.region-bretagne.fr/geoserver/interne/wms" 
+					url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
 					style="" 
 					attribution="Région Bretagne" 
 					metadata-csw=""

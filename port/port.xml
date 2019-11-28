@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="Kartenn port et aéroport" logo="apps/region/global/img/logo/rb_blanc.svg" help="apps/region/port/port_help.html"   exportpng="true" measuretools="true" style="apps/region/global/css/blue.css"/>
+    <application title="Kartenn port et aéroport" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/port_help.html"   exportpng="true" measuretools="true" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/css/blue.css"/>
     <mapoptions maxzoom="19" projection="EPSG:3857" center="-220750.13768758904,6144925.57790189" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 	<baselayers style="gallery"><!-- style="default"||gallery" -->            		
         <baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="GéoPortail" thumbgallery="img/basemap/ortho.jpg"
@@ -35,7 +35,7 @@
 				attribution="Région Bretagne" 
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=43ce0e25-ef3c-4e88-a546-6197e1f84d99" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=43ce0e25-ef3c-4e88-a546-6197e1f84d99">
-                <template url="apps/region/port/templates/port.occupation_domaniale.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.occupation_domaniale.mst"></template>
             </layer>  
 			<layer id="concession" name="Concessions" visible="false" tiled="false" 
 				queryable="true"
@@ -44,7 +44,7 @@
 				attribution="Région Bretagne" 
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=9ee47f66-a2b2-40a8-a5cf-82f7fae4cbac" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9ee47f66-a2b2-40a8-a5cf-82f7fae4cbac">
-                <template url="apps/region/port/templates/port.concession.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.concession.mst"></template>
             </layer>  
 			<layer id="contour_port_aero" name="Contour Port et Aéroport" visible="true" tiled="false" 
 				searchable="true" queryable="false" fields="site" aliases="Site"
@@ -93,7 +93,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
             </layer>    
 			<layer id="mesure_environnementale_sediment_2015" name="2015"  visible="false" tiled="false"
 				queryable="true" fields="annee,parametre,operateur,valeur,unite,seuil,latitude,longitude" aliases="Année,Polluant,Opérateur,Valeur,Unité,Seuil,Latitude,Longitude" 
@@ -107,7 +107,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
             </layer>    
 			<layer id="mesure_environnementale_sediment_2014" name="2014"  visible="false" tiled="false"
 				queryable="true" fields="id,latitude,longitude,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,X,Y,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -121,7 +121,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
             </layer>     
 			<layer id="mesure_environnementale_sediment_2013" name="2013"  visible="false" tiled="false"
 				queryable="true" fields="id,latitude,longitude,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,X,Y,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -135,7 +135,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
             </layer>    
 			<layer id="mesure_environnementale_sediment_2012" name="2012"  visible="false" tiled="false"
 				queryable="true" fields="id,latitude,longitude,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,X,Y,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -149,7 +149,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
             </layer>    
 			<layer id="mesure_environnementale_sediment_2011" name="2011"  visible="false" tiled="false"
 				queryable="true" fields="id,latitude,longitude,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,X,Y,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -163,7 +163,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
             </layer>    
 			<layer id="mesure_environnementale_sediment_2010" name="2010"  visible="false" tiled="false"
 				queryable="true" fields="id,latitude,longitude,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,X,Y,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -177,7 +177,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
             </layer>     
 			<layer id="mesure_environnementale_sediment_2009" name="2009"  visible="false" tiled="false"
 				queryable="true" fields="id,latitude,longitude,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,X,Y,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -191,7 +191,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
             </layer>     
 			<layer id="mesure_environnementale_sediment_2008" name="2008"  visible="false" tiled="false"
 				queryable="true" fields="id,latitude,longitude,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,X,Y,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -205,7 +205,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
             </layer>    
 			<layer id="mesure_environnementale_sediment_2007" name="2007"  visible="false" tiled="false"
 				queryable="true" fields="id,latitude,longitude,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,X,Y,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -219,7 +219,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
               </layer>      
 			<layer id="mesure_environnementale_sediment_2006" name="2006"  visible="false" tiled="false"
 				queryable="true" fields="id,latitude,longitude,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,X,Y,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -233,7 +233,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
               </layer>     
 			<layer id="mesure_environnementale_sediment_2005" name="2005"  visible="false" tiled="false"
 				queryable="true" fields="id,latitude,longitude,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,X,Y,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -247,7 +247,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
               </layer>    
 			<layer id="mesure_environnementale_sediment_2004" name="2004"  visible="false" tiled="false"
 				queryable="true" fields="id,latitude,longitude,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,X,Y,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -261,7 +261,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
               </layer>    
 			<layer id="mesure_environnementale_sediment_2003" name="2003"  visible="false" tiled="false"
 				queryable="true" fields="id,latitude,longitude,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,X,Y,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -275,7 +275,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
               </layer>     
 			<layer id="mesure_environnementale_sediment_2002" name="2002"  visible="false" tiled="false"
 				queryable="true" fields="id,latitude,longitude,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,X,Y,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -289,7 +289,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
               </layer>     
 			<layer id="mesure_environnementale_sediment_2001" name="2001"  visible="false" tiled="false"
 				queryable="true" fields="id,latitude,longitude,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,X,Y,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -303,7 +303,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
               </layer>     
 			<layer id="mesure_environnementale_sediment_2000" name="2000"  visible="false" tiled="false"
 				queryable="true" fields="id,latitude,longitude,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,X,Y,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -317,7 +317,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
               </layer>    
 			<layer id="mesure_environnementale_sediment_1999" name="1999"  visible="false" tiled="false"
 				queryable="true" fields="id,latitude,longitude,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,X,Y,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -331,7 +331,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
               </layer>      
 			<layer id="mesure_environnementale_sediment_1998" name="1998"  visible="false" tiled="false"
 				queryable="true" fields="id,latitude,longitude,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,X,Y,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -345,7 +345,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
               </layer>     
 			<layer id="mesure_environnementale_sediment_1997" name="1997"  visible="false" tiled="false"
 				queryable="true" fields="id,latitude,longitude,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,X,Y,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -359,7 +359,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
               </layer>     
 			<layer id="mesure_environnementale_sediment_1996" name="1996"  visible="false" tiled="false"
 				queryable="true" fields="id,latitude,longitude,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,X,Y,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -373,7 +373,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
               </layer>     
 			<layer id="mesure_environnementale_sediment_1992" name="1992"  visible="false" tiled="false"
 				queryable="true" fields="id,latitude,longitude,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,X,Y,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -387,7 +387,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0be27811-30d8-422d-8c39-46b512bac722"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=0be27811-30d8-422d-8c39-46b512bac722">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
               </layer>     
 
 		</theme>
@@ -404,7 +404,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=fcbeeb28-be10-4eff-b0e7-b761429fa3aa"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=fcbeeb28-be10-4eff-b0e7-b761429fa3aa">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
               </layer>    
 			<layer id="mesure_environnementale_eau_2014" name="2014"  visible="false" tiled="false"
 				queryable="true" fields="id,id_prelevement,id_point,latitude,longitude,echantillon,num_fiche,mesures,organisme,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,ID du prélèvement,ID du point de prélèvement,X,Y,Echantillon,Numéro de fiche,Mesures réalisées,Organisme,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -418,7 +418,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=fcbeeb28-be10-4eff-b0e7-b761429fa3aa"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=fcbeeb28-be10-4eff-b0e7-b761429fa3aa">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
               </layer>    
 			<layer id="mesure_environnementale_eau_2013" name="2013"  visible="false" tiled="false"
 				queryable="true" fields="id,id_prelevement,id_point,latitude,longitude,echantillon,num_fiche,mesures,organisme,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,ID du prélèvement,ID du point de prélèvement,X,Y,Echantillon,Numéro de fiche,Mesures réalisées,Organisme,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -432,7 +432,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=fcbeeb28-be10-4eff-b0e7-b761429fa3aa"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=fcbeeb28-be10-4eff-b0e7-b761429fa3aa">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
               </layer>    > 
 			<layer id="mesure_environnementale_eau_2012" name="2012"  visible="false" tiled="false"
 				queryable="true" fields="id,id_prelevement,id_point,latitude,longitude,echantillon,num_fiche,mesures,organisme,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,ID du prélèvement,ID du point de prélèvement,X,Y,Echantillon,Numéro de fiche,Mesures réalisées,Organisme,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -446,7 +446,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=fcbeeb28-be10-4eff-b0e7-b761429fa3aa"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=fcbeeb28-be10-4eff-b0e7-b761429fa3aa">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
               </layer>    
 			<layer id="mesure_environnementale_eau_2011" name="2011"  visible="false" tiled="false"
 				queryable="true" fields="id,id_prelevement,id_point,latitude,longitude,echantillon,num_fiche,mesures,organisme,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,ID du prélèvement,ID du point de prélèvement,X,Y,Echantillon,Numéro de fiche,Mesures réalisées,Organisme,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -460,7 +460,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=fcbeeb28-be10-4eff-b0e7-b761429fa3aa"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=fcbeeb28-be10-4eff-b0e7-b761429fa3aa">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
               </layer>    
 			<layer id="mesure_environnementale_eau_2010" name="2010"  visible="false" tiled="false"
 				queryable="true" fields="id,id_prelevement,id_point,latitude,longitude,echantillon,num_fiche,mesures,organisme,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,ID du prélèvement,ID du point de prélèvement,X,Y,Echantillon,Numéro de fiche,Mesures réalisées,Organisme,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -474,7 +474,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=fcbeeb28-be10-4eff-b0e7-b761429fa3aa"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=fcbeeb28-be10-4eff-b0e7-b761429fa3aa">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
               </layer>    
 			<layer id="mesure_environnementale_eau_2008" name="2008"  visible="false" tiled="false"
 				queryable="true" fields="id,id_prelevement,id_point,latitude,longitude,echantillon,num_fiche,mesures,organisme,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,ID du prélèvement,ID du point de prélèvement,X,Y,Echantillon,Numéro de fiche,Mesures réalisées,Organisme,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -488,7 +488,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=fcbeeb28-be10-4eff-b0e7-b761429fa3aa"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=fcbeeb28-be10-4eff-b0e7-b761429fa3aa">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
               </layer>    
 			<layer id="mesure_environnementale_eau_2007" name="2007"  visible="false" tiled="false"
 				queryable="true" fields="id,id_prelevement,id_point,latitude,longitude,echantillon,num_fiche,mesures,organisme,info_sup,date_prelevement,annee,sous_nature,parametre,code_sandre,profondeur,valeur,unite,seuil" aliases="ID,ID du prélèvement,ID du point de prélèvement,X,Y,Echantillon,Numéro de fiche,Mesures réalisées,Organisme,Informations supplémentaires,Date,Année,Type de prélèvement,Paramètre,Code SANDRE,Profondeur,Valeur,Unité,Seuil" 
@@ -502,7 +502,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=fcbeeb28-be10-4eff-b0e7-b761429fa3aa"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=fcbeeb28-be10-4eff-b0e7-b761429fa3aa">
-                <template url="apps/region/port/templates/port.sediment.mst"></template>
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.sediment.mst"></template>
               </layer>
 		</theme>-->
 		<theme name="Dragages"  id="Dragages" collapsed="true" icon="trash" >
