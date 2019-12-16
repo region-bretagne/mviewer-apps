@@ -1,5 +1,5 @@
 {{#features}}
-	<li class="item" style="width:238px;">
+	<li class="item">
 		<h3 class="title-feature">{{NOM_BV}}</h3>
 		<div class="block_def">
 			<h4 class="title_def" style="color:#268f91;"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Bassin de vie</h4>

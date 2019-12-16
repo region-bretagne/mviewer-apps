@@ -345,7 +345,7 @@
         <theme name="Espaces naturels"  collapsed="true" id="nature" icon="leaf"> 
             <layer id="reserve_naturelle_regionale" name="Réserves naturelles régionales"  visible="false" tiled="false"
                     searchable="false" queryable="true" fields="axe" aliases="axe"   
-                    infoformat="application/vnd.ogc.gml" featurecount="20"
+                    infoformat="application/vnd.ogc.gml" featurecount="1"
                     sld="https://kartenn.region-bretagne.fr/styles/reserve_naturelle.sld" 
                     url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                     legendurl="https://kartenn.region-bretagne.fr/doc/icons_region/reserve_naturelle.svg" 
@@ -356,7 +356,7 @@
 		    </layer> 
 		    <layer id="parc_naturel_regional" name="Parcs naturels régionaux"  visible="false" tiled="false"
                     searchable="false" queryable="true" fields="axe" aliases="axe" secure="true"
-                    infoformat="application/vnd.ogc.gml" featurecount="20"
+                    infoformat="application/vnd.ogc.gml" featurecount="1"
                     style="pnr_defaut" 
 					stylesalias=""
                     url="https://ows.region-bretagne.fr/geoserver/rb/wms"
@@ -447,7 +447,7 @@
 			<layer id="commune_bdcarto" name="Commune" visible="false" tiled="false"
 				queryable="true" fields="COMMUNE,INSEE_COM,SUPERFICIE" aliases="Nom,Code INSEE,Superficie"
                 infoformat="text/html" featurecount="1"                
-				style="commune_region" 
+				style="commune_region"
 				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
 				attribution="IGN - BDCARTO" 
 				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/b08e6cb1-236c-49b7-88f9-42b500d274d5"

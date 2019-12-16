@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <application panelstate="open" title="Coopération internationale" logo="apps/region/global/img/logo/rb_blanc.svg" help="apps/region/global/global_help.html" exportpng="true" legend="true" measuretools="true" legendasimage="false" popup="false" print="false"  style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme_ultra.css" />
+    <mapoptions maxzoom="18" projection="EPSG:3857" center="3460555,880678" zoom="3" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
+
+	<baselayers style="gallery"><!-- style="default"||gallery" -->          
+        <baselayer type="Ortho" id="esriworldimagery" label="Esri world imagery" title="esriworldimagery" thumbgallery="img/basemap/ortho.jpg" 
+            url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}" visible="false" attribution="Esri world imagery"/>        
+        <baselayer  type="OSM" id="positron" label="Positron" title="CartoDb" thumbgallery="img/basemap/positron.png"
+			url="https://cartodb-basemaps-{a-c}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png" maxzoom="20" 
+			visible="true" attribution=" &lt;a href='http://www.openstreetmap.org/copyright'>OpenStreetMap&lt;/a>  &lt;a href='http://cartodb.com/attributions'>CartoDB &lt;/a>" />	
+    </baselayers> 
+    <searchparameters bbox="true" localities="true" features="true"/>
+
+    <themes>
+        <theme name="Coopération"  id="cooperation" collapsed="true" icon="graduation-cap">
+            <layer id="region_cooperation_internationale" name="Coopération internationale"  visible="true" tiled="false"
+                infoformat="application/vnd.ogc.gml" featurecount="20" queryable="true"
+                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+                attribution="Source: Région Bretagne" 
+                metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=3385b253-9e22-453c-83f4-dfc7144fadda"
+                metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=3385b253-9e22-453c-83f4-dfc7144fadda" >	   
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/cooperation_internationale.mst"></template> 
+		    </layer> 
+		</theme>
+    </themes>
+</config>

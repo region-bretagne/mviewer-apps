@@ -108,7 +108,7 @@
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=58e1b1a6-2cf7-4088-b59a-bdc1c7526e3c" >  
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.signaletique_navigation_vn.mst"></template>
 			</layer>
-		    <layer id="signalisation_vvv" name="Signalisation Véloroutes-Voies Vertes – V42 (section Taden/Redon)" visible="false" tiled="false" 
+		    <layer id="signalisation_vvv" name="Signalisation Véloroutes-Voies Vertes sur les chemins de halage" visible="false" tiled="false" 
 				queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 

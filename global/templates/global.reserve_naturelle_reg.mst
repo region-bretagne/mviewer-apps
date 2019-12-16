@@ -1,84 +1,65 @@
 {{#features}}
-	<li class="item" style="width:238px;">
+	<li class="item">
 		<h3 class="title-feature">{{nom}}</h3>
 		{{#image}}
-			<img src="{{image}}" class="img-responsive" style="margin-top:5%;" />
+			<img src="{{image}}" class="img-responsive" style="margin-top:5%;"  /><br/>
 		{{/image}}
 		
-
-		<p class="text-feature">		
-			<span style="font-family:'roboto_bold'"> Surface :</span> {{surface}}<br/>
+			<span class="text-feature"><b> Surface :</b> {{surface}} ha</span><br/>
 			{{#site_web}}
-			<div class="but_link">	
-				<p> <a href="{{site_web}}" target=_blank"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Site Web</a>
-				</p>
-			</div>			
+			<center><a href="{{site_web}}" target="_blank" title="Site web" class="but_link"><span class="fa fa-globe" aria-hidden="true"></span> Site web</a> </center>  
 			{{/site_web}}                
-       </p>
 	</li>
 {{/features}}
 
 <style>
 	.title-feature {
-		color: #032e46;
-		font-family:"roboto_bold";
-		font-size:23px;
-		margin-bottom:1%;
+		color: #5A9EAA;
+		font-family:"region_bold";
+		font-size:25px;
+		margin-bottom:3%;
 		line-height:1;
 	}
 	.subtitle-feature {
-		color: #032e46;
-		font-family:"roboto_bold";
+		color: #5A9EAA;
+		font-family:"region_bold";
 		font-size:18px;
-		margin-top:7%;
+		margin-top:2%;
 		line-height:1;
 	}
 	.text-feature{
-		font-family:"roboto_regular";
+		font-family:"Open Sans";
+		color:#555;
+		font-size:15px;
+		margin-top:2%;
+		margin-bottom:2%;
+	}
+	.description-feature{
+		font-family:"Open Sans";
 		color:#555;
 		font-size:13px;
-		margin-top:10%;
+		margin-top:2%;
+		margin-bottom:2%;
 	}
-	.info.N {
-   		background-image: url(https://kartennn.region-bretagne.fr/doc/transports/icons/non_1.png);
-   		background-size: 16px;
-    	background-repeat: no-repeat;
-   	    background-position-x: 0px;
-   	    margin-bottom:3px;
+	.buton_liste{
+		margin-top:5%;
+		height:30px;
 	}
-	.info.O {
-   		background-image: url(https://kartennn.region-bretagne.fr/doc/transports/icons/oui.png);
-   		background-size: 16px;
-    	background-repeat: no-repeat;
-   	    background-position-x: 0px;
-   	    margin-bottom:3px;
-	}
-	.but_link{
-	    padding:10px 0 10px 0;
-	    font-size:13px;
-	    font-family:'roboto_regular', Arial, Sans-serif;
-	   	background:rgba(3, 46, 70, 0.9);
-	    color:#fff;
-	    width:100px;
-	    border:1px solid #032e46;
-	    margin-left: 25%;
+	.but_link, .but_link:focus, .but_link:hover{
+		display:inline-block;
+		padding:0.5em 1em;
+		margin:0 0.3em 0.3em 0;
+		border-radius:0.3em;
+		box-sizing: border-box;
+		text-decoration:none;
+		font-family:'OpenSans-Bold',sans-serif;
+		font-weight:300;
+		color:#FFFFFF;
+		background-color:#5A9EAA;
+		text-align:center;
+		transition: all 0.2s;
 	}
 	.but_link:hover{
-	    background:rgba(3, 46, 70, 1);
-	    border:1px solid #032e46;
-	}
-	.but_link p{
-	  margin: 0;
-	  text-align:center;
-	  color:#fff;
-	} 
-	.but_link a{
-	  color: #fff;
-	}
-	.but_link a:hover{
-	  color:#fff;
-	}
-	.but_link a:focus{
-	  color:#fff; 
-	}
+		background-color:#49828D;
+	}	
 </style>

@@ -1,5 +1,5 @@
 {{#features}}
-	<li class="item" style="width:238px;">
+	<li class="item">
 		<h3 class="title-feature">{{nom}}</h3>
         {{#photo}}
 			<img src="{{photo}}" class="img-responsive" />
@@ -11,7 +11,7 @@
 			<span style="font-family:'roboto_bold'"> Propriétaire :</span> {{proprietaire}}<br/>
 			<span style="font-family:'roboto_bold'"> Gestionnaire :</span> {{gestionnaire}}<br/>
 		<div class="but_link">
-			<p> <a href="https://kartennn.region-bretagne.fr/mreport/trafic/{{id_ecluse}}" target=_blank"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Stats</a>
+			<p> <a href="https://kartenn.region-bretagne.fr/mreport/trafic/{{id_ecluse}}" target=_blank"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Stats</a>
 			</p>
 		</div>
        </p>

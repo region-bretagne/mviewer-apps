@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <application panelstate="open" coordinates="true" title="Economie Sociale et Solidaire" logo="apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" exportpng="true" legend="true" measuretools="true" legendasimage="false" popup="false" print="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme_ultra.css" />
+    <mapoptions maxzoom="18" projection="EPSG:3857" center="-255516,6140243" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
+
+	<baselayers style="gallery"><!-- style="default"||gallery" -->          
+        <baselayer  type="OSM" id="positron" label="Positron" title="CartoDb" thumbgallery="img/basemap/positron.png"
+			url="https://cartodb-basemaps-{a-c}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png" maxzoom="20" 
+			visible="true" attribution=" &lt;a href='http://www.openstreetmap.org/copyright'>OpenStreetMap&lt;/a>  &lt;a href='http://cartodb.com/attributions'>CartoDB &lt;/a>" />	
+		<baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="GéoPortail" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
+            url="../wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
+            attribution="&lt;a href='http://www.geoportail.fr/' target='_blank'>&lt;img src='http://api.ign.fr/geoportail/api/js/latest/theme/geoportal/img/logo_gp.gif'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+        <baselayer  type="WMTS" id="scan2" label="Cartes IGN" title="GéoPortail" maxscale="2000" thumbgallery="img/basemap/scan.jpg"
+            url="../wmts" layers="GEOGRAPHICALGRIDSYSTEMS.MAPS" format="image/jpeg" visible="false" fromcapacity="false"
+            attribution="&lt;a href='http://www.geoportail.fr/' target='_blank'>&lt;img src='http://api.ign.fr/geoportail/api/js/latest/theme/geoportal/img/logo_gp.gif'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+    </baselayers> 
+    <searchparameters bbox="true" localities="true" features="true"/>
+
+    <themes>
+        <theme name="ESS"  id="ess" collapsed="true" icon="ship">
+            <layer id="structure_ess" name="Structures de l'Economie Sociale et Solidaire"  visible="true" tiled="false"
+                infoformat="application/vnd.ogc.gml" featurecount="20" queryable="true"
+                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+                attribution="Source: Région Bretagne" 
+                metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=7627c13b-d3e7-4b26-8862-796bbc90d974"
+                metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=7627c13b-d3e7-4b26-8862-796bbc90d974" >	   
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/ess.mst"></template> 
+		    </layer> 
+		</theme>
+    </themes>
+</config>

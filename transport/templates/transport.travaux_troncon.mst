@@ -1,5 +1,5 @@
 {{#features}}
-	<li class="item" style="width:238px;">
+	<li class="item">
 		<h3 class="title-feature">Travaux entre {{gare_troncon_1}} et {{gare_troncon_2}}</h3>
 		<p class="text-feature">		
 			<span style="font-family:'roboto_bold'"> Année :</span> {{annee}}<br/>

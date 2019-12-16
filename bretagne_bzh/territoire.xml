@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<metadata>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description rdf:about="http://www.ilrt.bristol.ac.uk/people/cmdjb/">
+<dc:title>Administratif</dc:title>
+<dc:creator>anonymous</dc:creator>
+<dc:publisher>anonymous</dc:publisher>
+<dc:subject>Administratif</dc:subject>
+<dc:date>2019-11-08T09:00:48.297Z</dc:date>
+</rdf:Description>
+</rdf:RDF>
+</metadata>
+<application title=" " logo="" help="" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme.css" exportpng="false" showhelp="false" coordinates="false" measuretools="false" togglealllayersfromtheme="false" hideprotectedlayers="false">
+</application>
+<mapoptions maxzoom="20" projection="EPSG:3857" center="-292004.84710459685,6141956.584967648" zoom="8"/>
+<proxy url="../proxy/?url="/>
+<searchparameters bbox="false" localities="false" features="false" static="false"/>
+	<baselayers style="gallery"><!-- style="default"||gallery" -->          
+        <baselayer  type="OSM" id="positron" label="Positron" title="CartoDb" thumbgallery="img/basemap/positron.png"
+			url="https://cartodb-basemaps-{a-c}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png" maxzoom="20" 
+			visible="true" attribution=" &lt;a href='http://www.openstreetmap.org/copyright'>OpenStreetMap&lt;/a>  &lt;a href='http://cartodb.com/attributions'>CartoDB &lt;/a>" />	
+		<baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="GéoPortail" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
+            url="../wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
+            attribution="&lt;a href='http://www.geoportail.fr/' target='_blank'>&lt;img src='http://api.ign.fr/geoportail/api/js/latest/theme/geoportal/img/logo_gp.gif'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+        <baselayer  type="WMTS" id="scan2" label="Cartes IGN" title="GéoPortail" maxscale="2000" thumbgallery="img/basemap/scan.jpg"
+            url="../wmts" layers="GEOGRAPHICALGRIDSYSTEMS.MAPS" format="image/jpeg" visible="false" fromcapacity="false"
+            attribution="&lt;a href='http://www.geoportail.fr/' target='_blank'>&lt;img src='http://api.ign.fr/geoportail/api/js/latest/theme/geoportal/img/logo_gp.gif'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+    </baselayers> 
+<themes mini="false"> 
+    <theme id="theme-20191105154130" name="Administratif" collapsed="false" icon="fas fa-globe"> 
+			<layer id="FDepartement" name="Département" visible="false" tiled="true"
+				queryable="true"
+                infoformat="application/vnd.ogc.gml" featurecount="1"
+				sld="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/sld/departement_region.sld"
+				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
+				attribution="IGN - BDCARTO" 
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/e16d50d4-746d-44e3-a5e7-5fc000f97665" 
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=e16d50d4-746d-44e3-a5e7-5fc000f97665">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/departement.mst"></template> 
+			</layer> 
+	    	<layer id="n_pays" name="Pays" visible="false" tiled="true"
+				queryable="true"
+                infoformat="application/vnd.ogc.gml" featurecount="5"             
+				sld="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/sld/pays_region.sld"
+				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
+				attribution="GéoBretagne" 
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/9722d181-75f9-40ab-a136-a9f9ed6f29a5" 
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9722d181-75f9-40ab-a136-a9f9ed6f29a5" >
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/pays.mst"></template> 
+			</layer> 
+			<layer id="EPCI_053" name="Intercommunalité" visible="true" tiled="true"
+				queryable="true"
+                infoformat="application/vnd.ogc.gml" featurecount="1"
+				sld="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/sld/epci_camaieu.sld" 
+				legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/legend/legend_epci.png"
+				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
+				attribution="GéoBretagne" 
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/2298d744-49cb-4fcb-9487-26f916fecdff" 
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=2298d744-49cb-4fcb-9487-26f916fecdff" >
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/epci.mst"></template> 
+			</layer> 
+			<layer id="commune_bdcarto" name="Commune" visible="false" tiled="true"
+				queryable="true"
+                infoformat="application/vnd.ogc.gml" featurecount="1"                
+				sld="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/sld/commune_region.sld"
+				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
+				attribution="IGN - BDCARTO" 
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/b08e6cb1-236c-49b7-88f9-42b500d274d5"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b08e6cb1-236c-49b7-88f9-42b500d274d5" >
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/commune.mst"></template> 
+			</layer> 
+
+
+	
+        <!--<layer id="departement_osm" name="Départements" type="wms" url="https://ows.region-bretagne.fr:443/geoserver/rb/ows?" 
+			infoformat="application/vnd.ogc.gml" style="departement_style" queryable="true" infopanel="right-panel">
+            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/departement.mst"></template> 
+		</layer> 
+        <layer id="pays_osm" name="Pays" type="wms" url="https://ows.region-bretagne.fr:443/geoserver/rb/ows?" 
+			infoformat="application/vnd.ogc.gml" style="pays_bleu" queryable="true" infopanel="right-panel">
+            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/pays.mst"></template> 
+		</layer> 
+        <layer id="epci_osm" name="EPCI" type="wms" url="https://ows.region-bretagne.fr:443/geoserver/rb/ows?" 
+			visible="true" infoformat="application/vnd.ogc.gml" style="epci_style_2" queryable="true" infopanel="right-panel">
+            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/epci.mst"></template> 
+		</layer> 
+        <layer id="communes_osm" name="Communes Bretagne" type="wms" url="https://ows.region-bretagne.fr:443/geoserver/rb/ows?" 
+			infoformat="application/vnd.ogc.gml" style="commune_style_tt_echelle" queryable="true" infopanel="right-panel">
+            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/commune.mst"></template> 
+		</layer> -->
+    </theme> 
+</themes>
+</config>

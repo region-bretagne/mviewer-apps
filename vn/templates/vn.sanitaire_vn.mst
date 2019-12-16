@@ -1,5 +1,5 @@
 {{#features}}
-	<li class="item" style="width:238px;">
+	<li class="item">
 		<h3 class="title-feature">Sanitaires</h3>
         {{#photo}}                
 			<img src="{{photo}}" class="img-responsive" />

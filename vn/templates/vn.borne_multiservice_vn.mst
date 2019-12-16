@@ -1,5 +1,5 @@
 {{#features}}
-	<li class="item" style="width:238px;">
+	<li class="item">
 		<h3 class="title-feature">Borne multiservice</h3>
 			<div class="eau {{eau}}"><span style="margin-left:20px;"></span></div>
 			<div class="elec {{elec}}"><span style="margin-left:20px;"></span></div>

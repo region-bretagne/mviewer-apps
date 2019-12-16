@@ -1,5 +1,5 @@
 {{#features}}
-	<li class="item" style="width:238px;">
+	<li class="item">
 		<h3 class="title-feature">{{NOM_COM}}</h3>
 
 		<p class="text-feature">		

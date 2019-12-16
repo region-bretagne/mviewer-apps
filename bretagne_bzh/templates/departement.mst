@@ -1,0 +1,30 @@
+{{#features}}
+	<li class="item">
+		<h2 class="title-feature">{{NOM_DEP}}</h2>
+
+	</li>
+{{/features}}
+
+<style>
+	.title-feature {
+		color: #5A9EAA;
+		font-family:"region_bold";
+		font-size:25px;
+		margin-bottom:3%;
+		line-height:1;
+	}
+	.subtitle-feature {
+		color: #5A9EAA;
+		font-family:"region_bold";
+		font-size:18px;
+		margin-top:2%;
+		line-height:1;
+	}
+	.text-feature{
+		font-family:"Open Sans";
+		color:#555;
+		font-size:15px;
+		margin-top:2%;
+		margin-bottom:2%;
+	}
+</style>

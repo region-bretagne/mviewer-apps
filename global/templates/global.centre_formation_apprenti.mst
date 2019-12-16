@@ -1,5 +1,5 @@
 {{#features}}
-	<li class="item" style="width:238px;">
+	<li class="item">
 		<h3 class="title-feature">{{site_formation}}</h3>
 		<p class="text-feature">		
 			<span style="font-family:'roboto_bold'"> Commune :</span> {{ville}}<br/>

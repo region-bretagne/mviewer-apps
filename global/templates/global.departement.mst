@@ -1,6 +1,6 @@
 {{#features}}
-	<li class="item" style="width:238px;">
-		<h3 class="title-feature">{{LIBELLE}}</h3>
+	<li class="item">
+		<h3 class="title-feature">{{NOM_DEP}}</h3>
 
 	</li>
 {{/features}}

@@ -1,9 +1,10 @@
 {{#features}}
-	<li class="item" style="width:238px;">
+	<li class="item">
 		<h3 class="title-feature">{{NOM_EPCI}}</h3>
 
 		<p class="text-feature">		
 			<span style="font-family:'roboto_bold'"> Code SIREN :</span> {{SIREN_EPCI}}<br/>
+			<span style="font-family:'roboto_bold'"> Type EPCI :</span> {{NATURE_EPC}}<br/>
        </p>
 	</li>
 {{/features}}

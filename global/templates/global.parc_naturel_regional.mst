@@ -1,21 +1,57 @@
 {{#features}}
-	<li class="item" style="width:238px;">
+	<li class="item">
 		<h3 class="title-feature">{{pnr_nom}}</h3>
 	</li>
 {{/features}}
 
 <style>
 	.title-feature {
-		color: #032E46;
-		font-family:"roboto_bold";
-		font-size:23px;
-		margin-bottom:1%;
+		color: #5A9EAA;
+		font-family:"region_bold";
+		font-size:25px;
+		margin-bottom:3%;
+		line-height:1;
+	}
+	.subtitle-feature {
+		color: #5A9EAA;
+		font-family:"region_bold";
+		font-size:18px;
+		margin-top:2%;
 		line-height:1;
 	}
 	.text-feature{
-		font-family:"roboto_regular";
+		font-family:"Open Sans";
+		color:#555;
+		font-size:15px;
+		margin-top:2%;
+		margin-bottom:2%;
+	}
+	.description-feature{
+		font-family:"Open Sans";
 		color:#555;
 		font-size:13px;
-		margin-top:10%;
+		margin-top:2%;
+		margin-bottom:2%;
 	}
+	.buton_liste{
+		margin-top:5%;
+		height:30px;
+	}
+	.but_link, .but_link:focus, .but_link:hover{
+		display:inline-block;
+		padding:0.5em 1em;
+		margin:0 0.3em 0.3em 0;
+		border-radius:0.3em;
+		box-sizing: border-box;
+		text-decoration:none;
+		font-family:'OpenSans-Bold',sans-serif;
+		font-weight:300;
+		color:#FFFFFF;
+		background-color:#5A9EAA;
+		text-align:center;
+		transition: all 0.2s;
+	}
+	.but_link:hover{
+		background-color:#49828D;
+	}	
 </style>

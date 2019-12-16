@@ -1,0 +1,84 @@
+{{#features}}
+	<li class="item">
+		<h2 class="title-feature">{{nom}}</h2>
+		<div class="plaisance {{plaisance}}"></div>
+		<div class="peche {{peche}}"></div>
+		<div class="commerce {{commerce}}"></div>
+		<div class="reparation_navale {{reparation_navale}}"></div>
+		<div class="passager {{passager}}"></div>
+		<span class="icon-bateau"></span>
+	</li>
+{{/features}}
+
+<style>
+	.title-feature {
+		color: #5A9EAA;
+		font-family:"region_bold";
+		font-size:25px;
+		margin-bottom:3%;
+		line-height:1;
+	}
+	.text-feature{
+		font-family:"Open Sans";
+		color:#555;
+		font-size:15px;
+		margin-top:2%;
+		margin-bottom:2%;
+	}
+
+.icon-bateau{
+	font-size : 30px;
+	color : #b0252e;
+}
+
+.plaisance.true {
+    float: left;
+	left: 50px;    
+    margin: 5px; 
+	width: 30px;
+    height: 30px;       
+    background: url(https://kartenn.region-bretagne.fr/img/picto/port/PLA.png) left top no-repeat;    
+    background-size: 30px;
+}
+.plaisance.false {}
+.peche.true {
+    float: left;
+	left: 50px;    
+    margin: 5px; 
+	width: 30px;
+    height: 30px;       
+    background: url(https://kartenn.region-bretagne.fr/img/picto/port/PEC.png) left top no-repeat;    
+    background-size: 30px;
+}
+.peche.false {}
+.commerce.true {
+    float: left;
+	left: 50px;    
+    margin: 5px; 
+	width: 30px;
+    height: 30px;       
+    background: url(https://kartenn.region-bretagne.fr/img/picto/port/COM.png) left top no-repeat;    
+    background-size: 30px;
+}
+.commerce.false {}
+.reparation_navale.true {
+    float: left;
+	left: 50px;    
+    margin: 5px; 
+	width: 30px;
+    height: 30px;       
+    background: url(https://kartenn.region-bretagne.fr/img/picto/port/REP.png) left top no-repeat;    
+    background-size: 30px;
+}
+.reparation_navale.false {}
+.passager.true {
+    float: left;
+	left: 50px;    
+    margin: 5px; 
+	width: 30px;
+    height: 30px;       
+    background: url(https://kartenn.region-bretagne.fr/img/picto/port/PAR.png) left top no-repeat;    
+    background-size: 30px;
+}
+.passager.false {}
+</style>
