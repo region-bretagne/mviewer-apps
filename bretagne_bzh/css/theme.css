@@ -10,11 +10,19 @@
 ********************************/
 @font-face {
   font-family: 'roboto_bold';
-  src: url("../font/Roboto/Roboto-Bold.ttf"); }
+  src: url("../../global/font/Roboto/Roboto-Bold.ttf"); }
 
 @font-face {
   font-family: 'roboto_regular';
-  src: url("../font/Roboto/Roboto-Regular.ttf"); }
+  src: url("../../global/font/Roboto/Roboto-Regular.ttf"); }
+
+@font-face {
+  font-family: 'region_bold';
+  src: url("../../global/font/RB/RegionBretagneNew-Bold.ttf"); }
+
+@font-face {
+  font-family: 'region_regular';
+  src: url("../../global/font/RB/RegionBretagneNew-Regular.ttf"); }
 
 /*******************************
 ------------- GENERAL -----------
@@ -399,3 +407,69 @@ img.mv-logo{
 ul#menu {
     margin-top: 10px;
 }*/
+/*Changer couleur icone*/
+#els_marker path {
+    fill: #5A9EAA!important;
+}
+
+
+/*Mise en forme des MST*/
+#rb-puces li {
+	list-style: none;
+	color: #555;
+}
+#rb-puces li:before{
+	content:"· ";
+	font-size:50px;
+	vertical-align:middle;
+	line-height:20px;
+	color: #5A9EAA;
+}
+.rb-title-feature {
+	color: #5A9EAA;
+	font-family:"region_bold";
+	font-size:25px;
+	margin-bottom:3%;
+	line-height:1;
+}
+.rb-subtitle-feature {
+	color: #5A9EAA;
+	font-family:"region_bold";
+	font-size:18px;
+	margin-top:2%;
+	line-height:1;
+}
+.rb-text-feature{
+	font-family:"Open Sans";
+	color:#555;
+	font-size:15px;
+	margin-top:2%;
+	margin-bottom:2%;
+}
+.rb-description-feature{
+	font-family:"Open Sans";
+	color:#555;
+	font-size:13px;
+	margin-top:2%;
+	margin-bottom:2%;
+}
+.rb-but-list{
+	margin-top:4%;
+}
+.rb-but-link, .rb-but-link:focus, .rb-but-link:hover{
+	display:inline-block;
+	padding:0.5em 1em;
+	margin:0 0.3em 0.3em 0;
+	border-radius:0.3em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'OpenSans-Bold',sans-serif;
+	font-weight:300;
+	color:#FFFFFF;
+	background-color:#5A9EAA;
+	text-align:center;
+	transition: all 0.2s;
+}
+.rb-but-link:hover{
+	background-color:#49828D;
+}	

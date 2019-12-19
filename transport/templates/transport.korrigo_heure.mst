@@ -2,13 +2,13 @@
 	<li class="item">
 		<div class="row">
 			<div class="col-xs-4">
-				<div class="title-feature">Validations Korrigo</div>
+				<div class="rb-title-feature">Validations Korrigo</div>
 			</div>
 			<div class="col-xs-offset-2 col-xs-6">
 				<span class="critere glyphicon glyphicon-map-marker" aria-hidden="true"><span id="text">{{nom}}</span></span><span class="critere glyphicon glyphicon-calendar" aria-hidden="true" style="margin-left:10px;"><span id="text">{{annee}}</span></span>
 			</div>	
 		</div>
-		<iframe class="iframe_bottom" src="https://kartenn.region-bretagne.fr/ws/transports/iframe_korrigo_heure.php?uic={{code_uic}}&time={{time_d}}"></iframe>
+		<iframe class="rb-iframe-bottom" src="https://kartenn.region-bretagne.fr/ws/transports/iframe_korrigo_heure.php?uic={{code_uic}}&time={{time_d}}"></iframe>
 					
 	</li>
 		
@@ -22,15 +22,6 @@
 		overflow:hidden;
 		margin-left:-20px;
 	}
-
-	.title-feature {
-		color: #032e46;
-		font-family:"roboto_bold";
-		font-size:23px;
-		margin-bottom:1%;
-		line-height:1;
-	}
-		
 	.critere {
 		color: #fff;			
 		font-size:13px;			
@@ -49,7 +40,7 @@
 	}
 
 	#text{
-		font-family:"roboto_regular";
+		font-family:"Open Sans";
 		margin-left:3px;
 	}
 </style>

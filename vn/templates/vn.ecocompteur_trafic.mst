@@ -2,7 +2,7 @@
 	<li class="item">
 		<div class="row">
 			<div class="col-xs-4">
-				<div class="title-feature">Trafic annuel aux écocompteur</div>
+				<div class="rb-title-feature">Trafic annuel aux écocompteur</div>
 			</div>
 			<div class="col-xs-offset-1 col-xs-7">
 				<span class="critere glyphicon glyphicon-map-marker" aria-hidden="true"><span id="text">{{nom}}</span></span><span class="critere glyphicon glyphicon-calendar" aria-hidden="true" style="margin-left:10px;"><span id="text">{{annee}}</span></span><span class="stat glyphicon glyphicon-stats" aria-hidden="true" style="margin-left:10px;"><span id="text" style="
@@ -24,14 +24,6 @@
 		margin-left:-20px;
 	}
 
-	.title-feature {
-		color: #032e46;
-		font-family:"roboto_bold";
-		font-size:23px;
-		margin-bottom:1%;
-		line-height:1;
-	}
-		
 	.critere {
 		color: #fff;			
 		font-size:13px;			
@@ -50,7 +42,7 @@
 	}
 
 	#text{
-		font-family:"roboto_regular";
+		font-family:"Open Sans";
 		margin-left:3px;
 	}
 </style>

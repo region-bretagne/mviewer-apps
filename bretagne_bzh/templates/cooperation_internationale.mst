@@ -1,30 +1,30 @@
 {{#features}}
 	<li class="item">
-		<h2 class="title-feature">{{nom}} - {{pays}}</h3>
-		<p class="text-feature">		
+		<h2 class="rb-title-feature">{{nom}} - {{pays}}</h2>
+		<p class="rb-text-feature">		
 			{{description}}		
 		</p>
-        <div class="text-feature">	
-        <h3 class="subtitle-feature">Thématiques fortes</h3>   
+        <div class="rb-text-feature">	
+        <h3 class="rb-subtitle-feature">Thématiques fortes</h3>   
 				
-		<div id="puces">{{{thematique}}}</div>
+		<div id="rb-puces">{{{thematique}}}</div>
 		</div>
-		<div class="row">
+		<div class="rb-but-list">
 			<div class="col-md-12">
 			
 		<span>
 		    {{#document}}
-			<a href="{{document}}" target="_blank" title="Document" class="but_link"><span class="fa fa-file" aria-hidden="true"></span> Accord de coopération</a>    
+			<a href="{{document}}" target="_blank" title="Document" class="rb-but-link"><span class="fa fa-file" aria-hidden="true"></span> Accord de coopération</a>    
 			{{/document}}
 		    {{#lien_fiche}}
-			<a href="{{lien_fiche}}" target="_blank" title="Lien vers fiche sur bretagne.bzh" class="but_link"><span class="fa fa-globe" aria-hidden="true"></span> Lien fiche</a>    
+			<a href="{{lien_fiche}}" target="_blank" title="Lien vers fiche sur bretagne.bzh" class="rb-but-link"><span class="fa fa-globe" aria-hidden="true"></span> Lien fiche</a>    
 			{{/lien_fiche}}	
 		    {{#plan_action}}
-			<a href="{{plan_action}}" target="_blank" title="Plan d'action" class="but_link"><span class="fa fa-file" aria-hidden="true"></span> Plan d'action</a>    
+			<a href="{{plan_action}}" target="_blank" title="Plan d'action" class="rb-but-link"><span class="fa fa-file" aria-hidden="true"></span> Plan d'action</a>    
 			</span>
 			{{/plan_action}}
 		    {{#site_web}}
-			<a href="{{site_web}}" target="_blank" title="Site web" class="but_link"><span class="fa fa-globe" aria-hidden="true"></span> Site web</a>    
+			<a href="{{site_web}}" target="_blank" title="Site web" class="rb-but-link"><span class="fa fa-globe" aria-hidden="true"></span> Site web</a>    
 			</span>
 			{{/site_web}}
 		</span>
@@ -33,68 +33,3 @@
 	</li>
 {{/features}}
 
-<style>
-    #puces li {
-        list-style: none;
-		color: #555;
-    }
-
-	#puces li:before{
-	    content:"· ";
-        font-size:50px;
-        vertical-align:middle;
-        line-height:20px;
-		color: #5A9EAA;
-	}
-
-	.title-feature {
-		color: #5A9EAA;
-		font-family:"region_bold";
-		font-size:25px;
-		margin-bottom:3%;
-		line-height:1;
-	}
-	.subtitle-feature {
-		color: #5A9EAA;
-		font-family:"region_bold";
-		font-size:18px;
-		margin-top:2%;
-		line-height:1;
-	}
-	.text-feature{
-		font-family:"Open Sans";
-		color:#555;
-		font-size:15px;
-		margin-top:2%;
-		margin-bottom:2%;
-	}
-	.description-feature{
-		font-family:"Open Sans";
-		color:#555;
-		font-size:13px;
-		margin-top:2%;
-		margin-bottom:2%;
-	}
-	.buton_liste{
-		margin-top:5%;
-		height:30px;
-	}
-	.but_link, .but_link:focus, .but_link:hover{
-		display:inline-block;
-		padding:0.5em 1em;
-		margin:0 0.3em 0.3em 0;
-		border-radius:0.3em;
-		box-sizing: border-box;
-		text-decoration:none;
-		font-family:'OpenSans-Bold',sans-serif;
-		font-weight:300;
-		color:#FFFFFF;
-		background-color:#5A9EAA;
-		text-align:center;
-		transition: all 0.2s;
-	}
-	.but_link:hover{
-		background-color:#49828D;
-	}	
-
-</style>

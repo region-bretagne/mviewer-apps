@@ -39,11 +39,13 @@
        <theme name="Inventaire du patrimoine Bretagne"  collapsed="false" id="inventaire" icon="caret-right"> 
 			<group name="Inventaire papier" id="inventaire_papier"> 
             <layer id="inventaire_papiers" name="Dossiers 'papiers' avant 2000" visible="false" tiled="false"
-				queryable="true" infoformat="text/html" featurecount="20" 
+				queryable="true" infoformat="application/vnd.ogc.gml" featurecount="20" 
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution="Service de l'inventaire : &lt;a href='http://patrimoine.bzh/' target='_blank'>patrimoine.bzh &lt;/a>" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=e2588666-6b16-4d5a-bca2-5e927bc0a922"
-				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=e2588666-6b16-4d5a-bca2-5e927bc0a922" /> 
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=e2588666-6b16-4d5a-bca2-5e927bc0a922" > 
+					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/templates/patrimoine.inventaire_papier.mst"></template>
+            </layer>
 			</group>
 			<group name="Recensement et études" id="recherche"> 
             <layer id="inventaire" name="Rechercher des éléments patrimoniaux" visible="true" queryable="true"
@@ -146,14 +148,16 @@
 					metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a7f46b47-42fc-49b7-9b49-c7c11aee0932" >
 					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
 				</layer>
-				<layer id="croix_calvaire" name="Croix et calvaires (association)" visible="false" tiled="false" 
+				<layer id="croix_calvaire" name="Croix et calvaires (association)" visible="false" tiled="true" 
 					queryable="true"
 					searchable="true" legendurl="https://kartenn.region-bretagne.fr/img/legend/croix_et_calvaires_association.png"
-					infoformat="text/html" featurecount="20"
+					infoformat="application/vnd.ogc.gml" featurecount="20"
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 					attribution="Association croix et calvaires de Bretagne" 
 					metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=90468f5b-eef8-452d-9443-060870b51332"
-					metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=90468f5b-eef8-452d-9443-060870b51332" />
+					metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=90468f5b-eef8-452d-9443-060870b51332" >
+					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/templates/patrimoine.croix_calvaire.mst"></template>
+				</layer>
 			</group>
 		</theme>
 	<theme name="Autres politiques régionales"  collapsed="true" id="autres" icon="caret-right">

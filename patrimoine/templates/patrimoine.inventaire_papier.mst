@@ -1,0 +1,19 @@
+{{#features}}
+	<li class="item">
+		<p class="rb-text-feature">
+			<b>Enquête antérieure datant de {{datation}} sous forme papier consultable au : </b>
+			<br><br>
+			Centre de documentation de l'Inventaire de la Région Bretagne
+			<br>
+			  <center>
+			  			<img src="https://kartenn.region-bretagne.fr/img/divers/dossiers_papiers.jpg" class="img-responsive center-block" width="170" height="170"/>
+			  </center> 
+		</p>
+		<p class="rb-text-feature">
+			Accès sur rendez-vous : <br>
+			2 rue Gabriel Germain – 35000 RENNES <br>
+			Tél. : 02 22 93 98 35<br>
+			Mail : inventaire.patrimoine@bretagne.bzh
+		</p>
+	</li>
+{{/features}}

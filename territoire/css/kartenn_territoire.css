@@ -1,24 +1,39 @@
 /******************************************************************************
 --------------------------- CSS KARTENN TERRITOIRE -------------------------
 ********************************************************************************/
+@import url("../../crbicon/crbicon.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 /* Import des fonts*/
 		@font-face {
 		    font-family: 'roboto_black';
-		    src: url('../font/Roboto/Roboto-Black.ttf');
+		    src: url('../../global/font/Roboto/Roboto-Black.ttf');
 		}
 		@font-face {
 		    font-family: 'roboto_bold';
-		    src: url('../font/Roboto/Roboto-Bold.ttf');
+		    src: url('../../global/font/Roboto/Roboto-Bold.ttf');
+		}
+		@font-face {
+		    font-family: 'roboto_medium';
+		    src: url('../../global/font/Roboto/Roboto-Medium.ttf');
 		}
 		@font-face {
 		    font-family: 'roboto_regular';
-		    src: url('../font/Roboto/Roboto-Regular.ttf');
+		    src: url('../../global/font/Roboto/Roboto-Regular.ttf');
 		}
 		@font-face {
 		    font-family: 'spotkabold';
-		    src: url('../font/spotkabold.ttf');
+		    src: url('../../global/font/spotkabold.ttf');
 		}
+		
+@font-face {
+  font-family: 'region_bold';
+  src: url("../../global/font/RB/RegionBretagneNew-Bold.ttf"); }
+
+@font-face {
+  font-family: 'region_regular';
+  src: url("../../global/font/RB/RegionBretagneNew-Regular.ttf"); }
+
 /*******************************
 ------------- NAVBAR 
 ********************************/
@@ -590,4 +605,90 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
     border-right: 1.1em solid rgba(3, 46, 70, 0.2);
     border-bottom: 1.1em solid rgba(3, 46, 70, 0.2);
     border-left: 1.1em solid #2d4059;
+}
+
+/*Mise en forme des MST*/
+#rb-puces li {
+	list-style: none;
+	color: #555;
+}
+#rb-puces li:before{
+	content:"· ";
+	font-size:50px;
+	vertical-align:middle;
+	line-height:20px;
+	color: #2d4059;
+}
+.rb-title-feature {
+	color: #2d4059;
+	font-family:"region_bold";
+	font-size:30px;
+	margin-bottom:3%;
+	line-height:1;
+}
+.rb-subtitle-feature {
+	color: #2d4059;
+	font-family:"region_bold";
+	font-size:18px;
+	margin-top:2%;
+	line-height:1;
+}
+.rb-text-feature{
+	font-family:"Open Sans";
+	color:#555;
+	font-size:13px;
+	margin-top:2%;
+	margin-bottom:2%;
+}
+.rb-description-feature{
+	font-family:"Open Sans";
+	color:#555;
+	font-size:11px;
+	margin:2%;
+	text-align: justify;
+}
+.rb-source-feature{
+	font-family:"Open Sans";
+	color:#555;
+	font-size:10px;
+	margin:2%;
+	text-align: justify;
+}
+.rb-but-list{
+	margin-top:4%;
+}
+.rb-but-link, .rb-but-link:focus, .rb-but-link:hover{
+	display:inline-block;
+	padding:0.5em 1em;
+	margin:0 0.3em 0.3em 0;
+	border-radius:0.3em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'OpenSans-Bold',sans-serif;
+	font-weight:300;
+	color:#FFFFFF;
+	background-color:#2d4059;
+	text-align:center;
+	transition: all 0.2s;
+}
+.rb-but-link:hover{
+	background-color:#b0006b;
+}	
+.rb-iframe-bottom{
+		width:970px;
+		height:300px;
+		border: none;
+		overflow:hidden;
+		margin-left:-20px;
+	}		
+.rb-critere {
+	color: #fff;			
+	font-size:13px;			
+	background-color:#2d4059;
+	border-radius:3px;
+	padding:7px 16px 8px 13px;
+}
+#rb-text{
+	font-family:"Open Sans";
+	margin-left:3px;
 }

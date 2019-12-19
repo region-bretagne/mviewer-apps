@@ -1,25 +1,25 @@
 {{#features}}
 	<li class="item">
-		<h3 class="title-feature">{{lot_societe}}</h3>  
+		<h3 class="rb-title-feature">{{lot_societe}}</h3>  
         
-        <p class="text-feature">		
-			<span style="font-family:'roboto_bold'"> Concession :</span> {{port_aero_concession}}<br/>
+        <p class="rb-text-feature">		
+			<span style="font-weight:bold"> Concession :</span> {{port_aero_concession}}<br/>
             {{#lot_secteur}}                
-                <span style="font-family:'roboto_bold'"> Secteur :</span> {{lot_secteur}}<br/>
+                <span style="font-weight:bold"> Secteur :</span> {{lot_secteur}}<br/>
             {{/lot_secteur}}
             {{#lot_lot}}                
-                <span style="font-family:'roboto_bold'"> Lot :</span> {{lot_lot}}<br/>
+                <span style="font-weight:bold"> Lot :</span> {{lot_lot}}<br/>
             {{/lot_lot}}
-            <span style="font-family:'roboto_bold'"> Type de contrat :</span> {{contrat_type}}<br/>
-            <span style="font-family:'roboto_bold'"> Octroi Renouvellement :</span> {{contrat_renou}}<br/>
-            <span style="font-family:'roboto_bold'"> Activité bénéficiaire :</span> {{lot_activite}}<br/>
-            <span style="font-family:'roboto_bold'"> Nature d'installation :</span> {{beneficiaire_install_nature}}<br/>
-            <span style="font-family:'roboto_bold'"> Type d'occupation :</span> {{lot_type}}<br/>
-            <span style="font-family:'roboto_bold'"> Surface :</span> {{lot_surface}} m²<br/>
-            <span style="font-family:'roboto_bold'"> Locataire :</span> {{lot_locataire}}<br/>
-            <span style="font-family:'roboto_bold'"> Validité du contrat :</span> {{contrat_validite}}<br/>
-            <span style="font-family:'roboto_bold'"> Echéance du contrat :</span> {{contrat_echeance}}<br/>
-            <span style="font-family:'roboto_bold'"> Identifiant :</span> {{idu_num}}<br/>
+            <span style="font-weight:bold"> Type de contrat :</span> {{contrat_type}}<br/>
+            <span style="font-weight:bold"> Octroi Renouvellement :</span> {{contrat_renou}}<br/>
+            <span style="font-weight:bold"> Activité bénéficiaire :</span> {{lot_activite}}<br/>
+            <span style="font-weight:bold"> Nature d'installation :</span> {{beneficiaire_install_nature}}<br/>
+            <span style="font-weight:bold"> Type d'occupation :</span> {{lot_type}}<br/>
+            <span style="font-weight:bold"> Surface :</span> {{lot_surface}} m²<br/>
+            <span style="font-weight:bold"> Locataire :</span> {{lot_locataire}}<br/>
+            <span style="font-weight:bold"> Validité du contrat :</span> {{contrat_validite}}<br/>
+            <span style="font-weight:bold"> Echéance du contrat :</span> {{contrat_echeance}}<br/>
+            <span style="font-weight:bold"> Identifiant :</span> {{idu_num}}<br/>
         </p>
       
         {{#lien}}
@@ -51,19 +51,6 @@
 {{/features}}
 
 <style>
-	.title-feature {
-		color: #2d4059;
-		font-family:"roboto_bold";
-		font-size:23px;
-		margin-bottom:1%;
-		line-height:1;
-	}
-	.text-feature{
-		font-family:"roboto_regular";
-		color:#555;
-		font-size:13px;
-		margin-top:10%;
-	}
 .pictos {
     padding-left: 50px;
 }

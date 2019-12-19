@@ -1,34 +1,7 @@
 {{#features}}
 	<li class="item">
-		<h3 class="title-feature">{{nom}}</h3>
-			<span style="font-family:'roboto_bold'"> Type :</span> {{type}}<br/>
-
+		<h3 class="rb-title-feature">{{nom}}</h3>
+			<span style="font-weight:bold"> Type :</span> {{type}}<br/>
        </p>
-
-
 	</li>
 {{/features}}
-
-<style>
-	.title-feature {
-		color: #032e46;
-		font-family:"roboto_bold";
-		font-size:23px;
-		margin-bottom:1%;
-		line-height:1;
-	}
-	.subtitle-feature {
-		color: #032e46;
-		font-family:"roboto_bold";
-		font-size:18px;
-		margin-top:7%;
-		line-height:1;
-	}
-	.text-feature{
-		font-family:"roboto_regular";
-		color:#555;
-		font-size:13px;
-		margin-top:10%;
-	}
-
-</style>

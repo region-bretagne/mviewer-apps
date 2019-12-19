@@ -50,7 +50,7 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/pays.mst"></template> 
 			</layer> 
 			<layer id="EPCI_053" name="Intercommunalité" visible="true" tiled="true"
-				queryable="true"
+				queryable="true" opacity="0.6"
                 infoformat="application/vnd.ogc.gml" featurecount="1"
 				sld="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/sld/epci_camaieu.sld" 
 				legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/legend/legend_epci.png"

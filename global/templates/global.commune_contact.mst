@@ -1,18 +1,18 @@
 {{#features}}
 	<li class="item">
-		<h3 class="title-feature">{{commune}}</h3>
+		<h3 class="rb-title-feature">{{commune}}</h3>
 
-		<p class="text-feature">		
-			<span style="font-family:'roboto_bold'"> Maire :</span> {{nom_maire}} {{prenom_maire}}<br/>
-			<span style="font-family:'roboto_bold'"> Adresse :</span> {{adresse_1}} {{code_postal}} {{commune}}<br/>
+		<p class="rb-text-feature">		
+			<span style="font-weight:bold"> Maire :</span> {{nom_maire}} {{prenom_maire}}<br/>
+			<span style="font-weight:bold"> Adresse :</span> {{adresse_1}} {{code_postal}} {{commune}}<br/>
 		{{#telephone}}
-			<span style="font-family:'roboto_bold'"> Téléphone :</span> {{telephone}}<br/>
+			<span style="font-weight:bold"> Téléphone :</span> {{telephone}}<br/>
 		{{/telephone}}
 		{{#fax}}
-			<span style="font-family:'roboto_bold'"> Fax :</span> {{fax}}<br/>
+			<span style="font-weight:bold"> Fax :</span> {{fax}}<br/>
 		{{/fax}}
 		{{#email}}
-			<span style="font-family:'roboto_bold'"> E Mail :</span> {{email}}<br/>
+			<span style="font-weight:bold"> E Mail :</span> {{email}}<br/>
 		{{/email}}
 		{{#site_web}}
 			<p> <a href="{{site_web}}" target=_blank"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Site Web</a>
@@ -21,26 +21,3 @@
        </p>
 	</li>
 {{/features}}
-
-<style>
-	.title-feature {
-		color: #032e46;
-		font-family:"roboto_bold";
-		font-size:23px;
-		margin-bottom:1%;
-		line-height:1;
-	}
-	.subtitle-feature {
-		color: #032e46;
-		font-family:"roboto_bold";
-		font-size:18px;
-		margin-top:7%;
-		line-height:1;
-	}
-	.text-feature{
-		font-family:"roboto_regular";
-		color:#555;
-		font-size:13px;
-		margin-top:10%;
-	}
-</style>

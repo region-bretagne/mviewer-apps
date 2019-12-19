@@ -1,1031 +1,1031 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sld:StyledLayerDescriptor xmlns:sld="http://www.opengis.net/sld" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gml="http://www.opengis.net/gml" version="1.0.0"  xmlns:xlink="http://www.w3.org/1999/xlink" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.0.0/StyledLayerDescriptor.xsd">
-  <sld:NamedLayer>
-    <sld:Name>dreal_b:EPCI_053</sld:Name>
-    <sld:UserStyle>
-      <sld:Name>dreal_b:EPCI_053</sld:Name>
-      <sld:FeatureTypeStyle>
-        <sld:Rule>
-          <sld:Name>Brest Métropole</sld:Name>
-          <sld:Description>
-            <sld:Title>Brest Métropole</sld:Title>
-          </sld:Description>
+<StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" version="1.1.0" xmlns:se="http://www.opengis.net/se" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <NamedLayer>
+    <se:Name>dreal_b:EPCI_053</se:Name>
+    <UserStyle>
+      <se:Name>dreal_b:EPCI_053</se:Name>
+      <se:FeatureTypeStyle>
+        <se:Rule>
+          <se:Name>Brest Métropole</se:Name>
+          <se:Description>
+            <se:Title>Brest Métropole</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>Brest Métropole</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#d5b082</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CA Concarneau Cornouaille Agglomération</sld:Name>
-          <sld:Description>
-            <sld:Title>CA Concarneau Cornouaille Agglomération</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#f2e7d9</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CA Concarneau Cornouaille Agglomération</se:Name>
+          <se:Description>
+            <se:Title>CA Concarneau Cornouaille Agglomération</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CA Concarneau Cornouaille Agglomération</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#d5b082</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CA de la Presqu'Ile de Guérande Atlantique</sld:Name>
-          <sld:Description>
-            <sld:Title>CA de la Presqu'Ile de Guérande Atlantique</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#dfc39f</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CA de la Presqu'Ile de Guérande Atlantique</se:Name>
+          <se:Description>
+            <se:Title>CA de la Presqu'Ile de Guérande Atlantique</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CA de la Presqu'Ile de Guérande Atlantique</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#8a4a38</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CA Dinan Agglomération</sld:Name>
-          <sld:Description>
-            <sld:Title>CA Dinan Agglomération</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#f2e7d9</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CA Dinan Agglomération</se:Name>
+          <se:Description>
+            <se:Title>CA Dinan Agglomération</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CA Dinan Agglomération</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#c29770</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CA du Pays de Saint-Malo - Saint-Malo Agglomération</sld:Name>
-          <sld:Description>
-            <sld:Title>CA du Pays de Saint-Malo - Saint-Malo Agglomération</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#f2e7d9</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CA du Pays de Saint-Malo - Saint-Malo Agglomération</se:Name>
+          <se:Description>
+            <se:Title>CA du Pays de Saint-Malo - Saint-Malo Agglomération</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CA du Pays de Saint-Malo - Saint-Malo Agglomération</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#d5b082</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CA Fougères Agglomération</sld:Name>
-          <sld:Description>
-            <sld:Title>CA Fougères Agglomération</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#d5b082</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CA Fougères Agglomération</se:Name>
+          <se:Description>
+            <se:Title>CA Fougères Agglomération</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CA Fougères Agglomération</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#d5b082</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CA Golfe du Morbihan - Vannes Agglomération</sld:Name>
-          <sld:Description>
-            <sld:Title>CA Golfe du Morbihan - Vannes Agglomération</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#dfc39f</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CA Golfe du Morbihan - Vannes Agglomération</se:Name>
+          <se:Description>
+            <se:Title>CA Golfe du Morbihan - Vannes Agglomération</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CA Golfe du Morbihan - Vannes Agglomération</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#d5b082</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat</sld:Name>
-          <sld:Description>
-            <sld:Title>CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#dfc39f</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat</se:Name>
+          <se:Description>
+            <se:Title>CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#9d644b</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CA Lamballe Terre et Mer</sld:Name>
-          <sld:Description>
-            <sld:Title>CA Lamballe Terre et Mer</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#e9d5bc</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CA Lamballe Terre et Mer</se:Name>
+          <se:Description>
+            <se:Title>CA Lamballe Terre et Mer</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CA Lamballe Terre et Mer</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#8a4a38</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CA Lannion-Trégor Communauté</sld:Name>
-          <sld:Description>
-            <sld:Title>CA Lannion-Trégor Communauté</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#dfc39f</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CA Lannion-Trégor Communauté</se:Name>
+          <se:Description>
+            <se:Title>CA Lannion-Trégor Communauté</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CA Lannion-Trégor Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#c29770</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CA Lorient Agglomération</sld:Name>
-          <sld:Description>
-            <sld:Title>CA Lorient Agglomération</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#f2e7d9</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CA Lorient Agglomération</se:Name>
+          <se:Description>
+            <se:Title>CA Lorient Agglomération</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CA Lorient Agglomération</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#9d644b</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CA Morlaix Communauté</sld:Name>
-          <sld:Description>
-            <sld:Title>CA Morlaix Communauté</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#dfc39f</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CA Morlaix Communauté</se:Name>
+          <se:Description>
+            <se:Title>CA Morlaix Communauté</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CA Morlaix Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#681d17</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CA Quimper Bretagne Occidentale</sld:Name>
-          <sld:Description>
-            <sld:Title>CA Quimper Bretagne Occidentale</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#dfc39f</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CA Quimper Bretagne Occidentale</se:Name>
+          <se:Description>
+            <se:Title>CA Quimper Bretagne Occidentale</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CA Quimper Bretagne Occidentale</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#c29770</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CA Quimperlé Communauté</sld:Name>
-          <sld:Description>
-            <sld:Title>CA Quimperlé Communauté</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#d5b082</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CA Quimperlé Communauté</se:Name>
+          <se:Description>
+            <se:Title>CA Quimperlé Communauté</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CA Quimperlé Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#c29770</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CA Redon Agglomération</sld:Name>
-          <sld:Description>
-            <sld:Title>CA Redon Agglomération</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#f2e7d9</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CA Redon Agglomération</se:Name>
+          <se:Description>
+            <se:Title>CA Redon Agglomération</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CA Redon Agglomération</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#b07d5d</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CA Saint-Brieuc Armor Agglomération</sld:Name>
-          <sld:Description>
-            <sld:Title>CA Saint-Brieuc Armor Agglomération</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#f2e7d9</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CA Saint-Brieuc Armor Agglomération</se:Name>
+          <se:Description>
+            <se:Title>CA Saint-Brieuc Armor Agglomération</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CA Saint-Brieuc Armor Agglomération</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#c29770</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CA Vitré Communauté</sld:Name>
-          <sld:Description>
-            <sld:Title>CA Vitré Communauté</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#f2e7d9</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CA Vitré Communauté</se:Name>
+          <se:Description>
+            <se:Title>CA Vitré Communauté</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CA Vitré Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#9d644b</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC Arc Sud Bretagne</sld:Name>
-          <sld:Description>
-            <sld:Title>CC Arc Sud Bretagne</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#e9d5bc</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC Arc Sud Bretagne</se:Name>
+          <se:Description>
+            <se:Title>CC Arc Sud Bretagne</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC Arc Sud Bretagne</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#c29770</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC Auray Quiberon Terre Atlantique</sld:Name>
-          <sld:Description>
-            <sld:Title>CC Auray Quiberon Terre Atlantique</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#e9d5bc</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC Auray Quiberon Terre Atlantique</se:Name>
+          <se:Description>
+            <se:Title>CC Auray Quiberon Terre Atlantique</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC Auray Quiberon Terre Atlantique</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#c29770</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC Bretagne porte de Loire Communauté</sld:Name>
-          <sld:Description>
-            <sld:Title>CC Bretagne porte de Loire Communauté</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#e9d5bc</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC Bretagne porte de Loire Communauté</se:Name>
+          <se:Description>
+            <se:Title>CC Bretagne porte de Loire Communauté</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC Bretagne porte de Loire Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#c29770</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC Bretagne Romantique</sld:Name>
-          <sld:Description>
-            <sld:Title>CC Bretagne Romantique</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#e9d5bc</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC Bretagne Romantique</se:Name>
+          <se:Description>
+            <se:Title>CC Bretagne Romantique</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC Bretagne Romantique</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#8a4a38</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC Cap Sizun - Pointe du Raz</sld:Name>
-          <sld:Description>
-            <sld:Title>CC Cap Sizun - Pointe du Raz</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#e9d5bc</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC Cap Sizun - Pointe du Raz</se:Name>
+          <se:Description>
+            <se:Title>CC Cap Sizun - Pointe du Raz</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC Cap Sizun - Pointe du Raz</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#b07d5d</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC Centre Morbihan Communauté</sld:Name>
-          <sld:Description>
-            <sld:Title>CC Centre Morbihan Communauté</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#e9d5bc</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC Centre Morbihan Communauté</se:Name>
+          <se:Description>
+            <se:Title>CC Centre Morbihan Communauté</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC Centre Morbihan Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#b07d5d</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC Communauté Lesneven Côte des Légendes</sld:Name>
-          <sld:Description>
-            <sld:Title>CC Communauté Lesneven Côte des Légendes</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#f2e7d9</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC Communauté Lesneven Côte des Légendes</se:Name>
+          <se:Description>
+            <se:Title>CC Communauté Lesneven Côte des Légendes</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC Communauté Lesneven Côte des Légendes</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#b07d5d</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC Côte d'Emeraude</sld:Name>
-          <sld:Description>
-            <sld:Title>CC Côte d'Emeraude</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#e9d5bc</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC Côte d'Emeraude</se:Name>
+          <se:Description>
+            <se:Title>CC Côte d'Emeraude</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC Côte d'Emeraude</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#b07d5d</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC Couesnon Marches de Bretagne</sld:Name>
-          <sld:Description>
-            <sld:Title>CC Couesnon Marches de Bretagne</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#e9d5bc</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC Couesnon Marches de Bretagne</se:Name>
+          <se:Description>
+            <se:Title>CC Couesnon Marches de Bretagne</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC Couesnon Marches de Bretagne</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#b07d5d</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC de Belle Ile en mer</sld:Name>
-          <sld:Description>
-            <sld:Title>CC de Belle Ile en mer</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#d5b082</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC de Belle Ile en mer</se:Name>
+          <se:Description>
+            <se:Title>CC de Belle Ile en mer</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC de Belle Ile en mer</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#8a4a38</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC de Blavet Bellevue Océan</sld:Name>
-          <sld:Description>
-            <sld:Title>CC de Blavet Bellevue Océan</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#e9d5bc</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC de Blavet Bellevue Océan</se:Name>
+          <se:Description>
+            <se:Title>CC de Blavet Bellevue Océan</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC de Blavet Bellevue Océan</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#681d17</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC de Brocéliande</sld:Name>
-          <sld:Description>
-            <sld:Title>CC de Brocéliande</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#d5b082</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC de Brocéliande</se:Name>
+          <se:Description>
+            <se:Title>CC de Brocéliande</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC de Brocéliande</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#b07d5d</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC de Haute Cornouaille</sld:Name>
-          <sld:Description>
-            <sld:Title>CC de Haute Cornouaille</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#f2e7d9</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC de Haute Cornouaille</se:Name>
+          <se:Description>
+            <se:Title>CC de Haute Cornouaille</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC de Haute Cornouaille</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#b07d5d</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC De l'Oust à Brocéliande Communauté</sld:Name>
-          <sld:Description>
-            <sld:Title>CC De l'Oust à Brocéliande Communauté</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#e9d5bc</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC De l'Oust à Brocéliande Communauté</se:Name>
+          <se:Description>
+            <se:Title>CC De l'Oust à Brocéliande Communauté</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC De l'Oust à Brocéliande Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#8a4a38</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC de Pleyben-Châteaulin-Porzay</sld:Name>
-          <sld:Description>
-            <sld:Title>CC de Pleyben-Châteaulin-Porzay</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#e9d5bc</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC de Pleyben-Châteaulin-Porzay</se:Name>
+          <se:Description>
+            <se:Title>CC de Pleyben-Châteaulin-Porzay</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC de Pleyben-Châteaulin-Porzay</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#9d644b</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC de Saint-Méen Montauban</sld:Name>
-          <sld:Description>
-            <sld:Title>CC de Saint-Méen Montauban</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#dfc39f</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC de Saint-Méen Montauban</se:Name>
+          <se:Description>
+            <se:Title>CC de Saint-Méen Montauban</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC de Saint-Méen Montauban</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#9d644b</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC de Vallons de Haute-Bretagne Communauté</sld:Name>
-          <sld:Description>
-            <sld:Title>CC de Vallons de Haute-Bretagne Communauté</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#e9d5bc</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC de Vallons de Haute-Bretagne Communauté</se:Name>
+          <se:Description>
+            <se:Title>CC de Vallons de Haute-Bretagne Communauté</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC de Vallons de Haute-Bretagne Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#d5b082</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC Douarnenez Communauté</sld:Name>
-          <sld:Description>
-            <sld:Title>CC Douarnenez Communauté</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#d5b082</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC Douarnenez Communauté</se:Name>
+          <se:Description>
+            <se:Title>CC Douarnenez Communauté</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC Douarnenez Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#d5b082</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC du Haut Pays Bigouden</sld:Name>
-          <sld:Description>
-            <sld:Title>CC du Haut Pays Bigouden</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#f2e7d9</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC du Haut Pays Bigouden</se:Name>
+          <se:Description>
+            <se:Title>CC du Haut Pays Bigouden</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC du Haut Pays Bigouden</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#9d644b</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC du Kreiz-Breizh</sld:Name>
-          <sld:Description>
-            <sld:Title>CC du Kreiz-Breizh</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#dfc39f</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC du Kreiz-Breizh</se:Name>
+          <se:Description>
+            <se:Title>CC du Kreiz-Breizh</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC du Kreiz-Breizh</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#d5b082</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC du Pays Bigouden Sud</sld:Name>
-          <sld:Description>
-            <sld:Title>CC du Pays Bigouden Sud</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#dfc39f</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC du Pays Bigouden Sud</se:Name>
+          <se:Description>
+            <se:Title>CC du Pays Bigouden Sud</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC du Pays Bigouden Sud</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#681d17</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC du Pays de Chateaugiron Communauté</sld:Name>
-          <sld:Description>
-            <sld:Title>CC du Pays de Chateaugiron Communauté</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#e9d5bc</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC du Pays de Chateaugiron Communauté</se:Name>
+          <se:Description>
+            <se:Title>CC du Pays de Chateaugiron Communauté</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC du Pays de Chateaugiron Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#c29770</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC du Pays de Dol et de la Baie du Mont St Michel</sld:Name>
-          <sld:Description>
-            <sld:Title>CC du Pays de Dol et de la Baie du Mont St Michel</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#f2e7d9</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC du Pays de Dol et de la Baie du Mont St Michel</se:Name>
+          <se:Description>
+            <se:Title>CC du Pays de Dol et de la Baie du Mont St Michel</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC du Pays de Dol et de la Baie du Mont St Michel</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#9d644b</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC du Pays de Landerneau-Daoulas</sld:Name>
-          <sld:Description>
-            <sld:Title>CC du Pays de Landerneau-Daoulas</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#dfc39f</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC du Pays de Landerneau-Daoulas</se:Name>
+          <se:Description>
+            <se:Title>CC du Pays de Landerneau-Daoulas</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC du Pays de Landerneau-Daoulas</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#9d644b</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC du Pays de Landivisiau</sld:Name>
-          <sld:Description>
-            <sld:Title>CC du Pays de Landivisiau</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#dfc39f</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC du Pays de Landivisiau</se:Name>
+          <se:Description>
+            <se:Title>CC du Pays de Landivisiau</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC du Pays de Landivisiau</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#8a4a38</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC du Pays Des Abers</sld:Name>
-          <sld:Description>
-            <sld:Title>CC du Pays Des Abers</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#f2e7d9</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC du Pays Des Abers</se:Name>
+          <se:Description>
+            <se:Title>CC du Pays Des Abers</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC du Pays Des Abers</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#8a4a38</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC du Pays d'Iroise</sld:Name>
-          <sld:Description>
-            <sld:Title>CC du Pays d'Iroise</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#d5b082</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC du Pays d'Iroise</se:Name>
+          <se:Description>
+            <se:Title>CC du Pays d'Iroise</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC du Pays d'Iroise</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#b07d5d</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC du Pays Fouesnantais</sld:Name>
-          <sld:Description>
-            <sld:Title>CC du Pays Fouesnantais</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#dfc39f</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC du Pays Fouesnantais</se:Name>
+          <se:Description>
+            <se:Title>CC du Pays Fouesnantais</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC du Pays Fouesnantais</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#8a4a38</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC du Val d'Ille - Aubigné</sld:Name>
-          <sld:Description>
-            <sld:Title>CC du Val d'Ille - Aubigné</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#f2e7d9</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC du Val d'Ille - Aubigné</se:Name>
+          <se:Description>
+            <se:Title>CC du Val d'Ille - Aubigné</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC du Val d'Ille - Aubigné</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#c29770</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC Haut-Léon Communauté</sld:Name>
-          <sld:Description>
-            <sld:Title>CC Haut-Léon Communauté</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#f2e7d9</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC Haut-Léon Communauté</se:Name>
+          <se:Description>
+            <se:Title>CC Haut-Léon Communauté</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC Haut-Léon Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#d5b082</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC Leff Armor Communauté</sld:Name>
-          <sld:Description>
-            <sld:Title>CC Leff Armor Communauté</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#d5b082</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC Leff Armor Communauté</se:Name>
+          <se:Description>
+            <se:Title>CC Leff Armor Communauté</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC Leff Armor Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#8a4a38</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC Liffré - Cormier Communauté</sld:Name>
-          <sld:Description>
-            <sld:Title>CC Liffré - Cormier Communauté</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#d5b082</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC Liffré - Cormier Communauté</se:Name>
+          <se:Description>
+            <se:Title>CC Liffré - Cormier Communauté</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC Liffré - Cormier Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#8a4a38</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC Loudéac Communauté - Bretagne Centre</sld:Name>
-          <sld:Description>
-            <sld:Title>CC Loudéac Communauté - Bretagne Centre</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#d5b082</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC Loudéac Communauté - Bretagne Centre</se:Name>
+          <se:Description>
+            <se:Title>CC Loudéac Communauté - Bretagne Centre</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC Loudéac Communauté - Bretagne Centre</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#b07d5d</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC Montfort Communauté</sld:Name>
-          <sld:Description>
-            <sld:Title>CC Montfort Communauté</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#d5b082</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC Montfort Communauté</se:Name>
+          <se:Description>
+            <se:Title>CC Montfort Communauté</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC Montfort Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#8a4a38</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC Monts d'Arrée Communauté</sld:Name>
-          <sld:Description>
-            <sld:Title>CC Monts d'Arrée Communauté</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#d5b082</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC Monts d'Arrée Communauté</se:Name>
+          <se:Description>
+            <se:Title>CC Monts d'Arrée Communauté</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC Monts d'Arrée Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#d5b082</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC Ploërmel Communauté</sld:Name>
-          <sld:Description>
-            <sld:Title>CC Ploërmel Communauté</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#d5b082</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC Ploërmel Communauté</se:Name>
+          <se:Description>
+            <se:Title>CC Ploërmel Communauté</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC Ploërmel Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#681d17</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC Poher Communauté</sld:Name>
-          <sld:Description>
-            <sld:Title>CC Poher Communauté</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#dfc39f</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC Poher Communauté</se:Name>
+          <se:Description>
+            <se:Title>CC Poher Communauté</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC Poher Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#c29770</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC Pontivy Communauté</sld:Name>
-          <sld:Description>
-            <sld:Title>CC Pontivy Communauté</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#f2e7d9</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC Pontivy Communauté</se:Name>
+          <se:Description>
+            <se:Title>CC Pontivy Communauté</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC Pontivy Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#9d644b</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC Presqu'Ile de Crozon-Aulne maritime</sld:Name>
-          <sld:Description>
-            <sld:Title>CC Presqu'Ile de Crozon-Aulne maritime</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#e9d5bc</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC Presqu'Ile de Crozon-Aulne maritime</se:Name>
+          <se:Description>
+            <se:Title>CC Presqu'Ile de Crozon-Aulne maritime</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC Presqu'Ile de Crozon-Aulne maritime</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#681d17</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC Questembert Communauté</sld:Name>
-          <sld:Description>
-            <sld:Title>CC Questembert Communauté</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#e9d5bc</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC Questembert Communauté</se:Name>
+          <se:Description>
+            <se:Title>CC Questembert Communauté</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC Questembert Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#681d17</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC Roche aux Fées Communauté</sld:Name>
-          <sld:Description>
-            <sld:Title>CC Roche aux Fées Communauté</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#d5b082</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC Roche aux Fées Communauté</se:Name>
+          <se:Description>
+            <se:Title>CC Roche aux Fées Communauté</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC Roche aux Fées Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#d5b082</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>CC Roi Morvan Communauté</sld:Name>
-          <sld:Description>
-            <sld:Title>CC Roi Morvan Communauté</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#d5b082</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC Roi Morvan Communauté</se:Name>
+          <se:Description>
+            <se:Title>CC Roi Morvan Communauté</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>CC Roi Morvan Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#681d17</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-        <sld:Rule>
-          <sld:Name>Rennes Métropole</sld:Name>
-          <sld:Description>
-            <sld:Title>Rennes Métropole</sld:Title>
-          </sld:Description>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#d5b082</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>Rennes Métropole</se:Name>
+          <se:Description>
+            <se:Title>Rennes Métropole</se:Title>
+          </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
               <ogc:Literal>Rennes Métropole</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
-          <sld:PolygonSymbolizer>
-            <sld:Fill>
-              <sld:CssParameter name="fill">#681d17</sld:CssParameter>
-            </sld:Fill>
-          </sld:PolygonSymbolizer>
-        </sld:Rule>
-      </sld:FeatureTypeStyle>
-    </sld:UserStyle>
-  </sld:NamedLayer>
-</sld:StyledLayerDescriptor>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#dfc39f</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+      </se:FeatureTypeStyle>
+    </UserStyle>
+  </NamedLayer>
+</StyledLayerDescriptor>

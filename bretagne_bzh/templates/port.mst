@@ -1,6 +1,6 @@
 {{#features}}
 	<li class="item">
-		<h2 class="title-feature">{{nom}}</h2>
+		<h2 class="rb-title-feature">{{nom}}</h2>
 		<div class="plaisance {{plaisance}}"></div>
 		<div class="peche {{peche}}"></div>
 		<div class="commerce {{commerce}}"></div>
@@ -11,21 +11,6 @@
 {{/features}}
 
 <style>
-	.title-feature {
-		color: #5A9EAA;
-		font-family:"region_bold";
-		font-size:25px;
-		margin-bottom:3%;
-		line-height:1;
-	}
-	.text-feature{
-		font-family:"Open Sans";
-		color:#555;
-		font-size:15px;
-		margin-top:2%;
-		margin-bottom:2%;
-	}
-
 .icon-bateau{
 	font-size : 30px;
 	color : #b0252e;

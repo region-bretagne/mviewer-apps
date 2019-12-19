@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="Port de Saint-Malo" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html"   exportpng="true" measuretools="true" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/css/blue.css"/>
+    <application title="Port de Saint-Malo" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html"   exportpng="true" measuretools="true" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/css/kartenn_port.css"/>
     <mapoptions maxzoom="18" projection="EPSG:3857" center="-224763,6214846" zoom="13" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery"><!-- style="default"||gallery" -->            		

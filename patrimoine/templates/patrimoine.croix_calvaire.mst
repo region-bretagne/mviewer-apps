@@ -1,0 +1,26 @@
+{{#features}}
+	<li class="item">
+		<h3 class="rb-title-feature">{{libelle}}</h3>
+		<p class="rb-text-feature">
+		{{#epoque}} 
+		<b>Datation</b> : {{epoque}}<br/>
+		{{/epoque}} 
+		{{#adresse}} 
+			<b>Adresse</b> : {{adresse}}<br/>
+		{{/adresse}} 
+		{{#lieudit}} 
+			<b>Lieu Dit</b> : {{lieudit}}<br/>
+		{{/lieudit}} 
+		<b>Commune</b> : {{ville}}<br/>
+		<b>Sélection étude</b> : {{selection_etude}}<br/>
+			<img src="{{image}}" class="img-responsive center-block" />
+		</p>
+		<div class="rb-but-list">
+			<a href="{{fiche}}" target="_blank" title="Fiche détaillée (ouvrir dans une nouvelle fen.)" class="rb-but-link"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> <b>Lien fiche</b></a>
+		</div>
+		<p class="rb-description-feature">
+			<i>Association croix et calvaires de Bretagne</i><br/>
+		</p>
+
+	</li>
+{{/features}}

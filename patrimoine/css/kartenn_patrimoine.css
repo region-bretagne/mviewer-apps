@@ -1,6 +1,8 @@
 /******************************************************************************
 --------------------------- CSS KARTENN PATRIMOINE  -----------------
 ********************************************************************************/
+@import url("../../crbicon/crbicon.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 /* Import des fonts*/
 		@font-face {
@@ -23,6 +25,15 @@
 		    font-family: 'spotkabold';
 		    src: url('../../global/font/spotkabold.ttf');
 		}
+		
+@font-face {
+  font-family: 'region_bold';
+  src: url("../../global/font/RB/RegionBretagneNew-Bold.ttf"); }
+
+@font-face {
+  font-family: 'region_regular';
+  src: url("../../global/font/RB/RegionBretagneNew-Regular.ttf"); }
+
 /*******************************
 ------------- NAVBAR
 ********************************/
@@ -273,7 +284,7 @@ h4.title{
 	}
 
 .mv-theme.panel-heading{
-	background-color: #2f476c;
+	background-color: #b0006b;
 }
 
 h4.panel-title{
@@ -609,31 +620,64 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 
 /* ----------------- CSS IFRAME + FONCTIONNALITES ------------ */
 
-/* Fenêtre Template Geoserver */
-
-/*----Style fenêtre de configuration - Indicateurs Transports*/
-p.text{
-	font-family: 'roboto_regular', Arial, Sans-serif;
-	font-size:12px;
-	padding-top: 3%;
-	padding-left: 6%;
+/*Mise en forme des MST*/
+#rb-puces li {
+	list-style: none;
+	color: #555;
 }
-
-.indicateur {
-	font-family: 'spotkabold';
-	font-size: 38px;
-	text-transform: uppercase;
-	letter-spacing: -0.2pt;
-	color:#BA88A4;
+#rb-puces li:before{
+	content:"· ";
+	font-size:50px;
+	vertical-align:middle;
+	line-height:20px;
+	color: #BA88A4;
 }
-
-.chiffres_cles{
-	font-family:'spotkabold';
-	font-size:38px;
-	margin-top:-13px;
-	margin-bottom:-8px;
+.rb-title-feature {
+	color: #BA88A4;
+	font-family:"region_bold";
+	font-size:20px;
+	margin-bottom:3%;
+	line-height:1;
 }
-
-.panel-heading.mv-theme {
-    background: #69003f;
+.rb-subtitle-feature {
+	color: #BA88A4;
+	font-family:"region_bold";
+	font-size:16px;
+	margin-top:2%;
+	line-height:1;
 }
+.rb-text-feature{
+	font-family:"Open Sans";
+	color:#555;
+	font-size:13px;
+	margin-top:2%;
+	margin-bottom:2%;
+}
+.rb-description-feature{
+	font-family:"Open Sans";
+	color:#555;
+	font-size:11px;
+	margin:2%;
+	text-align: justify;
+}
+.rb-but-list{
+	margin-top:4%;
+}
+.rb-but-link, .rb-but-link:focus, .rb-but-link:hover{
+	display:inline-block;
+	padding:0.5em 1em;
+	margin:0 0.3em 0.3em 0;
+	border-radius:0.3em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'OpenSans-Bold',sans-serif;
+	font-weight:300;
+	color:#FFFFFF;
+	background-color:#BA88A4;
+	text-align:center;
+	transition: all 0.2s;
+}
+.rb-but-link:hover{
+	background-color:#b0006b;
+}	
+		

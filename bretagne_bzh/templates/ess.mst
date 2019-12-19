@@ -1,13 +1,15 @@
 {{#features}}
 	<li class="item">
-		<h2 class="title-feature">{{nom}}</h2>
-		<p class="text-feature">		
+		<h2 class="rb-title-feature">{{nom}}</h2>
+		<p class="rb-text-feature">		
 			<b>Type structure :</b> {{type_structure}}	<br>
 			<b>Adresse :</b> {{adresse}} {{code_postal}} {{ville}}	
 		</p>
+		<div class="rb-but-list">
         {{#site_web}}
-		<center><a href="{{site_web}}"  target="_blank" title="Site internet" class="but_link"><span class="fa fa-globe" aria-hidden="true"></span> Site internet</a>   	</center>	
+		<a href="{{site_web}}"  target="_blank" title="Site internet" class="rb-but-link"><span class="fa fa-globe" aria-hidden="true"></span> Site internet</a>
         {{/site_web}}
+		</div>
 	</li>
 {{/features}}
 
@@ -17,54 +19,4 @@
 	font-size : 20px;
 	color : #FFFFFF;
 }
-	.title-feature {
-		color: #5A9EAA;
-		font-family:"region_bold";
-		font-size:25px;
-		margin-bottom:3%;
-		line-height:1;
-	}
-	.subtitle-feature {
-		color: #5A9EAA;
-		font-family:"region_bold";
-		font-size:18px;
-		margin-top:2%;
-		line-height:1;
-	}
-	.text-feature{
-		font-family:"Open Sans";
-		color:#555;
-		font-size:15px;
-		margin-top:2%;
-		margin-bottom:2%;
-	}
-	.description-feature{
-		font-family:"Open Sans";
-		color:#555;
-		font-size:13px;
-		margin-top:2%;
-		margin-bottom:2%;
-	}
-	.buton_liste{
-		margin-top:5%;
-		height:30px;
-	}
-	.but_link, .but_link:focus, .but_link:hover{
-		display:inline-block;
-		padding:0.5em 1em;
-		margin:0 0.3em 0.3em 0;
-		border-radius:0.3em;
-		box-sizing: border-box;
-		text-decoration:none;
-		font-family:'OpenSans-Bold',sans-serif;
-		font-weight:300;
-		color:#FFFFFF;
-		background-color:#5A9EAA;
-		text-align:center;
-		transition: all 0.2s;
-	}
-	.but_link:hover{
-		background-color:#49828D;
-	}	
-
 </style>

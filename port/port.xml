@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="Kartenn port et aéroport" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/port_help.html"   exportpng="true" measuretools="true" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/css/blue.css"/>
+    <application title="Kartenn port et aéroport" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/port_help.html"   exportpng="true" measuretools="true" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/css/kartenn_port.css"/>
     <mapoptions maxzoom="19" projection="EPSG:3857" center="-220750.13768758904,6144925.57790189" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 	<baselayers style="gallery"><!-- style="default"||gallery" -->            		
         <baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="GéoPortail" thumbgallery="img/basemap/ortho.jpg"

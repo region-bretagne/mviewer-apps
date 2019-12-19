@@ -1,0 +1,12 @@
+{{#features}}
+	<li class="item">
+		<h2 class="rb-title-feature">{{nom_etablissement}}</h2>
+		<p class="rb-text-feature">		
+			<b>Adresse :</b> {{adresse}} {{code_postal}} {{ville}}	<br>
+			<b>Statut :</b> {{statut}}	<br>
+			{{#annee_demarrage}}
+			<b>Année d'engagement :</b> {{annee_demarrage}}	<br>
+			{{/annee_demarrage}}
+		</p>
+	</li>
+{{/features}}

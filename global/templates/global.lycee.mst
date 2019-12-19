@@ -1,15 +1,15 @@
 {{#features}}
 	<li class="item">
-		<h3 class="title-feature">{{nom}}</h3>
-		<p class="text-feature">
-			<h4 class="sub-title">Localisation</h4>		
-			<span style="font-family:'roboto_bold'"> Commune :</span> {{ville}}<br/>
-			<span style="font-family:'roboto_bold'"> Code postal :</span> {{code_postal}}<br/>
-			<span style="font-family:'roboto_bold'"> Adresse :</span> {{adresse}}<br/><br/>
-			<h4 class="sub-title">Caractéristiques</h4>
-			<span style="font-family:'roboto_bold'"> Type :</span> {{type_etabl}}<br/>
-			<span style="font-family:'roboto_bold'"> Secteur :</span> {{secteur_li}}<br/>
-			<span style="font-family:'roboto_bold'"> Réseau :</span> {{reseau_lib}}<br/>			
+		<h3 class="rb-title-feature">{{nom}}</h3>
+		<p class="rb-text-feature">
+			<h4 class="rb-subtitle-feature">Localisation</h4>		
+			<span style="font-weight:bold"> Commune :</span> {{ville}}<br/>
+			<span style="font-weight:bold"> Code postal :</span> {{code_postal}}<br/>
+			<span style="font-weight:bold"> Adresse :</span> {{adresse}}<br/><br/>
+			<h4 class="rb-subtitle-feature">Caractéristiques</h4>
+			<span style="font-weight:bold"> Type :</span> {{type_etabl}}<br/>
+			<span style="font-weight:bold"> Secteur :</span> {{secteur_li}}<br/>
+			<span style="font-weight:bold"> Réseau :</span> {{reseau_lib}}<br/>			
 		</p>
 		{{#photo}}
 			<img src="{{photo}}" class="img-responsive" style="margin-top:5%;" />
@@ -17,23 +17,3 @@
 		
 	</li>
 {{/features}}
-
-<style>
-	.title-feature {
-		color: #032E46;
-		font-family:"roboto_bold";
-		font-size:23px;
-		margin-bottom:1%;
-		line-height:1;
-	}
-	.text-feature{
-		font-family:"roboto_regular";
-		color:#555;
-		font-size:13px;
-		margin-top:10%;
-	}
-	.sub-title{
-		color: #032E46;
-		font-family:"roboto_bold";
-	}
-</style>

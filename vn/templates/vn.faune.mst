@@ -1,91 +1,23 @@
 {{#features}}
 	<li class="item">
-		<p class="text-feature">
-			<span style="font-family:'roboto_bold'"> Catégorie :</span> {{categorie}}<br/>
-			<span style="font-family:'roboto_bold'"> Nom Français :</span> {{nom_francais}}<br/>
-			<span style="font-family:'roboto_bold'"> Nom Latin :</span> {{nom_latin}}<br/>
-			<span style="font-family:'roboto_bold'"> Type d'observation :</span> {{type_observation}}<br/>
-			<span style="font-family:'roboto_bold'"> Nombre :</span> {{nombre}}<br/>
-			<span style="font-family:'roboto_bold'"> Date :</span> {{date}}<br/>
-			<span style="font-family:'roboto_bold'"> Producteur :</span> {{producteur}}<br/>
-			<span style="font-family:'roboto_bold'"> Protection européenne :</span> {{protection_europeenne}}<br/>
-			<span style="font-family:'roboto_bold'"> Protection nationale :</span> {{protection_nationale}}<br/>
-			<span style="font-family:'roboto_bold'"> Liste rouge nationale :</span> {{liste_rouge_national}}<br/>
-			<span style="font-family:'roboto_bold'"> liste rouge Bretagne :</span> {{liste_rouge_bretagne}}<br/>
-			<span style="font-family:'roboto_bold'"> Classement divers :</span> {{classement_divers}}<br/>
-			<span style="font-family:'roboto_bold'"> Enjeu patrimonial :</span> {{enjeu_patrimonial}}<br/>
-			<span style="font-family:'roboto_bold'"> Remarques :</span> {{remarque}}<br/>
+		<p class="rb-text-feature">
+			<span style="font-weight:bold"> Catégorie :</span> {{categorie}}<br/>
+			<span style="font-weight:bold"> Nom Français :</span> {{nom_francais}}<br/>
+			<span style="font-weight:bold"> Nom Latin :</span> {{nom_latin}}<br/>
+			<span style="font-weight:bold"> Type d'observation :</span> {{type_observation}}<br/>
+			<span style="font-weight:bold"> Nombre :</span> {{nombre}}<br/>
+			<span style="font-weight:bold"> Date :</span> {{date}}<br/>
+			<span style="font-weight:bold"> Producteur :</span> {{producteur}}<br/>
+			<span style="font-weight:bold"> Protection européenne :</span> {{protection_europeenne}}<br/>
+			<span style="font-weight:bold"> Protection nationale :</span> {{protection_nationale}}<br/>
+			<span style="font-weight:bold"> Liste rouge nationale :</span> {{liste_rouge_national}}<br/>
+			<span style="font-weight:bold"> liste rouge Bretagne :</span> {{liste_rouge_bretagne}}<br/>
+			<span style="font-weight:bold"> Classement divers :</span> {{classement_divers}}<br/>
+			<span style="font-weight:bold"> Enjeu patrimonial :</span> {{enjeu_patrimonial}}<br/>
+			<span style="font-weight:bold"> Remarques :</span> {{remarque}}<br/>
         </p>
         {{#photo}}                
 			<img src="{{photo}}" class="img-responsive" />
         {{/photo}}                
-
-
 	</li>
 {{/features}}
-
-<style>
-	.title-feature {
-		color: #032e46;
-		font-family:"roboto_bold";
-		font-size:23px;
-		margin-bottom:1%;
-		line-height:1;
-	}
-	.subtitle-feature {
-		color: #032e46;
-		font-family:"roboto_bold";
-		font-size:18px;
-		margin-top:7%;
-		line-height:1;
-	}
-	.text-feature{
-		font-family:"roboto_regular";
-		color:#555;
-		font-size:13px;
-		margin-top:10%;
-	}
-	.info.N {
-   		background-image: url(https://kartennn.region-bretagne.fr/doc/transports/icons/non_1.png);
-   		background-size: 16px;
-    	background-repeat: no-repeat;
-   	    background-position-x: 0px;
-   	    margin-bottom:3px;
-	}
-	.info.O {
-   		background-image: url(https://kartennn.region-bretagne.fr/doc/transports/icons/oui.png);
-   		background-size: 16px;
-    	background-repeat: no-repeat;
-   	    background-position-x: 0px;
-   	    margin-bottom:3px;
-	}
-	.but_link{
-	    padding:10px 0 10px 0;
-	    font-size:13px;
-	    font-family:'roboto_regular', Arial, Sans-serif;
-	   	background:rgba(3, 46, 70, 0.9);
-	    color:#fff;
-	    width:100px;
-	    border:1px solid #032e46;
-	    margin-left: 25%;
-	}
-	.but_link:hover{
-	    background:rgba(3, 46, 70, 1);
-	    border:1px solid #032e46;
-	}
-	.but_link p{
-	  margin: 0;
-	  text-align:center;
-	  color:#fff;
-	} 
-	.but_link a{
-	  color: #fff;
-	}
-	.but_link a:hover{
-	  color:#fff;
-	}
-	.but_link a:focus{
-	  color:#fff; 
-	}
-
-</style>

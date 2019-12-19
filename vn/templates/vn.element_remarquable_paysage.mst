@@ -1,41 +1,17 @@
 {{#features}}
 	<li class="item">
-		<h3 class="title-feature">{{sequence}}</h3>
+		<h3 class="rb-title-feature">{{sequence}}</h3>
         {{#photo}}                
 			<img src="{{photo}}" class="img-responsive" />
         {{/photo}}                
 		<p class="text-feature">		
-			<span style="font-family:'roboto_bold'"> Type :</span> {{type}}<br/>
-			<span style="font-family:'roboto_bold'"> Sous type :</span> {{ss_type}}<br/>
-			<span style="font-family:'roboto_bold'"> Gestion :</span> {{gestion}}<br/>
-			<span style="font-family:'roboto_bold'"> Description :</span> {{descriptif}}<br/>
+			<span style="font-weight:bold"> Type :</span> {{type}}<br/>
+			<span style="font-weight:bold"> Sous type :</span> {{ss_type}}<br/>
+			<span style="font-weight:bold"> Gestion :</span> {{gestion}}<br/>
+			<span style="font-weight:bold"> Description :</span> {{descriptif}}<br/>
 
        </p>
 
 
 	</li>
 {{/features}}
-
-<style>
-	.title-feature {
-		color: #032e46;
-		font-family:"roboto_bold";
-		font-size:23px;
-		margin-bottom:1%;
-		line-height:1;
-	}
-	.subtitle-feature {
-		color: #032e46;
-		font-family:"roboto_bold";
-		font-size:18px;
-		margin-top:7%;
-		line-height:1;
-	}
-	.text-feature{
-		font-family:"roboto_regular";
-		color:#555;
-		font-size:13px;
-		margin-top:10%;
-	}
-
-</style>

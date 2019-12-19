@@ -1,28 +1,26 @@
 /******************************************************************************
---------------------------- CSS KARTENN PATRIMOINE  -----------------
+--------------------------- CSS KARTENN VN  -----------------
 ********************************************************************************/
+@import url("../../crbicon/crbicon.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 /* Import des fonts*/
-		@font-face {
-		    font-family: 'roboto_black';
-		    src: url('../../global/font/Roboto/Roboto-Black.ttf');
-		}
-		@font-face {
-		    font-family: 'roboto_bold';
-		    src: url('../../global/font/Roboto/Roboto-Bold.ttf');
-		}
-		@font-face {
-		    font-family: 'roboto_medium';
-		    src: url('../../global/font/Roboto/Roboto-Medium.ttf');
-		}
-		@font-face {
-		    font-family: 'roboto_regular';
-		    src: url('../../global/font/Roboto/Roboto-Regular.ttf');
-		}
-		@font-face {
-		    font-family: 'spotkabold';
-		    src: url('../../global/font/spotkabold.ttf');
-		}
+@font-face {
+  font-family: 'roboto_bold';
+  src: url("../../global/font/Roboto/Roboto-Bold.ttf"); }
+
+@font-face {
+  font-family: 'roboto_regular';
+  src: url("../../global/font/Roboto/Roboto-Regular.ttf"); }
+
+@font-face {
+  font-family: 'region_bold';
+  src: url("../../global/font/RB/RegionBretagneNew-Bold.ttf"); }
+
+@font-face {
+  font-family: 'region_regular';
+  src: url("../../global/font/RB/RegionBretagneNew-Regular.ttf"); }
+
 /*******************************
 ------------- NAVBAR 
 ********************************/
@@ -585,29 +583,64 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
     border-left: 1.1em solid #2f476c;
 }
 
-/* ----------------- CSS IFRAME + FONCTIONNALITES ------------ */
-
-/* Fenêtre Template Geoserver */ 
-
-/*----Style fenêtre de configuration - Indicateurs Transports*/					
-p.text{
-	font-family: 'roboto_regular', Arial, Sans-serif;
-	font-size:12px;
-	padding-top: 3%;
-	padding-left: 6%;
+/*Mise en forme des MST*/
+#rb-puces li {
+	list-style: none;
+	color: #555;
 }
-
-.indicateur {
-	font-family: 'spotkabold';
-	font-size: 38px;
-	text-transform: uppercase;
-	letter-spacing: -0.2pt;
-	color:#2f476c;
+#rb-puces li:before{
+	content:"· ";
+	font-size:50px;
+	vertical-align:middle;
+	line-height:20px;
+	color: #2f476c;
 }
-			
-.chiffres_cles{
-	font-family:'spotkabold'; 
-	font-size:38px; 
-	margin-top:-13px; 
-	margin-bottom:-8px;
-}			
+.rb-title-feature {
+	color: #2f476c;
+	font-family:"region_bold";
+	font-size:25px;
+	margin-bottom:3%;
+	line-height:1;
+}
+.rb-subtitle-feature {
+	color: #2f476c;
+	font-family:"region_bold";
+	font-size:18px;
+	margin-top:2%;
+	line-height:1;
+}
+.rb-text-feature{
+	font-family:"Open Sans";
+	color:#555;
+	font-size:15px;
+	margin-top:2%;
+	margin-bottom:2%;
+}
+.rb-description-feature{
+	font-family:"Open Sans";
+	color:#555;
+	font-size:13px;
+	margin-top:2%;
+	margin-bottom:2%;
+}
+.rb-but-list{
+	margin-top:4%;
+}
+.rb-but-link, .rb-but-link:focus, .rb-but-link:hover{
+	display:inline-block;
+	padding:0.5em 1em;
+	margin:0 0.3em 0.3em 0;
+	border-radius:0.3em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'OpenSans-Bold',sans-serif;
+	font-weight:300;
+	color:#FFFFFF;
+	background-color:#2f476c;
+	text-align:center;
+	transition: all 0.2s;
+}
+.rb-but-link:hover{
+	background-color:#4c74b5;
+}	
+		

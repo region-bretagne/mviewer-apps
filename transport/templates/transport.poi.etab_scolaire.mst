@@ -1,26 +1,10 @@
 {{#features}}
 	<li class="item">
-		<h3 class="title-feature">{{appellation}}</h3>
-		<p class="text-feature">
-			<span style="font-family:'roboto_bold'"> Dénomination :</span> {{denomination}}<br/>
-			<span style="font-family:'roboto_bold'">Nature UAI :</span> {{lib_nature}}<br/>
-			<span style="font-family:'roboto_bold'">Numéro UAI :</span> {{nature_uai}}<br/>
+		<h3 class="rb-title-feature">{{appellation}}</h3>
+		<p class="rb-text-feature">
+			<span style="font-weight:bold"> Dénomination :</span> {{denomination}}<br/>
+			<span style="font-weight:bold">Nature UAI :</span> {{lib_nature}}<br/>
+			<span style="font-weight:bold">Numéro UAI :</span> {{nature_uai}}<br/>
 		</p>
 	</li>
 {{/features}}
-
-<style>
-	.title-feature {
-		color: #032E46;
-		font-family:"roboto_bold";
-		font-size:23px;
-		margin-bottom:1%;
-		line-height:1;
-	}
-	.text-feature{
-		font-family:"roboto_regular";
-		color:#555;
-		font-size:13px;
-		margin-top:10%;
-	}
-</style>

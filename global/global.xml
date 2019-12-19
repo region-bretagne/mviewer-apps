@@ -348,7 +348,7 @@
                     infoformat="application/vnd.ogc.gml" featurecount="1"
                     sld="https://kartenn.region-bretagne.fr/styles/reserve_naturelle.sld" 
                     url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-                    legendurl="https://kartenn.region-bretagne.fr/doc/icons_region/reserve_naturelle.svg" 
+                    legendurl="http://kartenn.region-bretagne.fr/img/styles/rnr.png" 
                     attribution="Source: Région Bretagne" 
                     metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/77f8fc52-ae57-41d1-8f08-7b121b013f51"
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=77f8fc52-ae57-41d1-8f08-7b121b013f51" >

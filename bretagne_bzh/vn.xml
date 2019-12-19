@@ -220,7 +220,7 @@
 				queryable="true" searchable="true" infoformat="application/vnd.ogc.gml" featurecount="20"
 				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2005" timemax="2019" timevalues="2005,2007,2009,2011,2013,2015,2017,2019"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-				style="ecluse_proprietaire_500,ecluse_trafic_millesime_500" stylesalias="Propriétaire,Trafic"
+				style="ecluse_vn,ecluse_trafic_millesime_500" stylesalias="Voie navigable,Trafic"
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=01a0228d-feb1-4385-9eeb-55062e3f26ed"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=01a0228d-feb1-4385-9eeb-55062e3f26ed"> 

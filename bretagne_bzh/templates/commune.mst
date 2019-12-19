@@ -1,34 +1,10 @@
 {{#features}}
 	<li class="item">
-		<h3 class="title-feature">{{NOM_COM}}</h3>
+		<h3 class="rb-title-feature">{{NOM_COM}}</h3>
 
-		<p class="text-feature">		
+		<p class="rb-text-feature">		
 			<span style="font-weight:bold"> Code INSEE :</span> {{INSEE_COM}}<br/>
 			<span style="font-weight:bold"> Population :</span> {{POPULATION}} habitants<br/>
        </p>
 	</li>
 {{/features}}
-
-<style>
-	.title-feature {
-		color: #5A9EAA;
-		font-family:"region_bold";
-		font-size:25px;
-		margin-bottom:3%;
-		line-height:1;
-	}
-	.subtitle-feature {
-		color: #5A9EAA;
-		font-family:"region_bold";
-		font-size:18px;
-		margin-top:2%;
-		line-height:1;
-	}
-	.text-feature{
-		font-family:"Open Sans";
-		color:#555;
-		font-size:15px;
-		margin-top:2%;
-		margin-bottom:2%;
-	}
-</style>

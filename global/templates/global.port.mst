@@ -1,21 +1,5 @@
 {{#features}}
 	<li class="item">
-		<h3 class="title-feature">{{nom}}</h3>
+		<h3 class="rb-title-feature">{{nom}}</h3>
 	</li>
 {{/features}}
-
-<style>
-	.title-feature {
-		color: #2D4059;
-		font-family:"roboto_bold";
-		font-size:23px;
-		margin-bottom:1%;
-		line-height:1;
-	}
-	.text-feature{
-		font-family:"roboto_regular";
-		color:#555;
-		font-size:13px;
-		margin-top:10%;
-	}
-</style>

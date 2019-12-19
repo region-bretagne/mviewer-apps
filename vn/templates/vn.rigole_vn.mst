@@ -1,84 +1,16 @@
 {{#features}}
 	<li class="item">
-		<h3 class="title-feature">{{nom}}</h3>
-		<p class="text-feature">	
+		<h3 class="rb-title-feature">{{nom}}</h3>
+		<p class="rb-text-feature">	
 			{{#longueur}}                
-				<span style="font-family:'roboto_bold'"> Longueur :</span> {{longueur}} m<br/>
+				<span style="font-weight:bold"> Longueur :</span> {{longueur}} m<br/>
 			{{/longueur}}  
 			{{#enjeu_bio}}                
-				<span style="font-family:'roboto_bold'"> Enjeux biodiversité :</span> {{enjeu_bio}}<br/>
+				<span style="font-weight:bold"> Enjeux biodiversité :</span> {{enjeu_bio}}<br/>
 			{{/enjeu_bio}}                
 			{{#remarque}}                
-				<span style="font-family:'roboto_bold'"> Remarques :</span> {{remarque}}<br/>
+				<span style="font-weight:bold"> Remarques :</span> {{remarque}}<br/>
 			{{/remarque}}                
        </p>
-
-
 	</li>
 {{/features}}
-
-<style>
-	.title-feature {
-		color: #032e46;
-		font-family:"roboto_bold";
-		font-size:23px;
-		margin-bottom:1%;
-		line-height:1;
-	}
-	.subtitle-feature {
-		color: #032e46;
-		font-family:"roboto_bold";
-		font-size:18px;
-		margin-top:7%;
-		line-height:1;
-	}
-	.text-feature{
-		font-family:"roboto_regular";
-		color:#555;
-		font-size:13px;
-		margin-top:10%;
-	}
-	.info.N {
-   		background-image: url(https://kartennn.region-bretagne.fr/doc/transports/icons/non_1.png);
-   		background-size: 16px;
-    	background-repeat: no-repeat;
-   	    background-position-x: 0px;
-   	    margin-bottom:3px;
-	}
-	.info.O {
-   		background-image: url(https://kartennn.region-bretagne.fr/doc/transports/icons/oui.png);
-   		background-size: 16px;
-    	background-repeat: no-repeat;
-   	    background-position-x: 0px;
-   	    margin-bottom:3px;
-	}
-	.but_link{
-	    padding:10px 0 10px 0;
-	    font-size:13px;
-	    font-family:'roboto_regular', Arial, Sans-serif;
-	   	background:rgba(3, 46, 70, 0.9);
-	    color:#fff;
-	    width:100px;
-	    border:1px solid #032e46;
-	    margin-left: 25%;
-	}
-	.but_link:hover{
-	    background:rgba(3, 46, 70, 1);
-	    border:1px solid #032e46;
-	}
-	.but_link p{
-	  margin: 0;
-	  text-align:center;
-	  color:#fff;
-	} 
-	.but_link a{
-	  color: #fff;
-	}
-	.but_link a:hover{
-	  color:#fff;
-	}
-	.but_link a:focus{
-	  color:#fff; 
-	}
-
-</style>

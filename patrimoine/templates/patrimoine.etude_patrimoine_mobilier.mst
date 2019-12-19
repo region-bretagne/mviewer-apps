@@ -1,19 +1,18 @@
 {{#features}}
-	<li class="mobilier item" style="width:100%;">
-		<h3 class="mobilier title-feature">{{titre_courant}}</h3>
+	<li class="item">
+		<h3 class="rb-title-feature">{{titre_courant}}</h3>
         {{#lien_image}}
-			<img src="{{lien_image}}" class="mobilier img-responsive center-block" />
+			<img src="{{lien_image}}" class="img-responsive center-block" />
         {{/lien_image}}
-		<p class="mobilier text-feature">
+		<p class="rb-text-feature">
 			{{#datation_principale}}
-				<span> Datation :</span> {{datation_principale}}<br/>
+				<span style="font-weight:bold"> Datation :</span> {{datation_principale}}<br/>
 			{{/datation_principale}}
-			<span> Commune : </span>{{commune}}<br/>
-			<span> Localisation :</span> {{adresse}} {{lieudit}} {{commune}}<br/>
+			<span style="font-weight:bold"> Commune : </span>{{commune}}<br/>
+			<span style="font-weight:bold"> Localisation :</span> {{adresse}} {{lieudit}} {{commune}}<br/>
 			{{#lien_dossier}}
-			<div class="mobilier but_link">
-				<p> <a href="{{lien_dossier}}" target=_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Lien vers dossier</a>
-				</p>
+			<div class="rb-but-list">
+				<a href="{{lien_dossier}}" target="_blank" title="Site web" class="rb-but-link"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> <b>Lien vers dossier</b></a>
 			</div>
 			{{/lien_dossier}}
 
@@ -21,56 +20,3 @@
 
 	</li>
 {{/features}}
-
-<style>
-	.mobilier.title-feature {
-		color: #BA88A4;
-		font-family:"roboto_bold";
-		font-size:16px;
-		margin-bottom:1%;
-		line-height:1;
-	}
-	.mobilier.subtitle-feature {
-		color: #BA88A4;
-		font-family:"roboto_bold";
-		font-size:14px;
-		margin-top:7%;
-		line-height:1;
-	}
-	.mobilier.text-feature{
-		font-family:"roboto_regular";
-		color:#555;
-		font-size:13px;
-		margin-top:10%;
-	}
-    .mobilier.text-feature span{
-		font-family:"roboto_bold";
-    }
-	.mobilier.but_link{
-	    padding:5px 0 5px 0;
-	    font-size:14px;
-	    font-family:"roboto_bold";
-	   	background:#BA88A4;
-	    color:#fff;
-	    width:180px;
-	    border:1px solid #69003f;
-	    margin-left: auto;
-        margin-right: auto;
-	}
-	.mobilier.but_link:hover{
-	    background:#69003f;
-	    border:1px solid #69003f;
-	}
-	.mobilier.but_link p{
-	  margin: 0;
-	  text-align:center;
-	  color:#fff;
-	}
-	.mobilier.but_link a, .but_link a:hover, .but_link a:focus {
-	  color: #fff;
-	}
-    .mobilier:not(img) {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-</style>

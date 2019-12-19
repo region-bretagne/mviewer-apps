@@ -1,65 +1,15 @@
 {{#features}}
 	<li class="item">
-		<h3 class="title-feature">{{nom}}</h3>
+		<h2 class="rb-title-feature">{{nom}}</h2>
 		{{#image}}
 			<img src="{{image}}" class="img-responsive" style="margin-top:5%;"  /><br/>
 		{{/image}}
 		
-			<span class="text-feature"><b> Surface :</b> {{surface}} ha</span><br/>
+			<span class="rb-text-feature"><b> Surface :</b> {{surface}} ha</span><br/>
 			{{#site_web}}
-			<center><a href="{{site_web}}" target="_blank" title="Site web" class="but_link"><span class="fa fa-globe" aria-hidden="true"></span> Site web</a> </center>  
+			<div class="rb-but-list">
+			<a href="{{site_web}}" target="_blank" title="Site web" class="rb-but-link" style="padding-top: 10px;"><span class="fa fa-globe" aria-hidden="true"></span> Site web</a>
+			</div>
 			{{/site_web}}                
 	</li>
 {{/features}}
-
-<style>
-	.title-feature {
-		color: #5A9EAA;
-		font-family:"region_bold";
-		font-size:25px;
-		margin-bottom:3%;
-		line-height:1;
-	}
-	.subtitle-feature {
-		color: #5A9EAA;
-		font-family:"region_bold";
-		font-size:18px;
-		margin-top:2%;
-		line-height:1;
-	}
-	.text-feature{
-		font-family:"Open Sans";
-		color:#555;
-		font-size:15px;
-		margin-top:2%;
-		margin-bottom:2%;
-	}
-	.description-feature{
-		font-family:"Open Sans";
-		color:#555;
-		font-size:13px;
-		margin-top:2%;
-		margin-bottom:2%;
-	}
-	.buton_liste{
-		margin-top:5%;
-		height:30px;
-	}
-	.but_link, .but_link:focus, .but_link:hover{
-		display:inline-block;
-		padding:0.5em 1em;
-		margin:0 0.3em 0.3em 0;
-		border-radius:0.3em;
-		box-sizing: border-box;
-		text-decoration:none;
-		font-family:'OpenSans-Bold',sans-serif;
-		font-weight:300;
-		color:#FFFFFF;
-		background-color:#5A9EAA;
-		text-align:center;
-		transition: all 0.2s;
-	}
-	.but_link:hover{
-		background-color:#49828D;
-	}	
-</style>

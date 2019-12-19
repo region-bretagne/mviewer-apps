@@ -2,6 +2,9 @@
 --------------------------- CSS KARTENN  -----------------
 ********************************************************************************/
 
+@import url("../../crbicon/crbicon.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 /* Import des fonts*/
 		@font-face {
 		    font-family: 'roboto_black';
@@ -23,6 +26,15 @@
 		    font-family: 'spotkabold';
 		    src: url('../font/spotkabold.ttf');
 		}
+
+@font-face {
+  font-family: 'region_bold';
+  src: url("../../global/font/RB/RegionBretagneNew-Bold.ttf"); }
+
+@font-face {
+  font-family: 'region_regular';
+  src: url("../../global/font/RB/RegionBretagneNew-Regular.ttf"); }
+
 /*******************************
 ------------- NAVBAR 
 ********************************/
@@ -596,20 +608,64 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 -------------TEMPLATE MST
 ********************************/
 
-/* couleur du titre */
-h3.title-feature {
-    color: #252525;
+/*Mise en forme des MST*/
+#rb-puces li {
+	list-style: none;
+	color: #555;
 }
-
-h4.sub-title{
-    color: #252525;
+#rb-puces li:before{
+	content:"· ";
+	font-size:50px;
+	vertical-align:middle;
+	line-height:20px;
+	color: #252525;
 }
-
-.but_link {
-	background: rgba(37, 37, 37, 0.90)!important;
-	border: 1px solid #252525!important;
+.rb-title-feature {
+	color: #252525;
+	font-family:"region_bold";
+	font-size:25px;
+	margin-bottom:3%;
+	line-height:1;
 }
-
-.but_link:hover {
-	background: #252525!important;
+.rb-subtitle-feature {
+	color: #252525;
+	font-family:"region_bold";
+	font-size:18px;
+	margin-top:2%;
+	line-height:1;
 }
+.rb-text-feature{
+	font-family:"Open Sans";
+	color:#555;
+	font-size:15px;
+	margin-top:2%;
+	margin-bottom:2%;
+}
+.rb-description-feature{
+	font-family:"Open Sans";
+	color:#555;
+	font-size:11px;
+	margin:2%;
+	text-align: justify;
+}
+.rb-but-list{
+	margin-top:4%;
+}
+.rb-but-link, .rb-but-link:focus, .rb-but-link:hover{
+	display:inline-block;
+	padding:0.5em 1em;
+	margin:0 0.3em 0.3em 0;
+	border-radius:0.3em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'OpenSans-Bold',sans-serif;
+	font-weight:300;
+	color:#FFFFFF;
+	background-color:#252525;
+	text-align:center;
+	transition: all 0.2s;
+}
+.rb-but-link:hover{
+	background-color:#555555;
+}	
+		
