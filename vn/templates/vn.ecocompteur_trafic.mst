@@ -16,6 +16,8 @@
 {{/features}}
 
 <style>
+@import url("https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/css/vn.css");
+
 	.iframe_bottom{
 		width:970px;
 		height:300px;

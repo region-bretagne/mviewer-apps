@@ -16,3 +16,7 @@
 
 	</li>
 {{/features}}
+
+<style>
+@import url("https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/css/vn.css");
+</style>

@@ -8,13 +8,13 @@
 			<span style="font-weight:bold"> Equipements : </span>
 				<div >
 				{{#wc}}
-					<img src="apps/region/vn/img/sanitaires.svg" width="75">
+					<img src="http://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/img/sanitaires.svg" width="75">
 				{{/wc}}      
 				{{#eau}}                
-					<img src="apps/region/vn/img/point_eau_randonneur.svg" width="75">
+					<img src="http://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/img/point_eau_randonneur.svg" width="75">
 				{{/eau}}   
 				{{#douche}}                
-					<img src="apps/region/vn/img/douche.svg" width="75">
+					<img src="http://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/img/douche.svg" width="75">
 				{{/douche}}   
 				</div>
 			{{#id_plaque}}                
@@ -32,3 +32,7 @@
        </p>
 	</li>
 {{/features}}
+
+<style>
+@import url("https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/css/vn.css");
+</style>

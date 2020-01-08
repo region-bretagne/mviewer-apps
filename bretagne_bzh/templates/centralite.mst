@@ -1,22 +1,26 @@
 {{#features}}
 	<li class="item">
 		<h2 class="rb-title-feature">{{nom_com}}</h2>
-        <h3 class="rb-subtitle-feature">Type candidatures</h3>                    
 		<p class="rb-text-feature">		
-			{{#typ_cand17}}<span style="font-weight:bold"> Candidature 2017 :</span> {{typ_cand17}}<br/>	{{/typ_cand17}}		
-            {{#typ_cand19}}<span style="font-weight:bold"> Candidature 2019 :</span> {{typ_cand19}}<br/> {{/typ_cand19}}
+			{{#nom_epci}}<span style="font-weight:bold"> EPCI :</span> {{nom_epci}}<br/>	{{/nom_epci}}		
+            <span style="font-weight:bold"> Population :</span> {{p_pop}} habitants<br/>
 		</p>
+        <div class="rb-description-feature">	
+        <h3 class="rb-subtitle-feature">Descriptif de l'opération</h3>   
+		<div id="rb-puces">
+			{{{descriptif_projet}}}
+		</div>
+		<p class="rb-text-feature">		
+			{{#acteur_projet}}<span style="font-weight:bold"> Acteurs du projet :</span> {{acteur_projet}}<br/>	{{/acteur_projet}}		
+            {{#etat_etude}}<span style="font-weight:bold"> Etat étude :</span> {{etat_etude}}<br/> {{/etat_etude}}
+		</p>
+
         <h3 class="rb-subtitle-feature">Finances</h3>   
 		<p class="rb-text-feature">		
 			<span style="font-weight:bold"> Soutien financier : </span><span class="prix"> {{soutien_financier_global}}</span><br/>
 			<span style="font-weight:bold"> Dont soutien région : </span><span class="prix"> {{dt_soutien_region}} </span><br/>			
 		</p>
 
-        <div class="rb-description-feature">	
-        <h3 class="rb-subtitle-feature">Descriptif de l'opération</h3>   
-		<div id="rb-puces">
-			{{{descriptif_projet}}}
-		</div>
 		</div>
 
 	</li>

@@ -19,3 +19,7 @@
 		{{/Pays}}		
 	</li>		
 {{/features}}
+
+<style>
+@import url("https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/css/kartenn_territoire.css");
+</style>

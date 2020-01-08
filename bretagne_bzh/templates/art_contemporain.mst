@@ -1,0 +1,9 @@
+{{#features}}
+	<li class="item">
+		<h2 class="rb-title-feature">{{tiers}}</h2>
+		<p class="rb-text-feature">		
+			<b>Adresse :</b> {{adresse1}} {{code_postal}} {{ville}}<br>
+			<b>Action budget :</b> {{action_budget}}
+		</p>
+	</li>
+{{/features}}

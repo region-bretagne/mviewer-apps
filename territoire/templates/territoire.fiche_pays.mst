@@ -44,6 +44,8 @@
 {{/features}}
 
 <style>
+@import url("https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/css/kartenn_territoire.css");
+
 		#feature_select{
 			margin-top: 10%;
    			padding: 10px 12px 8px 12px;
