@@ -292,7 +292,7 @@
 				queryable="false"
 				infoformat="text/html" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-				style="voie_navigable_proprietaire,voie_navigable" stylesalias="Propriétaire,Normal"
+				style="voie_navigable_nom" stylesalias="Propriétaire,Normal"
 				attribution="Région Bretagne" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=7cab44b0-4639-43f2-a824-3eecb7d3bf66"
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=7cab44b0-4639-43f2-a824-3eecb7d3bf66" /> 

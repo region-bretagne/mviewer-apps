@@ -2,8 +2,19 @@
 	<li class="item">
 		<h2 class="rb-title-feature">{{NOM_QUARTI}}</h2>
 		<p class="rb-text-feature">		
-			<b>Commune :</b> {{COMMUNE}}<br>
+			<b>Commune :</b> <span class="lowercase">{{COMMUNE}}</span><br>
 			<b>Statut :</b> {{STATUT_ANR}}
 		</p>
 	</li>
 {{/features}}
+
+<style>
+p span.lowercase {
+  text-transform: lowercase;
+}
+
+p span.lowercase::first-letter {
+  text-transform: uppercase !important;
+}
+span {display:inline-block}
+</style>

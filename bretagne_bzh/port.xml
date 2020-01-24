@@ -19,7 +19,7 @@
     <themes>
         <theme name="Port"  id="port" collapsed="true" icon="ship">
             <layer id="port" name="Port gérées par la région"  visible="true" tiled="false"
-                infoformat="application/vnd.ogc.gml" featurecount="20" queryable="true"
+                infoformat="application/vnd.ogc.gml" featurecount="10" queryable="true"
                 url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                 attribution="Source: Région Bretagne" 
                 metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=c55c4fba-6a37-48ea-8754-a1bf770a684b"
@@ -27,7 +27,7 @@
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/port.mst"></template> 
 		    </layer> 
             <layer id="port_bzh" name="Autres ports bretons"  visible="true" tiled="false"
-                infoformat="application/vnd.ogc.gml" featurecount="20" queryable="false"
+                infoformat="application/vnd.ogc.gml" featurecount="1" queryable="false" opacity="0.6"
                 url="https://ows.region-bretagne.fr/geoserver/interne/wms"
                 attribution="Source: Région Bretagne" 
                 metadata=""

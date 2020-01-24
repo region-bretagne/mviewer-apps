@@ -2,8 +2,20 @@
 	<li class="item">
 		<h2 class="rb-title-feature">{{NOM_EPCI}}</h2>
 
-		<p class="rb-text-feature">		
-			<span style="font-weight:bold"> Type EPCI :</span> {{NATURE_EPC}}<br/>
-       </p>
+		<div class="rb-text-feature">		
+			<span style="font-weight:bold"> Type d’établissement public de coopération intercommunale (EPCI) :</span> <span class="epci {{NATURE_EPC}}"></span>
+       </div>
 	</li>
 {{/features}}
+
+<style>
+.epci.CC::after {
+    content: "Communauté de Communes";
+}
+.epci.CA::after {
+    content: "Communauté d'Agglomération";
+}
+.epci.METRO::after {
+    content: "Métropole";
+}
+</style>

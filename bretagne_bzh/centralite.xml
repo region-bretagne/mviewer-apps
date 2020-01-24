@@ -22,7 +22,7 @@
         <theme name="Centralité"  collapsed="true" id="centralite">
                 <layer id="centralite" name="Centralité" scalemin="0" scalemax="50000000" visible="true" tiled="false" namespace="rb"
 					queryable="true" infoformat="application/vnd.ogc.gml"
-                    featurecount="20"
+                    featurecount="1"
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 					style="" 
 					attribution="Région Bretagne" 

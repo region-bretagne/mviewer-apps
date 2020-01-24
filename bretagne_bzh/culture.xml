@@ -20,7 +20,7 @@
 
     <themes>
         <theme name="Culture"  collapsed="true" id="culture">
-            <layer id="art_conptemporain" name="Art Contemporain" visible="true" tiled="false" namespace="rb"
+            <layer id="art_contemporain" name="Lieux dédiés à l’Art contemporain" visible="true" tiled="false" namespace="rb"
 					queryable="true" infoformat="application/vnd.ogc.gml"
                     featurecount="20"
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
@@ -30,7 +30,7 @@
 					metadata="" >  
 					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/art_contemporain.mst" />
             </layer>
-            <layer id="festival" name="Festival" visible="true" tiled="false" namespace="rb"
+            <layer id="festival" name="Festivals soutenus" visible="true" tiled="false" namespace="rb"
 					queryable="true" infoformat="application/vnd.ogc.gml"
                     featurecount="20"
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
@@ -40,7 +40,7 @@
 					metadata="" >  
 					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/festival.mst" />
             </layer>
-            <layer id="spectacle_vivant" name="Spectacle vivant" visible="true" tiled="false" namespace="rb"
+            <layer id="spectacle_vivant" name="Diffusion du spectacle vivant" visible="true" tiled="false" namespace="rb"
 					queryable="true" infoformat="application/vnd.ogc.gml"
                     featurecount="20"
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 

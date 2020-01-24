@@ -2,8 +2,8 @@
 	<li class="item">
 		<h2 class="rb-title-feature">{{tiers}}</h2>
 		<p class="rb-text-feature">		
-			<b>Adresse :</b> {{adresse1}} {{code_postal}} {{ville}}<br>
-			<b>Action budget :</b> {{action_budget}}
+			<span style="font-weight:bold"> Adresse :</span> {{adresse1}} {{code_postal}}<br/>
+			<span style="font-weight:bold"> Type d’accompagnement :</span> {{action_budget}}<br/>
 		</p>
 	</li>
 {{/features}}

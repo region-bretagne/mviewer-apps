@@ -5,22 +5,26 @@
 			{{#nom_epci}}<span style="font-weight:bold"> EPCI :</span> {{nom_epci}}<br/>	{{/nom_epci}}		
             <span style="font-weight:bold"> Population :</span> {{p_pop}} habitants<br/>
 		</p>
+		{{#descriptif_projet}}
         <div class="rb-description-feature">	
         <h3 class="rb-subtitle-feature">Descriptif de l'opération</h3>   
 		<div id="rb-puces">
 			{{{descriptif_projet}}}
 		</div>
+		{{/descriptif_projet}}
 		<p class="rb-text-feature">		
 			{{#acteur_projet}}<span style="font-weight:bold"> Acteurs du projet :</span> {{acteur_projet}}<br/>	{{/acteur_projet}}		
-            {{#etat_etude}}<span style="font-weight:bold"> Etat étude :</span> {{etat_etude}}<br/> {{/etat_etude}}
+            {{#etat_etude}}<span style="font-weight:bold"> Calendrier :</span> {{etat_etude}}<br/> {{/etat_etude}}
 		</p>
-
+		{{#soutien_financier_global}}
         <h3 class="rb-subtitle-feature">Finances</h3>   
 		<p class="rb-text-feature">		
 			<span style="font-weight:bold"> Soutien financier : </span><span class="prix"> {{soutien_financier_global}}</span><br/>
-			<span style="font-weight:bold"> Dont soutien région : </span><span class="prix"> {{dt_soutien_region}} </span><br/>			
+			{{#dt_soutien_region}}
+			<span style="font-weight:bold"> Dont soutien région : </span><span class="prix"> {{dt_soutien_region}} </span><br/>
+			{{/dt_soutien_region}}
 		</p>
-
+		{{/soutien_financier_global}}
 		</div>
 
 	</li>

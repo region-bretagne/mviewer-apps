@@ -10,9 +10,9 @@
 
   <sld:PolygonSymbolizer>
    <sld:Stroke>
-    <sld:CssParameter name="stroke">#4c74b5</sld:CssParameter>
+    <sld:CssParameter name="stroke">#919191</sld:CssParameter>
     <sld:CssParameter name="stroke-opacity">1</sld:CssParameter>
-    <sld:CssParameter name="stroke-width">2</sld:CssParameter>
+    <sld:CssParameter name="stroke-width">1.5</sld:CssParameter>
    </sld:Stroke>
   </sld:PolygonSymbolizer>
 
