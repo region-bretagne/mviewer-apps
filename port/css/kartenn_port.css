@@ -655,5 +655,16 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 }
 .rb-but-link:hover{
 	background-color:#4c74b5;
-}	
+}
+
+.searchresults-title {
+    background-color: #2f476c;
+    border-color: #2f476c;
+    color: white;
+    font-family: "roboto_bold", Arial, Sans-serif;
+}
+
+.searchresults-title .close, .searchresults-title .close:hover, .searchresults-title .close:focus, .searchresults-title .close:active, .searchresults-title .close:visited {
+    color: white;
+}
 		
