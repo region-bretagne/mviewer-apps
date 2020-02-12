@@ -26,7 +26,7 @@
         <theme name="Occupations domaniales"  id="port" icon="home" collapsed="false">
             <layer id="occupation_domaniale" name="Occupations domaniales" visible="true" tiled="false" 
 				searchable="true" queryable="true" expanded="true"
-                infoformat="application/vnd.ogc.gml"
+                infoformat="application/vnd.ogc.gml" featurecount="10"    
 				secure="true"
 				attributefilter="true" attributefield="contrat_validite" attributevalues="AUTORISÉ,AUTORISÉ ÉCHÉANCE DANS MOINS DE 6 MOIS,ÉCHÉANCE DÉPASSÉE,ÉCHÉANCE RÉSILIÉE,LOT VACANT,OCCUPATION SANS TITRE"  attributelabel="Filtre par occupation" attributestylesync="false" attributefilterenabled="false"
                 style="bddom_transparent, bddom_type_contrat, bddom_validite_contrat, bddom_port_aero_concession" 
@@ -36,7 +36,18 @@
 				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=43ce0e25-ef3c-4e88-a546-6197e1f84d99" 
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=43ce0e25-ef3c-4e88-a546-6197e1f84d99">
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.occupation_domaniale.mst"></template>
-            </layer>  
+            </layer>
+            <!--<layer id="bddom_all" name="Test MAJ" visible="true" tiled="false" 
+				searchable="false" queryable="true" expanded="false"
+                infoformat="application/vnd.ogc.gml"
+				secure="false"
+				attributefilter="true" attributefield="name" attributevalues="fred,frederic,gervais,julie,melissa,nadia,pascal,patrice,pierregilles,sandrine,sophie"  attributelabel="Filtre par Nom" attributestylesync="false" attributefilterenabled="false"                
+				url="https://ows.region-bretagne.fr/geoserver/tmp/wms" 
+				attribution="Région Bretagne" 
+				metadata="https://applications.region-bretagne.fr/geonetwork/?uuid=43ce0e25-ef3c-4e88-a546-6197e1f84d99" 
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=43ce0e25-ef3c-4e88-a546-6197e1f84d99">
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.occupation_domaniale.mst"></template>
+            </layer>  -->
 			<layer id="concession" name="Concessions" visible="false" tiled="false" 
 				queryable="true"
                 infoformat="application/vnd.ogc.gml"

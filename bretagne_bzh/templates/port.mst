@@ -1,7 +1,7 @@
 {{#features}}
 	<li class="item">
 		<h2 class="rb-title-feature">{{nom}}</h2>
-		<h3 class="rb-subtitle-feature">Activités :</h3>   
+		<h3 class="rb-subtitle-feature">Activités</h3>   
 		<div class="plaisance {{plaisance}}" title="Plaisance"></div>
 		<div class="peche {{peche}}" title="Pêche"></div>
 		<div class="commerce {{commerce}}" title="Commerce"></div>
