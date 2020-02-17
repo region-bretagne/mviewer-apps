@@ -21,8 +21,8 @@
             <layer id="aire_maritime_educative" name="Aire maritime éducative"  visible="true" tiled="false"
                 infoformat="application/vnd.ogc.gml" featurecount="1" queryable="true"
                 url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+				style="ame_statut,ame_structure" stylesalias="Statut,Type de structure"
                 attribution="Source: Région Bretagne" 
-				attributefilter="true" attributefield="statut" attributevalues="Inscription,Labellisation,Renouvellement"
                 metadata=""
                 metadata-csw="" >	   
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ame/templates/ame.mst"></template> 

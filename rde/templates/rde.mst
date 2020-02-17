@@ -1,0 +1,21 @@
+{{#features}}
+	<li class="item">
+		<h2 class="rb-title-feature">{{nom_lieu}}</h2>
+		<p class="rb-text-feature">		
+			<b>Date </b> {{date}}<br>
+			<b>Intitulé séquence </b>  {{intitule_sequence}}<br>
+			<b>Type de séquence </b> {{typologie_sequence}}<br>
+			<b>Format </b> {{format}}<br>
+			<b>Adresse </b> {{adresse_postale}} {{commune}}<br>
+			<b>Nombre de participants </b> {{nb_participants_total}}<br>
+			<b>Dont EPCI </b> {{nb_epci}}<br>
+			<b>Autres participants </b> {{nb_autres_participants}}<br>
+		</p>
+		{{#precisions_contenu}}
+		<p class="rb-description-feature">		
+			<b>Contenu </b> {{precisions_contenu}}<br>
+		</p>
+		{{/precisions_contenu}}
+
+	</li>
+{{/features}}
