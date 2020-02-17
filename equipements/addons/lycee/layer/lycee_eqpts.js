@@ -4,10 +4,10 @@ mviewer.customLayers.lycee_eqpts = (function () {
 
 var _legend = { items: [] };
 
-var style0 = [new ol.style.Style({
+var aucun = [new ol.style.Style({
     image: new ol.style.Circle({
         fill: new ol.style.Fill({
-            color: 'rgba(232, 65, 24,1.0)'
+            color: 'rgba(255, 204, 0,1.0)'
         }),
         stroke: new ol.style.Stroke({
             color: "#ffffff",
@@ -17,10 +17,10 @@ var style0 = [new ol.style.Style({
     })
 })];
 
-var style1 = [new ol.style.Style({
+var partiel = [new ol.style.Style({
     image: new ol.style.Circle({
         fill: new ol.style.Fill({
-            color: 'rgba(251, 197, 49,1.0)'
+            color: 'rgba(255, 102, 0,1.0)'
         }),
         stroke: new ol.style.Stroke({
             color: "#ffffff",
@@ -30,10 +30,10 @@ var style1 = [new ol.style.Style({
     })
 })];
 
-var style2 = [new ol.style.Style({
+var complet = [new ol.style.Style({
     image: new ol.style.Circle({
         fill: new ol.style.Fill({
-            color: 'rgba(68, 189, 50,1.0)'
+            color: 'rgba(204, 0, 0,1.0)'
         }),
         stroke: new ol.style.Stroke({
             color: "#ffffff",
@@ -43,9 +43,9 @@ var style2 = [new ol.style.Style({
     })
 })];
 
-_legend.items.push({styles:style0, label: "Aucun équipement", geometry: "Point"});
-_legend.items.push({styles:style1, label: "Equipements partiels", geometry: "Point"});
-_legend.items.push({styles:style2, label: "Equipements complets", geometry: "Point"});
+_legend.items.push({styles:aucun, label: "Aucun équipement", geometry: "Point"});
+_legend.items.push({styles:partiel, label: "Equipements partiels", geometry: "Point"});
+_legend.items.push({styles:complet, label: "Equipements complets", geometry: "Point"});
 
 var _layer = new ol.layer.Vector({
         source: new ol.source.Vector({
@@ -55,11 +55,11 @@ var _layer = new ol.layer.Vector({
         style: function(feature, resolution) {
             var stl;
             if(feature.get('gymnase') === 'oui' && feature.get('terrain ext') === 'oui') {
-                stl = style2;
+                stl = complet;
             } else if(feature.get('gymnase') === 'oui' || feature.get('terrain ext') === 'oui') {
-                stl = style1;
+                stl = partiel;
             } else {
-                stl = style0;                
+                stl = aucun;                
             }
             return stl;
         }
