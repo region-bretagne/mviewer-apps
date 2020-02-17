@@ -2,18 +2,24 @@
 	<li class="item">
 		<h3 class="rb-title-feature">{{nom}}</h3>
 		<p class="rb-text-feature">
-			<h4 class="rb-subtitle-feature">Localisation</h4>		
+			<h4 class="rb-subtitle-feature">Localisation</h4>
 			<span style="font-weight:bold"> Commune :</span> {{ville}}<br/>
 			<span style="font-weight:bold"> Code postal :</span> {{code_postal}}<br/>
 			<span style="font-weight:bold"> Adresse :</span> {{adresse}}<br/><br/>
 			<h4 class="rb-subtitle-feature">Caractéristiques</h4>
 			<span style="font-weight:bold"> Type :</span> {{type_etabl}}<br/>
 			<span style="font-weight:bold"> Secteur :</span> {{secteur_li}}<br/>
-			<span style="font-weight:bold"> Réseau :</span> {{reseau_lib}}<br/>			
+			<span style="font-weight:bold"> Réseau :</span> {{reseau_lib}}<br/>
+            <h4 class="rb-subtitle-feature">Formation</h4>
+            {{#greta}}
+                <span style="font-weight:bold">GRETA intégré</span><br/>
+            {{/greta}}
+            {{#cfa}}
+                <span style="font-weight:bold">CFA ou CFPPA intégré</span><br/>
+            {{/cfa}}
 		</p>
 		{{#photo}}
 			<img src="{{photo}}" class="img-responsive" style="margin-top:5%;" />
 		{{/photo}}
-		
 	</li>
 {{/features}}
