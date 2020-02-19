@@ -32,13 +32,13 @@
                 type="customlayer"
                 vectorlegend="true"
                 opacity="0.4"
-                url="http://localhost/mviewer/apps/region/equipements/addons/equipement/layer/eqpts.js"
+                url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/equipements/addons/equipement/layer/eqpts.js"
                 metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=99e78163-ce9a-4eee-9ea0-36afc2a53d25"
                 metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID&amp;ID=99e78163-ce9a-4eee-9ea0-36afc2a53d25"
                 queryable="true"
                 visible="true"
                 attribution="Région Bretagne" >
-                <template url="http://localhost/mviewer/apps/region/equipements/templates/equipement.mst" />
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/equipements/templates/equipement.mst" />
             </layer>
         </theme>
     </themes>
