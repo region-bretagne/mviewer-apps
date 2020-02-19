@@ -1,26 +1,23 @@
 {{#features}}
 <li class="item" style="width:100%;">
 	<h3 class="title-feature">{{nom}}</h3>
-	{{#photo}}
-	<img src="{{photo}}" class="img-responsive" />
-	{{/photo}}
 	<div class="text-feature">
 		<div class="row">
-			<div class="col-xs-2">
+			<div class="col-xs-3">
 				<i class="fas fa-map-marked-alt align-middle" style="font-size:2.5em;"></i>
 			</div>
-			<div class="col-xs-10">
-				<p><b>{{adresse}}</b><br />{{code_postal}} {{ville}}</p>
+			<div class="col-xs-9">
+				<p><b>{{adresse}}</b></p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 col-md-12">
 				<h4 class="subtitle-feature">Equipements en extérieur</h4>
-				<div class="info x{{foot_ext}}"><span style="margin-left:20px;">Terrain de football</span></div>
-				<div class="info x{{rugby_ext}}"><span style="margin-left:20px;">Terrain de rugby</span></div>
-				<div class="info x{{handball_ext}}"><span style="margin-left:20px;">Terrain de Handball</span></div>
-				<div class="info x{{piste}}"><span style="margin-left:20px;">Piste</span></div>
-				<div class="info x{{foot_gael_ext}}"><span style="margin-left:20px;">Terrain de football gaélique</span>
+				<div class="info x{{terrain_foot}}"><span style="margin-left:20px;"><span class="field_number">{{terrain_foot}}</span> Terrain de football</span></div>
+				<div class="info x{{terrain_rugby}}"><span style="margin-left:20px;"><span class="field_number">{{terrain_rugby}}</span> Terrain de rugby</span></div>
+				<div class="info x{{terrain_handball}}"><span style="margin-left:20px;"><span class="field_number">{{terrain_handball}}</span> Terrain de Handball</span></div>
+				<div class="info x{{piste}}"><span style="margin-left:20px;"><span class="field_number">{{piste}}</span> Piste</span></div>
+				<div class="info x{{terrain_foot_g}}"><span style="margin-left:20px;"><span class="field_number">{{terrain_foot_g}}</span> Terrain de football gaélique</span>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-12">
@@ -39,9 +36,81 @@
 		</div>
 		{{/lien_fiche}}
 	</div>
-
+	{{#photo_1}}
 	<h4 class="subtitle-feature">Autres sites extérieurs utilisés</h4>
-	<div class=""><span style="margin-left:20px;">...</span></div>
+	<div class="panel-group" id="inner_accordion" role="tablist" aria-multiselectable="true">
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingOne">
+				<h4 class="panel-title">
+					<a role="button" data-toggle="collapse" data-parent="#inner_accordion" href="#collapseOne"
+						aria-expanded="true" aria-controls="collapseOne">
+						Photo 1
+					</a>
+				</h4>
+			</div>
+			<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+				<div class="panel-body">
+					<img class="img-responsive" src="apps/region/equipements/img/equipement/{{photo_1}}"
+						alt="{{photo_1}}">
+				</div>
+			</div>
+		</div>
+		{{#photo_2}}
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingTwo">
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#inner_accordion"
+						href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						Photo 2
+					</a>
+				</h4>
+			</div>
+			<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				<div class="panel-body">
+					<img class="img-responsive" src="apps/region/equipements/img/equipement/{{photo_2}}"
+						alt="{{photo_2}}">
+				</div>
+			</div>
+		</div>
+		{{/photo_2}}
+		{{#photo_3}}
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingThree">
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#inner_accordion"
+						href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						Photo 3
+					</a>
+				</h4>
+			</div>
+			<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				<div class="panel-body">
+					<img class="img-responsive" src="apps/region/equipements/img/equipement/{{photo_3}}"
+						alt="{{photo_3}}">
+				</div>
+			</div>
+		</div>
+		{{/photo_3}}
+		{{#photo_4}}
+		<div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingFour">
+				<h4 class="panel-title">
+					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#inner_accordion"
+						href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+						Photo 4
+					</a>
+				</h4>
+			</div>
+			<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+				<div class="panel-body">
+					<img class="img-responsive" src="apps/region/equipements/img/equipement/{{photo_4}}"
+						alt="{{photo_4}}">
+				</div>
+			</div>
+		</div>
+		{{/photo_4}}
+	</div>
+	{{/photo_1}}
 
 
 	</br></br></br></br></br>
@@ -54,7 +123,10 @@
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 		border-radius: 2px;
 	}
-
+	.field_number{
+		font-weight: bold;
+		font-size: larger;
+	}
 	.title-feature {
 		color: #032e46;
 		font-family: "roboto_bold";
@@ -83,7 +155,7 @@
 		background-image: url(https://kartenn.region-bretagne.fr/doc/transports/icons/non_1.png);
 		background-size: 16px;
 		background-repeat: no-repeat;
-		background-position-x: 0px;
+		background-position-y:center;
 		margin-bottom: 3px;
 	}
 
@@ -95,7 +167,7 @@
 		background-image: url(https://kartenn.region-bretagne.fr/doc/transports/icons/oui.png);
 		background-size: 16px;
 		background-repeat: no-repeat;
-		background-position-x: 0px;
+		background-position-y:center;
 		margin-bottom: 3px;
 	}
 

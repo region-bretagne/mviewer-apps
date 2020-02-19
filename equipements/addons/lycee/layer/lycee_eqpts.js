@@ -49,14 +49,14 @@ _legend.items.push({styles:complet, label: "Equipements complets", geometry: "Po
 
 var _layer = new ol.layer.Vector({
         source: new ol.source.Vector({
-            url: "apps/region/equipements/lycees.geojson",
+            url: "https://ows.region-bretagne.fr/geoserver/rb/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=rb%3Alycee_eqpt_sportif&outputFormat=application%2Fjson&srsName=EPSG:4326",
             format: new ol.format.GeoJSON()
         }),
         style: function(feature, resolution) {
             var stl;
-            if(feature.get('gymnase') === 'oui' && feature.get('terrain ext') === 'oui') {
+            if(feature.get('gymnase') === 'oui' && feature.get('exterieur') === 'oui') {
                 stl = complet;
-            } else if(feature.get('gymnase') === 'oui' || feature.get('terrain ext') === 'oui') {
+            } else if(feature.get('gymnase') === 'oui' || feature.get('exterieur') === 'oui') {
                 stl = partiel;
             } else {
                 stl = aucun;                
@@ -92,7 +92,7 @@ var _renderPanel = function (features, views) {
 
 var _handle = function(features, views) {    
     _renderPanel(features, views);
-    mviewer.customLayers.eqpts.selection(features[0].properties["code_rne"])
+    mviewer.customLayers.eqpts.selection(features[0].properties["code"])
 };
 
 

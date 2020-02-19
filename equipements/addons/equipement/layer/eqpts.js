@@ -92,7 +92,7 @@ mviewer.customLayers.eqpts = (function () {
     _legend.items.push({styles:_complexe, label: "Complexes", geometry: "Point"});
 
     var _source = new ol.source.Vector({
-        url: "apps/region/equipements/eqpts.geojson",
+        url: "https://ows.region-bretagne.fr/geoserver/rb/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=rb%3Alycee_eqpt_ext&outputFormat=application%2Fjson&srsName=EPSG:4326",
         format: new ol.format.GeoJSON()
     });
 
@@ -100,11 +100,11 @@ mviewer.customLayers.eqpts = (function () {
             source: _source,
             style: function(feature,resolution) {
                 var stl;
-                if(feature.get("type d'équipement") === 'piscine') {
+                if(feature.get("type") === 'piscine') {
                     stl = _piscine;
-                } else if(feature.get("type d'équipement").substr(0,feature.get("type d'équipement").indexOf(" ")) === "stade" || feature.get("type d'équipement") === "stade"){
+                } else if(feature.get("type") === "stade"){
                     stl=_stade;
-                } else if(feature.get("type d'équipement") === "complexe"){
+                } else if(feature.get("type") === "complexe"){
                     stl=_complexe;
                 } else {
                     stl = _gymnase;
@@ -117,12 +117,14 @@ mviewer.customLayers.eqpts = (function () {
         var features = _source.getFeatures();
         var selected = [];
         features.forEach(function(feature){
-            if (feature.getProperties()["usage lycée"] === rne) {
-                var b = feature.clone();
-                b.setStyle(_selectionStyle);
-                selected.push(b);
-            }
-
+            var usages = JSON.parse(feature.getProperties()["usages"]);
+            usages.forEach(function(item,index){
+                if (item === rne) {
+                  var b = feature.clone();
+                  b.setStyle(_selectionStyle);
+                  selected.push(b);
+                } 
+            });
         });
         console.log(selected);
         var _sourceOverlay = mviewer.getSourceOverlay();
