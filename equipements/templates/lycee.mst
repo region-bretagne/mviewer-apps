@@ -1,5 +1,5 @@
 {{#features}}
-<li class="item" style="width:100%;">
+<li class="item">
 	<h3 class="title-feature">{{nom}}</h3>
 	<div class="text-feature">
 		<div class="row">
@@ -13,11 +13,16 @@
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 col-md-12">
 				<h4 class="subtitle-feature">Equipements en extérieur</h4>
-				<div class="info x{{terrain_foot}}"><span style="margin-left:20px;"><span class="field_number">{{terrain_foot}}</span> Terrain de football</span></div>
-				<div class="info x{{terrain_rugby}}"><span style="margin-left:20px;"><span class="field_number">{{terrain_rugby}}</span> Terrain de rugby</span></div>
-				<div class="info x{{terrain_handball}}"><span style="margin-left:20px;"><span class="field_number">{{terrain_handball}}</span> Terrain de Handball</span></div>
-				<div class="info x{{piste}}"><span style="margin-left:20px;"><span class="field_number">{{piste}}</span> Piste</span></div>
-				<div class="info x{{terrain_foot_g}}"><span style="margin-left:20px;"><span class="field_number">{{terrain_foot_g}}</span> Terrain de football gaélique</span>
+				<div class="info x{{terrain_foot}}"><span style="margin-left:20px;"><span
+							class="field_number">{{terrain_foot}}</span> Terrain de football</span></div>
+				<div class="info x{{terrain_rugby}}"><span style="margin-left:20px;"><span
+							class="field_number">{{terrain_rugby}}</span> Terrain de rugby</span></div>
+				<div class="info x{{terrain_handball}}"><span style="margin-left:20px;"><span
+							class="field_number">{{terrain_handball}}</span> Terrain de Handball</span></div>
+				<div class="info x{{piste}}"><span style="margin-left:20px;"><span class="field_number">{{piste}}</span>
+						Piste</span></div>
+				<div class="info x{{terrain_foot_g}}"><span style="margin-left:20px;"><span
+							class="field_number">{{terrain_foot_g}}</span> Terrain de football gaélique</span>
 				</div>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-12">
@@ -37,18 +42,18 @@
 		{{/lien_fiche}}
 	</div>
 	{{#photo_1}}
-	<h4 class="subtitle-feature">Autres sites extérieurs utilisés</h4>
+	<h3 class="subtitle-feature">Autres sites extérieurs utilisés</h3>
 	<div class="panel-group" id="inner_accordion" role="tablist" aria-multiselectable="true">
 		<div class="panel panel-default">
-			<div class="panel-heading" role="tab" id="headingOne">
+			<div class="panel-heading collapsed" role="tab" id="headingOne" data-toggle="collapse" data-parent="#inner_accordion" href="#collapseOne"
+			aria-expanded="false" aria-controls="collapseOne">
 				<h4 class="panel-title">
-					<a role="button" data-toggle="collapse" data-parent="#inner_accordion" href="#collapseOne"
-						aria-expanded="true" aria-controls="collapseOne">
+					<a role="button">
 						Photo 1
 					</a>
 				</h4>
 			</div>
-			<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+			<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
 				<div class="panel-body">
 					<img class="img-responsive" src="apps/region/equipements/img/equipement/{{photo_1}}"
 						alt="{{photo_1}}">
@@ -57,10 +62,10 @@
 		</div>
 		{{#photo_2}}
 		<div class="panel panel-default">
-			<div class="panel-heading" role="tab" id="headingTwo">
+			<div class="panel-heading collapsed" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#inner_accordion"
+			href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 				<h4 class="panel-title">
-					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#inner_accordion"
-						href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+					<a role="button">
 						Photo 2
 					</a>
 				</h4>
@@ -75,10 +80,10 @@
 		{{/photo_2}}
 		{{#photo_3}}
 		<div class="panel panel-default">
-			<div class="panel-heading" role="tab" id="headingThree">
+			<div class="panel-heading collapsed" role="tab" id="headingThree" data-toggle="collapse" data-parent="#inner_accordion"
+			href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 				<h4 class="panel-title">
-					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#inner_accordion"
-						href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+					<a  role="button" >
 						Photo 3
 					</a>
 				</h4>
@@ -93,10 +98,10 @@
 		{{/photo_3}}
 		{{#photo_4}}
 		<div class="panel panel-default">
-			<div class="panel-heading" role="tab" id="headingFour">
+			<div class="panel-heading collapsed" role="tab" id="headingFour" data-toggle="collapse" data-parent="#inner_accordion"
+			href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
 				<h4 class="panel-title">
-					<a class="collapsed" role="button" data-toggle="collapse" data-parent="#inner_accordion"
-						href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+					<a role="button" >
 						Photo 4
 					</a>
 				</h4>
@@ -111,27 +116,44 @@
 		{{/photo_4}}
 	</div>
 	{{/photo_1}}
-
-
-	</br></br></br></br></br>
-
+	<br><br><br><br><br>
 </li>
 {{/features}}
 
 <style>
+	.panel-default>.panel-heading:hover {
+		background-color: #455a64;
+		color: white;
+		cursor: pointer;
+		transition: .3s;
+	}
+
+	.panel-default>.panel-heading {
+		background-color: #f44336;
+		color: white;
+		box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+		border-top-left-radius: 1px;
+    	border-top-right-radius: 1px;
+		transition: .3s;
+	}
+	#inner_accordion>.panel-default>.panel-collapse>.panel-body {
+    	border-top: none;
+	}
 	img {
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 		border-radius: 2px;
 	}
-	.field_number{
+
+	.field_number {
 		font-weight: bold;
 		font-size: larger;
 	}
+
 	.title-feature {
 		color: #032e46;
 		font-family: "roboto_bold";
 		font-size: 23px;
-		margin-bottom: 5%;
+		margin-bottom: 1%;
 		line-height: 1;
 	}
 
@@ -139,7 +161,7 @@
 		color: #032e46;
 		font-family: "roboto_bold";
 		font-size: 18px;
-		margin-top: 7%;
+		margin-top: 20px;
 		line-height: 1;
 	}
 
@@ -147,7 +169,7 @@
 		font-family: "roboto_regular";
 		color: #555;
 		font-size: 1.25em;
-		margin-top: 10%;
+		margin-top: 20px;
 	}
 
 	.info.x,
@@ -155,7 +177,7 @@
 		background-image: url(https://kartenn.region-bretagne.fr/doc/transports/icons/non_1.png);
 		background-size: 16px;
 		background-repeat: no-repeat;
-		background-position-y:center;
+		background-position-y: center;
 		margin-bottom: 3px;
 	}
 
@@ -167,19 +189,20 @@
 		background-image: url(https://kartenn.region-bretagne.fr/doc/transports/icons/oui.png);
 		background-size: 16px;
 		background-repeat: no-repeat;
-		background-position-y:center;
+		background-position-y: center;
 		margin-bottom: 3px;
 	}
 
 	.but_link {
-		width: 100%;
+		width: 80%;
 		padding: 10px 0 10px 0;
 		font-size: 13px;
 		font-family: 'roboto_regular', Arial, Sans-serif;
 		background: rgba(3, 46, 70, 0.9);
 		color: #fff;
+		box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
 		border: 1px solid #032e46;
-		margin: 10px 0 10px 0;
+		margin: 10px auto 10px auto;
 	}
 
 	.but_link:hover {
