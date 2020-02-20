@@ -593,7 +593,7 @@
                 <layer id="aeroports" name="Aéroports et aérodromes"  visible="false" tiled="false"
                     searchable="false" queryable="true" fields="axe" aliases="axe"
                     infoformat="application/vnd.ogc.gml" featurecount="20"
-                    sld="https://kartenn.region-bretagne.fr/styles/aeroport.sld" 
+                    sld="http://kartenn.region-bretagne.fr/styles/aeroport.sld" 
                     url="https://geobretagne.fr/geoserver/dreal_b/ows"
                     legendurl="https://kartenn.region-bretagne.fr/doc/icons_region/aeroport.svg" 
                     attribution="Source: DREAL Bretagne" 
