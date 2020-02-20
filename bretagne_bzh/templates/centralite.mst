@@ -3,7 +3,7 @@
 		<h2 class="rb-title-feature">{{nom_com}}</h2>
 		<p class="rb-text-feature">		
 			{{#nom_epci}}<span style="font-weight:bold"> EPCI :</span> {{nom_epci}}<br/>	{{/nom_epci}}		
-            <span style="font-weight:bold"> Population :</span> {{p_pop}} habitants<br/>
+            <span style="font-weight:bold"> Population :</span> {{p_pop}} habitant·e·s<br/>
 		</p>
 		{{#descriptif_projet}}
         <div class="rb-description-feature">	
