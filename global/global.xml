@@ -6,7 +6,7 @@
 	<baselayers style="gallery"><!-- style="default"||gallery" -->            		
         <baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="GéoPortail" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
             url="../wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
-            attribution="&lt;a href='http://www.geoportail.fr/' target='_blank'>&lt;img src='http://api.ign.fr/geoportail/api/js/latest/theme/geoportal/img/logo_gp.gif'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+            attribution="&lt;a href='https://www.geoportail.fr/' target='_blank'>&lt;img src='https://api.ign.fr/geoportail/api/js/latest/theme/geoportal/img/logo_gp.gif'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
         <!--<baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="GéoBretagne" thumbgallery="img/basemap/ortho.jpg" 
             url="http://tile.geobretagne.fr/gwc02/service/wmts" layers="satellite" format="image/png" visible="false"
             attribution="&lt;a href='https://applications.region-bretagne.fr/geonetwork/?uuid=3a0ac2e3-7af1-4dec-9f36-dae6b5a8c731' target='_blank' >partenaires GéoBretagne - IGN RGE BD ORTHO - PlanetObserver&lt;/a>" style="_null" matrixset="EPSG:3857" fromcapacity="false"/>-->
@@ -14,25 +14,25 @@
 			url="https://geobretagne.fr/geoserver/photo/wms" layers="satellite-ancien" format="image/jpeg" visible="false" 
 			attribution="&lt;a href='https://applications.region-bretagne.fr/geonetwork/?uuid=048622c5-b333-4c2b-94ec-40a41608dc06' target='_blank' >Partenaires GéoBretagne - IGN&lt;/a>"/>      
         <baselayer  type="OSM" id="osm1" label="OpenStreetMap Hot" title="OpenStreetMap" thumbgallery="img/basemap/osm.png" 
-			url="http://{a-c}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png" 
-			attribution="© MapQuest. Données : les contributeurs d'&lt;a href='http://www.openstreetmap.org/' target='_blank'>OpenStreetMap &lt;/a>,  &lt;a href='http://www.openstreetmap.org/copyright' target='_blank'>Humanitarian OpenStreetMap Team &lt;/a>" visible="true"/>
+			url="https://{a-c}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png" 
+			attribution="© MapQuest. Données : les contributeurs d'&lt;a href='https://www.openstreetmap.org/' target='_blank'>OpenStreetMap &lt;/a>,  &lt;a href='https://www.openstreetmap.org/copyright' target='_blank'>Humanitarian OpenStreetMap Team &lt;/a>" visible="true"/>
         <baselayer  type="OSM" id="stamen2" label="Watercolor" title="Stamen Design" thumbgallery="img/basemap/watercolor.jpg" 
 			url="http://{a-c}.tile.stamen.com/watercolor/{z}/{x}/{y}.jpg" maxzoom="20" 
-			visible="false" attribution="Map tiles by  &lt;a href='http://stamen.com/'>Stamen Design &lt;/a>, under  &lt;a href='http://creativecommons.org/licenses/by/3.0/'>CC BY 3.0 &lt;/a>" />
+			visible="false" attribution="Map tiles by  &lt;a href='https://stamen.com/'>Stamen Design &lt;/a>, under  &lt;a href='https://creativecommons.org/licenses/by/3.0/'>CC BY 3.0 &lt;/a>" />
 
         <baselayer  type="OSM" id="positron" label="Positron" title="CartoDb" thumbgallery="img/basemap/positron.png"
 			url="https://cartodb-basemaps-{a-c}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png" maxzoom="20" 
-			visible="false" attribution=" &lt;a href='http://www.openstreetmap.org/copyright'>OpenStreetMap&lt;/a>  &lt;a href='http://cartodb.com/attributions'>CartoDB &lt;/a>" />	
+			visible="false" attribution=" &lt;a href='https://www.openstreetmap.org/copyright'>OpenStreetMap&lt;/a>  &lt;a href='https://cartodb.com/attributions'>CartoDB &lt;/a>" />	
 
         <baselayer  type="WMTS" id="scan2" label="Cartes IGN" title="GéoPortail" maxscale="2000" thumbgallery="img/basemap/scan.jpg"
             url="../wmts" layers="GEOGRAPHICALGRIDSYSTEMS.MAPS" format="image/jpeg" visible="false" fromcapacity="false"
-            attribution="&lt;a href='http://www.geoportail.fr/' target='_blank'>&lt;img src='http://api.ign.fr/geoportail/api/js/latest/theme/geoportal/img/logo_gp.gif'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+            attribution="&lt;a href='https://www.geoportail.fr/' target='_blank'>&lt;img src='https://api.ign.fr/geoportail/api/js/latest/theme/geoportal/img/logo_gp.gif'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
     </baselayers> 
     <authentification url="who" loginurl="?login" logouturl="../j_spring_security_logout" enabled="true"/>
     <!---<proxy url="../proxy/?url="/>-->
     <!--<olscompletion url="http://gpp3-wxs.ign.fr/5kiwvtkb2v23y0x8chidxbij/ols/apis/completion"/>-->
     <!--<olscompletion url="../olscompletion" type="geoportail" attribution="La recherche d'adresse est un service proposé par l'API Géoportail ©"/>-->
-    <olscompletion url="http://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par l'API adresse.data.gouv.fr"/>
+    <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par l'API adresse.data.gouv.fr"/>
     <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="current"/>
     <searchparameters bbox="true" localities="true" features="true"/>
 	<widgets>
@@ -337,7 +337,7 @@
                 infoformat="application/vnd.ogc.gml" featurecount="150" legendurl="https://kartenn.region-bretagne.fr/img/legend/enquetes_thematiques.png"                
                 attributefilter="true" attributefield="affixe_cadre_etude" attributevalues="aucun,architecture gothique,ardoisières du Centre Bretagne,canal d'Ille-et-Rance,canal de Nantes à Brest,charpente armoricaine,châteaux du 19e siècle en Bretagne,Croix et calvaires de Guer et de la Gacilly,édifices religieux publics dans le Finistère : 1801-1905,églises et chapelles d'Ille-et-Vilaine,églises romanes de Bretagne,fortifications littorales,Heritaj -Inventaire du patrimoine dansé et vestimentaire de Bretagne,Inventaire des châteaux - maisons de maître et maisons d'architecte de Quimper,Inventaire des commanderies templières et hospitalières de Bretagne,Inventaire des fortifications littorales du milieu du 19e siècle dans les îles de Bretagne Sud (1830-1870),Inventaire des fours de goémoniers de Bretagne,Inventaire des manoirs de Quimper,inventaire des phares,Inventaire du patrimoine matériel et immatériel de l'archipel des Glénan,jardins remarquables,La statuaire du Christ aux outrages,Les bateaux du patrimoine,Les coiffes en filet brodé de Bretagne,Les moulins à marée en Bretagne,Les moulins à papier et papeteries industrielles de Bretagne,Les patrimoines maritimes et estuariens du Pays de Morlaix,Lycées en Bretagne,orfèvrerie religieuse de Haute-Bretagne,patrimoine balnéaire,patrimoine de la villégiature sur la Côte de Granit Rose,patrimoine des sports,patrimoine industriel,patrimoine linier et chanvrier de Bretagne,PNR Golfe du Morbihan - Patrimoine bâti maritime,recensement du patrimoine maritime (GÉOMER Brest),stalles médiévales de l'ancien duché de Bretagne,station biologique de Roscoff,Trésors dinannais : Dinan et l’orfèvrerie religieuse au XIXème siècle,Voies navigables"  attributelabel="Thématiques" attributestylesync="false" attributefilterenabled="true" attributeoperator="like"
                 url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-                attribution="Service de l'inventaire : &lt;a href='http://patrimoine.bzh/' target='_blank'>patrimoine.bzh &lt;/a>" 
+                attribution="Service de l'inventaire : &lt;a href='https://patrimoine.bzh/' target='_blank'>patrimoine.bzh &lt;/a>" 
 				metadata="https://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/a7f46b47-42fc-49b7-9b49-c7c11aee0932"
 				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a7f46b47-42fc-49b7-9b49-c7c11aee0932" >
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/templates/patrimoine.etude_patrimoine_architecture.mst"></template>
@@ -349,7 +349,7 @@
                     infoformat="application/vnd.ogc.gml" featurecount="1"
                     sld="https://kartenn.region-bretagne.fr/styles/reserve_naturelle.sld" 
                     url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-                    legendurl="http://kartenn.region-bretagne.fr/img/styles/rnr.png" 
+                    legendurl="https://kartenn.region-bretagne.fr/img/styles/rnr.png" 
                     attribution="Source: Région Bretagne" 
                     metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/77f8fc52-ae57-41d1-8f08-7b121b013f51"
                     metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=77f8fc52-ae57-41d1-8f08-7b121b013f51" >
