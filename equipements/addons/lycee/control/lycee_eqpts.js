@@ -1,8 +1,8 @@
-mviewer.customControls.eqpts = (function() {
+mviewer.customControls.lycee_eqpts = (function() {
     /*
      * Private
      */
-    var _idlayer = 'eqpts';
+    var _idlayer = 'lycee_eqpts';
 
 
 
@@ -13,6 +13,7 @@ mviewer.customControls.eqpts = (function() {
 
         init: function () {
             // mandatory - code executed when panel is opened
+            
 
         },
         
