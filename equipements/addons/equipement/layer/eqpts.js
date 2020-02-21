@@ -120,7 +120,7 @@ mviewer.customLayers.eqpts = (function () {
       var stl;
       if (feature.get("type") === 'piscine') {
         stl = _piscine;
-      } else if (feature.get("type") === "stade") {
+      } else if (feature.get("type").substr(0,feature.get("type").indexOf(" ")) === "stade" || feature.get("type") === "stade") {
         stl = _stade;
       } else if (feature.get("type") === "complexe") {
         stl = _complexe;
@@ -138,20 +138,22 @@ mviewer.customLayers.eqpts = (function () {
       var stl;
       if (feature.get("type") === 'piscine') {
         stl = _piscine;
-      } else if (feature.get("type") === "stade") {
+      } else if (feature.get("type").substr(0,feature.get("type").indexOf(" ")) === "stade" || feature.get("type") === "stade") {
         stl = _stade;
       } else if (feature.get("type") === "complexe") {
         stl = _complexe;
       } else {
         stl = _gymnase;
       }
-      usages.forEach(function (item, index) {
+      usages.every(function (item) {
         if (item === rne) {
           stl.getImage().getStroke().setColor("#FF1493");
           feature.setStyle(stl.clone());
+          return false;
         } else {
           feature.setStyle(stl);
         }
+        return true;
       });
     });
   };

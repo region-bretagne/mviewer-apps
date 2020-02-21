@@ -154,7 +154,7 @@ mviewer.customLayers.lycee_eqpts = (function () {
         if ($("#wrapper").hasClass("toggled-2"))
             padding = 50;
         _map.getView().fit(features[0].properties.geometry, {
-            duration: 1000,
+            duration: 500,
             maxZoom: _map.getView().getZoom(),
             padding: [0, padding, 0, 0]
         });
