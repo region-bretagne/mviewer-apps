@@ -11,7 +11,7 @@
     <themes>
         <theme id="theme-20171106150925" name="Equipements sportifs" collapsed="false" icon="fas fa-book">
             <layer id="lycee_eqpts"
-                name="lycées"
+                name="Lycées"
                 type="customlayer"
                 vectorlegend="true"
                 url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/equipements/addons/lycee/layer/lycee_eqpts.js"
@@ -25,8 +25,9 @@
                 searchengine="fuse"
                 fusesearchkeys="nom,adresse"
                 fusesearchresult="{{nom}}"
+                featurecount="1"
                 attribution="Région Bretagne">
-                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/equipements/templates/lycee.mst" />
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/equipements/templates/lycee.mst"/>
             </layer>
             <layer id="eqpts"
                 name="Autres sites"

@@ -13,8 +13,6 @@ mviewer.customControls.eqpts = (function() {
 
         init: function () {
             // mandatory - code executed when panel is opened
-            debugger;
-            $('.mv-custom-controls[data-layerid="eqpts"]').append("<p>dfgdhfdfdsfsfgdsfdgs</p>");
 
         },
         
