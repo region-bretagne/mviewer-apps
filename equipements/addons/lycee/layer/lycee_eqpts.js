@@ -7,7 +7,6 @@ mviewer.customLayers.lycee_eqpts = (function () {
     var _map = mviewer.getMap();
 
     var getText = function(feature, resolution) {
-        console.log(resolution);
         var type = 'Normal';
         var maxResolution = 10;
         var text = feature.get('nom');
