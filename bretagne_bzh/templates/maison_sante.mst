@@ -1,0 +1,13 @@
+{{#features}}
+	<li class="item">
+		<h2 class="rb-title-feature">{{projet}}</h2>
+		<p class="rb-text-feature">		
+			<b>Maître d'ouvrage :</b> {{maitrise_ouvrage}}	<br>
+			<b>Subvention votée :</b> <span class="montant">{{subvention_vote}} </span>	<br>
+		</p>
+	</li>
+{{/features}}
+
+<script>
+$(".montant").each(function(i, p) { p.textContent = parseInt(p.textContent).toLocaleString()+" €"});
+</script>
