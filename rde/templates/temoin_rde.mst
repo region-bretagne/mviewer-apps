@@ -4,9 +4,12 @@
 		<p class="rb-text-feature">		
 			<b>Date : </b> {{date}}<br>
 			<b>Contenu : </b> {{precisions_contenu}}<br>
-			<b>Lieu : </b> {{commune}} - {{nom_lieu}}<br>
-			<b>Descriptif séquence : </b> {{typologie_sequence}}<br>
-			<b>Nombre de participant.e.s : </b> {{nb_participants_total}}<br>
 		</p>
+		
+		<h3 class="rb-subtitle-feature">Temoins</h2>
+		<p class="rb-description-feature">		
+			{{{contact}}}
+		</p>
+
 	</li>
 {{/features}}

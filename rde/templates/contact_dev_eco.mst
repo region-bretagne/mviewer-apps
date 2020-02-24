@@ -1,0 +1,11 @@
+{{#features}}
+	<li class="item">
+		<h2 class="rb-title-feature">{{nom}}</h2>
+		{{#contact}}
+		<h3 class="rb-subtitle-feature">Contacts</h2>
+		<p class="rb-description-feature">		
+			{{{contact}}}
+		</p>
+		{{/contact}}
+	</li>
+{{/features}}
