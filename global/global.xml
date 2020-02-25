@@ -41,13 +41,24 @@
 
     <themes>
         <theme name="Formation"  id="formation" collapsed="true" icon="graduation-cap">
+            <layer id="lycee" name="Lycées formation"  visible="false" tiled="false"
+                searchable="false" queryable="true" fields="axe" aliases="axe" 
+                attributefilter="true" attributefield="secteur_li" 
+				attributevalues="Public,Privé sous contrat avec l'éducation nationale"  attributelabel="Secteur" attributestylesync="false" attributefilterenabled="false"  
+                infoformat="application/vnd.ogc.gml" featurecount="20"
+                style="rb:lycee_formation"
+                url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+                attribution="Source: Région Bretagne" 
+                metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=99e78163-ce9a-4eee-9ea0-36afc2a53d25"
+                metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=99e78163-ce9a-4eee-9ea0-36afc2a53d25" >	   
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.lycee.mst"></template> 
+		    </layer> 
             <layer id="lycee" name="Lycées"  visible="false" tiled="false"
                 searchable="false" queryable="true" fields="axe" aliases="axe" 
                 attributefilter="true" attributefield="secteur_li" 
 				attributevalues="Public,Privé sous contrat avec l'éducation nationale"  attributelabel="Secteur" attributestylesync="false" attributefilterenabled="false"  
                 infoformat="application/vnd.ogc.gml" featurecount="20"
-                style="lycee_secteur_picto,rb:lycee_formation"
-                stylesalias="Secteurs,Formation"
+                style="lycee_secteur_picto"
                 url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
                 attribution="Source: Région Bretagne" 
                 metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=99e78163-ce9a-4eee-9ea0-36afc2a53d25"
