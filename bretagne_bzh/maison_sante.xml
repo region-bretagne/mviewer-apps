@@ -22,7 +22,7 @@
                 infoformat="application/vnd.ogc.gml" featurecount="1" queryable="true"
                 url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                 attribution="Source: Région Bretagne" 
-                metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=97a7763c-242c-4fdf-9a19-1eb0951a46b1"
+                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/97a7763c-242c-4fdf-9a19-1eb0951a46b1"
                 metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=97a7763c-242c-4fdf-9a19-1eb0951a46b1" >	   
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/maison_sante.mst"></template> 
 		    </layer> 

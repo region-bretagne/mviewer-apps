@@ -43,7 +43,7 @@
                     legendurl="https://kartenn.region-bretagne.fr/doc/transports/icons/gare.svg"
                     url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Région Bretagne" 
-                    metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=4a9d13f7-17be-4a98-9f8f-907cf223072f"
+                    metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/4a9d13f7-17be-4a98-9f8f-907cf223072f"
 					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=4a9d13f7-17be-4a98-9f8f-907cf223072f" >
                     <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.arret_ferroviaire.mst"></template>
                 </layer>
@@ -62,7 +62,7 @@
 					stylesalias="Par défaut,Type d'infrastructures"
                     url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Région Bretagne" 
-					metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=0da27e88-4da6-423e-ba4c-dbcad9128cd2"
+					metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/0da27e88-4da6-423e-ba4c-dbcad9128cd2"
 					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0da27e88-4da6-423e-ba4c-dbcad9128cd2">
 		            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.ligne_ferroviaire.mst"></template>
 		        </layer>  
@@ -75,7 +75,7 @@
                     url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                     legendurl="https://kartenn.region-bretagne.fr/doc/transports/icons/arret_rout_reg.svg"
                     attribution="Région Bretagne" 
-                    metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=72bdca86-f605-46c8-8b50-a4af3c629020"
+                    metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/72bdca86-f605-46c8-8b50-a4af3c629020"
 					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=72bdca86-f605-46c8-8b50-a4af3c629020" >
 		            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.arret_routier_reg.mst"></template>
 		        </layer>
@@ -85,7 +85,7 @@
                     style="transports_ligne_rout_reg_defaut" 
                     url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Région Bretagne" 
-                    metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=d42415dd-f736-4b44-82c6-0259c0a667a3"
+                    metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/d42415dd-f736-4b44-82c6-0259c0a667a3"
 					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=d42415dd-f736-4b44-82c6-0259c0a667a3">
 		            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.ligne_routiere_reg.mst"></template>
 		        </layer>
@@ -96,7 +96,7 @@
                     legendurl="https://kartenn.region-bretagne.fr/doc/transports/icons/arret_rout_dep.svg" 
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Région Bretagne - GéoBretagne" 
-					metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=dfd88250-3931-48ba-a77c-a218ae55e0f1"
+					metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/dfd88250-3931-48ba-a77c-a218ae55e0f1"
 					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=dfd88250-3931-48ba-a77c-a218ae55e0f1">
 		            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.arret_routier_dep.mst"></template>
 		        </layer>
@@ -107,7 +107,7 @@
                     legendurl="https://kartenn.region-bretagne.fr/doc/transports/icons/arret_rout_dep.svg" 
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Région Bretagne - GéoBretagne" 
-					metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=252ee615-278d-4bc1-b5a7-9ea543348e72"
+					metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/252ee615-278d-4bc1-b5a7-9ea543348e72"
 					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=252ee615-278d-4bc1-b5a7-9ea543348e72">
 		            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.arret_routier_dep.mst"></template>
 		        </layer>-->
@@ -128,7 +128,7 @@
                     style="ligne_interurbain_saison" 
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Région Bretagne" 
-					metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=b08c5f1b-79ed-441a-9198-7360e6338b89"
+					metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b08c5f1b-79ed-441a-9198-7360e6338b89"
 					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b08c5f1b-79ed-441a-9198-7360e6338b89">
 		            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.ligne_routiere_dep.mst"></template>
 		        </layer>		        
@@ -188,7 +188,7 @@
                 stylesalias="Lundi,Mardi,Mercredi,Jeudi,Vendredi,Samedi,Dimanche"
 				url="../geoserver-proxy/interne/wms"
 				attribution="Région Bretagne" 
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=63ce0894-0277-4d36-af03-36c2a0764911"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/63ce0894-0277-4d36-af03-36c2a0764911"
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=63ce0894-0277-4d36-af03-36c2a0764911">
 		        <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.circulation_ter_ete.mst"></template>
 		    </layer>					
@@ -201,7 +201,7 @@
 				stylesalias="Lundi,Mardi,Mercredi,Jeudi,Vendredi,Samedi,Dimanche"
 				url="../geoserver-proxy/interne/wms"
 				attribution="Région Bretagne" 
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=f95227d1-9fe9-43dd-a6fc-5d5e9d829f3e"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/f95227d1-9fe9-43dd-a6fc-5d5e9d829f3e"
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=f95227d1-9fe9-43dd-a6fc-5d5e9d829f3e">
 		        <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.circulation_ter_hiver.mst"></template>
 		    </layer>					
@@ -213,7 +213,7 @@
 				style="transports_travaux_gare"
 				url="../geoserver-proxy/interne/wms"
 				attribution="Région Bretagne" 
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=54249ce5-b101-4bab-835e-cb59700bf7b1"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/54249ce5-b101-4bab-835e-cb59700bf7b1"
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=54249ce5-b101-4bab-835e-cb59700bf7b1">
 		        <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.travaux_gare.mst"></template>
 		    </layer>	
@@ -224,7 +224,7 @@
 				style="transports_travaux_troncons"
 				url="../geoserver-proxy/interne/wms"
 				attribution="Région Bretagne" 
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=b96a9a45-9f26-424d-8af4-343a042ee8ca"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b96a9a45-9f26-424d-8af4-343a042ee8ca"
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b96a9a45-9f26-424d-8af4-343a042ee8ca">
 		        <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.travaux_troncon.mst"></template>
 		    </layer>				
@@ -239,7 +239,7 @@
 				style="transports_aristote_an"
 				url="../geoserver-proxy/interne/wms"
 				attribution="Région Bretagne" 
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=f0e4f993-0e15-4fcd-8dfb-265fb17cd216"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/f0e4f993-0e15-4fcd-8dfb-265fb17cd216"
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=f0e4f993-0e15-4fcd-8dfb-265fb17cd216">
 		        <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.aristote_annuel.mst"></template>
 		    </layer>					
@@ -253,7 +253,7 @@
 				stylesalias="Catégorie,Total, Entre 6h et 9h, Entre 16h et 19h"
 				url="../geoserver-proxy/interne/wms"
 				attribution="Région Bretagne" 
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=4337c740-f031-4a61-a7b6-0052e0d24e20"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/4337c740-f031-4a61-a7b6-0052e0d24e20"
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=4337c740-f031-4a61-a7b6-0052e0d24e20">
 		        <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.frequ_gare_journ.mst"></template>
 		    </layer>				
@@ -267,7 +267,7 @@
 				style="transports_korrigo_an"
 				url="../geoserver-proxy/interne/wms"
 				attribution="Région Bretagne" 
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=067c6ebe-d17f-4c89-ab53-c68a5fd96643"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/067c6ebe-d17f-4c89-ab53-c68a5fd96643"
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=067c6ebe-d17f-4c89-ab53-c68a5fd96643">
 		        <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.korrigo_annuel.mst"></template>
 		    </layer>
@@ -280,7 +280,7 @@
 				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2012" timemax="2018" timevalues="2012,2013,2014,2015,2016,2017,2018"
 				url="../geoserver-proxy/interne/wms"
 				attribution="Région Bretagne" 
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=4477c443-7924-4644-a01b-f66c14e93107"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/4477c443-7924-4644-a01b-f66c14e93107"
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=4477c443-7924-4644-a01b-f66c14e93107">
 		        <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.korrigo_heure.mst"></template>
 		    </layer>
@@ -412,7 +412,7 @@
 					style="transports_ptus"
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 					attribution="Région Bretagne" 
-					metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=972de151-f31e-4246-97b7-e1438a50e9dd"
+					metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/972de151-f31e-4246-97b7-e1438a50e9dd"
 					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=972de151-f31e-4246-97b7-e1438a50e9dd">
 					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.ptu.mst"></template>
 				</layer>        

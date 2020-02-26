@@ -22,7 +22,7 @@
                 infoformat="application/vnd.ogc.gml" featurecount="1" queryable="true"
                 url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                 attribution="Source: Région Bretagne" 
-                metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=1462e9d0-21d0-4ef8-86ef-e2748ca64598"
+                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/1462e9d0-21d0-4ef8-86ef-e2748ca64598"
                 metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=1462e9d0-21d0-4ef8-86ef-e2748ca64598" >	   
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/booster_sante.mst"></template> 
 		    </layer> 
