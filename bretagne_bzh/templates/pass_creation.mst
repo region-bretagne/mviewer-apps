@@ -1,0 +1,14 @@
+{{#features}}
+	<li class="item">
+		<h2 class="rb-title-feature">{{structure}}</h2>
+		<p class="rb-text-feature">		
+			<b>Adresse :</b> {{adresse}} {{code_postal}} {{ville}}	<br>
+			<b>Ouverture :</b> {{ouverture}}	<br>
+			<b>Prestations :</b> {{prestations}}	<br>
+			<b>Téléphone 1 :</b> {{tel}}	<br>
+			<b>Téléphone 2 :</b> {{tel2}}	<br>
+		</p>
+	</li>
+{{/features}}
+
+<style>
