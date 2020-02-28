@@ -1,15 +1,20 @@
 {{#features}}
 	<li class="item">
-		<h2 class="rb-title-feature">{{intitule_sequence}}</h2>
-		<p class="rb-text-feature">		
-			<b>Date : </b> {{date}}<br>
-			<b>Contenu : </b> {{precisions_contenu}}<br>
-		</p>
-		
+		<h2 class="rb-title-feature">{{nom}}</h2>
+		{{#contact}}
 		<h3 class="rb-subtitle-feature">Temoins</h2>
-		<p class="rb-description-feature">		
+		<p class="rb-temoin-feature">		
 			{{{contact}}}
 		</p>
+		{{/contact}}
 
 	</li>
 {{/features}}
+
+<style>
+.rb-temoin-feature{
+	font-family:"Open Sans";
+	color:#555;
+	font-size:11px;
+}
+</style>

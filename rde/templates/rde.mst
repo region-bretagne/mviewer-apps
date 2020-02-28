@@ -5,8 +5,45 @@
 			<b>Date : </b> {{date}}<br>
 			<b>Contenu : </b> {{precisions_contenu}}<br>
 			<b>Lieu : </b> {{commune}} - {{nom_lieu}}<br>
-			<b>Descriptif séquence : </b> {{typologie_sequence}}<br>
+			<b>Type de séquence : </b> {{typologie_sequence}}<br>
 			<b>Nombre de participant.e.s : </b> {{nb_participants_total}}<br>
 		</p>
+		{{#contact}}
+		<h3 class="rb-subtitle-feature">Temoins</h2>
+		<p class="rb-temoin-feature">		
+			{{{contact}}}
+		</p>
+		{{/contact}}
+		<div class="rb-but-list">
+			<div class="col-md-12">
+			
+		<span>
+		    {{#url1}}
+			<a href="{{url1}}" target="_blank" title="Doc1" class="rb-but-link"><span class="fa fa-file" aria-hidden="true"></span> Doc1</a>    
+			{{/url1}}
+		    {{#url2}}
+			<a href="{{url2}}" target="_blank" title="Lien Doc2" class="rb-but-link"><span class="fa fa-file" aria-hidden="true"></span> Doc2</a>    
+			{{/url2}}	
+		    {{#url3}}
+			<a href="{{url3}}" target="_blank" title="Doc3" class="rb-but-link"><span class="fa fa-file" aria-hidden="true"></span> Doc3</a>    
+			</span>
+			{{/url3}}
+		    {{#url4}}
+			<a href="{{url4}}" target="_blank" title="Doc4" class="rb-but-link"><span class="fa fa-file" aria-hidden="true"></span> Doc4</a>    
+			</span>
+			{{/url4}}
+		</span>
+		</div>
+		</div>
+
+
 	</li>
 {{/features}}
+
+<style>
+.rb-temoin-feature{
+	font-family:"Open Sans";
+	color:#555;
+	font-size:11px;
+}
+</style>
