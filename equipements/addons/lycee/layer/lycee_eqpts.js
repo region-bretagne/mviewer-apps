@@ -54,11 +54,7 @@ mviewer.customLayers.lycee_eqpts = (function () {
             fill: new ol.style.Fill({
                 color: 'rgba(255, 204, 0,1.0)'
             }),
-            stroke: new ol.style.Stroke({
-                color: "#ffffff",
-                width: 4
-            }),
-            radius: 10
+            radius: 8
         })
     });
 
@@ -67,11 +63,7 @@ mviewer.customLayers.lycee_eqpts = (function () {
             fill: new ol.style.Fill({
                 color: 'rgba(255, 102, 0,1.0)'
             }),
-            stroke: new ol.style.Stroke({
-                color: "#ffffff",
-                width: 4
-            }),
-            radius: 10
+            radius: 8
         })
     });
 
@@ -80,11 +72,7 @@ mviewer.customLayers.lycee_eqpts = (function () {
             fill: new ol.style.Fill({
                 color: 'rgba(204, 0, 0,1.0)'
             }),
-            stroke: new ol.style.Stroke({
-                color: "#ffffff",
-                width: 4
-            }),
-            radius: 10
+            radius: 8
         })
     });
 
@@ -95,12 +83,12 @@ mviewer.customLayers.lycee_eqpts = (function () {
     });
     _legend.items.push({
         styles: [partiel],
-        label: "Equipements partiels",
+        label: "Équipements partiels",
         geometry: "Point"
     });
     _legend.items.push({
         styles: [complet],
-        label: "Equipements complets",
+        label: "Équipements complets",
         geometry: "Point"
     });
 
@@ -160,6 +148,7 @@ mviewer.customLayers.lycee_eqpts = (function () {
         });
         mviewer.customLayers.eqpts.selection(features[0].properties["code"])
     };
+    
 
 
 

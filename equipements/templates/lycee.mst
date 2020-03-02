@@ -15,7 +15,7 @@
 		</div>
 		<div class="row">
 			<div id="integre_ext" class="col-xs-12 col-sm-6 col-md-12">
-				<h4 class="subtitle-feature">Equipements en extérieur</h4>
+				<h4 class="subtitle-feature">Equipements extérieur</h4>
 				<div class="info x{{terrain_foot}}"><span style="margin-left:20px;"><span
 							class="field_number">{{terrain_foot}}</span> Terrain de football</span></div>
 				<div class="info x{{terrain_rugby}}"><span style="margin-left:20px;"><span
@@ -29,21 +29,10 @@
 				</div>
 			</div>
 			<div id="integre_inter" class="col-xs-12 col-sm-6 col-md-12">
-				<h4 class="subtitle-feature">Equipements en intérieur</h4>
+				<h4 class="subtitle-feature">Equipements intérieur</h4>
 				<div class="info x{{gymnase}}"><span style="margin-left:20px;">Gymnase</span></div>
 			</div>
 		</div>
-		{{#lien_fiche}}
-		<div class="but_link">
-			<p>
-				<a href="{{lien_fiche}}" target=_blank">
-					<span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
-					Etude patrimoniale
-				</a>
-			</p>
-		</div>
-		{{/lien_fiche}}
-
 		{{#photo_1}}
 		<h4 class="subtitle-feature">Photos</h4>
 		<div class="panel-group" id="inner_accordion" role="tablist" aria-multiselectable="true">
@@ -122,9 +111,21 @@
 			</div>
 			{{/photo_4}}
 		</div>
-	{{/photo_1}}
+		{{/photo_1}}
+		{{#lien_fiche}}
+		<div class="but_link">
+			<p>
+				<a href="{{lien_fiche}}" target=_blank">
+					<span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+					Etude patrimoniale
+				</a>
+			</p>
+		</div>
+		{{/lien_fiche}}
+
+
 		{{#liste_eqpts_ext_codelib}}
-		<h4 class="subtitle-feature">Autres sites extérieurs utilisés</h4>
+		<h4 class="subtitle-feature">Sites extérieurs utilisés</h4>
 		<div id="ext_eqpt">
 			{{.}}
 		</div>
@@ -145,9 +146,13 @@
 		ext_eqpt.html("");
 		json.forEach(element => {
 			ext_eqpt.append(
-				"<p class='first_letter' id='" + element.code + "'>" + element.libelle +
+				"<p class='first_letter eqpts_externes' id='" + element.code + "'>" + element.libelle +
 				"</p>"
 			);
+		});
+		$(".eqpts_externes").on("click", function () {
+			var id = $(this).attr("id");
+			mviewer.customLayers.eqpts.highlightEqpt(id);
 		});
 	});
 </script>
@@ -158,27 +163,31 @@
 		cursor: pointer;
 		transition: .3s;
 	}
-	.first_letter::first-letter{
+
+	.first_letter::first-letter {
 		text-transform: uppercase;
 	}
-	.first_letter:hover{
+
+	.first_letter:hover {
 		padding: 0 5px 0 5px;
 		background-position: left;
-		box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
 		color: white;
 		cursor: pointer;
-		
+
 	}
-	.first_letter{
+
+	.first_letter {
 		background-size: 200% 200%;
-    	background-image: linear-gradient(to right, #455a64 50%, white 0%);
+		background-image: linear-gradient(to right, #455a64 50%, white 0%);
 		background-position: right;
-    	transition: .6s;
+		transition: .6s;
 	}
+
 	.panel-default>.panel-heading {
 		background-color: #f44336;
 		color: white;
-		box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+		box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
 		border-top-left-radius: 1px;
 		border-top-right-radius: 1px;
 		transition: .3s;
