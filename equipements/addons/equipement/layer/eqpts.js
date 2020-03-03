@@ -96,20 +96,11 @@ mviewer.customLayers.eqpts = (function () {
     format: new ol.format.GeoJSON()
   });
   var getText = function(feature, resolution) {
-    var type = 'Normal';
     var maxResolution = 4;
     var text = feature.get('nom');
-
     if (resolution > maxResolution) {
         text = '';
-    } else if (type == 'hide') {
-        text = '';
-    } else if (type == 'shorten') {
-        text = text.truncate(12);
-    } else if (type == 'wrap') {
-        text = text.divide(16, '\n');
-    }
-
+    } 
     return text.toUpperCase();
 };
 
@@ -138,22 +129,31 @@ var createTextStyle = function(feature, resolution) {
         rotation: rotation
     });
 };
+  var styleFunction = function (feature, resolution) {
+    var stl;
+    if (feature.get("type") === 'piscine') {
+      stl = _piscine;
+    } else if (feature.get("type").substr(0,feature.get("type").indexOf(" ")) === "stade" || feature.get("type") === "stade") {
+      stl = _stade;
+    } else if (feature.get("type") === "complexe") {
+      stl = _complexe;
+    } else {
+      stl = _gymnase;
+    }
+    stl.setText(createTextStyle(feature, resolution));
+    if(feature.highlighted==1){
+      stl.getImage().getStroke().setColor("#FF1493");
+      stl = stl.clone();
+    }else if(feature.highlighted == 2){
+      stl.getImage().getStroke().setColor("#FF0000");
+      stl = stl.clone();
+    }
+    return [stl];
+  }
   var _layer = new ol.layer.Vector({
     source: _source,
-    style: function (feature, resolution) {
-      var stl;
-      if (feature.get("type") === 'piscine') {
-        stl = _piscine.clone();
-      } else if (feature.get("type").substr(0,feature.get("type").indexOf(" ")) === "stade" || feature.get("type") === "stade") {
-        stl = _stade.clone();
-      } else if (feature.get("type") === "complexe") {
-        stl = _complexe.clone();
-      } else {
-        stl = _gymnase.clone();
-      }
-      stl.setText(createTextStyle(feature, resolution));
-      return [stl];
-    }
+    style: styleFunction,
+    updateWhileAnimating: true
   });
   var _getBaseStyle = function(feature){
       var stl;
@@ -176,11 +176,10 @@ var createTextStyle = function(feature, resolution) {
       var stl = _getBaseStyle(feature);
       usages.every(function (item) {
         if (item === rne) {
-          stl.getImage().getStroke().setColor("#FF1493");
-          feature.setStyle(stl.clone());
+          feature.highlighted = 1;
           return false;
         } else {
-          feature.setStyle(stl);
+          feature.highlighted = 0;
         }
         return true;
       });
@@ -191,8 +190,7 @@ var createTextStyle = function(feature, resolution) {
     features.forEach(function (feature) {
       var stl = _getBaseStyle(feature).clone();
       if(feature.get("code")==eqptId){
-        stl.getImage().getStroke().setColor("#FF0000");
-        feature.setStyle(stl.clone());
+        feature.highlighted = 2;
         var padding = 250;
         if ($("#wrapper").hasClass("toggled-2"))
             padding = 50;
@@ -202,10 +200,8 @@ var createTextStyle = function(feature, resolution) {
           padding: [0, padding, 0, 0]
         });
       }
-      else if(feature.getStyle().getImage().getStroke().getColor()=="#FF0000"){
-        stl.getImage().getStroke().setColor("#FF1493");
-        feature.setStyle(stl.clone());
-        
+      else if(feature.highlighted==2){
+        feature.highlighted=1;
       }
     });
     
@@ -237,12 +233,9 @@ var createTextStyle = function(feature, resolution) {
 };
   var _handle = function(features,views){
     _renderPanel(features,views);
-    console.log();
     var allFeatures = _source.getFeatures();
     allFeatures.forEach(function (feature) {
-      var stl = _getBaseStyle(feature);
-      stl.setText(createTextStyle(feature, _map.getView().getResolution()));
-      feature.setStyle(stl.clone());
+      feature.highlighted = 0;
     });
     var padding = 250;
       if ($("#wrapper").hasClass("toggled-2"))

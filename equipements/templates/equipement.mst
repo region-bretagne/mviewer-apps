@@ -37,7 +37,6 @@
 			}else if(lastChar == "C"){
 				elem += " : grande salle - 40x20m";
 			}
-			console.log(lastChar);
 			$("#types ul").append("<li>" + elem + "</li>");
 		});
 
