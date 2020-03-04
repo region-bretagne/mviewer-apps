@@ -124,7 +124,7 @@ mviewer.customLayers.lycee_eqpts = (function () {
             panel = "modal-panel";
         }
         var view = views[panel];
-        view.layers.push({
+        view.layers.unshift({
             "id": view.layers.length + 1,
             "firstlayer": false,
             "manyfeatures": (features.length > 1),
@@ -146,7 +146,8 @@ mviewer.customLayers.lycee_eqpts = (function () {
             maxZoom: _map.getView().getZoom(),
             padding: [0, padding, 0, 0]
         });
-        mviewer.customLayers.eqpts.selection(features[0].properties["code"])
+        if(features.length<=1)
+            mviewer.customLayers.eqpts.selection(features[0].properties["code"]);
     };
     
 

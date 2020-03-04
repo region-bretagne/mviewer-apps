@@ -7,64 +7,32 @@ mviewer.customLayers.eqpts = (function () {
 
 
   var _gymnase = new ol.style.Style({
-    image: new ol.style.RegularShape({
-      fill: new ol.style.Fill({
-        color: 'rgba(127, 143, 166,1.0)'
-      }),
-      stroke: new ol.style.Stroke({
-        color: "#ededed",
-        width: 3
-      }),
-      points: 5,
-      radius: 13,
-      radius2: 6,
-      angle: 0
+    image: new ol.style.Icon({
+      color: "black",
+      size: [25,25],
+      src: 'apps/region/equipements/img/equipement/features/gymnase.svg'
     })
   });
   var _piscine = new ol.style.Style({
-    image: new ol.style.RegularShape({
-      fill: new ol.style.Fill({
-        color: 'rgba(0, 168, 255,1.0)'
-      }),
-      stroke: new ol.style.Stroke({
-        color: "#ededed",
-        width: 3
-      }),
-      points: 5,
-      radius: 13,
-      radius2: 6,
-      angle: 0
+    image: new ol.style.Icon({
+      color: "black",
+      size: [25,25],
+      src: 'apps/region/equipements/img/equipement/features/piscine.svg'
     })
   });
 
   var _stade = new ol.style.Style({
-    image: new ol.style.RegularShape({
-      fill: new ol.style.Fill({
-        color: 'rgba(68, 189, 50,1.0)'
-      }),
-      stroke: new ol.style.Stroke({
-        color: "#ededed",
-        width: 3
-      }),
-      points: 5,
-      radius: 13,
-      radius2: 6,
-      angle: 0
+    image: new ol.style.Icon({
+      color: "black",
+      size: [25,25],
+      src: 'apps/region/equipements/img/equipement/features/stade.svg'
     })
   });
   var _complexe = new ol.style.Style({
-    image: new ol.style.RegularShape({
-      fill: new ol.style.Fill({
-        color: 'rgba(232, 65, 24,1.0)'
-      }),
-      stroke: new ol.style.Stroke({
-        color: "#ededed",
-        width: 3
-      }),
-      points: 5,
-      radius: 13,
-      radius2: 6,
-      angle: 0
+    image: new ol.style.Icon({
+      color: "black",
+      size: [25,25],
+      src: 'apps/region/equipements/img/equipement/features/complexe.svg'
     })
   });
 
@@ -96,7 +64,7 @@ mviewer.customLayers.eqpts = (function () {
     format: new ol.format.GeoJSON()
   });
   var getText = function(feature, resolution) {
-    var maxResolution = 4;
+    var maxResolution = 6;
     var text = feature.get('nom');
     if (resolution > maxResolution) {
         text = '';
@@ -142,10 +110,24 @@ var createTextStyle = function(feature, resolution) {
     }
     stl.setText(createTextStyle(feature, resolution));
     if(feature.highlighted==1){
-      stl.getImage().getStroke().setColor("#FF1493");
+      var img = stl.getImage().getSrc();
+      stl = new ol.style.Style({
+        image: new ol.style.Icon({
+          color: '#FF1493',
+          size: [25,25],
+          src: img
+        })
+      });
       stl = stl.clone();
     }else if(feature.highlighted == 2){
-      stl.getImage().getStroke().setColor("#FF0000");
+      var img = stl.getImage().getSrc();
+      stl = new ol.style.Style({
+        image: new ol.style.Icon({
+          color: '#FF0000',
+          size: [25,25],
+          src: img
+        })
+      });
       stl = stl.clone();
     }
     return [stl];

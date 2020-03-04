@@ -144,16 +144,18 @@
 		var json_string = ext_eqpt.html();
 		var json = JSON.parse(json_string);
 		ext_eqpt.html("");
+		var cleared;
 		json.forEach(element => {
 			ext_eqpt.append(
 				"<p class='first_letter eqpts_externes' id='" + element.code + "'>" + element.libelle +
 				"</p>"
 			);
 		});
-		$(".eqpts_externes").on("click", function () {
+		$(".eqpts_externes").on("click", function (e) {
 			var id = $(this).attr("id");
 			mviewer.customLayers.eqpts.highlightEqpt(id);
 		});
+
 	});
 </script>
 <style>
