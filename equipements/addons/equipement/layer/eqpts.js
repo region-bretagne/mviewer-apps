@@ -4,7 +4,7 @@ mviewer.customLayers.eqpts = (function () {
   var _legend = {
     items: []
   };
-
+  var _map = mviewer.getMap();
 
   var _gymnase = new ol.style.Style({
     image: new ol.style.Icon({
@@ -135,27 +135,13 @@ var createTextStyle = function(feature, resolution) {
   var _layer = new ol.layer.Vector({
     source: _source,
     style: styleFunction,
-    updateWhileAnimating: true
+    updateWhileAnimating: true,
+    updateWhileInteracting: true
   });
-  var _getBaseStyle = function(feature){
-      var stl;
-      var type=feature.get("type");
-      if (type === 'piscine') {
-        stl = _piscine;
-      } else if (type.substr(0,type.indexOf(" ")) === "stade" || type === "stade") {
-        stl = _stade;
-      } else if (type === "complexe") {
-        stl = _complexe;
-      } else {
-        stl = _gymnase;
-      }
-      return stl;
-  }
   var _selection = function (rne) {
     var features = _source.getFeatures();
     features.forEach(function (feature) {
       var usages = JSON.parse(feature.getProperties()["usages"]);
-      var stl = _getBaseStyle(feature);
       usages.every(function (item) {
         if (item === rne) {
           feature.highlighted = 1;
@@ -166,11 +152,11 @@ var createTextStyle = function(feature, resolution) {
         return true;
       });
     });
+    _map.getView().animate({zoom: _map.getView().getZoom()+0.0000001});
   };
   var _highlightEqpt = function(eqptId) {
     var features =_source.getFeatures();
     features.forEach(function (feature) {
-      var stl = _getBaseStyle(feature).clone();
       if(feature.get("code")==eqptId){
         feature.highlighted = 2;
         var padding = 250;
@@ -215,10 +201,7 @@ var createTextStyle = function(feature, resolution) {
 };
   var _handle = function(features,views){
     _renderPanel(features,views);
-    var allFeatures = _source.getFeatures();
-    allFeatures.forEach(function (feature) {
-      feature.highlighted = 0;
-    });
+    _resetStyles();
     var padding = 250;
       if ($("#wrapper").hasClass("toggled-2"))
           padding = 50;
@@ -228,6 +211,14 @@ var createTextStyle = function(feature, resolution) {
           padding: [0, padding, 0, 0]
       });
   }
+  var _resetStyles = function(){
+    var allFeatures = _source.getFeatures();
+    allFeatures.forEach(function (feature) {
+      feature.highlighted = 0;
+    });
+    _map.getView().animate({zoom: _map.getView().getZoom()+0.0000001});
+  }
+  
 
 
   return {
@@ -235,7 +226,8 @@ var createTextStyle = function(feature, resolution) {
     handle: _handle,
     legend: _legend,
     highlightEqpt: _highlightEqpt,
-    selection: _selection
+    selection: _selection,
+    resetStyle: _resetStyles,
   };
 
 }());

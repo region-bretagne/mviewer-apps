@@ -138,6 +138,7 @@ mviewer.customLayers.lycee_eqpts = (function () {
 
     var _handle = function (features, views) {
         _renderPanel(features, views);
+        mviewer.customLayers.eqpts.resetStyle();
         var padding = 250;
         if ($("#wrapper").hasClass("toggled-2"))
             padding = 50;
@@ -146,13 +147,8 @@ mviewer.customLayers.lycee_eqpts = (function () {
             maxZoom: _map.getView().getZoom(),
             padding: [0, padding, 0, 0]
         });
-        if(features.length<=1)
-            mviewer.customLayers.eqpts.selection(features[0].properties["code"]);
+       
     };
-    
-
-
-
     return {
         layer: _layer,
         handle: _handle,

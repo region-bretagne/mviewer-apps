@@ -2,7 +2,6 @@
     <application title="Equipements sportifs des lycées rennais" logo="" help="" showhelp="" style="css/themes/nephritis.css" exportpng="false" measuretools="false" />
     <mapoptions maxzoom="20" projection="EPSG:3857" center="-185344,6126292" zoom="13" />
     <searchparameters localities="false" features="true" bbox="false"/>
-    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" querymode="match" linkid="search_id" version="1.4"/>
     <baselayers style="default">
         <baselayer  type="OSM" id="positron" label="Positron" title="CartoDb" thumbgallery="img/basemap/positron.png"
 			url="https://cartodb-basemaps-{a-c}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png" maxzoom="20" 
@@ -14,7 +13,7 @@
                 name="Lycées"
                 type="customlayer"
                 vectorlegend="true"
-                url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/equipements/addons/lycee/layer/lycee_eqpts.js"
+                url="apps/region/equipements/addons/lycee/layer/lycee_eqpts.js"
                 metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=99e78163-ce9a-4eee-9ea0-36afc2a53d25"
                 metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID&amp;ID=99e78163-ce9a-4eee-9ea0-36afc2a53d25"
                 queryable="true"
@@ -27,21 +26,24 @@
                 fusesearchresult="{{nom}}"
                 featurecount="1"
                 attribution="Région Bretagne">
-                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/equipements/templates/lycee.mst"/>
+                <template url="apps/region/equipements/templates/lycee.mst"/>
             </layer>
             <layer id="eqpts"
                 name="Autres sites"
                 type="customlayer"
-                vectorlegend="true"
-                opacity="0.4"
-                url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/equipements/addons/equipement/layer/eqpts.js"
+                vectorlegend="false"
+                legendurl="apps/region/equipements/img/equipement/legend.png"
+                firstHandle="true"
+                opacity="0.8"
+                url="apps/region/equipements/addons/equipement/layer/eqpts.js"
                 metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=99e78163-ce9a-4eee-9ea0-36afc2a53d25"
                 metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID&amp;ID=99e78163-ce9a-4eee-9ea0-36afc2a53d25"
                 queryable="true"
                 visible="true"
-                attribution="Région Bretagne" >
-                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/equipements/templates/equipement.mst" />
+                attribution="Région Bretagne">
+                <template url="apps/region/equipements/templates/equipement.mst" />
             </layer>
+           
         </theme>
     </themes>
 </config>
