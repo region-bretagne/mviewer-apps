@@ -76,7 +76,7 @@
 				style="" 
 				attribution="Région Bretagne" 
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=f1d5b549-64cb-4ccc-9281-5b56b97c7183"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=f1d5b549-64cb-4ccc-9281-5b56b97c7183" />  
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/f1d5b549-64cb-4ccc-9281-5b56b97c7183" />  
 			<layer id="bief" name="Voies navigables Région" scalemin="0" scalemax="50000000" visible="false" tiled="false" namespace="rb"
 				searchable="true" queryable="true" fields="nom" aliases="Nom"
 				infoformat="text/html" featurecount="20"
@@ -84,7 +84,7 @@
 				style="" 
 				attribution="Région Bretagne" 
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=403d129b-e8ca-48ff-81a9-77401c1d933b"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=403d129b-e8ca-48ff-81a9-77401c1d933b" />
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/403d129b-e8ca-48ff-81a9-77401c1d933b" />
 			<layer id="riviere_etat_ecologique" name="Rivière : état écologique 2011-2013" scalemin="0" scalemax="50000000" visible="true" tiled="false" namespace="interne"
 				queryable="true" fields="nom" aliases="nom"
 				infoformat="text/html" featurecount="5"
@@ -153,7 +153,7 @@
 				style="" 
 				attribution="Région Bretagne" 
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=77f8fc52-ae57-41d1-8f08-7b121b013f51"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=77f8fc52-ae57-41d1-8f08-7b121b013f51" />	
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/77f8fc52-ae57-41d1-8f08-7b121b013f51" />	
             <layer id="parc_naturel_regional" name="Parc Naturel Régional" visible="false" tiled="false" namespace="rb"
 				queryable="true" fields="pnr_nom" aliases="Nom"
                 searchable="true" opacity="1" 
@@ -185,7 +185,7 @@
 					style="" 
 					attribution="Région Bretagne" 
 					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ffebd1ad-f123-46d8-9982-0c21764652e2"
-					metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=ffebd1ad-f123-46d8-9982-0c21764652e2" />  
+					metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ffebd1ad-f123-46d8-9982-0c21764652e2" />  
         </theme>
 
         <theme name="Agriculture"  collapsed="true" id="agriculture">

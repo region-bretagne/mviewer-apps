@@ -2,11 +2,23 @@
 	<li class="item">
 		<h2 class="rb-title-feature">{{nom_etablissement}}</h2>
 		<p class="rb-text-feature">		
-			<b>Adresse :</b> {{adresse}} {{code_postal}} {{ville}}	<br>
-			<b>Statut :</b> {{statut}}	<br>
 			{{#annee_demarrage}}
 			<b>Année d'engagement :</b> {{annee_demarrage}}	<br>
 			{{/annee_demarrage}}
+			<b>Statut :</b> {{statut}}	<br>
+			{{#filiere}}
+			<b>Filières :</b> {{filiere}}	<br>
+			{{/filiere}}
+			{{#nombre_jeunes_engages}}
+			<b>Nombre de jeunes engagés :</b> {{nombre_jeunes_engages}}	<br>
+			{{/nombre_jeunes_engages}}
+			{{#taille_etablissement}}
+			<b>Taille établissement :</b> {{taille_etablissement}}	<br>
+			{{/taille_etablissement}}
+			{{#referent_projet}}
+			<b>Référent projet :</b> {{referent_projet}}	<br>
+			{{/referent_projet}}
+
 		</p>
 	</li>
 {{/features}}

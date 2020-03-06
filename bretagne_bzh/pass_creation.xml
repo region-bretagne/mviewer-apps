@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application panelstate="open" coordinates="true" title="Economie Sociale et Solidaire" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" exportpng="true" legend="true" measuretools="true" legendasimage="false" popup="false" print="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme_ultra.css" />
+    <application panelstate="open" coordinates="true" title="Point d'accueil Pass Création" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" exportpng="true" legend="true" measuretools="true" legendasimage="false" popup="false" print="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme_ultra.css" />
     <mapoptions maxzoom="18" projection="EPSG:3857" center="-255516,6140243" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery"><!-- style="default"||gallery" -->          
@@ -18,13 +18,13 @@
 
     <themes>
         <theme name="ESS"  id="ess" collapsed="true" icon="ship">
-            <layer id="structure_ess" name="Structures de l'Economie Sociale et Solidaire (ESS)"  visible="true" tiled="false"
+            <layer id="pass_creation" name="Point d'accueil Pass Création"  visible="true" tiled="false"
                 infoformat="application/vnd.ogc.gml" featurecount="1" queryable="true"
                 url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                 attribution="Source: Région Bretagne" 
-                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/7627c13b-d3e7-4b26-8862-796bbc90d974"
-                metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=7627c13b-d3e7-4b26-8862-796bbc90d974" >	   
-                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/ess.mst"></template> 
+                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/59d02b75-407b-4e80-8569-4b5bf0dfd6d0"
+                metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=59d02b75-407b-4e80-8569-4b5bf0dfd6d0" >	   
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/pass_creation.mst"></template> 
 		    </layer> 
 		</theme>
     </themes>

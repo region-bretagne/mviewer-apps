@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="RDE" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" exportpng="false" measuretools="true" legend="true" legendasimage="false" popup="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/rde/css/rde.css"/>
+    <application title="Réseau des développeurs économiques" logo="https://kartenn.region-bretagne.fr/img/logos/reseau_dev_eco.jpg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" exportpng="false" measuretools="true" legend="true" legendasimage="false" popup="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/rde/css/rde.css"/>
     <mapoptions maxzoom="20" projection="EPSG:3857" center="-291072,6187119" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery">
@@ -19,8 +19,19 @@
     <searchparameters bbox="false" localities="true" features="false"/>
 
     <themes>
-        <theme name="RDE"  collapsed="false" id="culture">
-            <layer id="rde" name="Réunions développement économique" visible="true" tiled="false" namespace="rb"
+        <theme name="Données"  collapsed="false" id="rde">
+            <layer id="rde" name="Réseau des développeurs économiques" visible="true" tiled="false" namespace="rb"
+					queryable="true" infoformat="application/vnd.ogc.gml"
+                    featurecount="20"
+					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+					attributefilter="true" attributefield="annee" attributevalues="2018,2019,2020"  attributelabel="Année" 
+					style="" 
+					attribution="Région Bretagne" 
+					metadata-csw=""
+					metadata="" >  
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/rde/templates/rde.mst"></template> 
+            </layer>
+            <layer id="rde_temoin" name="Témoins" visible="false" tiled="false" namespace="rb"
 					queryable="true" infoformat="application/vnd.ogc.gml"
                     featurecount="20"
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
@@ -28,10 +39,21 @@
 					attribution="Région Bretagne" 
 					metadata-csw=""
 					metadata="" >  
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/rde/templates/rde.mst"></template> 
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/rde/templates/temoin_rde.mst"></template> 
             </layer>
-			<layer id="EPCI_053" name="Intercommunalité" visible="false" tiled="false"
-				queryable="true" fields="NOM_EPCI,SIREN_EPCI" aliases="Nom,SIREN"
+		    <layer id="contact_dev_eco" name="Contacts des développeurs économiques" visible="false" tiled="false" namespace="rb"
+					queryable="true" infoformat="application/vnd.ogc.gml"
+                    featurecount="20"
+					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+					style="" 
+					attribution="Région Bretagne" 
+					metadata-csw=""
+					metadata="" >  
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/rde/templates/contact_dev_eco.mst"></template> 
+            </layer>
+
+			<layer id="EPCI_053" name="EPCI" visible="true" tiled="false"
+				queryable="false" fields="NOM_EPCI,SIREN_EPCI" aliases="Nom,SIREN"
                 infoformat="application/vnd.ogc.gml" featurecount="5"
 				style="epci_region" 
 				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
@@ -42,5 +64,6 @@
 			</layer>
 
 		</theme>   
+		
     </themes>
 </config>

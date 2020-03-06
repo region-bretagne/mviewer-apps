@@ -18,7 +18,7 @@
                 infoformat="application/vnd.ogc.gml" featurecount="20" queryable="true"
                 url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                 attribution="Source: Région Bretagne" 
-                metadata="https://kartenn.region-bretagne.fr/geonetwork/?uuid=3385b253-9e22-453c-83f4-dfc7144fadda"
+                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/3385b253-9e22-453c-83f4-dfc7144fadda"
                 metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=3385b253-9e22-453c-83f4-dfc7144fadda" >	   
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/cooperation_internationale.mst"></template> 
 		    </layer> 
