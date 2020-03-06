@@ -1,6 +1,9 @@
 {{#features}}
 <li class="item">
 	<h3 class="title-feature">{{nom}}</h3>
+	{{#photo}}
+	<img src="{{photo}}" class="img-responsive" />
+	{{/photo}}
 	<div class="text-feature">
 		<div class="row">
 			<div class="col-xs-3">
@@ -11,8 +14,8 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-12 col-sm-6 col-md-12">
-				<h4 class="subtitle-feature">Equipements en extérieur</h4>
+			<div id="integre_ext" class="col-xs-12 col-sm-6 col-md-12">
+				<h4 class="subtitle-feature">Equipements extérieur</h4>
 				<div class="info x{{terrain_foot}}"><span style="margin-left:20px;"><span
 							class="field_number">{{terrain_foot}}</span> Terrain de football</span></div>
 				<div class="info x{{terrain_rugby}}"><span style="margin-left:20px;"><span
@@ -25,11 +28,90 @@
 							class="field_number">{{terrain_foot_g}}</span> Terrain de football gaélique</span>
 				</div>
 			</div>
-			<div class="col-xs-12 col-sm-6 col-md-12">
-				<h4 class="subtitle-feature">Equipements en intérieur</h4>
+			<div id="integre_inter" class="col-xs-12 col-sm-6 col-md-12">
+				<h4 class="subtitle-feature">Equipements intérieur</h4>
 				<div class="info x{{gymnase}}"><span style="margin-left:20px;">Gymnase</span></div>
 			</div>
 		</div>
+		{{#photo_1}}
+		<h4 class="subtitle-feature">Photos</h4>
+		<div class="panel-group" id="inner_accordion" role="tablist" aria-multiselectable="true">
+			<div class="panel panel-default">
+				<div class="panel-heading collapsed" role="tab" id="headingOne" data-toggle="collapse"
+					data-parent="#inner_accordion" href="#collapseOne" aria-expanded="false"
+					aria-controls="collapseOne">
+					<h4 class="panel-title">
+						<a role="button">
+							Photo 1
+						</a>
+					</h4>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+					<div class="panel-body">
+						<img class="img-responsive eqts_photos" src="apps/region/equipements/img/equipement/informations/{{photo_1}}"
+							alt="{{photo_1}}">
+					</div>
+				</div>
+			</div>
+			{{#photo_2}}
+			<div class="panel panel-default">
+				<div class="panel-heading collapsed" role="tab" id="headingTwo" data-toggle="collapse"
+					data-parent="#inner_accordion" href="#collapseTwo" aria-expanded="false"
+					aria-controls="collapseTwo">
+					<h4 class="panel-title">
+						<a role="button">
+							Photo 2
+						</a>
+					</h4>
+				</div>
+				<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+					<div class="panel-body">
+						<img class="img-responsive eqts_photos" src="apps/region/equipements/img/equipement/informations/{{photo_2}}"
+							alt="{{photo_2}}">
+					</div>
+				</div>
+			</div>
+			{{/photo_2}}
+			{{#photo_3}}
+			<div class="panel panel-default">
+				<div class="panel-heading collapsed" role="tab" id="headingThree" data-toggle="collapse"
+					data-parent="#inner_accordion" href="#collapseThree" aria-expanded="false"
+					aria-controls="collapseThree">
+					<h4 class="panel-title">
+						<a role="button">
+							Photo 3
+						</a>
+					</h4>
+				</div>
+				<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+					<div class="panel-body">
+						<img class="img-responsive eqts_photos" src="apps/region/equipements/img/equipement/informations/{{photo_3}}"
+							alt="{{photo_3}}">
+					</div>
+				</div>
+			</div>
+			{{/photo_3}}
+			{{#photo_4}}
+			<div class="panel panel-default">
+				<div class="panel-heading collapsed" role="tab" id="headingFour" data-toggle="collapse"
+					data-parent="#inner_accordion" href="#collapseFour" aria-expanded="false"
+					aria-controls="collapseFour">
+					<h4 class="panel-title">
+						<a role="button">
+							Photo 4
+						</a>
+					</h4>
+				</div>
+				<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+					<div class="panel-body">
+						<img class="img-responsive  eqts_photos" src="apps/region/equipements/img/equipement/informations/{{photo_4}}"
+							alt="{{photo_4}}">
+					</div>
+				</div>
+			</div>
+			{{/photo_4}}
+		</div>
+		{{/photo_1}}
 		{{#lien_fiche}}
 		<div class="but_link">
 			<p>
@@ -40,86 +122,50 @@
 			</p>
 		</div>
 		{{/lien_fiche}}
+
+
+		{{#liste_eqpts_ext_codelib}}
+		<div class="highlight_bloc">
+			<h4 class="icon_aligned subtitle-feature">Sites extérieurs utilisés</h4>
+			<img id="highlight_feature" class="highlight_feature" data_code="{{code}}" src="apps/region/equipements/img/equipement/features/highlight.svg" width="30px" height="30px">
+		</div>
+		
+		<div id="ext_eqpt">
+			{{.}}
+		</div>
+		{{/liste_eqpts_ext_codelib}}
 	</div>
-	{{#photo_1}}
-	<h3 class="subtitle-feature">Autres sites extérieurs utilisés</h3>
-	<div class="panel-group" id="inner_accordion" role="tablist" aria-multiselectable="true">
-		<div class="panel panel-default">
-			<div class="panel-heading collapsed" role="tab" id="headingOne" data-toggle="collapse" data-parent="#inner_accordion" href="#collapseOne"
-			aria-expanded="false" aria-controls="collapseOne">
-				<h4 class="panel-title">
-					<a role="button">
-						Photo 1
-					</a>
-				</h4>
-			</div>
-			<div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
-				<div class="panel-body">
-					<img class="img-responsive" src="apps/region/equipements/img/equipement/{{photo_1}}"
-						alt="{{photo_1}}">
-				</div>
-			</div>
-		</div>
-		{{#photo_2}}
-		<div class="panel panel-default">
-			<div class="panel-heading collapsed" role="tab" id="headingTwo" data-toggle="collapse" data-parent="#inner_accordion"
-			href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-				<h4 class="panel-title">
-					<a role="button">
-						Photo 2
-					</a>
-				</h4>
-			</div>
-			<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-				<div class="panel-body">
-					<img class="img-responsive" src="apps/region/equipements/img/equipement/{{photo_2}}"
-						alt="{{photo_2}}">
-				</div>
-			</div>
-		</div>
-		{{/photo_2}}
-		{{#photo_3}}
-		<div class="panel panel-default">
-			<div class="panel-heading collapsed" role="tab" id="headingThree" data-toggle="collapse" data-parent="#inner_accordion"
-			href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-				<h4 class="panel-title">
-					<a  role="button" >
-						Photo 3
-					</a>
-				</h4>
-			</div>
-			<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-				<div class="panel-body">
-					<img class="img-responsive" src="apps/region/equipements/img/equipement/{{photo_3}}"
-						alt="{{photo_3}}">
-				</div>
-			</div>
-		</div>
-		{{/photo_3}}
-		{{#photo_4}}
-		<div class="panel panel-default">
-			<div class="panel-heading collapsed" role="tab" id="headingFour" data-toggle="collapse" data-parent="#inner_accordion"
-			href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-				<h4 class="panel-title">
-					<a role="button" >
-						Photo 4
-					</a>
-				</h4>
-			</div>
-			<div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
-				<div class="panel-body">
-					<img class="img-responsive" src="apps/region/equipements/img/equipement/{{photo_4}}"
-						alt="{{photo_4}}">
-				</div>
-			</div>
-		</div>
-		{{/photo_4}}
-	</div>
-	{{/photo_1}}
 	<br><br><br><br><br>
 </li>
 {{/features}}
-
+<script>
+	$(function () {
+		if ($("#integre_ext div:visible").length == 0)
+			$("#integre_ext").append("<p style='margin-left:20px;'>Aucun Equipement</p>");
+		if ($("#integre_inter div:visible").length == 0)
+			$("#integre_inter").append("<p style='margin-left:20px;'>Aucun Equipement</p>");
+		var ext_eqpt = $("#ext_eqpt");
+		var json_string = ext_eqpt.html();
+		var json = JSON.parse(json_string);
+		ext_eqpt.html("");
+		var cleared;
+		json.forEach(element => {
+			ext_eqpt.append(
+				"<p class='first_letter eqpts_externes' id='" + element.code + "'>" + element.libelle +
+				"</p>"
+			);
+		});
+		$(".eqpts_externes").on("click", function (e) {
+			var id = $(this).attr("id");
+			mviewer.customLayers.eqpts.highlightEqpt(id);
+		});
+		$("#highlight_feature").click(function( event ) {
+			event.stopImmediatePropagation();
+        	mviewer.customLayers.eqpts.selection($(this).attr("data_code"));
+    	});
+		
+	});
+</script>
 <style>
 	.panel-default>.panel-heading:hover {
 		background-color: #455a64;
@@ -127,23 +173,60 @@
 		cursor: pointer;
 		transition: .3s;
 	}
+	.highlight_bloc{
+		margin-top: 20px;
+	}
+	.first_letter::first-letter {
+		text-transform: uppercase;
+	}
+	#ext_eqpt{
+		margin-top: 10px;
+	}
+	.first_letter:hover {
+		padding: 0 5px 0 5px;
+		background-position: left;
+		box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+		color: white;
+		cursor: pointer;
+
+	}
+
+	.first_letter {
+		background-size: 200% 200%;
+		background-image: linear-gradient(to right, #455a64 50%, white 0%);
+		background-position: right;
+		transition: .6s;
+	}
 
 	.panel-default>.panel-heading {
 		background-color: #f44336;
 		color: white;
-		box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+		box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
 		border-top-left-radius: 1px;
-    	border-top-right-radius: 1px;
+		border-top-right-radius: 1px;
 		transition: .3s;
 	}
+
 	#inner_accordion>.panel-default>.panel-collapse>.panel-body {
-    	border-top: none;
+		border-top: none;
 	}
-	img {
+
+	.eqts_photos {
 		box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 		border-radius: 2px;
 	}
-
+	.icon_aligned{
+		display: inline;
+	}
+	.highlight_feature:hover{
+		transform: scale(1.4);
+		cursor: pointer;
+		transition: 0.3s;
+	}
+	.highlight_feature{
+		margin-left: 15px;
+		transition: 0.3s;
+	}
 	.field_number {
 		font-weight: bold;
 		font-size: larger;
@@ -174,11 +257,7 @@
 
 	.info.x,
 	.info.xnon {
-		background-image: url(https://kartenn.region-bretagne.fr/doc/transports/icons/non_1.png);
-		background-size: 16px;
-		background-repeat: no-repeat;
-		background-position-y: center;
-		margin-bottom: 3px;
+		display: none;
 	}
 
 	.info.xoui,
@@ -186,21 +265,17 @@
 	.info.x2,
 	.info.x3,
 	.info.x4 {
-		background-image: url(https://kartenn.region-bretagne.fr/doc/transports/icons/oui.png);
-		background-size: 16px;
-		background-repeat: no-repeat;
-		background-position-y: center;
 		margin-bottom: 3px;
 	}
 
 	.but_link {
-		width: 80%;
+		width: 100%;
 		padding: 10px 0 10px 0;
 		font-size: 13px;
 		font-family: 'roboto_regular', Arial, Sans-serif;
 		background: rgba(3, 46, 70, 0.9);
 		color: #fff;
-		box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.2);
+		box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
 		border: 1px solid #032e46;
 		margin: 10px auto 10px auto;
 	}

@@ -8,7 +8,7 @@ mviewer.customLayers.lycee_eqpts = (function () {
 
     var getText = function(feature, resolution) {
         var type = 'Normal';
-        var maxResolution = 4;
+        var maxResolution = 10;
         var text = feature.get('nom');
     
         if (resolution > maxResolution) {
@@ -54,11 +54,7 @@ mviewer.customLayers.lycee_eqpts = (function () {
             fill: new ol.style.Fill({
                 color: 'rgba(255, 204, 0,1.0)'
             }),
-            stroke: new ol.style.Stroke({
-                color: "#ffffff",
-                width: 4
-            }),
-            radius: 10
+            radius: 8
         })
     });
 
@@ -67,11 +63,7 @@ mviewer.customLayers.lycee_eqpts = (function () {
             fill: new ol.style.Fill({
                 color: 'rgba(255, 102, 0,1.0)'
             }),
-            stroke: new ol.style.Stroke({
-                color: "#ffffff",
-                width: 4
-            }),
-            radius: 10
+            radius: 8
         })
     });
 
@@ -80,11 +72,7 @@ mviewer.customLayers.lycee_eqpts = (function () {
             fill: new ol.style.Fill({
                 color: 'rgba(204, 0, 0,1.0)'
             }),
-            stroke: new ol.style.Stroke({
-                color: "#ffffff",
-                width: 4
-            }),
-            radius: 10
+            radius: 8
         })
     });
 
@@ -95,12 +83,12 @@ mviewer.customLayers.lycee_eqpts = (function () {
     });
     _legend.items.push({
         styles: [partiel],
-        label: "Equipements partiels",
+        label: "Équipements partiels",
         geometry: "Point"
     });
     _legend.items.push({
         styles: [complet],
-        label: "Equipements complets",
+        label: "Équipements complets",
         geometry: "Point"
     });
 
@@ -136,7 +124,7 @@ mviewer.customLayers.lycee_eqpts = (function () {
             panel = "modal-panel";
         }
         var view = views[panel];
-        view.layers.push({
+        view.layers.unshift({
             "id": view.layers.length + 1,
             "firstlayer": false,
             "manyfeatures": (features.length > 1),
@@ -150,19 +138,17 @@ mviewer.customLayers.lycee_eqpts = (function () {
 
     var _handle = function (features, views) {
         _renderPanel(features, views);
+        mviewer.customLayers.eqpts.resetStyle();
         var padding = 250;
         if ($("#wrapper").hasClass("toggled-2"))
             padding = 50;
         _map.getView().fit(features[0].properties.geometry, {
-            duration: 1000,
+            duration: 500,
             maxZoom: _map.getView().getZoom(),
             padding: [0, padding, 0, 0]
         });
-        mviewer.customLayers.eqpts.selection(features[0].properties["code"])
+       
     };
-
-
-
     return {
         layer: _layer,
         handle: _handle,

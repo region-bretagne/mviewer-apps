@@ -28,7 +28,16 @@
 		var types = ($("#types").text()).split('/');
 		$("#types").html("<ul></ul>");
 		types.forEach(function (elem) {
-			$("#types ul").append("<li>" + elem.trim() + "</li>");
+			elem = elem.trim();
+			let lastChar = elem.charAt(elem.length-1);
+			if(lastChar == "A"){
+				elem += " : petite salle - 20x10m";
+			}else if(lastChar == "B"){
+				elem += " : salle intermédiaire - 30x20m";
+			}else if(lastChar == "C"){
+				elem += " : grande salle - 40x20m";
+			}
+			$("#types ul").append("<li>" + elem + "</li>");
 		});
 
 	});
