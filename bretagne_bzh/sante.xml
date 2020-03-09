@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application panelstate="open" coordinates="true" title="Booster santé" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" exportpng="true" legend="true" measuretools="true" legendasimage="false" popup="false" print="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme.css" />
+    <application panelstate="open" coordinates="true" title="Politique Santé" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" exportpng="true" legend="true" measuretools="true" legendasimage="false" popup="false" print="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme_ultra.css" />
     <mapoptions maxzoom="18" projection="EPSG:3857" center="-255516,6140243" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery"><!-- style="default"||gallery" -->          
@@ -17,14 +17,30 @@
     <searchparameters bbox="true" localities="true" features="true"/>
 
     <themes>
-        <theme name="Santé"  id="sante" collapsed="true" icon="caret-right">
-            <layer id="booster_sante" name="Booster santé"  visible="true" tiled="false"
+        <theme name="Santé"  id="sante" collapsed="false" icon="caret-right">
+            <layer id="booster_sante" name="Projets Booster santé "  visible="true" tiled="false"
                 infoformat="application/vnd.ogc.gml" featurecount="1" queryable="true"
                 url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                 attribution="Source: Région Bretagne" 
                 metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/1462e9d0-21d0-4ef8-86ef-e2748ca64598"
                 metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=1462e9d0-21d0-4ef8-86ef-e2748ca64598" >	   
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/booster_sante.mst"></template> 
+		    </layer> 
+            <layer id="maison_sante_soutenue" name="Maisons de la santé aidées"  visible="true" tiled="false"
+                infoformat="application/vnd.ogc.gml" featurecount="1" queryable="true"
+                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+                attribution="Source: Région Bretagne" 
+                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/97a7763c-242c-4fdf-9a19-1eb0951a46b1"
+                metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=97a7763c-242c-4fdf-9a19-1eb0951a46b1" >	   
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/maison_sante.mst"></template> 
+		    </layer> 
+            <layer id="correspondant_sante" name="Correspondants santé lycées"  visible="true" tiled="false"
+                infoformat="application/vnd.ogc.gml" featurecount="1" queryable="true"
+                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+                attribution="Source: Région Bretagne" 
+                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/d5cb3d69-0f07-4d35-af54-16c81f637d76"
+                metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=d5cb3d69-0f07-4d35-af54-16c81f637d76" >	   
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/correspondant_sante.mst"></template> 
 		    </layer> 
 		</theme>
     </themes>
