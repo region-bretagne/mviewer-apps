@@ -1,11 +1,15 @@
 {{#features}}
 	<li class="item">
 		<h2 class="rb-title-feature">{{projet}}</h2>
-		<p class="rb-text-feature">		
+		<p class="rb-text-feature">
 			<b>Porteur :</b> {{porteur}}	<br>
 			<b>Périmètre action :</b> {{perimetre_action}}	<br>
 			<b>Montant voté :</b>  <span class="montant">{{montant_vote}} </span>	<br>
 		</p>
+		{{#resume}}
+			<p class="rb-description-feature">
+				<b>Résumé :</b> {{resume}}	<br>
+		{{/resume}}
 	</li>
 {{/features}}
 
