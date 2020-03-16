@@ -15,13 +15,13 @@
             attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
     </baselayers>    
     <olscompletion url="../olscompletion"/>
-    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="fussy_like_this" />
-    <searchparameters bbox="false" localities="true" features="false"/>
+    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="current" />
+    <searchparameters bbox="false" localities="true" features="true"/>
 
     <themes>
         <theme name="Données"  collapsed="false" id="rde">
-            <layer id="rde" name="Réseau des développeurs économiques" visible="true" tiled="false" namespace="rb"
-					queryable="true" infoformat="application/vnd.ogc.gml"
+            <layer id="rde" name="Ateliers" visible="true" tiled="false" namespace="rb"
+					searchable="true" queryable="true" infoformat="application/vnd.ogc.gml"
                     featurecount="20"
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 					attributefilter="true" attributefield="annee" attributevalues="2018,2019,2020"  attributelabel="Année" 
@@ -51,11 +51,10 @@
 					metadata="" >  
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/rde/templates/contact_dev_eco.mst"></template> 
             </layer>
-
 			<layer id="EPCI_053" name="EPCI" visible="true" tiled="false"
 				queryable="false" fields="NOM_EPCI,SIREN_EPCI" aliases="Nom,SIREN"
                 infoformat="application/vnd.ogc.gml" featurecount="5"
-				style="epci_region" 
+				style="epci_region_fin" 
 				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
 				attribution="GéoBretagne" 
 				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/2298d744-49cb-4fcb-9487-26f916fecdff" 
