@@ -1,0 +1,12 @@
+{{#features}}
+	<li class="item">
+		<h2 class="rb-title-feature">{{activite}}</h2>
+		<p class="rb-text-feature">
+		    <span style="font-weight:bold"> Mode transport :</span> {{mode_transport}}<br/>
+			<span style="font-weight:bold"> Adresse :</span> {{adresse}} {{code_postal}} {{ville}}<br/>
+		</p>
+		{{#site_web}}
+		<a href="{{site_web}}" target="_blank" title="Site web" class="rb-but-link"><span class="fa fa-file" aria-hidden="true"></span> Site Internet</a>    
+		{{/site_web}}
+	</li>
+{{/features}}

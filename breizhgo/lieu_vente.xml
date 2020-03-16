@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <application title="Points de vente BreizhGo" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" exportpng="false" measuretools="true" legend="true" legendasimage="false" popup="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/breizhgo/css/theme_ultra.css"/>
+    <mapoptions maxzoom="20" projection="EPSG:3857" center="-291072,6187119" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
+
+	<baselayers style="gallery">
+        <baselayer  type="OSM" id="positron" label="Positron" title="CartoDb" thumbgallery="img/basemap/positron.png"
+			url="https://cartodb-basemaps-{a-c}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png" maxzoom="20" 
+			visible="true" attribution=" &lt;a href='https://www.openstreetmap.org/copyright'>OpenStreetMap&lt;/a>  &lt;a href='https://cartodb.com/attributions'>CartoDB &lt;/a>" />	
+		<baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="GéoPortail" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
+            url="../wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
+            attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+        <baselayer  type="WMTS" id="scan2" label="Cartes IGN" title="GéoPortail" maxscale="2000" thumbgallery="img/basemap/scan.jpg"
+            url="../wmts" layers="GEOGRAPHICALGRIDSYSTEMS.MAPS" format="image/jpeg" visible="false" fromcapacity="false"
+            attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+    </baselayers>    
+    <olscompletion url="../olscompletion"/>
+    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="fussy_like_this" />
+    <searchparameters bbox="false" localities="true" features="false"/>
+
+    <themes>
+        <theme name="Points de vente du réseau BreizhGo"  collapsed="true" id="breizhgo">
+			<layer id="lieu_vente_breizhgo" name="Points de vente du réseau BreizhGo" scalemin="0" scalemax="50000000" visible="true" tiled="false" namespace="rb"
+				queryable="true" infoformat="application/vnd.ogc.gml"
+				featurecount="1"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				style="" 
+				attribution="Région Bretagne" 
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ff5a865b-eb04-435b-b002-70f2ca7de434"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ff5a865b-eb04-435b-b002-70f2ca7de434" >  
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/breizhgo/templates/lieu_vente.mst" />
+            </layer>
+		</theme>   
+    </themes>
+</config>
