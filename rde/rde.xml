@@ -31,7 +31,7 @@
 					metadata="" >  
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/rde/templates/rde.mst"></template> 
             </layer>
-            <layer id="rde_temoin" name="Témoins" visible="false" tiled="false" namespace="rb"
+            <layer id="rde_temoin" name="Témoins EPCI" visible="false" tiled="false" namespace="rb"
 					queryable="true" infoformat="application/vnd.ogc.gml"
                     featurecount="20"
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 

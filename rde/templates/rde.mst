@@ -8,12 +8,6 @@
 			<b>Type de séquence : </b> {{typologie_sequence}}<br>
 			<b>Nombre de participant.e.s : </b> {{nb_participants_total}}<br>
 		</p>
-		{{#contact}}
-		<h3 class="rb-subtitle-feature">Temoins</h2>
-		<p class="rb-temoin-feature">		
-			{{{contact}}}
-		</p>
-		{{/contact}}
 		<div class="rb-but-list">
 			<div class="col-md-12">
 			
@@ -35,6 +29,13 @@
 		</span>
 		</div>
 		</div>
+
+		{{#contact}}
+		<h3 class="rb-subtitle-feature">Temoins</h2>
+		<p class="rb-temoin-feature">		
+			{{{contact}}}
+		</p>
+		{{/contact}}
 
 
 	</li>
