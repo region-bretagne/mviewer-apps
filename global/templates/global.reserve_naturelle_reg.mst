@@ -1,15 +1,16 @@
 {{#features}}
 	<li class="item">
 		<h2 class="rb-title-feature">{{nom}}</h2>
+		<span class="rb-description-feature"><b> Description :</b> {{description}}</span><br/>
+		<span class="rb-description-feature"><b> Surface :</b> {{surface}} ha</span><br/>
 		{{#image}}
-			<img src="{{image}}" class="img-responsive" style="margin-top:5%;"  /><br/>
+			<img src="{{image}}" class="img-responsive" style="margin-top:5%;"  />
+			<span class="rb-description-feature"><i><b> Crédit :</b> {{credit_photo}}</i></span><br/>
 		{{/image}}
-		
-			<span class="rb-text-feature"><b> Surface :</b> {{surface}} ha</span><br/>
-			{{#site_web}}
-			<div class="rb-but-list">
-			<a href="{{site_web}}" target="_blank" title="Site web" class="rb-but-link" style="padding-top: 10px;"><span class="fa fa-globe" aria-hidden="true"></span> Site web</a>
-			</div>
-			{{/site_web}}                
+		{{#site_web}}
+		<div class="rb-but-list">
+		<a href="{{site_web}}" target="_blank" title="Site web" class="rb-but-link" style="padding-top: 10px;"><span class="fa fa-globe" aria-hidden="true"></span> Site web</a>
+		</div>
+		{{/site_web}}                
 	</li>
 {{/features}}

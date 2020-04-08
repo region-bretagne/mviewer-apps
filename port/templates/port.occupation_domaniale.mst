@@ -97,4 +97,7 @@
     background: url(https://kartenn.region-bretagne.fr/img/picto/port/PLA.png) left top no-repeat;    
     background-size: 30px;
 }
+#slide-right-panel-1{
+	padding-bottom: 30%;
+}
 </style>
