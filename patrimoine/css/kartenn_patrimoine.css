@@ -680,4 +680,7 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 .rb-but-link:hover{
 	background-color:#b0006b;
 }	
-		
+/*Paramètre pour éviter le phénomène de double ascenseur en mode ultra */
+#accordion .panel-collapse.collapse.in{
+  max-height:2000px!important;
+}

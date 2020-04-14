@@ -1,7 +1,7 @@
 {{#features}}
 	<li class="item">
 		<h3 class="rb-title-feature">{{pnr_nom}}</h3>
-		<span class="rb-description-feature"><b> Description :</b> {{description}}</span><br/>
+		<span class="rb-description-feature">{{description}}</span><br/>
 		{{#image}}
 			<img src="{{image}}" class="img-responsive" style="margin-top:5%;"  />
 			<span class="rb-description-feature"><i><b> Crédit :</b> {{credit_photo}}</i></span><br/>

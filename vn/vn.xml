@@ -330,6 +330,50 @@
 				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ce651579-c92a-474d-aee1-6e44b5f55579" >  
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.etang_vn.mst"></template>
 			</layer>
+			<layer 
+				id="reseau_souterrain_hta"
+				scalemin="0" scalemax="100000"
+				name="Lignes souterraines HTA Enedis en France"
+				type="wms"
+				url="https://geobretagne.fr/geoserver/enedis/wms"
+				visible="false"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/e24949f4-49c5-43c5-a85a-172f1cb4c5bd"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ELEMENTSETNAME=full&amp;ID&amp;ID=e24949f4-49c5-43c5-a85a-172f1cb4c5bd"
+				queryable="false">
+			</layer> 
+			<layer 
+				id="reseau_bt"
+				name="Lignes aériennes BT Enedis en France"
+				scalemin="0" scalemax="100000"
+				type="wms"
+				url="https://geobretagne.fr/geoserver/enedis/wms"
+				visible="false"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/6df302c1-601a-4b69-805f-f4f6ca666dfc"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ELEMENTSETNAME=full&amp;ID&amp;ID=6df302c1-601a-4b69-805f-f4f6ca666dfc"
+				queryable="false">
+			</layer> 
+			<layer 
+				id="reseau_hta"
+				scalemin="0" scalemax="100000"
+				name="Lignes aériennes HTA Enedis en France"
+				type="wms"
+				url="https://geobretagne.fr/geoserver/enedis/wms"
+				visible="false"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/ef25cd6f-385f-4844-a0a0-de0ac20808d6"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ELEMENTSETNAME=full&amp;ID&amp;ID=ef25cd6f-385f-4844-a0a0-de0ac20808d6"
+				queryable="false">
+			</layer> 
+			<layer 
+				id="reseau_souterrain_bt"
+				scalemin="0" scalemax="100000"
+				name="Lignes souterraines Basse tension Enedis en France"
+				type="wms"
+				url="https://geobretagne.fr/geoserver/enedis/wms"
+				visible=""
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/e9421773-f439-4354-b873-834f104e6a5e"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ELEMENTSETNAME=full&amp;ID&amp;ID=e9421773-f439-4354-b873-834f104e6a5e"
+				queryable="false">
+			</layer> 
         </theme> 
 		<theme name="Domanialité"  collapsed="true" id="domanialite" icon="wrench"> 
 			<layer id="maison_eclusiere_aap" name="Activités maisons éclusières" visible="false" tiled="false" 
@@ -396,7 +440,7 @@
 				attribution="DGFIP" 
 				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/91811bc9-308a-4ddb-9c15-c69b3c0bb067"
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=91811bc9-308a-4ddb-9c15-c69b3c0bb067" />	
-            <layer id="CP.CadastralParcel" name="Parcelle cadastrale" scalemin="0" scalemax="50000" visible="false" tiled="true"
+            <layer id="CP.CadastralParcel" name="Parcelle cadastrale" scalemin="0" scalemax="50000" visible="false" tiled="false"
 				queryable="true" fields="label,nom_commune,areavalue" aliases="Parcelle,Commune,Surface"
                 infoformat="text/html" featurecount="5"             
 				url="https://geobretagne.fr/geoserver/cadastre/wms" 

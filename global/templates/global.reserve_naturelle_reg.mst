@@ -1,7 +1,7 @@
 {{#features}}
 	<li class="item">
 		<h2 class="rb-title-feature">{{nom}}</h2>
-		<span class="rb-description-feature"><b> Description :</b> {{description}}</span><br/>
+		<span class="rb-description-feature">{{description}}</span><br/>
 		<span class="rb-description-feature"><b> Surface :</b> {{surface}} ha</span><br/>
 		{{#image}}
 			<img src="{{image}}" class="img-responsive" style="margin-top:5%;"  />

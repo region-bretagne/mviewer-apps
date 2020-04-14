@@ -487,3 +487,7 @@ body .popover-title {
 .rb-but-link:hover{
 	background-color:#49828D;
 }	
+/*Paramètre pour éviter le phénomène de double ascenseur en mode ultra */
+#accordion .panel-collapse.collapse.in{
+  max-height:2000px!important;
+}
