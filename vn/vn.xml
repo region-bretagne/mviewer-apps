@@ -222,6 +222,7 @@
 			
         </theme> 
         <theme name="Infrastructures"  collapsed="true" id="infrastructures" icon="ship"> 
+		<group name="Voies navigables" id="vn">
 			<layer id="ecluse_trafic" name="Ecluse" visible="true" tiled="false" dynamiclegend="true"
 				queryable="true" searchable="true" infoformat="application/vnd.ogc.gml" featurecount="20"
 				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2005" timemax="2019" timevalues="2005,2007,2009,2011,2013,2015,2017,2019"
@@ -330,6 +331,8 @@
 				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ce651579-c92a-474d-aee1-6e44b5f55579" >  
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.etang_vn.mst"></template>
 			</layer>
+		</group>
+		<group name="Réseaux électriques" id="enedis">
 			<layer 
 				id="reseau_souterrain_hta"
 				scalemin="0" scalemax="100000"
@@ -374,6 +377,7 @@
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ELEMENTSETNAME=full&amp;ID&amp;ID=e9421773-f439-4354-b873-834f104e6a5e"
 				queryable="false">
 			</layer> 
+		</group>
         </theme> 
 		<theme name="Domanialité"  collapsed="true" id="domanialite" icon="wrench"> 
 			<layer id="maison_eclusiere_aap" name="Activités maisons éclusières" visible="false" tiled="false" 
