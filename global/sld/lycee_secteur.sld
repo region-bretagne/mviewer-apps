@@ -21,7 +21,7 @@
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://kartenn.region-bretagne.fr/doc/icons_region/lycee_prive.svg"/>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://kartenn.region-bretagne.fr/doc/icons_region/lycee_prive.svg"/>
                   <Format>image/svg</Format>
               </ExternalGraphic>
              <Size>20</Size>
@@ -40,7 +40,7 @@
           <PointSymbolizer>
             <Graphic>
               <ExternalGraphic>
-                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="http://kartenn.region-bretagne.fr/doc/icons_region/lycee.svg"/>
+                <OnlineResource xmlns:xlink="http://www.w3.org/1999/xlink" xlink:type="simple" xlink:href="https://kartenn.region-bretagne.fr/doc/icons_region/lycee.svg"/>
                   <Format>image/svg</Format>
               </ExternalGraphic>
              <Size>20</Size>

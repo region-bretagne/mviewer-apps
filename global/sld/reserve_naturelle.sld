@@ -33,7 +33,7 @@
               <sld:ExternalGraphic>
                 <sld:OnlineResource
                    xlink:type="simple"
-                   xlink:href="http://kartenn.region-bretagne.fr/doc/icons_region/reserve_naturelle.svg" />
+                   xlink:href="https://kartenn.region-bretagne.fr/doc/icons_region/reserve_naturelle.svg" />
                  <sld:Format>image/svg</sld:Format>
                </sld:ExternalGraphic>
                <sld:Size>22</sld:Size>
