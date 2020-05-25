@@ -491,3 +491,9 @@ body .popover-title {
 #accordion .panel-collapse.collapse.in{
   max-height:2000px!important;
 }
+
+/*Enleve le trait gris en bas popup*/
+.panel {
+-webkit-box-shadow: none !important;
+box-shadow: none !important;
+}
