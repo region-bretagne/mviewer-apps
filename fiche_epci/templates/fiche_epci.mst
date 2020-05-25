@@ -1,0 +1,37 @@
+{{#features}}
+	<li class="item">
+		<p class="rb-title-feature">{{epci_nom}}</p>
+		
+		{{#elu_prenom_nom}}
+		<p class="rb-subtitle-feature">Elu référent</p>
+		<p class="rb-text-feature">
+		    <span style="font-weight:bold"> Nom :</span> {{elu_prenom_nom}}<br/>
+			<span style="font-weight:bold"> Email :</span> {{elu_email}}<br/>
+		{{#elu_photo}}
+			<img src="{{elu_photo}}" class="img-responsive center-block" />
+        {{/elu_photo}}
+		{{#elu_lien}}
+		<a href="{{elu_lien}}" target="_blank" title="Site web" class="rb-but-link"><span class="fa fa-file" aria-hidden="true"></span> Site Internet</a>    
+		{{/elu_lien}}
+		</p>
+		{{/elu_prenom_nom}}
+		
+		<p class="rb-subtitle-feature">{{agence_nom}}</p>
+		<p class="rb-subtitle-feature">{{site_nom}}</p>
+		<p class="rb-text-feature">
+		    {{agence_adresse_1}}<br/>
+		    {{agence_cp}} {{agence_ville}}<br/>
+		    {{agence_email}}<br/>
+		</p>
+		<p class="rb-float">
+		{{#directeur_photo}}
+			<img src="{{directeur_photo}}" class="rb-img-fiche" />
+        {{/directeur_photo}}
+		</p>
+		<p class="rb-espace">
+			<span class="rb-subtitle-feature">{{directeur_prenom_nom}}</span></br>
+			<span class="rb-text-feature">	{{directeur_intitule}} </span>
+		</p>
+
+	</li>
+{{/features}}

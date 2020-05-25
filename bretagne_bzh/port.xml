@@ -18,9 +18,9 @@
 
     <themes>
         <theme name="Port"  id="port" collapsed="true" icon="ship">
-            <layer id="port" name="Port gérées par la région"  visible="true" tiled="false"
+            <layer id="port_rb_com" name="Port gérées par la région"  visible="true" tiled="false"
                 infoformat="application/vnd.ogc.gml" featurecount="1" queryable="true"
-                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms"
                 attribution="Source: Région Bretagne" 
                 metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/c55c4fba-6a37-48ea-8754-a1bf770a684b"
                 metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c55c4fba-6a37-48ea-8754-a1bf770a684b" >	   

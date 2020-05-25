@@ -1,12 +1,22 @@
 {{#features}}
 	<li class="item">
 		<h2 class="rb-title-feature">{{nom}}</h2>
-		<h3 class="rb-subtitle-feature">Activités</h3>   
+		<h3 class="rb-subtitle-feature">Activités</h3>  
 		<div class="plaisance {{plaisance}}" title="Plaisance"></div>
 		<div class="peche {{peche}}" title="Pêche"></div>
 		<div class="commerce {{commerce}}" title="Commerce"></div>
 		<div class="reparation_navale {{reparation_navale}}" title="Réparation navale"></div>
-		<div class="passager {{passager}}" title="Transport de passagers"></div>
+		<div class="passager {{passager}}" title="Transport de passagers"></div><br/><br/>
+		<div class="rb-description-feature" id="rb-puces">	
+			{{{activite}}}
+		</div>
+		{{#gestionnaire}}
+		<h3 class="rb-subtitle-feature">Gestionnaires</h3>  
+		<div class="rb-description-feature" id="rb-puces">	
+			{{{gestionnaire}}}<br/>
+		</div>
+		{{/gestionnaire}}
+
 	</li>
 {{/features}}
 

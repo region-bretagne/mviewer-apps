@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /******************************************************************************
--------------------------- CSS THEME MVIEWER BRETAGNE BZH ---------------------
+------------------------ CSS THEME MVIEWER BRETAGNE BZH ULTRA -----------------
 ******************************************************************************/
 @import url("../../crbicon/crbicon.css");
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
@@ -76,7 +76,7 @@
 
 /* all titles hover */
 #menu li a:hover {
-  border-left: #5A9EAA 0px solid;
+  border-left: black 0px solid;
   background: #5A9EAA;
   color: #f8f8f8; }
 
@@ -149,14 +149,14 @@
     color: #5A9EAA;
     font-family: "roboto_bold", Arial, Sans-serif; }
   #layers-container .mv-layer-options {
-    color: #5A9EAA; }
+    color: #555555; }
   #layers-container .mv-layer-options p {
     font-family: "roboto_regular", Arial, Sans-serif; }
   #layers-container .form-group label {
     font-family: "roboto_bold", Arial, Sans-serif; }
   #layers-container .form-control {
     font-family: "roboto_regular", Arial, Sans-serif;
-    color: #5A9EAA; }
+    color: #555555; }
   #layers-container .datepicker .active {
     background-color: #5A9EAA; }
   #layers-container .mv-layer-options .slider-selection {
@@ -205,7 +205,7 @@ body .popover-title {
 ---------- BASEMAP CONTROL -----
 ********************************/
 #basemapslist li.active {
-  box-shadow: 0px 0px 2px 2px #5A9EAA, 0px 0px 3px 3px rgba(200, 200, 200, 0.5); }
+  box-shadow: 0px 0px 2px 2px black, 0px 0px 3px 3px rgba(200, 200, 200, 0.5); }
 
 /*******************************
 --------- BUTTONS RIGHT TOOLBAR
@@ -277,13 +277,13 @@ body .popover-title {
 #parameterspanel {
   font-family: "roboto_regular", Arial, Sans-serif; }
   #parameterspanel .modal-header {
-    color: #5A9EAA;
+    color: #555555;
     font-size: 13px; }
 
 /* Search results */
 #searchresults {
   font-family: "roboto_regular", Arial, Sans-serif;
-  color: #5A9EAA; }
+  color: #555555; }
   #searchresults a.list-group-item.disabled {
     font-family: "roboto_bold", Arial, Sans-serif; }
   #searchresults a:hover {
@@ -314,13 +314,13 @@ body .popover-title {
   border-bottom: 2px solid #5A9EAA; }
 #help .nav-tabs > li > a {
   border-radius: 0px 0px 0 0px;
-  color: #5A9EAA; }
+  color: #555555; }
 #help .nav-tabs > li.active > a {
   background-color: #5A9EAA;
   border-color: #5A9EAA;
   color: white; }
 #help .nav-tabs > li.active > a:hover {
-  color: #5A9EAA; }
+  color: #555555; }
 #help .nav-tabs > li > a:hover {
   border-color: #eeeeee #eeeeee #5A9EAA;
   color: #5A9EAA; }
@@ -344,11 +344,11 @@ body .popover-title {
   font-size: 14px;
   margin-bottom: 2px; }
 #help .tab-pane p {
-  color: #5A9EAA;
+  color: #555555;
   font-size: 13px;
   text-align: justify; }
 #help .tab-pane .visuel_tx {
-  color: #5A9EAA;
+  color: #555555;
   font-size: 13px; }
 #help .tab-pane .visuel {
   text-align: center; }
@@ -379,34 +379,48 @@ body .popover-title {
   #modal-panel .modal-header,
   #sharepanel .modal-header,
   #thematic-modal .modal-header {
-    background: #5A9EAA;
+    /*background: #5A9EAA;*/
     color: white;
-    padding: 12px 15px;
+    /*padding: 12px 15px;*/
     font-family: "roboto_regular", Arial, Sans-serif; }
 
   #legend-modal .modal-header .close,
   #sharepanel .modal-header .close,
   #modal-panel .modal-header .close,
   #thematic-modal .modal-header .close {
-    color: white;
-    opacity: .9; } }
-
+    /*color: white;
+    opacity: .9;*/ } }
+	
 /*******************************
 ------------- SPECIFIC BRETAGNE BZH ------
 ********************************/
-img.mv-logo{
-	display:none!important;
-}
-/*#mv-navbar{
-		display:none!important;
-}
-#layers-container-box{
-	    margin-top: 10px!important; 
+
+.popup-content h3{
+	margin-top:4%;
 }
 
-ul#menu {
-    margin-top: 10px;
-}*/
+.popup-content .panel-heading.mv-theme{
+	display:none;
+}
+.modal-title{
+	display:none;
+}
+
+#modal-panel .modal-body{
+	padding-top:0px;	
+}
+
+#accordion .panel-body{
+	border:none;
+	padding-top:0px;	
+}
+
+#accordion .buton.close{
+	padding:0px;
+	padding-top:15px;
+	padding-right:15px;
+}
+
 /*Changer couleur icone*/
 #els_marker path {
     fill: #5A9EAA!important;
@@ -426,25 +440,26 @@ ul#menu {
 	color: #5A9EAA;
 }
 .rb-title-feature {
-	color: #5A9EAA;
+	color: #000000;
 	font-family:"region_bold";
 	font-size:25px;
 	margin-bottom:3%;
 	line-height:1;
+	text-transform:uppercase;
 }
 .rb-subtitle-feature {
-	color: #5A9EAA;
+	color: #000000;
 	font-family:"region_bold";
 	font-size:18px;
-	margin-top:2%;
+	margin-top:1%;
 	line-height:1;
 }
 .rb-text-feature{
 	font-family:"Open Sans";
 	color:#555;
 	font-size:15px;
-	margin-top:2%;
-	margin-bottom:2%;
+	margin-top:1%;
+	margin-bottom:1%;
 }
 .rb-description-feature{
 	font-family:"Open Sans";
@@ -471,8 +486,22 @@ ul#menu {
 	transition: all 0.2s;
 }
 .rb-but-link:hover{
-	background-color:#49828D;
+	background-color:#4c74b5;
 }	
-#accordion .panel-collapse.collapse.in{
-  max-height:2000px!important;
+.rb-img-fiche{
+	margin-top:2%;
+	max-width:150px;
+}
+
+.rb-float{
+	float:left;
+	margin-right:10px;
+}
+
+.rb-espace{
+	margin-top:10%;
+}
+
+.modal-content{
+	border-radius:4px!important;
 }

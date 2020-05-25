@@ -7,10 +7,23 @@
 			<img src="{{image}}" class="img-responsive" style="margin-top:5%;"  />
 			<span class="rb-description-feature"><i><b> Crédit :</b> {{credit_photo}}</i></span><br/>
 		{{/image}}
-		{{#site_web}}
+		
 		<div class="rb-but-list">
-		<a href="{{site_web}}" target="_blank" title="Site web" class="rb-but-link" style="padding-top: 10px;"><span class="fa fa-globe" aria-hidden="true"></span> Site web</a>
+			<div class="col-md-12">
+			<span>
+				{{#site_web}}
+				<a href="{{site_web}}" target="_blank" title="Site des réserves régionales" class="rb-but-link" style="padding-top: 10px;"><span class="fa fa-globe" aria-hidden="true"></span> Site réserves régionales</a>
+				{{/site_web}}
+				{{#site_web_ext}}
+				<a href="{{site_web_ext}}" target="_blank" title="le site de {{nom}}" class="rb-but-link" style="padding-top: 10px;"><span class="fa fa-globe" aria-hidden="true"></span> {{nom}}</a>
+				{{/site_web_ext}}
+				{{#lien_plaquette}}
+				<a href="{{lien_plaquette}}" target="_blank" title="Lien plaquette" class="rb-but-link" style="padding-top: 10px;"><span class="fa fa-globe" aria-hidden="true"></span> Plaquette</a>
+				{{/lien_plaquette}}
+
+			</span>
+			</div>
 		</div>
-		{{/site_web}}                
+
 	</li>
 {{/features}}
