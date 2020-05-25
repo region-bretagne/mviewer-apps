@@ -12,7 +12,7 @@
               <sld:ExternalGraphic>
                 <sld:OnlineResource
                    xlink:type="simple"
-                   xlink:href="http://kartenn.region-bretagne.fr/doc/icons_region/port.svg" />
+                   xlink:href="https://kartenn.region-bretagne.fr/doc/icons_region/port.svg" />
                  <sld:Format>image/svg</sld:Format>
                </sld:ExternalGraphic>
                <sld:Size>20</sld:Size>
