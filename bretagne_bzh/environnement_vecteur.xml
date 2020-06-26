@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <application panelstate="open" coordinates="true" title="Kartenn" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" exportpng="true" legend="true" measuretools="true" legendasimage="false" popup="false" print="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme_ultra.css" />
+    <mapoptions maxzoom="18" projection="EPSG:3857" center="-253771,6162659" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
+
+	<baselayers style="gallery"><!-- style="default"||gallery" -->            		
+        <baselayer  type="OSM" id="positron" label="Positron" title="CartoDb" thumbgallery="img/basemap/positron.png"
+			url="https://cartodb-basemaps-{a-c}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png" maxzoom="20" 
+			visible="true" attribution=" &lt;a href='https://www.openstreetmap.org/copyright'>OpenStreetMap&lt;/a>  &lt;a href='https://cartodb.com/attributions'>CartoDB &lt;/a>" />	
+		<baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="GéoPortail" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
+            url="../wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
+            attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+        <baselayer  type="WMTS" id="scan2" label="Cartes IGN" title="GéoPortail" maxscale="2000" thumbgallery="img/basemap/scan.jpg"
+            url="../wmts" layers="GEOGRAPHICALGRIDSYSTEMS.MAPS" format="image/jpeg" visible="false" fromcapacity="false"
+            attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+    </baselayers> 
+    <authentification url="who" loginurl="?login" logouturl="../j_spring_security_logout" enabled="true"/>
+    <olscompletion url="http://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par l'API adresse.data.gouv.fr"/>
+    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="current"/>
+    <searchparameters bbox="true" localities="true" features="true"/>
+
+    <themes>
+        <theme name="Espaces naturels"  collapsed="true" id="nature" icon="leaf"> 
+            <layer id="reserve_naturelle_regionale" name="Réserve naturelle régionale"  visible="true"
+				searchable="true" queryable="true" type="customlayer" vectorlegend="true" 
+				url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/customlayers/reserve_naturelle_regionale.js"
+				attribution="Source: Région Bretagne"                
+                fields="nom_long,id"
+                nohighlight="true"
+                aliases="Nom,id"
+				tooltip="true"	tooltipcontent="{{nom_long}}"
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/77f8fc52-ae57-41d1-8f08-7b121b013f51"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=77f8fc52-ae57-41d1-8f08-7b121b013f51" >
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.reserve_naturelle_reg.mst"></template>
+			</layer>
+           <layer id="parc_naturel_regional"
+                name="Parc naturel régional"
+                type="customlayer"
+                vectorlegend="true"
+                url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/customlayers/parc_naturel_regional.js"
+                metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=99e78163-ce9a-4eee-9ea0-36afc2a53d25"
+                metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID&amp;ID=99e78163-ce9a-4eee-9ea0-36afc2a53d25"
+                queryable="true"
+                fields="pnr_nom,pnr_ident"
+                nohighlight="true"
+				tooltip="true"	tooltipcontent="{{pnr_nom}}"
+                aliases="Nom,id"
+                visible="true"                
+                searchable="true"
+                attribution="Région Bretagne" >
+		            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.parc_naturel_regional.mst"></template>
+			</layer>
+
+        </theme>
+    </themes>
+</config>
