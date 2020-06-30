@@ -20,7 +20,7 @@
     <searchparameters bbox="true" localities="true" features="true"/>
 
     <themes>
-        <theme name="Espaces naturels"  collapsed="true" id="nature" icon="leaf"> 
+        <theme name="Espaces naturels"  collapsed="true" id="nature" icon="fas fa-leaf"> 
             <layer id="reserve_naturelle_regionale" name="Réserve naturelle régionale"  visible="true"
 				searchable="true" queryable="true" type="customlayer" vectorlegend="true" 
 				url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/customlayers/reserve_naturelle_regionale.js"

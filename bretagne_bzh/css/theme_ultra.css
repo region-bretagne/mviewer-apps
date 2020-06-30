@@ -443,6 +443,7 @@ body .popover-title {
 	color: #5A9EAA;
 	font-family:"region_bold";
 	font-size:25px;
+	text-align:center;
 	margin-bottom:3%;
 	line-height:1;
 }

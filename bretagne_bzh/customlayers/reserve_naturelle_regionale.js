@@ -10,12 +10,12 @@ reserve_naturelle_regionale.legend = { items: [
             stroke: new ol.style.Stroke({ color: 'rgba(0, 90, 102,1.0)', width: 3 }),
             fill: new ol.style.Fill({ color: 'rgba(0, 90, 102,.7)'})
         })]
-    }/*,
-    {
-        label: "Logo",
+    }
+    /*{
+        label: "RNR",
+		geometry: "Point",
         styles: [new ol.style.Style({
 		  image: new ol.style.Icon({
-			scale: 0.015,
 			anchorXUnits: 'fraction',
 			anchorYUnits: 'pixels',
 			src: 'https://kartenn.region-bretagne.fr/img/styles/rnr.svg'

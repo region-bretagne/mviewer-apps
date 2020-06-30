@@ -18,7 +18,7 @@
 
     <themes>
         <theme name="Port"  id="port" collapsed="true" icon="ship">
-            <layer id="port_rb_com" name="Port gérées par la région"  visible="true" tiled="false"
+            <layer id="port_rb_com" name="Port gérés par la région"  visible="true" tiled="false"
                 infoformat="application/vnd.ogc.gml" featurecount="1" queryable="true"
                 url="https://ows.region-bretagne.fr/geoserver/interne/wms"
                 attribution="Source: Région Bretagne" 

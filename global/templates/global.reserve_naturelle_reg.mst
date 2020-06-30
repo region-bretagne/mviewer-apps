@@ -1,6 +1,6 @@
 {{#features}}
 	<li class="item">
-		<h2 class="rb-title-feature">{{nom}}</h2>
+		<h2 class="rb-title-feature">{{nom_long}}</h2>
 		<span class="rb-description-feature">{{description}}</span><br/>
 		<span class="rb-description-feature"><b> Surface :</b> {{surface}} ha</span><br/>
 		{{#image}}
