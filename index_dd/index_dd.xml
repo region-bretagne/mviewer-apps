@@ -34,7 +34,7 @@
     </widgets> 
 
     <themes mini="false">    
-    	<theme name="Dimension sociale"  collapsed="true" id="social" icon="group">
+    	<theme name="Dimension sociale"  collapsed="true" id="social" icon="users">
     			<layer id="idd_dim_social_geom" name="Inégalités, pauvreté et exclusion"  visible="false" tiled="false"
 	              	searchable="false" queryable="true" exclusive="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
@@ -91,7 +91,7 @@
 	                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/index_dd/templates/index_dd_social_indi.mst"></template>
 		        </layer>		        
         </theme>	
-        <theme name="Dimension économique"  collapsed="false" id="economie" icon="institution">
+        <theme name="Dimension économique"  collapsed="false" id="economie" icon="industry">
 		        <layer id="idd_dim_eco_geom" name="Accès à l'emploi"  visible="false" tiled="false"
 	              	searchable="false" queryable="true" exclusive="true"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
