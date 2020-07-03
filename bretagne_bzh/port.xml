@@ -26,13 +26,13 @@
                 metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c55c4fba-6a37-48ea-8754-a1bf770a684b" >	   
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/port.mst"></template> 
 		    </layer> 
-            <layer id="port_bzh" name="Autres ports bretons"  visible="true" tiled="false" scalemax="100000"
+            <!--<layer id="port_bzh" name="Autres ports bretons"  visible="true" tiled="false" scalemax="100000"
                 infoformat="application/vnd.ogc.gml" featurecount="1" queryable="false" opacity="0.6"
                 url="https://ows.region-bretagne.fr/geoserver/interne/wms"
                 attribution="Source: Région Bretagne" 
                 metadata=""
                 metadata-csw="">   
-		    </layer> 
+		    </layer>--> 
 		</theme>
     </themes>
 </config>
