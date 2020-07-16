@@ -5,7 +5,7 @@
    	<baselayers style="gallery"><!-- style="default"||gallery" -->            		
         <baselayer  type="WMS" id="plan2" label="OpenStreetMap" title="GéoBretagne" thumbgallery="img/basemap/osm.png" maxscale="1000" url="https://osm.geobretagne.fr/gwc01/service/wms" layers="osm:google" format="image/png" visible="true" attribution="OSM" style="_null" matrixset="EPSG:3857" minresolution="0.4"/>
         <baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="GéoPortail" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
-            url="../wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
+            url="https://wxs.ign.fr/bth43bbhz4oga1hosf94bre2/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
             attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
         <baselayer  type="WMS" id="photo2" label="Photo aérienne 1950" title="GéoBretagne" thumbgallery="img/basemap/ortho-ancien.jpg" 
 			url="https://tile.geobretagne.fr/gwc02/service/wms" layers="satellite-ancien" format="image/jpeg" visible="false" 
@@ -17,11 +17,11 @@
 			url="https://{a-d}.tile.stamen.com/toner-lite/{z}/{x}/{y}.png" maxzoom="20" 
 			visible="false" attribution="Map tiles by  &lt;a href='https://stamen.com/'>Stamen Design &lt;/a>, under  &lt;a href='https://creativecommons.org/licenses/by/3.0/'>CC BY 3.0 &lt;/a>" />		  
         <baselayer  type="WMTS" id="scan2" label="Cartes IGN" title="GéoPortail" maxscale="2000" thumbgallery="img/basemap/scan.jpg"
-            url="../wmts" layers="GEOGRAPHICALGRIDSYSTEMS.MAPS" format="image/jpeg" visible="false" fromcapacity="false"
+            url="https://wxs.ign.fr/bth43bbhz4oga1hosf94bre2/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.MAPS" format="image/jpeg" visible="false" fromcapacity="false"
             attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
     </baselayers> 
     <authentification url="who" loginurl="?login" logouturl="../j_spring_security_logout" enabled="true"/>
-    <olscompletion url="../olscompletion"/>
+    <olscompletion url="https://wxs.ign.fr/bth43bbhz4oga1hosf94bre2/ols/apis/completion"/>
     <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="fussy_like_this" />
     <searchparameters bbox="false" localities="true" features="true"/>
 
