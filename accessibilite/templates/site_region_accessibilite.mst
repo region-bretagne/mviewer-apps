@@ -1,0 +1,34 @@
+{{#features}}
+	<li class="item">
+		<h2 class="rb-title-feature">{{nom}}</h2>
+		<p class="rb-text-feature">		
+            <span style="font-weight:bold"> Niveau ERP :</span> {{erp}}<br/>
+            <span style="font-weight:bold"> Courriel :</span> {{courriel}}<br/>
+            <span style="font-weight:bold"> Téléphone :</span> {{telephone}}<br/>
+		</p>
+		{{#remarque}}
+			<h3 class="rb-subtitle-feature">Remarques</h3>
+        <div class="rb-description-feature">	
+			{{{remarque}}}
+		{{/remarque}}
+		<span>
+		    {{#url_registre}}
+			<a href="{{url_registre}}" target="_blank" title="Document" class="rb-but-link"><span class="fa fa-file" aria-hidden="true"></span> Registre</a>    
+			{{/url_registre}}
+		    {{#url_budget}}
+			<a href="{{url_budget}}" target="_blank" title="Lien vers fiche sur bretagne.bzh" class="rb-but-link"><span class="fa fa-globe" aria-hidden="true"></span> Budget</a>    
+			{{/url_budget}}	
+		    {{#url_fiche_accessibilite}}
+			<a href="{{url_fiche_accessibilite}}" target="_blank" title="Plan d'action" class="rb-but-link"><span class="fa fa-file" aria-hidden="true"></span> Lien site divercities</a>    
+			</span>
+			{{/url_fiche_accessibilite}}
+		</span>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>		
+		<br>
+		</div>
+	</li>
+{{/features}}
