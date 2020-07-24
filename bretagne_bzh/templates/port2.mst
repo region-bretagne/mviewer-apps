@@ -9,9 +9,23 @@
             <div class="col-xs-6 picto reparation_navale {{reparation_navale}}" title="Réparation navale">Réparation navale</div>
             <div class="col-xs-6 picto passager {{passager}}" title="Transport de passagers">Transport de passagers</div>
         </div>
-        <div class="row text-right">
-            <a class="port-link" title="Lire la suite" href="#">Lire la suite</a>
+        <div class="row">
+            <div class="text-right">
+                <a type="button" class="port-link" href="#" title="Lire la suite" data-toggle="collapse" data-target="#port-details">Lire la suite</a>
+            </div>
+            <div id="port-details" class="collapse">
+            <div class="rb-description-feature" id="rb-puces">	
+			{{{activite}}}
+            </div>
+            {{#gestionnaire}}
+            <h3 class="rb-subtitle-feature">Gestionnaires</h3>  
+            <div class="rb-description-feature" id="rb-puces">	
+                {{{gestionnaire}}}<br/>
+            </div>
+            {{/gestionnaire}}
+                </div>
         </row>
+        
 	</li>
 {{/features}}
 </div>
@@ -33,6 +47,10 @@
     font-family: "Open Sans",Helvetica,Arial,sans-serif;
     font-size: 1.5rem;
     line-height: 2rem;
+}
+
+#port-details {
+    padding-top: 10px;
 }
 
 .picto {    
