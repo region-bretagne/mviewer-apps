@@ -11,7 +11,7 @@
         </div>
         <div class="row">
             <div class="text-right">
-                <a type="button" class="port-link" href="#" title="Lire la suite" data-toggle="collapse" data-target="#port-details">Lire la suite</a>
+                <a type="button" class="port-link" href="#" title="Lire la suite" data-toggle="collapse" data-target="#port-details">En savoir plus sur le port</a>
             </div>
             <div id="port-details" class="collapse">
             <div class="rb-description-feature" id="rb-puces">	
