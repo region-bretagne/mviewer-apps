@@ -1,0 +1,72 @@
+<div class="container-fluid">
+{{#features}}
+	<li class="item" style="list-style: none;">
+		<h2 class="rb2-title-feature">{{nom}}</h2>
+        <div class="row">
+            <div class="col-xs-6 picto plaisance {{plaisance}}" title="Plaisance">Plaisance</div>
+            <div class="col-xs-6 picto peche {{peche}}" title="Pêche">Pêche</div>
+            <div class="col-xs-6 picto commerce {{commerce}}" title="Commerce">Commerce</div>
+            <div class="col-xs-6 picto reparation_navale {{reparation_navale}}" title="Réparation navale">Réparation navale</div>
+            <div class="col-xs-6 picto passager {{passager}}" title="Transport de passagers">Transport de passagers</div>
+        </div>
+        <div class="row text-right">
+            <a class="port-link" title="Lire la suite" href="#">Lire la suite</a>
+        </row>
+	</li>
+{{/features}}
+</div>
+<style>
+
+/* vvv */
+
+.rb2-title-feature {
+    color: #5A9EAA;
+    font-family: "region_bold";
+    font-size: 25px;
+    text-align: center;
+    margin-top: 0;
+    padding-bottom: 30px;
+}
+
+.port-link {
+    color: #5a9eaa;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.picto {    
+    line-height: 50px;
+    /*font-family: "region_bold";*/
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+}
+
+.picto.false {
+    display: none;
+}
+
+.plaisance.true {        
+    background: url(https://kartenn.region-bretagne.fr/img/styles/port_plaisance.svg) left top no-repeat;    
+    background-size: 50px;
+}
+
+.peche.true {    
+    background: url(https://kartenn.region-bretagne.fr/img/styles/port_peche.svg) left top no-repeat;    
+    background-size: 50px;
+}
+.commerce.true {    
+    background: url(https://kartenn.region-bretagne.fr/img/styles/port_commerce.svg) left top no-repeat;    
+    background-size: 50px;
+}
+.reparation_navale.true {    
+    background: url(https://kartenn.region-bretagne.fr/img/styles/port_reparation.svg) left top no-repeat;    
+    background-size: 50px;
+}
+.passager.true {    
+    background: url(https://kartenn.region-bretagne.fr/img/styles/port_voyageurs.svg) left top no-repeat;    
+    background-size: 50px;
+}
+</style>
