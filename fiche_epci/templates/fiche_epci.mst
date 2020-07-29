@@ -20,7 +20,7 @@
 		</p>
 	</div>
 		{{#elu_prenom_nom}}
-		<p class="rb-subtitle-feature">Elu·e référent·e</p>
+		<p class="rb-subtitle-feature">{{elu_intitule}}</p>
 	<div class="row">	
 		<p class="rb-float">
 		{{#elu_photo}}

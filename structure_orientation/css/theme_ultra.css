@@ -440,7 +440,7 @@ body .popover-title {
 	color: #5A9EAA;
 }
 .rb-title-feature {
-	color: #000000;
+	color: #5A9EAA;
 	font-family:"region_bold";
 	font-size:25px;
 	margin-bottom:3%;
@@ -448,7 +448,7 @@ body .popover-title {
 	text-transform:uppercase;
 }
 .rb-subtitle-feature {
-	color: #000000;
+	color: #5A9EAA;
 	font-family:"region_bold";
 	font-size:18px;
 	margin-top:1%;
@@ -506,12 +506,6 @@ body .popover-title {
 .modal-content{
 	border-radius:4px!important;
 }
-
-/*Paramètre pour éviter le phénomène de double ascenseur en mode ultra */
-#accordion .panel-collapse.collapse.in{
-  max-height:2000px!important;
-}
-
 
 /*Enleve le trait gris en bas popup*/
 .panel {

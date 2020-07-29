@@ -1,0 +1,11 @@
+{{#features}}
+	<li class="item">
+		<p class="rb-title-feature">{{sigle}}</p>
+		<p class="rb-subtitle-feature">{{raison_sociale}}</p>
+		<p class="rb-text-feature">
+		    Réseau : {{reseau}}<br/>
+		    Adresse : {{adresse}} {{commune}}<br/>
+		</p>
+
+	</li>
+{{/features}}
