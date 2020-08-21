@@ -1,7 +1,7 @@
 <div class="container-fluid">
 {{#features}}
 	<li class="item" style="list-style: none;">
-		<h2 class="rb2-title-feature">{{nom}}</h2>
+		<h2 class="rb2-title-feature">{{title}}</h2>
         <div class="row">
             <div class="col-xs-6 picto plaisance {{plaisance}}" title="Plaisance">Plaisance</div>
             <div class="col-xs-6 picto peche {{peche}}" title="Pêche">Pêche</div>
@@ -11,7 +11,9 @@
         </div>
         <div class="row">
             <div class="text-right">
-                <a type="button" class="port-link" href="#" title="Lire la suite" data-toggle="collapse" data-target="#port-details">En savoir plus sur le port</a>
+                <a type="button" class="port-link rb-fleche" href="#" title="Lire la suite" data-toggle="collapse" data-target="#port-details">
+                    En savoir plus sur le port                    
+                </a>                
             </div>
             <div id="port-details" class="collapse">
             <div class="rb-description-feature" id="rb-puces">	
@@ -34,17 +36,18 @@
 /* vvv */
 
 .rb2-title-feature {
-    color: #5A9EAA;
-    font-family: "region_bold";
+    color: #000000;
+    font-family: "Open Sans";
     font-size: 25px;
-    text-align: center;
+    text-align: left;
     margin-top: 0;
     padding-bottom: 30px;
 }
 
 .port-link {
-    color: #5a9eaa;
-    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    color: #3c5d92;
+    font-family: "Open Sans";
+    font-weight: bold;
     font-size: 1.5rem;
     line-height: 2rem;
 }
@@ -87,4 +90,30 @@
     background: url(https://kartenn.region-bretagne.fr/img/styles/port_voyageurs.svg) left top no-repeat;    
     background-size: 50px;
 }
+.rb-fleche:after {
+    content: '';
+    background: url(apps/region/bretagne_bzh/css/fleche.svg) center no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 1em;
+    height: .81em;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
 </style>
+
+<script>
+    var _postMessageIframe = function () {        
+        if ( window.location !== window.parent.location ) {
+            console.log("click Iframe");
+            window.top.postMessage({message:'hello'}, '*')
+        } else {
+            console.log("click no Iframe");
+        }
+        
+    };
+    document.querySelector(".rb-fleche").onclick =  _postMessageIframe; 
+</script>
