@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application panelstate="open" coordinates="true" title="Ports de Bretagne" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" exportpng="true" legend="true" measuretools="true" legendasimage="false" popup="false" print="false"  style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme_ultra.css" />
+    <application title="Ports de Bretagne" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" popup="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme_ultra.css" />
     <mapoptions maxzoom="18" projection="EPSG:3857" center="-255516,6140243" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery"><!-- style="default"||gallery" -->          
@@ -13,8 +13,7 @@
         <baselayer  type="WMTS" id="scan2" label="Cartes IGN" title="GéoPortail" maxscale="2000" thumbgallery="img/basemap/scan.jpg"
             url="https://wxs.ign.fr/bth43bbhz4oga1hosf94bre2/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.MAPS" format="image/jpeg" visible="false" fromcapacity="false"
             attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
-    </baselayers> 
-    <searchparameters bbox="true" localities="true" features="true"/>
+    </baselayers>
 
     <themes>
         <theme name="Port"  id="port" collapsed="true" icon="ship">
