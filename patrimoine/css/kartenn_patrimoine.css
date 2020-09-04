@@ -681,3 +681,18 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 	background-color:#b0006b;
 }	
 /*Paramètre pour éviter le phénomène de double ascenseur en mode ultra */
+
+
+.searchresults-title {
+  background-color: #BA88A4;
+  border-color: #BA88A4;
+  color: white;
+  font-family: "roboto_bold", Arial, Sans-serif; }
+
+.searchresults-title .close,
+.searchresults-title .close:hover,
+.searchresults-title .close:focus,
+.searchresults-title .close:active,
+.searchresults-title .close:visited {
+  color: white; }
+

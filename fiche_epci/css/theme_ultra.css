@@ -271,8 +271,9 @@ body .popover-title {
 /*******************************
 ------------- SEARCH TOOLBAR
 ********************************/
-#searchtool .btn-default {
-  color: #5A9EAA; }
+#searchtool {
+  color: #5A9EAA;
+  display:none;  }
 
 #parameterspanel {
   font-family: "roboto_regular", Arial, Sans-serif; }
@@ -486,7 +487,7 @@ body .popover-title {
 	transition: all 0.2s;
 }
 .rb-but-link:hover{
-	background-color:#4c74b5;
+	background-color:#5A9EAA;
 }	
 .rb-img-fiche{
 	margin-top:2%;

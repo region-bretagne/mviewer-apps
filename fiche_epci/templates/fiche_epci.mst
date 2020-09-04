@@ -32,7 +32,7 @@
 			<span class="rb-text-feature">	{{elu_email}} </span>
 		</p>
 		{{#elu_lien}}
-		<a href="{{elu_lien}}" target="_blank" title="Lien vers la page dédiée dans l’annuaire des élus" class="rb-but-link"><span class="fa fa-file" aria-hidden="true"></span> En savoir plus</a>    
+		<a href="{{elu_lien}}" target="_blank" title="Lien vers la page dédiée dans l’annuaire des élus" class="rb-but-link"> En savoir plus</a>    
 		{{/elu_lien}}
 		</p>
 		{{/elu_prenom_nom}}

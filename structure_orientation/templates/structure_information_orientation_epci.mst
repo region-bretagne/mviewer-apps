@@ -1,0 +1,15 @@
+{{#features}}
+	<li class="item">
+		<p class="rb-title-feature">{{nom}}</p>
+		{{#structures}}
+		<p class="rb-text-feature">
+		Nombre de structures : {{nb_structures}}<br/>
+		</p>
+		<p class="rb-subtitle-feature">Structures présentes sur le territoire</p>
+		<p class="rb-description-feature">
+		    {{{structures}}}<br/>
+		</p>
+		{{/structures}}
+
+	</li>
+{{/features}}

@@ -50,7 +50,9 @@
                 attribution="Région Bretagne" >
 		            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.parc_naturel_regional.mst"></template>
 			</layer>
-
         </theme>
     </themes>
+    <extensions>
+        <extension type="component" id="fullscreen" path="apps/region/bretagne_bzh/addons" />
+    </extensions>
 </config>

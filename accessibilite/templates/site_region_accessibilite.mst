@@ -15,13 +15,6 @@
 		    {{#url_registre}}
 			<a href="{{url_registre}}" target="_blank" title="Document" class="rb-but-link"><span class="fa fa-file" aria-hidden="true"></span> Registre</a>    
 			{{/url_registre}}
-		    {{#url_budget}}
-			<a href="{{url_budget}}" target="_blank" title="Lien vers fiche sur bretagne.bzh" class="rb-but-link"><span class="fa fa-globe" aria-hidden="true"></span> Budget</a>    
-			{{/url_budget}}	
-		    {{#url_fiche_accessibilite}}
-			<a href="{{url_fiche_accessibilite}}" target="_blank" title="Plan d'action" class="rb-but-link"><span class="fa fa-file" aria-hidden="true"></span> Lien site divercities</a>    
-			</span>
-			{{/url_fiche_accessibilite}}
 		</span>
 		<br>
 		<br>

@@ -46,4 +46,7 @@
 
         </theme>
     </themes>
+    <extensions>
+        <extension type="component" id="fullscreen" path="apps/region/bretagne_bzh/addons" />
+    </extensions>
 </config>

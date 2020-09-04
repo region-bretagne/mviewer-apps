@@ -1,77 +1,112 @@
+<div class="container-fluid">
 {{#features}}
-	<li class="item">
-		<h2 class="rb-title-feature">{{nom}}</h2>
-		<h3 class="rb-subtitle-feature">Activités</h3>  
-		<div class="plaisance {{plaisance}}" title="Plaisance"></div>
-		<div class="peche {{peche}}" title="Pêche"></div>
-		<div class="commerce {{commerce}}" title="Commerce"></div>
-		<div class="reparation_navale {{reparation_navale}}" title="Réparation navale"></div>
-		<div class="passager {{passager}}" title="Transport de passagers"></div><br/><br/>
-		<div class="rb-description-feature" id="rb-puces">	
-			{{{activite}}}
+	<li class="item" style="list-style: none;">
+		<h2 class="rb2-title-feature">{{title}}</h2>
+        <div class="row">
+            <div class="col-xs-6 picto plaisance {{plaisance}}" title="Plaisance">Plaisance</div>
+            <div class="col-xs-6 picto peche {{peche}}" title="Pêche">Pêche</div>
+            <div class="col-xs-6 picto commerce {{commerce}}" title="Commerce">Commerce</div>
+            <div class="col-xs-6 picto reparation_navale {{reparation_navale}}" title="Réparation navale">Réparation navale</div>
+            <div class="col-xs-6 picto passager {{passager}}" title="Transport de passagers">Transport de passagers</div>
+        </div>
+        <div class="row">
+			<h3 class="rb-subtitle-feature">Activités</h3>  
+			<div class="rb-description-feature" id="rb-puces">	
+				{{{activite}}}
+			</div>
+            {{#gestionnaire}}
+				<h3 class="rb-subtitle-feature">Gestionnaires</h3>  
+				<div class="rb-description-feature" id="rb-puces">	
+					{{{gestionnaire}}}<br/>
+				</div>
+            {{/gestionnaire}}
+        </div>
+		<div class="text-right">
+			<a type="button" class="port-link rb-fleche" href="{{url_port}}" title="Plus d'informations" target="_blank">
+				En savoir plus sur le port                    
+			</a>
 		</div>
-		{{#gestionnaire}}
-		<h3 class="rb-subtitle-feature">Gestionnaires</h3>  
-		<div class="rb-description-feature" id="rb-puces">	
-			{{{gestionnaire}}}<br/>
+		{{#url_port_2}}
+		<div class="text-right">
+			<a type="button" class="port-link rb-fleche" href="{{url_port_2}}" title="Plus d'informations" target="_blank">
+				En savoir plus sur le second port                    
+			</a>    
 		</div>
-		{{/gestionnaire}}
+        {{/url_port_2}}
 
 	</li>
 {{/features}}
-
+</div>
 <style>
 
 /* vvv */
 
-.plaisance.true {
-    float: left;
-	left: 50px;    
-    margin: 5px; 
-	width: 30px;
-    height: 30px;       
+.rb2-title-feature {
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 25px;
+    text-align: left;
+    margin-top: 0;
+    padding-bottom: 30px;
+}
+
+.port-link {
+    color: #3c5d92;
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.text-right {
+    padding-top: 10px;
+}
+
+.picto {    
+    line-height: 50px;
+    /*font-family: "region_bold";*/
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+}
+
+.picto.false {
+    display: none;
+}
+
+.plaisance.true {        
     background: url(https://kartenn.region-bretagne.fr/img/styles/port_plaisance.svg) left top no-repeat;    
-    background-size: 30px;
+    background-size: 50px;
 }
-.plaisance.false {}
-.peche.true {
-    float: left;
-	left: 50px;    
-    margin: 5px; 
-	width: 30px;
-    height: 30px;       
+
+.peche.true {    
     background: url(https://kartenn.region-bretagne.fr/img/styles/port_peche.svg) left top no-repeat;    
-    background-size: 30px;
+    background-size: 50px;
 }
-.peche.false {}
-.commerce.true {
-    float: left;
-	left: 50px;    
-    margin: 5px; 
-	width: 30px;
-    height: 30px;       
+.commerce.true {    
     background: url(https://kartenn.region-bretagne.fr/img/styles/port_commerce.svg) left top no-repeat;    
-    background-size: 30px;
+    background-size: 50px;
 }
-.commerce.false {}
-.reparation_navale.true {
-    float: left;
-	left: 50px;    
-    margin: 5px; 
-	width: 30px;
-    height: 30px;       
+.reparation_navale.true {    
     background: url(https://kartenn.region-bretagne.fr/img/styles/port_reparation.svg) left top no-repeat;    
-    background-size: 30px;
+    background-size: 50px;
 }
-.reparation_navale.false {}
-.passager.true {
-    float: left;
-	left: 50px;    
-    margin: 5px; 
-	width: 30px;
-    height: 30px;       
+.passager.true {    
     background: url(https://kartenn.region-bretagne.fr/img/styles/port_voyageurs.svg) left top no-repeat;    
-    background-size: 30px;
+    background-size: 50px;
 }
-.passager.false {}
+.rb-fleche:after {
+    content: '';
+    background: url(apps/region/bretagne_bzh/css/fleche.svg) center no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 1em;
+    height: .81em;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
 </style>

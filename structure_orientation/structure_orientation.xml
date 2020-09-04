@@ -22,7 +22,7 @@
         <theme name="Couches"  collapsed="false" id="fiche">
 			<layer id="structure_information_orientation" name="Service public régional d'information et d'aide  à l'orientation" scalemin="0" scalemax="50000000" visible="true" tiled="false" namespace="rb"
 				queryable="true" infoformat="application/vnd.ogc.gml"
-				featurecount="1"
+				featurecount="10"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="" 
 				attribution="GREF Bretagne" 
@@ -30,24 +30,24 @@
 				metadata="" >  
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/structure_orientation/templates/structure_information_orientation.mst" />
             </layer>
-			<layer id="communes_osm" name="Communes" scalemin="0" scalemax="5000000" visible="true" tiled="false" namespace="rb"
+			<layer id="structure_information_orientation_commune" name="Structures d'information et d'orientation par commune" scalemin="0" scalemax="5000000" visible="true" tiled="false" namespace="rb"
 				queryable="true" infoformat="application/vnd.ogc.gml"
-				featurecount="1"
+				featurecount="5"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-				style="commune_style_fin" 
-				fields ="nom" aliases = "Nom"
 				attribution="OpenStreetMap" 
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=32555292-b231-491e-a825-7256545cc0fb"
-				metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/32555292-b231-491e-a825-7256545cc0fb" />  
-			<layer id="epci_osm" name="EPCI" scalemin="0" scalemax="50000000" visible="true" tiled="false" namespace="rb"
+				metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/32555292-b231-491e-a825-7256545cc0fb" >  
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/structure_orientation/templates/structure_information_orientation_commune.mst" />
+            </layer>
+			<layer id="structure_information_orientation_epci" name="EPCI" scalemin="0" scalemax="50000000" visible="true" tiled="false" namespace="rb"
 				queryable="true" infoformat="application/vnd.ogc.gml"
-				featurecount="1"
+				featurecount="5"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-				style="epci_style_bleu" 
-				fields ="nom" aliases = "Nom"
 				attribution="OpenStreetMap" 
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=667571ba-120f-4ae3-ae80-7d62428637a0"
-				metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/667571ba-120f-4ae3-ae80-7d62428637a0" />  
+				metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/667571ba-120f-4ae3-ae80-7d62428637a0" >  
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/structure_orientation/templates/structure_information_orientation_epci.mst" />
+            </layer>
 
 		</theme>   
     </themes>
