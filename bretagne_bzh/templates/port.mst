@@ -1,6 +1,7 @@
-<div class="container-fluid">
 {{#features}}
-	<li class="item" style="list-style: none;">
+<li class="item" style="list-style: none;">
+	<div class="container-fluid">
+
 		<h2 class="rb2-title-feature">{{title}}</h2>
         <div class="row">
             <div class="col-xs-6 picto plaisance {{plaisance}}" title="Plaisance">Plaisance</div>
@@ -9,23 +10,32 @@
             <div class="col-xs-6 picto reparation_navale {{reparation_navale}}" title="Réparation navale">Réparation navale</div>
             <div class="col-xs-6 picto passager {{passager}}" title="Transport de passagers">Transport de passagers</div>
         </div>
+		{{#description}}
+        <div class="row">
+			{{{description}}}<br/>
+        </div>
+		{{/description}}
+		{{#gestionnaire}}
         <div class="row">
 			<h3 class="rb-subtitle-feature">Activités</h3>  
 			<div class="rb-description-feature" id="rb-puces">	
 				{{{activite}}}
 			</div>
-            {{#gestionnaire}}
 				<h3 class="rb-subtitle-feature">Gestionnaires</h3>  
 				<div class="rb-description-feature" id="rb-puces">	
 					{{{gestionnaire}}}<br/>
 				</div>
-            {{/gestionnaire}}
         </div>
+		{{/gestionnaire}}
+		
+		
+		{{#url_port}}
 		<div class="text-right">
 			<a type="button" class="port-link rb-fleche" href="{{url_port}}" title="Plus d'informations" target="_blank">
 				En savoir plus sur le port                    
 			</a>
 		</div>
+		{{/url_port}}
 		{{#url_port_2}}
 		<div class="text-right">
 			<a type="button" class="port-link rb-fleche" href="{{url_port_2}}" title="Plus d'informations" target="_blank">
@@ -33,10 +43,9 @@
 			</a>    
 		</div>
         {{/url_port_2}}
-
-	</li>
+	</div>
+</li>
 {{/features}}
-</div>
 <style>
 
 /* vvv */

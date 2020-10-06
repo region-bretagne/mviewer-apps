@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="Ports de Bretagne" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" popup="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme_ultra.css" />
+    <application title="Ports de la région Bretagne" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" popup="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme_ultra_port.css" templaterightinfopanel="default"/>
     <mapoptions maxzoom="18" projection="EPSG:3857" center="-255516,6140243" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery"><!-- style="default"||gallery" -->          
@@ -17,15 +17,17 @@
 
     <themes>
         <theme name="Port"  id="port" collapsed="true" icon="ship">
-            <layer id="port_rb_com" name="Port gérés par la région"  visible="true" tiled="false"
+            <layer id="port_rb_com" name="Port géré par la région"  visible="true" tiled="false"
+				type="customlayer" vectorlegend="true" 
                 infoformat="application/vnd.ogc.gml" featurecount="1" queryable="true"
-                url="https://ows.region-bretagne.fr/geoserver/interne/wms"
+				url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/customlayers/port_rb_com.js"
                 attribution="Source: Région Bretagne" 
+				tooltip="true"	tooltipcontent="{{nom}}"
                 metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/c55c4fba-6a37-48ea-8754-a1bf770a684b"
                 metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c55c4fba-6a37-48ea-8754-a1bf770a684b" >	   
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/port.mst"></template> 
 		    </layer>
-            
+
 		</theme>
     </themes>
     <extensions>

@@ -1,6 +1,30 @@
 {{#features}}
 	<li class="item">
 		<p class="rb-title-feature">{{epci_nom}}</p>
+		
+	{{#elu_prenom_nom}}
+		<p class="rb-subtitle-feature">{{elu_intitule}}</p>
+	<div class="row">	
+		<p class="rb-float">
+		{{#elu_photo}}
+			<img src="{{elu_photo}}" class="rb-img-fiche" />
+        {{/elu_photo}}
+		</p>
+		<p class="rb-espace">
+			<span class="rb-subtitle-feature">{{elu_prenom_nom}}</span></br>
+			<span class="rb-text-feature">	{{elu_email}} </span>
+		</p>
+		{{#elu_lien}}
+		<a href="{{elu_lien}}" target="_blank" title="Lien vers la page dédiée dans l’annuaire des élus" class="rb-but-link"> En savoir plus</a>    
+		{{/elu_lien}}
+		</p>
+	{{/elu_prenom_nom}}
+	</div>	
+		
+		
+		
+		
+		
 		<p class="rb-subtitle-feature">{{agence_nom}}</p>
 		<p class="rb-subtitle-feature">{{site_nom}}</p>
 		<p class="rb-text-feature">
@@ -19,24 +43,6 @@
 			<span class="rb-text-feature">	{{directeur_intitule}} </span>
 		</p>
 	</div>
-		{{#elu_prenom_nom}}
-		<p class="rb-subtitle-feature">{{elu_intitule}}</p>
-	<div class="row">	
-		<p class="rb-float">
-		{{#elu_photo}}
-			<img src="{{elu_photo}}" class="rb-img-fiche" />
-        {{/elu_photo}}
-		</p>
-		<p class="rb-espace">
-			<span class="rb-subtitle-feature">{{elu_prenom_nom}}</span></br>
-			<span class="rb-text-feature">	{{elu_email}} </span>
-		</p>
-		{{#elu_lien}}
-		<a href="{{elu_lien}}" target="_blank" title="Lien vers la page dédiée dans l’annuaire des élus" class="rb-but-link"> En savoir plus</a>    
-		{{/elu_lien}}
-		</p>
-		{{/elu_prenom_nom}}
-	</div>	
 
 	</li>
 {{/features}}

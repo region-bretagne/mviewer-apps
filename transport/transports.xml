@@ -122,7 +122,7 @@
 					metadata-csw="">
 		            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.arret_routier_dep.mst"></template>
 		        </layer>
-                <layer id="ligne_routiere_departementale" name="Lignes routières départementales"  visible="false" tiled="false" 
+                <layer id="ligne_routiere_departementale" name="Lignes routières départementales (anciennes)"  visible="false" tiled="false" 
                     searchable="false" queryable="true" fields="axe" aliases="axe"
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     style="ligne_interurbain_saison" 
@@ -132,6 +132,17 @@
 					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b08c5f1b-79ed-441a-9198-7360e6338b89">
 		            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.ligne_routiere_dep.mst"></template>
 		        </layer>		        
+                <layer id="reseau_breizhgo_car" name="Réseau Breizh Go"  visible="false" tiled="false" 
+                    searchable="false" queryable="true" fields="axe" aliases="axe"
+                    infoformat="application/vnd.ogc.gml" featurecount="20"
+                    style="ligne_interurbain_saison" 
+					url="https://ows.region-bretagne.fr/geoserver/interne/wms"
+                    attribution="Région Bretagne" 
+					metadata=""
+					metadata-csw="">
+		            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.ligne_routiere_dep.mst"></template>
+		        </layer>		        
+
                 <layer id="ligne_tad_bretagne" name="Transport à la demande"  visible="false" tiled="false"
                     searchable="false" queryable="true" 
                     infoformat="application/vnd.ogc.gml" featurecount="20"
