@@ -21,7 +21,7 @@
 			<div class="rb-description-feature" id="rb-puces">	
 				{{{activite}}}
 			</div>
-				<h3 class="rb-subtitle-feature">Gestionnaires</h3>  
+				<h3 class="rb-subtitle-feature">Gestionnaire(s)</h3>  
 				<div class="rb-description-feature" id="rb-puces">	
 					{{{gestionnaire}}}<br/>
 				</div>
@@ -31,14 +31,14 @@
 		
 		{{#url_port}}
 		<div class="text-right">
-			<a type="button" class="port-link rb-fleche" href="{{url_port}}" title="Plus d'informations" target="_blank">
+			<a type="button" class="port-link rb-fleche" href="{{url_port}}" title="Plus d'informations sur le port" target="_blank">
 				En savoir plus sur le port                    
 			</a>
 		</div>
 		{{/url_port}}
 		{{#url_port_2}}
 		<div class="text-right">
-			<a type="button" class="port-link rb-fleche" href="{{url_port_2}}" title="Plus d'informations" target="_blank">
+			<a type="button" class="port-link rb-fleche" href="{{url_port_2}}" title="Plus d'informations sur le port" target="_blank">
 				En savoir plus sur le second port                    
 			</a>    
 		</div>
@@ -63,8 +63,7 @@
     color: #3c5d92;
     font-family: "Open Sans";
     font-weight: bold;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    font-size: 15px;
 }
 
 .text-right {
