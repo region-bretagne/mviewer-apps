@@ -159,7 +159,7 @@ mviewer.customLayers.inventaire = (function () {
     var _styleEtude = [new ol.style.Style({
         image: new ol.style.Circle({
             fill: new ol.style.Fill({
-                color: 'rgba(0, 40, 107, 1)'
+                color: 'rgba(0, 40, 107, .8)'
             }),
             stroke: new ol.style.Stroke({
                 color: "#ffffff",
@@ -174,7 +174,7 @@ mviewer.customLayers.inventaire = (function () {
     var _styleRecensement = [new ol.style.Style({
         image: new ol.style.Circle({
             fill: new ol.style.Fill({
-                color: 'rgba(144, 106, 131, 1)'
+                color: 'rgba(144, 106, 131, .8)'
             }),
             stroke: new ol.style.Stroke({
                 color: "#ffffff",
@@ -248,8 +248,8 @@ mviewer.customLayers.inventaire = (function () {
         style: _clusterStyle
     });
     var _handle = function(clusters, views) {
-        if (clusters.length > 0 && clusters[0].properties.features) {
-        var features = clusters[0].properties.features;
+        if (clusters.length > 0 && clusters[0].getProperties().features) {
+        var features = clusters[0].getProperties().features;
             var extraTemplate = [
                 '{{#lien_image}}',
                 '<img src="{{lien_image}}" class="img-responsive center-block" />',
@@ -257,29 +257,34 @@ mviewer.customLayers.inventaire = (function () {
                 '{{#photo_1}}',
                 '<img src="{{photo_1}}" class="img-responsive center-block" />',
                 '{{/photo_1}}',
-                '<p class="rb-text-feature">',
-                '<span style="font-weight:bold"> Commune : </span>{{commune}}<br/>',
+                '<p class="text-feature">',
+                '{{#datation_principale}}',
+                '<span > Datation :</span> {{datation_principale}}<br/>',
+                '{{/datation_principale}}',
+                '<span > Commune : </span>{{commune}}<br/>',
                 '{{#localisation}}',
-                '<span style="font-weight:bold"> Localisation :</span> {{localisation}}<br/>',
+                '<span> Localisation :</span> {{localisation}}<br/>',
                 '{{/localisation}}',
                 '{{^localisation}}',
-                '<span style="font-weight:bold"> Localisation :</span> {{adresse}} {{lieudit}} {{commune}}<br/>',
+                '<span > Localisation :</span> {{adresse}} {{lieudit}} {{commune}}<br/>',
                 '{{/localisation}}',
                 '{{#cadre_etude}}',
-                '<span style="font-weight:bold"> Enquête(s) :</span> {{cadre_etude}}<br/>',
+                '<span > Enquête(s) :</span> {{cadre_etude}}<br/>',
                 '{{/cadre_etude}}',
                 '{{#date_bordereau}}',
-                '<span style="font-weight:bold"> Date(s) de bordereau  :</span> {{date_bordereau}}<br/>',
+                '<span > Date(s) de bordereau  :</span> {{date_bordereau}}<br/>',
                 '{{/date_bordereau}}',
                 '{{#lien_dossier}}',
-				'<div class="rb-but-list">',
-				'<a href="{{lien_dossier}}" target="_blank" title="Dossier" class="rb-but-link"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> <b>Lien vers dossier</b></a>',
-				'</div>',
+                '<div class="but_link">',
+                '<p> <a href="{{lien_dossier}}" target=_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Dossier complet</a>',
+                '</p>',
+                '</div>',
                 '{{/lien_dossier}}',
                 '{{#url}}',
-				'<div class="rb-but-list">',
-				'<a href="{{url}}" target="_blank" title="Notice" class="rb-but-link"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> <b>Lien vers notice</b></a>',
-				'</div>',
+                '<div class="but_link">',
+                '<p> <a href="{{url}}" target=_blank"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Lien vers notice</a>',
+                '</p>',
+                '</div>',
                 '{{/url}}',
                 '</p>'
             ].join(" ");
@@ -291,19 +296,15 @@ mviewer.customLayers.inventaire = (function () {
 
             };
 
-            var _renderHTML = function (elements) {
+            var _renderHTML = function (features) {
                 var l = mviewer.getLayer("inventaire");
                 var html;
                 if (l.template) {
-                    html = info.templateHTMLContent(elements, l);
+                    html = info.templateHTMLContent(features, l);
                 } else {
-                    html = info.formatHTMLContent(elements, l);
+                    html = info.formatHTMLContent(features, l);
                 }
-                var panel = "right-panel";
-                if (configuration.getConfiguration().mobile) {
-                    panel = "modal-panel";
-                }
-                var view = views[panel];
+                var view = views["right-panel"];
                 view.layers.push({
                     "id": view.layers.length + 1,
                     "firstlayer": false,
@@ -318,7 +319,6 @@ mviewer.customLayers.inventaire = (function () {
             // Get additional infos via wfs for each feature
             var search_ids = [];
             var featuretypes = [];
-            var elements = [];
 
             features.forEach(function(feature, i) {
                 if (feature.getProperties() && feature.getProperties().search_id && i < _maxrequestedfeatures) {
@@ -326,9 +326,6 @@ mviewer.customLayers.inventaire = (function () {
                     if (featuretypes.indexOf(feature.getProperties().type) === -1) {
                         featuretypes.push(feature.getProperties().type);
                     }
-                    elements.push({
-                        properties: feature.getProperties()
-                    });
                 }
             });
 
@@ -357,7 +354,7 @@ mviewer.customLayers.inventaire = (function () {
                     }
                 });
             }
-            _renderHTML(elements);
+            _renderHTML(features);
         }
     };
 

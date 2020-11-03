@@ -19,5 +19,5 @@
 {{/features}}
 
 <style>
-@import url("https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/css/kartenn_patrimoine.css");
+@import url("https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/css/kartenn_patrimoine_mst.css");
 </style>

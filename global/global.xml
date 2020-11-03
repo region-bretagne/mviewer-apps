@@ -189,7 +189,7 @@
 		            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.port.mst"></template>
 		        </layer>
 		        <layer id="liaison_maritime" name="Liaisons maritimes"  visible="false" tiled="false"
-                    searchable="false" queryable="true" fields="axe" aliases="axe"   
+                    searchable="false" queryable="true" fields="nom" aliases="nom"   
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Source: Région Bretagne" 
@@ -205,16 +205,6 @@
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=774a2065-339f-4802-a50f-4b84b6ca249f"
 				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/774a2065-339f-4802-a50f-4b84b6ca249f"> 
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.ecluse.mst"></template>
-			</layer>
-			<layer id="maison_eclusiere_aap" name="Appels à projets maisons éclusières" visible="false" tiled="false" 
-				searchable="true" queryable="true"
-				infoformat="application/vnd.ogc.gml" featurecount="20"
-				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-				style="" 
-				attribution="Région Bretagne" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b62a6ef0-2cb4-44f0-b679-1d06b027e0ea"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b62a6ef0-2cb4-44f0-b679-1d06b027e0ea" >  
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.maison_eclusiere_aap.mst"></template>
 			</layer>
 			<layer id="eau_randonneur_vn" name="Points d'eau randonneurs" scalemin="0" scalemax="50000000" visible="false" tiled="false"
 				queryable="false"

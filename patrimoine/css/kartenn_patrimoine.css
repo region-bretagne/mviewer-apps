@@ -617,7 +617,6 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
     border-bottom: 1.1em solid rgba(3, 46, 70, 0.2);
     border-left: 1.1em solid #BA88A4;
 }
-
 /* ----------------- CSS IFRAME + FONCTIONNALITES ------------ */
 
 /*Mise en forme des MST*/
@@ -673,7 +672,6 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 	font-family:'OpenSans-Bold',sans-serif;
 	font-weight:300;
 	color:#FFFFFF;
-	background-color:#BA88A4;
 	text-align:center;
 	transition: all 0.2s;
 }
