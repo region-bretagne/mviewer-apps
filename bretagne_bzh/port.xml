@@ -18,7 +18,7 @@
     <themes>
         <theme name="Port"  id="port" collapsed="true" icon="ship">
             <layer id="port_rb_com" name="Port géré par la région"  visible="true" tiled="false"
-				type="customlayer" vectorlegend="true" 
+				type="customlayer" legendurl="https://kartenn.region-bretagne.fr/img/legend/port.png" 
                 infoformat="application/vnd.ogc.gml" featurecount="1" queryable="true"
 				url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/customlayers/port_rb_com.js"
                 attribution="Source: Région Bretagne" 

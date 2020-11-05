@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application panelstate="open" coordinates="true" title="Kartenn" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" exportpng="true" legend="true" measuretools="true" legendasimage="false" popup="false" print="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme_ultra.css" />
+    <application panelstate="open" coordinates="true" title="Kartenn" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" exportpng="false" legend="true" measuretools="true" legendasimage="false" popup="false" print="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme_ultra.css" />
     <mapoptions maxzoom="18" projection="EPSG:3857" center="-253771,6162659" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery"><!-- style="default"||gallery" -->            		

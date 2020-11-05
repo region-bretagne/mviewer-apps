@@ -2,7 +2,7 @@
 	<li class="item" style="width:238px;">
 		<div id="feature_select">
 			<div class="rb-subtitle-feature" style="color:#72487f;">
-				<span class="critere glyphicon glyphicon-map-marker" aria-hidden="true"> <span class="rb-subtitle-feature" style="color:#72487f;margin-left:-12px;">{{nom_geo}}</span>
+				<span class="critere glyphicon glyphicon-map-marker" aria-hidden="true"> <span class="rb-subtitle-feature" style="color:#72487f;margin-left:-12px;">{{nom}}</span>
 			</div>
 			
 		</div>

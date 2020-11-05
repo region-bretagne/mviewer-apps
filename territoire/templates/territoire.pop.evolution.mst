@@ -1,8 +1,8 @@
 {{#features}}
-	<li class="item">
+	<li class="item" id="{{feature_ol_uid}}">
 		<div class="row">
 			<div class="col-xs-7">
-				<div class="rb-title-feature">{{nom_geo}}</div>
+				<div class="rb-title-feature">{{nom}}</div>
 			</div>
 			<div class=" col-xs-3">
 				<span class="rb-critere glyphicon glyphicon-map-marker" aria-hidden="true"><span id="rb-text">{{level}}</span></span><span class="rb-critere glyphicon glyphicon-calendar" aria-hidden="true" style="margin-left:10px;"><span id="rb-text">2017</span></span>
