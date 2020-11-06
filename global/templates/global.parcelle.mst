@@ -3,8 +3,10 @@
 		<h3 class="rb-title-feature">{{nationalcadastralreference}}</h3>
 
 		<p class="rb-text-feature">		
-			<span style="font-weight:bold"> Surface :</span> {{areavalue}} Ha<br/>
-			<span style="font-weight:bold"> Num�ro :</span> {{label}} habitants<br/>
+			<span style="font-weight:bold"> Numéro :</span> {{label}}<br/>
+			<span style="font-weight:bold"> Département :</span> {{departement}}<br/>
+			<span style="font-weight:bold"> Section :</span> {{geo_section}}<br/>
+
        </p>
 	</li>
 {{/features}}
