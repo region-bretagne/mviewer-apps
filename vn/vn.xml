@@ -449,7 +449,7 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a2fa9b97-b2bb-4b7c-8a34-3733e1559ccc"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a2fa9b97-b2bb-4b7c-8a34-3733e1559ccc"
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=caec5bfd-e05c-4af3-9190-9736fb56f988" >
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.parcelle.mst"></template>
 			</layer>
@@ -472,7 +472,7 @@
 				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/515cf06a-fc63-4059-9813-be6c57695eca" />                    
         </theme> 
         <theme name="Cadastre"  collapsed="true" id="cadastre" icon="square"> 
-             <layer id="CP.CadastralBuilding" name="Bâti" scalemin="0" scalemax="25000" visible="false" tiled="true"
+             <layer id="CP.CadastralBuilding" name="Bâti" scalemin="0" scalemax="20000" visible="false" tiled="true"
 				queryable="false" fields="" aliases=""
                 infoformat="application/vnd.ogc.gml" featurecount="5"                
 				style="cadastre_bati_type" legendurl=""
@@ -480,7 +480,7 @@
 				attribution="DGFIP" 
 				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/91811bc9-308a-4ddb-9c15-c69b3c0bb067"
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=91811bc9-308a-4ddb-9c15-c69b3c0bb067" />	
-            <layer id="CP.CadastralParcel" name="Parcelle cadastrale" scalemin="0" scalemax="50000" visible="false" tiled="false"
+            <layer id="CP.CadastralParcel" name="Parcelle cadastrale" scalemin="0" scalemax="20000" visible="false" tiled="false"
 				queryable="true" fields="label,nom_commune,areavalue" aliases="Parcelle,Commune,Surface"
                 infoformat="text/html" featurecount="5"             
 				url="https://geobretagne.fr/geoserver/cadastre/wms" 

@@ -487,7 +487,7 @@
             attribution="Région Bretagne"
             queryable="false">
         </layer>
-		<layer id="CP.CadastralBuilding" name="Bâti cadastral" scalemin="0" scalemax="25000" visible="false" tiled="true"
+		<layer id="CP.CadastralBuilding" name="Bâti cadastral" scalemin="0" scalemax="20000" visible="false" tiled="true"
 			queryable="false" fields="" aliases=""
 			infoformat="application/vnd.ogc.gml" featurecount="5"                
 			style="cadastre_bati_type" legendurl=""
@@ -495,13 +495,15 @@
 			attribution="DGFIP" 
 			metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/91811bc9-308a-4ddb-9c15-c69b3c0bb067"
 			metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=91811bc9-308a-4ddb-9c15-c69b3c0bb067" />	
-		<layer id="CP.CadastralParcel" name="Parcelle cadastrale" scalemin="0" scalemax="50000" visible="false" tiled="true"
+		<layer id="CP.CadastralParcel" name="Parcelle cadastrale" scalemin="0" scalemax="20000" visible="false" tiled="true"
 			queryable="true" fields="label,nom_commune,areavalue" aliases="Parcelle,Commune,Surface"
 			infoformat="text/html" featurecount="5"             
 			url="https://geobretagne.fr/geoserver/cadastre/wms" 
 			attribution="DGFIP" 
 			metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/caec5bfd-e05c-4af3-9190-9736fb56f988" 
-			metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=caec5bfd-e05c-4af3-9190-9736fb56f988" />
+			metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=caec5bfd-e05c-4af3-9190-9736fb56f988" >
+			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.parcelle.mst"></template>
+		</layer>
         <layer id="destination_touristique" name="Destinations touristiques" visible="false" tiled="false"
 			queryable="true" fields="nom" aliases="Nom"
 			infoformat="text/html" featurecount="20" 
