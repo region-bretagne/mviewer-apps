@@ -672,6 +672,7 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 	font-family:'OpenSans-Bold',sans-serif;
 	font-weight:300;
 	color:#FFFFFF;
+	background-color:#BA88A4;
 	text-align:center;
 	transition: all 0.2s;
 }

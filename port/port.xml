@@ -58,13 +58,15 @@
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.concession.mst"></template>
             </layer>  
 			<layer id="contour_port_aero" name="Contour Port et Aéroport" visible="true" tiled="false" 
-				searchable="true" queryable="false" fields="site" aliases="Site"
-                infoformat="text/html"              
+				searchable="true" queryable="true"
+                infoformat="application/vnd.ogc.gml"              
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="contour_port_aero_rouge" 
 				attribution="Région Bretagne" 
 				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ca6d2fd1-68cd-4265-9453-f40d02400e49" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ca6d2fd1-68cd-4265-9453-f40d02400e49" />  
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ca6d2fd1-68cd-4265-9453-f40d02400e49">  
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.contour.mst"></template>
+            </layer>
 			<layer id="aot_mouillage_groupe" name="AOT de mouillage groupé" visible="false" tiled="false" 
 				queryable="false" fields="concession" aliases="Concession" 
                 infoformat="text/html"
@@ -538,6 +540,39 @@
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=7e4cc8d0-642b-4b56-b521-a13c688ec882"
 				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/7e4cc8d0-642b-4b56-b521-a13c688ec882" />  
 		</theme>-->
+		<theme name="Economie"  id="Economie" collapsed="true" icon="industry">
+           <layer id="sirene_bretagne" name="Base SIRENE"  visible="false" tiled="false"
+				queryable="true" fields="" aliases=""
+				expanded="true"
+				infoformat="application/vnd.ogc.gml" featurecount="10"
+				style="sirene_tefet,sirene_porcheries,sirene_fastfood,sirene_debitsboisson"
+				stylesalias="Nombre de salariés,Porcheries,Restauration,Débits de boisson"
+				opacity="1"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+				attribution="Région Bretagne"
+				metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=6bf9d921-b8eb-4e5f-bbb5-546f7c40dab3"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=6bf9d921-b8eb-4e5f-bbb5-546f7c40dab3" >
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.sirene.mst"></template>
+            </layer>
+		</theme>
+		<theme name="Foncier"  id="Foncier" collapsed="true" icon="square">
+        <layer 
+            id="dvf_bretagne" name="Données de valeurs foncières (DVF) en Bretagne" type="wms"
+            url="https://geobretagne.fr/geoserver/dgfip/ows"
+            visible="false" scalemin="0" scalemax="50000" 
+            infoformat="application/vnd.ogc.gml"
+            fields="date_mutation,nature_mutation,valeur_fonciere,nombre_lots,type_local,surface_reelle_bati,nombre_pieces_principales,nature_culture,surface_terrain"
+            aliases="date_mutation,nature_mutation,valeur_fonciere,nombre_lots,type_local,surface_reelle_bati,nombre_pieces_principales,nature_culture,surface_terrain"
+            metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ff9e5192-3f83-4a59-a9d0-dd3a6ac1f201"
+            metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID&amp;ID=ff9e5192-3f83-4a59-a9d0-dd3a6ac1f201"
+            queryable="true"
+			featurecount="100"
+            attribution="DGFiP"			
+            attributefilter="true" attributefield="type_local" attributevalues="Appartement,Maison,Local industriel. commercial ou assimilé" attributelabel="type de local"
+            infopanel="right-panel">
+			<template url="https://geobretagne.fr/pub/dgfip/apps/dvf/templates/fiche.mst"></template>
+        </layer>
+		</theme>
 		<theme name="Infrastructures"  id="Infrastructures" collapsed="true" icon="home">
 			<layer id="port" name="Ports"  visible="false" tiled="false"
 				searchable="true" queryable="true"
@@ -559,15 +594,6 @@
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=37169d86-41ae-4ce3-a981-5137159f84ec" />	
 		</theme>
 		<theme name="Espaces protégés" id="EP" collapsed="true" icon="leaf">
-			<!--<layer id="gizc" name="GIZC" visible="false" tiled="false" 
-				queryable="true" fields="" aliases="" 
-                searchable="true"
-                customcontrol="false"              
-                infoformat="text/html" featurecount="20"
-				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-				attribution="Région Bretagne" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ffebd1ad-f123-46d8-9982-0c21764652e2"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ffebd1ad-f123-46d8-9982-0c21764652e2" />  -->
 			<layer id="sage_dreal" name="SAGE" visible="false" tiled="true" namespace="dreal_b"
 				queryable="true" fields="" aliases="" 
                 searchable="true"
@@ -592,15 +618,15 @@
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=eee9eb40-5af2-45d3-bfe8-662f573f5eb9"
 				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/eee9eb40-5af2-45d3-bfe8-662f573f5eb9" />  
 
-			<layer id="bande_100m_trait_cote" name="Trait de côte Histolitt" visible="false" tiled="true" namespace="dreal_b"
+			<layer id="bande_100m_trait_cote" name="Trait de côte Histolitt bande 100m" visible="false" tiled="true" namespace="dreal_b"
 				queryable="true" fields="" aliases="" 
                 searchable="true"
                 customcontrol="false"              
                 infoformat="text/html" featurecount="20"
 				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
 				attribution="DREAL" 
-				metadata="" 
-				metadata-csw="" />
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/101a9510-de09-4b41-ba20-ae8a51436457"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=101a9510-de09-4b41-ba20-ae8a51436457" />	
 			<layer id="l_communes_littorales" name="Communes littorales" visible="false" tiled="true" namespace="dreal_b"
 				queryable="true" fields="" aliases="" 
                 searchable="true"
@@ -610,7 +636,7 @@
 				attribution="DREAL" 
 				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/de275055-8dcb-4e33-8dad-6e41e6850339"
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=de275055-8dcb-4e33-8dad-6e41e6850339" />	
-			<layer id="occ_sol_littoral" name="Occupation du sol des littoraux" visible="false" tiled="true" namespace="dreal_b"
+			<layer id="occ_sol_littoral" name="Occupation du sol des littoraux (obsolète)" visible="false" tiled="true" namespace="dreal_b"
 				queryable="true" fields="" aliases="" 
                 searchable="true"
                 customcontrol="false"              
@@ -620,7 +646,7 @@
 				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/37926f81-1dd1-483c-aa4f-b8a5251dd3fd"
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=37926f81-1dd1-483c-aa4f-b8a5251dd3fd" />	
 		</theme>
-        <theme name="Limites cadastrales"  collapsed="true" id="cadastre" icon="square">  
+        <theme name="Limites cadastrales"  collapsed="true" id="cadastre" icon="globe">  
 			<layer id="CP.CadastralBuilding" name="Bâti" scalemin="0" scalemax="20000" visible="false" tiled="false"
 				queryable="false" fields="" aliases=""
                 infoformat="application/vnd.ogc.gml" featurecount="1"                
@@ -642,9 +668,9 @@
             <layer id="proprietes_region" name="Propriété Région" visible="false" tiled="false"
 				queryable="false"
 				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
-				attribution="DGFIP" 
-				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/0ca82e1d-b487-4879-8185-56b7c4e1a948" 
-				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0ca82e1d-b487-4879-8185-56b7c4e1a948" />
+				attribution="DGFIP - Région Bretagne" 
+				metadata="https://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/41477941-168e-483f-a79e-c1ee836bf93d" 
+				metadata-csw="https://applications.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=41477941-168e-483f-a79e-c1ee836bf93d" />
 			<layer id="CP.CadastralZoning" name="Sections" scalemin="0" scalemax="50000" visible="false" tiled="false"
 				queryable="false" fields="label,nom_commune" aliases="Section,Commune"
                 infoformat="application/vnd.ogc.gml" featurecount="1"
@@ -654,38 +680,10 @@
 				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/63c700b1-943d-4409-88f0-2bdf904208bd" 
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=63c700b1-943d-4409-88f0-2bdf904208bd" />                        
         </theme>
-        <!--<theme name="Découpages territoriaux"  collapsed="true" id="territoire" icon="globe"> 
-			<layer id="commune_bdcarto" name="Commune"  visible="false" tiled="false"
-				queryable="true" fields="COMMUNE,INSEE_COM,SUPERFICIE" aliases="Nom,Code INSEE,Superficie"
-                infoformat="application/vnd.ogc.gml" featurecount="5"                
-				style="commune_region" 
-				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
-				attribution="IGN - BDCARTO" 
-				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/b08e6cb1-236c-49b7-88f9-42b500d274d5"
-				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b08e6cb1-236c-49b7-88f9-42b500d274d5" />
-			<layer id="EPCI_053" name="Intercommunalité"  visible="false" tiled="false"
-				queryable="true" fields="NOM_EPCI,SIREN_EPCI" aliases="Nom,SIREN"
-                infoformat="application/vnd.ogc.gml" featurecount="5"
-				style="epci_region" 
-				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
-				attribution="GéoBretagne" 
-				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/2298d744-49cb-4fcb-9487-26f916fecdff" 
-				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=2298d744-49cb-4fcb-9487-26f916fecdff" />			
-			<layer id="n_pays" name="Pays"  visible="false" tiled="true"
-				queryable="true" fields="NOM_PAYS" aliases="Nom"
-                infoformat="application/vnd.ogc.gml" featurecount="5"             
-				style="pays_region" 
-				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
-				attribution="GéoBretagne" 
-				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/9722d181-75f9-40ab-a136-a9f9ed6f29a5" 
-				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9722d181-75f9-40ab-a136-a9f9ed6f29a5" />				
-			<layer id="FDepartement" name="Département"  visible="false" tiled="false"
-				queryable="true" fields="LIBELLE" aliases="Nom"
-                infoformat="application/vnd.ogc.gml" featurecount="5"
-				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
-				attribution="IGN - BDCARTO" 
-				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/e16d50d4-746d-44e3-a5e7-5fc000f97665" 
-				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=e16d50d4-746d-44e3-a5e7-5fc000f97665" />
-		</theme>-->
     </themes>
+<extensions>
+<!-- <extension type="javascript" src="demo/cad/external/html5kellycolorpicker.min.js" /> -->
+<extension type="javascript" src="https://kartenn.region-bretagne.fr/kartoviz/demo/cad/external/piklor.js" usededby="cad.js"/>
+</extensions>
+
 </config>

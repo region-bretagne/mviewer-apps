@@ -1,0 +1,18 @@
+{{#features}}
+	<li class="item">
+		{{#enseigne1}}
+			<h3 class="rb-title-feature">{{enseigne1}}</h3>
+		{{/enseigne1}}
+		{{#denominationusuelle}}
+			<h3 class="rb-title-feature">{{denominationusuelle}}</h3>
+		{{/denominationusuelle}}
+		
+		<p class="rb-text-feature">
+			Adresse : <span style="font-family:'roboto_bold'">{{typevoie}} {{libellevoie}} {{codepostal}} {{libellecommune}}</span><br/>
+			Activité : <span style="font-family:'roboto_bold'">{{libelleactivite}}</span><br/>
+			{{#libelleeffectif}}
+			Effectif : <span style="font-family:'roboto_bold'">{{libelleeffectif}}</span><br/>
+			{{/libelleeffectif}}
+		</p>
+	</li>
+{{/features}}

@@ -1,0 +1,111 @@
+/******************************************************************************
+--------------------------- CSS KARTENN PATRIMOINE  -----------------
+********************************************************************************/
+@import url("../../crbicon/crbicon.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* Import des fonts*/
+		@font-face {
+		    font-family: 'roboto_black';
+		    src: url('../../global/font/Roboto/Roboto-Black.ttf');
+		}
+		@font-face {
+		    font-family: 'roboto_bold';
+		    src: url('../../global/font/Roboto/Roboto-Bold.ttf');
+		}
+		@font-face {
+		    font-family: 'roboto_medium';
+		    src: url('../../global/font/Roboto/Roboto-Medium.ttf');
+		}
+		@font-face {
+		    font-family: 'roboto_regular';
+		    src: url('../../global/font/Roboto/Roboto-Regular.ttf');
+		}
+		@font-face {
+		    font-family: 'spotkabold';
+		    src: url('../../global/font/spotkabold.ttf');
+		}
+		
+@font-face {
+  font-family: 'region_bold';
+  src: url("../../global/font/RB/RegionBretagneNew-Bold.ttf"); }
+
+@font-face {
+  font-family: 'region_regular';
+  src: url("../../global/font/RB/RegionBretagneNew-Regular.ttf"); }
+
+
+/* ----------------- CSS IFRAME + FONCTIONNALITES ------------ */
+
+/*Mise en forme des MST*/
+#rb-puces li {
+	list-style: none;
+	color: #555;
+}
+#rb-puces li:before{
+	content:"· ";
+	font-size:50px;
+	vertical-align:middle;
+	line-height:20px;
+}
+.rb-title-feature {
+	font-family:"region_bold";
+	font-size:20px;
+	margin-bottom:3%;
+	line-height:1;
+}
+.rb-subtitle-feature {
+	font-family:"region_bold";
+	font-size:16px;
+	margin-top:2%;
+	line-height:1;
+}
+.rb-text-feature{
+	font-family:"Open Sans";
+	color:#555;
+	font-size:13px;
+	margin-top:2%;
+	margin-bottom:2%;
+}
+.rb-description-feature{
+	font-family:"Open Sans";
+	color:#555;
+	font-size:11px;
+	margin:2%;
+	text-align: justify;
+}
+.rb-but-list{
+	margin-top:4%;
+}
+.rb-but-link, .rb-but-link:focus, .rb-but-link:hover{
+	display:inline-block;
+	padding:0.5em 1em;
+	margin:0 0.3em 0.3em 0;
+	border-radius:0.3em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'OpenSans-Bold',sans-serif;
+	font-weight:300;
+	color:#FFFFFF;
+	text-align:center;
+	transition: all 0.2s;
+}
+.rb-but-link:hover{
+	background-color:#b0006b;
+}	
+/*Paramètre pour éviter le phénomène de double ascenseur en mode ultra */
+
+
+.searchresults-title {
+  background-color: #BA88A4;
+  border-color: #BA88A4;
+  color: white;
+  font-family: "roboto_bold", Arial, Sans-serif; }
+
+.searchresults-title .close,
+.searchresults-title .close:hover,
+.searchresults-title .close:focus,
+.searchresults-title .close:active,
+.searchresults-title .close:visited {
+  color: white; }
+

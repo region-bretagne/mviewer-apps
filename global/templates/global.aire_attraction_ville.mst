@@ -1,0 +1,12 @@
+{{#features}}
+	<li class="item">
+		<h3 class="rb-title-feature">{{LIBGEO}}</h3>
+
+		<div>
+			<h4 class="rb-subtitle-feature" style="color:#f39463;"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> Aire d'attraction des villes</h4>
+			<p class="rb-description-feature">
+			L’aire d’attraction d’une ville est un ensemble de communes, d’un seul tenant et sans enclave, qui définit l’étendue de l’influence d’un pôle de population et d’emploi sur les communes environnantes, cette influence étant mesurée par l’intensité des déplacements domicile-travail.
+			</p>
+		</div>
+	</li>
+{{/features}}
