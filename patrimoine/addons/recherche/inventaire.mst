@@ -20,3 +20,11 @@
         </p>
 	</li>
 {{/features}}
+
+<style>
+@import url("https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/css/kartenn_patrimoine_mst.css");
+#slide-right-panel-1{
+	padding-bottom: 30%;
+}
+
+</style>

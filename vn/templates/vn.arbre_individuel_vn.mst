@@ -3,7 +3,7 @@
 		<h2 class="rb-title-feature">{{essence}}</h2>
 		<p class="rb-text-feature">		
 			<span style="font-weight:bold"> Hauteur :</span> {{hauteur}} m<br/>
-			<span style="font-weight:bold"> Diamètre :</span> {{diametre}} m<br/>
+			<span style="font-weight:bold"> Diamètre :</span> {{diametre}} cm<br/>
 			{{#remarque}}                
 			<span style="font-weight:bold"> Remarque :</span> {{remarque}}<br/>
 			{{/remarque}}                
