@@ -1,8 +1,0 @@
-{{#features}}
-	<li class="item">
-		<h3 class="rb-title-feature">{{nom}}</h3>
-		<p class="rb-text-feature">
-			<span style="font-weight:bold"> Code ligne :</span> {{code_ligne}}<br/>
-		</p>
-	</li>
-{{/features}}

@@ -1,9 +1,0 @@
-{{#features}}
-	<li class="item">
-		<h3 class="rb-title-feature">{{nom}}</h3>
-		<p class="rb-text-feature">
-			<span style="font-weight:bold"> Code UIC :</span> {{code_uic}}<br/>
-			<span style="font-weight:bold">Nature :</span> {{nature}}<br/>
-		</p>
-	</li>
-{{/features}}

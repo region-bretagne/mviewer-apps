@@ -1,0 +1,8 @@
+{{#features}}
+	<li class="item">
+		<h3 class="rb-title-feature">{{nom}}</h3>
+		<p class="rb-text-feature">		
+			<span style="font-weight:bold"> Commune :</span> {{nom_com}}<br/>
+		</p>
+	</li>
+{{/features}}

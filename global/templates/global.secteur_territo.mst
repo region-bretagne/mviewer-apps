@@ -1,5 +1,0 @@
-{{#features}}
-	<li class="item" >
-		<h3 class="rb-title-feature">{{zonage}}</h3>
-	</li>
-{{/features}}

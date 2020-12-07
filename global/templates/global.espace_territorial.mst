@@ -1,5 +1,5 @@
 {{#features}}
-	<li class="item">
+	<li class="item" >
 		<h3 class="rb-title-feature">{{nom}}</h3>
 	</li>
 {{/features}}

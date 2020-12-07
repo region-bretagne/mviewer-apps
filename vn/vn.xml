@@ -225,7 +225,7 @@
 		<group name="Voies navigables" id="vn">
 			<layer id="ecluse_trafic" name="Ecluse" visible="true" tiled="false" dynamiclegend="true"
 				queryable="true" searchable="true" infoformat="application/vnd.ogc.gml" featurecount="20"
-				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2005" timemax="2019" timevalues="2005,2007,2009,2011,2013,2015,2017,2019"
+				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2006" timemax="2020" timevalues="2006,2008,2010,2012,2014,2016,2018,2020"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 				style="ecluse_proprietaire,ecluse_trafic_millesime" stylesalias="Propriétaire,Trafic"
 				attribution="Région Bretagne" 
@@ -684,14 +684,14 @@
 				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/677d4e97-82bc-4d64-b11c-167f423900ae">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.destination_touristique.mst"></template>
 			</layer>
-			<layer id="secteur_territo" name="Territorialisation" visible="false" tiled="false"
+			<layer id="espace_territorial" name="Territorialisation" visible="false" tiled="false"
 				queryable="true"
 				infoformat="application/vnd.ogc.gml" featurecount="20" 
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution="Région Bretagne" 
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c90f07e5-ea47-44be-9e18-1eefa18b05fe"
 				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/c90f07e5-ea47-44be-9e18-1eefa18b05fe">	
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.secteur_territo.mst"></template>
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.espace_territorial.mst"></template>
 			</layer>
 			<layer id="n_unites_urbaines" name="Unité urbaine" visible="false" tiled="false"
 				queryable="true" fields="LIBELLE_CL" aliases="Nom"

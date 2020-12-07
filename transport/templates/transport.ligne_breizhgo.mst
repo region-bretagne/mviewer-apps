@@ -1,0 +1,10 @@
+{{#features}}
+	<li class="item">
+		<h3 class="rb-title-feature">{{nom}}</h3>
+		<p class="rb-text-feature">
+			<span style="font-weight:bold">Numéro de ligne :</span> {{num_ligne}}<br/>
+			<span style="font-weight:bold">Saison :</span> {{saison}}<br/>
+			<span style="font-weight:bold">Exploitant :</span> {{exploitant}}<br/>
+		</p>
+	</li>
+{{/features}}
