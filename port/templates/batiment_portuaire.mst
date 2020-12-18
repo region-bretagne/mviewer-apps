@@ -1,0 +1,16 @@
+{{#features}}
+	<li class="item">
+		<h3 class="rb-title-feature">{{nom}}</h3>  
+        <p class="rb-text-feature">		
+			<span style="font-weight:bold">Type bâtiment :</span> {{type_batiment}}<br/>
+			<span style="font-weight:bold">Activité :</span> {{activite}}<br/>
+			<span style="font-weight:bold">Adresse :</span> {{adresse}}<br/>
+			<span style="font-weight:bold">Commune :</span> {{commune}}<br/>
+			<span style="font-weight:bold">Concédé ? </span> {{concede}}<br/>
+			<span style="font-weight:bold">SHON : </span> {{shon}}<br/>
+			<span style="font-weight:bold">Chauffage : </span> {{chauffage}}<br/>
+			<span style="font-weight:bold">Année : </span> {{annee}}<br/>
+			<span style="font-weight:bold">Infos : </span> {{infos}}<br/>
+        </p>
+	</li>
+{{/features}}

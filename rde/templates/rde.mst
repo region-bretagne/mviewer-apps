@@ -3,7 +3,9 @@
 		<h2 class="rb-title-feature">{{intitule_sequence}}</h2>
 		<p class="rb-text-feature">		
 			<b>Date : </b> {{date}}<br>
+			{{#precisions_contenu}}
 			<b>Contenu : </b> {{precisions_contenu}}<br>
+			{{/precisions_contenu}}
 			<b>Lieu : </b> {{commune}} - {{nom_lieu}}<br>
 			<b>Type de séquence : </b> {{typologie_sequence}}<br>
 			<b>Nombre de participant.e.s : </b> {{nb_participants_total}}<br>

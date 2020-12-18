@@ -603,6 +603,17 @@
 			</layer>
 		</theme>
 		<theme name="Infrastructures"  id="Infrastructures" collapsed="true" icon="home">
+			<layer id="batiment_portuaire" name="Bâtiments portuaires"  visible="false" tiled="false"
+				searchable="true" queryable="true"
+				infoformat="application/vnd.ogc.gml" featurecount="20"
+                style="batiment_portuaire,bati_portuaire_concession" 
+				stylesalias="Par défaut,Concédé ?"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+				attribution="Source: Région Bretagne" 
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/5e16577c-4ee4-4e9b-b182-aa1c05f1a70f"
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5e16577c-4ee4-4e9b-b182-aa1c05f1a70f" >
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/batiment_portuaire.mst"></template>
+			</layer>
 			<layer id="port" name="Ports"  visible="false" tiled="false"
 				searchable="true" queryable="true"
 				infoformat="application/vnd.ogc.gml" featurecount="20"
