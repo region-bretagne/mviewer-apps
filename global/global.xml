@@ -384,7 +384,7 @@
 				queryable="true"
                 infoformat="application/vnd.ogc.gml" featurecount="20" 
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-				style=""
+				style="sites_region_picto,sites_region_sans_aeroport" stylesalias="Defaut,Sans aéroport"
                 attributefilter="true" attributefield="type" attributevalues="Services de la Région,Ports,Subdivisions voies navigables,Aéroports,EMAT,Centres d'exploitation voies navigables,Centres fluvial voies navigables" attributelabel="type"
 				attribution="Région Bretagne" 
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a6dde882-4334-4ce0-909f-adb8597ada97"
