@@ -215,7 +215,7 @@
 			</layer>							
 			<layer id="ecocompteur_trafic" name="Ecocompteurs - trafic annuel" visible="false" tiled="false" 
 				queryable="true" infoformat="application/vnd.ogc.gml" infopanel="bottom-panel" featurecount="20"
-				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2011" timemax="2019" timevalues="2011,2012,2013,2014,2015,2016,2017,2018,2019"
+				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2011" timemax="2020" timevalues="2011,2012,2013,2014,2015,2016,2017,2018,2019,2020"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution="Région Bretagne" 
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=adb30135-871b-4d5d-94d9-b95f90a24d62"
