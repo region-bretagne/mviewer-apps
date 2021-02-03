@@ -20,6 +20,9 @@
             <span style="font-weight:bold"> Validité du contrat :</span> {{contrat_validite}}<br/>
             <span style="font-weight:bold"> Echéance du contrat :</span> {{contrat_echeance}}<br/>
             <span style="font-weight:bold"> Identifiant :</span> {{idu_num}}<br/>
+            {{#redevance_annuelle}}                
+                <span style="font-weight:bold"> Redevance annuelle :</span> {{redevance_annuelle}} €<br/>
+            {{/redevance_annuelle}}
         </p>
       
         {{#lien}}
