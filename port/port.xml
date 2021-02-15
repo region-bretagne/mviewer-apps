@@ -59,7 +59,7 @@
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.concession.mst"></template>
             </layer>  
 			<layer id="contour_port_aero" name="Contour Port et Aéroport" visible="true" tiled="false" 
-				searchable="true" queryable="true"
+				searchable="true" queryable="false"
                 infoformat="application/vnd.ogc.gml"              
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="contour_port_aero_rouge" 

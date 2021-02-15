@@ -4,6 +4,7 @@
 		<p class="rb-text-feature">
 			<b>Porteur :</b> {{porteur}}	<br>
 			<b>Périmètre action :</b> {{perimetre_action}}	<br>
+			<b>Millésime :</b> {{millesime}}	<br>
 			<b>Montant voté :</b>  <span class="montant">{{montant_vote}} </span>	<br>
 		</p>
 		{{#resume}}
