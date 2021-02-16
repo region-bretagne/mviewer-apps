@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config mviewerstudioversion="3.1">
+<metadata>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description rdf:about="http://www.ilrt.bristol.ac.uk/people/cmdjb/">
+<dc:title>Carte des capacités des territoires</dc:title>
+<dc:creator>anonymous</dc:creator>
+<dc:publisher>anonymous</dc:publisher>
+<dc:subject>Indices de capacités et de péréquation</dc:subject>
+<dc:subject>Capacités de développement humain</dc:subject>
+<dc:subject>Capacités d'attractivité et développement économique</dc:subject>
+<dc:subject>Capacités des écosystèmes naturels</dc:subject>
+<dc:subject>Capacités d'intervention des collectivités locales</dc:subject>
+<dc:date>2021-02-08T15:57:24.498Z</dc:date>
+</rdf:Description>
+</rdf:RDF>
+</metadata>
+<application
+    title="Carte des capacités des territoires"
+    logo="https://geobretagne.fr/pub/logo/region-bretagne.jpg"
+    help=""
+    style="css/themes/wet_asphalt.css"
+    exportpng="true"
+    showhelp="false"
+    coordinates="false"
+    measuretools="false"
+    togglealllayersfromtheme="false">
+</application>
+<mapoptions maxzoom="20" projection="EPSG:3857" center="-293340,6127806" zoom="8" />
+<proxy url='../proxy/?url='/>
+<olscompletion type="ban" url="https://api-adresse.data.gouv.fr/search/" attribution="" />
+<searchparameters bbox="false" localities="true" features="true" static="false"/>
+<baselayers style="default"> 
+    <baselayer visible="true" id="positron" thumbgallery="img/basemap/positron.png" title="CartoDb" label="Positron" type="OSM" url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" attribution="Map tiles by  &lt;a href=&quot;https://cartodb.com/attributions&quot;&gt;CartoDb&lt;/a&gt;, under  &lt;a href=&quot;https://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY 3.0 &lt;/a&gt;"  ></baselayer> 
+    <baselayer visible="false" id="ortho1" thumbgallery="img/basemap/ortho.jpg" title="GéoBretagne" label="Photo aérienne actuelle" type="WMTS" url="https://tile.geobretagne.fr/gwc02/service/wmts" layers="satellite" format="image/png" style="_null" matrixset="EPSG:3857" fromcapacity="false" attribution="&lt;a href=&quot;https://applications.region-bretagne.fr/geonetwork/?uuid=3a0ac2e3-7af1-4dec-9f36-dae6b5a8c731&quot; target=&quot;_blank&quot; &gt;partenaires GéoBretagne - IGN RGE BD ORTHO - PlanetObserver&lt;/a&gt;"  ></baselayer> 
+</baselayers>
+<themes mini="true" legendmini = "false"> 
+    <theme id="theme-20210205114221" name="Indices de capacités et de péréquation" collapsed="false" icon="fas fa-caret-right"> 
+        <layer 
+            id="perequation_2021_geom"
+            name="Indice général de capacités de territoires"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+            visible="true"
+            infoformat="application/vnd.ogc.gml"
+            style="perequation_ind_global"
+            queryable="true"
+            secure="public"
+			exclusive = "true"
+			tiled="true"
+			fields="nom_epci,ind_global"
+			aliases="EPCI,Indice global (moyenne = 0)"
+            infopanel="right-panel">
+        </layer> 
+        <layer 
+            id="perequation_2021_geom"
+            name="Indice de péréquation"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+            visible="false"
+			style="perequation_perequation"
+            infoformat="application/vnd.ogc.gml"
+            queryable="true"
+            secure="public"
+			exclusive = "true"
+			tiled="true"
+			fields="nom_epci,perequation"
+			aliases="EPCI,Indice de péréquation (moyenne = 0)"
+            infopanel="right-panel">
+        </layer> 
+    </theme> 
+    <theme id="theme-20210205120002" name="Capacités de développement humain" collapsed="true" icon="fas fa-caret-right"> 
+        <layer 
+            id="perequation_2021_geom"
+            name="Indice de capacités de développement humain"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+            visible="false"
+			style="perequation_idhb"
+            infoformat="application/vnd.ogc.gml"
+            queryable="true"
+            secure="public"
+			exclusive = "true"
+			tiled="true"
+			fields="nom_epci,idhb"
+			aliases="EPCI,Indice de capacités de développement humain (moyenne = 0)"
+            infopanel="right-panel">
+        </layer> 
+        <layer 
+            id="perequation_2021_geom"
+            name="Revenu fiscal médian par unité de consommation"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+            visible="false"
+			style="perequation_med"
+            infoformat="application/vnd.ogc.gml"
+            queryable="true"
+            secure="public"
+			exclusive = "true"
+			tiled="true"
+			fields="nom_epci,med"
+			aliases="EPCI,Revenu médian (€)"
+            infopanel="right-panel">
+        </layer> 
+        <layer 
+            id="perequation_2021_geom"
+            name="Niveau d'éducation "
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+            visible="false"
+			style="perequation_educ"
+            infoformat="application/vnd.ogc.gml"
+            queryable="true"
+            secure="public"
+			exclusive = "true"
+			tiled="true"
+			fields="nom_epci,idh_educ"
+			aliases="EPCI,Niveau d'éducation (moyenne = 0)"
+            infopanel="right-panel">
+        </layer> 
+        <layer 
+            id="perequation_2021_geom"
+            name="Indice comparatif de mortalité générale"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+            visible="false"
+			style="perequation_icm"
+            infoformat="application/vnd.ogc.gml"
+            queryable="true"
+            secure="public"
+			exclusive = "true"
+			tiled="true"
+			fields="nom_epci,icm"
+			aliases="EPCI,Indice comparatif de mortalité (moyenne en France = 100)"
+            infopanel="right-panel">
+        </layer> 
+    </theme> 
+    <theme id="theme-20210205120749" name="Capacités d'attractivité et développement économique" collapsed="true" icon="fas fa-caret-right"> 
+        <layer 
+            id="perequation_2021_geom"
+            name="Indice de capacités d'attractivité et développement économique"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+            visible="false"
+			style="perequation_dyn"
+            infoformat="application/vnd.ogc.gml"
+            queryable="true"
+            secure="public"
+			exclusive = "true"
+			tiled="true"
+			fields="nom_epci,dyn"
+			aliases="EPCI,Indice de capacités d'attractivité et de développement économique (moyenne = 0)"
+            infopanel="right-panel">
+        </layer> 
+        <layer 
+            id="perequation_2021_geom"
+            name="Evolution annuelle de la population"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+            visible="false"
+			style="perequation_evol_pop"
+            infoformat="application/vnd.ogc.gml"
+            queryable="true"
+            secure="public"
+			exclusive = "true"
+			tiled="true"
+			fields="nom_epci,evol_pop_prop12_17"
+			aliases="EPCI,Evolution annuelle de la population (2012-2017 - %)"
+            infopanel="right-panel">
+        </layer> 
+        <layer 
+            id="perequation_2021_geom"
+            name="Evolution annuel des emplois"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+            visible="false"
+			style="perequation_evol_emploi"
+            infoformat="application/vnd.ogc.gml"
+            queryable="true"
+            secure="public"
+			exclusive = "true"
+			tiled="true"
+			fields="nom_epci,evol_emploi_prop12_17"
+			aliases="EPCI,Evolution annuelle des emplois (2012-2017 - %)"
+            infopanel="right-panel">
+        </layer> 
+        <layer 
+            id="perequation_2021_geom"
+            name="Taux d'emploi parmi les acti·ve·f·s"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+            visible="false"
+			style="perequation_prop_chom"
+            infoformat="application/vnd.ogc.gml"
+            queryable="true"
+            secure="public"
+			exclusive = "true"
+			tiled="true"
+			fields="nom_epci,prop_chom_2017"
+			aliases="EPCI,Poids du chômage (%)"
+            infopanel="right-panel">
+        </layer> 
+    </theme> 
+    <theme id="theme-20210205120345" name="Capacités des écosystèmes naturels" collapsed="true" icon="fas fa-caret-right"> 
+        <layer 
+            id="perequation_2021_geom"
+            name="indice de capacité des écosystèmes naturels"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+            visible="false"
+			style="perequation_eco"
+            infoformat="application/vnd.ogc.gml"
+            queryable="true"
+            secure="public"
+			exclusive = "true"
+			tiled="true"
+			fields="nom_epci,eco"
+			aliases="EPCI,Indice de capacités des écosystèmes naturels (moyenne = 0)"
+            infopanel="right-panel">
+        </layer> 
+        <layer 
+            id="perequation_2021_geom"
+            name="Part des zones humides altérées "
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+            visible="false"
+			style="perequation_zhp_prop_alter"
+            infoformat="application/vnd.ogc.gml"
+            queryable="true"
+            secure="public"
+			exclusive = "true"
+			tiled="true"
+			fields="nom_epci,zhp_prop_alter"
+			aliases="EPCI,Part des zones humides altérées (%)"
+            infopanel="right-panel">
+        </layer> 
+        <layer 
+            id="perequation_2021_geom"
+            name="Niveau de continuité écologique"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+            visible="false"
+			style="perequation_eco_continuite"
+            infoformat="application/vnd.ogc.gml"
+            queryable="true"
+            secure="public"
+			exclusive = "true"
+			tiled="true"
+			fields="nom_epci,eco_continuite"
+			aliases="EPCI,Niveau de continuité écologique"
+            infopanel="right-panel">
+        </layer> 
+        <layer 
+            id="perequation_2021_geom"
+            name="Stockage annuel de carbone par les sols"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+            visible="false"
+			style="perequation_stockage_co2_ha_an"
+            infoformat="application/vnd.ogc.gml"
+            queryable="true"
+            secure="public"
+			exclusive = "true"
+			tiled="true"
+			fields="nom_epci,stockage_co2_ha_an"
+			aliases="EPCI,Captation annuelle de carbone (t/ha/an)"
+            infopanel="right-panel">
+        </layer> 
+    </theme> 
+    <theme id="theme-20210205115228" name="Capacités d'intervention des collectivités locales" collapsed="true" icon="fas fa-caret-right"> 
+        <layer 
+            id="perequation_2021_geom"
+            name="Indice de capacités d'intervention des collectivités locales"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+            visible="false"
+			style="perequation_cap"
+            infoformat="application/vnd.ogc.gml"
+            queryable="true"
+            secure="public"
+			exclusive = "true"
+			tiled="true"
+			fields="nom_epci,cap"
+			aliases="EPCI,Indice de capacités des collectivités locales (moyenne = 0)"
+            infopanel="right-panel">
+        </layer> 
+        <layer 
+            id="perequation_2021_geom"
+            name="Potentiel financier agrégé élargi aux dotations et fonds de péréquation"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+            visible="false"
+			style="perequation_ir_popdgf"
+            infoformat="application/vnd.ogc.gml"
+            queryable="true"
+            secure="public"
+			exclusive = "true"
+			tiled="true"
+			fields="nom_epci,ir_popdgf"
+			aliases="EPCI,Potentiel financier (€/hab)"
+            infopanel="right-panel">
+        </layer> 
+        <layer 
+            id="perequation_2021_geom"
+            name="Densité de population"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+            visible="false"
+			style="perequation_densite"
+            infoformat="application/vnd.ogc.gml"
+            queryable="true"
+            secure="public"
+			exclusive = "true"
+			tiled="true"
+			fields="nom_epci,densite"
+			aliases="EPCI,Densité (hab/km²)"
+            infopanel="right-panel">
+        </layer> 
+        <layer 
+            id="perequation_2021_geom"
+            name="Part de la population au-dessus du seuil de pauvreté "
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+            visible="false"
+			style="perequation_tp60"
+            infoformat="application/vnd.ogc.gml"
+            queryable="true"
+            secure="public"
+			exclusive = "true"
+			tiled="true"
+			fields="nom_epci,tp60"
+			aliases="EPCI,Taux de pauvreté (%)"
+            infopanel="right-panel">
+        </layer> 
+    </theme> 
+</themes>
+</config>
