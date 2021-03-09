@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config mviewerstudioversion="3.1">
+<metadata>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description rdf:about="http://www.ilrt.bristol.ac.uk/people/cmdjb/">
+<dc:title>Présence de l’espèce Mulette perlière en Bretagne</dc:title>
+<dc:creator>anonymous</dc:creator>
+<dc:publisher>anonymous</dc:publisher>
+<dc:subject>Mulette</dc:subject>
+<dc:date>2021-03-03T14:00:34.985Z</dc:date>
+</rdf:Description>
+</rdf:RDF>
+</metadata>
+<application
+    title="Présence de l’espèce Mulette perlière en Bretagne"
+    logo="https://geobretagne.fr/pub/logo/region-bretagne.jpg"
+    help=""
+    style="css/themes/default.css"
+    exportpng="false"
+    showhelp="false"
+    coordinates="false"
+    measuretools="false"
+    togglealllayersfromtheme="false">
+</application>
+<mapoptions maxzoom="20" projection="EPSG:3857" center="-303462.7018197616,6133045.6455879845" zoom="8" />
+<proxy url='../proxy/?url='/>
+<olscompletion type="ban" url="https://api-adresse.data.gouv.fr/search/" attribution="BAN" />
+<searchparameters bbox="false" localities="true" features="false" static="false"/>
+<baselayers style="default"> 
+    <baselayer visible="true" id="positron" thumbgallery="img/basemap/positron.png" title="CartoDb" label="Positron" type="OSM" url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" attribution="Map tiles by  &lt;a href=&quot;https://cartodb.com/attributions&quot;&gt;CartoDb&lt;/a&gt;, under  &lt;a href=&quot;https://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY 3.0 &lt;/a&gt;"  ></baselayer> 
+    <baselayer visible="false" id="ortho1" thumbgallery="img/basemap/ortho.jpg" title="GéoBretagne" label="Photo aérienne actuelle" type="WMTS" url="https://tile.geobretagne.fr/gwc02/service/wmts" layers="satellite" format="image/png" style="_null" matrixset="EPSG:3857" fromcapacity="false" attribution="&lt;a href=&quot;https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/3a0ac2e3-7af1-4dec-9f36-dae6b5a8c731&quot; target=&quot;_blank&quot; &gt;partenaires GéoBretagne - Megalis Bretagne - IGN - PlanetObserver&lt;/a&gt;"  ></baselayer> 
+    <baselayer visible="false" id="osm_google" thumbgallery="img/basemap/osm_google.png" title="GéoBretagne" label="OpenStreetMap" type="WMS" url="https://osm.geobretagne.fr/gwc01/service/wms" layers="osm:google" format="image/png" attribution="GéoBretagne. Données : les contributeurs d'&lt;a href=&quot;https://www.openstreetmap.org/&quot; target=&quot;_blank&quot;&gt;OpenStreetMap &lt;/a&gt;,  &lt;a href=&quot;https://www.openstreetmap.org/copyright&quot; target=&quot;_blank&quot;&gt;ODbL &lt;/a&gt;"  ></baselayer> 
+</baselayers>
+<themes> 
+    <theme id="mulette" name="Mulette" collapsed="true" icon="fas fa-caret-right"> 
+        <layer 
+            id="mulette_perliere_bretagne_vivante"
+            name="Mulette perlière"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+            visible="true"
+            infoformat="text/html"
+            queryable="true"
+            infopanel="right-panel">
+        </layer> 
+        <layer 
+            id="bassin_versant"
+            name="Bassin versant"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+            visible="true"
+            infoformat="application/vnd.ogc.gml"
+            fields="nom"
+            aliases="nom"
+            metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/3a06c4da-2e8a-4a3b-b0f9-68ac4d2351ca"
+            queryable="true"
+            infopanel="right-panel">
+        </layer> 
+    </theme> 
+</themes>
+</config>

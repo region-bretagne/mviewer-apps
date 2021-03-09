@@ -466,7 +466,7 @@
 				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/7948ca0f-ef9a-4034-a7e7-4976e8de2fe5" >  
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.limite_dpf.mst"></template>
 			</layer>		
-			<layer id="r53_2017_parcelle_publique" name="Parcelles publiques" visible="false" tiled="false"
+			<layer id="r53_2019_parcelle_publique" name="Parcelles publiques" visible="false" tiled="false"
 				queryable="false"
 				infoformat="text/html" featurecount="20"
 				url="https://geobretagne.fr/geoserver/ff/wms" 

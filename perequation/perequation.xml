@@ -98,8 +98,8 @@
             secure="public"
 			exclusive = "true"
 			tiled="true"
-			fields="nom_epci,med"
-			aliases="EPCI,Revenu médian (€)"
+			fields="nom_epci,med,reg_med"
+			aliases="EPCI,Revenu médian (€), Médiane régionale (€)"
             infopanel="right-panel">
         </layer> 
         <layer 
@@ -115,7 +115,7 @@
 			exclusive = "true"
 			tiled="true"
 			fields="nom_epci,idh_educ"
-			aliases="EPCI,Niveau d'éducation (moyenne = 0)"
+			aliases="EPCI,Niveau d'éducation (moy=0)"
             infopanel="right-panel">
         </layer> 
         <layer 
@@ -130,8 +130,8 @@
             secure="public"
 			exclusive = "true"
 			tiled="true"
-			fields="nom_epci,icm"
-			aliases="EPCI,Indice comparatif de mortalité (moyenne en France = 100)"
+			fields="nom_epci,icm,reg_icm"
+			aliases="EPCI,Indice comparatif de mortalité, Moyenne en Bretagne (France=100)"
             infopanel="right-panel">
         </layer> 
     </theme> 
@@ -149,7 +149,7 @@
 			exclusive = "true"
 			tiled="true"
 			fields="nom_epci,dyn"
-			aliases="EPCI,Indice de capacités d'attractivité et de développement économique (moyenne = 0)"
+			aliases="EPCI,Indice de capacités d'attractivité et de développement économique (moy=0)"
             infopanel="right-panel">
         </layer> 
         <layer 
@@ -164,8 +164,8 @@
             secure="public"
 			exclusive = "true"
 			tiled="true"
-			fields="nom_epci,evol_pop_prop12_17"
-			aliases="EPCI,Evolution annuelle de la population (2012-2017 - %)"
+			fields="nom_epci,evol_pop_prop12_17,reg_evol_pop_prop12_17"
+			aliases="EPCI,Evolution de population 2012-17 (%/an), Moyenne régionale (%/an)"
             infopanel="right-panel">
         </layer> 
         <layer 
@@ -180,8 +180,8 @@
             secure="public"
 			exclusive = "true"
 			tiled="true"
-			fields="nom_epci,evol_emploi_prop12_17"
-			aliases="EPCI,Evolution annuelle des emplois (2012-2017 - %)"
+			fields="nom_epci,evol_emploi_prop12_17,reg_evol_emploi_prop12_17"
+			aliases="EPCI,Evolution des emplois 2012-17 (%/an),Moyenne régionale (%/an)"
             infopanel="right-panel">
         </layer> 
         <layer 
@@ -196,8 +196,8 @@
             secure="public"
 			exclusive = "true"
 			tiled="true"
-			fields="nom_epci,prop_chom_2017"
-			aliases="EPCI,Poids du chômage (%)"
+			fields="nom_epci,prop_chom_2017,reg_prop_chom_2017"
+			aliases="EPCI,Poids du chômage (%), Moyenne régionale (%)"
             infopanel="right-panel">
         </layer> 
     </theme> 
@@ -215,7 +215,7 @@
 			exclusive = "true"
 			tiled="true"
 			fields="nom_epci,eco"
-			aliases="EPCI,Indice de capacités des écosystèmes naturels (moyenne = 0)"
+			aliases="EPCI,Indice de capacités des écosystèmes naturels (moy=0)"
             infopanel="right-panel">
         </layer> 
         <layer 
@@ -230,8 +230,8 @@
             secure="public"
 			exclusive = "true"
 			tiled="true"
-			fields="nom_epci,zhp_prop_alter"
-			aliases="EPCI,Part des zones humides altérées (%)"
+			fields="nom_epci,zhp_prop_alter,reg_zhp_prop_alter"
+			aliases="EPCI,Part des zones humides altérées (%), Moyenne régionale (%)"
             infopanel="right-panel">
         </layer> 
         <layer 
@@ -247,7 +247,7 @@
 			exclusive = "true"
 			tiled="true"
 			fields="nom_epci,eco_continuite"
-			aliases="EPCI,Niveau de continuité écologique"
+			aliases="EPCI,Niveau de continuité écologique (moy=0)"
             infopanel="right-panel">
         </layer> 
         <layer 
@@ -262,8 +262,8 @@
             secure="public"
 			exclusive = "true"
 			tiled="true"
-			fields="nom_epci,stockage_co2_ha_an"
-			aliases="EPCI,Captation annuelle de carbone (t/ha/an)"
+			fields="nom_epci,stockage_co2_ha_an,reg_stockage_co2_ha_an"
+			aliases="EPCI,CO2 stocké annuellement (t/ha/an), Moyenne régionale (t/ha/an)"
             infopanel="right-panel">
         </layer> 
     </theme> 
@@ -296,8 +296,8 @@
             secure="public"
 			exclusive = "true"
 			tiled="true"
-			fields="nom_epci,ir_popdgf"
-			aliases="EPCI,Potentiel financier (€/hab)"
+			fields="nom_epci,ir_popdgf,reg_ir_popdgf"
+			aliases="EPCI,Potentiel financier (€/hab), Moyenne régionale (€/hab)"
             infopanel="right-panel">
         </layer> 
         <layer 
@@ -312,8 +312,8 @@
             secure="public"
 			exclusive = "true"
 			tiled="true"
-			fields="nom_epci,densite"
-			aliases="EPCI,Densité (hab/km²)"
+			fields="nom_epci,densite,reg_densite"
+			aliases="EPCI,Densité (hab/km²), Moyenne régionale (hab/km²)"
             infopanel="right-panel">
         </layer> 
         <layer 
@@ -328,8 +328,8 @@
             secure="public"
 			exclusive = "true"
 			tiled="true"
-			fields="nom_epci,tp60"
-			aliases="EPCI,Taux de pauvreté (%)"
+			fields="nom_epci,tp60,reg_tp60_2017"
+			aliases="EPCI,Taux de pauvreté (%), Moyenne Régionale (%)"
             infopanel="right-panel">
         </layer> 
     </theme> 
