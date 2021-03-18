@@ -1,5 +1,5 @@
 {{#features}}
-	<li class="item">
+	<li class="item" id="{{feature_ol_uid}}">
 		<h2 class="rb-title-feature">{{essence}}</h2>
 		<p class="rb-text-feature">		
 			<span style="font-weight:bold"> Hauteur :</span> {{hauteur}} m<br/>

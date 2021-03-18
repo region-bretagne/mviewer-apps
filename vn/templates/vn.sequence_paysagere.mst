@@ -1,5 +1,5 @@
 {{#features}}
-	<li class="item">
+	<li class="item" id="{{feature_ol_uid}}">
 		<h3 class="rb-title-feature">{{nom}}</h3>
 			<span style="font-weight:bold"> Type :</span> {{type}}<br/>
        </p>

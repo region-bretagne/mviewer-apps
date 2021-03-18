@@ -1,0 +1,18 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">Station</h2>
+		<p class="rb-text-feature">
+			<span style="font-weight:bold"> Gestionnaire :</span> {{gestionnaire}}<br/>				
+			<span style="font-weight:bold"> Gonflage :</span> {{gonflage}}<br/>				
+			<span style="font-weight:bold"> Réparation :</span> {{reparation}}<br/>		
+			<span style="font-weight:bold"> Etat :</span> {{etat}}<br/>		
+			<span style="font-weight:bold"> Remarques :</span> {{remarque}}<br/>		
+       </p>
+
+
+	</li>
+{{/features}}
+
+<style>
+@import url("https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/css/vn_mst.css");
+</style>

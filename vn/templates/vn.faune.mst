@@ -1,5 +1,5 @@
 {{#features}}
-	<li class="item">
+	<li class="item" id="{{feature_ol_uid}}">
 		<p class="rb-text-feature">
 			<span style="font-weight:bold"> Catégorie :</span> {{categorie}}<br/>
 			<span style="font-weight:bold"> Nom Français :</span> {{nom_francais}}<br/>
