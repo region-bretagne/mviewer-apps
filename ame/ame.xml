@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application panelstate="open" coordinates="true" title="Aire maritime éducative" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" exportpng="true" legend="true" measuretools="true" legendasimage="false" popup="false" print="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme_ultra.css" />
+    <application panelstate="open" coordinates="true" title="Aires éducatives en Bretagne" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" exportpng="true" legend="true" measuretools="true" legendasimage="false" popup="false" print="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme_ultra.css" />
     <mapoptions maxzoom="18" projection="EPSG:3857" center="-255516,6140243" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery"><!-- style="default"||gallery" -->          
@@ -14,17 +14,18 @@
             url="https://wxs.ign.fr/bth43bbhz4oga1hosf94bre2/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.MAPS" format="image/jpeg" visible="false" fromcapacity="false"
             attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
     </baselayers> 
+    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="current" />
     <searchparameters bbox="true" localities="true" features="true"/>
 
     <themes>
-        <theme name="Aire maritime éducative"  id="ame" collapsed="true" icon="university">
-            <layer id="aire_maritime_educative" name="Aire maritime éducative"  visible="true" tiled="false"
-                infoformat="application/vnd.ogc.gml" featurecount="1" queryable="true"
+        <theme name="Aire éducative"  id="ame" collapsed="true" icon="university">
+            <layer id="aire_educative" name="Aire éducative"  visible="true" tiled="false"
+                infoformat="application/vnd.ogc.gml" featurecount="1" queryable="true" searchable="true"
                 url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-				style="ame_statut,ame_structure" stylesalias="Statut,Type de structure"
+				style="aire_educative_nature,ame_statut,ame_structure" stylesalias="Nature,Statut,Type de structure référente"
                 attribution="Source: Région Bretagne" 
-                metadata=""
-                metadata-csw="" >	   
+                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
+                metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9fbbae5d-4f2b-4691-916a-6acdbdf24b2d" >	   
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ame/templates/ame.mst"></template> 
 		    </layer> 
 		</theme>

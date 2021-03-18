@@ -1,11 +1,20 @@
 {{#features}}
 	<li class="item">
-		<h2 class="rb-title-feature">{{nom_ecole}}</h2>
+		<h2 class="rb-title-feature">{{nom_etablissement}}</h2>
 		<p class="rb-text-feature">		
 			<b>Statut </b> {{statut}}<br>
 			<b>Démarré en </b>  {{annee_demarrage}}<br>
+			<b>Statut établissement</b> {{statut_etablissement}}<br>
+			{{#nombre_eleves}}
+			<b>Nombre d'élèves </b> {{nombre_eleves}}<br>
+			{{/nombre_eleves}}
+			{{#classes}}
 			<b>Classes </b> {{classes}}<br>
+			{{/classes}}
+			<b>Département </b> {{departement}}<br>
+			<b>Commune </b> {{commune}}<br>
 			<b>Structure référente </b> {{structure_referente}}<br>
+			<b>Type de structure </b> {{type_structure}}<br>
 		</p>
 	</li>
 {{/features}}

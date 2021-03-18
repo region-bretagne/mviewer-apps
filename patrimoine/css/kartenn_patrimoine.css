@@ -694,4 +694,30 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 .searchresults-title .close:active,
 .searchresults-title .close:visited {
   color: white; }
+  
+#geocoding-modal .panel-heading {
+    background-color: #BA88A4;
+}
 
+/* Search results */
+#searchresults {
+  font-family: "roboto_regular", Arial, Sans-serif;
+  color: #555555; }
+  #searchresults a.list-group-item.disabled {
+    font-family: "roboto_bold", Arial, Sans-serif; }
+  #searchresults a:hover {
+    font-family: "roboto_bold", Arial, Sans-serif;
+    color: #BA88A4; }
+
+.searchresults-title {
+  background-color: #BA88A4;
+  border-color: #BA88A4;
+  color: white;
+  font-family: "roboto_bold", Arial, Sans-serif; }
+
+.searchresults-title .close,
+.searchresults-title .close:hover,
+.searchresults-title .close:focus,
+.searchresults-title .close:active,
+.searchresults-title .close:visited {
+  color: white; }

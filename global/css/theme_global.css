@@ -569,6 +569,7 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
     text-align: center;
 }
 
+
 /*******************************
 -------------CSS Fiche info GML
 ********************************/
@@ -668,4 +669,28 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 .rb-but-link:hover{
 	background-color:#555555;
 }	
+
+
+/* Search results */
+#searchresults {
+  font-family: "roboto_regular", Arial, Sans-serif;
+  color: #555555; }
+  #searchresults a.list-group-item.disabled {
+    font-family: "roboto_bold", Arial, Sans-serif; }
+  #searchresults a:hover {
+    font-family: "roboto_bold", Arial, Sans-serif;
+    color: #252525; }
+
+.searchresults-title {
+  background-color: #252525;
+  border-color: #252525;
+  color: white;
+  font-family: "roboto_bold", Arial, Sans-serif; }
+
+.searchresults-title .close,
+.searchresults-title .close:hover,
+.searchresults-title .close:focus,
+.searchresults-title .close:active,
+.searchresults-title .close:visited {
+  color: white; }
 		

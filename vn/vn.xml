@@ -222,7 +222,15 @@
 				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/adb30135-871b-4d5d-94d9-b95f90a24d62" >  
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.ecocompteur_trafic.mst"></template>
 			</layer>
-			
+			<layer id="station_reparation_gonflage_velo" name="Stations de réparation et gonflage pour vélo" visible="false" tiled="false" 
+				queryable="true" infoformat="application/vnd.ogc.gml" featurecount="20"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attribution="Région Bretagne" 
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=53b298ad-2c8e-4e39-a781-462ebcfb7e75"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/53b298ad-2c8e-4e39-a781-462ebcfb7e75" >  
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.station_reparation_gonflage_velo.mst"></template>
+			</layer>
+
         </theme> 
         <theme name="Infrastructures"  collapsed="true" id="infrastructures" icon="ship"> 
 		<group name="Voies navigables" id="vn">
