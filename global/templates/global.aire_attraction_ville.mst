@@ -1,5 +1,5 @@
 {{#features}}
-	<li class="item">
+	<li class="item" id="{{feature_ol_uid}}">
 		<h3 class="rb-title-feature">{{LIBGEO}}</h3>
 
 		<div>

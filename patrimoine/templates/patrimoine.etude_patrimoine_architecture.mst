@@ -1,5 +1,5 @@
 {{#features}}
-	<li class="item">
+	<li class="item" id="{{feature_ol_uid}}">
 		<h3 class="rb-title-feature">{{titre_courant}}</h3>
         {{#lien_image}}
 			<img src="{{lien_image}}" class="architecture img-responsive center-block" />
