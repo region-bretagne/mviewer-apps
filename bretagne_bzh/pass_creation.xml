@@ -27,16 +27,16 @@
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/pass_creation.mst"></template> 
 		    </layer> 
             <layer id="bretagne_5" name="Bretagne à 5" visible="true" tiled="false" namespace="rb"
-					queryable="false" infoformat="application/vnd.ogc.gml"
-                    featurecount="20"
+					queryable="false" 
+                    showintoc="false"
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 					attribution="OSM" 
 					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72"
 					metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72" >  
             </layer>
             <layer id="departement_osm" name="Département" visible="true" tiled="false" namespace="rb"
-					queryable="false" infoformat="application/vnd.ogc.gml"
-                    featurecount="20"
+					queryable="false"
+                    showintoc="false"
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 					style="bretagne_5_style" 
 					attribution="OSM" 
