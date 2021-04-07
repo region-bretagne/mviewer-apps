@@ -50,8 +50,6 @@
 					metadata="" >  
 					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/spectacle_vivant.mst" />
             </layer>
-		</theme> 
-        <theme name="Admin"  collapsed="true" id="admin">
             <layer id="bretagne_5" name="Bretagne à 5" visible="true" tiled="false" namespace="rb"
 					queryable="false" 
                     showintoc="false"
