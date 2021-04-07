@@ -25,7 +25,7 @@
     <proxy url=""/>
     <!--<olscompletion url="http://gpp3-wxs.ign.fr/5kiwvtkb2v23y0x8chidxbij/ols/apis/completion"/>-->
     <!--<olscompletion url="https://wxs.ign.fr/bth43bbhz4oga1hosf94bre2/ols/apis/completion" type="geoportail"/>-->
-    <olscompletion url="https://wxs.ign.fr/bth43bbhz4oga1hosf94bre2/ols/apis/completion"/>
+    <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par l'API adresse.data.gouv.fr"/>
     <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" doctypes="unite_administrative" linkid="search_id" querymode="match" version="current" />
     <searchparameters bbox="false" localities="true" features="true" static="true"/>
     
