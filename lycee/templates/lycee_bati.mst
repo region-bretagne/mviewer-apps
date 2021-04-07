@@ -1,0 +1,20 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{bat_lib_batiment}}</h2>
+		<p class="rb-text-feature">		
+			<b>Lycée </b> {{lycee}}<br>
+			<b>Ville </b> {{ville}}<br>
+			<b>Code ASCOL </b> {{bat_code_batiment}}<br>
+			<b>Surface </b> {{bat_surface_adt}}<br>
+			<b>Date construction </b> {{bat_dt_construction}}<br>
+		</p>
+	</li>
+{{/features}}
+
+<style>
+/* test icon rb*/
+.icon-information{
+	font-size : 20px;
+	color : #FFFFFF;
+}
+</style>

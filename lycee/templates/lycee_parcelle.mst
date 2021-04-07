@@ -1,0 +1,20 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{parcelle}}</h2>
+		<p class="rb-text-feature">		
+			<b>Lycée </b> {{lycee}}<br>
+			<b>Ville </b> {{ville}}<br>
+			<b>Code Parcelle </b> {{code_parcel}}<br>
+			<b>Code ASCOL </b> {{code_ascol}}<br>
+			<b>Surface </b> {{surface}}<br>
+		</p>
+	</li>
+{{/features}}
+
+<style>
+/* test icon rb*/
+.icon-information{
+	font-size : 20px;
+	color : #FFFFFF;
+}
+</style>
