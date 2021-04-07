@@ -1,5 +1,5 @@
 {{#features}}
-	<li class="item" style="">
+	<li class="item" id="{{feature_ol_uid}}">
 		<!-- NameDim-->
 		<div class="name-dim-soc">
 			<h4>- Dimension sociale -</h4>			

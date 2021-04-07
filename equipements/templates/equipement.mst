@@ -1,5 +1,5 @@
 {{#features}}
-<li class="item">
+	<li class="item" id="{{feature_ol_uid}}">
 	<h3 class="title-feature">{{nom}}</h3>
 	<h4 class="subtitle-feature">Adresse/Propriétaire</h4>
 	<div class="text-feature">

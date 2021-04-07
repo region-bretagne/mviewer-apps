@@ -70,7 +70,7 @@
             <group name="Transports routiers" id="grp2" >
 				<layer id="arret_logique_reseau_breizhgo_car" name="Arrêts logiques du réseau BreizhGo"  visible="false" tiled="false" 
                     searchable="false" queryable="true"
-                    infoformat="text/html" featurecount="20"
+                    infoformat="application/vnd.ogc.gml" featurecount="20"
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Région Bretagne" 
 					metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/dfd88250-3931-48ba-a77c-a218ae55e0f1"

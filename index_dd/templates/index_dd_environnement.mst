@@ -1,5 +1,5 @@
 {{#features}}
-	<li class="item" style="">
+	<li class="item" id="{{feature_ol_uid}}">
 		<!-- SelectFeature-->
 		<div class="select-feature"
 			<h3><span class="glyphicon glyphicon-map-marker" aria-hidden="true"><span class="TitleFeature"> {{nom_geo}}</span></h3>

@@ -1,5 +1,5 @@
 {{#features}}
-	<li class="item">
+	<li class="item" id="{{feature_ol_uid}}">
 		<div class="row">
 			<div class="col-xs-4">
 				<div class="rb-title-feature">Circulation TER en hiver</div>

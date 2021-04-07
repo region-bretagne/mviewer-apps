@@ -115,7 +115,7 @@
 		    </layer>			
 				<layer id="arret_logique_reseau_breizhgo_car" name="Arrêts logiques du réseau BreizhGo"  visible="false" tiled="false" 
                     searchable="false" queryable="true"
-                    infoformat="text/html" featurecount="20"
+                    infoformat="application/vnd.ogc.gml" featurecount="20"
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Région Bretagne" 
 					metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/dfd88250-3931-48ba-a77c-a218ae55e0f1"
@@ -534,6 +534,18 @@
                 </projections>
             </layer>
         </theme>
-        
     </themes>
+    <styles>
+        <selectionstyle>
+            <point radius="12" fillcolor="26, 188, 156" opacity="0" strokecolor="26, 188, 156" strokewidth="2" />
+            <line opacity="0.5" strokecolor="26, 188, 156" strokewidth="4" />
+            <polygon fillcolor="26, 188, 156" opacity="0" strokecolor="26, 188, 156" strokewidth="4" />
+        </selectionstyle>
+        <subselectionstyle>
+            <point radius="10" fillcolor="175, 122, 197" opacity="1" strokecolor="175, 122, 197" strokewidth="4" />
+            <line opacity="0.5" strokecolor="175, 122, 197"  strokewidth="2" />
+            <polygon fillcolor="175, 122, 197" opacity="0" strokecolor="175, 122, 197" strokewidth="8" />
+        </subselectionstyle>
+    </styles>
+
 </config>
