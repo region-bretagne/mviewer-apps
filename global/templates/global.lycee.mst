@@ -20,6 +20,6 @@
 		</p>
 		{{#photo}}
 			<img src="{{photo}}" class="img-responsive" style="margin-top:5%;" />
-		{{/photo}}
+		{{/photo}}        
 	</li>
 {{/features}}

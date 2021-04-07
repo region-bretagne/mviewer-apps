@@ -33,6 +33,10 @@
        <!--<widget name="gauge"/>-->       
     </widgets> 
 
+    <extensions>    
+        <extension type="component" id="layerfilter" path="https://kartenn.region-bretagne.fr/kartoviz/demo/addons"/>
+    </extensions>
+
     <themes mini="false">
     	<theme name="Découpages territoriaux"  collapsed="true" id="territoire" icon="globe"> 
         	<group name="Limites administratives" id="grp1" >

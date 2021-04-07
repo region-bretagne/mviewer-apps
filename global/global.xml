@@ -118,46 +118,24 @@
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0da27e88-4da6-423e-ba4c-dbcad9128cd2">
 		        <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.ligne_ferroviaire.mst"></template>
 		    </layer>			
-			<layer id="arret_routier_regional" name="Arrêts routiers régionaux"  visible="false" tiled="false"
-				searchable="false" queryable="true" 
-				infoformat="text/html" featurecount="20"
-				style="transports_arret_rout_defaut"
-				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-				legendurl="https://kartenn.region-bretagne.fr/doc/transports/icons/arret_rout_reg.svg"
-				attribution="Région Bretagne" 
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/72bdca86-f605-46c8-8b50-a4af3c629020"
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=72bdca86-f605-46c8-8b50-a4af3c629020" >
-			</layer>
-			<layer id="ligne_routiere_regionale" name="Lignes routières régionales"  visible="false" tiled="false" 
-				searchable="false" queryable="true" 
-				infoformat="text/html" featurecount="20"
-				style="transports_ligne_rout_reg_defaut" 
-				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-				attribution="Région Bretagne" 
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/d42415dd-f736-4b44-82c6-0259c0a667a3"
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=d42415dd-f736-4b44-82c6-0259c0a667a3">
-			</layer>
-			<layer id="arret_routier_logique_departemental" name="Arrêts routiers logiques départementaux"  visible="false" tiled="false" 
-				searchable="false" queryable="true"
-				infoformat="application/vnd.ogc.gml" featurecount="20"
-				style="transports_arret_rout_dep_logique_defaut"
-				legendurl="https://kartenn.region-bretagne.fr/doc/transports/icons/arret_rout_dep.svg" 
-				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-				attribution="Région Bretagne - GéoBretagne" 
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/dfd88250-3931-48ba-a77c-a218ae55e0f1"
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=dfd88250-3931-48ba-a77c-a218ae55e0f1">
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.arret_routier_dep.mst"></template>
-			</layer>
-			<layer id="ligne_routiere_departementale" name="Lignes routières départementales"  visible="false" tiled="false" 
-				searchable="false" queryable="true" fields="axe" aliases="axe"
-				infoformat="application/vnd.ogc.gml" featurecount="20"
-				style="ligne_interurbain_saison" 
-				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-				attribution="Région Bretagne" 
-				metadata=""
-				metadata-csw="" >
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.ligne_routiere_dep.mst"></template>
-			</layer>		        
+				<layer id="arret_logique_reseau_breizhgo_car" name="Arrêts logiques du réseau BreizhGo"  visible="false" tiled="false" 
+                    searchable="false" queryable="true"
+                    infoformat="text/html" featurecount="20"
+					url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+                    attribution="Région Bretagne" 
+					metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/dfd88250-3931-48ba-a77c-a218ae55e0f1"
+					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=dfd88250-3931-48ba-a77c-a218ae55e0f1">
+		            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.arret_breizhgo.mst"></template>
+		    </layer>
+            <layer id="reseau_breizhgo_car" name="Réseau Breizh Go"  visible="false" tiled="false" 
+                    searchable="false" queryable="true" 
+                    infoformat="application/vnd.ogc.gml" featurecount="20"
+					url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+                    attribution="Région Bretagne" 
+					metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b08c5f1b-79ed-441a-9198-7360e6338b89"
+					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b08c5f1b-79ed-441a-9198-7360e6338b89">
+		            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.ligne_reizhgo.mst"></template>
+		    </layer>		        
 
         </theme>
         <theme name="Transport aérien"  collapsed="true" id="avion" icon="plane">

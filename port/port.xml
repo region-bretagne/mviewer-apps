@@ -23,6 +23,11 @@
     <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="current"/>
     <searchparameters bbox="false" localities="true" features="true"/>
 	
+    <extensions>    
+        <extension type="javascript" src="https://kartenn.region-bretagne.fr/kartoviz/demo/cad/external/piklor.js" usededby="cad.js"/>
+        <extension type="component" id="layerfilter" path="https://kartenn.region-bretagne.fr/kartoviz/demo/addons"/>
+    </extensions>
+	
     <themes>
         <theme name="Occupations domaniales"  id="port" icon="home" collapsed="false">
             <layer id="occupation_domaniale" name="Occupations domaniales" visible="true" tiled="false" 
@@ -680,6 +685,28 @@
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=37926f81-1dd1-483c-aa4f-b8a5251dd3fd" />	
 		</theme>
         <theme name="Limites cadastrales"  collapsed="true" id="cadastre" icon="globe">  
+            <layer id="cad" name="Sélection cadastrale" visible="false" queryable="true"
+                type="customlayer" opacity="0.8" legendurl="img/blank.gif"
+                url="https://kartenn.region-bretagne.fr/kartoviz/demo/cad/layer.js"
+                customcontrol="true"
+                customcontrolpath="https://kartenn.region-bretagne.fr/kartoviz/demo/cad/control"
+                expanded="true"
+                fields="geo_parcelle"
+                tooltip="true"
+                tooltipenabled="true"
+                tooltipcontent="Parcelle n° {{label}}"
+                attribution="Source: GéoBretagne. Sélectionnez la section cadastrale souhaitée en précisant le département, la commune et la section"
+                nohighlight="false"
+                metadata=""
+                metadata-csw="">
+            </layer>
+            <layer id="cad2" name="Cadastre complet" visible="false" queryable="false" expanded="true"
+                type="customlayer" opacity="0.8" legendurl="img/blank.gif"
+                url="https://kartenn.region-bretagne.fr/kartoviz/demo/cad/layer2.js"
+                attribution="Source: DGFIP. Cette couche affiche le cadastre de la commune sélectionnée dans le panneau &lt;strong&gt;Sélection parcellaire&lt;/strong&gt;"
+                metadata=""
+                metadata-csw="">
+            </layer>
 			<layer id="CP.CadastralBuilding" name="Bâti" scalemin="0" scalemax="20000" visible="false" tiled="false"
 				queryable="false" fields="" aliases=""
                 infoformat="application/vnd.ogc.gml" featurecount="1"                
@@ -731,9 +758,4 @@
             </layer>
         </theme>
     </themes>
-<extensions>
-<!-- <extension type="javascript" src="demo/cad/external/html5kellycolorpicker.min.js" /> -->
-<extension type="javascript" src="https://kartenn.region-bretagne.fr/kartoviz/demo/cad/external/piklor.js" usededby="cad.js"/>
-</extensions>
-
 </config>
