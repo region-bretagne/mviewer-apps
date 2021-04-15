@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="Accessibilité" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" exportpng="false" measuretools="true" legend="true" legendasimage="false" popup="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/accessibilite/css/theme.css"/>
+    <application title="Accessibilité - APPLICATION EN TRAVAUX" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" exportpng="false" measuretools="true" legend="true" legendasimage="false" popup="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/accessibilite/css/theme.css"/>
     <mapoptions maxzoom="20" projection="EPSG:3857" center="-291072,6187119" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery">
@@ -15,26 +15,17 @@
             attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
     </baselayers>    
     <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par l'API adresse.data.gouv.fr"/>
-    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="fussy_like_this" />
-    <searchparameters bbox="false" localities="true" features="false"/>
+    <searchparameters bbox="false" localities="true" features="true"/>
 
     <themes>
-        <theme name="Accessibilité"  collapsed="true" id="access">
-            <layer id="batiment_region_accessibilite" name="Accessibilité des bâtiments" visible="true" tiled="false" namespace="rb"
-					queryable="true" infoformat="application/vnd.ogc.gml"
+        <theme name="Site"  collapsed="true" id="access" icon="square">
+
+            <layer id="site_region_accessibilite" name="Type de sites" visible="true" tiled="false" namespace="rb" type="customlayer" vectorlegend="true"
+					queryable="true" infoformat="application/vnd.ogc.gml" 
+					searchable="true" searchengine="fuse" fusesearchkeys="nom" fusesearchresult="{{nom}}"
                     featurecount="20"
-					url="https://ows.region-bretagne.fr/geoserver/wms" 
-					style="" 
-					attribution="Région Bretagne" 
-					metadata-csw=""
-					metadata="" >  
-					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/accessibilite/templates/batiment_region_accessibilite.mst" />
-            </layer>
-            <layer id="site_region_accessibilite" name="Accessibilité des sites" visible="true" tiled="false" namespace="rb"
-					queryable="true" infoformat="application/vnd.ogc.gml"
-                    featurecount="20"
-					url="https://ows.region-bretagne.fr/geoserver/wms" 
-					style="" 
+					url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/accessibilite/customlayers/site_region_accessibilite.js"
+					tooltip="true"	tooltipcontent="{{nom}}"
 					attribution="Région Bretagne" 
 					metadata-csw=""
 					metadata="" >  
@@ -56,6 +47,19 @@
 					attribution="OSM" 
 					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=6583d262-ebc4-4e51-a1fd-ee493c2b355d"
 					metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/6583d262-ebc4-4e51-a1fd-ee493c2b355d" >  
+            </layer>
+		</theme>   
+        <theme name="Bâtiment"  collapsed="true" id="bati" icon="building">
+            <layer id="batiment_region_accessibilite" name="Taux d’accessibilité des bâtiments" visible="true" tiled="false" namespace="rb" type="customlayer" vectorlegend="true" 
+					queryable="true" infoformat="application/vnd.ogc.gml"
+                    featurecount="20"
+					url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/accessibilite/customlayers/batiment_region_accessibilite.js"
+					style="" 
+					tooltip="true"	tooltipcontent="{{libelle_bat}}"
+					attribution="Région Bretagne" 
+					metadata-csw=""
+					metadata="" >  
+					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/accessibilite/templates/batiment_region_accessibilite.mst" />
             </layer>
 		</theme>   
     </themes>

@@ -2,18 +2,13 @@
 	<li class="item" id="{{feature_ol_uid}}">
 		<h2 class="rb-title-feature">{{nom}}</h2>
 		<p class="rb-text-feature">		
-            <span style="font-weight:bold"> Niveau ERP :</span> {{erp}}<br/>
+            <span style="font-weight:bold"> Catégorie ERP :</span> {{erp}}<br/>
             <span style="font-weight:bold"> Courriel :</span> {{courriel}}<br/>
             <span style="font-weight:bold"> Téléphone :</span> {{telephone}}<br/>
 		</p>
-		{{#remarque}}
-			<h3 class="rb-subtitle-feature">Remarques</h3>
-        <div class="rb-description-feature">	
-			{{{remarque}}}
-		{{/remarque}}
 		<span>
 		    {{#url_registre}}
-			<a href="{{url_registre}}" target="_blank" title="Document" class="rb-but-link"><span class="fa fa-file" aria-hidden="true"></span> Registre</a>    
+			<a href="{{url_registre}}" target="_blank" title="Document" class="rb-but-link"><span class="fa fa-file" aria-hidden="true"></span> Téléchargement du registre</a>    
 			{{/url_registre}}
 		</span>
 		<br>
@@ -23,5 +18,7 @@
 		<br>		
 		<br>
 		</div>
-	</li>
+			Zoomer pour avoir le détail des bâtiments
+
+	</li>	
 {{/features}}

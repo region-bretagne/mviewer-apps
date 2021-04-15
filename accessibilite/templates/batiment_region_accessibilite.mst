@@ -7,7 +7,6 @@
 			<span style="font-weight:bold"> Surface :</span> {{surface_adt}} m²<br/>
 			{{/surface_adt}}
 		</p>
-		{{#taux_global}}
 		<h3 class="rb-subtitle-feature">Taux d'accessibilité selon le handicap</h3>
 		<p class="rb-text-feature">		
 			<span style="font-weight:bold"> Handicap moteur :</span> {{tx_h_mot}}<br/>
@@ -16,6 +15,5 @@
 			<span style="font-weight:bold"> Handicap cognitif :</span> {{tx_h_cog}}<br/>
 			<span style="font-weight:bold"> Taux global :</span> {{taux_global}}<br/>
 		</p>
-		{{/taux_global}}
 	</li>
 {{/features}}
