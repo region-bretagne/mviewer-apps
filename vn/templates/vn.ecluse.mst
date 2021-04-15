@@ -10,9 +10,11 @@
 			<span style="font-weight:bold"> Voie navigable :</span> {{voie_navigable}}<br/>
 			<span style="font-weight:bold"> Propriétaire :</span> {{proprietaire}}<br/>
 			<span style="font-weight:bold"> Gestionnaire :</span> {{gestionnaire}}<br/>
+        {{#evolution}}
 		<div class="rb-but-list"><center>
 			<a href="https://kartenn.region-bretagne.fr/mreport/eclusetrafic/{{id_ecluse}}" target="_blank" title="Stats" class="rb-but-link"><span class="fa fa-globe" aria-hidden="true"></span> Stats</a>    </center>
 		</div>
+        {{/evolution}}
        </p>
 
 	</li>
