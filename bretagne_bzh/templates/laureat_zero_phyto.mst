@@ -1,0 +1,23 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{nom}}</h2>
+		<p class="rb-text-feature">		
+			<b>Type collectivité :</b> <span class="lowercase">{{type_collectivite}}</span><br>
+			<b>Année premier prix :</b> <span class="lowercase">{{annee_prix_1}}</span><br>
+			{{#annee_prix_durable}}
+				<b>Année prix durable :</b> {{annee_prix_durable}}
+			{{/annee_prix_durable}}
+		</p>
+	</li>
+{{/features}}
+
+<style>
+p span.lowercase {
+  text-transform: lowercase;
+}
+
+p span.lowercase::first-letter {
+  text-transform: uppercase !important;
+}
+span {display:inline-block}
+</style>
