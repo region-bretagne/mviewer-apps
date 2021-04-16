@@ -50,7 +50,7 @@
             </layer>
 		</theme>   
         <theme name="Bâtiment"  collapsed="true" id="bati" icon="building">
-            <layer id="batiment_region_accessibilite" name="Taux d’accessibilité des bâtiments" visible="true" tiled="false" namespace="rb" type="customlayer" vectorlegend="true" 
+            <layer id="batiment_region_accessibilite" name="Niveau d’accessibilité des bâtiments" visible="true" tiled="false" namespace="rb" type="customlayer" vectorlegend="true" 
 					queryable="true" infoformat="application/vnd.ogc.gml"
                     featurecount="20"
 					url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/accessibilite/customlayers/batiment_region_accessibilite.js"

@@ -4,7 +4,7 @@ var batiment_region_accessibilite = mviewer.customLayers.batiment_region_accessi
 
 batiment_region_accessibilite.legend = { items: [
     {
-        label: "Accessibilité faible",
+        label: "Non accessible, non praticable",
         geometry: "Polygon",
         styles: [new ol.style.Style({
             stroke: new ol.style.Stroke({ color: '#B0252E', width: 3 }),
@@ -12,7 +12,7 @@ batiment_region_accessibilite.legend = { items: [
         })]
     },
     {
-        label: "Accessibilité moyenne",
+        label: "Non accessible mais praticable",
         geometry: "Polygon",
         styles: [new ol.style.Style({
             stroke: new ol.style.Stroke({ color: '#E3C213', width: 3 }),
@@ -20,7 +20,7 @@ batiment_region_accessibilite.legend = { items: [
         })]
     },    
     {
-        label: "Accessibilité forte",
+        label: "Accessible",
         geometry: "Polygon",
         styles: [new ol.style.Style({
             stroke: new ol.style.Stroke({ color: '#9FB935', width: 3 }),
@@ -36,13 +36,13 @@ mviewer.customLayers.batiment_region_accessibilite.layer = new ol.layer.Vector({
         }),
         style: function(feature, resolution) {
             var stl;            
-            if (feature.get('taux_global') >= 0 && feature.get('taux_global') < 25){
+            if (feature.get('taux_global') >= 0 && feature.get('taux_global') < 65){
                 stl = batiment_region_accessibilite.legend.items[0].styles;
 			}
-            else if (feature.get('taux_global') >= 25 && feature.get('taux_global') < 75){
+            else if (feature.get('taux_global') >= 65 && feature.get('taux_global') < 85){
                 stl = batiment_region_accessibilite.legend.items[1].styles;
 			}
-            else if (feature.get('taux_global') >= 75){
+            else if (feature.get('taux_global') >= 85){
                 stl = batiment_region_accessibilite.legend.items[2].styles;
             }
             return stl;
