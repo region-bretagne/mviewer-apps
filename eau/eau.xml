@@ -9,10 +9,13 @@
             attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
         <baselayer  type="WMS" id="photo2" label="Photo aérienne 1950" title="GéoBretagne" thumbgallery="img/basemap/ortho-ancien.jpg" 
 			url="https://tile.geobretagne.fr/gwc02/service/wms" layers="satellite-ancien" format="image/jpeg" visible="false" 
-			attribution="&lt;a href='https://applications.region-bretagne.fr/geosource/apps/search/?uuid=048622c5-b333-4c2b-94ec-40a41608dc06' target='_blank' >Partenaires GéoBretagne - IGN&lt;/a>"/>      
+			attribution="&lt;a href='https://applications.region-bretagne.fr/geosource/apps/search/?uuid=048622c5-b333-4c2b-94ec-40a41608dc06' target='_blank' >Partenaires GéoBretagne - IGN&lt;/a>"/>   
+        <baselayer  type="OSM" id="positron" label="Positron" title="CartoDb" thumbgallery="img/basemap/positron.png"
+			url="https://cartodb-basemaps-{a-c}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png" maxzoom="20" 
+			visible="true" attribution=" &lt;a href='https://www.openstreetmap.org/copyright'>OpenStreetMap&lt;/a>  &lt;a href='https://cartodb.com/attributions'>CartoDB &lt;/a>" />	
         <baselayer  type="OSM" id="osm1" label="OpenStreetMap" title="OpenStreetMap" thumbgallery="img/basemap/osm.png" 
 			url="https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png" 
-			attribution="Données : les contributeurs d'&lt;a href='https://www.openstreetmap.org/' target='_blank'>OpenStreetMap &lt;/a>,  &lt;a href='https://www.openstreetmap.org/copyright' target='_blank'>ODbL &lt;/a>" visible="true"/>
+			attribution="Données : les contributeurs d'&lt;a href='https://www.openstreetmap.org/' target='_blank'>OpenStreetMap &lt;/a>,  &lt;a href='https://www.openstreetmap.org/copyright' target='_blank'>ODbL &lt;/a>" visible="false"/>
         <baselayer  type="WMTS" id="scan2" label="Cartes IGN" title="GéoPortail" maxscale="2000" thumbgallery="img/basemap/scan.jpg"
             url="https://wxs.ign.fr/bth43bbhz4oga1hosf94bre2/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.MAPS" format="image/jpeg" visible="false" fromcapacity="false"
             attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
@@ -26,6 +29,151 @@
     </widgets> 
 
     <themes>
+        <theme name="Eau"  id="eau" collapsed="false" icon="tint">
+		   <layer id="riviere_masse_eau_proche" name="Masse d'eau proche bon état" scalemin="0" scalemax="50000000" visible="true" tiled="false" namespace="interne"
+				queryable="true" fields="nom" aliases="nom"
+				infoformat="text/html" featurecount="5"
+				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+				style="" 
+				attribution="Région Bretagne" 
+				metadata-csw=""
+				metadata="" />
+			<layer id="passe_poisson_vn" name="Passes à poisson" scalemin="0" scalemax="50000000" visible="false" tiled="false" namespace="rb"
+				queryable="true" fields="ident" aliases="ident"
+				infoformat="text/html" featurecount="20"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				style="" 
+				attribution="Région Bretagne" 
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=f1d5b549-64cb-4ccc-9281-5b56b97c7183"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/f1d5b549-64cb-4ccc-9281-5b56b97c7183" />  
+			<layer id="bief" name="Voies navigables Région (Biefs)" scalemin="0" scalemax="50000000" visible="false" tiled="false" namespace="rb"
+				searchable="true" queryable="true" fields="nom" aliases="Nom"
+				infoformat="text/html" featurecount="20"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				style="" 
+				attribution="Région Bretagne" 
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=403d129b-e8ca-48ff-81a9-77401c1d933b"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/403d129b-e8ca-48ff-81a9-77401c1d933b" />
+			<layer id="riviere_etat_ecologique" name="Rivière : état écologique 2011-2013" scalemin="0" scalemax="50000000" visible="true" tiled="false" namespace="interne"
+				queryable="true" fields="nom" aliases="nom"
+				infoformat="text/html" featurecount="5"
+				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+				style="" 
+				attribution="Région Bretagne" 
+				metadata-csw=""
+				metadata="" />
+			<layer id="bassin_versant" name="Bassins versants bretons" scalemin="0" scalemax="50000000" visible="true" tiled="false" namespace="interne"
+				queryable="true" fields="nom" aliases="nom"
+				infoformat="application/vnd.ogc.gml" featurecount="5"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				style="polygone_bleu_clair" 
+				attribution="Région Bretagne" 
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=3a06c4da-2e8a-4a3b-b0f9-68ac4d2351ca"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/3a06c4da-2e8a-4a3b-b0f9-68ac4d2351ca" />
+			<layer id="sage_information" name="Avancement SAGE au 01/01/2020" scalemin="0" scalemax="50000000" visible="false" tiled="false" namespace="interne"
+				queryable="true" fields="nom" aliases="nom"
+				infoformat="text/html" featurecount="5"
+				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+				style="" 
+				attribution="Région Bretagne" 
+				metadata-csw=""
+				metadata="" />
+		</theme>
+
+        <theme name="Biodiversité"  id="biodiversite" collapsed="true" icon="tree">
+			<layer id="corridors_ecologiques_regionaux_SRCE" name="Corridors écologiques" scalemin="0" scalemax="50000000" visible="false" tiled="false"
+				queryable="true" fields="NOM" aliases="Nom"
+                infoformat="text/html" featurecount="1"                
+				style="" 
+				url="https://geobretagne.fr/geoserver/bretagneenvironnement/wms" 
+				attribution="Bretagne Environnement" 
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/18ba6d96-2482-4231-acb8-a61c05883eac"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=18ba6d96-2482-4231-acb8-a61c05883eac" />
+			<layer id="reservoirs_biodiversite_SRCE" name="Réservoirs biodiversité" scalemin="0" scalemax="50000000" visible="false" tiled="false"
+				queryable="true" fields="INDICE" aliases="Indice"
+                infoformat="text/html" featurecount="1"                
+				style="" 
+				url="https://geobretagne.fr/geoserver/bretagneenvironnement/wms" 
+				attribution="Bretagne Environnement" 
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/0782851a-f952-4aae-99ee-5c3bcc321b6e"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0782851a-f952-4aae-99ee-5c3bcc321b6e" />
+			<layer id="gep_SRCE" name="GEP" scalemin="0" scalemax="50000000" visible="false" tiled="false"
+				queryable="true" fields="INDICE" aliases="Indice"
+                infoformat="text/html" featurecount="1"                
+				style="" 
+				url="https://geobretagne.fr/geoserver/bretagneenvironnement/wms" 
+				attribution="Bretagne Environnement" 
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/c5054e2d-4897-4f4f-9079-6b1bc580cff2"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c5054e2d-4897-4f4f-9079-6b1bc580cff2" />
+            <layer id="reserve_naturelle_regionale" name="Réserves naturelles régionales"  visible="false" tiled="false"
+				searchable="false" queryable="true" fields="axe" aliases="axe"   
+				infoformat="application/vnd.ogc.gml" featurecount="1"
+				sld="https://kartenn.region-bretagne.fr/styles/reserve_naturelle.sld" 
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+				legendurl="https://kartenn.region-bretagne.fr/img/styles/rnr.png" 
+				attribution="Source: Région Bretagne" 
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/77f8fc52-ae57-41d1-8f08-7b121b013f51"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=77f8fc52-ae57-41d1-8f08-7b121b013f51" >
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.reserve_naturelle_reg.mst"></template>
+		    </layer> 
+		    <layer id="parc_naturel_regional" name="Parcs naturels régionaux"  visible="false" tiled="false"
+				searchable="false" queryable="true" fields="axe" aliases="axe" 
+				infoformat="application/vnd.ogc.gml" featurecount="1"
+				style="pnr_defaut" 
+				stylesalias=""
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+				attribution="Source: Région Bretagne" 
+				metadata=""
+				metadata-csw="">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.parc_naturel_regional.mst"></template>
+			</layer> 
+        </theme>
+
+        <theme name="Aménagement"  collapsed="true" id="amenagement" icon="square">  
+			<layer id="n_scot" name="Avancement SCOT" scalemin="0" scalemax="50000000" visible="false" tiled="false"
+				queryable="true" fields="COMMUNE,INSEE_COM,SUPERFICIE" aliases="Nom,Code INSEE,Superficie"
+                infoformat="text/html" featurecount="1"                
+				style="" 
+				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
+				attribution="DREAL" 
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/91117783-14f0-409c-961e-9d2645f248ea"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=91117783-14f0-409c-961e-9d2645f248ea" />
+        </theme>
+
+        <theme name="Agriculture"  collapsed="true" id="agriculture">
+			<layer id="l_paec2016_perim_captage_s_r53" name="PAEC enjeu captage" scalemin="0" scalemax="50000000" visible="false" tiled="false"
+				queryable="true" fields="" aliases=""
+                infoformat="text/html" featurecount="1"                
+				style="" 
+				url="https://geobretagne.fr/geoserver/draaf/wms" 
+				attribution="DREAL" 
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/456caab7-8cd4-4112-9be8-6af37232be25"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=456caab7-8cd4-4112-9be8-6af37232be25" />
+			<layer id="l_paec2016_perim_eau_s_r53" name="PAEC enjeu eau" scalemin="0" scalemax="50000000" visible="false" tiled="false"
+				queryable="true" fields="" aliases=""
+                infoformat="text/html" featurecount="1"                
+				style="" 
+				url="https://geobretagne.fr/geoserver/draaf/wms" 
+				attribution="DREAL" 
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/f74ee06f-97be-4fd4-b258-894bda44af3d"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=f74ee06f-97be-4fd4-b258-894bda44af3d" />
+			<layer id="l_paec2016_perim_phyto_s_r53" name="PAEC enjeu phyto" scalemin="0" scalemax="50000000" visible="false" tiled="false"
+				queryable="true" fields="" aliases=""
+                infoformat="text/html" featurecount="1"                
+				style="" 
+				url="https://geobretagne.fr/geoserver/draaf/wms" 
+				attribution="DREAL" 
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/0405ecd8-9cbe-446e-a714-faf4c129cd74"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0405ecd8-9cbe-446e-a714-faf4c129cd74" />
+			<layer id="l_paec2016_perim_biodiv_s_r53" name="PAEC enjeu biodiversité" scalemin="0" scalemax="50000000" visible="false" tiled="false"
+				queryable="true" fields="" aliases=""
+                infoformat="text/html" featurecount="1"                
+				style="" 
+				url="https://geobretagne.fr/geoserver/draaf/wms" 
+				attribution="DREAL" 
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/91f11c02-a116-42bb-ab18-b9199b7830d0"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=91f11c02-a116-42bb-ab18-b9199b7830d0" />
+        </theme>   
 	    <theme name="Limites administratives"  collapsed="true" id="territoire" icon="globe">  
 			<layer id="commune_bdcarto" name="Commune" scalemin="0" scalemax="50000000" visible="false" tiled="false"
 				queryable="true" fields="COMMUNE,INSEE_COM,SUPERFICIE" aliases="Nom,Code INSEE,Superficie"
@@ -77,167 +225,5 @@
 				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/6583d262-ebc4-4e51-a1fd-ee493c2b355d" >  
             </layer>
         </theme>
-        <theme name="Eau"  id="eau" collapsed="false" icon="tint">
-		   <layer id="riviere_masse_eau_proche" name="Masse d'eau proche bon état" scalemin="0" scalemax="50000000" visible="true" tiled="false" namespace="interne"
-				queryable="true" fields="nom" aliases="nom"
-				infoformat="text/html" featurecount="5"
-				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
-				style="" 
-				attribution="Région Bretagne" 
-				metadata-csw=""
-				metadata="" />
-			<layer id="passe_poisson_vn" name="Passes à poisson" scalemin="0" scalemax="50000000" visible="false" tiled="false" namespace="rb"
-				queryable="true" fields="ident" aliases="ident"
-				infoformat="text/html" featurecount="20"
-				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-				style="" 
-				attribution="Région Bretagne" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=f1d5b549-64cb-4ccc-9281-5b56b97c7183"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/f1d5b549-64cb-4ccc-9281-5b56b97c7183" />  
-			<layer id="bief" name="Voies navigables Région" scalemin="0" scalemax="50000000" visible="false" tiled="false" namespace="rb"
-				searchable="true" queryable="true" fields="nom" aliases="Nom"
-				infoformat="text/html" featurecount="20"
-				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-				style="" 
-				attribution="Région Bretagne" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=403d129b-e8ca-48ff-81a9-77401c1d933b"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/403d129b-e8ca-48ff-81a9-77401c1d933b" />
-			<layer id="riviere_etat_ecologique" name="Rivière : état écologique 2011-2013" scalemin="0" scalemax="50000000" visible="true" tiled="false" namespace="interne"
-				queryable="true" fields="nom" aliases="nom"
-				infoformat="text/html" featurecount="5"
-				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
-				style="" 
-				attribution="Région Bretagne" 
-				metadata-csw=""
-				metadata="" />
-			<layer id="bassin_versant_carmen" name="Bassins versants bretons" scalemin="0" scalemax="50000000" visible="true" tiled="false" namespace="interne"
-				queryable="true" fields="nom" aliases="nom"
-				infoformat="text/html" featurecount="5"
-				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
-				style="" 
-				attribution="CARMEN" 
-				metadata-csw=""
-				metadata="" />
-            <layer id="bassins_versants_gp5" name="Bassin Versant GP5" scalemin="0" scalemax="50000000" visible="false" tiled="false" namespace="dreal_b"
-				queryable="true" fields="Nom_BV" aliases="Nom" 
-                infoformat="application/vnd.ogc.gml" featurecount="1"
-				style="polygon_vert" 
-				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
-				attribution="Région Bretagne" 
-				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/f13ca5d3-56a2-4b8d-9ea0-fefd436b9549" 
-				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=f13ca5d3-56a2-4b8d-9ea0-fefd436b9549" />
-			<layer id="sage_information" name="Avancement SAGE au 01/01/2017" scalemin="0" scalemax="50000000" visible="false" tiled="false" namespace="interne"
-				queryable="true" fields="nom" aliases="nom"
-				infoformat="text/html" featurecount="5"
-				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
-				style="" 
-				attribution="Région Bretagne" 
-				metadata-csw=""
-				metadata="" />
-		</theme>
-
-        <theme name="Biodiversité"  id="biodiversite" collapsed="true" icon="tree">
-			<layer id="corridors_ecologiques_regionaux_SRCE" name="Corridors écologiques" scalemin="0" scalemax="50000000" visible="false" tiled="false"
-				queryable="true" fields="NOM" aliases="Nom"
-                infoformat="text/html" featurecount="1"                
-				style="" 
-				url="https://geobretagne.fr/geoserver/bretagneenvironnement/wms" 
-				attribution="Bretagne Environnement" 
-				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/18ba6d96-2482-4231-acb8-a61c05883eac"
-				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=18ba6d96-2482-4231-acb8-a61c05883eac" />
-			<layer id="reservoirs_biodiversite_SRCE" name="Réservoirs biodiversité" scalemin="0" scalemax="50000000" visible="false" tiled="false"
-				queryable="true" fields="INDICE" aliases="Indice"
-                infoformat="text/html" featurecount="1"                
-				style="" 
-				url="https://geobretagne.fr/geoserver/bretagneenvironnement/wms" 
-				attribution="Bretagne Environnement" 
-				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/0782851a-f952-4aae-99ee-5c3bcc321b6e"
-				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0782851a-f952-4aae-99ee-5c3bcc321b6e" />
-			<layer id="gep_SRCE" name="GEP" scalemin="0" scalemax="50000000" visible="false" tiled="false"
-				queryable="true" fields="INDICE" aliases="Indice"
-                infoformat="text/html" featurecount="1"                
-				style="" 
-				url="https://geobretagne.fr/geoserver/bretagneenvironnement/wms" 
-				attribution="Bretagne Environnement" 
-				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/c5054e2d-4897-4f4f-9079-6b1bc580cff2"
-				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c5054e2d-4897-4f4f-9079-6b1bc580cff2" />
-            <layer id="reserve_naturelle_regionale" name="Réserve Naturelle Régionale" visible="false" tiled="false" namespace="rb"
-				queryable="true" fields="rnr_nom,image,url" aliases="Nom,photo,Détails"
-                searchable="true"
-                opacity="1" 
-                infoformat="application/vnd.ogc.gml" featurecount="20"
-				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-				style="" 
-				attribution="Région Bretagne" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=77f8fc52-ae57-41d1-8f08-7b121b013f51"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/77f8fc52-ae57-41d1-8f08-7b121b013f51" />	
-            <layer id="parc_naturel_regional" name="Parc Naturel Régional" visible="false" tiled="false" namespace="rb"
-				queryable="true" fields="pnr_nom" aliases="Nom"
-                searchable="true" opacity="1" 
-                infoformat="application/vnd.ogc.gml"
-				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-				style="" 
-				attribution="Région Bretagne" 
-				metadata-csw=""
-				metadata="" />	
-
-        </theme>
-
-        <theme name="Aménagement"  collapsed="true" id="amenagement" icon="square">  
-			<layer id="n_scot" name="Avancement SCOT" scalemin="0" scalemax="50000000" visible="false" tiled="false"
-				queryable="true" fields="COMMUNE,INSEE_COM,SUPERFICIE" aliases="Nom,Code INSEE,Superficie"
-                infoformat="text/html" featurecount="1"                
-				style="" 
-				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
-				attribution="DREAL" 
-				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/91117783-14f0-409c-961e-9d2645f248ea"
-				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=91117783-14f0-409c-961e-9d2645f248ea" />
-        </theme>
-        
-        <theme name="Littoral Mer"  collapsed="true" id="mer">  
-                <layer id="gizc" name="Projets GIZC" scalemin="0" scalemax="50000000" visible="false" tiled="false" namespace="rb"
-					queryable="true" fields="ident" aliases="ident"
-                    infoformat="text/html" featurecount="20"
-					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-					style="" 
-					attribution="Région Bretagne" 
-					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ffebd1ad-f123-46d8-9982-0c21764652e2"
-					metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ffebd1ad-f123-46d8-9982-0c21764652e2" />  
-        </theme>
-
-        <theme name="Agriculture"  collapsed="true" id="agriculture">
-			<layer id="l_paec2016_perim_captage_s_r53" name="PAEC enjeu captage" scalemin="0" scalemax="50000000" visible="false" tiled="false"
-				queryable="true" fields="" aliases=""
-                infoformat="text/html" featurecount="1"                
-				style="" 
-				url="https://geobretagne.fr/geoserver/draaf/wms" 
-				attribution="DREAL" 
-				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/456caab7-8cd4-4112-9be8-6af37232be25"
-				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=456caab7-8cd4-4112-9be8-6af37232be25" />
-			<layer id="l_paec2016_perim_eau_s_r53" name="PAEC enjeu eau" scalemin="0" scalemax="50000000" visible="false" tiled="false"
-				queryable="true" fields="" aliases=""
-                infoformat="text/html" featurecount="1"                
-				style="" 
-				url="https://geobretagne.fr/geoserver/draaf/wms" 
-				attribution="DREAL" 
-				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/f74ee06f-97be-4fd4-b258-894bda44af3d"
-				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=f74ee06f-97be-4fd4-b258-894bda44af3d" />
-			<layer id="l_paec2016_perim_phyto_s_r53" name="PAEC enjeu phyto" scalemin="0" scalemax="50000000" visible="false" tiled="false"
-				queryable="true" fields="" aliases=""
-                infoformat="text/html" featurecount="1"                
-				style="" 
-				url="https://geobretagne.fr/geoserver/draaf/wms" 
-				attribution="DREAL" 
-				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/0405ecd8-9cbe-446e-a714-faf4c129cd74"
-				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0405ecd8-9cbe-446e-a714-faf4c129cd74" />
-			<layer id="l_paec2016_perim_biodiv_s_r53" name="PAEC enjeu biodiversité" scalemin="0" scalemax="50000000" visible="false" tiled="false"
-				queryable="true" fields="" aliases=""
-                infoformat="text/html" featurecount="1"                
-				style="" 
-				url="https://geobretagne.fr/geoserver/draaf/wms" 
-				attribution="DREAL" 
-				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/91f11c02-a116-42bb-ab18-b9199b7830d0"
-				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=91f11c02-a116-42bb-ab18-b9199b7830d0" />
-        </theme>   
     </themes>
 </config>
