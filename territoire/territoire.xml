@@ -300,7 +300,7 @@
 	        </group>                                  
         </theme>
         <theme name="Marché du travail"  collapsed="true" id="marche_travail" icon="search">
-        	<group name="Chercheur.euse.s d'emploi de catégories ABC" id="grp1"> 
+        	<group name="Chercheur·euse·s d'emploi de catégories ABC" id="grp1"> 
 		        <layer id="demandeur_emploi_geom" name="Nombre de chercheur.euse.s de catégories ABC"  visible="false" tiled="false"
 		                searchable="false" queryable="true"
 		                attributefilter="true" attributefield="level" attributevalues="EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
@@ -330,7 +330,7 @@
 		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.dem_emp.cat_abc.mst"></template>		            
 		        </layer>
 		    </group> 
-		    <group name="Chercheur.euse.s d'emploi de catégorie A" id="grp2">		    	
+		    <group name="Chercheur·euse·s d'emploi de catégorie A" id="grp2">		    	
         		<layer id="demandeur_emploi_geom" name="Nombre de chercheur.euse.s de catégorie A"  visible="false" tiled="false"
 		                searchable="false" queryable="true"
 		                attributefilter="true" attributefield="level" attributevalues="EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
