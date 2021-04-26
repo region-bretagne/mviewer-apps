@@ -478,20 +478,6 @@
     </theme>
 
 	<theme name="Découpages territoriaux"  collapsed="true" id="territoire" icon="caret-right">  
-        <layer id="napoleo"
-            legendurl="img/blank.gif"
-            name="Cadastre ancien TA (zoomer)"
-            type="customlayer"
-            url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/addons/napoleon/layer/napoleo.js"
-            customcontrol="true"
-            customcontrolpath="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/addons/napoleon/html"
-            expanded="true"
-            visible="false"
-            metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b4080a88-798d-4533-9582-ec9a985d8102"
-			metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b4080a88-798d-4533-9582-ec9a985d8102"
-            attribution="Région Bretagne"
-            queryable="false">
-        </layer>
 		<!--<layer id="CP.CadastralBuilding" name="Bâti cadastral" scalemin="0" scalemax="20000" visible="false" tiled="true"
 			queryable="false" fields="" aliases=""
 			infoformat="application/vnd.ogc.gml" featurecount="5"                
