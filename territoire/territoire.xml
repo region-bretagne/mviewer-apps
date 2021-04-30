@@ -301,12 +301,12 @@
         </theme>
         <theme name="Marché du travail"  collapsed="true" id="marche_travail" icon="search">
         	<group name="Chercheur·euse·s d'emploi de catégories ABC" id="grp1"> 
-		        <layer id="demandeur_emploi_geom" name="Nombre de chercheur.euse.s de catégories ABC"  visible="false" tiled="false"
+		       <layer id="demandeur_emploi_geom" name="Nombre de chercheur.euse.s de catégories ABC"  visible="false" tiled="false"
 		                searchable="false" queryable="true"
 		                attributefilter="true" attributefield="level" attributevalues="EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
 		                infopanel="bottom-panel"
 		                infoformat="application/vnd.ogc.gml" featurecount="5"
-		                timefilter="true" timeinterval="month" timecontrol="calendar" timemin="2017-02-01" timemax="2018-06-01" 
+		                timefilter="true" timeinterval="month" timecontrol="calendar" timemin="2017-02-01" timemax="2020-12-01" 
 		                style="dememp_catabc_total@epci" opacity="0.9"
 		                stylesalias=""
 		                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
@@ -314,13 +314,13 @@
 	                	metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/81e59418-7f70-403c-b062-4fe3144b9f9d"
 	                	metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=81e59418-7f70-403c-b062-4fe3144b9f9d">	
 		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.dem_emp.cat_abc.mst"></template>	    
-		        </layer>   
+		        </layer> 
 		        <layer id="demandeur_emploi_geom" name="Typologie des chercheur.euse.s de catégories ABC (%)"  visible="false" tiled="false"
 		                searchable="false" queryable="true"
 		                attributefilter="true" attributefield="level" attributevalues="EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
 		                infopanel="bottom-panel"
 		                infoformat="application/vnd.ogc.gml" featurecount="5"
-		                timefilter="true" timeinterval="month" timecontrol="calendar" timemin="2017-02-01" timemax="2018-06-01" 
+		                timefilter="true" timeinterval="month" timecontrol="calendar" timemin="2017-02-01" timemax="2020-12-01" 
 		                style="dememp_catabc_fem@epci,dememp_catabc_jeu@epci,dememp_catabc_sen@epci,dememp_catabc_deld@epci" opacity="1"
 		                stylesalias="Part des femmes, Part des jeunes de moins de 25 ans, Part des seniors de plus de 50 ans, Part des chercheur.euse.s de longue durée (+1an)"
 		                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
@@ -336,7 +336,7 @@
 		                attributefilter="true" attributefield="level" attributevalues="EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
 		                infopanel="bottom-panel"
 		                infoformat="application/vnd.ogc.gml" featurecount="5"
-		                timefilter="true" timeinterval="month" timecontrol="calendar" timemin="2017-02-01" timemax="2017-06-01" 
+		                timefilter="true" timeinterval="month" timecontrol="calendar" timemin="2017-02-01" timemax="2020-12-01" 
 		                style="dememp_cata_total@epci" opacity="0.9"
 		                stylesalias=""
 		                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
@@ -344,13 +344,13 @@
 	                	metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/81e59418-7f70-403c-b062-4fe3144b9f9d"
 	                	metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=81e59418-7f70-403c-b062-4fe3144b9f9d">	
 		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.dem_emp.cat_a.mst"></template>       
-		        </layer>  
+		        </layer>
 		        <layer id="demandeur_emploi_geom" name="Typologie des chercheur.euse.s de catégorie A (%)"  visible="false" tiled="false"
 		                searchable="false" queryable="true"
 		                attributefilter="true" attributefield="level" attributevalues="EPCI,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
 		                infopanel="bottom-panel"
 		                infoformat="application/vnd.ogc.gml" featurecount="5"
-		                timefilter="true" timeinterval="month" timecontrol="calendar" timemin="2017-02-01" timemax="2017-06-01" 
+		                timefilter="true" timeinterval="month" timecontrol="calendar" timemin="2017-02-01" timemax="2020-12-01" 
 		                style="dememp_cata_fem@epci,dememp_cata_jeu@epci,dememp_cata_sen@epci,dememp_cata_deld@epci" opacity="1"
 		                stylesalias="Part des femmes, Part des jeunes de moins de 25 ans, Part des seniors de plus de 50 ans, Part des chercheur.euse.s de longue durée (+1an)"
 		                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
