@@ -18,8 +18,8 @@
                 attribution="Source: Région Bretagne" 
 				style="interreg_atlantique_2014_2020"
 				exclusive = "true"
-                metadata=""
-                metadata-csw="" >	   
+                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/48804077-129b-4e47-8893-310d8a745d04"
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=48804077-129b-4e47-8893-310d8a745d04">
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/interreg.mst"></template> 
 		    </layer> 
             <layer id="interreg" name="Espace Atlantique - 2021-2027"  visible="false" tiled="false"
@@ -28,8 +28,8 @@
                 attribution="Source: Région Bretagne" 
 				style="interreg_atlantique_2021_2027"
 				exclusive = "true"
-                metadata=""
-                metadata-csw="" >	   
+                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/48804077-129b-4e47-8893-310d8a745d04"
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=48804077-129b-4e47-8893-310d8a745d04">
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/interreg.mst"></template> 
 		    </layer> 
             <layer id="interreg" name="Europe du Nord Ouest - 2014-2020"  visible="false" tiled="false"
@@ -38,8 +38,8 @@
                 attribution="Source: Région Bretagne" 
 				style="interreg_nord_ouest_2014_2020"
 				exclusive = "true"
-                metadata=""
-                metadata-csw="" >	   
+                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/48804077-129b-4e47-8893-310d8a745d04"
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=48804077-129b-4e47-8893-310d8a745d04">
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/interreg.mst"></template> 
 		    </layer> 
             <layer id="interreg" name="Europe du Nord Ouest - 2021-2027"  visible="false" tiled="false"
@@ -48,8 +48,8 @@
                 attribution="Source: Région Bretagne" 
 				style="interreg_nord_ouest_2021_2027"
 				exclusive = "true"
-                metadata=""
-                metadata-csw="" >	   
+                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/48804077-129b-4e47-8893-310d8a745d04"
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=48804077-129b-4e47-8893-310d8a745d04">
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/interreg.mst"></template> 
 		    </layer> 
             <layer id="interreg" name="France Manche Angleterre - 2014-2020"  visible="false" tiled="false"
@@ -58,8 +58,8 @@
                 attribution="Source: Région Bretagne" 
 				style="interreg_manche_angleterre"
 				exclusive = "true"
-                metadata=""
-                metadata-csw="" >	   
+                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/48804077-129b-4e47-8893-310d8a745d04"
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=48804077-129b-4e47-8893-310d8a745d04">
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/interreg.mst"></template> 
 		    </layer> 
             <layer id="interreg" name="Mer du Nord - 2021-2027"  visible="false" tiled="false"
@@ -68,8 +68,8 @@
                 attribution="Source: Région Bretagne" 
 				style="interreg_mer_nord"
 				exclusive = "true"
-                metadata=""
-                metadata-csw="" >	   
+                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/48804077-129b-4e47-8893-310d8a745d04"
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=48804077-129b-4e47-8893-310d8a745d04">
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/interreg.mst"></template> 
 		    </layer> 
             <layer id="interreg" name="INTERREG Europe"  visible="false" tiled="false"
@@ -78,8 +78,8 @@
                 attribution="Source: Région Bretagne" 
 				style="interreg_europe"
 				exclusive = "true"
-                metadata=""
-                metadata-csw="" >	   
+                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/48804077-129b-4e47-8893-310d8a745d04"
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=48804077-129b-4e47-8893-310d8a745d04">
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/interreg.mst"></template> 
 		    </layer> 
 
