@@ -6,4 +6,4 @@ Lien : https://kartenn.region-bretagne.fr/kartoviz/?x=-255605&y=6160213&z=8&l=li
 
 Métadonnée (non publiée) : https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ff5a865b-eb04-435b-b002-70f2ca7de434
 
-Contact : JB de Bures (DITMO)
+Contact : AL Ségot (DITMO)
