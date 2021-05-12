@@ -36,13 +36,13 @@ mviewer.customLayers.batiment_region_accessibilite.layer = new ol.layer.Vector({
         }),
         style: function(feature, resolution) {
             var stl;            
-            if (feature.get('taux_global') >= 0 && feature.get('taux_global') < 65){
+            if (feature.get('classe_h_global') == 'rouge'){
                 stl = batiment_region_accessibilite.legend.items[0].styles;
 			}
-            else if (feature.get('taux_global') >= 65 && feature.get('taux_global') < 85){
+            else if (feature.get('classe_h_global') == 'orange'){
                 stl = batiment_region_accessibilite.legend.items[1].styles;
 			}
-            else if (feature.get('taux_global') >= 85){
+            else if (feature.get('classe_h_global') == 'vert'){
                 stl = batiment_region_accessibilite.legend.items[2].styles;
             }
             return stl;

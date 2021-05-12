@@ -43,15 +43,15 @@
     height: 30px;       
 }
 
-.auditif.BON {
+.auditif.vert {
     background: url(https://kartenn.region-bretagne.fr/img/picto/handicap_auditif_1.svg) left top no-repeat;
     background-size: 30px;
 }
-.auditif.MOYEN {
+.auditif.orange {
     background: url(https://kartenn.region-bretagne.fr/img/picto/handicap_auditif_2.svg) left top no-repeat;
     background-size: 30px;
 }
-.auditif.MAUVAIS {
+.auditif.rouge {
     background: url(https://kartenn.region-bretagne.fr/img/picto/handicap_auditif_3.svg) left top no-repeat;
     background-size: 30px;
 }
@@ -71,15 +71,15 @@
   visibility: visible;
 }
 
-.cognitif.BON {
+.cognitif.vert {
     background: url(https://kartenn.region-bretagne.fr/img/picto/handicap_cognitif_1.svg) left top no-repeat;
     background-size: 30px;
 }
-.cognitif.MOYEN {
+.cognitif.orange {
     background: url(https://kartenn.region-bretagne.fr/img/picto/handicap_cognitif_2.svg) left top no-repeat;
     background-size: 30px;
 }
-.cognitif.MAUVAIS {
+.cognitif.rouge {
     background: url(https://kartenn.region-bretagne.fr/img/picto/handicap_cognitif_3.svg) left top no-repeat;
     background-size: 30px;
 }
@@ -99,15 +99,15 @@
   visibility: visible;
 }
 
-.pmr.BON {
+.pmr.vert {
     background: url(https://kartenn.region-bretagne.fr/img/picto/handicap_PMR_1.svg) left top no-repeat;
     background-size: 30px;
 }
-.pmr.MOYEN {
+.pmr.orange {
     background: url(https://kartenn.region-bretagne.fr/img/picto/handicap_PMR_2.svg) left top no-repeat;
     background-size: 30px;
 }
-.pmr.MAUVAIS {
+.pmr.rouge {
     background: url(https://kartenn.region-bretagne.fr/img/picto/handicap_PMR_3.svg) left top no-repeat;
     background-size: 30px;
 }
@@ -127,15 +127,15 @@
   visibility: visible;
 }
 
-.visuel.BON {
+.visuel.vert {
     background: url(https://kartenn.region-bretagne.fr/img/picto/handicap_visuel_1.svg) left top no-repeat;
     background-size: 30px;
 }
-.visuel.MOYEN {
+.visuel.orange {
     background: url(https://kartenn.region-bretagne.fr/img/picto/handicap_visuel_2.svg) left top no-repeat;
     background-size: 30px;
 }
-.visuel.MAUVAIS {
+.visuel.rouge {
     background: url(https://kartenn.region-bretagne.fr/img/picto/handicap_visuel_3.svg) left top no-repeat;
     background-size: 30px;
 }
