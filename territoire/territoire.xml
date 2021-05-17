@@ -600,6 +600,15 @@
             </layer>
             </group>
 			<group name="Autres" id="grp2" >
+				<layer id="type_rural_urbain" name="Communes par type rural ou urbain"  visible="false" tiled="false"
+		            searchable="false" queryable="true"		                
+	                infoformat="application/vnd.ogc.gml" featurecount="20"
+					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+	                attribution="Sources: INSEE" 
+	                metadata=""
+	                metadata-csw="">
+	                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/type_rural_urbain.mst"></template>
+		        </layer>		        
 				<layer id="bassin_vie_bretagne" name="Bassin de vie"  visible="false" tiled="false"
 		            searchable="false" queryable="true"		                
 	                infoformat="application/vnd.ogc.gml" featurecount="20"

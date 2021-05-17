@@ -1,0 +1,12 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h3 class="rb-title-feature">{{nom}}</h3>
+		<p class="rb-text-feature">		
+			<span style="font-weight:bold"> Type :</span> {{type_rural_urbain}}<br/>
+       </p>
+	</li>
+{{/features}}
+
+<style>
+@import url("https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/css/kartenn_territoire.css");
+</style>
