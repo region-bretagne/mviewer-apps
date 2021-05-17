@@ -36,13 +36,13 @@ mviewer.customLayers.batiment_region_accessibilite.layer = new ol.layer.Vector({
         }),
         style: function(feature, resolution) {
             var stl;            
-            if (feature.get('classe_h_global') == 'rouge'){
+            if (feature.get('classe_h_global') == 'Non accessible, non praticable'){
                 stl = batiment_region_accessibilite.legend.items[0].styles;
 			}
-            else if (feature.get('classe_h_global') == 'orange'){
+            else if (feature.get('classe_h_global') == 'Non accessible mais praticable'){
                 stl = batiment_region_accessibilite.legend.items[1].styles;
 			}
-            else if (feature.get('classe_h_global') == 'vert'){
+            else if (feature.get('classe_h_global') == 'Accessible'){
                 stl = batiment_region_accessibilite.legend.items[2].styles;
             }
             return stl;

@@ -9,10 +9,10 @@
 		</p>
 		<h3 class="rb-subtitle-feature">Niveau d'accessibilité selon le handicap</h3>
 		<div class="pictos">
-			<div class="floating-box auditif {{classe_h_aud}}"><span class="tooltiptext">{{classe_h_aud}}</span></div>
-			<div class="floating-box cognitif {{classe_h_cog}}"><span class="tooltiptext">{{classe_h_cog}}</span></div>
-			<div class="floating-box pmr {{classe_h_mot}}"><span class="tooltiptext">{{classe_h_mot}}</span></div>
-			<div class="floating-box visuel {{classe_h_vis}}"><span class="tooltiptext">{{classe_h_vis}}</span></div>
+			<div class="floating-box auditif {{classe_h_aud}}"><span class="tooltiptext">{{classe_h_aud_txt}}</span></div>
+			<div class="floating-box cognitif {{classe_h_cog}}"><span class="tooltiptext">{{classe_h_cog_txt}}</span></div>
+			<div class="floating-box pmr {{classe_h_mot}}"><span class="tooltiptext">{{classe_h_mot_txt}}</span></div>
+			<div class="floating-box visuel {{classe_h_vis}}"><span class="tooltiptext">{{classe_h_vis_txt}}</span></div>
         </div>
 	</li>
 {{/features}}

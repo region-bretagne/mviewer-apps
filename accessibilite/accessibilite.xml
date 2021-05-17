@@ -54,7 +54,7 @@
 					queryable="true" infoformat="application/vnd.ogc.gml"
                     featurecount="20"
 					url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/accessibilite/customlayers/batiment_region_accessibilite.js"
-					style="" 
+					style="" opacity="0.6"
 					tooltip="true"	tooltipcontent="{{libelle_bat}}"
 					attribution="Région Bretagne" 
 					metadata-csw=""
