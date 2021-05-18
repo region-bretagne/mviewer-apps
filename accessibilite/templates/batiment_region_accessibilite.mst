@@ -13,13 +13,14 @@
 			<div class="floating-box cognitif {{classe_h_cog}}"><span class="tooltiptext">{{classe_h_cog_txt}}</span></div>
 			<div class="floating-box pmr {{classe_h_mot}}"><span class="tooltiptext">{{classe_h_mot_txt}}</span></div>
 			<div class="floating-box visuel {{classe_h_vis}}"><span class="tooltiptext">{{classe_h_vis_txt}}</span></div>
+			<div class="floating-box mm {{classe_h_mm}}"><span class="tooltiptext">{{classe_h_mm_txt}}</span></div>
         </div>
 	</li>
 {{/features}}
 
 <style>
 .pictos {
-    padding-left: 20px;
+    padding-left: 10px;
 }
 .floating-box {
     float: left;
@@ -140,5 +141,35 @@
 .visuel:hover .tooltiptext {
   visibility: visible;
 }
+
+.mm.vert {
+    background: url(https://kartenn.region-bretagne.fr/img/picto/handicap_mm_1.svg) left top no-repeat;
+    background-size: 30px;
+}
+.mm.orange {
+    background: url(https://kartenn.region-bretagne.fr/img/picto/handicap_mm_2.svg) left top no-repeat;
+    background-size: 30px;
+}
+.mm.rouge {
+    background: url(https://kartenn.region-bretagne.fr/img/picto/handicap_mm_3.svg) left top no-repeat;
+    background-size: 30px;
+}
+.mm .tooltiptext {
+  visibility: hidden;
+  width: 100px;
+  margin-top: 30px;
+  background-color: #0094AB;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+}
+.mm:hover .tooltiptext {
+  visibility: visible;
+}
+
 
 </style>
