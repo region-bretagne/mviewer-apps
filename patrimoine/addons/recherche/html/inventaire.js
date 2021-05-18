@@ -8,6 +8,10 @@ mviewer.customControls.inventaire = (function() {
 
     var _defaultValue = "maison,18e siècle,ardoise";
     var _defaultValue = false;
+    // Verify if a filter is defined in permalink and get filter if exists.
+    if (API[`c_${_idlayer}`]) {
+        _defaultValue = API[`c_${_idlayer}`];
+    }
 
     var _lastValues = false;
 
@@ -43,6 +47,8 @@ mviewer.customControls.inventaire = (function() {
     var _updateLayer = function() {
         var values = $.map($("#inventaire_search_queries").tagsinput('items') || [], function (item) { return item.value; });
         mviewer.customLayers.inventaire.setFilter(values);
+        //Save filter in API to reuse it in permalink.
+        API[`c_${_idlayer}`] = values.join(",");
         mviewer.customLayers.inventaire.layer.getSource().getSource().refresh();
         mviewer.customLayers.inventaire.layer.getSource().getSource().changed();
         _lastValues = values.join(",");
