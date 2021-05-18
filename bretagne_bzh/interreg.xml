@@ -17,7 +17,7 @@
                 url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                 attribution="Source: Région Bretagne" 
 				style="interreg_atlantique_2014_2020"
-				exclusive = "true"
+				exclusive = "false"
                 metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/48804077-129b-4e47-8893-310d8a745d04"
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=48804077-129b-4e47-8893-310d8a745d04">
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/interreg.mst"></template> 
@@ -27,7 +27,7 @@
                 url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                 attribution="Source: Région Bretagne" 
 				style="interreg_atlantique_2021_2027"
-				exclusive = "true"
+				exclusive = "false"
                 metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/48804077-129b-4e47-8893-310d8a745d04"
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=48804077-129b-4e47-8893-310d8a745d04">
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/interreg.mst"></template> 
@@ -37,7 +37,7 @@
                 url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                 attribution="Source: Région Bretagne" 
 				style="interreg_nord_ouest_2014_2020"
-				exclusive = "true"
+				exclusive = "false"
                 metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/48804077-129b-4e47-8893-310d8a745d04"
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=48804077-129b-4e47-8893-310d8a745d04">
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/interreg.mst"></template> 
@@ -47,7 +47,7 @@
                 url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                 attribution="Source: Région Bretagne" 
 				style="interreg_nord_ouest_2021_2027"
-				exclusive = "true"
+				exclusive = "false"
                 metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/48804077-129b-4e47-8893-310d8a745d04"
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=48804077-129b-4e47-8893-310d8a745d04">
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/interreg.mst"></template> 
@@ -57,7 +57,7 @@
                 url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                 attribution="Source: Région Bretagne" 
 				style="interreg_manche_angleterre"
-				exclusive = "true"
+				exclusive = "false"
                 metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/48804077-129b-4e47-8893-310d8a745d04"
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=48804077-129b-4e47-8893-310d8a745d04">
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/interreg.mst"></template> 
@@ -67,7 +67,7 @@
                 url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                 attribution="Source: Région Bretagne" 
 				style="interreg_mer_nord"
-				exclusive = "true"
+				exclusive = "false"
                 metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/48804077-129b-4e47-8893-310d8a745d04"
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=48804077-129b-4e47-8893-310d8a745d04">
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/interreg.mst"></template> 
@@ -77,7 +77,7 @@
                 url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                 attribution="Source: Région Bretagne" 
 				style="interreg_europe"
-				exclusive = "true"
+				exclusive = "false"
                 metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/48804077-129b-4e47-8893-310d8a745d04"
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=48804077-129b-4e47-8893-310d8a745d04">
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/interreg.mst"></template> 
