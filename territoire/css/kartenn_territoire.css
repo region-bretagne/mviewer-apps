@@ -25,7 +25,7 @@
 		    font-family: 'spotkabold';
 		    src: url('../../global/font/spotkabold.ttf');
 		}
-		
+
 @font-face {
   font-family: 'region_bold';
   src: url("../../global/font/RB/RegionBretagneNew-Bold.ttf"); }
@@ -35,7 +35,7 @@
   src: url("../../global/font/RB/RegionBretagneNew-Regular.ttf"); }
 
 /*******************************
-------------- NAVBAR 
+------------- NAVBAR
 ********************************/
 .navbar-default{
 	border-color:#2d4059;
@@ -49,9 +49,9 @@
 .navbar-header.fixed-brand{
 	background-color: #2d4059;
 }
-	
+
 #mv-navbar a.navbar-brand, .mv-title{
-	color:#ffffff!important;	
+	color:#ffffff!important;
 	font-size: 20px;
 }
 
@@ -64,7 +64,7 @@ p.navbar-text.mv-title{
 .navbar-default .navbar-toggle{
 	border-color: #ffffff;
 }
-	
+
 .glyphicon-th-large:before{
 	color:#ffffff;
 }
@@ -78,26 +78,26 @@ p.navbar-text.mv-title{
   background-color: #2d4059!important;
 }
 
-.ol-control button:focus, .ol-control button:hover {  
+.ol-control button:focus, .ol-control button:hover {
   background-color: #2d4059;
 }
 
-.gml-item-title {    
+.gml-item-title {
     font-family: 'roboto_regular', Arial, Sans-serif;
 	color:#2d4059;
     font-size: 24px;
 }
 
-.popup-content .nav-tabs > li.active > a, .popup-content .nav-tabs > li.active > a:hover, .popup-content .nav-tabs > li.active > a:focus { 
+.popup-content .nav-tabs > li.active > a, .popup-content .nav-tabs > li.active > a:hover, .popup-content .nav-tabs > li.active > a:focus {
   border-left: thick solid #2d4059!important;
 }
 
-#right-panel .mv-header {  
+#right-panel .mv-header {
   background-color: #2d4059;
-  color: #fff;  
+  color: #fff;
 }
 
-#right-panel .mv-header h5{  
+#right-panel .mv-header h5{
   font-family: 'roboto_bold', sans-serif;
   font-size: 13px;
 }
@@ -130,14 +130,14 @@ p.navbar-text.mv-title{
 ********************************/
 #bottom-panel .mv-header h5{
 	font-family:'roboto_bold', Arial, Sans-serif;
-	color: #2d4059;	
+	color: #2d4059;
 	font-size:13px;
 }
 
 .fa-chevron-down{
 	color:#fff;
 }
-#bottom-panel-btn .fa-chevron-down { 
+#bottom-panel-btn .fa-chevron-down {
     background: #2d4059;
 }
 
@@ -182,7 +182,7 @@ p.navbar-text.mv-title{
 
 /* Opacité */
 .mv-layer-options  .slider-selection{
-	background:#2d4059;	
+	background:#2d4059;
 }
 
 .mv-layer-options .slider-handle {
@@ -199,7 +199,7 @@ p.navbar-text.mv-title{
 	border-top-color:#2d4059;
 }
 
-/* Temporalité */ 
+/* Temporalité */
 
 .mv-layer-options  .form-group-timer .slider-selection{
 	background:#2d4059;
@@ -228,7 +228,7 @@ p.navbar-text.mv-title{
 }
 
 .mv-layer-options  .form-group-timer .slider-track-high{
-	background:#2d4059;	
+	background:#2d4059;
 }
 
 #layers-container-box-header {
@@ -249,8 +249,8 @@ ul#basemapslist p {
 	font-family: 'roboto_regular', Arial, Sans-serif;
 }
 
-ul#basemapslist  li.active{	
-    border:2px #2d4059 outset;    
+ul#basemapslist  li.active{
+    border:2px #2d4059 outset;
 }
 
 .ol-scale-line-inner{
@@ -266,7 +266,7 @@ h3.title{
 	font-size: 24px;
 	color:#2d4059;
 	}
-	
+
 h4.title{
     font-family: 'roboto_regular', Arial, Sans-serif;
     font-size: 16px;
@@ -285,14 +285,14 @@ h4.title{
 }
 
 .popover-title{
-	font-family: 'roboto_bold', sans-serif!important; 
-}	
+	font-family: 'roboto_bold', sans-serif!important;
+}
 
 /*******************************
 ------------- POPUP
 ********************************/
 .popup-content {
-    font-family: 'roboto_regular', Arial, Sans-serif;  
+    font-family: 'roboto_regular', Arial, Sans-serif;
 }
 
 
@@ -314,9 +314,9 @@ h4.title{
   color: #fff;
 }
 
-#alerts-zone .close {  
+#alerts-zone .close {
   color: #fff;
-  text-shadow: 0 1px 0 #000;  
+  text-shadow: 0 1px 0 #000;
 }
 
 .datepicker .active {
@@ -365,15 +365,15 @@ h4.title{
 }
 
 .tooltip.right .tooltip-feature.tooltip-arrow {
-    border-right-color: #2d4059; 
+    border-right-color: #2d4059;
 }
 
 .tooltip.top .tooltip-feature.tooltip-arrow {
-    border-top-color: #2d4059; 
+    border-top-color: #2d4059;
 }
 
 .tooltip.left .tooltip-feature.tooltip-arrow {
-    border-left-color: #2d4059; 
+    border-left-color: #2d4059;
 }
 
 .tooltip-feature h5 {
@@ -395,15 +395,15 @@ h4.title{
 }
 
 .tooltip.right .mv-tooltip.tooltip-arrow {
-    border-right-color: #2d4059; 
+    border-right-color: #2d4059;
 }
 
 .tooltip.top .mv-tooltip.tooltip-arrow {
-    border-top-color: #2d4059; 
+    border-top-color: #2d4059;
 }
 
 .tooltip.left .mv-tooltip.tooltip-arrow {
-    border-left-color: #2d4059; 
+    border-left-color: #2d4059;
 }
 
 /*******************************
@@ -443,7 +443,7 @@ li.elasticsearch.list-group-item.disabled{
 }
 
 .popup-content .nav-tabs .active .glyphicon, .popup-content .nav-tabs .active .fa {
-  color: #2d4059;  
+  color: #2d4059;
 }
 
 a:hover{
@@ -589,18 +589,18 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 .gml-item-field-value{
 	font-family: 'roboto_regular', Arial, Sans-serif;
 }
- 
+
 /*******************************
 -------------LOADER INDICATOR
 ********************************/
-.mv-layer-indicator .loader {    
+.mv-layer-indicator .loader {
     border-top: 1.1em solid rgba(3, 46, 70, 0.2);
     border-right: 1.1em solid rgba(3, 46, 70, 0.2);
     border-bottom: 1.1em solid rgba(3, 46, 70, 0.2);
     border-left: 1.1em solid #2d4059;
 }
 
-.mv-iframe-indicator .loader {     
+.mv-iframe-indicator .loader {
     border-top: 1.1em solid rgba(3, 46, 70, 0.2);
     border-right: 1.1em solid rgba(3, 46, 70, 0.2);
     border-bottom: 1.1em solid rgba(3, 46, 70, 0.2);
@@ -673,17 +673,17 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 }
 .rb-but-link:hover{
 	background-color:#b0006b;
-}	
+}
 .rb-iframe-bottom{
 		width:970px;
 		height:300px;
 		border: none;
 		overflow:hidden;
 		margin-left:-20px;
-	}		
+	}
 .rb-critere {
-	color: #fff;			
-	font-size:13px;			
+	color: #fff;
+	font-size:13px;
 	background-color:#2d4059;
 	border-radius:3px;
 	padding:7px 16px 8px 13px;
@@ -692,3 +692,26 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 	font-family:"Open Sans";
 	margin-left:3px;
 }
+
+/* Search results */
+#searchresults {
+	font-family: "roboto_regular", Arial, Sans-serif;
+	color: #555555; }
+	#searchresults a.list-group-item.disabled {
+	  font-family: "roboto_bold", Arial, Sans-serif; }
+	#searchresults a:hover {
+	  font-family: "roboto_bold", Arial, Sans-serif;
+	  color: #2d4059; }
+
+  .searchresults-title {
+	background-color: #2d4059;
+	border-color: #2d4059;
+	color: white;
+	font-family: "roboto_bold", Arial, Sans-serif; }
+
+  .searchresults-title .close,
+  .searchresults-title .close:hover,
+  .searchresults-title .close:focus,
+  .searchresults-title .close:active,
+  .searchresults-title .close:visited {
+	color: white; }

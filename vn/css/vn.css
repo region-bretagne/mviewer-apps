@@ -22,7 +22,7 @@
   src: url("../../global/font/RB/RegionBretagneNew-Regular.ttf"); }
 
 /*******************************
-------------- NAVBAR 
+------------- NAVBAR
 ********************************/
 .navbar-default{
 	border-color:#2f476c;
@@ -36,9 +36,9 @@
 .navbar-header.fixed-brand{
 	background-color: #2f476c;
 }
-	
+
 #mv-navbar a.navbar-brand, .mv-title{
-	color:#ffffff!important;	
+	color:#ffffff!important;
 	font-size: 20px;
 }
 
@@ -51,7 +51,7 @@ p.navbar-text.mv-title{
 .navbar-default .navbar-toggle{
 	border-color: #ffffff;
 }
-	
+
 .glyphicon-th-large:before{
 	color:#ffffff;
 }
@@ -65,26 +65,26 @@ p.navbar-text.mv-title{
   background-color: #2f476c!important;
 }
 
-.ol-control button:focus, .ol-control button:hover {  
+.ol-control button:focus, .ol-control button:hover {
   background-color: #2f476c;
 }
 
-.gml-item-title {    
+.gml-item-title {
     font-family: 'roboto_regular', Arial, Sans-serif;
 	color:#2f476c;
     font-size: 24px;
 }
 
-.popup-content .nav-tabs > li.active > a, .popup-content .nav-tabs > li.active > a:hover, .popup-content .nav-tabs > li.active > a:focus { 
+.popup-content .nav-tabs > li.active > a, .popup-content .nav-tabs > li.active > a:hover, .popup-content .nav-tabs > li.active > a:focus {
   border-left: thick solid #2f476c!important;
 }
 
-#right-panel .mv-header {  
+#right-panel .mv-header {
   background-color: #2f476c;
-  color: #fff;  
+  color: #fff;
 }
 
-#right-panel .mv-header h5{  
+#right-panel .mv-header h5{
   font-family: 'roboto_bold', sans-serif;
   font-size: 13px;
 }
@@ -112,14 +112,14 @@ p.navbar-text.mv-title{
 ********************************/
 #bottom-panel .mv-header h5{
 	font-family:'roboto_bold', Arial, Sans-serif;
-	color: #2f476c;	
+	color: #2f476c;
 	font-size:13px;
 }
 
 .fa-chevron-down{
 	color:#fff;
 }
-#bottom-panel-btn .fa-chevron-down { 
+#bottom-panel-btn .fa-chevron-down {
     background: #2f476c;
 }
 
@@ -163,7 +163,7 @@ p.navbar-text.mv-title{
 
 /* Opacité */
 .mv-layer-options  .slider-selection{
-	background:#2f476c;	
+	background:#2f476c;
 }
 
 .mv-layer-options .slider-handle {
@@ -180,7 +180,7 @@ p.navbar-text.mv-title{
 	border-top-color:#2f476c;
 }
 
-/* Temporalité */ 
+/* Temporalité */
 
 .mv-layer-options  .form-group-timer .slider-selection{
 	background:#2f476c;
@@ -209,7 +209,7 @@ p.navbar-text.mv-title{
 }
 
 .mv-layer-options  .form-group-timer .slider-track-high{
-	background:#2f476c;	
+	background:#2f476c;
 }
 
 #layers-container-box-header {
@@ -230,8 +230,8 @@ ul#basemapslist p {
 	font-family: 'roboto_regular', Arial, Sans-serif;
 }
 
-ul#basemapslist  li.active{	
-    border:2px #2f476c outset;    
+ul#basemapslist  li.active{
+    border:2px #2f476c outset;
 }
 
 .ol-scale-line-inner{
@@ -247,7 +247,7 @@ h3.title{
 	font-size: 24px;
 	color:#2f476c;
 	}
-	
+
 h4.title{
     font-family: 'roboto_regular', Arial, Sans-serif;
     font-size: 16px;
@@ -278,14 +278,14 @@ h4.panel-title{
 }
 
 .popover-title{
-	font-family: 'roboto_bold', sans-serif!important; 
-}	
+	font-family: 'roboto_bold', sans-serif!important;
+}
 
 /*******************************
 ------------- POPUP
 ********************************/
 .popup-content {
-    font-family: 'roboto_regular', Arial, Sans-serif;  
+    font-family: 'roboto_regular', Arial, Sans-serif;
 }
 
 
@@ -307,9 +307,9 @@ h4.panel-title{
   color: #fff;
 }
 
-#alerts-zone .close {  
+#alerts-zone .close {
   color: #fff;
-  text-shadow: 0 1px 0 #000;  
+  text-shadow: 0 1px 0 #000;
 }
 
 .datepicker .active {
@@ -388,15 +388,15 @@ h4.panel-title{
 }
 
 .tooltip.right .mv-tooltip.tooltip-arrow {
-    border-right-color: #2f476c; 
+    border-right-color: #2f476c;
 }
 
 .tooltip.top .mv-tooltip.tooltip-arrow {
-    border-top-color: #2f476c; 
+    border-top-color: #2f476c;
 }
 
 .tooltip.left .mv-tooltip.tooltip-arrow {
-    border-left-color: #2f476c; 
+    border-left-color: #2f476c;
 }
 
 /*******************************
@@ -436,7 +436,7 @@ li.elasticsearch.list-group-item.disabled{
 }
 
 .popup-content .nav-tabs .active .glyphicon, .popup-content .nav-tabs .active .fa {
-  color: #2f476c;  
+  color: #2f476c;
 }
 
 a:hover{
@@ -577,18 +577,18 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 .gml-item-field-value{
 	font-family: 'roboto_regular', Arial, Sans-serif;
 }
- 
+
 /*******************************
 -------------LOADER INDICATOR
 ********************************/
-.mv-layer-indicator .loader {    
+.mv-layer-indicator .loader {
     border-top: 1.1em solid rgba(3, 46, 70, 0.2);
     border-right: 1.1em solid rgba(3, 46, 70, 0.2);
     border-bottom: 1.1em solid rgba(3, 46, 70, 0.2);
     border-left: 1.1em solid #2f476c;
 }
 
-.mv-iframe-indicator .loader {     
+.mv-iframe-indicator .loader {
     border-top: 1.1em solid rgba(3, 46, 70, 0.2);
     border-right: 1.1em solid rgba(3, 46, 70, 0.2);
     border-bottom: 1.1em solid rgba(3, 46, 70, 0.2);
@@ -654,5 +654,27 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 }
 .rb-but-link:hover{
 	background-color:#4c74b5;
-}	
-		
+}
+
+/* Search results */
+#searchresults {
+	font-family: "roboto_regular", Arial, Sans-serif;
+	color: #555555; }
+	#searchresults a.list-group-item.disabled {
+	  font-family: "roboto_bold", Arial, Sans-serif; }
+	#searchresults a:hover {
+	  font-family: "roboto_bold", Arial, Sans-serif;
+	  color: #2f476c; }
+
+  .searchresults-title {
+	background-color: #2f476c;
+	border-color: #2f476c;
+	color: white;
+	font-family: "roboto_bold", Arial, Sans-serif; }
+
+  .searchresults-title .close,
+  .searchresults-title .close:hover,
+  .searchresults-title .close:focus,
+  .searchresults-title .close:active,
+  .searchresults-title .close:visited {
+	color: white; }
