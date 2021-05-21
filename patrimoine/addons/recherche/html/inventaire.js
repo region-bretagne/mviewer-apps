@@ -36,11 +36,12 @@ mviewer.customControls.inventaire = (function() {
         "ñ": "n"
     };
 
+//Histoire d'accents d'Alain pour la recherche
     var normalize = function (input) {
-        $.each(charMap, function (unnormalizedChar, normalizedChar) {
+        /* $.each(charMap, function (unnormalizedChar, normalizedChar) {
             var regex = new RegExp(unnormalizedChar, 'gi');
             input = input.replace(regex, normalizedChar);
-        });
+        }); */
         return input;
     };
 
