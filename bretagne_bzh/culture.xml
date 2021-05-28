@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="Culture" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" exportpng="false" measuretools="true" legend="true" legendasimage="false" popup="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme_ultra.css"/>
-    <mapoptions maxzoom="20" projection="EPSG:3857" center="-291072,6187119" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
+    <application title="Les lieux et festivals de spectacle vivant et arts plastiques aidés par la Région" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" exportpng="false" measuretools="true" legend="true" legendasimage="false" popup="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme_ultra.css"/>
+    <mapoptions maxzoom="20" projection="EPSG:3857" center="-278279,6121469" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery">
         <baselayer  type="OSM" id="positron" label="Positron" title="CartoDb" thumbgallery="img/basemap/positron.png"
@@ -20,35 +20,45 @@
 
     <themes>
         <theme name="Culture"  collapsed="true" id="culture">
-            <layer id="art_contemporain" name="Lieux dédiés à l’Art contemporain" visible="true" tiled="false" namespace="rb"
+            <layer id="lieu" name="Lieux soutenus dédiés à l’Art contemporain et métiers d'arts" visible="true" tiled="false" namespace="rb"
 					queryable="true" infoformat="application/vnd.ogc.gml"
                     featurecount="20"
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-					style="" 
+					style="lieu_culture_art_discipline" 
 					attribution="Région Bretagne" 
 					metadata-csw=""
 					metadata="" >  
-					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/art_contemporain.mst" />
+					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/lieu.mst" />
             </layer>
-            <layer id="festival" name="Festivals soutenus" visible="true" tiled="false" namespace="rb"
+            <layer id="lieu" name="Lieux soutenus dédiés au spectacles vivants" visible="true" tiled="false" namespace="rb"
 					queryable="true" infoformat="application/vnd.ogc.gml"
                     featurecount="20"
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-					style="" 
+					style="lieu_culture_vivant_discipline" 
+					attribution="Région Bretagne" 
+					metadata-csw=""
+					metadata="" >  
+					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/lieu.mst" />
+            </layer>
+            <layer id="festival" name="Festivals soutenus dédiés à l’Art contemporain et métiers d'arts" visible="true" tiled="false" namespace="rb"
+					queryable="true" infoformat="application/vnd.ogc.gml"
+                    featurecount="20"
+					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+					style="festival_art_discipline" 
 					attribution="Région Bretagne" 
 					metadata-csw=""
 					metadata="" >  
 					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/festival.mst" />
             </layer>
-            <layer id="spectacle_vivant" name="Lieux dédiés au spectacle vivant" visible="true" tiled="false" namespace="rb"
+            <layer id="festival" name="Festivals soutenus dédiés au spectacles vivants" visible="true" tiled="false" namespace="rb"
 					queryable="true" infoformat="application/vnd.ogc.gml"
                     featurecount="20"
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-					style="" 
+					style="festival_vivant_discipline" 
 					attribution="Région Bretagne" 
 					metadata-csw=""
 					metadata="" >  
-					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/spectacle_vivant.mst" />
+					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/festival.mst" />
             </layer>
             <layer id="bretagne_5" name="Bretagne à 5" visible="true" tiled="false" namespace="rb"
 					queryable="false" 
