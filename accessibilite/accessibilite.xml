@@ -23,7 +23,7 @@
             <layer id="site_region_accessibilite" name="Type de sites" visible="true" tiled="false" namespace="rb" type="customlayer" vectorlegend="true"
 					queryable="true" infoformat="application/vnd.ogc.gml" 
 					searchable="true" searchengine="fuse" fusesearchkeys="nom" fusesearchresult="{{nom}}"
-                    featurecount="20"
+                    featurecount="20" jsonfields="accessibilite"
 					url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/accessibilite/customlayers/site_region_accessibilite.js"
 					tooltip="true"	tooltipcontent="{{nom}}"
 					attribution="Région Bretagne" 

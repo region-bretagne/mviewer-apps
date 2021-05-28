@@ -12,24 +12,20 @@
 			{{/url_registre}}
 		</span>
 		<br>
-		 {{#classe_h_aud}}
-		<h3 class="rb-subtitle-feature">Niveau d'accessibilité extérieure du site selon le handicap</h3>
+		{{#accessibilite}}
+		<h3 class="rb-subtitle-feature">{{type}}</h3>
 		<div class="pictos">
 			<div class="floating-box auditif {{classe_h_aud}}"><span class="tooltiptext">{{classe_h_aud_txt}}</span></div>
 			<div class="floating-box cognitif {{classe_h_cog}}"><span class="tooltiptext">{{classe_h_cog_txt}}</span></div>
 			<div class="floating-box pmr {{classe_h_mot}}"><span class="tooltiptext">{{classe_h_mot_txt}}</span></div>
 			<div class="floating-box visuel {{classe_h_vis}}"><span class="tooltiptext">{{classe_h_vis_txt}}</span></div>
 			<div class="floating-box mm {{classe_h_mm}}"><span class="tooltiptext">{{classe_h_mm_txt}}</span></div>
-        </div>
-		 {{/classe_h_aud}}
+        </div><br><br><br>
+		{{/accessibilite}}
 		<br>
-		<br>
-		<br>		
-		<br>
-		</div>
 			Zoomer pour avoir le détail des bâtiments
 
-	</li>	
+	</li>
 {{/features}}
 
 <style>
