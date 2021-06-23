@@ -20,7 +20,7 @@
 
     <themes>
         <theme name="Culture"  collapsed="true" id="culture">
-            <layer id="lieu" name="Lieux soutenus dédiés à l’Art contemporain et métiers d'arts" visible="true" tiled="false" namespace="rb"
+            <layer id="lieu" name="Lieux soutenus dédiés à l’art contemporain et aux métiers d'arts" visible="true" tiled="false" namespace="rb"
 					queryable="true" infoformat="application/vnd.ogc.gml"
                     featurecount="20"
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
@@ -30,7 +30,7 @@
 					metadata="" >  
 					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/lieu.mst" />
             </layer>
-            <layer id="lieu" name="Lieux soutenus dédiés au spectacles vivants" visible="true" tiled="false" namespace="rb"
+            <layer id="lieu" name="Lieux soutenus dédiés au spectacle vivant" visible="true" tiled="false" namespace="rb"
 					queryable="true" infoformat="application/vnd.ogc.gml"
                     featurecount="20"
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
@@ -40,7 +40,7 @@
 					metadata="" >  
 					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/lieu.mst" />
             </layer>
-            <layer id="festival" name="Festivals soutenus dédiés à l’Art contemporain et métiers d'arts" visible="true" tiled="false" namespace="rb"
+            <layer id="festival" name="Festivals soutenus dédiés à l’art contemporain et aux métiers d'arts" visible="true" tiled="false" namespace="rb"
 					queryable="true" infoformat="application/vnd.ogc.gml"
                     featurecount="20"
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
@@ -50,7 +50,7 @@
 					metadata="" >  
 					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/festival.mst" />
             </layer>
-            <layer id="festival" name="Festivals soutenus dédiés au spectacles vivants" visible="true" tiled="false" namespace="rb"
+            <layer id="festival" name="Festivals soutenus dédiés au spectacle vivant" visible="true" tiled="false" namespace="rb"
 					queryable="true" infoformat="application/vnd.ogc.gml"
                     featurecount="20"
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
