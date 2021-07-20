@@ -2,23 +2,46 @@
 	<li class="item" id="{{feature_ol_uid}}">
 		<h3 class="rb-title-feature">{{lot_societe}}</h3>  
         
-        <p class="rb-text-feature">		
+        <p class="rb-text-feature">
+            {{#port_aero_concession}}                
 			<span style="font-weight:bold"> Concession :</span> {{port_aero_concession}}<br/>
+            {{/port_aero_concession}}
             {{#lot_secteur}}                
                 <span style="font-weight:bold"> Secteur :</span> {{lot_secteur}}<br/>
             {{/lot_secteur}}
             {{#lot_lot}}                
                 <span style="font-weight:bold"> Lot :</span> {{lot_lot}}<br/>
             {{/lot_lot}}
+			{{#contrat_type}}                
             <span style="font-weight:bold"> Type de contrat :</span> {{contrat_type}}<br/>
+            {{/contrat_type}}
+			{{#contrat_renou}}
             <span style="font-weight:bold"> Octroi Renouvellement :</span> {{contrat_renou}}<br/>
+            {{/contrat_renou}}
+			{{#lot_activite}}
             <span style="font-weight:bold"> Activité bénéficiaire :</span> {{lot_activite}}<br/>
+            {{/lot_activite}}
+			{{#beneficiaire_install_nature}}
             <span style="font-weight:bold"> Nature d'installation :</span> {{beneficiaire_install_nature}}<br/>
+            {{/beneficiaire_install_nature}}
+			{{#lot_type}}
             <span style="font-weight:bold"> Type d'occupation :</span> {{lot_type}}<br/>
-            <span style="font-weight:bold"> Surface :</span> {{lot_surface}} m²<br/>
+            {{/lot_type}}
+			{{#lot_surface}}
+            <span style="font-weight:bold"> Surface saisie :</span> {{lot_surface}} m²<br/>
+            {{/lot_surface}}
+			{{#surface_parcelle}}
+            <span style="font-weight:bold"> Surface mesurée :</span> {{surface_parcelle}} m²<br/>
+            {{/surface_parcelle}}
+			{{#lot_locataire}}
             <span style="font-weight:bold"> Locataire :</span> {{lot_locataire}}<br/>
+            {{/lot_locataire}}
+			{{#contrat_validite}}
             <span style="font-weight:bold"> Validité du contrat :</span> {{contrat_validite}}<br/>
+            {{/contrat_validite}}
+			{{#contrat_echeance}}
             <span style="font-weight:bold"> Echéance du contrat :</span> {{contrat_echeance}}<br/>
+            {{/contrat_echeance}}
             <span style="font-weight:bold"> Identifiant :</span> {{idu_num}}<br/>
             {{#redevance_annuelle}}                
                 <span style="font-weight:bold"> Redevance annuelle :</span> {{redevance_annuelle}} €<br/>
