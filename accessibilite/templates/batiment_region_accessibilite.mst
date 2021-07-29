@@ -3,9 +3,9 @@
 		<h2 class="rb-title-feature">{{libelle_bat}}</h2>
 		<p class="rb-text-feature">		
 			<span style="font-weight:bold"> Fonction :</span> {{fonction_principale}}<br/>
-			{{#surface_adt}}
-			<span style="font-weight:bold"> Surface :</span> {{surface_adt}} m²<br/>
-			{{/surface_adt}}
+			{{#date_construction}}
+			<span style="font-weight:bold"> Date de construction :</span> {{date_construction}}<br/>
+			{{/date_construction}}
 		</p>
 		<h3 class="rb-subtitle-feature">Niveau d'accessibilité selon le handicap</h3>
 		<div class="pictos">

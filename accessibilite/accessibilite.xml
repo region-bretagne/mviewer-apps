@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="Accessibilité - APPLICATION EN TRAVAUX" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" exportpng="false" measuretools="true" legend="true" legendasimage="false" popup="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/accessibilite/css/theme.css"/>
+    <application title="Accessibilité des lycées et bâtiments propriétés de la Région Bretagne" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/accessibilite/help.html" showhelp="true" exportpng="false" measuretools="true" legend="true" legendasimage="false" popup="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/accessibilite/css/theme.css"/>
     <mapoptions maxzoom="20" projection="EPSG:3857" center="-291072,6187119" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery">
