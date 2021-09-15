@@ -1,0 +1,19 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{nom}}</h2>
+		<p class="rb-text-feature">		
+			<b>Structure </b> {{structure}}<br>
+			<h4> Contact</h4>
+			<b>Interlocuteur</b> {{interlocuteur}}<br>
+			<b>Adresse </b> {{adresse}} {{cp}} {{commune}}<br>
+		</p>
+	</li>
+{{/features}}
+
+<style>
+/* test icon rb*/
+.icon-information{
+	font-size : 20px;
+	color : #FFFFFF;
+}
+</style>
