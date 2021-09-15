@@ -2,7 +2,6 @@
 	<li class="item" id="{{feature_ol_uid}}">
 		<h2 class="rb-title-feature">{{nom}}</h2>
 		<p class="rb-text-feature">		
-            <span style="font-weight:bold"> Catégorie ERP :</span> {{erp}}<br/>
             <span style="font-weight:bold"> Courriel :</span> {{courriel}}<br/>
             <span style="font-weight:bold"> Téléphone :</span> {{telephone}}<br/>
 		</p>
