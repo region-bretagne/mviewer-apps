@@ -26,16 +26,26 @@
     measuretools="false"
     togglealllayersfromtheme="false">
 </application>
-<mapoptions maxzoom="20" projection="EPSG:3857" center="-293340,6127806" zoom="8" />
+<mapoptions maxzoom="20" projection="EPSG:3857" center="-259708,6127195" zoom="8" />
 <proxy url='../proxy/?url='/>
 <olscompletion type="ban" url="https://api-adresse.data.gouv.fr/search/" attribution="" />
-<searchparameters bbox="false" localities="true" features="true" static="false"/>
+<searchparameters bbox="false" localities="false" features="false" static="false"/>
 <baselayers style="default"> 
     <baselayer visible="true" id="positron" thumbgallery="img/basemap/positron.png" title="CartoDb" label="Positron" type="OSM" url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" attribution="Map tiles by  &lt;a href=&quot;https://cartodb.com/attributions&quot;&gt;CartoDb&lt;/a&gt;, under  &lt;a href=&quot;https://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY 3.0 &lt;/a&gt;"  ></baselayer> 
     <baselayer visible="false" id="ortho1" thumbgallery="img/basemap/ortho.jpg" title="GéoBretagne" label="Photo aérienne actuelle" type="WMTS" url="https://tile.geobretagne.fr/gwc02/service/wmts" layers="satellite" format="image/png" style="_null" matrixset="EPSG:3857" fromcapacity="false" attribution="&lt;a href=&quot;https://applications.region-bretagne.fr/geonetwork/?uuid=3a0ac2e3-7af1-4dec-9f36-dae6b5a8c731&quot; target=&quot;_blank&quot; &gt;partenaires GéoBretagne - IGN RGE BD ORTHO - PlanetObserver&lt;/a&gt;"  ></baselayer> 
 </baselayers>
-<themes mini="true" legendmini = "false"> 
+<extensions>
+    <extension type="component" id="fullscreen" path="demo/addons"/>
+</extensions>
+<themes mini="true" legendmini = "true"> 
     <theme id="theme-20210205114221" name="Indices de capacités et de péréquation" collapsed="false" icon="fas fa-caret-right"> 
+		<layer id="epci_osm" name="EPCI" visible="true" tiled="false"
+			queryable="false"
+			style="contour_blanc"  toplayer="true" showintoc="false"
+			url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+			attribution="OpenSreetMap" 
+			metadata="" 
+			metadata-csw="" />
         <layer 
             id="perequation_2021_geom"
             name="Indice général de capacités de territoires"
@@ -332,8 +342,6 @@
 			aliases="EPCI,Taux de pauvreté (%), Moyenne Régionale (%)"
             infopanel="right-panel">
         </layer> 
-    </theme> 
-        <theme name="Admin"  collapsed="true" id="admin">
             <layer id="bretagne_5" name="Bretagne à 5" visible="true" tiled="false" namespace="rb"
 					queryable="false" 
                     showintoc="false"
@@ -351,6 +359,6 @@
 					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=6583d262-ebc4-4e51-a1fd-ee493c2b355d"
 					metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/6583d262-ebc4-4e51-a1fd-ee493c2b355d" >  
             </layer>
-		</theme> 
+    </theme> 
 </themes>
 </config>
