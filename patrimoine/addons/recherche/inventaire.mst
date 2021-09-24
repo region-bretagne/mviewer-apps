@@ -15,6 +15,9 @@
 			{{#toit}}
 				<span style="font-weight:bold"> Matériaux toiture  :</span> {{toit}}<br/>
 			{{/toit}}
+			{{#materiaux}}
+				<span style="font-weight:bold"> Materiaux :</span> {{materiaux}}<br/>
+			{{/materiaux}}
 			<div class="wfs_complements" id="{{search_id}}" style="padding-left:0px;"><div>
 
         </p>

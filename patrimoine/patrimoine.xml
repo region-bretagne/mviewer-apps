@@ -440,7 +440,7 @@
     </theme>
 	<theme name="Protections patrimoniales gérées par l’Etat"  collapsed="true" id="patrimoine_etat" icon="caret-right"> 
 		<layer id="bretagne_immeuble_mh" name="Immeubles MH (source Etat)" visible="false" tiled="false"
-			queryable="true"
+			queryable="true" style="drac_immeuble_mh_centroide"
 			infoformat="text/html" featurecount="5"             
 			url="https://geobretagne.fr/geoserver/drac/wms" 
 			attribution="DRAC" 
