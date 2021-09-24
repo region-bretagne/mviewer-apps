@@ -38,7 +38,7 @@
     <extension type="component" id="fullscreen" path="demo/addons"/>
 </extensions>
 <themes mini="true" legendmini = "true"> 
-    <theme id="theme-20210205114221" name="Indices de capacités et de péréquation" collapsed="false" icon="fas fa-caret-right"> 
+    <theme id="theme-20210205120002" name="Capacités de développement humain" collapsed="false" icon="fas fa-caret-right"> 
 		<layer id="epci_osm" name="EPCI" visible="true" tiled="false"
 			queryable="false"
 			style="contour_blanc"  toplayer="true" showintoc="false"
@@ -48,44 +48,10 @@
 			metadata-csw="" />
         <layer 
             id="perequation_2021_geom"
-            name="Indice général de capacités de territoires"
-            type="wms"
-            url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
-            visible="true"
-            infoformat="application/vnd.ogc.gml"
-            style="perequation_ind_global"
-            queryable="true"
-            secure="public"
-			exclusive = "true"
-			tiled="true"
-			fields="nom_epci,ind_global"
-			aliases="EPCI,Indice global (moyenne = 0)"
-            infopanel="right-panel">
-        </layer> 
-        <layer 
-            id="perequation_2021_geom"
-            name="Indice de péréquation"
-            type="wms"
-            url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
-            visible="false"
-			style="perequation_perequation"
-            infoformat="application/vnd.ogc.gml"
-            queryable="true"
-            secure="public"
-			exclusive = "true"
-			tiled="true"
-			fields="nom_epci,perequation"
-			aliases="EPCI,Indice de péréquation (moyenne = 0)"
-            infopanel="right-panel">
-        </layer> 
-    </theme> 
-    <theme id="theme-20210205120002" name="Capacités de développement humain" collapsed="true" icon="fas fa-caret-right"> 
-        <layer 
-            id="perequation_2021_geom"
             name="Indice de capacités de développement humain"
             type="wms"
             url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
-            visible="false"
+            visible="true"
 			style="perequation_idhb"
             infoformat="application/vnd.ogc.gml"
             queryable="true"
@@ -359,6 +325,40 @@
 					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=6583d262-ebc4-4e51-a1fd-ee493c2b355d"
 					metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/6583d262-ebc4-4e51-a1fd-ee493c2b355d" >  
             </layer>
+    </theme> 
+    <theme id="theme-20210205114221" name="Indices de capacités et de péréquation" collapsed="true" icon="fas fa-caret-right"> 
+        <layer 
+            id="perequation_2021_geom"
+            name="Indice général de capacités de territoires"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+            visible="false"
+            infoformat="application/vnd.ogc.gml"
+            style="perequation_ind_global"
+            queryable="true"
+            secure="public"
+			exclusive = "true"
+			tiled="true"
+			fields="nom_epci,ind_global"
+			aliases="EPCI,Indice global (moyenne = 0)"
+            infopanel="right-panel">
+        </layer> 
+        <layer 
+            id="perequation_2021_geom"
+            name="Indice de péréquation"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+            visible="false"
+			style="perequation_perequation"
+            infoformat="application/vnd.ogc.gml"
+            queryable="true"
+            secure="public"
+			exclusive = "true"
+			tiled="true"
+			fields="nom_epci,perequation"
+			aliases="EPCI,Indice de péréquation (moyenne = 0)"
+            infopanel="right-panel">
+        </layer> 
     </theme> 
 </themes>
 </config>
