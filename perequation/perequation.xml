@@ -18,7 +18,7 @@
 <application
     title="Carte des capacités des territoires"
     logo="https://geobretagne.fr/pub/logo/region-bretagne.jpg"
-    help=""
+    help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/perequation/aide.html"
     style="css/themes/wet_asphalt.css"
     exportpng="true"
     showhelp="false"

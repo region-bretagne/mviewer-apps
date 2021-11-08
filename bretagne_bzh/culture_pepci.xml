@@ -23,8 +23,8 @@
         <theme name="Culture"  collapsed="true" id="culture">
             <layer id="aide_spectacle_vivant_art_plastique" name="Soutiens dédiés à l’art contemporain et aux métiers d'arts" visible="true" tiled="false" namespace="rb"
 					queryable="true" infoformat="application/vnd.ogc.gml"
-                    featurecount="20" 
-					style="culture_spectacle_art_type_activite"
+                    featurecount="20" searchable="true" 
+					style="culture_spectacle_art_global" 
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 					attribution="Région Bretagne" 
 					filter="discipline IN ('Arts plastiques et visuels','Métiers d''art')"
@@ -34,8 +34,8 @@
             </layer>
             <layer id="aide_spectacle_vivant_art_plastique" name="Soutiens dédiés au spectacle vivant" visible="true" tiled="false" namespace="rb"
 					queryable="true" infoformat="application/vnd.ogc.gml"
-                    featurecount="20" 
-					style="culture_spectacle_art_type_activite"
+                    featurecount="20" searchable="true"
+					style="culture_spectacle_art_global" 
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 					attribution="Région Bretagne" 
 					filter="discipline IN ('Théâtre','Musique','Pluridisciplinaire','Danse')"
@@ -45,8 +45,8 @@
             </layer>
             <layer id="aide_images_industrie_creation" name="Soutiens dédiés au cinéma et audiovisuel" visible="true" tiled="false" namespace="rb"
 					queryable="true" infoformat="application/vnd.ogc.gml"
-                    featurecount="20" 
-					style="culture_cinema_type_activite" 
+                    featurecount="20" searchable="true"
+					style="culture_images_global" 
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 					attribution="Région Bretagne" 
 					filter="discipline IN ('Cinéma - Audiovisuel')"
@@ -56,8 +56,8 @@
             </layer>
             <layer id="aide_images_industrie_creation" name="Soutiens dédiés aux radios et musiques enregistrées" visible="true" tiled="false" namespace="rb"
 					queryable="true" infoformat="application/vnd.ogc.gml"
-                    featurecount="20" 
-					style="culture_radio_type_activite"
+                    featurecount="20" searchable="true"
+					style="culture_images_global" 
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 					attribution="Région Bretagne" 
 					filter="discipline IN ('Musique','Radio')"
@@ -67,8 +67,8 @@
             </layer>
             <layer id="aide_images_industrie_creation" name="Soutiens dédiés au livre et à la lecture" visible="true" tiled="false" namespace="rb"
 					queryable="true" infoformat="application/vnd.ogc.gml"
-                    featurecount="20" 
-					style="	culture_livre_type_activite"
+                    featurecount="20" searchable="true"
+					style="culture_images_global" 
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 					attribution="Région Bretagne" 
 					filter="discipline = 'Livres et lecture'"
@@ -77,7 +77,7 @@
 					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/soutien_culture.mst" />
             </layer>
 
-			<layer id="epci" name="Intercommunalité" visible="false" queryable="false" 
+			<layer id="epci" name="Intercommunalité" visible="true" queryable="false" 
 				fields="nom_geo" aliases="Nom" toplayer="true"
 				type="customlayer" style="" opacity="1" legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/img/epci.png" 
 				url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/customlayers/epci.js" 

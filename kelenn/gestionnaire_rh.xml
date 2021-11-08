@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="Points de vente BreizhGo" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" exportpng="false" measuretools="true" legend="true" legendasimage="false" popup="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/breizhgo/css/theme_ultra.css"/>
-    <mapoptions maxzoom="20" projection="EPSG:3857" center="-291072,6187119" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
+    <application title="Carte des gestionnaires carrière / paie / retraite / accident / maladie ou imputable" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" exportpng="false" measuretools="true" legend="true" legendasimage="false" popup="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme_ultra.css"/>
+    <mapoptions maxzoom="20" projection="EPSG:3857" center="-278279,6121469" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery">
         <baselayer  type="OSM" id="positron" label="Positron" title="CartoDb" thumbgallery="img/basemap/positron.png"
@@ -15,20 +15,19 @@
             attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
     </baselayers>    
     <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par l'API adresse.data.gouv.fr"/>
-    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="fussy_like_this" />
-    <searchparameters bbox="false" localities="true" features="false"/>
+    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="current" />
+    <searchparameters bbox="false" localities="false" features="true"/>
 
     <themes>
-        <theme name="Points de vente du réseau BreizhGo"  collapsed="true" id="breizhgo">
-			<layer id="lieu_vente_breizhgo" name="Points de vente du réseau BreizhGo" scalemin="0" scalemax="50000000" visible="true" tiled="false" namespace="rb"
-				queryable="true" infoformat="application/vnd.ogc.gml"
-				featurecount="1"
-				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-				style="" 
-				attribution="Région Bretagne" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ff5a865b-eb04-435b-b002-70f2ca7de434"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ff5a865b-eb04-435b-b002-70f2ca7de434" >  
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/breizhgo/templates/lieu_vente.mst" />
+        <theme name="Gestionnaire RH"  collapsed="true" id="culture">
+            <layer id="gestionnaire_rh" name="Gestionnaire RH" visible="true" tiled="false" namespace="rb"
+					queryable="true" infoformat="application/vnd.ogc.gml"
+                    featurecount="20" searchable="true"
+					url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+					attribution="Région Bretagne" 
+					metadata-csw=""
+					metadata="" >  
+					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/templates/gestionnaire_rh.mst" />
             </layer>
             <layer id="bretagne_5" name="Bretagne à 5" visible="true" tiled="false" namespace="rb"
 					queryable="false" 
@@ -47,11 +46,11 @@
 					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=6583d262-ebc4-4e51-a1fd-ee493c2b355d"
 					metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/6583d262-ebc4-4e51-a1fd-ee493c2b355d" >  
             </layer>
-		</theme>   
+		</theme> 
     </themes>
     <styles>
         <selectionstyle>
-            <point radius="12" fillcolor="26, 188, 156" opacity="0" strokecolor="26, 188, 156" strokewidth="4" />
+            <point radius="15" fillcolor="26, 188, 156" opacity="0" strokecolor="26, 188, 156" strokewidth="8" />
             <line opacity="0.6" strokecolor="26, 188, 156" strokewidth="8" />
             <polygon fillcolor="26, 188, 156" opacity="0" strokecolor="26, 188, 156" strokewidth="4" />
         </selectionstyle>
@@ -61,4 +60,8 @@
             <polygon fillcolor="175, 122, 197" opacity="0.2" strokecolor="175, 122, 197" strokewidth="6" />
         </subselectionstyle>
     </styles>
+
+    <extensions>
+        <extension type="component" id="fullscreen" path="apps/region/bretagne_bzh/addons" />
+    </extensions>
 </config>

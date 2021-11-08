@@ -1,0 +1,19 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{tiers}}</h2>
+		<p class="rb-text-feature">
+			<span style="font-weight:bold"> Projet :</span> {{objet_dossier}}<br/>
+			<span style="font-weight:bold"> Discipline :</span> {{discipline}}<br/>
+			{{#sous_discipline}}
+			<span style="font-weight:bold"> Sous-Discipline :</span> {{sous_discipline}}<br/>
+			{{/sous_discipline}}
+			<span style="font-weight:bold"> Type d'activité :</span> {{type_activite}}<br/>
+			<span style="font-weight:bold"> Adresse :</span> {{adresse}} {{code_postal}} {{ville}}<br/>
+			<span style="font-weight:bold"> Montant voté : </span>  {{montant_vote}} €<br/>
+		</p>
+	</li>
+{{/features}}
+
+<script>
+$(".montant").each(function(i, p) { p.textContent = parseInt(p.textContent).toLocaleString()+" €"});
+</script>
