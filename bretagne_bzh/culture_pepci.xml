@@ -19,62 +19,62 @@
     <searchparameters bbox="false" localities="true" features="true"/>
 
 <!--Filtre pas possible sur plusieurs instances d'une même couche -->
-    <themes>
+    <themes mini="true" legendmini="false">
         <theme name="Culture"  collapsed="true" id="culture">
             <layer id="aide_spectacle_vivant_art_plastique" name="Soutiens dédiés à l’art contemporain et aux métiers d'arts" visible="true" tiled="false" namespace="rb"
 					queryable="true" infoformat="application/vnd.ogc.gml"
                     featurecount="20" searchable="true" 
-					style="culture_spectacle_art_global" 
+					style="culture_spectacle_art_contemporain" 
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 					attribution="Région Bretagne" 
 					filter="discipline IN ('Arts plastiques et visuels','Métiers d''art')"
 					metadata-csw=""
 					metadata="" >  
-					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/soutien_culture.mst" />
+					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/soutien_culture_art_contemporain.mst" />
             </layer>
             <layer id="aide_spectacle_vivant_art_plastique" name="Soutiens dédiés au spectacle vivant" visible="true" tiled="false" namespace="rb"
 					queryable="true" infoformat="application/vnd.ogc.gml"
                     featurecount="20" searchable="true"
-					style="culture_spectacle_art_global" 
+					style="culture_spectacle_art_vivant" 
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 					attribution="Région Bretagne" 
 					filter="discipline IN ('Théâtre','Musique','Pluridisciplinaire','Danse')"
 					metadata-csw=""
 					metadata="" >  
-					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/soutien_culture.mst" />
+					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/soutien_culture_spectacle_vivant.mst" />
             </layer>
             <layer id="aide_images_industrie_creation" name="Soutiens dédiés au cinéma et audiovisuel" visible="true" tiled="false" namespace="rb"
 					queryable="true" infoformat="application/vnd.ogc.gml"
                     featurecount="20" searchable="true"
-					style="culture_images_global" 
+					style="culture_images_cinema" 
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 					attribution="Région Bretagne" 
 					filter="discipline IN ('Cinéma - Audiovisuel')"
 					metadata-csw=""
 					metadata="" >  
-					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/soutien_culture.mst" />
+					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/soutien_culture_cinema.mst" />
             </layer>
             <layer id="aide_images_industrie_creation" name="Soutiens dédiés aux radios et musiques enregistrées" visible="true" tiled="false" namespace="rb"
 					queryable="true" infoformat="application/vnd.ogc.gml"
                     featurecount="20" searchable="true"
-					style="culture_images_global" 
+					style="culture_images_radio" 
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 					attribution="Région Bretagne" 
 					filter="discipline IN ('Musique','Radio')"
 					metadata-csw=""
 					metadata="" >  
-					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/soutien_culture.mst" />
+					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/soutien_culture_audio.mst" />
             </layer>
             <layer id="aide_images_industrie_creation" name="Soutiens dédiés au livre et à la lecture" visible="true" tiled="false" namespace="rb"
 					queryable="true" infoformat="application/vnd.ogc.gml"
                     featurecount="20" searchable="true"
-					style="culture_images_global" 
+					style="culture_images_livre" 
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 					attribution="Région Bretagne" 
 					filter="discipline = 'Livres et lecture'"
 					metadata-csw=""
 					metadata="" >  
-					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/soutien_culture.mst" />
+					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/soutien_culture_livre.mst" />
             </layer>
 
 			<layer id="epci" name="Intercommunalité" visible="true" queryable="false" 

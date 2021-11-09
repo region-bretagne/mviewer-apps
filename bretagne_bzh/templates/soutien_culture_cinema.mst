@@ -9,11 +9,11 @@
 			{{/sous_discipline}}
 			<span style="font-weight:bold"> Type d'activité :</span> {{type_activite}}<br/>
 			<span style="font-weight:bold"> Adresse :</span> {{adresse}} {{code_postal}} {{ville}}<br/>
-			<span style="font-weight:bold"> Montant voté : </span> <span class="montant"> {{montant_vote}}</span><br/>
+			<span style="font-weight:bold"> Montant voté : </span> <span class="montant4"> {{montant_vote}}</span><br/>
 		</p>
 	</li>
 {{/features}}
 
 <script>
-$(".montant").each(function(i, p) { p.textContent = parseInt(p.textContent).toLocaleString()+" €"});
+$(".montant4").each(function(i, p) { p.textContent = parseInt(p.textContent).toLocaleString()+" €"});
 </script>
