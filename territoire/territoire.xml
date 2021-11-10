@@ -22,7 +22,7 @@
             type="OSM" maxzoom="20" url="https://tile.openstreetmap.bzh/br/{z}/{x}/{y}.png" 
             attribution="Kendaolerien &lt;a href=&quot;https://www.openstreetmap.org/copyright&quot; target=&quot;_blank&quot;&gt;OpenStreetMap&lt;/a&gt;"  />
         <baselayer  type="WMTS" id="scan2" label="Cartes IGN" title="GéoPortail" maxscale="2000" thumbgallery="img/basemap/scan.jpg"
-            url="https://wxs.ign.fr/bth43bbhz4oga1hosf94bre2/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.MAPS" format="image/jpeg" visible="false" fromcapacity="false"
+            url="https://wxs.ign.fr/n9z1z601p7cucx2uk3ibe30a/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.MAPS" format="image/jpeg" visible="false" fromcapacity="false"
             attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
     </baselayers> 
     <proxy url=""/>

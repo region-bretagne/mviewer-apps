@@ -17,7 +17,7 @@
 			url="https://{a-d}.tile.stamen.com/toner-lite/{z}/{x}/{y}.png" maxzoom="20" 
 			visible="false" attribution="Map tiles by  &lt;a href='https://stamen.com/'>Stamen Design &lt;/a>, under  &lt;a href='https://creativecommons.org/licenses/by/3.0/'>CC BY 3.0 &lt;/a>" />		  
         <baselayer  type="WMTS" id="scan2" label="Cartes IGN" title="GéoPortail" maxscale="2000" thumbgallery="img/basemap/scan.jpg"
-            url="https://wxs.ign.fr/bth43bbhz4oga1hosf94bre2/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.MAPS" format="image/jpeg" visible="false" fromcapacity="false"
+            url="https://wxs.ign.fr/n9z1z601p7cucx2uk3ibe30a/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.MAPS" format="image/jpeg" visible="false" fromcapacity="false"
             attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
     </baselayers> 
     <authentification url="who" loginurl="?login" logouturl="../logout" enabled="true"/>
@@ -679,7 +679,7 @@
 			<layer id="BDGEODESIQUE-RN_BDD-POI_WLD" name="Repère géodésique" visible="false" tiled="false"
 				queryable="true" 
                 infoformat="text/html" featurecount="5"                
-				url="https://wxs.ign.fr/bth43bbhz4oga1hosf94bre2/geoportail/v/wms" 
+				url="https://wxs.ign.fr/geodesie/geoportail/v/wms" 
 				attribution="IGN" 
 				metadata=""
 				metadata-csw="" />	
