@@ -240,7 +240,7 @@
 		<group name="Voies navigables" id="vn">
 			<layer id="ecluse_trafic" name="Ecluse" visible="true" tiled="false" dynamiclegend="true"
 				queryable="true" searchable="true" infoformat="application/vnd.ogc.gml" featurecount="20"
-				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2006" timemax="2020" timevalues="2006,2008,2010,2012,2014,2016,2018,2020"
+				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2008" timemax="2021" timevalues="2008,2010,2011,2013,2015,2017,2019,2021"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 				style="ecluse_proprietaire,ecluse_trafic_millesime" stylesalias="Propriétaire,Trafic"
 				attribution="Région Bretagne" 
