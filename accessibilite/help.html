@@ -1,67 +1,180 @@
-<ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active" ><a href="#h_aide" aria-controls="messages" role="tab" data-toggle="tab"><span class="fa fa-question"></span> Présentation</a></li>
-    <li role="presentation" ><a href="#h_credits" aria-controls="settings" role="tab" data-toggle="tab"><span class="far fa-copyright"></span> Crédits</a></li>
+<style type="text/css">
+#help .nav-tabs {
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#help .nav-tabs li {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#help .nav-tabs li:first-child a {
+    border-top-left-radius: 5px;
+}
+#help .nav-tabs li:last-child a {
+    border-top-right-radius: 5px;
+}
+#help .modal-header {
+    display: none;
+}
+#help .modal-body {
+    padding: 0;
+}
+#help .nav-tabs > li.active > a, #help .nav-tabs > li.active > a:active, #help .nav-tabs > li.active > a:focus, #help .nav-tabs > li.active > a:hover {
+    background-color: #BEDDE2;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    font-size: 16px;
+    margin-right: 0;
+    padding-left: 40px;
+}
+#help .nav-tabs > li > a, #help .nav-tabs > li > a:active, #help .nav-tabs > li > a:focus, #help .nav-tabs > li > a:hover {
+    background-color: #e8fbff;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    margin-right: 0;
+    padding-left: 40px;
+}
+#help .vertical-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+#help .modal-content {
+    background-color: #BEDDE2;
+    border-radius: 5px;
+}
+#help .tab-content {
+    background-color: #BEDDE2; 
+    padding: 0px 40px 20px 40px; 
+    border-radius: 5px;
+}
+#help .panel.panel-default {
+    margin-top: 10px;
+    background: rgba(255, 255, 255, .5);
+    border: none;
+}
+#help .panel p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+#help .tab-pane p {
+    color: #000;
+    text-align: left;
+}
+#help #h_credits p {
+    font-size: 11px;
+}
+</style>
+
+<ul class="nav nav-tabs" style="background-color: #BEDDE2;" role="tablist">
+    <li role="presentation" class="col-sm-6 active">
+        <a href="#h_aide" aria-controls="messages" role="tab" data-toggle="tab">Bienvenue</a>
+    </li>
+    <li role="presentation" class="col-sm-6" style="position: relative;">
+        <a href="#h_credits" aria-controls="settings" role="tab" data-toggle="tab"><span class="far fa-copyright"></span> Crédits</a>
+        <button type="button" class="close" style="position: absolute; right: 15px; top: 12px;" data-dismiss="modal">×</button>
+    </li>
+    
 </ul>
 
  <!-- Tab panes -->
 <div class="tab-content">
-	<div role="tabpanel" class="tab-pane active" style="text-align-last:center;" id="h_aide">
-        <h4>Bienvenue !</h4>
-        <!--<iframe src="apps/region/patrimoine/kartenn_patrimoine.pdf" width="800" height="600" align="middle"></iframe>-->
-        <b><p>
-			Dans cette application vous pouvez accéder aux informations d’accessibilité des lycées et bâtiments dont la Région est propriétaire. 
-		</p>
-		<p>
-			Pour naviguer dans l’application, vous pouvez utiliser le menu en haut à droite de votre écran</br> 
-			ou </br>
-			Utiliser votre souris pour agrandir, réduire l’image et vous déplacer dans la carte. 
-		</p>
-		<p>
-			Vous pouvez également cliquer sur les établissements et les bâtiments pour afficher les informations d’accessibilité.
-		</p></b>
-		<img src="apps/region/accessibilite/img/deplacement.png" width="30px;" style="margin:5px;">
-		<p>	
-			Pour une utilisation optimale, privilégier l'utilisation des navigateurs Chrome ou Firefox.
-		</p>
-    </div>
-
-    <div role="tabpanel" class="tab-pane" id="h_credits">
-        <h4>Crédits </h4>
-        <div class="row">
-            <div class="col-sm-5" style="padding-left:0px;">
-                <div style="text-align-last:center;">
-                    <p>Kartenn est une initiative de la Région Bretagne</br>
-                    <img src="apps/region/territoire/img/logo_region_555.svg" width="120px;" style="margin:5px;"></br>
-                    Conseil régional de Bretagne </br>
-                    283, avenue du Général Patton </br>
-                    CS 21 101 </br>
-                    35711 Rennes Cedex 7</br></p>
-                </div>
-                <div style="margin-top:20px;" >
-                    <h5>Informations éditoriales</h5>
-                    <p><span style="font-family:'roboto_bold';">Responsable de la publication</span></br>
-                    Service de l'Inventaire du patrimoine culturel de Bretagne</br>
-                    <span style="font-family:'roboto_bold';">Conception et maintenance du site</span></br>
-                    Service connaissance, observation, planification et prospective (SCOPP) - Direction de l'aménagement et de l'égalité collaboration avec le Service de l'Inventaire du patrimoine culturel de Bretagne - Conseil régional de Bretagne</p>
-                </div>
-                <div style="margin-top:20px;" >
-                    <h5>Technologies utilisées</h5>
-                    <p><span style="font-family:'roboto_bold';">Serveur web:</span> Apache HTTP Server - Apache Tomcat</br> <span style="font-family:'roboto_bold';">Serveur BDD:</span> PostgreSQL - PostGIS </br> <span style="font-family:'roboto_bold';">Serveur cartographique:</span> Geoserver</br> <span style="font-family:'roboto_bold';">Frameworks JS:</span> OpenLayers - Proj4 - JQuery - Bootstrap - Chart JS</br> <span style="font-family:'roboto_bold';">Icônes:</span> www.flaticon.com</p>
-                    <img src="apps/region/territoire/img/credit.svg" width="250px;" style="margin-left:35px;"></br>
-                </div>
+	<div role="tabpanel" class="tab-pane active" id="h_aide">
+        <div class="panel panel-default">
+            <div class="panel-body">
+              <p>Dans cette application vous pouvez accéder aux informations d’accessibilité des lycées et bâtiments dont la Région est propriétaire.</p>
             </div>
-            <div class="col-sm-7" style="padding-right:0px;">
-                <h5 style="margin-top:0px;">Droits d'auteur</h5>
-                <p style="font-size:13px;">Le site diffuse divers contenus, dont certains relèvent de la catégorie des informations publiques, d’autres sont soumis au respect du Code de propriété intellectuelle.</br>
-                En vertu de la Loi n°78-753 du 17 juillet 1978 et l’ordonnance n°2005-650 du 6 juin 2005 relative à la liberté d'accès aux documents administratifs et à la réutilisation des informations publiques les informations publiques diffusées sur le site peuvent être utilisées par toute personne qui le souhaite à d'autres fins que celles de la mission de service public pour les besoins de laquelle les documents ont été produits ou reçus.</br>
-                Les informations publiques ne sont couvertes par aucun droit d'auteur, mais leur réutilisation est soumise à la condition que ces informations ne soient pas altérées, que leur sens ne soit pas dénaturé, que leurs sources (nom du site) et la date de leur dernière mise à jour soient mentionnées.), et éventuellement d'un lien renvoyant vers le document original en ligne sur ce site.</br>
-                En revanche, concernant tous les autres documents, considérés comme des œuvres au sens du Code la Propriété Intellectuelle et diffusés, avec l’autorisation du ou des auteurs, sur le site, ils font l’objet des protections prévues par ce même code. Toute reprise est dès lors conditionnée à l'accord de l'auteur en vertu de l'article L.122-4 du Code de la Propriété Intellectuelle.</br>
-                Ainsi, toutes les photographies présentes sur le site sont protégées par le droit d'auteur et le droit à l'image.</br>
-                Pour les textes, les usages autorisés sont les suivants :</br>
-                Reproduction, diffusion ou représentation à des fins d'information privée ou professionnelle, à la condition expresse de ne pas modifier les œuvres et de mentionner la source.</br>
-                La Région Bretagne met à disposition gratuitement les contenus consultables sur ce site. Elle ne peut garantir l’absence de défauts ou d’irrégularités éventuellement présents sur ce site et ne garantit pas la fourniture continue du service. Elle ne peut être tenue pour responsable de toute perte, préjudice ou dommage de quelque sorte, causé à des tiers du fait de la réutilisation de ses contenus. L’éventuelle réutilisation des contenus publiés par la Région Bretagne sur ce site ne doit pas induire en erreur des tiers quant au contenu, sa source ou sa date de mise à jour.</p>
+        </div>
+        <div class="row vertical-align" style="margin-bottom: 20px;">
+            <div class="col-lg-3 col-md-5 col-sm-12">
+                <img src="apps/region/accessibilite/img/picto-3_clic.jpg" class="img-responsive">
+            </div>
+            <div class="col-lg-9 col-md-7 col-sm-12">
+                <p>Cliquer en haut à gauche de votre écran pour afficher le menu.</p>
+            </div>
+        </div>
+        <div class="row vertical-align" style="margin-bottom: 20px;">
+            <div class="col-lg-3 col-md-5 col-sm-12">
+                <img src="apps/region/accessibilite/img/picto-3_carto.jpg" class="img-responsive">
+            </div>
+            <div class="col-lg-9 col-md-7 col-sm-12">
+                <p>Cliquer sur les établissements et les bâtiments pour afficher les informations d'accessibilité.</p>
+            </div>
+        </div>
+        <div class="row vertical-align" style="margin-bottom: 20px;">
+            <div class="col-lg-3 col-md-5 col-sm-12">
+                <img src="apps/region/accessibilite/img/picto-3_Lycee.jpg" class="img-responsive">
+            </div>
+            <div class="col-lg-9 col-md-7 col-sm-12">
+                <p>Pour agrandir ou réduire la carte :<br/>
+                    utiliser votre souris<br/>
+                    ou<br/>
+                    utiliser les boutons + et - en haut à droite de votre écran.
+                </p>
+            </div>
+        </div>
+        <div class="row vertical-align">
+            <div class="col-lg-3 col-md-5 col-sm-12">
+                <img src="apps/region/accessibilite/img/picto-4_chrome.jpg" class="img-responsive">
+            </div>
+            <div class="col-lg-9 col-md-7 col-sm-12">
+                <p>Pour une utilisation optimale, privilégier l'utilisation des navigateurs Chrome ou Firefox.</p>
             </div>
         </div>
     </div>
 
+    <div role="tabpanel" class="tab-pane" id="h_credits">
+        <div class="row">
+            <div class="col-sm-5">
+                <div style="text-align-last:center; margin-top: 10px;">
+                    <p>Kartenn est une initiative de la Région Bretagne</p>
+                    <img class="center-block" src="apps/region/territoire/img/logo_region_555.svg" width="70px;"></br>
+                    <p>
+                        Conseil régional de Bretagne </br>
+                        283, avenue du Général Patton </br>
+                        CS 21 101 </br>
+                        35711 Rennes Cedex 7
+                    </p>
+                </div>
+                <div style="margin-top:10px;" >
+                    <h5>Informations éditoriales</h5>
+                    <p>
+                        <b>Responsable de la publication</b></br>
+                        Service connaissance et dynamiques territoriales (SCODYT)</br>
+                        <b>Conception et maintenance du site</b></br>
+                        Service connaissance et dynamiques territoriales (SCODYT) - Direction de l'aménagement et de l'égalité collaboration avec la Direction de la communication - Conseil régional de Bretagne
+                    </p>
+                </div>
+                <div style="margin-top:10px;" >
+                    <h5>Technologies utilisées</h5>
+                    <p>
+                        <b>Serveur web:</b> Apache HTTP Server - Apache Tomcat</br>
+                        Serveur BDD:</span> PostgreSQL - PostGIS </br>
+                        <b>Serveur cartographique:</b> Geoserver</br>
+                        <b>Frameworks JS:</b> OpenLayers - Proj4 - JQuery - Bootstrap - Chart JS</br> 
+                        <b>Icônes:</b> www.flaticon.com
+                    </p>
+                    <img class="center-block" src="apps/region/territoire/img/credit.svg" width="220px;">
+                </div>
+            </div>
+            <div class="col-sm-7" style="margin-top: 10px;">
+                <h5 style="margin-top:0px;">Droits d'auteur</h5>
+                <p>
+                    Le site diffuse divers contenus, dont certains relèvent de la catégorie des informations publiques, d’autres sont soumis au respect du Code de propriété intellectuelle.</br>
+                    En vertu de la Loi n°78-753 du 17 juillet 1978 et l’ordonnance n°2005-650 du 6 juin 2005 relative à la liberté d'accès aux documents administratifs et à la réutilisation des informations publiques les informations publiques diffusées sur le site peuvent être utilisées par toute personne qui le souhaite à d'autres fins que celles de la mission de service public pour les besoins de laquelle les documents ont été produits ou reçus.</br>
+                    Les informations publiques ne sont couvertes par aucun droit d'auteur, mais leur réutilisation est soumise à la condition que ces informations ne soient pas altérées, que leur sens ne soit pas dénaturé, que leurs sources (nom du site) et la date de leur dernière mise à jour soient mentionnées.), et éventuellement d'un lien renvoyant vers le document original en ligne sur ce site.</br>
+                    En revanche, concernant tous les autres documents, considérés comme des œuvres au sens du Code la Propriété Intellectuelle et diffusés, avec l’autorisation du ou des auteurs, sur le site, ils font l’objet des protections prévues par ce même code. Toute reprise est dès lors conditionnée à l'accord de l'auteur en vertu de l'article L.122-4 du Code de la Propriété Intellectuelle.</br>
+                    Ainsi, toutes les photographies présentes sur le site sont protégées par le droit d'auteur et le droit à l'image.</br>
+                    Pour les textes, les usages autorisés sont les suivants :</br>
+                    Reproduction, diffusion ou représentation à des fins d'information privée ou professionnelle, à la condition expresse de ne pas modifier les œuvres et de mentionner la source.</br>
+                    La Région Bretagne met à disposition gratuitement les contenus consultables sur ce site. Elle ne peut garantir l’absence de défauts ou d’irrégularités éventuellement présents sur ce site et ne garantit pas la fourniture continue du service. Elle ne peut être tenue pour responsable de toute perte, préjudice ou dommage de quelque sorte, causé à des tiers du fait de la réutilisation de ses contenus. L’éventuelle réutilisation des contenus publiés par la Région Bretagne sur ce site ne doit pas induire en erreur des tiers quant au contenu, sa source ou sa date de mise à jour.
+                </p>
+            </div>
+        </div>
+    </div>
 </div>

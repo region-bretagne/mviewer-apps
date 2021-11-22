@@ -1,0 +1,38 @@
+{
+  "js": ["js/filter.js", "js/jquery.easyDrag.min.js"],
+  "css": "css/filter.css",
+  "html": "filter.html",
+  "target": "page-content-wrapper",
+  "options": {
+    "mviewer":{
+      "filter":{
+        "tooltipPosition": "bottom-left",
+        "title": "Filtrer",
+        "open": true,
+        "zoomOnFeatures": true,
+        "legendTitle": "Sélectionner une donnée :",
+        "style": {
+          "border": "1px #2e5367 solid",
+          "background": "#2e5367",
+          "text": "white",
+          "colorButton": "#2e5367"
+        },
+        "layers": [{
+          "layerId": "site_region_accessibilite",
+          "filter": [{
+              "attribut": "type_etablissement",
+              "type": "button",
+              "label": "Type d'établissement"
+            },
+            {
+              "attribut": "ville",
+              "type": "textbox",
+              "label": "Ville",
+              "updateOnChange": true
+            }
+          ]
+        }]
+      }
+    }
+  }
+}
