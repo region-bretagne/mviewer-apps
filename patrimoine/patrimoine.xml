@@ -9,7 +9,7 @@
             url="https://wxs.ign.fr/essentiels/geoportail/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
             attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
         <baselayer  type="WMTS" id="etatmajor" label="Carte de l'état-major (1820-1866)" title="GéoPortail" maxscale="25000" thumbgallery="img/basemap/etatmajor.jpg"
-            url="https://wxs.ign.fr/cartes/geoportail/r/wms" layers="GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR40" format="image/jpeg" visible="false" fromcapacity="false"
+            url="https://wxs.ign.fr/cartes/geoportail/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.ETATMAJOR40" format="image/jpeg" visible="false" fromcapacity="false"
             attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
         <baselayer  type="WMS" id="cassini" label="Carte de Cassini" title="GéoBretagne" thumbgallery="img/basemap/cassini.jpg" 
 			url="https://geobretagne.fr/geoserver/geobretagne/wms" layers="cassini" format="image/jpeg" visible="false" 
