@@ -137,6 +137,19 @@
 	                	metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9c29be8b-8ba0-4921-82aa-5ef969504426">
 		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.pop.revenu.mst"></template>
 		        </layer>
+		        <layer id="revenu_geom" name="Taux de pauvreté par EPCI en 2018"  visible="false" tiled="false"
+		                searchable="false" queryable="true"
+		                infopanel="bottom-panel"
+		                infoformat="application/vnd.ogc.gml" featurecount="5"
+		                style="taux_pauvrete_epci"
+		                stylesalias=""
+		                timefilter="true" timeinterval="year" timecontrol="slider" timemin="2017" timemax="2018" timevalues="2017,2018"
+		                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+		                attribution="Sources: DGFIP - INSEE - OpenStreetMap | Millésime: 2018 | Traitements: Région Bretagne - Service connaissance dynamiques territoriales" 
+						metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9c29be8b-8ba0-4921-82aa-5ef969504426"
+	                	metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9c29be8b-8ba0-4921-82aa-5ef969504426">
+		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.pop.revenu.mst"></template>
+		        </layer>
 	        </group>
 	        <group name="Ménages" id="grp4" >
 	        	<layer id="rp_menage_union_geom" name="Nombre de ménages"  visible="false" tiled="false"
