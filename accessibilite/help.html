@@ -1,4 +1,8 @@
 <style type="text/css">
+@font-face {
+    font-family: "bretagneFont";
+    src: url("apps/region/accessibilite/fonts/RegionBretagne-Reg.otf");
+}
 #help .nav-tabs {
     border-bottom: none;
     border-top-left-radius: 5px;
@@ -37,6 +41,9 @@
     margin-right: 0;
     padding-left: 40px;
 }
+#help .nav-tabs li a {
+    font-family: "bretagneFont";
+}
 #help .vertical-align {
     display: flex;
     align-items: center;
@@ -57,17 +64,19 @@
     background: rgba(255, 255, 255, .5);
     border: none;
 }
+#help .tab-pane p {
+    color: #000;
+    text-align: left;
+    font-family: "bretagneFont";
+    font-size: 14px;
+}
 #help .panel p {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 0;
 }
-#help .tab-pane p {
-    color: #000;
-    text-align: left;
-}
 #help #h_credits p {
-    font-size: 11px;
+    font-size: 12px;
 }
 </style>
 
@@ -87,7 +96,7 @@
 	<div role="tabpanel" class="tab-pane active" id="h_aide">
         <div class="panel panel-default">
             <div class="panel-body">
-              <p>Dans cette application vous pouvez accéder aux informations d’accessibilité des lycées et bâtiments dont la Région est propriétaire.</p>
+              <p>Dans cette application vous pouvez accéder aux informations d’accessibilité des lycées et bâtiments dont la Région Bretagne est propriétaire.</p>
             </div>
         </div>
         <div class="row vertical-align" style="margin-bottom: 20px;">
@@ -135,7 +144,7 @@
                     <p>Kartenn est une initiative de la Région Bretagne</p>
                     <img class="center-block" src="apps/region/territoire/img/logo_region_555.svg" width="70px;"></br>
                     <p>
-                        Conseil régional de Bretagne </br>
+                        Région Bretagne</br>
                         283, avenue du Général Patton </br>
                         CS 21 101 </br>
                         35711 Rennes Cedex 7
@@ -145,9 +154,9 @@
                     <h5>Informations éditoriales</h5>
                     <p>
                         <b>Responsable de la publication</b></br>
-                        Service connaissance et dynamiques territoriales (SCODYT)</br>
+                        Service de l'Inventaire du patrimoine culturel de Bretagne</br>
                         <b>Conception et maintenance du site</b></br>
-                        Service connaissance et dynamiques territoriales (SCODYT) - Direction de l'aménagement et de l'égalité collaboration avec la Direction de la communication - Conseil régional de Bretagne
+                        Service connaissance, observation, planification et prospective (SCOPP) - Direction de l'aménagement et de l'égalité collaboration avec le Service de l'Inventaire du patrimoine culturel de Bretagne - Conseil régional de Bretagne
                     </p>
                 </div>
                 <div style="margin-top:10px;" >
