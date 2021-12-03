@@ -26,7 +26,7 @@
                 fusesearchresult="{{nom}}"
                 featurecount="1"
                 attribution="Région Bretagne">
-                <template url="apps/region/equipements/templates/lycee.mst"/>
+                <!--<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/equipements/templates/lycee.mst"/>-->
             </layer>
             <layer id="eqpts"
                 name="Autres sites"
@@ -41,7 +41,7 @@
                 queryable="true"
                 visible="true"
                 attribution="Région Bretagne">
-                <template url="apps/region/equipements/templates/equipement.mst" />
+                <!--<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/equipements/templates/equipement.mst" />-->
             </layer>
             <layer id="bretagne_5" name="Bretagne à 5" visible="true" tiled="false" namespace="rb"
 				queryable="false" 
