@@ -27,8 +27,8 @@
 					url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/accessibilite/customlayers/site_region_accessibilite.js"
 					tooltip="true"	tooltipcontent="{{nom}}"
 					attribution="Région Bretagne" 
-					metadata-csw=""
-					metadata="" >  
+					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a9dc8a48-ed1c-449e-8567-b312a13892ff"
+					metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/a9dc8a48-ed1c-449e-8567-b312a13892ff" >  
 					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/accessibilite/templates/site_region_accessibilite.mst" />
             </layer>
             <layer id="bretagne_5" name="Bretagne à 5" visible="true" tiled="false" namespace="rb"
@@ -57,8 +57,8 @@
 					style="" opacity="0.6"
 					tooltip="true"	tooltipcontent="{{libelle_bat}}"
 					attribution="Région Bretagne" 
-					metadata-csw=""
-					metadata="" >  
+					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=384c440f-1420-4522-8167-3c03e89e270d"
+					metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/384c440f-1420-4522-8167-3c03e89e270d" >  
 					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/accessibilite/templates/batiment_region_accessibilite.mst" />
             </layer>
 		</theme>   

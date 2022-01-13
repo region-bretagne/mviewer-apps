@@ -20,7 +20,7 @@
     <themes>
         <theme name="ESS"  id="ess" collapsed="true" icon="ship">
             <layer id="pass_creation" name="Point d'accueil Pass Création"  visible="true" tiled="false"
-                infoformat="application/vnd.ogc.gml" featurecount="1" queryable="true"
+                infoformat="application/vnd.ogc.gml" featurecount="10" queryable="true"
                 url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                 attribution="Source: Région Bretagne" 
                 metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/59d02b75-407b-4e80-8569-4b5bf0dfd6d0"
