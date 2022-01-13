@@ -21,7 +21,7 @@
             attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
     </baselayers> 
     <authentification url="who" loginurl="?login" logouturl="../logout" enabled="true"/>
-    <proxy url="../proxy/?url="/>
+    <proxy url="../proxy/?url="/><!--Utilisation du proxy pour les couches http ex Carmen-->
     <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par l'API adresse.data.gouv.fr"/>
     <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="current" />
     <searchparameters bbox="false" localities="true" features="true"/>
@@ -248,25 +248,6 @@
 				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/01a0228d-feb1-4385-9eeb-55062e3f26ed"> 
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.ecluse.mst"></template>
 			</layer>		
-			<!--<layer id="ecluse" name="Ecluse" visible="true" tiled="false" dynamiclegend="true"
-				queryable="true" searchable="true" infoformat="application/vnd.ogc.gml" featurecount="20"
-				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-				style="ecluse_proprietaire" 
-				attribution="Région Bretagne" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=774a2065-339f-4802-a50f-4b84b6ca249f"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/774a2065-339f-4802-a50f-4b84b6ca249f"> 
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.ecluse.mst"></template>
-			</layer>		
-			<layer id="ecluse_trafic" name="Ecluse - Trafic annuel" visible="false" tiled="false" 
-				queryable="true" infoformat="application/vnd.ogc.gml" infopanel="bottom-panel" featurecount="20"
-				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2003" timemax="2017" timevalues="2003,2005,2007,2009,2011,2013,2015,2017" 
-				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-				style="ecluse_trafic_millesime" 
-				attribution="Région Bretagne" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=774a2065-339f-4802-a50f-4b84b6ca249f"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/774a2065-339f-4802-a50f-4b84b6ca249f" > 
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.ecluse_trafic2.mst"></template>
-			</layer>-->	
 			<layer id="port_vn" name="Ports et mouillages " visible="false" tiled="false" 
 				queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
@@ -506,8 +487,8 @@
                 type="customlayer" opacity="0.8" legendurl="img/blank.gif"
                 url="https://kartenn.region-bretagne.fr/kartoviz/demo/cad/layer2.js"
                 attribution="Source: DGFIP. Cette couche affiche le cadastre de la commune sélectionnée dans le panneau &lt;strong&gt;Sélection parcellaire&lt;/strong&gt;"
-                metadata=""
-                metadata-csw="">
+                metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/8728b29d-267e-4d31-bad7-de528ba9c899"
+                metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=8728b29d-267e-4d31-bad7-de528ba9c899" >	
             </layer>
 			 <layer id="CP.CadastralBuilding" name="Bâti" scalemin="0" scalemax="20000" visible="false" tiled="true"
 				queryable="false" fields="" aliases=""
@@ -681,7 +662,7 @@
                 infoformat="text/html" featurecount="5"                
 				url="https://wxs.ign.fr/geodesie/geoportail/v/wms" 
 				attribution="IGN" 
-				metadata=""
+				metadata="https://geoservices.ign.fr/sites/default/files/2021-07/IGNF_DONNEES_GEODESIQUES.html"
 				metadata-csw="" />	
 		</theme>
         <theme name="Limites administratives"  collapsed="true" id="territoire" icon="globe">
@@ -747,7 +728,7 @@
                 infoformat="application/vnd.ogc.gml" featurecount="1"
 				style="departement_region" 
 				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
-				attribution="IGN - BDCARTO" 
+				attribution="Admin Express" 
 				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/e16d50d4-746d-44e3-a5e7-5fc000f97665" 
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=e16d50d4-746d-44e3-a5e7-5fc000f97665" >
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.departement.mst"></template>
