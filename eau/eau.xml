@@ -88,7 +88,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=403d129b-e8ca-48ff-81a9-77401c1d933b"
 				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/403d129b-e8ca-48ff-81a9-77401c1d933b" />
-			<layer id="riviere_etat_eco_2017" name="Rivière : état écologique 2017" visible="true" tiled="true" namespace="interne"
+			<layer id="riviere_etat_eco" name="Rivière : état écologique 2019" visible="true" tiled="true" namespace="interne"
 				queryable="true" fields="nom" aliases="nom"
 				infoformat="text/html" featurecount="5"
 				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
@@ -104,7 +104,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw=""
 				metadata="" />
-			<layer id="masse_eau_etat_eco" name="Masse d'eau : état écologique 2017" visible="true" tiled="true" namespace="interne"
+			<layer id="masse_eau_etat_eco" name="Masse d'eau : état écologique 2019" visible="true" tiled="true" namespace="interne"
 				queryable="true" fields="nom" aliases="nom" opacity="0.3"
 				infoformat="text/html" featurecount="5"
 				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
@@ -120,7 +120,7 @@
 				attribution="Région Bretagne" 
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=3a06c4da-2e8a-4a3b-b0f9-68ac4d2351ca"
 				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/3a06c4da-2e8a-4a3b-b0f9-68ac4d2351ca" />
-			<layer id="sage_information" name="Avancement SAGE au 01/01/2020" visible="false" tiled="false" namespace="interne"
+			<layer id="sage_information" name="Avancement SAGE au 01/01/2022" visible="false" tiled="false" namespace="interne"
 				queryable="true" fields="nom" aliases="nom"
 				infoformat="text/html" featurecount="5"
 				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
