@@ -39,7 +39,7 @@
 </extensions>
 <themes mini="true" legendmini = "true"> 
     <theme id="theme-20210205120002" name="Capacités de développement humain" collapsed="false" icon="fas fa-caret-right"> 
-		<layer id="epci_osm" name="EPCI" visible="true" tiled="false"
+		<layer id="epci_2021_osm" name="EPCI" visible="true" tiled="false"
 			queryable="false"
 			style="contour_blanc"  toplayer="true" showintoc="false"
 			url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
