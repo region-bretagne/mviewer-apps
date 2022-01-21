@@ -686,14 +686,14 @@
           </se:PolygonSymbolizer>
         </se:Rule>
         <se:Rule>
-          <se:Name>CC du Pays de Landerneau-Daoulas</se:Name>
+          <se:Name>CA du Pays de Landerneau-Daoulas</se:Name>
           <se:Description>
-            <se:Title>CC du Pays de Landerneau-Daoulas</se:Title>
+            <se:Title>CA du Pays de Landerneau-Daoulas</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
               <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
-              <ogc:Literal>CC du Pays de Landerneau-Daoulas</ogc:Literal>
+              <ogc:Literal>CA du Pays de Landerneau-Daoulas</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
@@ -920,6 +920,23 @@
           <se:PolygonSymbolizer>
             <se:Fill>
               <se:SvgParameter name="fill">#4C74B5</se:SvgParameter>
+            </se:Fill>
+          </se:PolygonSymbolizer>
+        </se:Rule>
+        <se:Rule>
+          <se:Name>CC Baud Communauté</se:Name>
+          <se:Description>
+            <se:Title>CC Baud Communauté</se:Title>
+          </se:Description>
+          <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
+            <ogc:PropertyIsEqualTo>
+              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:Literal>CC Baud Communauté</ogc:Literal>
+            </ogc:PropertyIsEqualTo>
+          </ogc:Filter>
+          <se:PolygonSymbolizer>
+            <se:Fill>
+              <se:SvgParameter name="fill">#2A317E</se:SvgParameter>
             </se:Fill>
           </se:PolygonSymbolizer>
         </se:Rule>
