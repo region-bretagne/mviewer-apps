@@ -1,10 +1,10 @@
 {{#features}}
 	<li class="item" id="{{feature_ol_uid}}">
-		<h3 class="rb-title-feature">{{NOM_EPCI}}</h3>
+		<h3 class="rb-title-feature">{{nom_epci}}</h3>
 
 		<p class="rb-text-feature">		
-			<span style="font-weight:bold"> Code SIREN :</span> {{SIREN_EPCI}}<br/>
-			<span style="font-weight:bold"> Type EPCI :</span> {{NATURE_EPC}}<br/>
+			<span style="font-weight:bold"> Code SIREN :</span> {{code_epci}}<br/>
+			<span style="font-weight:bold"> Type EPCI :</span> {{type_epci}}<br/>
        </p>
 	</li>
 {{/features}}

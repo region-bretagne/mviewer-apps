@@ -415,17 +415,6 @@
                 metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=99e78163-ce9a-4eee-9ea0-36afc2a53d25" >	   
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.lycee.mst"></template> 
 		    </layer>  
-		    <layer id="cfa_site" name="Centre de formation des apprentis"  visible="false" tiled="false"
-                    searchable="false" queryable="true" fields="axe" aliases="axe"   
-                    infoformat="application/vnd.ogc.gml" featurecount="20"
-                    sld="https://kartenn.region-bretagne.fr/styles/cfa_site.sld" 
-                    url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-                    legendurl="https://kartenn.region-bretagne.fr/doc/icons_region/formation.svg" 
-                    attribution="Source: Région Bretagne" 
-                    metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/f713de6d-1269-40b2-8bd4-3704c106fde6"
-                    metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=f713de6d-1269-40b2-8bd4-3704c106fde6" >
-		            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.centre_formation_apprenti.mst"></template>
-		    </layer>                             
         </theme>
         <!--<theme name="Services"  collapsed="false" id="services" icon="street-view"> 
         	<layer id="poi_equipement_sport" name="Sports et Loisirs"  visible="false" tiled="false"

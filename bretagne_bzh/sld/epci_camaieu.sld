@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <StyledLayerDescriptor xmlns="http://www.opengis.net/sld" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/sld http://schemas.opengis.net/sld/1.1.0/StyledLayerDescriptor.xsd" version="1.1.0" xmlns:se="http://www.opengis.net/se" xmlns:ogc="http://www.opengis.net/ogc" xmlns:xlink="http://www.w3.org/1999/xlink">
   <NamedLayer>
-    <se:Name>dreal_b:EPCI_053</se:Name>
+    <se:Name>ign:epci</se:Name>
     <UserStyle>
-      <se:Name>dreal_b:EPCI_053</se:Name>
+      <se:Name>ign:epci</se:Name>
       <se:FeatureTypeStyle>
         <se:Rule>
           <se:Name>Brest Métropole</se:Name>
@@ -12,7 +12,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>Brest Métropole</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -29,7 +29,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CA Concarneau Cornouaille Agglomération</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -46,7 +46,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CA de la Presqu'Ile de Guérande Atlantique</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -63,7 +63,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CA Dinan Agglomération</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -80,8 +80,8 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
-              <ogc:Literal>CA du Pays de Saint-Malo - Saint-Malo Agglomération</ogc:Literal>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
+              <ogc:Literal>CA du Pays de Saint Malo Agglomération</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
@@ -97,7 +97,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CA Fougères Agglomération</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -114,7 +114,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CA Golfe du Morbihan - Vannes Agglomération</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -131,7 +131,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CA Guingamp-Paimpol Agglomération de l'Armor à l'Argoat</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -148,8 +148,8 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
-              <ogc:Literal>CA Lamballe Terre et Mer</ogc:Literal>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
+              <ogc:Literal>CA de Lamballe Terre et Mer</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
@@ -165,7 +165,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CA Lannion-Trégor Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -182,7 +182,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CA Lorient Agglomération</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -199,7 +199,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CA Morlaix Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -216,7 +216,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CA Quimper Bretagne Occidentale</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -233,7 +233,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CA Quimperlé Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -250,7 +250,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CA Redon Agglomération</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -267,7 +267,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CA Saint-Brieuc Armor Agglomération</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -284,7 +284,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CA Vitré Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -301,7 +301,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CC Arc Sud Bretagne</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -318,7 +318,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CC Auray Quiberon Terre Atlantique</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -335,7 +335,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CC Bretagne porte de Loire Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -352,7 +352,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CC Bretagne Romantique</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -369,7 +369,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CC Cap Sizun - Pointe du Raz</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -380,14 +380,14 @@
           </se:PolygonSymbolizer>
         </se:Rule>
         <se:Rule>
-          <se:Name>CC Centre Morbihan Communauté</se:Name>
+          <se:Name>Centre Morbihan Communauté</se:Name>
           <se:Description>
-            <se:Title>CC Centre Morbihan Communauté</se:Title>
+            <se:Title>Centre Morbihan Communauté</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
-              <ogc:Literal>CC Centre Morbihan Communauté</ogc:Literal>
+              <ogc:PropertyName>code_epci</ogc:PropertyName>
+              <ogc:Literal>200096683</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
@@ -403,7 +403,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CC Communauté Lesneven Côte des Légendes</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -420,8 +420,8 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
-              <ogc:Literal>CC Côte d'Emeraude</ogc:Literal>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
+              <ogc:Literal>CC Côte d'Émeraude</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
@@ -437,7 +437,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CC Couesnon Marches de Bretagne</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -454,8 +454,8 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
-              <ogc:Literal>CC de Belle Ile en mer</ogc:Literal>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
+              <ogc:Literal>CC de Belle-Île-en-Mer</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
@@ -471,7 +471,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CC de Blavet Bellevue Océan</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -488,7 +488,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CC de Brocéliande</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -505,8 +505,8 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
-              <ogc:Literal>CC de Haute Cornouaille</ogc:Literal>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
+              <ogc:Literal>CC de Haute-Cornouaille</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
@@ -516,14 +516,14 @@
           </se:PolygonSymbolizer>
         </se:Rule>
         <se:Rule>
-          <se:Name>CC De l'Oust à Brocéliande Communauté</se:Name>
+          <se:Name>CC de l'Oust à Brocéliande</se:Name>
           <se:Description>
-            <se:Title>CC De l'Oust à Brocéliande Communauté</se:Title>
+            <se:Title>CC de l'Oust à Brocéliande</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
-              <ogc:Literal>CC De l'Oust à Brocéliande Communauté</ogc:Literal>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
+              <ogc:Literal>CC de l'Oust à Brocéliande</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
@@ -533,14 +533,14 @@
           </se:PolygonSymbolizer>
         </se:Rule>
         <se:Rule>
-          <se:Name>CC de Pleyben-Châteaulin-Porzay</se:Name>
+          <se:Name>CC Pleyben-Châteaulin-Porzay</se:Name>
           <se:Description>
-            <se:Title>CC de Pleyben-Châteaulin-Porzay</se:Title>
+            <se:Title>CC Pleyben-Châteaulin-Porzay</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
-              <ogc:Literal>CC de Pleyben-Châteaulin-Porzay</ogc:Literal>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
+              <ogc:Literal>CC Pleyben-Châteaulin-Porzay</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
@@ -556,7 +556,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CC de Saint-Méen Montauban</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -573,8 +573,8 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
-              <ogc:Literal>CC de Vallons de Haute-Bretagne Communauté</ogc:Literal>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
+              <ogc:Literal>CC Vallons de Haute-Bretagne Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
@@ -590,7 +590,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CC Douarnenez Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -607,7 +607,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CC du Haut Pays Bigouden</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -624,8 +624,8 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
-              <ogc:Literal>CC du Kreiz-Breizh</ogc:Literal>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
+              <ogc:Literal>CC du Kreiz-Breizh (CCKB)</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
@@ -641,7 +641,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CC du Pays Bigouden Sud</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -658,8 +658,8 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
-              <ogc:Literal>CC du Pays de Chateaugiron Communauté</ogc:Literal>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
+              <ogc:Literal>CC Pays de Châteaugiron Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
@@ -675,8 +675,8 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
-              <ogc:Literal>CC du Pays de Dol et de la Baie du Mont St Michel</ogc:Literal>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
+              <ogc:Literal>CC du Pays de Dol et de la Baie du Mont-Saint-Michel</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
@@ -692,7 +692,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CA du Pays de Landerneau-Daoulas</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -709,7 +709,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CC du Pays de Landivisiau</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -726,8 +726,8 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
-              <ogc:Literal>CC du Pays Des Abers</ogc:Literal>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
+              <ogc:Literal>CC du Pays des Abers</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
@@ -743,7 +743,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CC du Pays d'Iroise</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -760,7 +760,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CC du Pays Fouesnantais</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -771,14 +771,14 @@
           </se:PolygonSymbolizer>
         </se:Rule>
         <se:Rule>
-          <se:Name>CC du Val d'Ille - Aubigné</se:Name>
+          <se:Name>CC du Val d'Ille-Aubigné</se:Name>
           <se:Description>
-            <se:Title>CC du Val d'Ille - Aubigné</se:Title>
+            <se:Title>CC du Val d'Ille-Aubigné</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
-              <ogc:Literal>CC du Val d'Ille - Aubigné</ogc:Literal>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
+              <ogc:Literal>CC du Val d'Ille-Aubigné</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
@@ -794,7 +794,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CC Haut-Léon Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -811,7 +811,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CC Leff Armor Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -822,14 +822,14 @@
           </se:PolygonSymbolizer>
         </se:Rule>
         <se:Rule>
-          <se:Name>CC Liffré - Cormier Communauté</se:Name>
+          <se:Name>CC Liffré-Cormier Communauté</se:Name>
           <se:Description>
-            <se:Title>CC Liffré - Cormier Communauté</se:Title>
+            <se:Title>CC Liffré-Cormier Communauté</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
-              <ogc:Literal>CC Liffré - Cormier Communauté</ogc:Literal>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
+              <ogc:Literal>CC Liffré-Cormier Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
@@ -845,7 +845,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CC Loudéac Communauté - Bretagne Centre</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -862,7 +862,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CC Montfort Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -879,7 +879,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CC Monts d'Arrée Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -896,7 +896,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CC Ploërmel Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -907,14 +907,14 @@
           </se:PolygonSymbolizer>
         </se:Rule>
         <se:Rule>
-          <se:Name>CC Poher Communauté</se:Name>
+          <se:Name>CC Poher communauté</se:Name>
           <se:Description>
-            <se:Title>CC Poher Communauté</se:Title>
+            <se:Title>CC Poher communauté</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
-              <ogc:Literal>CC Poher Communauté</ogc:Literal>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
+              <ogc:Literal>CC Poher communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
@@ -924,14 +924,14 @@
           </se:PolygonSymbolizer>
         </se:Rule>
         <se:Rule>
-          <se:Name>CC Baud Communauté</se:Name>
+          <se:Name>Baud Communauté</se:Name>
           <se:Description>
-            <se:Title>CC Baud Communauté</se:Title>
+            <se:Title>Baud Communauté</se:Title>
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
-              <ogc:Literal>CC Baud Communauté</ogc:Literal>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
+              <ogc:Literal>Baud Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
@@ -947,7 +947,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CC Pontivy Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -964,8 +964,8 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
-              <ogc:Literal>CC Presqu'Ile de Crozon-Aulne maritime</ogc:Literal>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
+              <ogc:Literal>CC Presqu'île de Crozon-Aulne maritime</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
           <se:PolygonSymbolizer>
@@ -981,7 +981,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CC Questembert Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -998,7 +998,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CC Roche aux Fées Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -1015,7 +1015,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>CC Roi Morvan Communauté</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>
@@ -1032,7 +1032,7 @@
           </se:Description>
           <ogc:Filter xmlns:ogc="http://www.opengis.net/ogc">
             <ogc:PropertyIsEqualTo>
-              <ogc:PropertyName>NOM_EPCI</ogc:PropertyName>
+              <ogc:PropertyName>nom_epci</ogc:PropertyName>
               <ogc:Literal>Rennes Métropole</ogc:Literal>
             </ogc:PropertyIsEqualTo>
           </ogc:Filter>

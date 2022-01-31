@@ -15,14 +15,14 @@
             attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
     </baselayers>    
     <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par l'API adresse.data.gouv.fr"/>
-    <searchparameters bbox="false" localities="true" features="true"/>
+    <searchparameters bbox="false" localities="false" features="true" inputlabel="Rechercher lycée / ville"/>
 
     <themes>
         <theme name="Site"  collapsed="true" id="access" icon="square">
 
             <layer id="site_region_accessibilite" name="Type de sites" visible="true" tiled="false" namespace="rb" type="customlayer" vectorlegend="true"
 					queryable="true" infoformat="application/vnd.ogc.gml" 
-					searchable="true" searchengine="fuse" fusesearchkeys="nom" fusesearchresult="{{nom}}"
+					searchable="true" searchengine="fuse" fusesearchkeys="nom,ville" fusesearchresult="{{nom}} - {{ville}}"
                     featurecount="20" jsonfields="accessibilite"
 					url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/accessibilite/customlayers/site_region_accessibilite.js"
 					tooltip="true"	tooltipcontent="{{nom}}"

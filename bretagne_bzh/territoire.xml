@@ -29,43 +29,43 @@
     </baselayers> 
 <themes mini="false"> 
     <theme id="theme-20191105154130" name="Administratif" collapsed="false" icon="fas fa-globe"> 
-			<layer id="FDepartement" name="Département" visible="false" tiled="true"
+			<layer id="departement_metro" name="Département" visible="false" tiled="true"
 				queryable="true"
                 infoformat="application/vnd.ogc.gml" featurecount="1"
 				sld="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/sld/departement_region.sld"
-				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
-				attribution="IGN - BDCARTO" 
+				url="https://geobretagne.fr/geoserver/ign/wms" 
+				attribution="IGN - ADMIN EXPRESS" 
 				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/e16d50d4-746d-44e3-a5e7-5fc000f97665" 
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=e16d50d4-746d-44e3-a5e7-5fc000f97665">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/departement.mst"></template> 
 			</layer> 
-	    	<layer id="n_pays" name="Pays" visible="false" tiled="true"
+	    	<layer id="pays" name="Pays" visible="false" tiled="true"
 				queryable="true"
                 infoformat="application/vnd.ogc.gml" featurecount="5"             
 				sld="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/sld/pays_region.sld"
-				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
-				attribution="GéoBretagne" 
+				url="https://geobretagne.fr/geoserver/ign/wms" 
+				attribution="IGN - ADMIN EXPRESS" 
 				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/9722d181-75f9-40ab-a136-a9f9ed6f29a5" 
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9722d181-75f9-40ab-a136-a9f9ed6f29a5" >
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/pays.mst"></template> 
 			</layer> 
-			<layer id="EPCI_053" name="Intercommunalité" visible="true" tiled="true"
+			<layer id="epci" name="Intercommunalité" visible="true" tiled="true"
 				queryable="true" opacity="0.6"
                 infoformat="application/vnd.ogc.gml" featurecount="1"
 				sld="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/sld/epci_camaieu.sld" 
 				legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/legend/legend_epci.png"
-				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
-				attribution="GéoBretagne" 
+				url="https://geobretagne.fr/geoserver/ign/wms" 
+				attribution="IGN - ADMIN EXPRESS" 
 				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/2298d744-49cb-4fcb-9487-26f916fecdff" 
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=2298d744-49cb-4fcb-9487-26f916fecdff" >
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/epci.mst"></template> 
 			</layer> 
-			<layer id="commune_bdcarto" name="Commune" visible="false" tiled="true"
+			<layer id="commune_metro" name="Commune" visible="false" tiled="true"
 				queryable="true"
                 infoformat="application/vnd.ogc.gml" featurecount="1"                
 				sld="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/sld/commune_region.sld"
-				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
-				attribution="IGN - BDCARTO" 
+				url="https://geobretagne.fr/geoserver/ign/wms" 
+				attribution="IGN - ADMIN EXPRESS" 
 				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/b08e6cb1-236c-49b7-88f9-42b500d274d5"
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b08e6cb1-236c-49b7-88f9-42b500d274d5" >
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/templates/commune.mst"></template> 

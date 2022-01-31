@@ -1,19 +1,19 @@
 {{#features}}
 	<li class="item" id="{{feature_ol_uid}}">
-		<h2 class="rb-title-feature">{{NOM_EPCI}}</h2>
+		<h2 class="rb-title-feature">{{nom_epci}}</h2>
 
 		<div class="rb-text-feature">		
-			<span style="font-weight:bold"> Type d’établissement public de coopération intercommunale (EPCI) :</span> <span class="epci {{NATURE_EPC}}"></span>
+			<span style="font-weight:bold"> Type d’établissement public de coopération intercommunale (EPCI) :</span> <span class="epci {{type_epci}}">{{type_epci}}</span>
        </div>
 	</li>
 {{/features}}
 
 <style>
 .epci.CC::after {
-    content: "Communauté de Communes";
+    content: "Communauté de communes";
 }
 .epci.CA::after {
-    content: "Communauté d'Agglomération";
+    content: "Communauté d'agglomération";
 }
 .epci.METRO::after {
     content: "Métropole";

@@ -51,11 +51,11 @@
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=4c8d85d8-93fa-420d-9cd4-b7b845710fc3" >	   
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/rde/templates/contact_dev_eco.mst"></template> 
             </layer>
-			<layer id="EPCI_053" name="EPCI" visible="true" tiled="false"
-				queryable="false" fields="NOM_EPCI,SIREN_EPCI" aliases="Nom,SIREN"
+			<layer id="epci" name="EPCI" visible="true" tiled="false"
+				queryable="false"
                 infoformat="application/vnd.ogc.gml" featurecount="5"
 				style="epci_region_fin" 
-				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
+				url="https://geobretagne.fr/geoserver/ign/wms" 
 				attribution="GéoBretagne" 
 				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/2298d744-49cb-4fcb-9487-26f916fecdff" 
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=2298d744-49cb-4fcb-9487-26f916fecdff" >	

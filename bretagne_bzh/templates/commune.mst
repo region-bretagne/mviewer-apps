@@ -1,10 +1,10 @@
 {{#features}}
 	<li class="item" id="{{feature_ol_uid}}">
-		<h3 class="rb-title-feature">{{NOM_COM}}</h3>
+		<h3 class="rb-title-feature">{{nom_com}}</h3>
 
 		<p class="rb-text-feature">		
-			<span style="font-weight:bold"> Code INSEE :</span> {{INSEE_COM}}<br/>
-			<span style="font-weight:bold"> Population :</span> {{POPULATION}} habitants<br/>
+			<span style="font-weight:bold"> Code INSEE :</span> {{insee_com}}<br/>
+			<span style="font-weight:bold"> Population :</span> {{population}} habitants<br/>
        </p>
 	</li>
 {{/features}}
