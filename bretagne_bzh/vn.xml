@@ -390,7 +390,7 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.commune_contact.mst"></template>
 			</layer>
 			<layer id="epci" name="Intercommunalité" visible="false" tiled="false"
-				queryable="true" fields="nom_epci,code_epci" aliases="Nom,SIREN"
+				queryable="true" fields="nom,code_epci" aliases="Nom,SIREN"
                 infoformat="application/vnd.ogc.gml" featurecount="5"
 				style="epci_region" 
 				url="https://geobretagne.fr/geoserver/ign/wms" 
@@ -422,7 +422,7 @@
 			<layer id="departement_metro" name="Département" visible="false" tiled="false"
 				queryable="true" fields="nom" aliases="Nom"
                 infoformat="application/vnd.ogc.gml" featurecount="1"
-				style="departement_region" 
+				style="departement_region" filter="insee_reg=53"
 				url="https://geobretagne.fr/geoserver/ign/wms" 
 				attribution="IGN - ADMIN EXPRESS" 
 				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/e16d50d4-746d-44e3-a5e7-5fc000f97665" 

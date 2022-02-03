@@ -1,6 +1,6 @@
 {{#features}}
 	<li class="item" id="{{feature_ol_uid}}">
-		<h3 class="rb-title-feature">{{PAYS_NOM}}</h3>
+		<h3 class="rb-title-feature">{{nom}}</h3>
 
 	</li>
 {{/features}}

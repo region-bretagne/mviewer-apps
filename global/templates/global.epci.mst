@@ -1,6 +1,6 @@
 {{#features}}
 	<li class="item" id="{{feature_ol_uid}}">
-		<h3 class="rb-title-feature">{{nom_epci}}</h3>
+		<h3 class="rb-title-feature">{{nom}}</h3>
 
 		<p class="rb-text-feature">		
 			<span style="font-weight:bold"> Code SIREN :</span> {{code_epci}}<br/>
