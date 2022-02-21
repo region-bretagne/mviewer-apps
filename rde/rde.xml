@@ -24,7 +24,7 @@
 				searchable="true" queryable="true" infoformat="application/vnd.ogc.gml"
 				featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-				attributefilter="true" attributefield="annee" attributevalues="2018,2019,2020,2021"  attributelabel="Année" 
+				attributefilter="true" attributefield="annee" attributevalues="2018,2019,2020,2021,2022"  attributelabel="Année" 
 				style="" 
 				attribution="Région Bretagne" 
 				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/d3679e5a-ad7b-4266-844c-3111e9ac118b"

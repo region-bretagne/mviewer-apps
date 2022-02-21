@@ -498,3 +498,41 @@ body .popover-title {
 -webkit-box-shadow: none !important;
 box-shadow: none !important;
 }
+/*******************************
+------------- ULTRA-SIMPLIFIE
+********************************/	
+.xs.mode-u #btn-mode-su-menu {
+    top: 10px!important;
+}
+.xs.mode-u #btn-mode-su-menu:hover {
+    opacity: 0.9;	
+}
+.xs.mode-s #btn-mode-su-menu:after, .xs.mode-u #btn-mode-su-menu:after {
+	content:'Afficher la légende';
+	position: relative;
+	margin-left: 10px;
+}
+.xs.mode-u .modal-content {
+    border-radius: 10px!important;
+    padding: 10px!important;
+    font-family:var(--myfont);
+    background-color: #fffffff7!important;
+}
+.xs.mode-s #iconhelp {
+    display: none !important;
+}
+.active #btn-remove-layers {
+    display: none!important;
+}
+.mv-grip {
+    display: none!important;
+}
+.mv-layer-remove {
+    display: none!important;
+}
+.xs.mode-u .modal-title {
+    display: none!important;
+}
+/* button#sharebtn { */
+    /* display: none!important; */
+/* } */

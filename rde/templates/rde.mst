@@ -8,7 +8,9 @@
 			{{/precisions_contenu}}
 			<b>Lieu : </b> {{commune}} - {{nom_lieu}}<br>
 			<b>Type de séquence : </b> {{typologie_sequence}}<br>
+			{{#nb_participants_total}}
 			<b>Nombre de participant.e.s : </b> {{nb_participants_total}}<br>
+			{{/nb_participants_total}}
 		</p>
 		<div class="rb-but-list">
 			<div class="col-md-12">
