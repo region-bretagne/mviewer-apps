@@ -44,6 +44,9 @@
 #help .nav-tabs li a {
     font-family: "bretagneFont";
 }
+#help .nav-tabs li:nth-child(2) a {
+    border-right: 1px solid #BEDDE2 !important;
+}
 #help .vertical-align {
     display: flex;
     align-items: center;
@@ -78,17 +81,25 @@
 #help #h_credits p {
     font-size: 12px;
 }
+#help #h_lexique .picto-handicap {
+	margin-top: 20px;
+}
+#help #h_lexique .picto-handicap p {
+	text-align: center;
+}
 </style>
 
 <ul class="nav nav-tabs" style="background-color: #BEDDE2;" role="tablist">
-    <li role="presentation" class="col-sm-6 active">
+    <li role="presentation" class="col-xs-4 active">
         <a href="#h_aide" aria-controls="messages" role="tab" data-toggle="tab">Bienvenue</a>
     </li>
-    <li role="presentation" class="col-sm-6" style="position: relative;">
+	<li role="presentation" class="col-xs-4">
+        <a href="#h_lexique" aria-controls="settings" role="tab" data-toggle="tab">Lexique</a>
+    </li>
+    <li role="presentation" class="col-xs-4" style="position: relative;">
         <a href="#h_credits" aria-controls="settings" role="tab" data-toggle="tab"><span class="far fa-copyright"></span> Crédits</a>
         <button type="button" class="close" style="position: absolute; right: 15px; top: 12px;" data-dismiss="modal">×</button>
     </li>
-    
 </ul>
 
  <!-- Tab panes -->
@@ -100,26 +111,26 @@
             </div>
         </div>
         <div class="row vertical-align" style="margin-bottom: 20px;">
-            <div class="col-lg-3 col-md-5 col-sm-12">
+            <div class="col-lg-3 col-md-5 col-xs-12">
                 <img src="apps/region/accessibilite/img/picto-3_clic.jpg" class="img-responsive">
             </div>
-            <div class="col-lg-9 col-md-7 col-sm-12">
+            <div class="col-lg-9 col-md-7 col-xs-12">
                 <p>Cliquer en haut à gauche de votre écran pour afficher le menu.</p>
             </div>
         </div>
         <div class="row vertical-align" style="margin-bottom: 20px;">
-            <div class="col-lg-3 col-md-5 col-sm-12">
+            <div class="col-lg-3 col-md-5 col-xs-12">
                 <img src="apps/region/accessibilite/img/picto-3_carto.jpg" class="img-responsive">
             </div>
-            <div class="col-lg-9 col-md-7 col-sm-12">
+            <div class="col-lg-9 col-md-7 col-xs-12">
                 <p>Cliquer sur les établissements et les bâtiments pour afficher les informations d'accessibilité.</p>
             </div>
         </div>
         <div class="row vertical-align" style="margin-bottom: 20px;">
-            <div class="col-lg-3 col-md-5 col-sm-12">
+            <div class="col-lg-3 col-md-5 col-xs-12">
                 <img src="apps/region/accessibilite/img/picto-3_Lycee.jpg" class="img-responsive">
             </div>
-            <div class="col-lg-9 col-md-7 col-sm-12">
+            <div class="col-lg-9 col-md-7 col-xs-12">
                 <p>Pour agrandir ou réduire la carte :<br/>
                     utiliser votre souris<br/>
                     ou<br/>
@@ -128,13 +139,40 @@
             </div>
         </div>
         <div class="row vertical-align">
-            <div class="col-lg-3 col-md-5 col-sm-12">
+            <div class="col-lg-3 col-md-5 col-xs-12">
                 <img src="apps/region/accessibilite/img/picto-4_chrome.jpg" class="img-responsive">
             </div>
-            <div class="col-lg-9 col-md-7 col-sm-12">
+            <div class="col-lg-9 col-md-7 col-xs-12">
                 <p>Pour une utilisation optimale, privilégier l'utilisation des navigateurs Chrome ou Firefox.</p>
             </div>
         </div>
+    </div>
+	
+	<div role="tabpanel" class="tab-pane" id="h_lexique">
+        <div class="row" style="margin-top:10px;">
+			<div class="col-xs-12">
+				<p><span style="color:#b0252e;font-weight:bold;">Rouge</span>, un ou plusieurs obstacles <span style="text-decoration: underline;">peuvent bloquer</span> la progression de la personne en situation de handicap.</p>
+				<p><span style="color:#e3c213;font-weight:bold;">Orange</span>, un ou plusieurs obstacles <span style="text-decoration: underline;">peuvent gêner</span> la progression de la personne en situation de handicap.</p>
+				<p><span style="color:#6e8225;font-weight:bold;">Vert</span>, <span style="text-decoration: underline;">absence d'obstacle majeur au sens de la réglementation.</span></p>
+			</div>
+			<div class="col-xs-12 picto-handicap">
+				<div class="col-xs-2">
+					<img src="https://kartenn.region-bretagne.fr/img/picto/handicap_PMR.svg" alt="Handicap moteur" /><br/><p>Handicap moteur</p>
+				</div>
+				<div class="col-xs-2">
+					<img src="https://kartenn.region-bretagne.fr/img/picto/handicap_mm.svg" alt="Mobilité réduite" /><br/><p>Mobilité réduite</p>
+				</div>
+				<div class="col-xs-2">
+					<img src="https://kartenn.region-bretagne.fr/img/picto/handicap_visuel.svg" alt="Handicap visuel" /><br/><p>Handicap visuel</p>
+				</div>
+				<div class="col-xs-2">
+					<img src="https://kartenn.region-bretagne.fr/img/picto/handicap_auditif.svg" alt="Handicap auditif" /><br/><p>Handicap auditif</p>
+				</div>
+				<div class="col-xs-2">
+					<img src="https://kartenn.region-bretagne.fr/img/picto/handicap_cognitif.svg" alt="Handicap cognitif" /><br/><p>Handicap cognitif</p>
+				</div>
+			</div>
+		</div>
     </div>
 
     <div role="tabpanel" class="tab-pane" id="h_credits">
