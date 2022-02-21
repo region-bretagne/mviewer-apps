@@ -1,0 +1,45 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{structure}}</h2>
+		<div class="rb-description-feature">	
+			{{#nb_etablissements}}
+				<b>Nombre d'établissements de formation sur le territoire breton : </b> {{nb_etablissements}}<br>
+			{{/nb_etablissements}}
+			{{#nb_salaries}}
+				<b>Nombre de salariés : </b>  {{nb_salaries}}<br>
+			{{/nb_salaries}}
+			{{#secteurs}}
+				<b>Secteur(s) d'activité(s) :</b> {{secteurs}}<br>
+			{{/secteurs}}
+			{{#activites_structure}}
+				<b>Activités principales réalisées : </b> 
+				<div id="rb-puces">{{{activites_structure}}}</div>
+			{{/activites_structure}}
+		</div>
+		{{#nom_projet}}
+		<h3 class="rb-subtitle-feature">Projet : {{nom_projet}}</h3>
+		{{/nom_projet}}
+		<div class="rb-description-feature">	
+			{{#public_cible_projet}}
+				<b>Public(s) cible(s) : </b> 
+				<div id="rb-puces">{{{public_cible_projet}}}</div>
+			{{/public_cible_projet}}
+			{{#objectif_projet}}
+				<b>Objectif(s) : </b> 
+				<div id="rb-puces">{{{objectif_projet}}}</div>
+			{{/objectif_projet}}
+			{{#description_projet}}
+				<b>Description  :</b> 
+				<div id="rb-puces">{{{description_projet}}}</div>
+			{{/description_projet}}
+			{{#lieu_projet}}
+				<b>Lieu(x) de réalisation : </b> 
+				<div id="rb-puces">{{{lieu_projet}}}</div>
+			{{/lieu_projet}}
+			{{#calendrier_projet}}
+				<b>Calendrier : </b> 
+				<div id="rb-puces">{{{calendrier_projet}}}</div>
+			{{/calendrier_projet}}
+		</div>
+	</li>
+{{/features}}
