@@ -1,0 +1,9 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{nom}}</h2>
+		<p class="rb-text-feature">
+			<b>Etat écologique </b> {{etat_ecologique}}<br>
+			<b>Millésime </b>  {{millesime}}<br>
+		</p>
+	</li>
+{{/features}}

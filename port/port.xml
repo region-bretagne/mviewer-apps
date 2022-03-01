@@ -34,7 +34,7 @@
 				searchable="true" queryable="true" expanded="true"
                 infoformat="application/vnd.ogc.gml" featurecount="20"    
 				secure="true"
-				attributefilter="true" attributefield="contrat_validite" attributevalues="AUTORISÉ ÉCHÉANCE TARDIVE,AUTORISÉ ÉCHÉANCE N+10,AUTORISÉ ÉCHÉANCE N+5,AUTORISÉ ÉCHÉANCE N+2,AUTORISÉ ÉCHÉANCE ANNÉE PROCHAINE,AUTORISÉ ÉCHÉANCE DANS l'ANNÉE EN COURS,ÉCHÉANCE DÉPASSÉE,ÉCHÉANCE RÉSILIÉE,LOT VACANT,OCCUPATION SANS TITRE"  attributelabel="Filtre par occupation" attributestylesync="false" attributefilterenabled="false"
+				attributefilter="true" attributefield="contrat_validite" attributevalues="AUTORISÉ ÉCHÉANCE TARDIVE,AUTORISÉ ÉCHÉANCE N+10,AUTORISÉ ÉCHÉANCE N+5,AUTORISÉ ÉCHÉANCE N+2,AUTORISÉ ÉCHÉANCE N+1,AUTORISÉ ÉCHÉANCE DANS l'ANNÉE,ÉCHÉANCE DÉPASSÉE,ÉCHÉANCE RÉSILIÉE,LOT VACANT,OCCUPATION SANS TITRE"  attributelabel="Filtre par occupation" attributestylesync="false" attributefilterenabled="false"
                 style="bddom_validite_contrat,bddom_type_contrat,bddom_gestionnaire,bddom_transparent" 
 				stylesalias="Validité contrats,Type contrats,Gestionnaire,Transparent"
 				url="../geoserver-proxy/interne/wms" 

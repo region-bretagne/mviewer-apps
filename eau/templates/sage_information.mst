@@ -1,0 +1,30 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{nom}}</h2>
+		<p class="rb-text-feature">
+			<b>Avancement </b> {{etat_avancement}}<br>
+			<b>Structure porteuse </b>  {{structure_porteuse_sage}}<br>
+			<b>Président CLE </b>  {{president_cle}}<br>
+			<b>Animateurs </b>  {{animateurs_coordinateurs}}<br>
+			<b>Téléphone </b>  {{telephone}}<br>
+			<b>Courriel </b>  {{courriel_animateur}}<br>
+		</p>
+		<div class="rb-but-list">
+			<div class="col-md-12">
+			<span>
+				{{#site_web}}
+				<a href="{{site_web}}" target="_blank" title="Site web" class="rb-but-link" style="padding-top: 10px;"><span class="fa fa-globe" aria-hidden="true"></span> Site web</a>
+				{{/site_web}}
+				{{#reglement}}
+				<a href="{{reglement}}" target="_blank" title="Réglement" class="rb-but-link" style="padding-top: 10px;"><span class="fa fa-globe" aria-hidden="true"></span>Réglement</a>
+				{{/reglement}}
+				{{#pagd}}
+				<a href="{{pagd}}" target="_blank" title="PAGD" class="rb-but-link" style="padding-top: 10px;"><span class="fa fa-globe" aria-hidden="true"></span> PAGD</a>
+				{{/pagd}}
+
+			</span>
+			</div>
+		</div>
+
+	</li>
+{{/features}}

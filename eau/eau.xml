@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="kart'eau" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="mviewer_help.html" exportpng="false" measuretools="true" legend="true" legendasimage="false" popup="false"/>
+    <application title="kart'eau" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="mviewer_help.html" exportpng="false" measuretools="true" legend="true" legendasimage="false" popup="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/css/kartenn_port.css"/>
     <mapoptions maxzoom="20" projection="EPSG:3857" center="-234814,6118631" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery">
@@ -9,7 +9,7 @@
             attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
         <baselayer  type="WMS" id="photo2" label="Photo aérienne 1950" title="GéoBretagne" thumbgallery="img/basemap/ortho-ancien.jpg" 
 			url="https://tile.geobretagne.fr/gwc02/service/wms" layers="satellite-ancien" format="image/jpeg" visible="false" 
-			attribution="&lt;a href='https://applications.region-bretagne.fr/geosource/apps/search/?uuid=048622c5-b333-4c2b-94ec-40a41608dc06' target='_blank' >Partenaires GéoBretagne - IGN&lt;/a>"/>   
+			attribution="&lt;a href='https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/048622c5-b333-4c2b-94ec-40a41608dc06' target='_blank' >Partenaires GéoBretagne - IGN&lt;/a>"/>   
         <baselayer  type="OSM" id="positron" label="Positron" title="CartoDb" thumbgallery="img/basemap/positron.png"
 			url="https://cartodb-basemaps-{a-c}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png" maxzoom="20" 
 			visible="true" attribution=" &lt;a href='https://www.openstreetmap.org/copyright'>OpenStreetMap&lt;/a>  &lt;a href='https://cartodb.com/attributions'>CartoDB &lt;/a>" />	
@@ -21,12 +21,9 @@
             attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
     </baselayers>    
     <!--<proxy url="../proxy/?url="/>-->
-    <olscompletion url="https://wxs.ign.fr/bth43bbhz4oga1hosf94bre2/ols/apis/completion"/>
+    <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par l'API adresse.data.gouv.fr"/>
     <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="fussy_like_this" />
     <searchparameters bbox="false" localities="true" features="false"/>
-	<widgets>
-       <!--<widget name="gauge"/>-->       
-    </widgets> 
 
     <themes>
 	    <theme name="Limites administratives"  collapsed="true" id="territoire" icon="globe">  
@@ -74,60 +71,71 @@
 				metadata="" />
 			<layer id="passe_poisson_vn" name="Passes à poisson" visible="false" tiled="false" namespace="rb"
 				queryable="true" fields="ident" aliases="ident"
-				infoformat="text/html" featurecount="20"
+				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="" 
 				attribution="Région Bretagne" 
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=f1d5b549-64cb-4ccc-9281-5b56b97c7183"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/f1d5b549-64cb-4ccc-9281-5b56b97c7183" />  
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/f1d5b549-64cb-4ccc-9281-5b56b97c7183" >  
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.passe_poisson_vn.mst"></template>
+			</layer>							
 			<layer id="bief" name="Voies navigables Région (Biefs)" visible="false" tiled="false" namespace="rb"
 				searchable="true" queryable="true" fields="nom" aliases="Nom"
-				infoformat="text/html" featurecount="20"
+				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="" 
 				attribution="Région Bretagne" 
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=403d129b-e8ca-48ff-81a9-77401c1d933b"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/403d129b-e8ca-48ff-81a9-77401c1d933b" />
-			<layer id="riviere_etat_eco" name="Rivière : état écologique 2019" visible="true" tiled="true" namespace="interne"
-				queryable="true" fields="nom" aliases="nom"
-				infoformat="text/html" featurecount="5"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/403d129b-e8ca-48ff-81a9-77401c1d933b" >
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.bief.mst"></template>
+			</layer>							
+			<layer id="riviere_etat_eco" name="Rivière : état écologique" visible="true" tiled="false"
+				queryable="true" fields="nom" aliases="nom" index="3"
+				infoformat="application/vnd.ogc.gml" featurecount="5"
+		        timefilter="true" timeinterval="year" timecontrol="slider" timemin="2013" timemax="2019" timevalues="2013,2017,2019"
 				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
 				style="" 
 				attribution="Région Bretagne" 
 				metadata-csw=""
-				metadata="" />
-			<!--<layer id="riviere_etat_ecologique" name="Rivière : état écologique 2011-2013" visible="false" tiled="false" namespace="interne"
-				queryable="true" fields="nom" aliases="nom"
-				infoformat="text/html" featurecount="5"
+				metadata="" >
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/eau/templates/etat_eco.mst"></template>
+			</layer>
+			<layer id="masse_eau_etat_eco" name="Masse d'eau : état écologique" visible="true" tiled="false"
+				queryable="true" fields="nom" aliases="nom" opacity="0.3" index="4"
+		        timefilter="true" timeinterval="year" timecontrol="slider" timemin="2013" timemax="2019" timevalues="2013,2017,2019"
+				infoformat="application/vnd.ogc.gml" featurecount="5"
 				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
 				style="" 
 				attribution="Région Bretagne" 
 				metadata-csw=""
-				metadata="" />-->
-			<layer id="masse_eau_etat_eco" name="Masse d'eau : état écologique 2019" visible="true" tiled="true" namespace="interne"
-				queryable="true" fields="nom" aliases="nom" opacity="0.3"
-				infoformat="text/html" featurecount="5"
-				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
-				style="" 
-				attribution="Région Bretagne" 
-				metadata-csw=""
-				metadata="" />
-			<layer id="bassin_versant" name="Bassins versants bretons" visible="true" tiled="false" namespace="interne"
-				queryable="true" fields="nom" aliases="nom"
+				metadata="" >
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/eau/templates/etat_eco.mst"></template>
+			</layer>
+			<layer id="bassin_versant" name="Bassins versants bretons" visible="true" tiled="false"
+				queryable="true" fields="nom" aliases="nom" index="2"
 				infoformat="application/vnd.ogc.gml" featurecount="5"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="polygone_contour_gris" 
 				attribution="Région Bretagne" 
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=3a06c4da-2e8a-4a3b-b0f9-68ac4d2351ca"
 				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/3a06c4da-2e8a-4a3b-b0f9-68ac4d2351ca" />
-			<layer id="sage_information" name="Avancement SAGE au 01/01/2022" visible="false" tiled="false" namespace="interne"
+			<layer id="sage_information" name="Avancement SAGE au 01/01/2022" visible="false" tiled="false"
 				queryable="true" fields="nom" aliases="nom"
-				infoformat="text/html" featurecount="5"
+				infoformat="application/vnd.ogc.gml" featurecount="5"
 				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
 				style="" 
 				attribution="Région Bretagne" 
 				metadata-csw=""
-				metadata="" />
+				metadata="" >
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/eau/templates/sage_information.mst"></template>
+			</layer>
+			<layer id="unite_gestion_eau" name="Unités de gestion hydrographiques" visible="true" tiled="false"
+				queryable="true" fields="unite_gest" aliases="unite_gest" index="1"
+				infoformat="application/vnd.ogc.gml" featurecount="5"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attribution="Région Bretagne" 
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c13fa4a0-0e8c-4369-8891-2e60ff937093"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/c13fa4a0-0e8c-4369-8891-2e60ff937093" />
 		</theme>
 
         <theme name="Biodiversité"  id="biodiversite" collapsed="true" icon="tree">
