@@ -139,7 +139,6 @@
 /*******************************
 -------------LAYERS PANEL ------
 ********************************/
-
 #layers-container-box-header {
   background-color: #5A9EAA; }
 
@@ -281,6 +280,7 @@ body .popover-title {
     color: #555555;
     font-size: 13px; }
 
+/* Search results */
 #searchresults {
   font-family: "roboto_regular", Arial, Sans-serif;
   color: #555555; }
@@ -310,6 +310,9 @@ body .popover-title {
 /*******************************
 ------------- HELP PANEL -----
 ********************************/
+.modal-dialog {
+  padding-right: 150px; }
+
 #help .nav-tabs {
   border-bottom: 2px solid #5A9EAA; }
 #help .nav-tabs > li > a {
@@ -428,13 +431,6 @@ body .popover-title {
 
 
 /*Mise en forme des MST*/
-#rb-puces ul {
-	padding-left: 20px;
-}
-#rb-puces ol {
-	list-style-type: square;
-}
-
 #rb-puces li {
 	list-style: none;
 	color: #555;
@@ -508,15 +504,11 @@ box-shadow: none !important;
 /*******************************
 ------------- ULTRA-SIMPLIFIE
 ********************************/	
-/* #searchtool {
-    display: none!important;
-}
- */
 .xs.mode-u #btn-mode-su-menu {
     top: 10px!important;
 }
-.xs.mode-s #btn-mode-su-menu:hover, .xs.mode-u #btn-mode-su-menu:hover {
-    opacity: 0.9!important;	
+.xs.mode-u #btn-mode-su-menu:hover {
+    opacity: 0.9;	
 }
 .xs.mode-s #btn-mode-su-menu:after, .xs.mode-u #btn-mode-su-menu:after {
 	content:'Afficher la légende';
@@ -528,9 +520,6 @@ box-shadow: none !important;
     padding: 10px!important;
     font-family:var(--myfont);
     background-color: #fffffff7!important;
-}
-.xs.mode-s #iconhelp {
-    display: none !important;
 }
 .xs.mode-s #iconhelp {
     display: none !important;
