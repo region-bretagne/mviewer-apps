@@ -1,0 +1,721 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config mviewerstudioversion="3.1">
+<metadata>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description rdf:about="http://www.ilrt.bristol.ac.uk/people/cmdjb/">
+<dc:title>Kartenn Santé</dc:title>
+<dc:creator>anonymous</dc:creator>
+<dc:publisher>anonymous</dc:publisher>
+<dc:subject>Médecin omnipraticien</dc:subject>
+<dc:subject>Médecin ophtalmologiste</dc:subject>
+<dc:subject>Médecin pédiatre</dc:subject>
+<dc:subject>Médecin psychiatre</dc:subject>
+<dc:subject>Médecin gynécologiste</dc:subject>
+<dc:subject>Dentiste</dc:subject>
+<dc:subject>Sage-femme</dc:subject>
+<dc:subject>Infirmier·ère</dc:subject>
+<dc:subject>Psychologue</dc:subject>
+<dc:subject>Masseur·euse kinésithérapeute</dc:subject>
+<dc:subject>Orthophoniste</dc:subject>
+<dc:subject>Orthoptiste</dc:subject>
+<dc:subject>Magasin d'optique</dc:subject>
+<dc:subject>Pharmacie </dc:subject>
+<dc:subject>Centre de santé</dc:subject>
+<dc:subject>Maison de santé</dc:subject>
+<dc:subject>Indice comparatif de mortalité</dc:subject>
+<dc:subject>Espérance de vie des femmes</dc:subject>
+<dc:subject>Espérance de vie hommes</dc:subject>
+<dc:subject>Maladie cardio-neurovasculaire</dc:subject>
+<dc:subject>Maladie cardio-neurovasculaire - Effectif</dc:subject>
+<dc:subject>Maladie coronaire chronique</dc:subject>
+<dc:subject>Maladie coronaire chronique - Effectif</dc:subject>
+<dc:subject>Cancer</dc:subject>
+<dc:subject>Cancer (Effectif)</dc:subject>
+<dc:subject>Maladie psychiatrique </dc:subject>
+<dc:subject>Maladie psychiatrique (effectif)</dc:subject>
+<dc:subject>Maladie neurodégénérative</dc:subject>
+<dc:subject>Maladie neurodégénérative (effectif)</dc:subject>
+<dc:subject>Maladie respiratoire chronique</dc:subject>
+<dc:subject>Maladie respiratoire chronique (effectif)</dc:subject>
+<dc:subject>Diabète</dc:subject>
+<dc:subject>Diabète (effectif)</dc:subject>
+<dc:subject>Traitement anti-hypertenseur</dc:subject>
+<dc:subject>Traitement anti-hypertenseur (effectif)</dc:subject>
+<dc:subject>Traitement anxiolytique</dc:subject>
+<dc:subject>Traitement anxiolytique (effectif)</dc:subject>
+<dc:subject>Traitement hypnotique</dc:subject>
+<dc:subject>Traitement hypnotique (effectif)</dc:subject>
+<dc:subject>Découpages territoriaux</dc:subject>
+<dc:date>2022-01-25T14:51:19.341Z</dc:date>
+</rdf:Description>
+</rdf:RDF>
+</metadata>
+<application
+    title="Kartenn Santé"
+    logo="https://geobretagne.fr/pub/logo/region-bretagne.jpg"
+    help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html"
+    style="css/themes/default.css"
+    exportpng="true"
+    showhelp="false"
+    coordinates="false"
+    measuretools="false"
+    togglealllayersfromtheme="false">
+</application>
+<mapoptions maxzoom="20" projection="EPSG:3857" center="-307903.74898791354,6141345.088741366" zoom="9" />
+<searchparameters bbox="false" localities="false" features="false" static="false"/>
+<baselayers style="default"> 
+    <baselayer visible="true" id="positron" thumbgallery="img/basemap/positron.png" title="CartoDb" label="Positron" type="OSM" url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" attribution="Map tiles by  &lt;a href=&quot;https://cartodb.com/attributions&quot;&gt;CartoDb&lt;/a&gt;, under  &lt;a href=&quot;https://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY 3.0 &lt;/a&gt;"  ></baselayer> 
+    <baselayer visible="false" id="esriworldimagery" thumbgallery="img/basemap/esriworldwide.jpg" title="Esri" label="Esri world imagery" type="OSM" url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}" attribution="Esri world imagery"  ></baselayer> 
+</baselayers>
+<themes mini="false"> 
+	<theme id="habitant" url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/territoire.xml" name="Population" collapsed="true" icon="false"> 
+    </theme> 
+	<theme id="Esperance de vie" name="Mortalité et espérance de vie" collapsed="true" icon="chart-line"> 
+			<layer 
+				id="sante_indicateurs_synthetiques_epci"
+				name="Indice comparatif de mortalité (ICM)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				visible="false"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom,icm"
+				aliases="nom,Indice comparatif de mortalité (ICM - France métropolitaine = 100)"
+				style="sante_indicateurs_synthetiques_epci_icm"
+				attribution="ORS Bretagne, à partir des données CepiDc et INSEE (période 2013-2015)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer> 
+			<layer 
+				id="sante_indicateurs_synthetiques_epci"
+				name="Espérance de vie des femmes"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom,espvie_f"
+				aliases="nom,Espérance de vie à la naissance chez les femmes (année)"
+				style="sante_indicateurs_synthetiques_epci_espvie_f"
+				attribution="ORS Bretagne, à partir des données CepiDc (2015)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer> 
+			<layer 
+				id="sante_indicateurs_synthetiques_epci"
+				name="Espérance de vie des hommes"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom,espvie_h"
+				aliases="nom,Espérance de vie à la naissance chez les hommes (année)"
+				style="sante_indicateurs_synthetiques_epci_espvie_h"
+				attribution="ORS Bretagne, à partir des données CepiDc (2015)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer> 
+	</theme>	
+    <theme id="offre de soins" name="Offre de soins de ville" collapsed="true" icon="hospital-user"> 
+		<group name="Premier recours" id="1grp1">
+			<layer 
+				id="sante_equipement_epci"
+				name="Médecin omnipraticien (densité pour 100 000 hab.)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_epci,d201_dens"
+				aliases="nom_epci,Médecin omnipraticien (pour 100 000 hab.)"
+				style="sante_equipement_epci_ors_d201_dens"
+				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer> 
+			<layer 
+				id="sante_equipement_epci"
+				name="Pharmacie (densité pour 100 000 hab.)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_epci,d301_dens"
+				aliases="nom_epci,Pharmacie (pour 100 000 hab.)"
+				style="sante_equipement_epci_ors_d301_dens"
+				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer> 
+			<layer 
+				id="sante_equipement_epci"
+				name="Infirmier·ère (densité pour 100 000 hab.)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_epci,d232_dens"
+				aliases="nom_epci,Infirmier·ère (pour 100 000 hab.)"
+				style="sante_equipement_epci_ors_d232_dens"
+				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer> 
+			<layer 
+				id="sante_equipement_epci"
+				name="Chirurgien dentiste (densité pour 100 00 hab.)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_epci,d221_dens"
+				aliases="nom_epci,Chirurgien dentiste (pour 100 000 hab.)"
+				style="sante_equipement_epci_ors_d221_dens"
+				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer> 
+		</group>
+		<group name="Optique et opthalmologie" id="1grp2">
+			<layer 
+				id="sante_equipement_epci"
+				name="Médecin ophtalmologiste (densité pour 100 000 hab.)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_epci,d208_dens"
+				aliases="nom_epci,Médecin ophtalmologiste (pour 100 000 hab.)"
+				style="sante_equipement_epci_ors_d208_dens"
+				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer>    
+			<layer 
+				id="sante_equipement_epci"
+				name="Orthoptiste (densité pour 100 000 hab.)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_epci,d236_dens"
+				aliases="nom_epci,Orthoptiste (pour 100 000 hab.)"
+				style="sante_equipement_epci_ors_d236_dens"
+				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer> 
+			<layer 
+				id="sante_equipement_epci"
+				name="Magasin d'optique (densité pour 100 000 hab.)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_epci,b313_dens"
+				aliases="nom_epci,Magasin d'optique (pour 100 000 hab.)"
+				style="sante_equipement_epci_ors_b313_dens"
+				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer>		
+		</group>	
+		<group name="Santé mentale" id="1grp3"> 
+			<layer 
+				id="sante_equipement_epci"
+				name="Médecin psychiatre (densité pour 100 000 hab.)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_epci,d207_dens"
+				aliases="nom_epci,Médecin psychiatre (pour 100 000 hab.)"
+				style="sante_equipement_epci_ors_d207_dens"
+				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer> 
+			<layer 
+				id="sante_equipement_epci"
+				name="Psychologue (densité pour 100 000 hab.)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_epci,d243_dens"
+				aliases="nom_epci,Psychologue (pour 100 000 hab.)"
+				style="sante_equipement_epci_ors_d243_dens"
+				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer> 
+		</group>	
+		<group name="Santé sexuelle, maternelle et infantile" id="1grp4">
+			<layer 
+				id="sante_equipement_epci"
+				name="Médecin gynécologiste (densité pour 100 000 hab.)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_epci,d214_dens"
+				aliases="nom_epci,Médecin gynécologiste (pour 100 000 hab.)"
+				style="sante_equipement_epci_ors_d214_dens"
+				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer>
+			<layer 
+				id="sante_equipement_epci"
+				name="Médecin pédiatre (densité pour 100 000 hab.)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_epci,d210_dens"
+				aliases="nom_epci,Médecin pédiatre (pour 100 000 hab.)"
+				style="sante_equipement_epci_ors_d210_dens"
+				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer>		
+			<layer 
+				id="sante_equipement_epci"
+				name="Sage-femme / maïeuticien·ne (densité pour 100 000 hab.)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_epci,d231_dens"
+				aliases="nom_epci,Sage-femme (pour 100 000 hab.)"
+				style="sante_equipement_epci_ors_d231_dens"
+				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer> 
+		</group>	
+		<group name="Structures pluriprofessionnelles " id="1grp5"> 
+			<layer 
+				id="sante_equipement_epci"
+				name="Centre de santé (densité pour 100 000 hab.)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_epci,d108_dens"
+				aliases="nom_epci,Centre de santé (pour 100 000 hab.)"
+				style="sante_equipement_epci_ors_d301_dens"
+				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer> 
+			<layer 
+				id="sante_equipement_epci"
+				name="Maison de santé pluri-professionnelle (densité pour 100 000 hab.)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_epci,d113_dens"
+				aliases="nom_epci,Maison de santé pluriprofessionnelle (pour 100 000 hab.)"
+				style="sante_equipement_epci_ors_d113_dens"
+				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer> 
+		</group>
+		<group name="Autres paramédicaux" id="1grp6"> 
+			<layer 
+				id="sante_equipement_epci"
+				name="Masseur·euse kinésithérapeute (densité pour 100 000 hab.)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_epci,d233_dens"
+				aliases="nom_epci,Masseur·euse kinésithérapeute (pour 100 000 hab.)"
+				style="sante_equipement_epci_ors_d233_dens"
+				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer> 
+			<layer 
+				id="sante_equipement_epci"
+				name="Orthophoniste (densité pour 100 000 hab.)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_epci,d235_dens"
+				aliases="nom_epci,Orthophoniste (pour 100 000 hab.)"
+				style="sante_equipement_epci_ors_d235_dens"
+				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer> 
+		</group>
+    </theme>	    
+    <theme id="pathologies" name="Pathologies" collapsed="true" icon="virus"> 	
+		<group name="Maladie neurocardiovasculaire" id="2grp1"> 
+			<layer 
+				id="sante_pathologie_epci"
+				name="Maladie neurocardiovasculaire (taux standardisé)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_geo,cardio_taux"
+				aliases="nom_geo,Maladie neurocardiovasculaire (taux standardisé pour 1000 hab.)"
+				style="sante_pathologie_epci_ors_cardio_taux"
+				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer> 
+			<layer 
+				id="sante_pathologie_epci"
+				name="Maladie neuro-cardiovasculaire (nombre de malades)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_geo,cardio_nb"
+				aliases="nom_geo,Nombre de personnes avec une pathologie neurocardiovasculaire"
+				style="sante_pathologie_epci_ors_cardio_nb"
+				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				queryable="true"
+				infopanel="right-panel">
+			</layer> 
+		</group>
+		<group name="Maladie coronaire" id="2grp2"> 
+			<layer 
+				id="sante_pathologie_epci"
+				name="Maladie coronaire chronique (taux standardisé)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_geo,coro_taux"
+				aliases="nom_geo,Maladie coronaire chronique (taux standardisé pour 1000 hab.)"
+				style="sante_pathologie_epci_ors_coro_taux"
+				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer> 
+			<layer 
+				id="sante_pathologie_epci"
+				name="Maladie coronaire chronique (nombre de malades)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_geo,coro_nb"
+				aliases="nom_geo,Nombre de personnes avec une maladie coronaire chronique"
+				style="sante_pathologie_epci_ors_coro_nb"
+				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				queryable="true"
+				infopanel="right-panel">
+			</layer> 
+		</group>
+		<group name="Cancer" id="2grp3"> 
+			<layer 
+				id="sante_pathologie_epci"
+				name="Cancer (taux standardisé)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_geo,cancer_taux"
+				aliases="nom_geo,Cancer (taux standardisé pour 1000 hab.)"
+				style="sante_pathologie_epci_ors_cancer_taux"
+				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer> 
+			<layer 
+				id="sante_pathologie_epci"
+				name="Cancer (nombre de malades)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_geo,cancer_nb"
+				aliases="nom_geo,Nombre de personnes avec un cancer"
+				style="sante_pathologie_epci_ors_cancer_nb"
+				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				queryable="true"
+				infopanel="right-panel">
+			</layer> 
+		</group>
+		<group name="Maladie psychiatrique" id="2grp4"> 
+			<layer 
+				id="sante_pathologie_epci"
+				name="Maladie psychiatrique (taux standardisé)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_geo,psy_taux"
+				aliases="nom_geo,Maladie psychiatrique (taux standardisé pour 1000 hab.)"
+				style="sante_pathologie_epci_ors_psy_taux"
+				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer> 
+			<layer 
+				id="sante_pathologie_epci"
+				name="Maladie psychiatrique (nombre de malades)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_geo,psy_nb"
+				aliases="nom_geo,Nombre de personnes avec une maladie psychiatrique"
+				style="sante_pathologie_epci_ors_psy_nb"
+				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				queryable="true"
+				infopanel="right-panel">
+			</layer> 
+		</group>
+		<group name="Maladie neurodégénérative" id="2grp5"> 
+			<layer 
+				id="sante_pathologie_epci"
+				name="Maladie neurodégénérative (taux standardisé)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_geo,neuro_taux"
+				aliases="nom_geo,Maladie neurodégénérative (taux standardisé pour 1000 hab.)"
+				style="sante_pathologie_epci_ors_neuro_taux"
+				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer> 
+			<layer 
+				id="sante_pathologie_epci"
+				name="Maladie neurodégénérative (nombre de malades)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_geo,neuro_nb"
+				aliases="nom_geo,Nombre de personnes avec une maladie neurodégénérative"
+				style="sante_pathologie_epci_ors_neuro_nb"
+				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				queryable="true"
+				infopanel="right-panel">
+			</layer> 
+		</group>
+		<group name="Maladie respiratoire" id="2grp6"> 
+			<layer 
+				id="sante_pathologie_epci"
+				name="Maladie respiratoire chronique (taux standardisé)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_geo,respi_taux"
+				aliases="nom_geo,Maladie respiratoire chronique (taux standardisé pour 1000 hab.)"
+				style="sante_pathologie_epci_ors_respi_taux"
+				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer> 
+			<layer 
+				id="sante_pathologie_epci"
+				name="Maladie respiratoire chronique (nombre de malades)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_geo,respi_nb"
+				aliases="nom_geo,Nombre de personnes avec une maladie respiratoire chronique"
+				style="sante_pathologie_epci_ors_respi_nb"
+				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				queryable="true"
+				infopanel="right-panel">
+			</layer> 
+		</group>
+		<group name="Diabète" id="2grp7"> 
+			<layer 
+				id="sante_pathologie_epci"
+				name="Diabète (taux standardisé)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_geo,diabete_taux"
+				aliases="nom_geo,Diabète (taux standardisé pour 1000 hab.)"
+				style="sante_pathologie_epci_ors_diabete_taux"
+				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer> 
+			<layer 
+				id="sante_pathologie_epci"
+				name="Diabète (nombre de malades)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_geo,diabete_nb"
+				aliases="nom_geo,Nombre de personnes souffrant d'un diabète"
+				style="sante_pathologie_epci_ors_diabete_nb"
+				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				queryable="true"
+				infopanel="right-panel">
+			</layer> 
+		</group>
+    </theme>
+	<theme id="traitements" name="Traitements" collapsed="true" icon="pills"> 
+		<group name="Anti-hypertenseur" id="3grp1"> 
+			<layer 
+				id="sante_pathologie_epci"
+				name="Traitement anti-hypertenseur (taux standardisé)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_geo,hyper_taux"
+				aliases="nom_geo,Traitement anti-hypertenseur (taux standardisé pour 1000 hab.)"
+				style="sante_pathologie_epci_ors_hyper_taux"
+				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer> 
+			<layer 
+				id="sante_pathologie_epci"
+				name="Traitement anti-hypertenseur (nombre de pers. traitées)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_geo,hyper_nb"
+				aliases="nom_geo,Nombre de personnes sous traitement anti-hypertenseur"
+				style="sante_pathologie_epci_ors_hyper_nb"
+				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				queryable="true"
+				infopanel="right-panel">
+			</layer> 
+		</group>
+		<group name="Anxiolytique" id="3grp2"> 
+			<layer 
+				id="sante_pathologie_epci"
+				name="Traitement anxiolytique (taux standardisé)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_geo,anxio_taux"
+				aliases="nom_geo,Traitement anxiolytique (taux standardisé pour 1000 hab.)"
+				style="sante_pathologie_epci_ors_anxio_taux"
+				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer> 
+			<layer 
+				id="sante_pathologie_epci"
+				name="Traitement anxiolytique (nombre de pers. traitées)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_geo,anxio_nb"
+				aliases="nom_geo,Nombre de personnes sous traitement anxiolytique"
+				style="sante_pathologie_epci_ors_anxio_nb"
+				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				queryable="true"
+				infopanel="right-panel">
+			</layer> 
+		</group>
+		<group name="Hypnotique" id="3grp3"> 
+			<layer 
+				id="sante_pathologie_epci"
+				name="Traitement hypnotique (taux standardisé)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_geo,hypnotique_taux"
+				aliases="nom_geo,Traitement hypnotique (taux standardisé pour 1000 hab.)"
+				style="sante_pathologie_epci_ors_hypnotique_taux"
+				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel">
+			</layer> 
+			<layer 
+				id="sante_pathologie_epci"
+				name="Traitement hypnotique (nombre de pers. traitées)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_geo,hypnotique_nb"
+				aliases="nom_geo,Nombre de personnes sous traitement hypnotique"
+				style="sante_pathologie_epci_ors_hypnotique_nb"
+				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				queryable="true"
+				infopanel="right-panel">
+			</layer> 
+		</group>
+    </theme> 
+    <theme id="territoire" url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/administratif.xml" name="Découpages territoriaux" collapsed="true" icon="false"> 
+    </theme> 
+</themes>
+</config>
