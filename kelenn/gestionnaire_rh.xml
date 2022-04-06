@@ -16,7 +16,7 @@
     </baselayers>    
     <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par l'API adresse.data.gouv.fr"/>
     <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="current" />
-    <searchparameters bbox="false" localities="false" features="true" inputlabel="Rechercher lycée / ville"/>
+    <searchparameters bbox="false" localities="false" features="true" inputlabel="Rechercher lycée / ville" querymaponclick="true" closeafterclick="true"/>
 
     <themes>
         <theme name="Gestionnaire RH"  collapsed="true" id="culture">
