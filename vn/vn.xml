@@ -238,16 +238,26 @@
         </theme> 
         <theme name="Infrastructures"  collapsed="true" id="infrastructures" icon="ship"> 
 		<group name="Voies navigables" id="vn">
-			<layer id="ecluse_trafic" name="Ecluse" visible="true" tiled="false" dynamiclegend="true"
-				queryable="true" searchable="true" infoformat="application/vnd.ogc.gml" featurecount="20"
-				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2008" timemax="2021" timevalues="2008,2010,2011,2013,2015,2017,2019,2021"
+			<!--Couche écluse trasparente pour la recherche-->
+			<!--<layer id="ecluse" name="Ecluse" visible="true" tiled="false" 
+				searchable="true" 
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+				style="transparent" infoformat="application/vnd.ogc.gml"
+				attribution="Région Bretagne" 
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=774a2065-339f-4802-a50f-4b84b6ca249f"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/774a2065-339f-4802-a50f-4b84b6ca249f"> 
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.ecluse.mst"></template>
+			</layer>-->
+			<layer id="ecluse_trafic" name="Ecluse" visible="true" tiled="false" dynamiclegend="true"
+				queryable="true" infoformat="application/vnd.ogc.gml" featurecount="20"
+				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2008" timemax="2021" timevalues="2008,2010,2011,2013,2015,2017,2019,2021"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" searchable="true"
 				style="ecluse_proprietaire,ecluse_trafic_millesime" stylesalias="Propriétaire,Trafic"
 				attribution="Région Bretagne" 
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=01a0228d-feb1-4385-9eeb-55062e3f26ed"
 				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/01a0228d-feb1-4385-9eeb-55062e3f26ed"> 
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.ecluse.mst"></template>
-			</layer>		
+			</layer>
 			<layer id="port_vn" name="Ports et mouillages " visible="false" tiled="false" 
 				queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
