@@ -32,6 +32,97 @@
     </widgets> 
 
     <themes mini="false">
+        <theme name="OCS Morbihan 2013"  collapsed="true" id="OCS" icon="camera"><!-- icon="camerabullhorn" -->
+                <layer id="ocs56_couverture" name="Couverture" visible="true" queryable="true"
+                    type="customlayer" opacity="0.5" legendurl="img/blank.gif"
+                    url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ocs56/customlayers/ocs56_couverture.js"                    
+                    expanded="true"
+                    tooltip="true" tooltipenabled="true" tooltipcontent="{{label}} "
+                    attribution="Source: Mégalis - Collectivités du Morbihan - Région Bretagne" 
+                    metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/16f61c29-160b-4406-8c49-a89de2eb47d4" 
+                    metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=16f61c29-160b-4406-8c49-a89de2eb47d4">
+                    <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ocs56/templates/ocs.couverture.mst"></template>
+                </layer>
+                <layer id="ocs56_usage" name="Usage" visible="false" queryable="true"
+                    type="customlayer" opacity="0.5" legendurl="img/blank.gif"
+                    url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ocs56/customlayers/ocs56_usage.js"
+                    tooltip="true" tooltipenabled="true" tooltipcontent="{{label}} "
+                    attribution="Source: Mégalis - Collectivités du Morbihan - Région Bretagne" 
+                    metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/16f61c29-160b-4406-8c49-a89de2eb47d4" 
+                    metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=16f61c29-160b-4406-8c49-a89de2eb47d4">
+                    <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ocs56/templates/ocs.usage.mst"></template>                
+				</layer>
+				<layer id="ocs_indice_union_geom" name="Classification des couvertures"  visible="false" tiled="false"
+					searchable="false" queryable="true"
+					attributefilter="true" attributefield="level" attributevalues="Commune,EPCI,SCOT,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
+					infopanel="bottom-panel"
+					infoformat="application/vnd.ogc.gml" featurecount="5"
+					style="ocstxartific@commune,ocstxagri@commune,ocstxespnat@commune,ocstxeau@commune,ocstxforets@commune,ocstxsolsnus@commune"
+					stylesalias="Taux d'artificialisation,Surfaces agricoles,Espaces naturels,Surfaces en eau,Fôrets, Surfaces en sols nus"
+					url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+					attribution="Sources: Mégalis Bretagne | Traitements: Région Bretagne - Service connaissance, observation, planification et prospective" 
+					metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/16f61c29-160b-4406-8c49-a89de2eb47d4"
+					metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=16f61c29-160b-4406-8c49-a89de2eb47d4">
+					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ocs56/templates/ocs.artificialisation.mst"></template>
+				</layer> 				
+        </theme>
+		<theme name="Autres occupations du sol"  collapsed="true" id="autresOCS" icon="camera">
+                <layer id="ocsol_mode:ocsge_rm_2017" name="Occupation du sol à grande échelle 2017 sur Rennes Métropole"  visible="false" tiled="true" searchable="false" queryable="false" dynamiclegend="true" url="https://public.sig.rennesmetropole.fr/geoserver/ows?service=wms" attribution="Source: Rennes métropole" metadata="https://public.sig.rennesmetropole.fr/geonetwork/srv/fre/catalog.search#/metadata/73eafa22-9675-41d5-9345-8001191f9ec9"
+					metadata-csw="https://public.sig.rennesmetropole.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=73eafa22-9675-41d5-9345-8001191f9ec9">
+                </layer>
+                <layer id="ocsol_mode:mos_rm_2006_2017" name="Mode d'Occupation du Sol 2006-2017 sur Rennes Métropole"  visible="false" tiled="true" searchable="false" queryable="false"
+				dynamiclegend="true"
+				style="ocsol_mode:mos_rm_type_ocsol_2017,ocsol_mode:mos_rm_categorie_ocsol_2006"
+				stylesalias="Type,Catégorie"
+				url="https://public.sig.rennesmetropole.fr/geoserver/ows?service=wms" attribution="Source: Rennes métropole" 
+				metadata="https://public.sig.rennesmetropole.fr/geonetwork/srv/fre/catalog.search#/metadata/a588c10f-158c-4732-b89c-f2f21ef90a87"
+				metadata-csw="https://public.sig.rennesmetropole.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a588c10f-158c-4732-b89c-f2f21ef90a87">
+                </layer>
+				<layer 
+					id="occ_sol_littoral"
+					name="Occupation du sol sur le littoral breton"
+					type="wms"
+					url="https://geobretagne.fr/geoserver/dreal_b/occ_sol_littoral/wms"
+					tiled="true"
+					visible="false"
+					infoformat="application/vnd.ogc.gml"
+					fields="libelle,date"
+					aliases="libellé,date"
+					metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/37926f81-1dd1-483c-aa4f-b8a5251dd3fd"
+					metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ELEMENTSETNAME=full&amp;ID&amp;ID=37926f81-1dd1-483c-aa4f-b8a5251dd3fd"
+					attribution="DREAL Bretagne"
+					queryable="true"
+					infopanel="right-panel"
+					attributefilter="true" attributefield="libelle" attributevalues="Ensemble habitat individuel groupé,Prairie,Bois,Emprise de grands équipements,Lande, maquis, garrigue,Habitat dispersé récent,Siège d'exploitation agricole isolé,Zone industrielle et commerciale,Terre cultivée,Prairie humide,Habitat individuel diffus,Espace en mutation,Conchyliculture,Arboriculture,Mer, plans d'eau, estran et platiers,Espaces verts,Ensemble habitat collectif,Hangar agricole isolé,Rochers, falaise,Cultures légumières ou florales" attributelabel="libelle">
+				</layer>					
+         </theme>				
+		<theme name="OCS satellite Theia"  collapsed="true" id="theia" icon="camera">
+                <layer id="Theia_OSO:OCS_2017_CESBIO" name="Carte d'occupation des sols 2017"  visible="false" tiled="true" searchable="false" queryable="false" legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ocs56/img/ocs_theia.png"
+						 url="http://cyan.ups-tlse.fr:8080/geoserver/Theia_OSO/wms" attribution="Source: Théia">
+                </layer>
+         </theme>
+		<theme name="Corine Land Cover (CLC) 2018"  collapsed="true" id="CLC" icon="camera">
+                <layer id="12" name="Carte d'occupation des sols 2018"  visible="false" tiled="true" searchable="false" queryable="false" legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ocs56/img/ocs_theia.png"
+						 url="https://image.discomap.eea.europa.eu:443/arcgis/services/Corine/CLC2018_WM/MapServer/WmsServer?" attribution="Source: European Environment Agency (EEA)">
+                </layer>
+		</theme>
+		<theme name="Comparateur d'images" collapsed="true" id="comparateur" icon="fas fa-cog">
+		  <layer id="swipe"
+			name="Images historiques"
+			visible="false"
+			queryable="false"
+			type="customlayer"
+			legendurl="demo/swipe/control/swipe.png"
+			customcontrolpath="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ocs56/customcontrol/"
+			opacity="1"
+			url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ocs56/customlayer/swipe.js"
+			customcontrol="true"
+			expanded="true"
+			attribution="&lt;a href="
+			target="_blank"
+			metadata=""
+			metadata-csw=""></layer>
+		</theme>		 
     	<theme name="Découpages territoriaux"  collapsed="true" id="adminlim" icon="globe"> 
 			<layer id="commune" name="Commune" visible="false" queryable="false" 
                 fields="nom_geo" aliases="Nom" 
@@ -73,55 +164,6 @@
                 attribution="Source: GéoBretagne" 
                 metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/91117783-14f0-409c-961e-9d2645f248ea" 
                 metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=91117783-14f0-409c-961e-9d2645f248ea"/>  
-		</theme>
-        <theme name="OCS Morbihan 2013"  collapsed="true" id="OCS" icon="camera"><!-- icon="camerabullhorn" -->
-                <layer id="ocs56_couverture" name="Couverture" visible="true" queryable="true"
-                    type="customlayer" opacity="0.5" legendurl="img/blank.gif"
-                    url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ocs56/customlayers/ocs56_couverture.js"                    
-                    expanded="true"
-                    tooltip="true" tooltipenabled="true" tooltipcontent="{{label}} "
-                    attribution="Source: Mégalis - Collectivités du Morbihan - Région Bretagne" 
-                    metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/16f61c29-160b-4406-8c49-a89de2eb47d4" 
-                    metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=16f61c29-160b-4406-8c49-a89de2eb47d4">
-                    <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ocs56/templates/ocs.couverture.mst"></template>
-                </layer>
-                <layer id="ocs56_usage" name="Usage" visible="false" queryable="true"
-                    type="customlayer" opacity="0.5" legendurl="img/blank.gif"
-                    url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ocs56/customlayers/ocs56_usage.js"
-                    tooltip="true" tooltipenabled="true" tooltipcontent="{{label}} "
-                    attribution="Source: Mégalis - Collectivités du Morbihan - Région Bretagne" 
-                    metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/16f61c29-160b-4406-8c49-a89de2eb47d4" 
-                    metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=16f61c29-160b-4406-8c49-a89de2eb47d4">
-                    <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ocs56/templates/ocs.usage.mst"></template>                
-				</layer>
-				<layer id="ocs_indice_union_geom" name="Classification des couvertures"  visible="false" tiled="false"
-					searchable="false" queryable="true"
-					attributefilter="true" attributefield="level" attributevalues="Commune,EPCI,SCOT,Pays"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"
-					infopanel="bottom-panel"
-					infoformat="application/vnd.ogc.gml" featurecount="5"
-					style="ocstxartific@commune,ocstxagri@commune,ocstxespnat@commune,ocstxeau@commune,ocstxforets@commune,ocstxsolsnus@commune"
-					stylesalias="Taux d'artificialisation,Surfaces agricoles,Espaces naturels,Surfaces en eau,Fôrets, Surfaces en sols nus"
-					url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-					attribution="Sources: Mégalis Bretagne | Traitements: Région Bretagne - Service connaissance, observation, planification et prospective" 
-					metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/16f61c29-160b-4406-8c49-a89de2eb47d4"
-					metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=16f61c29-160b-4406-8c49-a89de2eb47d4">
-					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ocs56/templates/ocs.artificialisation.mst"></template>
-				</layer> 				
-        </theme>
-		<theme name="OCS Rennes métropole"  collapsed="true" id="RM" icon="camera">
-                <layer id="ocsol_mode:ocsge_rm_2017" name="Occupation du sol à grande échelle 2017 sur Rennes Métropole"  visible="false" tiled="true" searchable="false" queryable="false" dynamiclegend="true" url="https://public.sig.rennesmetropole.fr/geoserver/ows?service=wms" attribution="Source: Rennes métropole" metadata="https://public.sig.rennesmetropole.fr/geonetwork/srv/fre/catalog.search#/metadata/73eafa22-9675-41d5-9345-8001191f9ec9"
-					metadata-csw="https://public.sig.rennesmetropole.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=73eafa22-9675-41d5-9345-8001191f9ec9">
-                </layer>				
-         </theme>		
-		<theme name="OCS satellite Theia"  collapsed="true" id="theia" icon="camera">
-                <layer id="Theia_OSO:OCS_2017_CESBIO" name="Carte d'occupation des sols 2017"  visible="false" tiled="true" searchable="false" queryable="false" legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ocs56/img/ocs_theia.png"
-						 url="http://cyan.ups-tlse.fr:8080/geoserver/Theia_OSO/wms" attribution="Source: Théia">
-                </layer>
-         </theme>
-		<theme name="Corine Land Cover (CLC) 2018"  collapsed="true" id="CLC" icon="camera">
-                <layer id="12" name="Carte d'occupation des sols 2018"  visible="false" tiled="true" searchable="false" queryable="false" legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ocs56/img/ocs_theia.png"
-						 url="https://image.discomap.eea.europa.eu:443/arcgis/services/Corine/CLC2018_WM/MapServer/WmsServer?" attribution="Source: European Environment Agency (EEA)">
-                </layer>
-         </theme>		  
+		</theme>		 
 	 </themes>
 </config>
