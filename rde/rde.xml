@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
     <application title="Réseau des développeurs économiques" logo="https://kartenn.region-bretagne.fr/img/logos/reseau_dev_eco.jpg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" exportpng="false" measuretools="true" legend="true" legendasimage="false" popup="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/rde/css/rde.css"/>
-    <mapoptions maxzoom="20" projection="EPSG:3857" center="-291072,6187119" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
+    <mapoptions maxzoom="20" projection="EPSG:3857" center="-255418,6120890" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery">
         <baselayer  type="OSM" id="positron" label="Positron" title="CartoDb" thumbgallery="img/basemap/positron.png"
