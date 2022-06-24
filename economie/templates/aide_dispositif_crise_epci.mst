@@ -1,0 +1,30 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<div class="row">
+			<div class="col-xs-7">
+				<div class="rb-title-feature">{{nom}}</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-3" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartenn_economie/{{code_siren}}/epci_economie_dispositif_crise_nb_rebond"></iframe>
+			</div>
+			<div class="col-md-3" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartenn_economie/{{code_siren}}/epci_economie_dispositif_crise_mt_rebond"></iframe>
+			</div>
+			<div class="col-md-3" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartenn_economie/{{code_siren}}/epci_economie_dispositif_crise_nb_covid_resistance"></iframe>
+			</div>
+			<div class="col-md-3" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartenn_economie/{{code_siren}}/epci_economie_dispositif_crise_mt_covid_resistance"></iframe>
+			</div>
+		</div>
+
+	</li>
+{{/features}}
+
+<style>
+@import url("https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/css/kartenn_economie.css");
+#over { font-size:1em; position:absolute; top:0px; left:20px; z-index:2 }
+</style>

@@ -1,0 +1,18 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<div class="row">
+			<div class="col-xs-7">
+				<div class="rb-title-feature">{{nom_geo}}</div>
+			</div>
+			<div class="col-xs-3">
+				<span class="rb-critere glyphicon glyphicon-map-marker" aria-hidden="true"><span id="rb-text">{{level}}</span></span><span class="rb-critere glyphicon glyphicon-calendar" aria-hidden="true" style="margin-left:10px;"><span id="rb-text">{{millesime}}</span></span>
+			</div>	
+		</div>
+		<iframe class="rb-iframe-bottom"src="https://kartenn.region-bretagne.fr/ws/territoire/eco.emploi.epci.php?code_geo={{code_geo}}&time={{datation}}"></iframe>
+	</li>
+		
+{{/features}}
+
+<style>
+@import url("https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/css/kartenn_economie.css");
+</style>
