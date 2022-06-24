@@ -1,9 +1,6 @@
 {{#features}}
 	<li class="item" id="{{feature_ol_uid}}">
 		<h2 class="rb-title-feature">{{nom}}</h2>
-		<p class="rb-text-feature">		
-			<b>Code UAI </b> {{code_uai}}<br>
-		</p>
 	</li>
 {{/features}}
 

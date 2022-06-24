@@ -23,9 +23,8 @@
     togglealllayersfromtheme="false">
 </application>
 <mapoptions maxzoom="20" projection="EPSG:3857" center="-319361.60370307823,6126930.683325168" zoom="8" />
-<proxy url='../proxy/?url='/>
-<olscompletion type="ban" url="https://api-adresse.data.gouv.fr/search/" attribution="BAN" />
-<searchparameters bbox="false" localities="true" features="false" static="false"/>
+<searchparameters bbox="false" localities="false" features="true" inputlabel="Rechercher lycée / ville" querymaponclick="true" closeafterclick="true"/>
+<elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="current" />
 <baselayers style="default"> 
     <baselayer visible="true" id="positron" thumbgallery="img/basemap/positron.png" title="CartoDb" label="Positron" type="OSM" url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" attribution="Map tiles by  &lt;a href=&quot;https://cartodb.com/attributions&quot;&gt;CartoDb&lt;/a&gt;, under  &lt;a href=&quot;https://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY 3.0 &lt;/a&gt;"  ></baselayer> 
     <baselayer visible="false" id="ortho1" thumbgallery="img/basemap/ortho.jpg" title="GéoBretagne" label="Photo aérienne actuelle" type="WMTS" url="https://tile.geobretagne.fr/gwc02/service/wmts" layers="satellite" format="image/png" style="_null" matrixset="EPSG:3857" fromcapacity="false" attribution="&lt;a href=&quot;https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/3a0ac2e3-7af1-4dec-9f36-dae6b5a8c731&quot; target=&quot;_blank&quot; &gt;partenaires GéoBretagne - Megalis Bretagne - IGN - PlanetObserver&lt;/a&gt;"  ></baselayer> 
@@ -33,30 +32,32 @@
 <themes mini="false"> 
     <theme id="lycee" name="Lycées" collapsed="true" icon="fas fa-university"> 
         <layer 
-            id="lycee"
+            id="lycee_public"
             name="Lycées"
             type="wms"
+			searchable="true"
             url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
             visible="true"
             infoformat="application/vnd.ogc.gml"
+			attribution="Région Bretagne"
             metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/99e78163-ce9a-4eee-9ea0-36afc2a53d25"
             metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/xml.metadata.get?uuid=99e78163-ce9a-4eee-9ea0-36afc2a53d25"
             queryable="true"
-            secure="public"
             infopanel="right-panel">
-			    <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.lycee.mst"></template> 
-		    </layer> 
+			    <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/lycee/templates/lycee_public.mst"></template> 
+		</layer> 
         <layer 
             id="lycee_batiment"
             name="Bâtiments"
-            type="wms"
-            url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+            type="customlayer"
+            url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/lycee/customlayers/lycee_batiment.js"
+			tooltip="true"	tooltipcontent="{{nom_batiment}}" vectorlegend="true" 
             visible="true"
             infoformat="application/vnd.ogc.gml"
+			attribution="Région Bretagne"
             metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/2e39f7b8-e7cb-4b70-8248-cf7f319585ab"
             metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/api/records/2e39f7b8-e7cb-4b70-8248-cf7f319585ab/formatters/xml?approved=true"
             queryable="true"
-            secure="public"
             infopanel="right-panel">
 			    <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/lycee/templates/lycee_bati.mst"></template> 
         </layer> 
@@ -67,9 +68,17 @@
             url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
             infoformat="application/vnd.ogc.gml"
             queryable="true"
-            secure="public"
             infopanel="right-panel">
 			    <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/lycee/templates/lycee_parcelle.mst"></template> 
+        </layer> 
+        <layer 
+            id="proprietes_region"
+            name="Parcelles propriétés Région"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+            infoformat="application/vnd.ogc.gml"
+            queryable="true"
+            infopanel="right-panel">
         </layer> 
         <layer 
             id="lycee_perimetre"
@@ -78,10 +87,10 @@
             url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
             visible="true"
             infoformat="application/vnd.ogc.gml"
+			attribution="Région Bretagne"
             metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/f27d6bee-c77e-4fa9-89bb-637c21eb5e67"
             metadata-csw="https://databretagne.fr/geonetwork/srv/api/records/f27d6bee-c77e-4fa9-89bb-637c21eb5e67/formatters/xml"
             queryable="true"
-            secure="public"
             infopanel="right-panel">
 			    <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/lycee/templates/lycee_perimetre.mst"></template> 
         </layer> 
@@ -103,6 +112,27 @@
 			metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/6583d262-ebc4-4e51-a1fd-ee493c2b355d" >  
 		</layer>
     </theme> 
+	<theme name="Accessibilité"  collapsed="true" id="access" icon="fab fa-accessible-icon">
+		<layer id="site_region_accessibilite" name="Niveau d’accessibilité des sites" visible="false" tiled="false" namespace="rb" type="customlayer" vectorlegend="true"
+				queryable="true" infoformat="application/vnd.ogc.gml" 
+				featurecount="20" jsonfields="accessibilite"
+				url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/accessibilite/customlayers/site_region_accessibilite.js"
+				tooltip="true"	tooltipcontent="{{nom}}"
+				attribution="Région Bretagne" 	metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a9dc8a48-ed1c-449e-8567-b312a13892ff"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/a9dc8a48-ed1c-449e-8567-b312a13892ff" >  
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/accessibilite/templates/site_region_accessibilite.mst" />
+		</layer>
+		<layer id="batiment_region_accessibilite" name="Niveau d’accessibilité des bâtiments" visible="false" tiled="false" namespace="rb" type="customlayer" vectorlegend="true" 
+				queryable="true" infoformat="application/vnd.ogc.gml"
+				featurecount="20"
+				url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/accessibilite/customlayers/batiment_region_accessibilite.js"
+				style="" opacity="0.6"
+				tooltip="true"	tooltipcontent="{{libelle_bat}}"
+				attribution="Région Bretagne"					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=384c440f-1420-4522-8167-3c03e89e270d"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/384c440f-1420-4522-8167-3c03e89e270d" >  
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/accessibilite/templates/batiment_region_accessibilite.mst" />
+		</layer>
+	</theme>   
 </themes>
     <styles>
         <selectionstyle>
