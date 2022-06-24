@@ -1,0 +1,8 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h3 class="rb-title-feature">{{NOM_QUARTI}}</h3>
+		<p class="rb-text-feature">		
+			<span style="font-weight:bold"> Commune :</span> {{COMMUNE}}<br/>
+		</p>
+	</li>
+{{/features}}

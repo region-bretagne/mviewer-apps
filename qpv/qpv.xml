@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config mviewerstudioversion="3.1">
+<metadata>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description rdf:about="http://www.ilrt.bristol.ac.uk/people/cmdjb/">
+<dc:title>Kartenn Quartier Prioritaire de la Ville</dc:title>
+<dc:creator>anonymous</dc:creator>
+<dc:publisher>anonymous</dc:publisher>
+<dc:subject>Développement économique</dc:subject>
+<dc:date>2022-03-18T09:18:41.525Z</dc:date>
+</rdf:Description>
+</rdf:RDF>
+</metadata>
+<application
+    title="Kartenn Quartier Prioritaire de la Ville"
+    logo="https://geobretagne.fr/pub/logo/region-bretagne.jpg"
+    help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html"
+    style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/css/kartenn_territoire.css"
+    exportpng="false"
+    showhelp="false"
+    coordinates="false"
+    measuretools="false"
+    togglealllayersfromtheme="false">
+</application>
+    <mapoptions maxzoom="20" projection="EPSG:3857" center="-255418,6120890" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
+<olscompletion type="ban" url="https://api-adresse.data.gouv.fr/search/" attribution="BAN" />
+<searchparameters bbox="false" localities="true" features="true" static="false"/>
+<baselayers style="default"> 
+    <baselayer visible="true" id="positron" thumbgallery="img/basemap/positron.png" title="CartoDb" label="Positron" type="OSM" url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" attribution="Map tiles by  &lt;a href=&quot;https://cartodb.com/attributions&quot;&gt;CartoDb&lt;/a&gt;, under  &lt;a href=&quot;https://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY 3.0 &lt;/a&gt;"  ></baselayer> 
+    <baselayer visible="false" id="ortho1" thumbgallery="img/basemap/ortho.jpg" title="GéoBretagne" label="Photo aérienne actuelle" type="WMTS" url="https://tile.geobretagne.fr/gwc02/service/wmts" layers="satellite" format="image/png" style="_null" matrixset="EPSG:3857" fromcapacity="false" attribution="&lt;a href=&quot;https://applications.region-bretagne.fr/geonetwork/?uuid=3a0ac2e3-7af1-4dec-9f36-dae6b5a8c731&quot; target=&quot;_blank&quot; &gt;partenaires GéoBretagne - IGN RGE BD ORTHO - PlanetObserver&lt;/a&gt;"  ></baselayer> 
+    <baselayer visible="false" id="osm_google" thumbgallery="img/basemap/osm_google.png" title="GéoBretagne" label="OpenStreetMap" type="WMS" url="https://osm.geobretagne.fr/gwc01/service/wms" layers="osm:google" format="image/png" attribution="GéoBretagne. Données : les contributeurs d'&lt;a href=&quot;https://www.openstreetmap.org/&quot; target=&quot;_blank&quot;&gt;OpenStreetMap &lt;/a&gt;,  &lt;a href=&quot;https://www.openstreetmap.org/copyright&quot; target=&quot;_blank&quot;&gt;ODbL &lt;/a&gt;"  ></baselayer> 
+</baselayers>
+<themes mini="false"> 
+    <theme id="demo" name="Démographie" collapsed="true" icon="fas fa-caret-right"> 
+		<layer 
+			id="iris_qpv_demographie"
+			name="Catégorie d'âge majoritaire"
+			type="wms" tiled="true"
+			exclusive="true"
+			style="iris_qpv_age_majoritaire"
+			url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			visible="true"
+			infoformat="application/vnd.ogc.gml"
+			attribution="Région Bretagne"
+			queryable="true"
+			infopanel="bottom-panel">
+			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/demographie_generale.mst"></template>
+		</layer> 
+		<layer 
+			id="iris_qpv_demographie"
+			name="Proportion de femmes"
+			type="wms" tiled="true"
+			exclusive="true"
+			style="iris_qpv_prop_femme"
+			url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			visible="false"
+			infoformat="application/vnd.ogc.gml"
+			attribution="Région Bretagne"
+			queryable="true"
+			infopanel="bottom-panel">
+			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/demographie_sexe.mst"></template>
+		</layer>
+		<layer 
+			id="iris_qpv_demographie"
+			name="Catégorie socioprofessionnelle majoritaire"
+			type="wms" tiled="true"
+			exclusive="true"
+			style="iris_qpv_csp_majoritaire"
+			url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			visible="true"
+			infoformat="application/vnd.ogc.gml"
+			attribution="Région Bretagne"
+			queryable="true"
+			infopanel="bottom-panel">
+			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/demographie_csp.mst"></template>
+		</layer>
+		<layer 
+			id="iris_qpv_demographie"
+			name="Part de ménages seul femme"
+			type="wms" tiled="true"
+			exclusive="true"
+			style="iris_qpv_menfseul"
+			url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			visible="false"
+			infoformat="application/vnd.ogc.gml"
+			attribution="Région Bretagne"
+			queryable="true"
+			infopanel="bottom-panel">
+			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/demographie_menfseul.mst"></template>
+		</layer>
+		<layer 
+			id="iris_qpv_demographie"
+			name="Taux de familles monoparentales"
+			type="wms" tiled="true"
+			exclusive="true"
+			style="iris_qpv_menfamono"
+			url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			visible="false"
+			infoformat="application/vnd.ogc.gml"
+			attribution="Région Bretagne"
+			queryable="true"
+			infopanel="bottom-panel">
+			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/demographie_menfamono.mst"></template>
+		</layer>
+		<layer 
+			id="iris_qpv_demographie"
+			name="Chômage par sexe"
+			type="wms" tiled="true"
+			exclusive="true"
+			style="iris_qpv_chomage_h_f"
+			url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			visible="false"
+			infoformat="application/vnd.ogc.gml"
+			attribution="Région Bretagne"
+			queryable="true"
+			infopanel="bottom-panel">
+			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/demographie_chomage_h_f.mst"></template>
+		</layer>
+
+    </theme> 
+    <theme id="admin" name="Référentiel administratif" collapsed="true" icon="fas fa-caret-right"> 
+        <layer 
+            id="l_qpv_pnru"
+            name="QPV" toplayer="true" tiled="true"
+            type="customlayer" vectorlegend="true"
+			url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/customlayers/l_qpv_pnru.js"
+            visible="true"
+            infoformat="application/vnd.ogc.gml"
+            attribution="GéoBretagne"
+            queryable="false" 
+			searchable="true" searchengine="fuse" fusesearchkeys="NOM_QUARTI,COMMUNE" fusesearchresult="{{NOM_QUARTI}} - {{COMMUNE}}"
+            infopanel="bottom-panel"
+			tooltip="true"	tooltipcontent="{{NOM_QUARTI}}"
+			metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=33e57276-b6be-4e70-968d-f89c9ff69bb4"
+			metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/33e57276-b6be-4e70-968d-f89c9ff69bb4" >  
+		    <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/qpv.mst"></template>
+        </layer> 
+		<layer id="bretagne_5" name="Bretagne à 5" visible="true" tiled="false" namespace="rb"
+			queryable="false" 
+			showintoc="false"
+			url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+			attribution="OSM" 
+			metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72"
+			metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72" >  
+		</layer>
+		<layer id="departement_osm" name="Département" visible="true" tiled="false" namespace="rb"
+			queryable="false"
+			showintoc="false"
+			url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+			style="bretagne_5_style" 
+			attribution="OSM" 
+			metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=6583d262-ebc4-4e51-a1fd-ee493c2b355d"
+			metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/6583d262-ebc4-4e51-a1fd-ee493c2b355d" >  
+		</layer>
+    </theme> 
+
+</themes>
+</config>
