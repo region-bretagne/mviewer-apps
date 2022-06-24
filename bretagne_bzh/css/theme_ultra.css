@@ -507,11 +507,11 @@ box-shadow: none !important;
 .xs.mode-u #btn-mode-su-menu:hover {
     opacity: 0.9;	
 }
-.xs.mode-s #btn-mode-su-menu:after, .xs.mode-u #btn-mode-su-menu:after {
+/* .xs.mode-s #btn-mode-su-menu:after, .xs.mode-u #btn-mode-su-menu:after {
 	content:'Afficher la légende';
 	position: relative;
 	margin-left: 10px;
-}
+} */
 .xs.mode-u .modal-content {
     border-radius: 10px!important;
     padding: 10px!important;
