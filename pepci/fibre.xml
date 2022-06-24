@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<metadata>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description rdf:about="http://www.ilrt.bristol.ac.uk/people/cmdjb/">
+<dc:title>Disponibilité de la fibre en Bretagne</dc:title>
+<dc:creator>Mégalis Bretagne</dc:creator>
+<dc:publisher>Région bretagne</dc:publisher>
+<dc:subject>Disponibilité de la fibre</dc:subject>
+<dc:date>2019-10-01T11:47:39.959Z</dc:date>
+</rdf:Description>
+</rdf:RDF>
+</metadata>
+<application
+    title="Disponibilité de la fibre en Bretagne"
+    logo=""
+    style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/css/kartenn_port.css"
+    exportpng="false"
+    showhelp="false"
+    coordinates="false"
+    measuretools="false"
+    togglealllayersfromtheme="true">									 
+</application>
+<mapoptions maxzoom="20" projection="EPSG:3857" center="-307903.74898791354,6141345.088741366" zoom="9" />
+<proxy url='../proxy/?url='/>
+<olscompletion url="https://wxs.ign.fr/essentiels/ols/apis/completion" type="geoportail" attribution="IGN"/>
+<searchparameters bbox="true" localities="true" features="false" static="false" querymaponclick="true" closeafterclick="true" inputlabel="Saisir votre adresse" />
+  <!-- BASELAYERS -->
+  <baselayers style="gallery">
+    <!-- style="default"||gallery" -->
+    <baselayer type="WMTS" id="ortho1"
+    label="Photo aérienne actuelle" title="GéoBretagne"
+    thumbgallery="img/basemap/ortho.jpg"
+    url="https://tile.geobretagne.fr/gwc02/service/wmts"
+    layers="satellite" format="image/png" visible="false"
+    attribution="&lt;a href='https://applications.region-bretagne.fr/geonetwork/?uuid=3a0ac2e3-7af1-4dec-9f36-dae6b5a8c731' target='_blank' &gt;partenaires GéoBretagne - IGN RGE BD ORTHO - PlanetObserver&lt;/a&gt;"
+    style="_null" matrixset="EPSG:3857" fromcapacity="false" />    
+    <baselayer  type="OSM" id="positron" 
+    label="Positron" 
+    title="CartoDb" 
+    thumbgallery="img/basemap/positron.png" 
+	url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" maxzoom="20" 
+	visible="true" attribution="Map tiles by  &lt;a href='https://cartodb.com/attributions'>CartoDb &lt;/a>, under  &lt;a href='https://creativecommons.org/licenses/by/3.0/'>CC BY 3.0 &lt;/a>" />
+  </baselayers>
+
+<themes mini="false">
+    <theme id="decoupages" name="Découpages territoriaux" collapsed="true" icon="false"> 		
+		<layer 
+            id="epci"
+            name="epci"
+            url="https://geobretagne.fr/geoserver/ign/ows?"
+            visible="true"
+            infoformat="text/html"
+            style="epci_region_fin"
+            stylesalias="epci,epci_region_fin,EPCI_random,epci_region,EPCI_orange"
+			attribution="DREAL Bretagne"
+            metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/2298d744-49cb-4fcb-9487-26f916fecdff"
+            metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=2298d744-49cb-4fcb-9487-26f916fecdff"
+            queryable="false"
+            featurecount="10"
+            infopanel="right-panel"
+            opacity="1">
+        </layer>
+    </theme>
+    <theme id="fibre" name="fibre" collapsed="true" icon="fas fa-code-branch"> 
+        <layer 
+            id="zdep_fin_travaux"
+            name="Disponibilite prévisionnelle de la fibre"
+            url="https://geobretagne.fr/geoserver/megalis/ows?"
+            visible="true"
+            infoformat="application/vnd.ogc.gml"
+			infohighlight="false"
+			featurecount="1"
+            queryable="true"
+			opacity="0.7"
+			attribution="Mégalis Bretagne"
+			metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/c6857d43-90c8-4164-90b1-1c6838dfff59"
+            metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ELEMENTSETNAME=full&amp;ID&amp;ID=c6857d43-90c8-4164-90b1-1c6838dfff59"			
+            infopanel="right-panel"><template url="https://geobretagne.fr/pub/sm-megalis/apps/fibre/templates/fiche.mst" ></template>
+        </layer> 						
+        </theme> 		
+</themes>
+<extensions>
+<extension type="component" id="fullscreen" path="demo/addons"/>
+</extensions>
+</config>
