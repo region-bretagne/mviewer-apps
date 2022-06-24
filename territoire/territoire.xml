@@ -203,8 +203,8 @@
 	                infopanel="bottom-panel"
 	                infoformat="application/vnd.ogc.gml" featurecount="5"
 	                timefilter="true" timeinterval="year" timecontrol="slider" timemin="2008" timemax="2018" timevalues="2008,2013,2018"
-	                style="rplog_tx_rp@commune,rplog_tx_rsecocc@commune,rplog_tx_logvac@commune"
-	                stylesalias="Résidences principales, Résidences secondaires occupées, Logements vacants"
+	                style="rplog_tx_logvac@commune,rplog_tx_rp@commune,rplog_tx_rsecocc@commune"
+	                stylesalias="Logement vacant,Logement principal,Logement secondaire"
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 	                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service connaissance dynamiques territoriales" 
 	                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/7ee2db4e-3ac6-4e56-97da-2a16aaafe77c"
@@ -652,40 +652,6 @@
 		            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.zone_emploi.mst"></template>
 		        </layer>
 			</group>       
-		</theme>
-		<theme name="Les fiches de l'Observatoire"  collapsed="true" id="fiche" icon="far fa-file-pdf"> 
-			<layer id="fiche_epci" name="Fiche EPCI" visible="false" queryable="true" 
-                fields="nom_geo" aliases="Nom" 
-                type="customlayer" style="" opacity="1" legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/img/fiche_epci.png" 
-                url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/customlayers/fiche_epci.js" 
-                tooltip="true" tooltipenabled="true"
-                attribution="Source: Région Bretagne" 
-                metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/2298d744-49cb-4fcb-9487-26f916fecdff" 
-                metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=2298d744-49cb-4fcb-9487-26f916fecdff">
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.fiche_epci.mst"></template>
-			</layer>				
-<!-- 			<layer id="fiche_pays" name="Fiche pays" visible="false" queryable="true" 
-                fields="nom_geo" aliases="Nom" 
-                type="customlayer" style="" opacity="1" legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/img/fiche_pays.png" 
-                url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/customlayers/fiche_pays.js" 
-                tooltip="true" tooltipenabled="true"
-                attribution="Source: Région Bretagne" 
-                metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/9722d181-75f9-40ab-a136-a9f9ed6f29a5" 
-                metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9722d181-75f9-40ab-a136-a9f9ed6f29a5">
-                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/mise_a_jour.mst"></template>
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.fiche_pays.mst"></template>
-			</layer>
-			<layer id="fiche_dep" name="Fiche département" visible="false" queryable="true" 
-                fields="nom_geo" aliases="Nom" 
-                type="customlayer" style="" opacity="1" legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/img/fiche_dep.png" 
-                url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/customlayers/fiche_dep.js" 
-                tooltip="true" tooltipenabled="true"
-                attribution="Source: Région Bretagne" 
-                metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/9722d181-75f9-40ab-a136-a9f9ed6f29a5" 
-                metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9722d181-75f9-40ab-a136-a9f9ed6f29a5">
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.fiche_dep.mst"></template>
-			</layer> -->
-
 		</theme>
     </themes>
     <styles>
