@@ -3,7 +3,7 @@
     <application title="Kartenn VN" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" measuretools="true" legend="true" popup="false" exportpng="true" legendasimage="true" coordinates="true" togglealllayersfromtheme="true" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/css/vn.css" hideprotectedlayers="true" stats="true" statsurl="../ws/kartenn/log.php"/>
     <mapoptions maxzoom="20" projection="EPSG:3857" center="-291072,6187119" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 	<baselayers style="gallery">
-        <baselayer  type="WMTS" id="plan2" label="OpenStreetMap" title="GéoBretagne" thumbgallery="img/basemap/osm.png" maxscale="1000" url="https://osm.geobretagne.fr/gwc01/service/wmts" layers="osm:google" format="image/png" visible="true" attribution="OSM" style="_null" matrixset="EPSG:3857" minresolution="0.4"/>
+        <baselayer  type="WMS" id="plan2" label="OpenStreetMap" title="GéoBretagne" thumbgallery="img/basemap/osm.png" maxscale="1000" url="https://osm.geobretagne.fr/gwc01/service/wms" layers="osm:google" format="image/png" visible="true" attribution="OSM" style="_null" matrixset="EPSG:3857" minresolution="0.4"/>
         <baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="GéoPortail" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
             url="https://wxs.ign.fr/essentiels/geoportail/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
             attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
@@ -665,6 +665,24 @@
 				metadata="" >    
 			</layer>
         </theme> 
+		<theme name="Dragage" id="dragage" icon="level-up-alt">
+			<layer id="site_transit" name="Site de transit" visible="false" tiled="false"
+				queryable="true" secure="true"
+                infoformat="application/vnd.ogc.gml" featurecount="5"                
+				url="../geoserver-proxy/interne/wms" 
+				attribution="Région Bretagne" 
+				metadata=""
+				metadata-csw="" >
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.site_transit.mst"></template>
+			</layer>		
+			<layer id="bathymetrie_vn" name="Bathymétrie 2019" visible="false" tiled="true"
+				queryable="false" secure="true"
+				legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/legend/bathymetrie.jpg"
+				url="../geoserver-proxy/interne/wms" 
+				attribution="Région Bretagne" 
+				metadata=""
+				metadata-csw="" />	
+		</theme>
 
 		<theme name="Géodésie" id="geodesie">
 			<layer id="BDGEODESIQUE-RN_BDD-POI_WLD" name="Repère géodésique" visible="false" tiled="false"

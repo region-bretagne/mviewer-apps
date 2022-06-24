@@ -3,7 +3,7 @@
 		<h2 class="rb-title-feature">{{structure}}</h2>
 		<div class="rb-description-feature">	
 			{{#nb_etablissements}}
-				<b>Nombre d'établissements de formation sur le territoire breton : </b> {{nb_etablissements}}<br>
+				<b>Nombre d'établissements de formation sur le territoire breton : </b> {{{nb_etablissements}}}<br>
 			{{/nb_etablissements}}
 			{{#nb_salaries}}
 				<b>Nombre de salariés : </b>  {{nb_salaries}}<br>

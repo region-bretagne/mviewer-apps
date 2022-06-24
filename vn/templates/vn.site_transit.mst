@@ -1,0 +1,15 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h3 class="rb-title-feature">{{nom_site}}</h3>
+		<p class="rb-text-feature">
+			<span style="font-weight:bold"> Commune :</span> {{commune}}<br/>
+        {{#capacite}}
+			<span style="font-weight:bold"> Capacité :</span> {{capacite}}<br/>
+        {{/capacite}}
+       </p>
+	</li>
+{{/features}}
+
+<style>
+@import url("https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/css/vn_mst.css");
+</style>
