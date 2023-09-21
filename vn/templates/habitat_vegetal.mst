@@ -1,0 +1,16 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h3 class="rb-title-feature">{{nom}}</h3>
+		<p class="rb-text-feature">
+			{{#nom_simpl}}                
+				<span style="font-weight:bold"> Nom simple :</span> {{nom_simpl}}<br/>
+			{{/nom_simpl}}                
+       </p>
+
+
+	</li>
+{{/features}}
+
+<style>
+@import url("https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/css/vn_mst.css");
+</style>

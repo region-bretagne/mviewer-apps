@@ -1,0 +1,52 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<div class="row">
+			<div class="col-xs-7">
+				<div class="rb-title-feature">{{nom_iris}}</div>
+			</div>
+			<div class="col-xs-3">
+				<span class="rb-critere glyphicon glyphicon-calendar" aria-hidden="true" style="margin-left:10px;"><span id="rb-text">{{millesime}}</span></span>
+			</div>	
+		</div>
+
+		<div class="row">
+			<div class="col-md-4" style="text-align: center; color: #0295ac; font-size: 12px; font-weight: bold;"> 
+				<img src="https://kartenn.region-bretagne.fr/img/picto/nscol.svg" alt="non scolarisé" width="50px" height="50px" /> <br><br>
+				Taux de personnes non scolarisées sans diplômes :<br>
+			<div style="font-size: 40px;">	{{p_nscol_part}} %</div>
+				
+			</div>
+			<div class="col-md-4" style="text-align: center; color: #0295ac; font-size: 12px; font-weight: bold;"> 
+				<img src="https://kartenn.region-bretagne.fr/img/picto/nscol_femme.svg" alt="non scolarisé" width="50px" height="50px" /> <br><br>
+				Femmes non scolarisées sans diplômes :<br>
+			<div style="font-size: 40px;">	{{p_fnscol15p_diplmin}} </div>
+				
+			</div>
+			<div class="col-md-4" style="text-align: center; color: #0295ac; font-size: 12px; font-weight: bold;"> 
+				<img src="https://kartenn.region-bretagne.fr/img/picto/nscol_homme.svg" alt="non scolarisé" width="50px" height="50px" /> <br><br>
+				Hommes non scolarisés sans diplômes :<br>
+			<div style="font-size: 40px;">	{{p_hnscol15p_diplmin}} </div>
+				
+			</div>
+		</div>
+		
+		
+
+	</li>
+	
+	<div style="color: #0295ac;  position: fixed; bottom:10px; right :0 ;text-align: left;  font-size: 10px; padding-right: 20px;"> 
+Nombre de personnes non scolarisées de 15 ans ou plus, sans diplôme ou titulaire d'un BEPC, brevet des collèges ou diplôme national du brevet (DNB)<br>
+		</div>
+{{/features}}
+
+<style>
+#over { 
+	color:#0094AB;
+	font-size:1em; 
+	padding-left:20%;
+	font-weight:600;
+	position:absolute; 
+	z-index:2;
+	width:100%
+}
+</style>

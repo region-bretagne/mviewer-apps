@@ -1,158 +1,628 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config mviewerstudioversion="3.1">
-<metadata>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
-<rdf:Description rdf:about="http://www.ilrt.bristol.ac.uk/people/cmdjb/">
-<dc:title>Kartenn Quartier Prioritaire de la Ville</dc:title>
-<dc:creator>anonymous</dc:creator>
-<dc:publisher>anonymous</dc:publisher>
-<dc:subject>Développement économique</dc:subject>
-<dc:date>2022-03-18T09:18:41.525Z</dc:date>
-</rdf:Description>
-</rdf:RDF>
-</metadata>
-<application
-    title="Kartenn Quartier Prioritaire de la Ville"
-    logo="https://geobretagne.fr/pub/logo/region-bretagne.jpg"
-    help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html"
-    style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/css/kartenn_territoire.css"
-    exportpng="false"
-    showhelp="false"
-    coordinates="false"
-    measuretools="false"
-    togglealllayersfromtheme="false">
-</application>
-    <mapoptions maxzoom="20" projection="EPSG:3857" center="-255418,6120890" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
-<olscompletion type="ban" url="https://api-adresse.data.gouv.fr/search/" attribution="BAN" />
-<searchparameters bbox="false" localities="true" features="true" static="false"/>
-<baselayers style="default"> 
-    <baselayer visible="true" id="positron" thumbgallery="img/basemap/positron.png" title="CartoDb" label="Positron" type="OSM" url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" attribution="Map tiles by  &lt;a href=&quot;https://cartodb.com/attributions&quot;&gt;CartoDb&lt;/a&gt;, under  &lt;a href=&quot;https://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY 3.0 &lt;/a&gt;"  ></baselayer> 
-    <baselayer visible="false" id="ortho1" thumbgallery="img/basemap/ortho.jpg" title="GéoBretagne" label="Photo aérienne actuelle" type="WMTS" url="https://tile.geobretagne.fr/gwc02/service/wmts" layers="satellite" format="image/png" style="_null" matrixset="EPSG:3857" fromcapacity="false" attribution="&lt;a href=&quot;https://applications.region-bretagne.fr/geonetwork/?uuid=3a0ac2e3-7af1-4dec-9f36-dae6b5a8c731&quot; target=&quot;_blank&quot; &gt;partenaires GéoBretagne - IGN RGE BD ORTHO - PlanetObserver&lt;/a&gt;"  ></baselayer> 
-    <baselayer visible="false" id="osm_google" thumbgallery="img/basemap/osm_google.png" title="GéoBretagne" label="OpenStreetMap" type="WMS" url="https://osm.geobretagne.fr/gwc01/service/wms" layers="osm:google" format="image/png" attribution="GéoBretagne. Données : les contributeurs d'&lt;a href=&quot;https://www.openstreetmap.org/&quot; target=&quot;_blank&quot;&gt;OpenStreetMap &lt;/a&gt;,  &lt;a href=&quot;https://www.openstreetmap.org/copyright&quot; target=&quot;_blank&quot;&gt;ODbL &lt;/a&gt;"  ></baselayer> 
-</baselayers>
-<themes mini="false"> 
-    <theme id="demo" name="Démographie" collapsed="true" icon="fas fa-caret-right"> 
-		<layer 
-			id="iris_qpv_demographie"
-			name="Catégorie d'âge majoritaire"
-			type="wms" tiled="true"
-			exclusive="true"
-			style="iris_qpv_age_majoritaire"
-			url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
-			visible="true"
-			infoformat="application/vnd.ogc.gml"
-			attribution="Région Bretagne"
-			queryable="true"
-			infopanel="bottom-panel">
-			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/demographie_generale.mst"></template>
-		</layer> 
-		<layer 
-			id="iris_qpv_demographie"
-			name="Proportion de femmes"
-			type="wms" tiled="true"
-			exclusive="true"
-			style="iris_qpv_prop_femme"
-			url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
-			visible="false"
-			infoformat="application/vnd.ogc.gml"
-			attribution="Région Bretagne"
-			queryable="true"
-			infopanel="bottom-panel">
-			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/demographie_sexe.mst"></template>
-		</layer>
-		<layer 
-			id="iris_qpv_demographie"
-			name="Catégorie socioprofessionnelle majoritaire"
-			type="wms" tiled="true"
-			exclusive="true"
-			style="iris_qpv_csp_majoritaire"
-			url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
-			visible="true"
-			infoformat="application/vnd.ogc.gml"
-			attribution="Région Bretagne"
-			queryable="true"
-			infopanel="bottom-panel">
-			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/demographie_csp.mst"></template>
-		</layer>
-		<layer 
-			id="iris_qpv_demographie"
-			name="Part de ménages seul femme"
-			type="wms" tiled="true"
-			exclusive="true"
-			style="iris_qpv_menfseul"
-			url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
-			visible="false"
-			infoformat="application/vnd.ogc.gml"
-			attribution="Région Bretagne"
-			queryable="true"
-			infopanel="bottom-panel">
-			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/demographie_menfseul.mst"></template>
-		</layer>
-		<layer 
-			id="iris_qpv_demographie"
-			name="Taux de familles monoparentales"
-			type="wms" tiled="true"
-			exclusive="true"
-			style="iris_qpv_menfamono"
-			url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
-			visible="false"
-			infoformat="application/vnd.ogc.gml"
-			attribution="Région Bretagne"
-			queryable="true"
-			infopanel="bottom-panel">
-			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/demographie_menfamono.mst"></template>
-		</layer>
-		<layer 
-			id="iris_qpv_demographie"
-			name="Chômage par sexe"
-			type="wms" tiled="true"
-			exclusive="true"
-			style="iris_qpv_chomage_h_f"
-			url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
-			visible="false"
-			infoformat="application/vnd.ogc.gml"
-			attribution="Région Bretagne"
-			queryable="true"
-			infopanel="bottom-panel">
-			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/demographie_chomage_h_f.mst"></template>
-		</layer>
+	<metadata>
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		         xmlns:dc="http://purl.org/dc/elements/1.1/">
+			<rdf:Description rdf:about="http://www.ilrt.bristol.ac.uk/people/cmdjb/">
+				<dc:title>Kartenn Quartier Prioritaire de la Ville</dc:title>
+				<dc:creator>anonymous</dc:creator>
+				<dc:publisher>anonymous</dc:publisher>
+				<dc:subject>Développement économique</dc:subject>
+				<dc:date>2022-03-18T09:18:41.525Z</dc:date>
+				<dc:date>2022-03-18T09:18:41.525Z</dc:date>
+			</rdf:Description>
+		</rdf:RDF>
+	</metadata>
+	<application title="Kartenn Quartier Prioritaire de la Ville"
+		logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/sante/img/rb_ors.png"
+		help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/aide.html"
+		style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/css/kartenn.css"
+		exportpng="false"
+		showhelp="true"
+		coordinates="false"
+		measuretools="false"
+		togglealllayersfromtheme="false"/>
+	<mapoptions maxzoom="20"
+	            projection="EPSG:3857"
+	            center="-255418,6120890"
+	            zoom="8"
+	            projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244"/>
+	<olscompletion type="ban"
+	               url="https://api-adresse.data.gouv.fr/search/"
+	               attribution="BAN"/>
+	<searchparameters bbox="false"
+	                  localities="true"
+	                  features="true"
+	                  static="false"/>
+					  
+    <extensions>    
+        <extension type="component" id="layerfilter" path="https://kartenn.region-bretagne.fr/kartoviz/demo/addons"/>
+    </extensions>
 
-    </theme> 
-    <theme id="admin" name="Référentiel administratif" collapsed="true" icon="fas fa-caret-right"> 
-        <layer 
-            id="l_qpv_pnru"
-            name="QPV" toplayer="true" tiled="true"
-            type="customlayer" vectorlegend="true"
-			url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/customlayers/l_qpv_pnru.js"
-            visible="true"
-            infoformat="application/vnd.ogc.gml"
-            attribution="GéoBretagne"
-            queryable="false" 
-			searchable="true" searchengine="fuse" fusesearchkeys="NOM_QUARTI,COMMUNE" fusesearchresult="{{NOM_QUARTI}} - {{COMMUNE}}"
-            infopanel="bottom-panel"
-			tooltip="true"	tooltipcontent="{{NOM_QUARTI}}"
-			metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=33e57276-b6be-4e70-968d-f89c9ff69bb4"
-			metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/33e57276-b6be-4e70-968d-f89c9ff69bb4" >  
-		    <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/qpv.mst"></template>
-        </layer> 
-		<layer id="bretagne_5" name="Bretagne à 5" visible="true" tiled="false" namespace="rb"
-			queryable="false" 
-			showintoc="false"
-			url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-			attribution="OSM" 
-			metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72"
-			metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72" >  
-		</layer>
-		<layer id="departement_osm" name="Département" visible="true" tiled="false" namespace="rb"
-			queryable="false"
-			showintoc="false"
-			url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-			style="bretagne_5_style" 
-			attribution="OSM" 
-			metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=6583d262-ebc4-4e51-a1fd-ee493c2b355d"
-			metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/6583d262-ebc4-4e51-a1fd-ee493c2b355d" >  
-		</layer>
-    </theme> 
-
-</themes>
+					  
+	<baselayers style="default">
+		<baselayer visible="true" id="osm_gge" thumbgallery="img/basemap/osmGGE.png" title="OpenStreetMap GéoGrandEst" label="OpenStreetMap GéoGrandEst" type="WMS" 
+			url="https://osm.datagrandest.fr/mapcache/?" layers="grey" format="image/png" 
+            attribution="DataGrandEst. Données : les contributeurs d'&lt;a href='https://www.openstreetmap.org/' target='_blank'>OpenStreetMap &lt;/a>,  &lt;a href='https://www.openstreetmap.org/copyright' target='_blank'>ODbL &lt;/a>"/>
+		<baselayer visible="false"
+		           id="ortho1"
+		           thumbgallery="img/basemap/ortho.jpg"
+		           title="GéoBretagne"
+		           label="Photo aérienne actuelle"
+		           type="WMTS"
+		           url="https://tile.geobretagne.fr/gwc02/service/wmts"
+		           layers="satellite"
+		           format="image/png"
+		           style="_null"
+		           matrixset="EPSG:3857"
+		           fromcapacity="false"
+		           attribution="&lt;a href=&quot;https://applications.region-bretagne.fr/geonetwork/?uuid=3a0ac2e3-7af1-4dec-9f36-dae6b5a8c731&quot; target=&quot;_blank&quot; &gt;partenaires GéoBretagne - IGN RGE BD ORTHO - PlanetObserver&lt;/a&gt;"/>
+		<baselayer visible="false"
+		           id="osm_google"
+		           thumbgallery="img/basemap/osm_google.png"
+		           title="GéoBretagne"
+		           label="OpenStreetMap"
+		           type="WMS"
+		           url="https://osm.geobretagne.fr/gwc01/service/wms"
+		           layers="osm:google"
+		           format="image/png"
+		           attribution="GéoBretagne. Données : les contributeurs d'&lt;a href=&quot;https://www.openstreetmap.org/&quot; target=&quot;_blank&quot;&gt;OpenStreetMap &lt;/a&gt;,  &lt;a href=&quot;https://www.openstreetmap.org/copyright&quot; target=&quot;_blank&quot;&gt;ODbL &lt;/a&gt;"/>
+	</baselayers>
+	<themes mini="false">
+		<theme id="demo"
+		       name="Démographie"
+		       collapsed="false"
+		       icon="fas fa-caret-right">
+			<layer id="iris_qpv_demographie"
+			       name="Classe d'âge majoritaire"
+			       type="wms"
+			       tiled="true"
+				   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/3241d624-b1c1-4f42-a069-0dfce74ea1c3"
+			       metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=3241d624-b1c1-4f42-a069-0dfce74ea1c3"
+			       exclusive="true"
+			       style="iris_qpv_age_majoritaire"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="true"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="INSEE RP2019"
+			       queryable="true"
+			       infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/demographie_generale.mst"/>
+			</layer>
+			<layer id="iris_qpv_demographie"
+			       name="Proportion de femmes"
+			       type="wms"
+			       tiled="true"
+				   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/3241d624-b1c1-4f42-a069-0dfce74ea1c3"
+			       metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=3241d624-b1c1-4f42-a069-0dfce74ea1c3"
+			       exclusive="true"
+			       style="iris_qpv_prop_femme"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="false"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="INSEE RP2019"
+			       queryable="true"
+			       infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/demographie_sexe.mst"/>
+			</layer>
+			<layer id="iris_qpv_demographie"
+			       name="Part de femmes parmis les ménages seuls"
+			       type="wms"
+			       tiled="true"
+				   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/3241d624-b1c1-4f42-a069-0dfce74ea1c3"
+			       metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=3241d624-b1c1-4f42-a069-0dfce74ea1c3"
+			       exclusive="true"
+			       style="iris_qpv_menfseul"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="false"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="INSEE RP2019"
+			       queryable="true"
+			       infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/demographie_menfseul.mst"/>
+			</layer>
+			<layer id="iris_qpv_demographie"
+			       name="Taux de famille monoparentale"
+			       type="wms"
+			       tiled="true"
+				   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/3241d624-b1c1-4f42-a069-0dfce74ea1c3"
+			       metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=3241d624-b1c1-4f42-a069-0dfce74ea1c3"
+			       exclusive="true"
+			       style="iris_qpv_menfamono"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="false"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="&lt;b&gt;Source :&lt;/b&gt; INSEE RP2019 &lt;br&gt;
+&lt;b&gt;Définition :&lt;/b&gt; Une famille monoparentale comprend un parent isolé et un ou plusieurs enfants célibataires (n'ayant pas d'enfant)."
+			       queryable="true"
+			       infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/demographie_menfamono.mst"/>
+			</layer>
+		</theme>
+		<theme id="cnam"
+		       name="Indicateurs socio-économiques"
+		       collapsed="true"
+		       icon="fas fa-caret-right">
+			<layer id="iris_qpv_demographie"
+			       name="Catégorie socioprofessionnelle majoritaire"
+			       type="wms"
+			       tiled="true"
+				   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/3241d624-b1c1-4f42-a069-0dfce74ea1c3"
+			       metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=3241d624-b1c1-4f42-a069-0dfce74ea1c3"
+			       exclusive="true"
+			       style="iris_qpv_csp_majoritaire"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="true"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="&lt;b&gt;Source :&lt;/b&gt; INSEE RP2019 &lt;br&gt;
+&lt;b&gt;Définition :&lt;/b&gt; La nomenclature des professions et catégories socioprofessionnelles, dite PCS, permet de classer les personnes en emploi au sens du Bureau international du travail (BIT) en fonction de leur profession et d’une combinaison de variables définissant l’environnement de travail (statut, nombre de salariés, position professionnelle et nature de l’employeur). La nomenclature propose six groupes socioprofessionnels : les agriculteurs exploitants, les artisans, commerçants et chefs d’entreprise, les cadres et professions intellectuelles supérieures, les professions intermédiaires, les employés et les ouvriers."
+			       queryable="true"
+			       infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/demographie_csp.mst"/>
+			</layer>
+			<layer id="iris_qpv_cnam"
+			       name="Part de bénéficiaires de la C2S dans la population générale"
+			       type="wms"
+			       tiled="true"
+			       exclusive="true"
+			       style="iris_qpv_c2s_part	"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="true"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="CNAM&lt;br&gt;*C2S - Complémentaire Santé Solidaire"
+			       queryable="true"
+			       infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/cnam_part.mst"/>
+			</layer>
+			<layer id="iris_qpv_cnam"
+			       name="Classe d'âge majoritaire bénéficiaire de la C2S"
+			       type="wms"
+			       tiled="true"
+			       exclusive="true"
+			       style="iris_qpv_c2s_age_majoritaire"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="true"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="CNAM&lt;br&gt;*C2S - Complémentaire Santé Solidaire"
+			       queryable="true"
+			       infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/cnam_age.mst"/>
+			</layer>
+			<layer id="iris_qpv_cnam"
+			       name="Proportion de femmes bénéficiaires de la C2S"
+			       type="wms"
+			       tiled="true"
+			       exclusive="true"
+			       style="iris_qpv_c2s_part_femme"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="false"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="CNAM&lt;br&gt;*C2S - Complémentaire Santé Solidaire"
+			       queryable="true"
+			       infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/cnam_sexe.mst"/>
+			</layer>
+			
+			
+			<!-- Les données suivantes ne sont plus fournies par l'Insee -->
+			
+			<!-- <layer id="iris_qpv_cnam" -->
+			       <!-- name="Part d'allocataires C2S dans les bénéficiaires CNAM" -->
+			       <!-- type="wms" -->
+			       <!-- tiled="true" -->
+			       <!-- exclusive="true" -->
+			       <!-- style="iris_qpv_c2s_allocation" -->
+			       <!-- url="https://ows.region-bretagne.fr/geoserver/rb/ows?" -->
+			       <!-- visible="false" -->
+			       <!-- infoformat="application/vnd.ogc.gml" -->
+			       <!-- attribution="CNAM" -->
+			       <!-- queryable="true" -->
+			       <!-- infopanel="bottom-panel"> -->
+				<!-- <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/cnam_al.mst"/> -->
+			<!-- </layer> -->
+			<!-- <layer id="iris_qpv_demographie" -->
+			       <!-- name="Chômage par sexe" -->
+			       <!-- type="wms" -->
+			       <!-- tiled="true" -->
+			       <!-- exclusive="true" -->
+			       <!-- style="iris_qpv_chomage_h_f" -->
+			       <!-- url="https://ows.region-bretagne.fr/geoserver/rb/ows?" -->
+			       <!-- visible="false" -->
+			       <!-- infoformat="application/vnd.ogc.gml" -->
+			       <!-- attribution="INSEE" -->
+			       <!-- queryable="true" -->
+			       <!-- infopanel="bottom-panel"> -->
+				<!-- <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/demographie_chomage_h_f.mst"/> -->
+			<!-- </layer> -->
+			<layer id="iris_qpv_demographie"
+			       name="Part des 15 ans ou plus sortis du système scolaire, sans diplôme"
+			       type="wms"
+			       tiled="true"
+			       exclusive="true"
+				   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/3241d624-b1c1-4f42-a069-0dfce74ea1c3"
+			       metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=3241d624-b1c1-4f42-a069-0dfce74ea1c3"
+			       style="iris_qpv_nscol"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="false"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="INSEE"
+			       queryable="true"
+				   filter="millesime=2019"
+			       infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/p_nscol15p_diplmin.mst"/>
+			</layer>			
+			<layer id="iris_qpv_apa_rsa"
+			       name="Taux d'allocataires du RSA"
+			       type="wms"
+			       tiled="true"
+			       exclusive="true"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="true"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="Insee, CNAF"
+			       queryable="true"
+			       infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/rsa.mst"/>
+			</layer>
+			<layer id="iris_qpv_revenus"
+			       name="Taux de pauvreté"
+			       type="wms"
+			       tiled="true"
+			       exclusive="true"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="false"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="FiLoSoFi&lt;br&gt;Taux de pauvreté au seuil de 60 % du revenu disponible par UC médian métropolitain (%)"
+			       queryable="true"
+			       infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/taux_pauvrete.mst"/>
+			</layer>
+		</theme>
+		<theme id="iris_qpv_offre_soin"
+		       name="Offre de soins"
+		       collapsed="true"
+		       icon="fas fa-caret-right">
+			<layer id="iris_qpv_offre_soin"
+			       name="Densité de professionnel de santé libéraux en soins de premier recours pour 100 000 hab."
+			       style="iris_qpv_soin_primaire"
+			       type="wms"
+			       tiled="true"
+			       exclusive="true"
+				   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/77f978c8-198d-4839-92ca-7b0473c65370"
+				   metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=77f978c8-198d-4839-92ca-7b0473c65370"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="true"
+				   expanded="true"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="&lt;b&gt;Source :&lt;/b&gt; Insee – Base permanente des équipements 2021&lt;br&gt;&lt;b&gt;Précision :&lt;/b&gt; les professionnels de santé libéraux de premier recours (praticiens exerçant leur activité principale en cabinet individuel, de groupe ou de société) comprennent les médecins omnipraticiens, les infirmiers, les masseurs-kinésithérapeutes"
+			       queryable="true"
+			       infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/offre_soin_primaire.mst"/>
+			</layer>
+			<layer id="iris_qpv_offre_soin"
+			       name="Nombre de pédiatres"
+			       style="iris_qpv_pediatres"
+			       type="wms"
+			       tiled="true"
+				   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/77f978c8-198d-4839-92ca-7b0473c65370"
+				   metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=77f978c8-198d-4839-92ca-7b0473c65370"
+			       exclusive="true"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="true"
+				   expanded="true"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="&lt;b&gt;Source :&lt;/b&gt; Insee – Base permanente des équipements 2021&lt;br&gt;&lt;b&gt;Précision :&lt;/b&gt; Les indicateurs portent sur les praticiens exerçant leur activité principale en libéral (en cabinet individuel ou de groupe ou de société)"
+			       queryable="true"
+			       infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/offre_soin_pediatre.mst"/>
+			</layer>
+			<layer id="iris_qpv_offre_soin"
+			       name="Densité de professionnel de santé en second recours pour 100 000 hab."
+			       style="iris_qpv_second_recours"
+			       type="wms"
+			       tiled="true"
+				   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/77f978c8-198d-4839-92ca-7b0473c65370"
+				   metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=77f978c8-198d-4839-92ca-7b0473c65370"
+			       exclusive="true"
+				   expanded="true"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="true"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="La densité médicale est le ratio qui rapporte les effectifs de médecins (omnipraticiens, spécialistes...) à la population d'un territoire donné. La densité médicale s'exprime en nombre de médecins (par exemple) pour 100 000 habitants (source INSEE)
+Les indicateurs portent sur les praticiens exerçant leur activité principale en libéral (en cabinet individuel ou de groupe ou de société). Il s'agit d'un indicateur calculé par l'ORS Bretagne regroupant les praticiens spécialistes. 
+"
+			       queryable="true"
+			       infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/offre_soin_second_recours.mst"/>
+			</layer>
+		</theme>
+		<theme id="iris_qpv_recours_soin"
+		       name="Recours aux soins"
+		       collapsed="true"
+		       icon="fas fa-caret-right">
+			<layer id="iris_qpv_recours"
+			       name="Bénéficaires ALD"
+			       style="iris_qpv_tx_std_ald"
+			       type="wms"
+			       tiled="true"
+			       fields="tx_std_ald"
+				   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/36e2eb4c-4118-4f67-ad6d-6331ad665790"
+				   metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=36e2eb4c-4118-4f67-ad6d-6331ad665790"
+			       aliases="Taux de bénéficiaire du dispositif des ALD :"
+			       exclusive="true"
+   				   expanded="true"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="true"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="Taux standardisés de bénéficiaires d'au moins une ALD pour 100 bénéficiaires du régime général de l'assurance maladie. 
+Il s'agit d'un indicateur calculé par l'ORS Bretagne ; le sigle « &lt;a href=&quot;https://www.ameli.fr/llle-et-vilaine/assure/droits-demarches/maladie-accident-hospitalisation/affection-longue-duree-ald/affection-longue-duree-maladie-chronique&quot; title=&quot;Affection de Longue Durée&quot; target=&quot;_blank&quot;&gt;ALD&lt;/a&gt; » signifie « affection de longue durée ». Ce dispositif permet la prise en charge de pathologies qui nécessitent un traitement prolongé et coûteux. Il en existe plusieurs types, les ALD exonérantes et non exonérantes qui ne donnent pas les mêmes droits &lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2021).
+"
+			       queryable="true"
+			       infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/tx_ald.mst"/>
+			</layer>
+			<layer id="iris_qpv_recours"
+			       name="Recours aux médecins généralistes"
+			       style="iris_qpv_tx_std_mg"
+			       type="wms"
+			       tiled="true"
+			       exclusive="true"
+				   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/36e2eb4c-4118-4f67-ad6d-6331ad665790"
+				   metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=36e2eb4c-4118-4f67-ad6d-6331ad665790"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="true"
+				   expanded="true"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="Taux standardisés de recours au médecin généraliste libéral pour 100 bénéficiaires du régime général de l'assurance maladie. Il s'agit d'un indicateur calculé par l'ORS Bretagne.
+&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2021).				   "
+			       queryable="true"
+			       infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/tx_std_mg.mst"/>
+			</layer>
+			<layer id="iris_qpv_recours"
+			       name="Recours aux anti-dépresseurs"
+			       style="iris_qpv_tx_ttt_antidep_15plus"
+			       type="wms"
+			       tiled="true"
+			       exclusive="true"
+				   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/36e2eb4c-4118-4f67-ad6d-6331ad665790"
+				   metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=36e2eb4c-4118-4f67-ad6d-6331ad665790"
+				   expanded="true"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="true"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="Taux standardisés de recours à un traitement anti-dépresseur régulier pour 1 000 bénéficiaires du régime général de l'assurance maladie âgés de 15 ans et plus. Il s'agit d'un indicateur calculé par l'ORS Bretagne.
+&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2021)."
+			       queryable="true"
+			       infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/tx_ttt_antidep_15plus.mst"/>
+			</layer>
+			<layer id="iris_qpv_recours"
+			       name="Recours aux mammographies de dépistage organisé"
+			       style="iris_qpv_tx_std_mamdo_5074"
+			       type="wms"
+			       tiled="true"
+			       exclusive="true"
+				   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/36e2eb4c-4118-4f67-ad6d-6331ad665790"
+				   metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=36e2eb4c-4118-4f67-ad6d-6331ad665790"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="true"
+				   expanded="true"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="Poids du non recours à la mammographie (femmes 50-74 ans). Il s'agit d'un indicateur calculé par l'ORS Bretagne.
+&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2021). "
+			       queryable="true"
+			       infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/tx_std_mamdo_5074.mst"/>
+			</layer>
+			<layer id="iris_qpv_recours"
+			       name="Recours à un gynécologue lors d'une grossesse"
+			       style="iris_qpv_tx_std_gyngro_1549"
+			       type="wms"
+			       tiled="true"
+				   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/36e2eb4c-4118-4f67-ad6d-6331ad665790"
+				   metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=36e2eb4c-4118-4f67-ad6d-6331ad665790"
+			       exclusive="true"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="true"
+				   expanded="true"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="Taux standardisés de recours à un gynécologue libéral dans le cadre d'un suivi de grossesse pour 1 000 bénéficiaires du régime général de l'assurance maladie âgées de 15 à 49 ans.
+Il s'agit d'un indicateur calculé par l'ORS Bretagne. 
+&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2021)."
+			       queryable="true"
+			       infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/tx_std_gyngro_1549.mst"/>
+			</layer>
+			<layer id="iris_qpv_recours"
+			       name="Recours à un gynécologue hors grossesse"
+			       style="tx_std_gynmed_15"
+			       type="wms"
+			       tiled="true"
+			       exclusive="true"
+				   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/36e2eb4c-4118-4f67-ad6d-6331ad665790"
+				   metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=36e2eb4c-4118-4f67-ad6d-6331ad665790"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="true"
+				   expanded="true"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="Taux standardisés de recours à un gynécologue libéral dans le cadre d'un suivi médical (hors grossesse) pour 1 000 bénéficiaires du régime général de l'assurance maladie âgées de 15 ans ou plus. Il s'agit d'un indicateur calculé par l'ORS Bretagne.
+&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2021). "
+			       queryable="true"
+			       infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/tx_std_gynmed_15.mst"/>
+			</layer>			
+			<layer id="iris_qpv_recours"
+			       name="Non recours aux soins généralistes"
+			       style="iris_qpv_p_nrec_soin"
+			       type="wms"
+			       tiled="true"
+			       exclusive="true"
+				   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/36e2eb4c-4118-4f67-ad6d-6331ad665790"
+				   metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=36e2eb4c-4118-4f67-ad6d-6331ad665790"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="true"
+				   expanded="true"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="Poids du non recours à tous types de soins. Il s'agit d'un indicateur calculé pour l'ORS Bretagne. 
+&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2021)."
+			       queryable="true"
+			       infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/p_nrec_soin.mst"/>
+			</layer>
+			<layer id="iris_qpv_recours"
+			       name="Recours à un psychiatre"
+			       style="iris_qpv_tx_std_psy_15plus"
+			       type="wms"
+			       tiled="true"
+				   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/36e2eb4c-4118-4f67-ad6d-6331ad665790"
+				   metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=36e2eb4c-4118-4f67-ad6d-6331ad665790"
+			       exclusive="true"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="true"
+				   expanded="true"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="Taux standardisés de recours à un psychiatre pour 1 000 bénéficiaires du régime général de l'assurance maladie âgés de 15 ans et plus. Il s'agit d'un indicateur calculé par l'ORS Bretagne 
+&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2021)."
+			       queryable="true"
+			       infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/tx_std_psy_15plus.mst"/>
+			</layer>
+			<layer id="iris_qpv_recours"
+			       name="Non recours aux soins dentaires"
+			       style="iris_qpv_p_nrec_dent"
+			       type="wms"
+				   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/36e2eb4c-4118-4f67-ad6d-6331ad665790"
+				   metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=36e2eb4c-4118-4f67-ad6d-6331ad665790"
+			       tiled="true"
+			       exclusive="true"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="true"
+				   expanded="true"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="Poids des bénéficiaires sans consultation dentaire. Il s'agit d'un indicateur calculé par l'ORS Bretagne. 
+&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2021). "
+			       queryable="true"
+			       infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/p_nrec_dent.mst"/>	
+				</layer>
+			<layer id="iris_qpv_recours"
+			       name="Non recours à la mammographie"
+			       style="iris_qpv_p_nrec_mam"
+			       type="wms"
+			       tiled="true"
+				   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/36e2eb4c-4118-4f67-ad6d-6331ad665790"
+				   metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=36e2eb4c-4118-4f67-ad6d-6331ad665790"
+			       exclusive="true"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="true"
+				   expanded="true"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="ORS Bretagne  - Poids du non recours à la mammographie (femmes 50-74 ans)"
+			       queryable="true"
+			       infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/p_nrec_mam.mst"/>	
+			</layer>
+			<layer id="iris_qpv_recours"
+			       name="Recours aux soins non programmés"
+			       style="iris_qpv_p_rec_npgm"
+			       type="wms"
+				   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/36e2eb4c-4118-4f67-ad6d-6331ad665790"
+				   metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=36e2eb4c-4118-4f67-ad6d-6331ad665790"
+			       tiled="true"
+			       exclusive="true"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="true"
+				   expanded="true"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="ORS Bretagne - Poids du recours à des soins non programmés"
+			       queryable="true"
+			       infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/p_rec_npgm.mst"/>	
+			</layer>
+		</theme>
+		<theme id="admin"
+		       name="Référentiel administratif"
+		       collapsed="true"
+		       icon="fas fa-caret-right">
+			
+			
+			
+			<layer id="iris_qpv_demographie"
+			       name="IRIS 'Divers'"
+			       toplayer="true"
+			       type="wms"
+			       style="iris_qpv_type_a_h"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="true"
+			       attribution="Iris divers &lt;a href=&quot;https://www.insee.fr/fr/metadonnees/definition/c1523&quot; target=&quot;_blank&quot; data-toggle=&quot;tooltip&quot; title data-original-title=&quot;Plus d'information&quot;&gt; &lt;span class=&quot;glyphicon glyphicon-info-sign&quot;&gt;&lt;/span&gt;&lt;/a&gt;"
+			       queryable="false"/>
+				   
+			<layer id="commune_qpv"
+			       name="Commune ayant au moins un QPV"
+			       toplayer="true"
+			       type="wms"
+			       url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+			       visible="true"
+			       attribution=""
+			       queryable="false"/>
+				   
+			<layer id="l_qpv_pnru"
+			       name="QPV"
+			       toplayer="true"
+			       tiled="true"
+			       type="customlayer"
+			       vectorlegend="true"
+			       url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/customlayers/l_qpv_pnru.js"
+			       visible="true"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="GéoBretagne"
+			       queryable="false"
+			       searchable="true"
+			       searchengine="fuse"
+			       fusesearchkeys="NOM_QUARTI,COMMUNE"
+			       fusesearchresult="{{NOM_QUARTI}} - {{COMMUNE}}"
+			       infopanel="bottom-panel"
+			       tooltip="true"
+			       tooltipcontent="{{NOM_QUARTI}}"
+			       metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=33e57276-b6be-4e70-968d-f89c9ff69bb4"
+			       metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/33e57276-b6be-4e70-968d-f89c9ff69bb4">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/qpv.mst"/>
+			</layer>
+			<layer id="bretagne_5"
+			       name="Bretagne à 5"
+			       visible="true"
+			       tiled="false"
+			       namespace="rb"
+			       queryable="false"
+			       showintoc="false"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+			       attribution="OSM"
+			       metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72"
+			       metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72"/>
+            <layer id="departement_metro" name="Département" visible="true" tiled="false" namespace="rb"
+				queryable="false"
+                showintoc="false"
+				url="https://geobretagne.fr/geoserver/ign/wms" 
+				style="bretagne_5_style" 
+				attribution="IGN - Admin Express" 
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/c8884cac-bc25-41a0-92d1-b6566c86066e"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c8884cac-bc25-41a0-92d1-b6566c86066e" >
+            </layer>
+		</theme>
+	</themes>
+	
+	   <styles>
+        <selectionstyle>
+            <point radius="12" fillcolor="26, 188, 156" opacity="0" strokecolor="26, 188, 156" strokewidth="4" />
+            <line opacity="0.6" strokecolor="26, 188, 156" strokewidth="8" />
+            <polygon fillcolor="45, 64, 89" opacity="0.1" strokecolor="45, 64, 89" strokewidth="2" />
+        </selectionstyle>
+        <subselectionstyle>
+            <point radius="12" fillcolor="175, 122, 197" opacity="0.5" strokecolor="175, 122, 197" strokewidth="4" />
+            <line opacity="0.8" strokecolor="175, 122, 197"  strokewidth="8" />
+            <polygon fillcolor="175, 122, 197" opacity="0.2" strokecolor="175, 122, 197" strokewidth="6" />
+        </subselectionstyle>
+    </styles>
+	
 </config>

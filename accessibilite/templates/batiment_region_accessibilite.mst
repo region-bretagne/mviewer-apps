@@ -21,6 +21,7 @@
 <style>
 .pictos {
     padding-left: 10px;
+	padding-bottom: 80px;
 }
 .floating-box {
     float: left;

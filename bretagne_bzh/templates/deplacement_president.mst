@@ -1,0 +1,80 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{titre}}</h2>
+		<p class="rb-text-feature">		
+			<b>Ville : </b>  {{ville}}<br>
+			<b>Date : </b>  {{datation_txt}}<br>
+			{{#bien_vivre}}
+			<button class="rb-but-vert" disabled>Bien vivre dans une Bretagne en bonne santé</button>    
+			{{/bien_vivre}}
+			{{#plus_bzh}}
+			<button class="rb-but-rose" disabled>Plus de Bretagne</button>    
+			{{/plus_bzh}}
+			{{#plus_emploi}}
+			<button class="rb-but-jaune" disabled>Plus d'emploi, moins de carbone</button>    
+			{{/plus_emploi}}
+
+		</p>
+	</li>
+{{/features}}
+
+<style>
+.rb-title-feature {
+	color: #5A9EAA;
+	font-family:"region_bold";
+	font-size:18px;
+	margin-top:2%;
+	line-height:1;
+	text-align:center;
+}
+
+.panel-heading{
+	display:none;
+}
+.panel-primary{
+	border-color:#ffffff;
+}
+#right-panel .active{
+	padding-bottom:0px!important;
+}
+.rb-but-vert{
+	display:inline-block;
+	margin:0.5em 0.3em 0.3em 0.5em;
+	border-radius:0.3em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'OpenSans-Bold',sans-serif;
+	font-weight:300;
+	color:#FFFFFF;
+	background-color:#6E8225;
+	text-align:center;
+	font-size:small;
+}
+.rb-but-rose{
+	display:inline-block;
+	margin:0.5em 0.3em 0.3em 0.5em;
+	border-radius:0.3em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'OpenSans-Bold',sans-serif;
+	font-weight:300;
+	color:#FFFFFF;
+	background-color:#B0006B;
+	text-align:center;
+	font-size:small;
+}
+.rb-but-jaune{
+	display:inline-block;
+	margin:0.5em 0.3em 0.3em 0.5em;
+	border-radius:0.3em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'OpenSans-Bold',sans-serif;
+	font-weight:300;
+	color:#FFFFFF;
+	background-color:#E3C213;
+	text-align:center;
+	font-size:small;
+}
+
+</style>

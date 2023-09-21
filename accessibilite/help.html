@@ -41,6 +41,11 @@
     margin-right: 0;
     padding-left: 40px;
 }
+@media screen and (max-width: 570px) {
+  #help .nav-tabs > li.active > a, #help .nav-tabs > li.active > a:active, #help .nav-tabs > li.active > a:focus, #help .nav-tabs > li.active > a:hover, #help .nav-tabs > li > a, #help .nav-tabs > li > a:active, #help .nav-tabs > li > a:focus, #help .nav-tabs > li > a:hover {
+	  padding-left: 10px;
+  }
+}
 #help .nav-tabs li a {
     font-family: "bretagneFont";
 }
@@ -98,7 +103,7 @@
     </li>
     <li role="presentation" class="col-xs-4" style="position: relative;">
         <a href="#h_credits" aria-controls="settings" role="tab" data-toggle="tab"><span class="far fa-copyright"></span> Crédits</a>
-        <button type="button" class="close" style="position: absolute; right: 15px; top: 12px;" data-dismiss="modal">×</button>
+        <button type="button" class="close" style="position: absolute; right: 0px; top: -5px;" data-dismiss="modal">×</button>
     </li>
 </ul>
 
@@ -156,19 +161,19 @@
 				<p><span style="color:#6e8225;font-weight:bold;">Vert</span>, <span style="text-decoration: underline;">absence d'obstacle majeur au sens de la réglementation.</span></p>
 			</div>
 			<div class="col-xs-12 picto-handicap">
-				<div class="col-xs-2">
+				<div class="col-xs-4">
 					<img src="https://kartenn.region-bretagne.fr/img/picto/handicap_PMR.svg" alt="Handicap moteur" /><br/><p>Handicap moteur</p>
 				</div>
-				<div class="col-xs-2">
+				<div class="col-xs-4">
 					<img src="https://kartenn.region-bretagne.fr/img/picto/handicap_mm.svg" alt="Mobilité réduite" /><br/><p>Mobilité réduite</p>
 				</div>
-				<div class="col-xs-2">
+				<div class="col-xs-4">
 					<img src="https://kartenn.region-bretagne.fr/img/picto/handicap_visuel.svg" alt="Handicap visuel" /><br/><p>Handicap visuel</p>
 				</div>
-				<div class="col-xs-2">
+				<div class="col-xs-4">
 					<img src="https://kartenn.region-bretagne.fr/img/picto/handicap_auditif.svg" alt="Handicap auditif" /><br/><p>Handicap auditif</p>
 				</div>
-				<div class="col-xs-2">
+				<div class="col-xs-4">
 					<img src="https://kartenn.region-bretagne.fr/img/picto/handicap_cognitif.svg" alt="Handicap cognitif" /><br/><p>Handicap cognitif</p>
 				</div>
 			</div>

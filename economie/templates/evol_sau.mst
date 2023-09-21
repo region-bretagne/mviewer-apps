@@ -1,0 +1,31 @@
+{{#features}}
+<li class="item"
+    id="{{feature_ol_uid}}">
+	<div class="row">
+			<div class="col-xs-7">
+				<div class="rb-title-feature">{{nom}}</div>
+			</div>
+		</div>
+	<div class="row">
+		<div class="col-md-4"
+		     style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;">
+			<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;"
+			        src="https://kartenn.region-bretagne.fr/mreport/kartenn_agriculture_{{niveau}}/{{code_geo}}/{{niveau}}_agreste_evol_sau_abs"/>
+		</div>
+		<div class="col-md-4"
+		     style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;">
+			<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;"
+			        src="https://kartenn.region-bretagne.fr/mreport/kartenn_agriculture_{{niveau}}/{{code_geo}}/{{niveau}}_agreste_evol_sau_prop"/>
+		</div>
+		<div class="col-md-4"
+		     style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;">
+			<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;"
+			        src="https://kartenn.region-bretagne.fr/mreport/kartenn_agriculture_{{niveau}}/{{code_geo}}/{{niveau}}_agreste_sau"/>
+		</div>
+	</div>
+</li>
+{{/features}}
+<style>
+
+#over { font-size:1em; position:absolute; top:0px; left:20px; z-index:2 }
+</style>

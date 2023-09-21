@@ -1,0 +1,35 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<div class="row">
+			<div class="col-xs-7">
+				<div class="rb-title-feature">{{nom_iris}}</div>
+			</div>
+			<div class="col-xs-3">
+				<span class="rb-critere glyphicon glyphicon-calendar" aria-hidden="true" style="margin-left:10px;"><span id="rb-text">{{millesime}}</span></span>
+			</div>	
+		</div>
+
+		<div class="row">
+			<div class="col-md-6" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartenn_qpv_offre_de_soin_{{millesime}}/{{code_iris}}/iris_second_recours_densite_{{millesime}}"></iframe>
+			</div>
+			<div class="col-md-6" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:60%;height:60%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartenn_qpv_offre_de_soin_{{millesime}}/{{code_iris}}/iris_type_prof_second_recours_pour_100000_{{millesime}}"></iframe>
+					<div id="over">Nombre d'offre de soin par catégorie</div>
+			</div>
+		</div>
+
+	</li>
+{{/features}}
+
+<style>
+#over { 
+	color:#0094AB;
+	font-size:1em; 
+	padding-left:20%;
+	font-weight:600;
+	position:absolute; 
+	z-index:2;
+	width:100%
+}
+</style>

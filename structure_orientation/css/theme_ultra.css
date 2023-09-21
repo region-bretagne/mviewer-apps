@@ -2,7 +2,7 @@
 /******************************************************************************
 ------------------------ CSS THEME MVIEWER BRETAGNE BZH ULTRA -----------------
 ******************************************************************************/
-@import url("../../crbicon/crbicon.css");
+@import url("../../_region/crbicon/crbicon.css");
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 /*******************************
@@ -10,19 +10,19 @@
 ********************************/
 @font-face {
   font-family: 'roboto_bold';
-  src: url("../../global/font/Roboto/Roboto-Bold.ttf"); }
+  src: url("../../_region/font/Roboto/Roboto-Bold.ttf"); }
 
 @font-face {
   font-family: 'roboto_regular';
-  src: url("../../global/font/Roboto/Roboto-Regular.ttf"); }
+  src: url("../../_region/font/Roboto/Roboto-Regular.ttf"); }
 
 @font-face {
   font-family: 'region_bold';
-  src: url("../../global/font/RB/RegionBretagneNew-Bold.ttf"); }
+  src: url("../../_region/font/RB/RegionBretagneNew-Bold.ttf"); }
 
 @font-face {
   font-family: 'region_regular';
-  src: url("../../global/font/RB/RegionBretagneNew-Regular.ttf"); }
+  src: url("../../_region/font/RB/RegionBretagneNew-Regular.ttf"); }
 
 /*******************************
 ------------- GENERAL -----------

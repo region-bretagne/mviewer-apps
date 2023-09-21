@@ -1,0 +1,128 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h3 class="rb-title-feature">{{lot_societe}}</h3>  
+        
+        <p class="rb-text-feature">
+            {{#port_aero_concession}}                
+			<span style="font-weight:bold"> Concession :</span> {{port_aero_concession}}<br/>
+            {{/port_aero_concession}}
+            {{#lot_secteur}}                
+                <span style="font-weight:bold"> Secteur :</span> {{lot_secteur}}<br/>
+            {{/lot_secteur}}
+            {{#lot_lot}}                
+                <span style="font-weight:bold"> Lot :</span> {{lot_lot}}<br/>
+            {{/lot_lot}}
+			{{#contrat_type_lib}}                
+            <span style="font-weight:bold"> Type de contrat :</span> {{contrat_type_lib}}<br/>
+            {{/contrat_type_lib}}
+			{{#contrat_renou}}
+            <span style="font-weight:bold"> Octroi Renouvellement :</span> {{contrat_renou}}<br/>
+            {{/contrat_renou}}
+			{{#lot_activite}}
+            <span style="font-weight:bold"> Activité bénéficiaire :</span> {{lot_activite}}<br/>
+            {{/lot_activite}}
+			{{#beneficiaire_install_nature}}
+            <span style="font-weight:bold"> Nature d'installation :</span> {{beneficiaire_install_nature}}<br/>
+            {{/beneficiaire_install_nature}}
+			{{#lot_type}}
+            <span style="font-weight:bold"> Type d'occupation :</span> {{lot_type}}<br/>
+            {{/lot_type}}
+			{{#lot_surface}}
+            <span style="font-weight:bold"> Surface saisie :</span> {{lot_surface}} m²<br/>
+            {{/lot_surface}}
+			{{#surface_parcelle}}
+            <span style="font-weight:bold"> Surface mesurée :</span> {{surface_parcelle}} m²<br/>
+            {{/surface_parcelle}}
+			{{#lot_locataire}}
+            <span style="font-weight:bold"> Locataire :</span> {{lot_locataire}}<br/>
+            {{/lot_locataire}}
+			{{#contrat_validite}}
+            <span style="font-weight:bold"> Validité du contrat :</span> {{contrat_validite}}<br/>
+            {{/contrat_validite}}
+			{{#contrat_echeance}}
+            <span style="font-weight:bold"> Echéance du contrat :</span> {{contrat_echeance}}<br/>
+            {{/contrat_echeance}}
+            <span style="font-weight:bold"> Identifiant :</span> {{idu_num}}<br/>
+            {{#redevance_annuelle}}                
+                <span style="font-weight:bold"> Redevance annuelle :</span> {{redevance_annuelle}} €<br/>
+            {{/redevance_annuelle}}
+        </p>
+      
+        {{#lien}}
+            <img src="{{lien}}" class="img-responsive" data-title="{{lot_societe}}" />
+        {{/lien}}       
+
+        <div class="pictos">
+			{{#contrat_benef}}
+                <a class="floating-box pdf" href="{{contrat_benef}}" target="_blank" title="Télécharger le contrat bénéficiaire"></a>
+        	{{/contrat_benef}}
+			{{#contrat_loc}}
+                <a class="floating-box pdf" href="{{contrat_loc}}" target="_blank" title="Télécharger le contrat de location"></a>
+        	{{/contrat_loc}}            
+			{{#fiche}}
+                <a class="floating-box pdf" href="{{fiche}}" target="_blank" title="Télécharger la fiche"></a>
+        	{{/fiche}}            
+			{{#plan}}
+                <a class="floating-box pdf" href="{{plan}}" target="_blank" title="Télécharger le plan"></a>
+        	{{/plan}}            
+			<div class="floating-box concession {{port_aero_concession}}"></div>
+        </div>
+        
+		
+		
+	    
+       
+	</li>
+{{/features}}
+
+<style>
+.pictos {
+    padding-left: 50px;
+}
+.floating-box {
+    float: left;
+	left: 50px;    
+    margin: 5px; 
+	width: 30px;
+    height: 30px;       
+}
+.pdf {
+	background: url(https://kartenn.region-bretagne.fr/img/picto/pdf.png) left top no-repeat;
+	background-size: 28px;
+}
+.concession.PECHE {
+    background: url(https://kartenn.region-bretagne.fr/img/picto/port/PEC.png) left top no-repeat;    
+    background-size: 30px;
+}
+.concession.AEROPORT {
+    background: url(https://kartenn.region-bretagne.fr/img/picto/port/AER.png) left top no-repeat;    
+    background-size: 30px;
+}
+.concession.COMMERCE {
+    background: url(https://kartenn.region-bretagne.fr/img/picto/port/COM.png) left top no-repeat;    
+    background-size: 30px;
+}
+.concession.HORS.CONCESSION {
+    background: url(https://kartenn.region-bretagne.fr/img/picto/port/HCO.png) left top no-repeat;    
+    background-size: 30px;
+}
+.concession.HORS.PORT {
+    background: url(https://kartenn.region-bretagne.fr/img/picto/port/HPO.png) left top no-repeat;    
+    background-size: 30px;
+}
+.concession.PARTICULIERE {
+    background: url(https://kartenn.region-bretagne.fr/img/picto/port/PAR.png) left top no-repeat;    
+    background-size: 30px;
+}
+.concession.REPARATION.NAVALE {
+    background: url(https://kartenn.region-bretagne.fr/img/picto/port/REP.png) left top no-repeat;    
+    background-size: 30px;
+}
+.concession.PLAISANCE {
+    background: url(https://kartenn.region-bretagne.fr/img/picto/port/PLA.png) left top no-repeat;    
+    background-size: 30px;
+}
+#slide-right-panel-1{
+	padding-bottom: 30%;
+}
+</style>

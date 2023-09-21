@@ -1,0 +1,44 @@
+{
+  "js": ["js/filter.js", "js/jquery.easyDrag.min.js"],
+  "css": "css/filter.css",
+  "html": "filter.html",
+  "target": "page-content-wrapper",
+  "options": {
+    "mviewer":{
+		"indice_position_sociale_ecole":{
+		  "tooltipPosition": "bottom-left",
+		  "title": "Filtrer",
+		  "open": true,
+		  "zoomOnFeatures": false,
+		  "legendTitle": "Etablissement",
+		  "style": {
+			"border": "1px #e3c213 solid",
+			"background": "#FFFFFF",
+			"top": "50%",
+			"left": "260px",
+			"text": "#e3c213",
+			"unSelectedBtnColor": "#CCCCCC",
+			"textSelectBtnColor": "#FFFFFF",
+			"selectedBtnColor": "#EED969"
+		  },
+		  "layers": [{
+			"layerId": "indice_position_sociale_ecole",
+			  "downloadFormats":[
+				{ "label": "CSV", "format": "CSV" }
+								],
+			"filter": [{
+				"attribut": "niveau",
+				"type": "button",
+				"label": "Niveau"
+			  },
+			  {
+				"attribut": "secteur",
+				"type": "button",
+				"label": "Secteur"
+			  }
+			]
+		  }]
+		}
+    }
+  }
+}

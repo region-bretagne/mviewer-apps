@@ -13,9 +13,9 @@
 </metadata>
 <application
     title="Achats de pesticides"
-    logo=""
-    help=""
-    style="css/themes/default.css"
+    logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/img/rb_blanc.svg" 
+    help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" 
+    style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/css/kartenn.css"
     exportpng="false"
     showhelp="false"
     coordinates="false"
@@ -45,7 +45,7 @@
             metadata="https://files.geo.data.gouv.fr/link-proxy/www.data.eaufrance.fr/2020-12-18/5fdbff2c6a9fcbae03f6224d/bnvd-eaufrance-metadonnees-achat-20201215.pdf"
             queryable="true"
             featurecount="1"            
-            infopanel="right-panel"><template url="apps/region/pesticides/glyphosate.mst"/>
+            infopanel="right-panel"><template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/pesticides/glyphosate.mst"/>
         </layer> 
     </theme> 
 </themes>

@@ -1,38 +1,38 @@
 /******************************************************************************
 --------------------------- CSS KARTENN PATRIMOINE  -----------------
 ********************************************************************************/
-@import url("../../crbicon/crbicon.css");
+@import url("../../_region/crbicon/crbicon.css");
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 /* Import des fonts*/
 		@font-face {
 		    font-family: 'roboto_black';
-		    src: url('../../global/font/Roboto/Roboto-Black.ttf');
+		    src: url('../../_region/font/Roboto/Roboto-Black.ttf');
 		}
 		@font-face {
 		    font-family: 'roboto_bold';
-		    src: url('../../global/font/Roboto/Roboto-Bold.ttf');
+		    src: url('../../_region/font/Roboto/Roboto-Bold.ttf');
 		}
 		@font-face {
 		    font-family: 'roboto_medium';
-		    src: url('../../global/font/Roboto/Roboto-Medium.ttf');
+		    src: url('../../_region/font/Roboto/Roboto-Medium.ttf');
 		}
 		@font-face {
 		    font-family: 'roboto_regular';
-		    src: url('../../global/font/Roboto/Roboto-Regular.ttf');
+		    src: url('../../_region/font/Roboto/Roboto-Regular.ttf');
 		}
 		@font-face {
 		    font-family: 'spotkabold';
-		    src: url('../../global/font/spotkabold.ttf');
+		    src: url('../../_region/font/spotkabold.ttf');
 		}
 		
 @font-face {
   font-family: 'region_bold';
-  src: url("../../global/font/RB/RegionBretagneNew-Bold.ttf"); }
+  src: url("../../_region/font/RB/RegionBretagneNew-Bold.ttf"); }
 
 @font-face {
   font-family: 'region_regular';
-  src: url("../../global/font/RB/RegionBretagneNew-Regular.ttf"); }
+  src: url("../../_region/font/RB/RegionBretagneNew-Regular.ttf"); }
 
 /*******************************
 ------------- NAVBAR
@@ -294,6 +294,10 @@ h4.panel-title{
 
 }
 
+#accordion .panel-collapse.collapse.in{
+  max-height:2000px!important;
+}
+
 /*******************************
 ------------- POPOVER
 ********************************/
@@ -303,6 +307,10 @@ h4.panel-title{
 
 .popover-title{
 	font-family: 'roboto_bold', sans-serif!important;
+}
+
+.popover-content p {
+	width: 250px;
 }
 
 /*******************************
@@ -679,6 +687,25 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 .rb-but-link:hover{
 	background-color:#b0006b;
 }	
+
+.rb-but-link-menu, .rb-but-link-menu:focus, .rb-but-link-menu:hover{
+	display:inline-block;
+	margin:0 0.3em 0.3em 0;
+	border-radius:0.3em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'OpenSans-Bold',sans-serif;
+	font-weight:300;
+	color:#BA88A4;
+	background-color:#FFFFFF;
+	text-align:center;
+	transition: all 0.2s;
+}
+.rb-but-link-menu:hover{
+	background-color:#b0006b;
+}	
+
+
 /*Paramètre pour éviter le phénomène de double ascenseur en mode ultra */
 
 

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <application panelstate="open" coordinates="false" title="Appli MOS" 
+		logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/img/rb_blanc.svg" 
+		help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" 
+		exportpng="true" legend="true" measuretools="false" legendasimage="false" popup="false" print="false" 
+		style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/css/kartenn.css"/>
+    <mapoptions maxzoom="20" projection="EPSG:3857" center="-255418,6120890" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
+
+	<baselayers style="gallery">           		
+        <baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="Orthophoto IGN" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
+            url="https://wxs.ign.fr/essentiels/geoportail/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
+            attribution="&lt;a href='https://geoservices.ign.fr/services-web-essentiels/' target='_blank'>&lt;img src='https://geoservices.ign.fr/themes/custom/ignpro/logo.svg' width=100px>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+		<baselayer visible="true" id="osm_gge" thumbgallery="img/basemap/osmGGE.png" title="OpenStreetMap GéoGrandEst" label="OpenStreetMap GéoGrandEst" type="WMS" 
+			url="https://osm.datagrandest.fr/mapcache/?" layers="grey" format="image/png" 
+            attribution="DataGrandEst. Données : les contributeurs d'&lt;a href='https://www.openstreetmap.org/' target='_blank'>OpenStreetMap &lt;/a>,  &lt;a href='https://www.openstreetmap.org/copyright' target='_blank'>ODbL &lt;/a>"/>
+        <baselayer  type="WMTS" id="plan" label="Plan IGN" title="GéoPortail" maxscale="2000" thumbgallery="img/basemap/plan_ign.png" opacity="0.8"
+            url="https://wxs.ign.fr/decouverte/geoportail/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2" format="image/png" visible="false" fromcapacity="false"
+            attribution="&lt;a href='https://geoservices.ign.fr/services-web-essentiels/' target='_blank'>&lt;img src='https://geoservices.ign.fr/themes/custom/ignpro/logo.svg' width=100px>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+    </baselayers> 
+    <authentification url="who" loginurl="?login" logouturl="../j_spring_security_logout" enabled="true"/>
+    <!---Activation du proxy nécessaire pour couches externes à GéoBretagne et la région <proxy url="../proxy/?url="/>-->
+    <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par l'API adresse.data.gouv.fr"/>
+    <!--<elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="current"/>-->
+    <searchparameters bbox="true" localities="true" features="false"/>
+	
+    <!--<extensions>    
+        <extension type="component" id="layerfilter" path="https://kartenn.region-bretagne.fr/kartoviz/demo/addons"/>
+    </extensions>-->
+    
+
+    <themes>
+        <theme name="Cadastre"  collapsed="true" id="cadastre" icon="globe"> 
+            <layer id="cad" name="Sélection cadastrale" visible="true" queryable="false"
+                type="customlayer" opacity="0.8" legendurl="img/blank.gif"
+                url="https://kartenn.region-bretagne.fr/kartoviz/demo/cad/layer.js"
+                customcontrol="true"
+                customcontrolpath="https://kartenn.region-bretagne.fr/kartoviz/demo/cad/control"
+                expanded="true"
+                fields="geo_parcelle"
+                tooltip="true"
+                tooltipenabled="true"
+                tooltipcontent="Parcelle n° {{label}}"
+                attribution="Source: GéoBretagne. Sélectionnez la section cadastrale souhaitée en précisant le département, la commune et la section"
+                nohighlight="false"
+                metadata=""
+                metadata-csw="">
+            </layer>
+            <layer id="cad2" name="Cadastre complet" visible="false" queryable="false" expanded="true"
+                type="customlayer" opacity="0.8" legendurl="img/blank.gif" showintoc="false"
+                url="https://kartenn.region-bretagne.fr/kartoviz/demo/cad/layer2.js"
+                attribution="Source: DGFIP. Cette couche affiche le cadastre de la commune sélectionnée dans le panneau &lt;strong&gt;Sélection parcellaire&lt;/strong&gt;"
+                metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/8728b29d-267e-4d31-bad7-de528ba9c899"
+                metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=8728b29d-267e-4d31-bad7-de528ba9c899" >	
+            </layer>
+            <layer id="CP.CadastralBuilding" name="Bâti cadastral" scalemin="0" scalemax="20000" visible="false" tiled="false"
+                queryable="false" fields="" aliases=""
+                infoformat="application/vnd.ogc.gml" featurecount="5"                
+                style="cadastre_bati_type" legendurl=""
+                url="https://geobretagne.fr/geoserver/cadastre/wms" 
+                attribution="DGFIP" 
+                metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/91811bc9-308a-4ddb-9c15-c69b3c0bb067"
+                metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=91811bc9-308a-4ddb-9c15-c69b3c0bb067" />	
+            <layer id="CP.CadastralParcel" name="Parcelle cadastrale" scalemin="0" scalemax="20000" visible="false" tiled="false"
+                queryable="true" fields="label,nom_commune,areavalue" aliases="Parcelle,Commune,Surface"
+                infoformat="text/html" featurecount="5"             
+                url="https://geobretagne.fr/geoserver/cadastre/wms" 
+                attribution="DGFIP" 
+                metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/caec5bfd-e05c-4af3-9190-9736fb56f988" 
+                metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=caec5bfd-e05c-4af3-9190-9736fb56f988" >
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.parcelle.mst"></template>
+            </layer>
+		</theme>
+        <theme name="MOS"  collapsed="true" id="mos" icon="globe"> 
+			<layer id="ocs56_usage" name="Usage" visible="true" queryable="true"
+				type="customlayer" opacity="0.5" legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ocs56/img/legend_ocs_usage.png"
+				url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ocs56/customlayers/ocs56_usage.js"
+				tooltip="true" tooltipenabled="true" tooltipcontent="{{label}} "
+				attribution="Source: Mégalis - Collectivités du Morbihan - Région Bretagne" 
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/16f61c29-160b-4406-8c49-a89de2eb47d4" 
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=16f61c29-160b-4406-8c49-a89de2eb47d4">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ocs56/templates/ocs.usage.mst"></template>                
+			</layer>
+			<layer id="bretagne_5" name="Bretagne à 5" visible="true" tiled="false"
+				queryable="false" 
+				showintoc="false"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attribution="Source : IGN - Admin Express" 
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72" >  
+			</layer>
+			<layer id="departement_metro" name="Département" visible="true" tiled="false"
+				queryable="false"
+				showintoc="false"
+				url="https://geobretagne.fr/geoserver/ign/wms" 
+				style="bretagne_5_style" 
+				attribution="SSource : IGN - Admin Express" 
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/c8884cac-bc25-41a0-92d1-b6566c86066e"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c8884cac-bc25-41a0-92d1-b6566c86066e" >
+			</layer>
+
+		</theme>
+    </themes>
+    <styles>
+        <selectionstyle>
+            <point radius="12" fillcolor="26, 188, 156" opacity="0" strokecolor="26, 188, 156" strokewidth="4" />
+            <line opacity="0.6" strokecolor="26, 188, 156" strokewidth="8" />
+            <polygon fillcolor="26, 188, 156" opacity="0" strokecolor="26, 188, 156" strokewidth="4" />
+        </selectionstyle>
+        <subselectionstyle>
+            <point radius="12" fillcolor="175, 122, 197" opacity="0.5" strokecolor="175, 122, 197" strokewidth="4" />
+            <line opacity="0.8" strokecolor="175, 122, 197"  strokewidth="8" />
+            <polygon fillcolor="175, 122, 197" opacity="0.2" strokecolor="175, 122, 197" strokewidth="6" />
+        </subselectionstyle>
+    </styles>
+
+</config>

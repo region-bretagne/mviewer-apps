@@ -1,0 +1,57 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<div class="row">
+			<div class="col-xs-7">
+				<div class="rb-title-feature">{{nom_epci}}</div>
+			</div>
+			<div class=" col-xs-3">
+				<span class="rb-critere glyphicon glyphicon-calendar" aria-hidden="true" style="margin-left:10px;"><span id="rb-text">{{millesime}}</span></span>
+			</div>	
+		</div>
+
+		<div class="row">
+				<div class="col-md-4" style="position:relative;display:block;height:0; padding:0px;overflow:hidden;padding-bottom:40%;"> 
+				<iframe style="border:0;" src="https://kartenn.region-bretagne.fr/mreport/aide_territo_{{millesime}}/{{code_siren}}/epci_aide_territo_hab_{{millesime}}"></iframe>
+				</div>
+				
+				<!-- <div class="col-md-3" style="position:relative;display:block;height:0; padding:0px;overflow:hidden;padding-bottom:70%;">  -->
+				<!-- <iframe style="border:0;" src="https://kartenn.region-bretagne.fr/mreport/aide_territo_{{millesime}}/{{code_siren}}/epci_aide_territo_moyenne_hab"></iframe> -->
+				<!-- </div> -->
+				
+				<div class="col-md-4" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:80%;height:80%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/aide_territo_{{millesime}}/{{code_siren}}/epci_aide_territo_missions_hab_{{millesime}}"></iframe>
+				<div id="over" align="center">Répartition par mission (€/hab.)</div></div>
+
+								
+				<div class="col-md-4" style="position:relative;display:block;height:0; padding:10;overflow:hidden;padding-bottom:50%;"> 
+					<iframe style="position:absolute;top:0;bottom:0; left:0;width:70%;height:70%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/aide_territo_{{millesime}}/{{code_siren}}/epci_aide_territo_evolution_hab"></iframe>
+					<div id="over" align="center">Evolution par année depuis 2018 (€/hab.)</div>
+					<div id="under" align="left">Aides directes : distribuées au niveau EPCI ou commune.</br> Aides indirectes : distribuées a un niveau supérieur à l'EPCI.</div>
+				</div>
+		</div>
+
+
+	</li>
+{{/features}}
+
+<style>
+#over { 
+	color:#2F476C;
+	font-size:1em; 
+	font-weight:600;
+	position:absolute; 
+	z-index:2;
+	width:100%
+}
+#under { 
+	color:#2F476C;
+	font-size:0.9em; 
+	font-style: italic;
+	position:absolute; 
+	z-index:2;
+	width:100%;
+	top:220px;
+}
+
+</style>
+

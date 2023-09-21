@@ -1,0 +1,42 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<div class="row">
+			<div class="col-xs-7">
+				<div class="rb-title-feature">{{nom}}</div>
+			</div>
+			<div class="col-xs-3">
+				<span class="rb-critere glyphicon glyphicon-calendar" aria-hidden="true" style="margin-left:10px;"><span id="rb-text">{{millesime}}</span></span>
+			</div>	
+		</div>
+
+		<div class="row">
+			<div class="col-md-6" style="text-align: center; color: #80923D; font-size: 12px; font-weight: bold;"> 
+				<img src="https://kartenn.region-bretagne.fr/img/picto/star.svg" alt="non-soin" width="50px" height="50px" /> <br><br>
+				
+				Nombre de dossier :<br>
+			<div style="font-size: 40px;">	{{nb}}&nbsp dossier(s) </div>
+				
+			</div>
+			<div class="col-md-6" style="text-align: center; color: #80923D; font-size: 12px; font-weight: bold;"> 
+				<img src="https://kartenn.region-bretagne.fr/img/picto/argent.svg" alt="non-soin" width="50px" height="50px" /> <br><br>
+				
+				Montant accordé :<br>
+			<div style="font-size: 40px;">	<span class="dvf prix">{{montant}}&nbsp € </span></div>
+				
+			</div>
+		</div>
+
+
+	</li>
+{{/features}}
+
+<style>
+@import url("https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/css/kartenn_economie.css");
+#over { font-size:1em; position:absolute; top:0px; left:20px; z-index:2 }
+</style>
+
+<script>
+
+$(".dvf.prix").each(function(i, p) { p.textContent = parseInt(p.textContent).toLocaleString()+" €"});
+
+</script>

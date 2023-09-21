@@ -1,0 +1,29 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{nom_etablissement}}</h2>
+		<p class="rb-text-feature">		
+			<b>Statut </b> {{statut}}<br>
+			<b>Démarré en </b>  {{annee_demarrage}}<br>
+			<b>Statut établissement</b> {{statut_etablissement}}<br>
+			{{#nombre_eleves}}
+			<b>Nombre d'élèves </b> {{nombre_eleves}}<br>
+			{{/nombre_eleves}}
+			{{#classes}}
+			<b>Classes </b> {{classes}}<br>
+			{{/classes}}
+			<b>Département </b> {{departement}}<br>
+			<b>Commune </b> {{commune}}<br>
+			<b>Structure référente </b> {{structure_referente}}<br>
+			<b>Type de structure </b> {{type_structure}}<br>
+			<b>Coordination territoriale </b> {{coordination_territoriale}}<br>
+		</p>
+	</li>
+{{/features}}
+
+<style>
+/* test icon rb*/
+.icon-information{
+	font-size : 20px;
+	color : #FFFFFF;
+}
+</style>

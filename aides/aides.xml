@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config mviewerstudioversion="3.2">
+	<metadata>
+		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+			<rdf:Description rdf:about="http://www.ilrt.bristol.ac.uk/people/cmdjb/">
+				<dc:title>Aides territorialisées</dc:title>
+				<dc:creator>anonymous</dc:creator>
+				<dc:publisher>anonymous</dc:publisher>
+				<dc:subject>Aides</dc:subject>
+				<dc:date>2023-03-08T14:08:39.309Z</dc:date>
+			</rdf:Description>
+		</rdf:RDF>
+	</metadata>
+	<application
+	title="Observatoire territorialisé des aides régionales"
+	logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg"
+	help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/observatoire_aides.html"
+	style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/css/kartenn.css"
+	exportpng="false"
+	showhelp="true"
+	titlehelp="L'observatoire territorialisé des aides régionales"
+	coordinates="false"
+	measuretools="false"
+	stats="true" 
+	statsurl="../ws/kartenn/log.php"
+	togglealllayersfromtheme="false">
+</application>
+	<mapoptions maxzoom="20" projection="EPSG:3857" center="-286750,6130901" zoom="8"/>
+	<olscompletion type="ban" url="https://api-adresse.data.gouv.fr/search/" attribution="Base adresse nationale (BAN)"/>
+	<searchparameters bbox="false" localities="true" features="false" static="false"/>
+	<baselayers style="default">
+		<baselayer visible="true" id="osm_gge" thumbgallery="img/basemap/osmGGE.png" title="OpenStreetMap GéoGrandEst" label="OpenStreetMap GéoGrandEst" type="WMS" 
+			url="https://osm.datagrandest.fr/mapcache/?" layers="grey" format="image/png" 
+            attribution="DataGrandEst. Données : les contributeurs d'&lt;a href='https://www.openstreetmap.org/' target='_blank'>OpenStreetMap &lt;/a>,  &lt;a href='https://www.openstreetmap.org/copyright' target='_blank'>ODbL &lt;/a>"/>
+		<baselayer visible="false" id="ortho_ign" thumbgallery="img/basemap/ortho.jpg" title="IGN" label="Photographies aériennes IGN" type="WMTS" url="https://wxs.ign.fr/choisirgeoportail/geoportail/wmts?" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" fromcapacity="false" attribution="&lt;a href='https://geoservices.ign.fr' target='_blank'&gt;&lt;img src='https://geoservices.ign.fr/images/logoIGN.png'&gt;&lt;/a&gt;" style="normal" matrixset="PM" maxzoom="22"/>
+		<baselayer visible="false" id="plan_ign" thumbgallery="img/basemap/scan-express.jpg" title="IGN" label="Plan IGN v2" type="WMTS" url="https://wxs.ign.fr/choisirgeoportail/geoportail/wmts?" layers="GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2" format="image/png" fromcapacity="false" attribution="&lt;a href='https://geoservices.ign.fr' target='_blank'&gt;&lt;img src='https://geoservices.ign.fr/images/logoIGN.png'&gt;&lt;/a&gt;" style="normal" matrixset="PM" maxzoom="22"/>
+	</baselayers>
+    <!-- <extensions>     -->
+        <!-- <extension type="component" id="layerfilter" path="https://kartenn.region-bretagne.fr/kartoviz/demo/addons"/> -->
+    <!-- </extensions> -->
+
+	<themes mini="false">
+	
+	
+	<theme id="aides_annees" name="Ensemble des aides régionales" collapsed="false" icon="far fa-money-bill-alt">
+	
+	
+	<layer id="bretagne_5" name="Bretagne à 5" visible="true" tiled="false" namespace="rb"
+				queryable="false" 
+				showintoc="false"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attribution="OSM" 
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72" >  
+            </layer>
+            <layer id="departement_metro" name="Département" visible="true" tiled="false" namespace="rb"
+				queryable="false"
+                showintoc="false"
+				url="https://geobretagne.fr/geoserver/ign/wms" 
+				style="bretagne_5_style" 
+				attribution="IGN - Admin Express" 
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/c8884cac-bc25-41a0-92d1-b6566c86066e"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c8884cac-bc25-41a0-92d1-b6566c86066e" >
+            </layer>
+			<layer id="aide_iles" name="Iles hors intercommunalités" visible="true" tiled="false" namespace="interne"
+				queryable="true"
+                showintoc="false"
+				infoformat="application/vnd.ogc.gml"
+				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+				attribution="IGN - Admin Express" >
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aide_iles.mst"></template>
+			</layer>
+
+            
+			
+							
+				<layer
+				id="aide_territo_mission_annee"
+				name="Montant des aides par habitants"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				tiled="false"
+				visible="true"
+				style="at_mission_annee_hab"
+				infoformat="application/vnd.ogc.gml"
+				exclusive="true"
+				queryable="true"
+				expanded="true"
+				opacity="0.8"
+				attribution="Montant : montant voté &lt;/br&gt;Date : date du vote initial &lt;/br&gt;Population de référence : dernier millésime Insee" 
+				timefilter="true"
+				filter = "mission_id='0'"
+				timeinterval="year"
+				timecontrol="slider"
+				timemin="2018"
+				timevalues="2018,2019,2020,2021,2022"
+				timemax="2022"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_totales_hab.mst"></template>
+				</layer>
+				
+				
+				<layer
+				id="aide_territo_mission_annee"
+				name="Montant des aides"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				tiled="false"
+				visible="true"
+				style="at_montant_annee"
+				infoformat="application/vnd.ogc.gml"
+				exclusive="true"
+				queryable="true"
+				expanded="true"
+				opacity="0.8"
+				attribution="Montant : montant voté &lt;/br&gt;Date : date du vote initial" 
+				timefilter="true"
+				filter = "mission_id='0'"
+				timeinterval="year"
+				timecontrol="slider"
+				timemin="2018"
+				timevalues="2018,2019,2020,2021,2022"
+				timemax="2022"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_totales.mst"></template>
+				</layer>
+				
+
+
+		</theme>
+		
+		<theme id="m15" name="Aides par mission" collapsed="true" icon="fa fa-euro-sign">
+		</theme>
+		
+		<theme id="m1" name="1 - Vie lycéenne et vie étudiante" collapsed="true" icon="fas fa-caret-right">
+				
+			
+		
+				
+				<layer
+				id="aide_territo_mission_annee"
+				name="Montant par année et par hab."
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				tiled="false"
+				visible="true"
+				style="at_mission_1_hab"
+				infoformat="application/vnd.ogc.gml"
+				exclusive="true"
+				queryable="true"
+				attribution="Montant : montant voté &lt;/br&gt;Date : date du vote initial &lt;/br&gt;Population de référence : dernier millésime Insee" 
+				expanded="true"
+				opacity="0.8"
+				timefilter="true"
+				filter = "mission_id='1'"
+				timeinterval="year"
+				timecontrol="slider"
+				timemin="2018"
+				timevalues="2018,2019,2020,2021,2022"
+				timemax="2022"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
+				</layer>
+				<layer
+				id="aide_territo_mission_annee"
+				name="Montant par année"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				tiled="false"
+				visible="true"
+				style="at_mission_1"
+				infoformat="application/vnd.ogc.gml"
+				exclusive="true"
+				queryable="true"
+				expanded="true"
+				attribution="Montant : montant voté &lt;/br&gt;Date : date du vote initial" 
+				opacity="0.8"
+				timefilter="true"
+				filter = "mission_id='1'"
+				timeinterval="year"
+				timecontrol="slider"
+				timemin="2018"
+				timevalues="2018,2019,2020,2021,2022"
+				timemax="2022"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
+				</layer>
+		</theme>
+		
+		<theme id="m2" name=" 2 - Emploi, formation et orientation professionnelles" collapsed="true" icon="fas fa-caret-right">
+		
+				
+				<layer
+				id="aide_territo_mission_annee"
+				name="Montant par année et par hab."
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				tiled="false"
+				visible="true"
+				attribution="Montant : montant voté &lt;/br&gt;Date : date du vote initial &lt;/br&gt;Population de référence : dernier millésime Insee" 
+				style="at_mission_2_hab"
+				infoformat="application/vnd.ogc.gml"
+				exclusive="true"
+				queryable="true"
+				expanded="true"
+				opacity="0.8"
+				timefilter="true"
+				filter = "mission_id='2'"
+				timeinterval="year"
+				timecontrol="slider"
+				timemin="2018"
+				timevalues="2018,2019,2020,2021,2022"
+				timemax="2022"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
+				</layer>
+				<layer
+				id="aide_territo_mission_annee"
+				name="Montant par année"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				tiled="false"
+				visible="true"
+				style="at_mission_2"
+				infoformat="application/vnd.ogc.gml"
+				attribution="Montant : montant voté &lt;/br&gt;Date : date du vote initial" 
+				exclusive="true"
+				queryable="true"
+				expanded="true"
+				opacity="0.8"
+				timefilter="true"
+				filter = "mission_id='2'"
+				timeinterval="year"
+				timecontrol="slider"
+				timemin="2018"
+				timevalues="2018,2019,2020,2021,2022"
+				timemax="2022"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
+				</layer>
+		</theme>
+		
+		<theme id="m3" name="3 - Qualité de vie et rayonnement" collapsed="true" icon="fas fa-caret-right">		
+				
+				<layer
+				id="aide_territo_mission_annee"
+				name="Montant par année et par hab."
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				tiled="false"
+				visible="true"
+				style="at_mission_3_hab"
+				infoformat="application/vnd.ogc.gml"
+				exclusive="true"
+				queryable="true"
+				attribution="Montant : montant voté &lt;/br&gt;Date : date du vote initial &lt;/br&gt;Population de référence : dernier millésime Insee" 
+				expanded="true"
+				opacity="0.8"
+				timefilter="true"
+				filter = "mission_id='3'"
+				timeinterval="year"
+				timecontrol="slider"
+				timemin="2018"
+				timevalues="2018,2019,2020,2021,2022"
+				timemax="2022"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
+				</layer>
+				<layer
+				id="aide_territo_mission_annee"
+				name="Montant par année"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				tiled="false"
+				visible="true"
+				style="at_mission_3"
+				infoformat="application/vnd.ogc.gml"
+				attribution="Montant : montant voté &lt;/br&gt;Date : date du vote initial" 
+				exclusive="true"
+				queryable="true"
+				expanded="true"
+				opacity="0.8"
+				timefilter="true"
+				filter = "mission_id='3'"
+				timeinterval="year"
+				timecontrol="slider"
+				timemin="2018"
+				timevalues="2018,2019,2020,2021,2022"
+				timemax="2022"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
+				</layer>
+		</theme>
+		
+		<theme id="m4" name="4 - Cohésion territoriale et sociale" collapsed="true" icon="fas fa-caret-right">		
+
+		
+				
+				<layer
+				id="aide_territo_mission_annee"
+				name="Montant par année et par hab."
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				tiled="false"
+				visible="true"
+				style="at_mission_4_hab"
+				infoformat="application/vnd.ogc.gml"
+				exclusive="true"
+				queryable="true"
+				expanded="true"
+				attribution="Montant : montant voté &lt;/br&gt;Date : date du vote initial &lt;/br&gt;Population de référence : dernier millésime Insee" 
+				opacity="0.8"
+				timefilter="true"
+				filter = "mission_id='4'"
+				timeinterval="year"
+				timecontrol="slider"
+				timemin="2018"
+				timevalues="2018,2019,2020,2021,2022"
+				timemax="2022"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
+				</layer>
+				<layer
+				id="aide_territo_mission_annee"
+				name="Montant par année"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				tiled="false"
+				visible="true"
+				style="at_mission_4"
+				infoformat="application/vnd.ogc.gml"
+				exclusive="true"
+				queryable="true"
+				attribution="Montant : montant voté &lt;/br&gt;Date : date du vote initial" 
+				expanded="true"
+				opacity="0.8"
+				timefilter="true"
+				filter = "mission_id='4'"
+				timeinterval="year"
+				timecontrol="slider"
+				timemin="2018"
+				timevalues="2018,2019,2020,2021,2022"
+				timemax="2022"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
+				</layer>
+		</theme>
+		
+		<theme id="m5" name="5 - Développement économique, agricole et maritime" collapsed="true" icon="fas fa-caret-right">		
+				
+				<layer
+				id="aide_territo_mission_annee"
+				name="Montant par année et par hab."
+				type="wms"
+				attribution="Montant : montant voté &lt;/br&gt;Date : date du vote initial &lt;/br&gt;Population de référence : dernier millésime Insee" 
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				tiled="false"
+				visible="true"
+				style="at_mission_5_hab"
+				infoformat="application/vnd.ogc.gml"
+				exclusive="true"
+				queryable="true"
+				expanded="true"
+				opacity="0.8"
+				timefilter="true"
+				filter = "mission_id='5'"
+				timeinterval="year"
+				timecontrol="slider"
+				timemin="2018"
+				timevalues="2018,2019,2020,2021,2022"
+				timemax="2022"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
+				</layer>
+				<layer
+				id="aide_territo_mission_annee"
+				name="Montant par année"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				tiled="false"
+				visible="true"
+				style="at_mission_5"
+				infoformat="application/vnd.ogc.gml"
+				exclusive="true"
+				attribution="Montant : montant voté &lt;/br&gt;Date : date du vote initial" 
+				queryable="true"
+				expanded="true"
+				opacity="0.8"
+				timefilter="true"
+				filter = "mission_id='5'"
+				timeinterval="year"
+				timecontrol="slider"
+				timemin="2018"
+				timevalues="2018,2019,2020,2021,2022"
+				timemax="2022"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
+				</layer>
+		</theme>
+		
+		<theme id="m6" name="6 - Transition écologique et climatique" collapsed="true" icon="fas fa-caret-right">		
+				
+				<layer
+				id="aide_territo_mission_annee"
+				name="Montant par année et par hab."
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				tiled="false"
+				attribution="Montant : montant voté &lt;/br&gt;Date : date du vote initial &lt;/br&gt;Population de référence : dernier millésime Insee" 
+				visible="true"
+				style="at_mission_6_hab"
+				infoformat="application/vnd.ogc.gml"
+				exclusive="true"
+				queryable="true"
+				expanded="true"
+				opacity="0.8"
+				timefilter="true"
+				filter = "mission_id='6'"
+				timeinterval="year"
+				timecontrol="slider"
+				timemin="2018"
+				timevalues="2018,2019,2020,2021,2022"
+				timemax="2022"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
+				</layer>
+				<layer
+				id="aide_territo_mission_annee"
+				name="Montant par année"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				tiled="false"
+				visible="true"
+				style="at_mission_6"
+				infoformat="application/vnd.ogc.gml"
+				exclusive="true"
+				attribution="Montant : montant voté &lt;/br&gt;Date : date du vote initial" 
+				queryable="true"
+				expanded="true"
+				opacity="0.8"
+				timefilter="true"
+				filter = "mission_id='6'"
+				timeinterval="year"
+				timecontrol="slider"
+				timemin="2018"
+				timevalues="2018,2019,2020,2021,2022"
+				timemax="2022"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
+				</layer>
+		</theme>
+		
+		<theme id="m7" name="7 - Mobilités" collapsed="true" icon="fas fa-caret-right">		
+				
+				<layer
+				id="aide_territo_mission_annee"
+				name="Montant par année et par hab."
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				tiled="false"
+				visible="true"
+				style="at_mission_7_hab"
+				infoformat="application/vnd.ogc.gml"
+				exclusive="true"
+				queryable="true"
+				expanded="true"
+				opacity="0.8"
+				attribution="Montant : montant voté &lt;/br&gt;Date : date du vote initial &lt;/br&gt;Population de référence : dernier millésime Insee" 
+				timefilter="true"
+				filter = "mission_id='7'"
+				timeinterval="year"
+				timecontrol="slider"
+				timemin="2018"
+				timevalues="2018,2019,2020,2021,2022"
+				timemax="2022"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
+				</layer>
+				<layer
+				id="aide_territo_mission_annee"
+				name="Montant par année"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				tiled="false"
+				visible="true"
+				style="at_mission_7"
+				attribution="Montant : montant voté &lt;/br&gt;Date : date du vote initial" 
+				infoformat="application/vnd.ogc.gml"
+				exclusive="true"
+				queryable="true"
+				expanded="true"
+				opacity="0.8"
+				timefilter="true"
+				filter = "mission_id='7'"
+				timeinterval="year"
+				timecontrol="slider"
+				timemin="2018"
+				timevalues="2018,2019,2020,2021,2022"
+				timemax="2022"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
+				</layer>
+		</theme>
+		
+		<theme id="m8" name="8 - Actions européennes et internationales, fonds européens" collapsed="true" icon="fas fa-caret-right">		
+				
+				<layer
+				id="aide_territo_mission_annee"
+				name="Montant par année et par hab."
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				tiled="false"
+				visible="true"
+				style="at_mission_8_hab"
+				infoformat="application/vnd.ogc.gml"
+				exclusive="true"
+				queryable="true"
+				attribution="Montant : montant voté &lt;/br&gt;Date : date du vote initial &lt;/br&gt;Population de référence : dernier millésime Insee" 
+				expanded="true"
+				opacity="0.8"
+				timefilter="true"
+				filter = "mission_id='8'"
+				timeinterval="year"
+				timecontrol="slider"
+				timemin="2018"
+				timevalues="2018,2019,2020,2021,2022"
+				timemax="2022"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
+				</layer>
+				<layer
+				id="aide_territo_mission_annee"
+				name="Montant par année"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				tiled="false"
+				visible="true"
+				style="at_mission_8"
+				infoformat="application/vnd.ogc.gml"
+				exclusive="true"
+				queryable="true"
+				expanded="true"
+				attribution="Montant : montant voté &lt;/br&gt;Date : date du vote initial" 
+				opacity="0.8"
+				timefilter="true"
+				filter = "mission_id='8'"
+				timeinterval="year"
+				timecontrol="slider"
+				timemin="2018"
+				timevalues="2018,2019,2020,2021,2022"
+				timemax="2022"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
+				</layer>
+		</theme>
+		
+		<theme id="m9" name="9 - Ressources et accompagnement des politiques" collapsed="true" icon="fas fa-caret-right">		
+				
+				<layer
+				id="aide_territo_mission_annee"
+				name="Montant par année et par hab."
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				tiled="false"
+				visible="true"
+				attribution="Montant : montant voté &lt;/br&gt;Date : date du vote initial &lt;/br&gt;Population de référence : dernier millésime Insee" 
+				style="at_mission_9_hab"
+				infoformat="application/vnd.ogc.gml"
+				exclusive="true"
+				queryable="true"
+				expanded="true"
+				opacity="0.8"
+				timefilter="true"
+				filter = "mission_id='9'"
+				timeinterval="year"
+				timecontrol="slider"
+				timemin="2018"
+				timevalues="2018,2019,2020,2021,2022"
+				timemax="2022"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
+				</layer>
+				<layer
+				id="aide_territo_mission_annee"
+				name="Montant par année"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				tiled="false"
+				visible="true"
+				style="at_mission_9"
+				infoformat="application/vnd.ogc.gml"
+				exclusive="true"
+				queryable="true"
+				attribution="Montant : montant voté &lt;/br&gt;Date : date du vote initial" 
+				expanded="true"
+				opacity="0.8"
+				timefilter="true"
+				filter = "mission_id='9'"
+				timeinterval="year"
+				timecontrol="slider"
+				timemin="2018"
+				timevalues="2018,2019,2020,2021,2022"
+				timemax="2022"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
+				</layer>
+		  
+		  
+		  <layer 
+            id="epci"
+            name="EPCI en Bretagne"
+            type="wms"
+            url="https://geobretagne.fr/geoserver/ign/wms"
+			sld="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/style/epci.sld"
+            visible="true"
+			showintoc="false"
+            infoformat="text/html"
+            style="epci_region_fin,epci_region_fin"
+            stylesalias="epci_region_fin,epci_region_fin"
+            metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/2298d744-49cb-4fcb-9487-26f916fecdff"
+            metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ELEMENTSETNAME=full&amp;ID&amp;ID=2298d744-49cb-4fcb-9487-26f916fecdff"
+            infopanel="right-panel"
+            opacity="1">
+        </layer> 
+		  
+		  
+		</theme>
+	</themes>
+</config>

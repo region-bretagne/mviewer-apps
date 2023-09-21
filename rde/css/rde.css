@@ -2,7 +2,7 @@
 --------------------------- CSS KARTENN  -----------------
 ********************************************************************************/
 
-@import url("../../crbicon/crbicon.css");
+@import url("../../_region/crbicon/crbicon.css");
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 /* Import des fonts*/
@@ -29,11 +29,11 @@
 
 @font-face {
   font-family: 'region_bold';
-  src: url("../../global/font/RB/RegionBretagneNew-Bold.ttf"); }
+  src: url("../../_region/font/RB/RegionBretagneNew-Bold.ttf"); }
 
 @font-face {
   font-family: 'region_regular';
-  src: url("../../global/font/RB/RegionBretagneNew-Regular.ttf"); }
+  src: url("../../_region/font/RB/RegionBretagneNew-Regular.ttf"); }
 
 /*******************************
 ------------- NAVBAR 

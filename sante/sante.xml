@@ -52,108 +52,182 @@
 </metadata>
 <application
     title="Kartenn Santé"
-    logo="https://geobretagne.fr/pub/logo/region-bretagne.jpg"
-    help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html"
-    style="css/themes/default.css"
+    logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/sante/img/rb_ors.png"
+    help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html"
+    style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/css/kartenn.css"
     exportpng="true"
     showhelp="false"
     coordinates="false"
     measuretools="false"
+	stats="true" 
+	statsurl="../ws/kartenn/log.php"
     togglealllayersfromtheme="false">
 </application>
-<mapoptions maxzoom="20" projection="EPSG:3857" center="-307903.74898791354,6141345.088741366" zoom="9" />
+<mapoptions maxzoom="20" projection="EPSG:3857" center="-220750.13768758904,6144925.57790189" zoom="8" />
 <searchparameters bbox="false" localities="false" features="false" static="false"/>
-<baselayers style="default"> 
-    <baselayer visible="true" id="positron" thumbgallery="img/basemap/positron.png" title="CartoDb" label="Positron" type="OSM" url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" attribution="Map tiles by  &lt;a href=&quot;https://cartodb.com/attributions&quot;&gt;CartoDb&lt;/a&gt;, under  &lt;a href=&quot;https://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY 3.0 &lt;/a&gt;"  ></baselayer> 
-    <baselayer visible="false" id="esriworldimagery" thumbgallery="img/basemap/esriworldwide.jpg" title="Esri" label="Esri world imagery" type="OSM" url="http://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}" attribution="Esri world imagery"  ></baselayer> 
-</baselayers>
+	<baselayers style="gallery">
+		<baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="GéoPortail" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
+            url="https://wxs.ign.fr/essentiels/geoportail/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
+            attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+		<baselayer visible="true" id="plan_ign" thumbgallery="img/basemap/plan_ign_gris.png" title="Plan IGN" 
+			label="TMS Plan IGN gris" type="vector-tms" 
+			url="https://wxs.ign.fr/parcellaire/geoportail/tms/1.0.0/PLAN.IGN/{z}/{x}/{y}.pbf" 
+			styleurl="https://kartenn.region-bretagne.fr/mviewer-apps/global/tms/gris.json" style="plan_ign" attribution="IGN"  ></baselayer>
+    </baselayers>    
+    <extensions>    
+        <extension type="component" id="layerfilter" path="https://kartenn.region-bretagne.fr/kartoviz/demo/addons"/>
+    </extensions>
 <themes mini="false"> 
-	<theme id="habitant" url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/territoire.xml" name="Population" collapsed="true" icon="false"> 
-    </theme> 
-	<theme id="Esperance de vie" name="Mortalité et espérance de vie" collapsed="true" icon="chart-line"> 
+	<theme id="Esperance de vie" name="Vue d'ensemble de l'état de santé" collapsed="false" icon="fas fa-eye"> 
 			<layer 
 				id="sante_indicateurs_synthetiques_epci"
-				name="Indice comparatif de mortalité (ICM)"
+				name="Espérance de vie à la naissance des femmes"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				style="sante_indicateurs_synthetiques_epci_espvie_f"
+				attribution="Sources : CNAMTS, CCMSA, RSI, Insee, exploitation ORS Bretagne"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/9968cb23-d6ff-4ad3-a41b-d891ee546ef8"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9968cb23-d6ff-4ad3-a41b-d891ee546ef8" >
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/sante/templates/esperance_vie_f.mst"></template>
+			</layer> 
+			<layer 
+				id="sante_indicateurs_synthetiques_epci"
+				name="Espérance de vie à la naissance des hommes"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				style="sante_indicateurs_synthetiques_epci_espvie_h"
+				attribution="Sources : CNAMTS, CCMSA, RSI, Insee, exploitation ORS Bretagne"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/9968cb23-d6ff-4ad3-a41b-d891ee546ef8"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9968cb23-d6ff-4ad3-a41b-d891ee546ef8" >
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/sante/templates/esperance_vie_h.mst"></template>
+			</layer> 
+			<layer 
+				id="sante_indicateurs_synthetiques_epci"
+				name="Indice comparatif de mortalité générale (ICM)"
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
 				tiled="true"
 				exclusive="true"
 				visible="false"
 				infoformat="application/vnd.ogc.gml"
-				fields="nom,icm"
-				aliases="nom,Indice comparatif de mortalité (ICM - France métropolitaine = 100)"
+				fields="nom,icm,millesime"
+				aliases="nom,Indice comparatif de mortalité (ICM - France métropolitaine = 100),Période relative de l'indicateur"
 				style="sante_indicateurs_synthetiques_epci_icm"
-				attribution="ORS Bretagne, à partir des données CepiDc et INSEE (période 2013-2015)"
+				attribution="Sources : CNAMTS, CCMSA, RSI, Insee, exploitation ORS Bretagne &lt;hr&gt; &lt;b&gt;Définition&lt;/b&gt; : l'indice comparatif de mortalité (ICM) générale est le rapport du nombre de décès observés dans le territoire au nombre de décès qui seraient survenus si les taux de mortalité par âge dans le territoire étaient identiques aux taux nationaux. L'indicateur est calculé sur trois années. L'indicateur est calculé sur plusieurs années. L'indice a une dimension annuelle. "
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/9968cb23-d6ff-4ad3-a41b-d891ee546ef8"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9968cb23-d6ff-4ad3-a41b-d891ee546ef8" >
 			</layer> 
 			<layer 
 				id="sante_indicateurs_synthetiques_epci"
-				name="Espérance de vie des femmes"
+				name="Taux standardisé de mortalité générale (pour 100 000 hab.)"
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
 				tiled="true"
 				exclusive="true"
+				visible="true"
 				infoformat="application/vnd.ogc.gml"
-				fields="nom,espvie_f"
-				aliases="nom,Espérance de vie à la naissance chez les femmes (année)"
-				style="sante_indicateurs_synthetiques_epci_espvie_f"
-				attribution="ORS Bretagne, à partir des données CepiDc (2015)"
+				fields="nom,mg_tx"
+				aliases="nom,Taux standardisé de mortalité générale"
+				style="sante_indicateurs_synthetiques_epci_mg_tx"
+				attribution="Sources : CNAMTS, CCMSA, RSI, Insee, exploitation ORS Bretagne &lt;hr&gt; &lt;b&gt;Définition&lt;/b&gt; : le taux standardisé de mortalité générale est le taux que l'on observerait dans le territoire étudié s'il avait la même structure par âge que la population de référence, population France entière au recensement 2018."
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/9968cb23-d6ff-4ad3-a41b-d891ee546ef8"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9968cb23-d6ff-4ad3-a41b-d891ee546ef8" >
 			</layer> 
 			<layer 
 				id="sante_indicateurs_synthetiques_epci"
-				name="Espérance de vie des hommes"
+				name="Taux standardisé de mortalité prématurée (pour 100 000 hab.)"
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
 				tiled="true"
 				exclusive="true"
+				visible="false"
 				infoformat="application/vnd.ogc.gml"
-				fields="nom,espvie_h"
-				aliases="nom,Espérance de vie à la naissance chez les hommes (année)"
-				style="sante_indicateurs_synthetiques_epci_espvie_h"
-				attribution="ORS Bretagne, à partir des données CepiDc (2015)"
+				fields="nom,mp_tx"
+				aliases="nom,Taux standardisé de mortalité prématurée"
+				style="sante_indicateurs_synthetiques_epci_mp_tx"
+				attribution="Sources : CNAMTS, CCMSA, RSI, Insee, exploitation ORS Bretagne &lt;hr&gt; &lt;b&gt;Définition&lt;/b&gt; : le taux standardisé de mortalité prématurée (avant 65 ans) est le taux que l'on observerait dans le territoire étudié s'il avait la même structure par âge que la population de référence, population France entière au recensement 2018. "
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/9968cb23-d6ff-4ad3-a41b-d891ee546ef8"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9968cb23-d6ff-4ad3-a41b-d891ee546ef8" >
+			</layer> 
+			<layer 
+				id="sante_indicateurs_synthetiques_epci"
+				name="Taux standardisés d'incidence en ALD générales (pour 100 000 hab.)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				visible="false"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom,aldg_tx"
+				aliases="nom,Taux standardisés nouvelles admissions générales"
+				style="sante_indicateurs_synthetiques_epci_aldg"
+				attribution="Sources : CNAMTS, CCMSA, RSI, Insee, exploitation ORS Bretagne &lt;hr&gt; &lt;b&gt;Définition&lt;/b&gt; : le taux standardisé de nouvelles admissions en ALD est le taux que l’on observerait dans la région si elle avait la même structure par âge que la population de référence (population France entière au recensement 2018)."
+				queryable="true"
+				secure="public"
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/9968cb23-d6ff-4ad3-a41b-d891ee546ef8"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9968cb23-d6ff-4ad3-a41b-d891ee546ef8" >
+			</layer> 
+			<layer 
+				id="sante_indicateurs_synthetiques_epci"
+				name="Taux standardisés d'incidence en ALD prématurées (pour 100 000 hab.)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				visible="false"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom,aldp_tx"
+				aliases="nom,Taux standardisés nouvelles admissions prématurées"
+				style="sante_indicateurs_synthetiques_epci_aldp"
+				attribution="Sources : CNAMTS, CCMSA, RSI, Insee, exploitation ORS Bretagne &lt;hr&gt; &lt;b&gt;Définition&lt;/b&gt; : le taux standardisé d’admission chez les moins de 65 ans en affection de longue durée (ALD) est le taux que l'on observerait dans le territoire étudié s'il avait la même structure par âge que la population de référence, population France entière au recensement 2018."
+				queryable="true"
+				secure="public"
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/9968cb23-d6ff-4ad3-a41b-d891ee546ef8"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9968cb23-d6ff-4ad3-a41b-d891ee546ef8" >
 			</layer> 
 	</theme>	
-    <theme id="offre de soins" name="Offre de soins de ville" collapsed="true" icon="hospital-user"> 
+    <theme id="offre de soins" name="Offre de soins de ville" collapsed="true" icon="fas fa-hospital-user"> 
 		<group name="Premier recours" id="1grp1">
 			<layer 
 				id="sante_equipement_epci"
-				name="Médecin omnipraticien (densité pour 100 000 hab.)"
+				name="Chirurgien dentiste (densité pour 100 000 hab.)"
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
 				tiled="true"
 				exclusive="true"
 				infoformat="application/vnd.ogc.gml"
-				fields="nom_epci,d201_dens"
-				aliases="nom_epci,Médecin omnipraticien (pour 100 000 hab.)"
-				style="sante_equipement_epci_ors_d201_dens"
-				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				fields="nom_epci,d221_dens"
+				aliases="nom_epci,Chirurgien dentiste (pour 100 000 hab.)"
+				style="sante_equipement_epci_ors_d221_dens"
+				attribution="Sources : Insee, Base permanente des équipements - Ensemble des équipements (Commerce, service, santé, action sociale, transports et tourisme) et Recensement de la population, exploitation ORS Bretagne &lt;hr&gt; &lt;b&gt; Dénominateur&lt;/b&gt; : ensemble des habitant·e·s, tous âges et sexes confondus."
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
-			</layer> 
-			<layer 
-				id="sante_equipement_epci"
-				name="Pharmacie (densité pour 100 000 hab.)"
-				type="wms"
-				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
-				tiled="true"
-				exclusive="true"
-				infoformat="application/vnd.ogc.gml"
-				fields="nom_epci,d301_dens"
-				aliases="nom_epci,Pharmacie (pour 100 000 hab.)"
-				style="sante_equipement_epci_ors_d301_dens"
-				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
-				queryable="true"
-				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/a324d755-af1f-4f39-a633-9326562ff6c5"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a324d755-af1f-4f39-a633-9326562ff6c5">
 			</layer> 
 			<layer 
 				id="sante_equipement_epci"
@@ -166,32 +240,55 @@
 				fields="nom_epci,d232_dens"
 				aliases="nom_epci,Infirmier·ère (pour 100 000 hab.)"
 				style="sante_equipement_epci_ors_d232_dens"
-				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				attribution="Sources : Insee, Base permanente des équipements - Ensemble des équipements (Commerce, service, santé, action sociale, transports et tourisme) et Recensement de la population, exploitation ORS Bretagne &lt;hr&gt; &lt;b&gt; Dénominateur&lt;/b&gt; : ensemble des habitant·e·s, tous âges et sexes confondus."
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/a324d755-af1f-4f39-a633-9326562ff6c5"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a324d755-af1f-4f39-a633-9326562ff6c5">
 			</layer> 
 			<layer 
 				id="sante_equipement_epci"
-				name="Chirurgien dentiste (densité pour 100 00 hab.)"
+				name="Médecin omnipraticien (densité pour 100 000 hab.)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				visible = "false"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_epci,d201_dens"
+				aliases="nom_epci,Médecin omnipraticien (pour 100 000 hab.)"
+				style="sante_equipement_epci_ors_d201_dens"
+				attribution="Sources : Insee, Base permanente des équipements - Ensemble des équipements (Commerce, service, santé, action sociale, transports et tourisme) et Recensement de la population, exploitation ORS Bretagne &lt;hr&gt; &lt;b&gt; Dénominateur&lt;/b&gt; : ensemble des habitant·e·s, tous âges et sexes confondus."
+				queryable="true"
+				secure="public"
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/a324d755-af1f-4f39-a633-9326562ff6c5"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a324d755-af1f-4f39-a633-9326562ff6c5">
+			</layer> 
+			<layer 
+				id="sante_equipement_epci"
+				name="Pharmacie (densité pour 100 000 hab.)"
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
 				tiled="true"
 				exclusive="true"
 				infoformat="application/vnd.ogc.gml"
-				fields="nom_epci,d221_dens"
-				aliases="nom_epci,Chirurgien dentiste (pour 100 000 hab.)"
-				style="sante_equipement_epci_ors_d221_dens"
-				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				fields="nom_epci,d301_dens"
+				aliases="nom_epci,Pharmacie (pour 100 000 hab.)"
+				style="sante_equipement_epci_ors_d301_dens"
+				attribution="Sources : Insee, Base permanente des équipements - Ensemble des équipements (Commerce, service, santé, action sociale, transports et tourisme) et Recensement de la population, exploitation ORS Bretagne &lt;hr&gt; &lt;b&gt; Dénominateur&lt;/b&gt; : ensemble des habitant·e·s, tous âges et sexes confondus."
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/a324d755-af1f-4f39-a633-9326562ff6c5"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a324d755-af1f-4f39-a633-9326562ff6c5">
 			</layer> 
 		</group>
 		<group name="Optique et opthalmologie" id="1grp2">
 			<layer 
 				id="sante_equipement_epci"
-				name="Médecin ophtalmologiste (densité pour 100 000 hab.)"
+				name="Ophtalmologue (densité pour 100 000 hab.)"
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
 				tiled="true"
@@ -200,10 +297,12 @@
 				fields="nom_epci,d208_dens"
 				aliases="nom_epci,Médecin ophtalmologiste (pour 100 000 hab.)"
 				style="sante_equipement_epci_ors_d208_dens"
-				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				attribution="Sources : Insee, Base permanente des équipements - Ensemble des équipements (Commerce, service, santé, action sociale, transports et tourisme) et Recensement de la population, exploitation ORS Bretagne &lt;hr&gt; &lt;b&gt; Dénominateur&lt;/b&gt; : ensemble des habitant·e·s, tous âges et sexes confondus."
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/a324d755-af1f-4f39-a633-9326562ff6c5"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a324d755-af1f-4f39-a633-9326562ff6c5">
 			</layer>    
 			<layer 
 				id="sante_equipement_epci"
@@ -216,10 +315,12 @@
 				fields="nom_epci,d236_dens"
 				aliases="nom_epci,Orthoptiste (pour 100 000 hab.)"
 				style="sante_equipement_epci_ors_d236_dens"
-				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				attribution="Sources : Insee, Base permanente des équipements - Ensemble des équipements (Commerce, service, santé, action sociale, transports et tourisme) et Recensement de la population, exploitation ORS Bretagne &lt;hr&gt; &lt;b&gt; Dénominateur&lt;/b&gt; : ensemble des habitant·e·s, tous âges et sexes confondus."
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/a324d755-af1f-4f39-a633-9326562ff6c5"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a324d755-af1f-4f39-a633-9326562ff6c5">
 			</layer> 
 			<layer 
 				id="sante_equipement_epci"
@@ -232,10 +333,12 @@
 				fields="nom_epci,b313_dens"
 				aliases="nom_epci,Magasin d'optique (pour 100 000 hab.)"
 				style="sante_equipement_epci_ors_b313_dens"
-				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				attribution="Sources : Insee, Base permanente des équipements - Ensemble des équipements (Commerce, service, santé, action sociale, transports et tourisme) et Recensement de la population, exploitation ORS Bretagne &lt;hr&gt; &lt;b&gt; Dénominateur&lt;/b&gt; : ensemble des habitant·e·s, tous âges et sexes confondus."
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/a324d755-af1f-4f39-a633-9326562ff6c5"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a324d755-af1f-4f39-a633-9326562ff6c5">
 			</layer>		
 		</group>	
 		<group name="Santé mentale" id="1grp3"> 
@@ -250,10 +353,12 @@
 				fields="nom_epci,d207_dens"
 				aliases="nom_epci,Médecin psychiatre (pour 100 000 hab.)"
 				style="sante_equipement_epci_ors_d207_dens"
-				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				attribution="Sources : Insee, Base permanente des équipements - Ensemble des équipements (Commerce, service, santé, action sociale, transports et tourisme) et Recensement de la population, exploitation ORS Bretagne &lt;hr&gt; &lt;b&gt; Dénominateur&lt;/b&gt; : ensemble des habitant·e·s, tous âges et sexes confondus."
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/a324d755-af1f-4f39-a633-9326562ff6c5"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a324d755-af1f-4f39-a633-9326562ff6c5">
 			</layer> 
 			<layer 
 				id="sante_equipement_epci"
@@ -266,48 +371,54 @@
 				fields="nom_epci,d243_dens"
 				aliases="nom_epci,Psychologue (pour 100 000 hab.)"
 				style="sante_equipement_epci_ors_d243_dens"
-				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				attribution="Sources : Insee, Base permanente des équipements - Ensemble des équipements (Commerce, service, santé, action sociale, transports et tourisme) et Recensement de la population, exploitation ORS Bretagne &lt;hr&gt; &lt;b&gt; Dénominateur&lt;/b&gt; : ensemble des habitant·e·s, tous âges et sexes confondus."
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/a324d755-af1f-4f39-a633-9326562ff6c5"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a324d755-af1f-4f39-a633-9326562ff6c5">
 			</layer> 
 		</group>	
 		<group name="Santé sexuelle, maternelle et infantile" id="1grp4">
 			<layer 
 				id="sante_equipement_epci"
-				name="Médecin gynécologiste (densité pour 100 000 hab.)"
+				name="Gynécologue (densité pour 100 000 femmes)"
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
 				tiled="true"
 				exclusive="true"
 				infoformat="application/vnd.ogc.gml"
 				fields="nom_epci,d214_dens"
-				aliases="nom_epci,Médecin gynécologiste (pour 100 000 hab.)"
+				aliases="nom_epci,Médecin gynécologiste (pour 100 000 femmes)"
 				style="sante_equipement_epci_ors_d214_dens"
-				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				attribution="Sources : Insee, Base permanente des équipements - Ensemble des équipements (Commerce, service, santé, action sociale, transports et tourisme) et Recensement de la population, exploitation ORS Bretagne &lt;hr&gt; &lt;b&gt; Dénominateur&lt;/b&gt; : ensemble des femmes de 15 ans et plus."
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/a324d755-af1f-4f39-a633-9326562ff6c5"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a324d755-af1f-4f39-a633-9326562ff6c5">
 			</layer>
 			<layer 
 				id="sante_equipement_epci"
-				name="Médecin pédiatre (densité pour 100 000 hab.)"
+				name="Médecin pédiatre (densité pour 100 000 enfants)"
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
 				tiled="true"
 				exclusive="true"
 				infoformat="application/vnd.ogc.gml"
 				fields="nom_epci,d210_dens"
-				aliases="nom_epci,Médecin pédiatre (pour 100 000 hab.)"
+				aliases="nom_epci,Médecin pédiatre (pour 100 000 enfants)"
 				style="sante_equipement_epci_ors_d210_dens"
-				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				attribution="Sources : Insee, Base permanente des équipements - Ensemble des équipements (Commerce, service, santé, action sociale, transports et tourisme) et Recensement de la population, exploitation ORS Bretagne &lt;hr&gt; &lt;b&gt; Dénominateur&lt;/b&gt; : enfants de 0 à 14 ans inclus, quel que soit le sexe."
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/a324d755-af1f-4f39-a633-9326562ff6c5"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a324d755-af1f-4f39-a633-9326562ff6c5">
 			</layer>		
 			<layer 
 				id="sante_equipement_epci"
-				name="Sage-femme / maïeuticien·ne (densité pour 100 000 hab.)"
+				name="Sage-femme / maïeuticien·ne (densité pour 100 000 femmes)"
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
 				tiled="true"
@@ -316,10 +427,12 @@
 				fields="nom_epci,d231_dens"
 				aliases="nom_epci,Sage-femme (pour 100 000 hab.)"
 				style="sante_equipement_epci_ors_d231_dens"
-				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				attribution="Sources : Insee, Base permanente des équipements - Ensemble des équipements (Commerce, service, santé, action sociale, transports et tourisme) et Recensement de la population, exploitation ORS Bretagne &lt;hr&gt; &lt;b&gt; Dénominateur&lt;/b&gt; : ensemble des femmes de 15 ans et plus."
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/a324d755-af1f-4f39-a633-9326562ff6c5"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a324d755-af1f-4f39-a633-9326562ff6c5">
 			</layer> 
 		</group>	
 		<group name="Structures pluriprofessionnelles " id="1grp5"> 
@@ -333,11 +446,13 @@
 				infoformat="application/vnd.ogc.gml"
 				fields="nom_epci,d108_dens"
 				aliases="nom_epci,Centre de santé (pour 100 000 hab.)"
-				style="sante_equipement_epci_ors_d301_dens"
-				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				style="sante_equipement_epci_ors_d108_dens"
+				attribution="Sources : Insee, Base permanente des équipements - Ensemble des équipements (Commerce, service, santé, action sociale, transports et tourisme) et Recensement de la population, exploitation ORS Bretagne &lt;hr&gt; &lt;b&gt; Dénominateur&lt;/b&gt; : ensemble des habitant·e·s, tous âges et sexes confondus."
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/a324d755-af1f-4f39-a633-9326562ff6c5"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a324d755-af1f-4f39-a633-9326562ff6c5">
 			</layer> 
 			<layer 
 				id="sante_equipement_epci"
@@ -350,10 +465,12 @@
 				fields="nom_epci,d113_dens"
 				aliases="nom_epci,Maison de santé pluriprofessionnelle (pour 100 000 hab.)"
 				style="sante_equipement_epci_ors_d113_dens"
-				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				attribution="Sources : Insee, Base permanente des équipements - Ensemble des équipements (Commerce, service, santé, action sociale, transports et tourisme) et Recensement de la population, exploitation ORS Bretagne &lt;hr&gt; &lt;b&gt; Dénominateur&lt;/b&gt; : ensemble des habitant·e·s, tous âges et sexes confondus."
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/a324d755-af1f-4f39-a633-9326562ff6c5"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a324d755-af1f-4f39-a633-9326562ff6c5">
 			</layer> 
 		</group>
 		<group name="Autres paramédicaux" id="1grp6"> 
@@ -368,10 +485,12 @@
 				fields="nom_epci,d233_dens"
 				aliases="nom_epci,Masseur·euse kinésithérapeute (pour 100 000 hab.)"
 				style="sante_equipement_epci_ors_d233_dens"
-				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				attribution="Sources : Insee, Base permanente des équipements - Ensemble des équipements (Commerce, service, santé, action sociale, transports et tourisme) et Recensement de la population, exploitation ORS Bretagne &lt;hr&gt; &lt;b&gt; Dénominateur&lt;/b&gt; : ensemble des habitant·e·s, tous âges et sexes confondus."
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/a324d755-af1f-4f39-a633-9326562ff6c5"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a324d755-af1f-4f39-a633-9326562ff6c5">
 			</layer> 
 			<layer 
 				id="sante_equipement_epci"
@@ -384,18 +503,20 @@
 				fields="nom_epci,d235_dens"
 				aliases="nom_epci,Orthophoniste (pour 100 000 hab.)"
 				style="sante_equipement_epci_ors_d235_dens"
-				attribution="ORS Bretagne, à partir des données INSEE de la base des équipements (millésime 2019) et du recensement de population (millésime 2017)"
+				attribution="Sources : Insee, Base permanente des équipements - Ensemble des équipements (Commerce, service, santé, action sociale, transports et tourisme) et Recensement de la population, exploitation ORS Bretagne &lt;hr&gt; &lt;b&gt; Dénominateur&lt;/b&gt; : ensemble des habitant·e·s, tous âges et sexes confondus."
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/a324d755-af1f-4f39-a633-9326562ff6c5"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a324d755-af1f-4f39-a633-9326562ff6c5">
 			</layer> 
 		</group>
     </theme>	    
-    <theme id="pathologies" name="Pathologies" collapsed="true" icon="virus"> 	
+    <theme id="pathologies" name="Pathologies" collapsed="true" icon="fas fa-virus"> 	
 		<group name="Maladie neurocardiovasculaire" id="2grp1"> 
 			<layer 
 				id="sante_pathologie_epci"
-				name="Maladie neurocardiovasculaire (taux standardisé)"
+				name="Maladie neuro-cardiovasculaire (taux standardisé)"
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
 				tiled="true"
@@ -404,10 +525,12 @@
 				fields="nom_geo,cardio_taux"
 				aliases="nom_geo,Maladie neurocardiovasculaire (taux standardisé pour 1000 hab.)"
 				style="sante_pathologie_epci_ors_cardio_taux"
-				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				attribution="ORS Bretagne, à partir des données Cnam (2019). &lt;i&gt;L'estimation peut être indisponible pour certains territoires en cas d'effectifs insuffisants.&lt;/i&gt; &lt;hr&gt; &lt;b&gt;Liste des maladies neuro-cardiovasculaire&lt;/b&gt; : syndrome coronaire aigu, maladie coronaire chronique, accident vasculaire cérébral aigu, séquelle d'accident vasculaire cérébral, insuffisance cardiaque aiguë, insuffisance cardiaque chronique, artériopathie oblitérante du membre inférieur, troubles du rythme ou de la conduction cardiaque, maladie valvulaire, embolie pulmonaire aiguë et autres affections cardiovasculaires."
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/eb1e248b-cd8e-42d4-b6c0-bd9c86012734"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=eb1e248b-cd8e-42d4-b6c0-bd9c86012734" >
 			</layer> 
 			<layer 
 				id="sante_pathologie_epci"
@@ -417,11 +540,13 @@
 				exclusive="true"
 				infoformat="application/vnd.ogc.gml"
 				fields="nom_geo,cardio_nb"
-				aliases="nom_geo,Nombre de personnes avec une pathologie neurocardiovasculaire"
+				aliases="nom_geo,Nombre de bénéficiaires de l'ensemble des régimes d'assurance maladie ayant eu recours à des soins remboursés pour une pathologie neuro-cardiovasculaire"
 				style="sante_pathologie_epci_ors_cardio_nb"
-				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				attribution="ORS Bretagne, à partir des données Cnam (2019). &lt;hr&gt; &lt;b&gt;Liste des maladies neuro-cardiovasculaire&lt;/b&gt; : syndrome coronaire aigu, maladie coronaire chronique, accident vasculaire cérébral aigu, séquelle d'accident vasculaire cérébral, insuffisance cardiaque aiguë, insuffisance cardiaque chronique, artériopathie oblitérante du membre inférieur, troubles du rythme ou de la conduction cardiaque, maladie valvulaire, embolie pulmonaire aiguë et autres affections cardiovasculaires."
 				queryable="true"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/eb1e248b-cd8e-42d4-b6c0-bd9c86012734"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=eb1e248b-cd8e-42d4-b6c0-bd9c86012734" >
 			</layer> 
 		</group>
 		<group name="Maladie coronaire" id="2grp2"> 
@@ -436,10 +561,12 @@
 				fields="nom_geo,coro_taux"
 				aliases="nom_geo,Maladie coronaire chronique (taux standardisé pour 1000 hab.)"
 				style="sante_pathologie_epci_ors_coro_taux"
-				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				attribution="ORS Bretagne, à partir des données Cnam (2019). &lt;i&gt;L'estimation peut être indisponible pour certains territoires en cas d'effectifs insuffisants.&lt;/i&gt; &lt;hr&gt;La maladie coronaire ou coronarienne (appelée aussi cardiopathie ischémique ou insuffisance coronarienne) est l’une des maladies cardiovasculaires les plus fréquentes. Il s’agit d’un rétrécissement ou d’une obstruction des artères coronaires, de sorte que des parties du coeur ne reçoivent plus de sang ou pas assez. Ceci peut entraîner l’angine de poitrine, un infarctus du myocarde, voire un arrêt cardio-circulatoire."
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/eb1e248b-cd8e-42d4-b6c0-bd9c86012734"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=eb1e248b-cd8e-42d4-b6c0-bd9c86012734" >
 			</layer> 
 			<layer 
 				id="sante_pathologie_epci"
@@ -449,11 +576,13 @@
 				exclusive="true"
 				infoformat="application/vnd.ogc.gml"
 				fields="nom_geo,coro_nb"
-				aliases="nom_geo,Nombre de personnes avec une maladie coronaire chronique"
+				aliases="nom_geo,Nombre de bénéficiaires de l'ensemble des régimes d'assurance maladie ayant eu recours à des soins remboursés pour une maladie coronaire chronique"
 				style="sante_pathologie_epci_ors_coro_nb"
-				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				attribution="ORS Bretagne, à partir des données Cnam (2019). &lt;hr&gt;La maladie coronaire ou coronarienne (appelée aussi cardiopathie ischémique ou insuffisance coronarienne) est l’une des maladies cardiovasculaires les plus fréquentes. Il s’agit d’un rétrécissement ou d’une obstruction des artères coronaires, de sorte que des parties du coeur ne reçoivent plus de sang ou pas assez. Ceci peut entraîner l’angine de poitrine, un infarctus du myocarde, voire un arrêt cardio-circulatoire."
 				queryable="true"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/eb1e248b-cd8e-42d4-b6c0-bd9c86012734"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=eb1e248b-cd8e-42d4-b6c0-bd9c86012734" >
 			</layer> 
 		</group>
 		<group name="Cancer" id="2grp3"> 
@@ -468,10 +597,12 @@
 				fields="nom_geo,cancer_taux"
 				aliases="nom_geo,Cancer (taux standardisé pour 1000 hab.)"
 				style="sante_pathologie_epci_ors_cancer_taux"
-				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				attribution="ORS Bretagne, à partir des données Cnam (2019). &lt;i&gt;L'estimation peut être indisponible pour certains territoires en cas d'effectifs insuffisants.&lt;/i&gt;"
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/eb1e248b-cd8e-42d4-b6c0-bd9c86012734"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=eb1e248b-cd8e-42d4-b6c0-bd9c86012734" >
 			</layer> 
 			<layer 
 				id="sante_pathologie_epci"
@@ -481,11 +612,13 @@
 				exclusive="true"
 				infoformat="application/vnd.ogc.gml"
 				fields="nom_geo,cancer_nb"
-				aliases="nom_geo,Nombre de personnes avec un cancer"
+				aliases="nom_geo,Nombre de bénéficiaires de l'ensemble des régimes d'assurance maladie ayant eu recours à des soins remboursés pour un cancer"
 				style="sante_pathologie_epci_ors_cancer_nb"
 				attribution="ORS Bretagne, à partir des données Cnam (2019)"
 				queryable="true"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/eb1e248b-cd8e-42d4-b6c0-bd9c86012734"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=eb1e248b-cd8e-42d4-b6c0-bd9c86012734" >
 			</layer> 
 		</group>
 		<group name="Maladie psychiatrique" id="2grp4"> 
@@ -500,10 +633,12 @@
 				fields="nom_geo,psy_taux"
 				aliases="nom_geo,Maladie psychiatrique (taux standardisé pour 1000 hab.)"
 				style="sante_pathologie_epci_ors_psy_taux"
-				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				attribution="SNIIRAM, Version G8 de la cartographie des pathologies (tous régimes). Données 2019. Exploitation ORS Bretagne. &lt;i&gt;L'estimation peut être indisponible pour certains territoires en cas d'effectifs insuffisants.&lt;/i&gt;"
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/eb1e248b-cd8e-42d4-b6c0-bd9c86012734"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=eb1e248b-cd8e-42d4-b6c0-bd9c86012734" >
 			</layer> 
 			<layer 
 				id="sante_pathologie_epci"
@@ -513,11 +648,13 @@
 				exclusive="true"
 				infoformat="application/vnd.ogc.gml"
 				fields="nom_geo,psy_nb"
-				aliases="nom_geo,Nombre de personnes avec une maladie psychiatrique"
+				aliases="nom_geo,Nombre de bénéficiaires de l'ensemble des régimes d'assurance maladie ayant eu recours à des soins remboursés pour une maladie psychiatrique"
 				style="sante_pathologie_epci_ors_psy_nb"
-				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				attribution="SNIIRAM, Version G8 de la cartographie des pathologies (tous régimes). Données 2019. Exploitation ORS Bretagne."
 				queryable="true"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/eb1e248b-cd8e-42d4-b6c0-bd9c86012734"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=eb1e248b-cd8e-42d4-b6c0-bd9c86012734" >
 			</layer> 
 		</group>
 		<group name="Maladie neurodégénérative" id="2grp5"> 
@@ -532,10 +669,12 @@
 				fields="nom_geo,neuro_taux"
 				aliases="nom_geo,Maladie neurodégénérative (taux standardisé pour 1000 hab.)"
 				style="sante_pathologie_epci_ors_neuro_taux"
-				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				attribution="ORS Bretagne, à partir des données Cnam (2019). &lt;i&gt;L'estimation peut être indisponible pour certains territoires en cas d'effectifs insuffisants.&lt;/i&gt; &lt;hr&gt; &lt;b&gt;Liste des maladies neurodégénératives&lt;/b&gt; : Démences (dont maladie d'Alzheimer), maladie de Parkinson, sclérose en plaque, paraplégie, myopathie ou myasthénie, épilepsie et autres affection neurologiques (séquelles de poliomyélite et certaines malformations congénitales du système nerveux)."
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/eb1e248b-cd8e-42d4-b6c0-bd9c86012734"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=eb1e248b-cd8e-42d4-b6c0-bd9c86012734" >
 			</layer> 
 			<layer 
 				id="sante_pathologie_epci"
@@ -545,11 +684,13 @@
 				exclusive="true"
 				infoformat="application/vnd.ogc.gml"
 				fields="nom_geo,neuro_nb"
-				aliases="nom_geo,Nombre de personnes avec une maladie neurodégénérative"
+				aliases="nom_geo,Nombre de bénéficiaires de l'ensemble des régimes d'assurance maladie ayant eu recours à des soins remboursés pour une maladie neurodégénérative"
 				style="sante_pathologie_epci_ors_neuro_nb"
-				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				attribution="ORS Bretagne, à partir des données Cnam (2019). &lt;hr&gt; &lt;b&gt;Liste des maladies neurodégénératives&lt;/b&gt; : Démences (dont maladie d'Alzheimer), maladie de Parkinson, sclérose en plaque, paraplégie, myopathie ou myasthénie, épilepsie et autres affection neurologiques (séquelles de poliomyélite et certaines malformations congénitales du système nerveux)."
 				queryable="true"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/eb1e248b-cd8e-42d4-b6c0-bd9c86012734"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=eb1e248b-cd8e-42d4-b6c0-bd9c86012734" >
 			</layer> 
 		</group>
 		<group name="Maladie respiratoire" id="2grp6"> 
@@ -564,10 +705,12 @@
 				fields="nom_geo,respi_taux"
 				aliases="nom_geo,Maladie respiratoire chronique (taux standardisé pour 1000 hab.)"
 				style="sante_pathologie_epci_ors_respi_taux"
-				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				attribution="ORS Bretagne, à partir des données Cnam (2019). &lt;i&gt;L'estimation peut être indisponible pour certains territoires en cas d'effectifs insuffisants.&lt;/i&gt; &lt;hr&gt;Concerne toutes les maladies respiratoires chroniques. Les plus fréquentes sont l’asthme, la bronchopneumopathie chronique obstructive (BPCO) et l’insuffisance respiratoire chronique."
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/eb1e248b-cd8e-42d4-b6c0-bd9c86012734"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=eb1e248b-cd8e-42d4-b6c0-bd9c86012734" >
 			</layer> 
 			<layer 
 				id="sante_pathologie_epci"
@@ -577,11 +720,13 @@
 				exclusive="true"
 				infoformat="application/vnd.ogc.gml"
 				fields="nom_geo,respi_nb"
-				aliases="nom_geo,Nombre de personnes avec une maladie respiratoire chronique"
+				aliases="nom_geo,Nombre de bénéficiaires de l'ensemble des régimes d'assurance maladie ayant eu recours à des soins remboursés pour une maladie respiratoire chronique"
 				style="sante_pathologie_epci_ors_respi_nb"
-				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				attribution="ORS Bretagne, à partir des données Cnam (2019). &lt;hr&gt;Concerne toutes les maladies respiratoires chroniques. Les plus fréquentes sont l’asthme, la bronchopneumopathie chronique obstructive (BPCO) et l’insuffisance respiratoire chronique."
 				queryable="true"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/eb1e248b-cd8e-42d4-b6c0-bd9c86012734"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=eb1e248b-cd8e-42d4-b6c0-bd9c86012734" >
 			</layer> 
 		</group>
 		<group name="Diabète" id="2grp7"> 
@@ -596,10 +741,12 @@
 				fields="nom_geo,diabete_taux"
 				aliases="nom_geo,Diabète (taux standardisé pour 1000 hab.)"
 				style="sante_pathologie_epci_ors_diabete_taux"
-				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				attribution="ORS Bretagne, à partir des données Cnam (2019). &lt;i&gt;L'estimation peut être indisponible pour certains territoires en cas d'effectifs insuffisants.&lt;/i&gt; &lt;hr&gt; L’analyse porte sur tous les types de diabète traités (type 1, type 2, diabète de grossesse et d'autres types plus rares). Le diabète de type 2 représente plus de 92% des cas de diabète en France."
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/eb1e248b-cd8e-42d4-b6c0-bd9c86012734"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=eb1e248b-cd8e-42d4-b6c0-bd9c86012734" >
 			</layer> 
 			<layer 
 				id="sante_pathologie_epci"
@@ -609,15 +756,17 @@
 				exclusive="true"
 				infoformat="application/vnd.ogc.gml"
 				fields="nom_geo,diabete_nb"
-				aliases="nom_geo,Nombre de personnes souffrant d'un diabète"
+				aliases="nom_geo,Nombre de bénéficiaires de l'ensemble des régimes d'assurance maladie ayant eu recours à des soins remboursés pour un diabète"
 				style="sante_pathologie_epci_ors_diabete_nb"
-				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				attribution="ORS Bretagne, à partir des données Cnam (2019). &lt;hr&gt; L’analyse porte sur tous les types de diabète traités (type 1, type 2, diabète de grossesse et d'autres types plus rares). Le diabète de type 2 représente plus de 92% des cas de diabète en France."
 				queryable="true"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/eb1e248b-cd8e-42d4-b6c0-bd9c86012734"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=eb1e248b-cd8e-42d4-b6c0-bd9c86012734" >
 			</layer> 
 		</group>
     </theme>
-	<theme id="traitements" name="Traitements" collapsed="true" icon="pills"> 
+	<theme id="traitements" name="Traitements médicamenteux" collapsed="true" icon="fas fa-pills"> 
 		<group name="Anti-hypertenseur" id="3grp1"> 
 			<layer 
 				id="sante_pathologie_epci"
@@ -633,7 +782,9 @@
 				attribution="ORS Bretagne, à partir des données Cnam (2019)"
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/eb1e248b-cd8e-42d4-b6c0-bd9c86012734"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=eb1e248b-cd8e-42d4-b6c0-bd9c86012734" >
 			</layer> 
 			<layer 
 				id="sante_pathologie_epci"
@@ -647,7 +798,9 @@
 				style="sante_pathologie_epci_ors_hyper_nb"
 				attribution="ORS Bretagne, à partir des données Cnam (2019)"
 				queryable="true"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/eb1e248b-cd8e-42d4-b6c0-bd9c86012734"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=eb1e248b-cd8e-42d4-b6c0-bd9c86012734" >
 			</layer> 
 		</group>
 		<group name="Anxiolytique" id="3grp2"> 
@@ -665,7 +818,9 @@
 				attribution="ORS Bretagne, à partir des données Cnam (2019)"
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/eb1e248b-cd8e-42d4-b6c0-bd9c86012734"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=eb1e248b-cd8e-42d4-b6c0-bd9c86012734" >
 			</layer> 
 			<layer 
 				id="sante_pathologie_epci"
@@ -679,7 +834,9 @@
 				style="sante_pathologie_epci_ors_anxio_nb"
 				attribution="ORS Bretagne, à partir des données Cnam (2019)"
 				queryable="true"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/eb1e248b-cd8e-42d4-b6c0-bd9c86012734"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=eb1e248b-cd8e-42d4-b6c0-bd9c86012734" >
 			</layer> 
 		</group>
 		<group name="Hypnotique" id="3grp3"> 
@@ -697,7 +854,9 @@
 				attribution="ORS Bretagne, à partir des données Cnam (2019)"
 				queryable="true"
 				secure="public"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/eb1e248b-cd8e-42d4-b6c0-bd9c86012734"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=eb1e248b-cd8e-42d4-b6c0-bd9c86012734" >
 			</layer> 
 			<layer 
 				id="sante_pathologie_epci"
@@ -711,9 +870,68 @@
 				style="sante_pathologie_epci_ors_hypnotique_nb"
 				attribution="ORS Bretagne, à partir des données Cnam (2019)"
 				queryable="true"
-				infopanel="right-panel">
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/eb1e248b-cd8e-42d4-b6c0-bd9c86012734"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=eb1e248b-cd8e-42d4-b6c0-bd9c86012734" >
 			</layer> 
 		</group>
+		<group name="Antidépresseur" id="3grp4"> 
+			<layer 
+				id="sante_pathologie_epci"
+				name="Traitement antidépresseur (taux standardisé)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				tiled="true"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_geo,depression_taux"
+				aliases="nom_geo,Traitement antidépresseur (taux standardisé pour 1000 hab.)"
+				style="sante_pathologie_epci_ors_antidepresseur_taux"
+				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				queryable="true"
+				secure="public"
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/eb1e248b-cd8e-42d4-b6c0-bd9c86012734"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=eb1e248b-cd8e-42d4-b6c0-bd9c86012734" >
+			</layer> 
+			<layer 
+				id="sante_pathologie_epci"
+				name="Traitement antidépresseur (nombre de pers. traitées)"
+				type="wms"
+				url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				fields="nom_geo,depression_nb"
+				aliases="nom_geo,Nombre de personnes sous traitement antidépresseur"
+				style="sante_pathologie_epci_ors_antidepresseur_nb"
+				attribution="ORS Bretagne, à partir des données Cnam (2019)"
+				queryable="true"
+				infopanel="right-panel"
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/eb1e248b-cd8e-42d4-b6c0-bd9c86012734"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=eb1e248b-cd8e-42d4-b6c0-bd9c86012734" >
+			</layer> 
+            <layer id="bretagne_5" name="Bretagne à 5" visible="true" tiled="false" namespace="rb"
+				queryable="false" 
+				showintoc="false"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attribution="OSM" 
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72" >  
+            </layer>
+            <layer id="departement_metro" name="Département" visible="true" tiled="false" namespace="rb"
+				queryable="false"
+                showintoc="false"
+				url="https://geobretagne.fr/geoserver/ign/wms" 
+				style="bretagne_5_style" 
+				attribution="IGN - Admin Express" 
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/c8884cac-bc25-41a0-92d1-b6566c86066e"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c8884cac-bc25-41a0-92d1-b6566c86066e" >
+            </layer>
+
+		</group>
+    </theme> 
+	<theme id="habitant" url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/territoire.xml" name="Population" collapsed="true" icon="false"> 
+	
     </theme> 
     <theme id="territoire" url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/administratif.xml" name="Découpages territoriaux" collapsed="true" icon="false"> 
     </theme> 

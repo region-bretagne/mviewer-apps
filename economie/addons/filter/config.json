@@ -1,0 +1,40 @@
+{
+  "js": ["js/filter.js", "js/jquery.easyDrag.min.js"],
+  "css": "css/filter.css",
+  "html": "filter.html",
+  "target": "page-content-wrapper",
+  "options": {
+    "mviewer":{
+		"sirene":{
+		  "tooltipPosition": "bottom-left",
+		  "title": "Filtrer",
+		  "open": true,
+		  "zoomOnFeatures": true,
+		  "legendTitle": "Entreprise",
+		  "style": {
+			"border": "1px #e3c213 solid",
+			"background": "#FFFFFF",
+			"top": "50%",
+			"left": "260px",
+			"text": "#e3c213",
+			"unSelectedBtnColor": "#CCCCCC",
+			"textSelectBtnColor": "#FFFFFF",
+			"selectedBtnColor": "#EED969"
+		  },
+		  "layers": [{
+			"layerId": "sirene_bretagne",
+			  "downloadFormats":[
+				{ "label": "CSV", "format": "CSV" }
+				],
+			"filter": [
+			  {
+				"attribut": "nom_secteur_niv0",
+				"type": "button",
+				"label": "Secteur d'activité"
+			  }
+			]
+		  }]
+		}
+    }
+  }
+}

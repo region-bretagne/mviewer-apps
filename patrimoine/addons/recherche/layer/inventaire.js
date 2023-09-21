@@ -4,10 +4,10 @@ mviewer.customLayers.inventaire = (function () {
     _filter = false;
     _ready = false;
     _mode = "AND"; /*AND | OR*/
-    _maxfeatures = 5000;
+    _maxfeatures = 10000;
     _maxrequestedfeatures = 50;
     _featurescount = null;
-    _searchinfields = [ "denomination", "datation", "murs", "toit","materiaux" ];
+    _searchinfields = [ "denomination", "datation_principale", "materiaux_murs", "materiaux_toit","materiaux_mobilier" ];
 
     var _els2GeoJSON = function(data) {
         var geojson = {

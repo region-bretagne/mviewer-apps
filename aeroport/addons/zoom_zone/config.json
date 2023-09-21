@@ -1,0 +1,12 @@
+{
+    "js": [
+        "js/ol-ext.min.js",
+        "js/zoom_zone.js"
+    ],
+    "css": "css/zoom_zone.css",
+    "r":255,
+    "g":255,
+    "b":255,
+    "opacity":0.7,
+    "target": "map"
+}

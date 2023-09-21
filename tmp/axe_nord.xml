@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<application
+		title="Foncier logistique - Axe Nord"
+		logo=""
+		id="monappli"
+		help="mviewer_help.html"
+		style="css/themes/default.css"
+		exportpng="true"
+		showhelp="false"
+		coordinates="false"
+		measuretools="true"
+		togglealllayersfromtheme="true">
+	</application>
+	<mapoptions maxzoom="18" projection="EPSG:3857" center="318589,6449450" zoom="8" scalebar="false" />
+	<olscompletion type="ban" url="https://api-adresse.data.gouv.fr/search/" attribution="" />
+	<searchparameters bbox="false" localities="true" features="false" static="false"/>
+	<baselayers style="gallery"><!-- style="default"||gallery" -->
+			<baselayer
+				type="WMS"
+				id="ortho2021"
+				layers="HR.ORTHOIMAGERY.ORTHOPHOTOS"
+				label="Orthophoto 2021"
+				title="Orthophoto 2021"
+				thumbgallery="apps/img/basemap/orthoGP.jpg"
+				url="https://wxs.ign.fr/ortho/geoportail/r/wms"
+				maxzoom="19"
+				visible="false"
+				format="image/png"
+				attribution="IGN"/>
+			<baselayer
+				type="WMS"
+				id="osmgp2"
+				layers="grey"
+				label="OSM - Géo2France - niveaux de gris"
+				title="OSM"
+				thumbgallery="apps/img/basemap/osmGP.jpg"
+				url="https://osm.geo2france.fr/mapcache/service"
+				maxzoom="19"
+				visible="true"
+				format="image/png"
+				attribution="Géo2France/OSM"
+				tiled="false" />
+			<baselayer  
+				type="WMS" 
+				id="cadastre" 
+				layers="cadastre_2020" 
+				label="cadastre" 
+				title="cadastre" 
+				thumbgallery="apps/img/basemap/cadastreGP.jpg"
+				url="https://www.geo2france.fr:443/geoserver/pci/ows?" 
+				maxzoom="19"
+				visible="false" 
+				format="image/png" 
+				attribution="DGFiP" />
+	</baselayers>
+	<themes mini="true" legendmini="true">
+		<theme name="Foncier logistique"  collapsed="true" id="dreal" icon="poll-h">
+			<layer
+				id="ITE"
+				name="Installations terminales embranchées (ITE)"
+				attribution="Source : Urba8"
+				queryable="true"
+				visible="true"
+				scalemin="0"
+				scalemax="50000"
+				dynamiclegend="true"
+				infoformat="application/vnd.ogc.gml"
+				url="https://www.geo2france.fr/geoserver/urba8/ows">
+			</layer>
+		</theme>
+	</themes>
+</config>

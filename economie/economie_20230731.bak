@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config mviewerstudioversion="3.1">
+<metadata>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description rdf:about="http://www.ilrt.bristol.ac.uk/people/cmdjb/">
+<dc:title>Kartenn éco</dc:title>
+<dc:creator>anonymous</dc:creator>
+<dc:publisher>anonymous</dc:publisher>
+<dc:subject>Développement économique</dc:subject>
+<dc:date>2022-03-18T09:18:41.525Z</dc:date>
+</rdf:Description>
+</rdf:RDF>
+</metadata>
+<application
+    title="Kartenn Économie"
+    logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/img/rb_blanc.svg"
+    help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/help.html"
+    style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/css/kartenn_economie.css"
+    exportpng="false"
+    showhelp="false"
+    coordinates="false"
+	stats="true" 
+	statsurl="../ws/kartenn/log.php"
+    measuretools="false"
+    togglealllayersfromtheme="false">
+</application>
+    <mapoptions maxzoom="20" projection="EPSG:3857" center="-255418,6120890" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
+<olscompletion type="ban" url="https://api-adresse.data.gouv.fr/search/" attribution="BAN" />
+<searchparameters bbox="false" localities="true" features="false" static="false"/>
+
+    <extensions>    
+        <extension type="component" id="layerfilter" path="https://kartenn.region-bretagne.fr/kartoviz/demo/addons"/>
+    </extensions>
+
+<baselayers style="default"> 
+    <baselayer visible="true" id="positron" thumbgallery="img/basemap/positron.png" title="CartoDb" label="Positron" type="OSM" url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" attribution="Map tiles by  &lt;a href=&quot;https://cartodb.com/attributions&quot;&gt;CartoDb&lt;/a&gt;, under  &lt;a href=&quot;https://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY 3.0 &lt;/a&gt;"  ></baselayer> 
+    <baselayer visible="false" id="ortho1" thumbgallery="img/basemap/ortho.jpg" title="GéoBretagne" label="Photo aérienne actuelle" type="WMTS" url="https://tile.geobretagne.fr/gwc02/service/wmts" layers="satellite" format="image/png" style="_null" matrixset="EPSG:3857" fromcapacity="false" attribution="&lt;a href=&quot;https://applications.region-bretagne.fr/geonetwork/?uuid=3a0ac2e3-7af1-4dec-9f36-dae6b5a8c731&quot; target=&quot;_blank&quot; &gt;partenaires GéoBretagne - IGN RGE BD ORTHO - PlanetObserver&lt;/a&gt;"  ></baselayer> 
+    <baselayer visible="false" id="osm_google" thumbgallery="img/basemap/osm_google.png" title="GéoBretagne" label="OpenStreetMap" type="WMS" url="https://osm.geobretagne.fr/gwc01/service/wms" layers="osm:google" format="image/png" attribution="GéoBretagne. Données : les contributeurs d'&lt;a href=&quot;https://www.openstreetmap.org/&quot; target=&quot;_blank&quot;&gt;OpenStreetMap &lt;/a&gt;,  &lt;a href=&quot;https://www.openstreetmap.org/copyright&quot; target=&quot;_blank&quot;&gt;ODbL &lt;/a&gt;"  ></baselayer> 
+</baselayers>
+<themes mini="false"> 
+	<theme id="habitant" url="https://kartenn.region-bretagne.fr/territoires/apps/default.xml" name="Données de contexte"  >
+</theme>
+
+	<theme id="dispositifs" name="Bilan des dispositifs" collapsed="false" icon="fas fa-hands-helping">
+		<group id="creation" name="Accompagnement à la création - reprise d'activité"> 
+			<layer 
+				id="aide_pass_creation_epci"
+				name="PASS Création"
+				type="wms"
+		        timefilter="true" timeinterval="year" timecontrol="slider" timemin="2021" timemax="2022" timevalues="2021,2022"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				visible="true"
+				exclusive="true" expanded="true"
+				infoformat="application/vnd.ogc.gml"
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/pass_creation_commune.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte commune&lt;/button&gt;&lt;/a&gt;
+				
+				&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/pass_creation_epci.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI&lt;/button&gt;&lt;/a&gt;
+				&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=aide_pass_creation_epci&amp;outputFormat=excel2007&amp;propertyName=code_siren,nom,nb,nb_femme,nb_1er_cycle,nb_cap_bep,nb_bac,nb_bac_2,nb_bac_4,nb_bac_5,nb_moins_30_ans,nb_30_50_ans,nb_plus_50_ans,nb_nc,millesime&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;
+				&lt;/br&gt;&lt;/br&gt;
+				
+				Le &lt;b&gt;PASS Création&lt;/b&gt; propose un accompagnement personnalisé avec des conseils stratégiques, financiers et juridiques tout au long du projet de création ou de reprise, jusqu’au développement de l’activité.&lt;/br&gt;&lt;/br&gt;
+				
+				&lt;a href=&quot;https://www.bretagne.bzh/aides/fiches/pass-creation/&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Plus d'informations&lt;/button&gt;&lt;/a&gt;"
+				queryable="true"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/aide_pass_creation_epci.mst"></template>
+			</layer> 
+			<layer 
+				id="aide_brit_epci"
+				name="Prêts Bretagne Reprise Initiative Transmission (BRIT)"
+				type="wms" expanded="true"
+		        timefilter="true" timeinterval="year" timecontrol="slider" timemin="2021" timemax="2022" timevalues="2021,2022"
+				exclusive="true"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				visible="false"
+				infoformat="application/vnd.ogc.gml"
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/brit_commune.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte commune&lt;/button&gt;&lt;/a&gt;&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/brit_epci.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI&lt;/button&gt;&lt;/a&gt;&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=aide_brit_epci&amp;outputFormat=excel2007&amp;propertyName=code_siren,nom,montant,nb,nb_emploi,millesime&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt;&lt;b&gt;BRIT et BRIT agricole&lt;/b&gt; sont des fonds régionaux abondés par la Région, Bpifrance et les banques de place pour faciliter la reprise et la transmission d’entreprises à travers le réseau des plateformes d’initiatives locales et Réseau Entreprendre Bretagne. Les fonds BRIT octroient des prêts d’honneur aux repreneurs, ce qui a pour objectif de constituer un effet levier important auprès des banques.&lt;/br&gt;&lt;/br&gt;&lt;a href=&quot;https://www.initiative-bretagne.bzh/pret-brit-reprise-entreprise.html&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Plus d'informations&lt;/button&gt;&lt;/a&gt;"
+				queryable="true"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/aide_brit_epci.mst"></template>
+			</layer> 
+
+		</group> 
+		<group id="ingenierie_financiere" name="Soutien à l'ingénierie financière"> 
+			<layer 
+				id="aide_ingefi_epci_millesime"
+				name="Autres dispositifs d'ingénierie financière"
+				type="wms" expanded="true"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				visible="false"
+		        exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2022-Ingenierie_financiere.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;
+				&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=aide_ingefi_epci_millesime&amp;outputFormat=excel2007&amp;propertyName=id,nom_epci,code_siren,prets_crea,garantie,prets_treso,millesime,datation&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt;En partenariat avec Bpifrance et les Plateforme forme d'initiative locales, la Région propose une gamme de prêts participatifs et de garanties à destination des entreprises.&lt;/b&gt;"
+				queryable="true"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/aide_ingefi_epci.mst"></template>
+			</layer> 
+
+		</group> 
+		<group id="soutien_investissement" name="Soutien à l'investissement"> 
+
+			<layer 
+				id="aide_pass_commerce_artisanat"
+				name="PASS Commerce et artisanat"
+				type="wms" expanded="true"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				visible="false"
+		        
+				exclusive="true"
+				style="pca_annee_n"
+				infoformat="application/vnd.ogc.gml"
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2022-PCA_par_commune.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte commune&lt;/button&gt;&lt;/a&gt;&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2022-PCA_par_EPCI.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI&lt;/button&gt;&lt;/a&gt;&lt;a 
+				&lt;/br&gt;&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=aide_pass_commerce_artisanat&amp;outputFormat=excel2007&amp;propertyName=code_siren,nom,nb_dossier_annee_n,montant_annee_n,quote_part_region_annee_n,quote_part_epci_annee_n,nb_dossier_cumule,montant_cumule,quote_part_region_cumule,quote_part_epci_cumule,millesime&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt;Le &lt;b&gt;PASS Commerce et artisanat&lt;/b&gt; est un dispositif co-financé par la Région Bretagne et les intercommunalités bretonnes Il a pour objectif de moderniser et de dynamiser les activités commerciales et artisanales indépendantes qui contribuent activement à la vie locale et au développement de l’emploi.&lt;/br&gt;&lt;/br&gt;&lt;a href=&quot;https://www.bretagne.bzh/aides/fiches/pass-commerce-artisanat/&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Plus d'informations&lt;/button&gt;&lt;/a&gt;"
+				queryable="true"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/aide_pca_epci_annee_n.mst"></template>
+			</layer> 
+			<layer 
+				id="aide_pass_commerce_artisanat"
+				name="PASS Commerce et artisanat entre 2017 et 2022"
+				type="wms" expanded="true"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				visible="false"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2017-2022-PCA_par_EPCI.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI&lt;/button&gt;&lt;/a&gt;&lt;a &lt;/br&gt;&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=aide_pass_commerce_artisanat&amp;outputFormat=excel2007&amp;propertyName=code_siren,nom,nb_dossier_annee_n,montant_annee_n,quote_part_region_annee_n,quote_part_epci_annee_n,nb_dossier_cumule,montant_cumule,quote_part_region_cumule,quote_part_epci_cumule,millesime&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt;Le &lt;b&gt;PASS Commerce et artisanat&lt;/b&gt; est un dispositif co-financé par la Région Bretagne et les intercommunalités bretonnes Il a pour objectif de moderniser et de dynamiser les activités commerciales et artisanales indépendantes qui contribuent activement à la vie locale et au développement de l’emploi.&lt;/br&gt;&lt;/br&gt;&lt;a href=&quot;https://www.bretagne.bzh/aides/fiches/pass-commerce-artisanat/&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Plus d'informations&lt;/button&gt;&lt;/a&gt;"
+				queryable="true"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/aide_pca_epci_cumule.mst"></template>
+			</layer> 
+			<layer 
+				id="pca_bilan_communes"
+				name="PASS Commerce et artisanat : couverture communale (2018-2022)"
+				type="wms" expanded="true"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				visible="false"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				attribution="Communes avec au moins un dossier PCA &lt;/br&gt;(de 2018 au 1er semestre 2022)&lt;/br&gt;&lt;/br&gt;&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/PCA_communes_2018-2022.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot;&gt;Accès carte&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;Le &lt;b&gt;PASS Commerce et artisanat&lt;/b&gt; est un dispositif co-financé par la Région Bretagne et les intercommunalités bretonnes Il a pour objectif de moderniser et de dynamiser les activités commerciales et artisanales indépendantes qui contribuent activement à la vie locale et au développement de l’emploi.&lt;/br&gt;&lt;/br&gt;&lt;a href=&quot;https://www.bretagne.bzh/aides/fiches/pass-commerce-artisanat/&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Plus d'informations&lt;/button&gt;&lt;/a&gt;"
+				queryable="false"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/aide_pca_epci_cumule.mst"></template>
+			</layer> 
+			<layer 
+				id="feader"
+				name="PASS Compétitivité IAA"
+				type="wms" expanded="true"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				visible="false"
+				exclusive="true"
+				style="feader_epci"
+				infoformat="application/vnd.ogc.gml"
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2015-2022-Feader_par_commune.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte commune&lt;/button&gt;&lt;/a&gt;&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2015-2022-Feader_par_EPCI.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI&lt;/button&gt;&lt;/a&gt;&lt;a 
+				&lt;/br&gt;"
+				queryable="true"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/aide_feader_epci.mst"></template>
+			</layer> 
+			<layer 
+				id="feder"
+				name="AAP Process et numérisation"
+				type="wms" expanded="true"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				visible="false"
+				exclusive="true"
+				style="feder_epci"
+				infoformat="application/vnd.ogc.gml"
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2020-2022-Feder_par_commune.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte commune&lt;/button&gt;&lt;/a&gt;&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2020-2022-Feder_par_EPCI.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI&lt;/button&gt;&lt;/a&gt;&lt;a 
+				&lt;/br&gt;"
+				queryable="true"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/aide_feder_epci.mst"></template>
+			</layer> 		
+
+
+		</group> 
+		<group id="soutien_collectif" name="Soutien en conseil"> 
+			<layer 
+				id="aide_breizh_fab_epci"
+				name="Breizh Fab 2018-2022"
+				type="wms" expanded="true"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				visible="false"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/breizh_fab_commune.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte commune&lt;/button&gt;&lt;/a&gt;&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/breizh_fab_epci.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=aide_breizh_fab_epci&amp;outputFormat=excel2007&amp;propertyName=code_siren,nom,nb_entreprise_annee_n,nb_entreprise_total,millesime&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt;A destination des PME industrielles, &lt;b&gt;Breizh fab&lt;/b&gt; est un dispositif qui permet l’intervention de conseillers spécialisés dans les entreprises et un accompagnement correspondant aux enjeux identifiés. "
+				queryable="true"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/aide_breizh_fab_epci.mst"></template>
+			</layer> 
+			
+			<layer 
+				id="economie_conseil"
+				name="Dispositifs de conseil"
+				type="wms" expanded="true"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				visible="false"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2022-Synthese_Conseil.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte commune&lt;/button&gt;&lt;/a&gt;&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=economie_conseil&amp;outputFormat=excel2007&amp;propertyName=code_insee,breizhfab_nbets,boosteragro_nbets,passconseil_nbets,nb_ets_total&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt; "
+				queryable="true"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/"></template>
+			</layer>
+			
+		</group> 
+		<group id="soutien_export" name="Soutien à l'export"> 
+			<layer 
+				id="aide_pass_export_epci"
+				name="Entreprises soutenues dans le cadre d'un dispositif PASS Export"
+				type="wms" expanded="true"
+		        timefilter="true" timeinterval="year" timecontrol="slider" timemin="2021" timemax="2022" timevalues="2021,2022"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				visible="false"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/pass_export.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=aide_pass_export_epci&amp;outputFormat=excel2007&amp;propertyName=code_siren,nom,pass_salon_montant,pass_salon_nb,pass_export_comm_montant,pass_export_comm_nb,pass_export_vie_montant,pass_export_vie_nb,pass_export_rh_montant,pass_export_rh_nb,total_export_montant,total_export_nb,millesime	&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt;Afin de soutenir les TPE et PME bretonnes dans leur processus d’internationalisation, la Région a mis en place 4 dispositifs principaux : &lt;b&gt;le Pass Salon, le Pass Export VIE, le Pass Export RH et le Pass Export Com’. &lt;/b&gt;"
+				queryable="true"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/aide_pass_export_epci.mst"></template>
+			</layer> 
+		</group> 
+		<group id="soutien_inno" name="Soutien à l'innovation"> 
+			<layer 
+				id="aide_entreprises_innovation_epci_cumule"
+				name="Aide aux programme d'innovation des entreprises depuis 2015"
+				type="wms" expanded="true"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				visible="false"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/aide_entreprise_innovante_2015_2022_epci.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=aide_entreprises_innovation_epci_cumule&amp;outputFormat=excel2007&amp;propertyName=code_siren,nom,mt_total,nb_total,millesime&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt;Les aides à l’innovation ont pour objectif, d’une part, de développer l’innovation en Bretagne pour tous types d’innovations (technologique, frugale/low-tech, sociale…), pour tout type d’entreprises, et sur tous les territoires, et d’autre part d’accompagner la structuration des filières régionales clés ou en émergence par l’innovation. &lt;br&gt;Les dispositifs cartographiés concernent les aides aux entreprises, et intègrent les aides à l’incubation de startups (Emergys Bretagne, Inno Market’Up), à la faisabilité de projets des PME innovantes (avec Bpifrance), la Gamme de dispositifs INNO (INNO Conseil, INNO R et D) ainsi que les projets collaboratifs de R et D  en particulier des Pôles de Compétitivité (dont appels à projets)."
+				queryable="true"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/aide_innovation_epci_cumule.mst"></template>
+			</layer> 
+			<layer 
+				id="aide_entreprises_innovation_epci_millesime"
+				name="Aide aux programme d'innovation des entreprises"
+		        timefilter="true" timeinterval="year" timecontrol="slider" timemin="2021" timemax="2022" timevalues="2021,2022"
+				type="wms" expanded="true"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				visible="false"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/aide_entreprise_innovante_2022_epci.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=aide_entreprises_innovation_epci_cumule&amp;outputFormat=excel2007&amp;propertyName=code_siren,nom,mt_total,nb_total,millesime&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt;Les aides à l’innovation ont pour objectif, d’une part, de développer l’innovation en Bretagne pour tous types d’innovations (technologique, frugale/low-tech, sociale…), pour tout type d’entreprises, et sur tous les territoires, et d’autre part d’accompagner la structuration des filières régionales clés ou en émergence par l’innovation. &lt;br&gt;Les dispositifs cartographiés concernent les aides aux entreprises, et intègrent les aides à l’incubation de startups (Emergys Bretagne, Inno Market’Up), à la faisabilité de projets des PME innovantes (avec Bpifrance), la Gamme de dispositifs INNO (INNO Conseil, INNO R et D) ainsi que les projets collaboratifs de R et D  en particulier des Pôles de Compétitivité (dont appels à projets)."
+				queryable="true"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/aide_innovation_epci_millesime.mst"></template>
+			</layer> 
+		</group> 
+		<group id="soutien_agri" name="Soutien à l'agriculture"> 
+			<layer 
+				id="cuma_eta"
+				name="Aide à l'investissement de matériels agro-environnementaux "
+		        timefilter="true" timeinterval="year" timecontrol="slider" timemin="2022" timemax="2022" timevalues="2022"
+				type="wms" expanded="true"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				visible="false"
+				style="cuma_eta_epci"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/cuma.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;
+				&lt;a href=&quot;https://www.bretagne.bzh/aides/fiches/investissements-materiels-agro-environnementaux-eta/&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Information&lt;/button&gt;&lt;/a&gt;
+				&lt;/br&gt;&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=cuma_eta&amp;outputFormat=excel2007&amp;propertyName=code_siren,nom,montant,nb,millesime&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt;L'aide aux investissements agri-envrionnementaux vise à soutenir les Entreprises de Travaux Agricoles (ETA) et des Coopératives d'Utilisation de Matériels Agricoles (CUMA) dans la modernisation de leurs  matériels agro-environnementaux."
+				queryable="true"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/aide_cuma_epci.mst"></template>
+			</layer> 
+			<layer 
+				id="dja"
+				name="Dotation jeune agriculteur moyenne par EPCI"
+		        type="wms" expanded="true"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				visible="false"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/dja_2022.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;
+				&lt;a href=&quot;https://www.bretagne.bzh/aides/fiches/soutien-a-linstallation-des-jeunes-agriculteurs/&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Information&lt;/button&gt;&lt;/a&gt;
+				&lt;/br&gt;&lt;a 
+				
+				&lt;/br&gt;&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=dja&amp;outputFormat=excel2007&amp;propertyName=code_siren,nom,moyenne_dja,nombre,millesime&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt;La Dotation Jeune Agricuteur est une aide de soutien à l'installation des jeunes agriculteurs dans la phase de démarrage de leur activité."
+				queryable="true"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/aide_dja_epci.mst"></template>
+			</layer> 			
+			<layer 
+				id="brit_agri"
+				name="Prêt d'honneur agricole "
+		        timefilter="true" timeinterval="year" timecontrol="slider" timemin="2022" timemax="2022" timevalues="2022"
+				type="wms" expanded="true"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				visible="false"
+				style="brit_agri_epci"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/prets_honneur_2022.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;
+				&lt;/br&gt;&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=brit_agri&amp;outputFormat=excel2007&amp;propertyName=code_siren,nom,montant,nb,millesime&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt;Le prêt d'honneur agricole propose un prêt à taux zéro, sans intérêt, sans garantie avec la possibilité d'un différé jusqu'à 36 mois pour les nouveaux installés (DJA ou SIA 40-50 ans) en production viande bovine (dont veaux de boucherie), production porcine, production avicole et production sous serres verre."
+				queryable="true"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/aide_brit_agricole_epci.mst"></template>
+			</layer> 
+			<layer 
+				id="sia"
+				name="Aide à l'installation - SIA "
+				type="wms" expanded="true"
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				visible="false"
+				exclusive="true"
+				infoformat="application/vnd.ogc.gml"
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/sia.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;
+				&lt;a href=&quot;https://www.bretagne.bzh/aides/fiches/installation-agriculture-sia-40-50-ans/&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Information&lt;/button&gt;&lt;/a&gt;
+				&lt;/br&gt;&lt;a 
+				&lt;/br&gt;&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=sia&amp;outputFormat=excel2007&amp;propertyName=nom,montant,nb&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt;L'aide à l'installation en agriculture pour les 40-50 ans vise à soutenir les porteurs de projet désireux de s'installer en agriculture et candidats à l'installation."
+				queryable="true"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/"></template>
+			</layer> 
+			
+			
+			
+		</group> 
+		<group id="soutien_ess" name="Soutien à l'économie sociale et solidaire"> 
+			<layer 
+				id="ess_cae"
+				name="Coopérative d’Activités et d’Emploi"
+				type="wms"
+		        
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				visible="true"
+				exclusive="true" expanded="true"
+				infoformat="application/vnd.ogc.gml"
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/CAE_2022_communes.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte commune&lt;/button&gt;&lt;/a&gt;
+				
+				&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/CAE_2022_EPCI.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI&lt;/button&gt;&lt;/a&gt;
+				&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=ess_cae&amp;outputFormat=excel2007&amp;propertyName=millesime,datation,nom_epci,nb_porteur_projet&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;
+				&lt;/br&gt;&lt;/br&gt;
+				
+				La CAE (Coopérative d’Activités et d’Emploi) est un des outils d’accompagnement et de sécurisation à la création d’entreprises qui permet au créateur d’avoir un statut d’entrepreneur salarié, un hébergement juridique, comptable et fiscal, un accompagnement personnalisé, une démarche d’apprentissage par l’action, un environnement mutualiste et coopératif.La Région a signé avec elles des conventions de SIEG (Service d’Intérêt Economique Général) qui apportent une reconnaissance supplémentaire de l’intérêt de leur action.
+				
+				&lt;/br&gt;&lt;/br&gt;
+				
+				&lt;a href=&quot;https://www.bretagne.bzh/aides/fiches/ess-economie-sociale-et-solidaire-structuration-reseau/&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Plus d'informations&lt;/button&gt;&lt;/a&gt;"
+				queryable="true"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/ess_cae_epci.mst"></template>
+			</layer> 
+			<layer 
+				id="ess_dla"
+				name="Dispositif local d'accompagnement"
+				type="wms"
+		        
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				visible="true"
+				exclusive="true" expanded="true"
+				infoformat="application/vnd.ogc.gml"
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/DLA_Secteur_2022.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI par secteur&lt;/button&gt;&lt;/a&gt;
+				
+				&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/DLA_Theme_2022.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI par thème&lt;/button&gt;&lt;/a&gt;
+				
+				&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=ess_dla&amp;outputFormat=excel2007&amp;propertyName=millesime,datation,nom,nb&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;
+				&lt;/br&gt;&lt;/br&gt;
+				
+				Le Dispositif Local d’Accompagnement (DLA) breton  accompagne les associations, les structures d'insertion par l'activité économique et autres entreprises de l'ESS au renforcement et au développement de leurs activités.
+				
+				&lt;/br&gt;&lt;/br&gt;
+				
+				&lt;a href=&quot;https://www.bretagne.bzh/aides/fiches/ess-economie-sociale-solidaire-dla-dispositif-local-accompagnement/&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Plus d'informations&lt;/button&gt;&lt;/a&gt;"
+				queryable="true"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/ess_dla_epci.mst"></template>
+			</layer> 		
+			<layer 
+				id="ess_fdva"
+				name="Formation des bénévoles associatifs"
+				type="wms"
+		        
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				visible="true"
+				exclusive="true" expanded="true"
+				infoformat="application/vnd.ogc.gml"
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/FDVA_2022.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;
+				
+				&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=ess_fdva&amp;outputFormat=excel2007&amp;propertyName=millesime,datation,nb_jours_formation,nb_benevoles_formes,nom,id&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;
+				&lt;/br&gt;&lt;/br&gt;
+				
+				Le Fonds de Développement pour la Vie Associative (FDVA) a pour objet de contribuer au développement des associations,via le financement de leurs actions de formation à destination des bénévoles élus ou responsables d'activités. Dispositif d'Etat à l'origine, il est intégralement géré par la Région Bretagne depuis 2021, suite à une délégation de compétences de l’Etat.
+				
+				&lt;/br&gt;&lt;/br&gt;
+				
+				&lt;a href=&quot;https://www.bretagne.bzh/aides/fiches/ess-economie-sociale-et-solidaire-formation-benevoles-associatifs/&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Plus d'informations&lt;/button&gt;&lt;/a&gt;"
+				queryable="true"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/ess_fdva_epci.mst"></template>
+			</layer> 			
+			<layer 
+				id="ess_inno_soc_epci"
+				name="Innovation sociale"
+				type="wms"
+		        
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				visible="true"
+				exclusive="true" expanded="true"
+				infoformat="application/vnd.ogc.gml"
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/Bilan_is_2022.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;
+				
+				&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=ess_inno_soc_epci&amp;outputFormat=excel2007&amp;propertyName=code_siren,millesime,datation,nb_projets,nom,id&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;
+				&lt;/br&gt;&lt;/br&gt;
+				
+				Afin d'accompagner l'émergence d'innovations sociales dans les territoires, la Région Bretagne a mis en place différentes modalités de soutien.En complément des aides opérées par France Active, les porteurs de projets pourront bénéficier de dispositifs spécifiques ou être accompagnés via le réseau des Tag Bzh.
+				
+				&lt;/br&gt;&lt;/br&gt;
+				
+				&lt;a href=&quot;https://www.bretagne.bzh/aides/fiches/ess-economie-sociale-et-solidaire-formation-benevoles-associatifs/&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Plus d'informations&lt;/button&gt;&lt;/a&gt;"
+				queryable="true"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/ess_inno_soc_epci.mst"></template>
+			</layer>
+			<layer 
+				id="ess_fab_epci"
+				name="France active Bretagne"
+				type="wms"
+		        
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+				visible="true"
+				exclusive="true" expanded="true"
+				infoformat="application/vnd.ogc.gml"
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/FAB2022.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;
+				
+				&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=ess_fab_epci&amp;outputFormat=excel2007&amp;propertyName=code_siren,millesime,datation,total_etp_apres,nb_projets,total_garantie,montant_pret,montant_pret00,montant_pret01,dasess_ingenierie,fond_de_confiance___emergence,montant_pret_total,montant_subvention_total,nom,id&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;
+				&lt;/br&gt;&lt;/br&gt;
+				
+				La Région  finance France Active Bretagne, association membre du réseau France Active, pour favoriser la création d'emplois en Bretagne grâce à des actions d' d'accompagnement de de financement de l'entrepreneuriat. Plusieurs dispositifs intervenant aux différents stades de la vie des structures sont déployés sur le territoire (Fonds de confiance et d'émergence, FINES, DASESS, Cap'CAE et garanties de prêt)
+				
+				&lt;/br&gt;&lt;/br&gt;
+				
+				&lt;a href=&quot;https://franceactive-bretagne.bzh/&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Plus d'informations&lt;/button&gt;&lt;/a&gt;"
+				queryable="true"
+				infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/ess_fab_epci.mst"></template>
+			</layer>
+			
+		
+			<layer id="bretagne_5" name="Bretagne à 5" visible="false" tiled="false" namespace="rb"
+				queryable="false" 
+				showintoc="false"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attribution="OSM" 
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72" >  
+			</layer>
+		</group> 
+	
+	</theme>
+    <theme id="perimetre" name="Découpages territoriaux" collapsed="true" icon="fas fa-globe"> 
+		<layer id="commune" name="Commune" visible="false" queryable="false" 
+			fields="nom_geo" aliases="Nom" 
+			type="customlayer" style="" opacity="1" legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/img/commune.png" 
+			url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/customlayers/commune.js" 
+			tooltip="true" tooltipenabled="true"
+			attribution="Source: GéoBretagne" 
+			metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/b08e6cb1-236c-49b7-88f9-42b500d274d5" 
+			metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b08e6cb1-236c-49b7-88f9-42b500d274d5"/>	    
+		<layer id="epci" name="Intercommunalité" visible="false" queryable="false" 
+			fields="nom_geo" aliases="Nom" toplayer="true" exclusive="true"
+			type="customlayer" style="" opacity="1" legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/img/epci.png" 
+			url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/customlayers/epci.js" 
+			tooltip="true" tooltipenabled="true"
+			attribution="Source: GéoBretagne" 
+			metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/2298d744-49cb-4fcb-9487-26f916fecdff" 
+			metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=2298d744-49cb-4fcb-9487-26f916fecdff"/>           
+        <layer 
+            id="technopole"
+            name="Périmètre des technopôles"
+            type="customlayer" toplayer="true" vectorlegend="true"
+            url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/customlayers/technopole.js"
+            visible="false"
+			tooltip="true" tooltipenabled="true" fields="technopole" aliases="Nom"
+            infoformat="application/vnd.ogc.gml"
+            attribution="Région Bretagne"
+            queryable="false"
+            infopanel="bottom-panel">
+		    <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/technopole.mst"></template>
+        </layer> 
+		<layer id="bretagne_5" name="Bretagne à 5" visible="true" tiled="false" namespace="rb"
+			queryable="false" 
+			showintoc="false"
+			url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+			attribution="OSM" 
+			metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72"
+			metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72" >  
+		</layer>
+		<layer id="departement_metro" name="Département" visible="true" tiled="false" namespace="rb"
+			queryable="false"
+			showintoc="false"
+			url="https://geobretagne.fr/geoserver/ign/wms" 
+			style="bretagne_5_style" 
+			attribution="IGN - Admin Express" 
+			metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/c8884cac-bc25-41a0-92d1-b6566c86066e"
+			metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c8884cac-bc25-41a0-92d1-b6566c86066e" >
+		</layer>
+    </theme> 
+</themes>
+</config>

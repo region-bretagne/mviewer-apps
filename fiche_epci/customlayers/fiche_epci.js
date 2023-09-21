@@ -98,5 +98,6 @@ mviewer.customLayers.fiche_epci.layer = new ol.layer.Vector({
             return stl;
         }
 });
+//false pour activation interrogation
 mviewer.customLayers.fiche_epci.handle = false;
 }

@@ -17,6 +17,7 @@
 			{{/lien_dossier}}
 
         </p>
+        <p class="rb-description-feature" ><i>Contact: <strong><a href="mailto:inventaire.patrimoine@bretagne.bzh">inventaire.patrimoine@bretagne.bzh</a></strong></i></p>
 
 	</li>
 {{/features}}

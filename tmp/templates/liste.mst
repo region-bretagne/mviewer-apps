@@ -1,0 +1,34 @@
+<hash style="display:none;">-267112613</hash>{{#features}}
+<li class="item mstudio_template" style="width:100%;">
+        
+    <div class="textH1Component template-component mb-2" id="bf142a91-4c50-4a1d-8c5b-4906e094cb9d"
+      data-type-selector="field"
+      data-color="#000000"
+      data-value="nom"
+      data-component="textH1Component"
+    >
+        <!--
+        Variable : nom
+        Prop : color
+        -->
+        <h3 style="font-weight:bold; color:#000000;">{{#nom}}{{nom}}{{/nom}}</h3>
+    </div>
+    {{#communes}}
+    <div class="listComponent template-component mb-2"
+      data-type-selector="liField"
+      data-value="communes"
+      data-sub-value="nom_commune"
+      data-component="listComponent"
+    >
+      <ul style="list-style-type: disc;margin-bottom:10px;">
+          
+            {{#nom_commune}}
+            <li>{{nom_commune}}</li>
+            {{/nom_commune}}
+        
+      </ul>
+    </div>
+    {{/communes}}
+    
+      </li>
+{{/features}}

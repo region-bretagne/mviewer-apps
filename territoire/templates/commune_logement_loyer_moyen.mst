@@ -1,0 +1,26 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h3 class="rb-title-feature">{{nom_commune}}</h3>
+		
+		<div class="row">
+			<div class="col-md-3" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartennterritoireloyerscommunes/{{code_insee}}/com_log_loy_maison_moy"></iframe>
+			</div>
+			<div class="col-md-3" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartennterritoireloyerscommunes/{{code_insee}}/com_log_loy_app_moy"></iframe>
+			</div>
+			<div class="col-md-3" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartennterritoireloyerscommunes/{{code_insee}}/com_log_loy_app12p_moy"></iframe>
+			</div>
+			<div class="col-md-3" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartennterritoireloyerscommunes/{{code_insee}}/com_log_loy_app3p_moy"></iframe>
+			</div>
+		</div>
+
+		
+	</li>
+{{/features}}
+
+<style>
+@import url("https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/css/kartenn_territoire.css");
+</style>

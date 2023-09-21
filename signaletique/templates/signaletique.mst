@@ -1,0 +1,84 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h3 class="rb-title-feature">{{nom}}</h3>  
+        
+        <p class="rb-text-feature">
+			<span style="font-weight:bold"> Equipement :</span> {{code_equipement}}<br/>
+			<span style="font-weight:bold"> Niveau :</span> {{niveau}}<br/>
+			<span style="font-weight:bold"> Type équipement :</span> {{type_equipement}}<br/>
+			<span style="font-weight:bold"> Date mise en service :</span> {{date_service}}<br/>
+			<span style="font-weight:bold"> Etat équipement :</span> {{etat_equipement}}<br/>
+			<span style="font-weight:bold"> Equipement :</span> {{code_equipement}}<br/>
+
+            {{#langues}}                
+                <span style="font-weight:bold"> Langues :</span> {{langues}}<br/>
+            {{/langues}}
+            {{#commentaire}}                
+                <span style="font-weight:bold"> Commentaire :</span> {{commentaire}}<br/>
+            {{/commentaire}}
+
+        </p>
+      
+        {{#url_photo}}
+            <img src="{{url_photo}}" class="img-responsive" data-title="{{nom}}" />
+        {{/url_photo}}       
+
+    
+		
+		
+	    
+       
+	</li>
+{{/features}}
+
+<style>
+.pictos {
+    padding-left: 50px;
+}
+.floating-box {
+    float: left;
+	left: 50px;    
+    margin: 5px; 
+	width: 30px;
+    height: 30px;       
+}
+.pdf {
+	background: url(https://kartenn.region-bretagne.fr/img/picto/pdf.png) left top no-repeat;
+	background-size: 28px;
+}
+.concession.PECHE {
+    background: url(https://kartenn.region-bretagne.fr/img/picto/port/PEC.png) left top no-repeat;    
+    background-size: 30px;
+}
+.concession.AEROPORT {
+    background: url(https://kartenn.region-bretagne.fr/img/picto/port/AER.png) left top no-repeat;    
+    background-size: 30px;
+}
+.concession.COMMERCE {
+    background: url(https://kartenn.region-bretagne.fr/img/picto/port/COM.png) left top no-repeat;    
+    background-size: 30px;
+}
+.concession.HORS.CONCESSION {
+    background: url(https://kartenn.region-bretagne.fr/img/picto/port/HCO.png) left top no-repeat;    
+    background-size: 30px;
+}
+.concession.HORS.PORT {
+    background: url(https://kartenn.region-bretagne.fr/img/picto/port/HPO.png) left top no-repeat;    
+    background-size: 30px;
+}
+.concession.PARTICULIERE {
+    background: url(https://kartenn.region-bretagne.fr/img/picto/port/PAR.png) left top no-repeat;    
+    background-size: 30px;
+}
+.concession.REPARATION.NAVALE {
+    background: url(https://kartenn.region-bretagne.fr/img/picto/port/REP.png) left top no-repeat;    
+    background-size: 30px;
+}
+.concession.PLAISANCE {
+    background: url(https://kartenn.region-bretagne.fr/img/picto/port/PLA.png) left top no-repeat;    
+    background-size: 30px;
+}
+#slide-right-panel-1{
+	padding-bottom: 30%;
+}
+</style>

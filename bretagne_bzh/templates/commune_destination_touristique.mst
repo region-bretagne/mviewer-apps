@@ -1,0 +1,13 @@
+{{#features}}
+	<li class="item" >
+		<h3 class="rb-title-feature">{{nom_commune}}-{{nom_dest}}</h3>
+		{{#photo}}
+			<img src="{{photo}}" class="img-responsive" style="margin-top:5%;" />
+		{{/photo}}
+			{{#url}}
+			<div class="rb-but-list">
+				<a href="{{url}}" target="_blank" title="Site Web" class="rb-but-link"><span class="fa fa-globe" aria-hidden="true"></span> Site Web</a>    
+			</div>			
+			{{/url}}                
+	</li>
+{{/features}}

@@ -1,0 +1,18 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{eple}}</h2>
+		<p class="rb-text-feature" style="text-align:center">		
+            {{ville}}<br/>
+		</p>
+		<br><br>
+		<h3 class="rb-subtitle-feature"><img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/lingerie.svg" width=20 height=25>  Lingerie support :</h3>
+
+		<p class="rb-text-feature">
+		
+			<b>{{nom_support}}</b><br/>
+			{{adresse_support}}<br/>
+			{{cp_support	}} {{ville_support	}}<br/>
+		</p>
+		
+	</li>
+{{/features}}

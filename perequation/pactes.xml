@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config mviewerstudioversion="3.1-snapshot">
+<metadata>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description rdf:about="http://www.ilrt.bristol.ac.uk/people/cmdjb/">
+<dc:title>Pactes</dc:title>
+<dc:creator>anonymous</dc:creator>
+<dc:publisher>anonymous</dc:publisher>
+<dc:subject>Pactes</dc:subject>
+<dc:date>2022-12-14T13:36:28.451Z</dc:date>
+</rdf:Description>
+</rdf:RDF>
+</metadata>
+<application
+    title="Pactes"
+    logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/img/rb_blanc.svg" 
+    help=""
+    style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/css/kartenn.css"
+    exportpng="false"
+    showhelp="false"
+    coordinates="false"
+    measuretools="false"
+    togglealllayersfromtheme="false">
+</application>
+<mapoptions maxzoom="20" projection="EPSG:3857" center="-307903.74898791354,6141345.088741366" zoom="7" />
+<proxy url='../proxy/?url='/>
+<searchparameters bbox="false" localities="false" features="false" static="false"/>
+<baselayers style="default"> 
+    <baselayer visible="true" id="positron" thumbgallery="img/basemap/positron.png" title="CartoDb" label="Positron" type="OSM" url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" attribution="Map tiles by  &lt;a href=&quot;https://cartodb.com/attributions&quot;&gt;CartoDb&lt;/a&gt;, under  &lt;a href=&quot;https://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY 3.0 &lt;/a&gt;"  ></baselayer> 
+    <baselayer visible="false" id="esriworldimagery" thumbgallery="img/basemap/esriworldwide.jpg" title="Esri" label="Esri world imagery" type="OSM" url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}" attribution="&lt;a href=&quot;https://www.arcgis.com/home/item.html?id=10df2279f9684e4a9f6a7f08febac2a9&quot; target=&quot;_blank&quot; &gt;Esri world imagery&lt;/a&gt;"  ></baselayer> 
+</baselayers>
+<themes mini="true"> 
+    <theme id="theme-20221214143345" name="Pactes" collapsed="true" icon="fas fa-caret-right"> 
+	
+	<layer id="pactes"
+	   name="Pactes"
+	   visible="true"
+	   tiled="false"
+	   namespace="interne"
+	   queryable="false"
+	   showintoc="true"
+	   url="https://ows.region-bretagne.fr/geoserver/interne/wms"
+	   attribution="Région Bretagne"
+	   metadata-csw=""
+	   metadata=""/>
+				   
+	<layer id="commune" name="Commune" visible="true" queryable="false" 
+		scalemin="0"
+		scalemax="200000"
+		showintoc="false"
+		fields="nom_geo" aliases="Nom" 
+		type="customlayer" style="" opacity="1" legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/img/commune.png" 
+		url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/perequation/customlayers/commune.js" 
+		tooltip="true" tooltipenabled="true"
+		attribution="Source: GéoBretagne" 
+		metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/b08e6cb1-236c-49b7-88f9-42b500d274d5" 
+		metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b08e6cb1-236c-49b7-88f9-42b500d274d5"/>
+				
+	<layer id="epci"
+		scalemin="0"
+		scalemax="1000000"
+		name="EPCI"
+		visible="true"
+		tiled="false"
+		queryable="false"
+		showintoc="true"
+		url="https://geobretagne.fr/geoserver/ign/wms" 
+		attribution="IGN - ADMIN EXPRESS" 
+		metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/2298d744-49cb-4fcb-9487-26f916fecdff" 
+		metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=2298d744-49cb-4fcb-9487-26f916fecdff" />	
+	<layer id="commune_metro"
+		scalemin="0"
+		scalemax="300000"
+		name="Communes"
+		visible="true"
+		tiled="false"
+		queryable="false"
+		showintoc="true"
+		filter="insee_reg=53"
+		url="https://geobretagne.fr/geoserver/ign/wms" 
+		attribution="IGN - ADMIN EXPRESS"
+		metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/b08e6cb1-236c-49b7-88f9-42b500d274d5"
+		metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b08e6cb1-236c-49b7-88f9-42b500d274d5" />	
+	
+	<layer id="bretagne_5"
+	   name="Bretagne à 5"
+	   visible="true"
+	   tiled="false"
+	   namespace="rb"
+	   queryable="false"
+	   showintoc="true"
+	   url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+	   attribution="OSM"
+	   metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72"
+	   metadata=""/>		
+	
+    </theme> 
+</themes>
+</config>
+
+

@@ -1,0 +1,12 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{objet}}</h2>
+		<p class="rb-text-feature">		
+			<b>Lieu </b> {{lieu}}<br>
+			<b>Thématique : </b>  {{thematique}}<br>
+			{{#commentaire}}
+			<b>Commentaire :  </b> {{commentaire}}<br>
+			{{/commentaire}}
+		</p>
+	</li>
+{{/features}}

@@ -1,0 +1,35 @@
+
+{{#features}}
+	<h2> {{nom}}</h2>
+En Bretagne, trois îles ne sont pas rattachées à une intercommunalité (îles de Bréhat, Sein et Ouessant). Le montant du soutien régional n’étant pas restitué à un niveau communal, le niveau de soutien régional n’est pas représenté ici.
+<br><br>
+Des mesures de soutien spécifiques aux îles sont néanmoins mises en œuvre par le Conseil Régional de Bretagne, qui sont consultables en ligne.	<br><br>
+	<a href="https://www.bretagne.bzh/aides/fiches/engager-les-iles-dans-les-transitions-cohesion-des-territoires/" target="_blank"><button class="rb-but-link" >Accéder aux dispositifs dédiés</button></a>
+
+
+{{/features}}
+
+<style>
+#over { 
+	color:#2F476C;
+	font-size:1em; 
+	font-weight:600;
+	position:absolute; 
+	z-index:2;
+	width:100%
+}
+
+.rb-title {
+    color: #2d4059;
+    font-family: "region_bold";
+    font-size: 18px;
+    margin-bottom: 3%;
+    line-height: 1;
+}
+.resp-container { 
+  position: relative; 
+  overflow: hidden; 
+  padding-bottom: 56.25%; 
+}
+</style>
+

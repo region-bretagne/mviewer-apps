@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config mviewerversion="3.9" mviewerstudioversion="3.2">
+<metadata>
+
+                <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+                    <rdf:Description rdf:about="http://www.ilrt.bristol.ac.uk/people/cmdjb/">
+                        <dc:title>VN</dc:title>
+                        <dc:creator>anonymous</dc:creator>
+                        <dc:identifier>411414df4e18</dc:identifier>
+                        <dc:keywords>undefined</dc:keywords>
+                        <dc:publisher>Geob</dc:publisher>
+                        <dc:description>17-05-2023-14-16-21</dc:description>
+                        <dc:date>2023-05-17T12:16:21.298Z</dc:date>
+                        <dc:relation></dc:relation>
+                        <dc:subject>VN</dc:subject>
+                    </rdf:Description>
+                </rdf:RDF>
+</metadata>
+<application
+    title="Test liste"
+    logo="https://geobretagne.fr/pub/logo/region-bretagne.jpg"
+    favicon=""
+    help=""
+    titlehelp=""
+    iconhelp="fas fa-home"
+    home=""
+    style="css/themes/default.css"
+    zoomtools="true"
+    initialextenttool="true"
+    exportpng="false"
+    showhelp="false"
+    coordinates="false"
+    measuretools="true"
+    mouseposition="false"
+    geoloc="false"
+    studio=""
+    togglealllayersfromtheme="false">
+</application>
+<mapoptions maxzoom="20" projection="EPSG:3857" center="-307903.74898791354,6141345.088741366" zoom="7" />
+<proxy url="/proxy/?url="/>
+<olscompletion type="ban" url="https://api-adresse.data.gouv.fr/search/" attribution="Base adresse nationale (BAN)" />
+<searchparameters bbox="false" localities="true" features="true" static="false"/>
+<baselayers style="default"> 
+    <baselayer visible="true" id="positron" thumbgallery="img/basemap/positron.png" title="CartoDb" label="Positron" type="OSM" url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" attribution="Map tiles by  &lt;a href=&quot;https://cartodb.com/attributions&quot;&gt;CartoDb&lt;/a&gt;, under  &lt;a href=&quot;https://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY 3.0 &lt;/a&gt;"  ></baselayer> 
+    <baselayer visible="false" id="ortho_ign" thumbgallery="img/basemap/ortho.jpg" title="IGN" label="Photographies aériennes IGN" type="WMTS" url="https://wxs.ign.fr/choisirgeoportail/geoportail/wmts?" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" fromcapacity="false" attribution="&lt;a href='https://geoservices.ign.fr' target='_blank'&gt;&lt;img src='https://geoservices.ign.fr/images/logoIGN.png'&gt;&lt;/a&gt;" style="normal" matrixset="PM" maxzoom="22"  ></baselayer> 
+</baselayers>
+<themes mini="false"> 
+    <theme id="theme-20230517141631" name="VN" collapsed="true" icon="fas fa-caret-right"> 
+        <layer 
+            id="epci_liste_communes"
+            name="Liste des communes par EPCI"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+            tiled="true"
+            visible="true"
+            infoformat="application/vnd.ogc.gml"
+            fields=""
+            aliases=""
+            style=""
+            stylesalias=""
+            metadata=""
+            metadata-csw=""
+            attribution=""
+            queryable="true"
+            searchable="false"
+            fusesearchkeys=""
+            fusesearchresult=""
+            useproxy="false"
+            filter=""
+            featurecount=""
+            infopanel="right-panel"
+            opacity="1"
+            index=""
+            styletitle=""
+            dynamiclegend="false"
+            toplayer="false"
+            exclusive="false"
+            showintoc="true"
+            jsonfields="communes"><template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/tmp/templates/liste.mst" ></template>
+        </layer> 
+    </theme> 
+</themes>
+</config>

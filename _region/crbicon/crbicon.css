@@ -1,0 +1,660 @@
+@font-face {
+  font-family: 'crbicon';
+  src:  url('fonts/2018/crbicon.eot?random1');
+  src:  url('fonts/2018/crbicon.eot?random1#iefix') format('embedded-opentype'),
+    url('fonts/2018/crbicon.woff2?random1') format('woff2'),
+    url('fonts/2018/crbicon.ttf?random1') format('truetype'),
+    url('fonts/2018/crbicon.woff?random1') format('woff'),
+    url('fonts/2018/crbicon.svg?random1#crbicon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'crbicon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-RB:before {
+  content: "\e900";
+}
+.icon-RB_bzh:before {
+  content: "\e901";
+}
+.icon-RB_gallo:before {
+  content: "\e902";
+}
+.icon-gallo:before {
+  content: "\e903";
+}
+.icon-breton:before {
+  content: "\e904";
+}
+.icon-formation_01:before {
+  content: "\e905";
+}
+.icon-formation_02:before {
+  content: "\e906";
+}
+.icon-formation_sanitaire:before {
+  content: "\e907";
+}
+.icon-sante:before {
+  content: "\e908";
+}
+.icon-recherche:before {
+  content: "\e909";
+}
+.icon-education:before {
+  content: "\e90a";
+}
+.icon-juridique:before {
+  content: "\e90b";
+}
+.icon-euro:before {
+  content: "\e90c";
+}
+.icon-economie:before {
+  content: "\e90d";
+}
+.icon-numerique:before {
+  content: "\e90e";
+}
+.icon-industrie:before {
+  content: "\e90f";
+}
+.icon-energie_01:before {
+  content: "\e910";
+}
+.icon-energie_02:before {
+  content: "\e911";
+}
+.icon-eau:before {
+  content: "\e912";
+}
+.icon-feuille:before {
+  content: "\e913";
+}
+.icon-international:before {
+  content: "\e914";
+}
+.icon-europe:before {
+  content: "\e915";
+}
+.icon-sport:before {
+  content: "\e916";
+}
+.icon-musique:before {
+  content: "\e917";
+}
+.icon-culture:before {
+  content: "\e918";
+}
+.icon-identite:before {
+  content: "\e919";
+}
+.icon-jeu:before {
+  content: "\e91a";
+}
+.icon-ordinateur_bureau:before {
+  content: "\e91b";
+}
+.icon-ordinateur_portable:before {
+  content: "\e91c";
+}
+.icon-tablette:before {
+  content: "\e91d";
+}
+.icon-mobile:before {
+  content: "\e91e";
+}
+.icon-photo:before {
+  content: "\e91f";
+}
+.icon-calculatrice:before {
+  content: "\e920";
+}
+.icon-imprimante:before {
+  content: "\e921";
+}
+.icon-scanner:before {
+  content: "\e922";
+}
+.icon-horloge:before {
+  content: "\e923";
+}
+.icon-crayon:before {
+  content: "\e924";
+}
+.icon-telephone_01:before {
+  content: "\e925";
+}
+.icon-telephone_02:before {
+  content: "\e926";
+}
+.icon-enveloppe:before {
+  content: "\e927";
+}
+.icon-cadenas:before {
+  content: "\e928";
+}
+.icon-maison:before {
+  content: "\e929";
+}
+.icon-securite:before {
+  content: "\e9bb";
+}
+.icon-justice:before {
+  content: "\e9bc";
+}
+.icon-groupe:before {
+  content: "\e92a";
+}
+.icon-elu:before {
+  content: "\e92b";
+}
+.icon-manager:before {
+  content: "\e9a9";
+}
+.icon-citoyen:before {
+  content: "\e92c";
+}
+.icon-famille:before {
+  content: "\e92d";
+}
+.icon-femme_homme:before {
+  content: "\e92e";
+}
+.icon-pieton:before {
+  content: "\e92f";
+}
+.icon-malvoyant:before {
+  content: "\e930";
+}
+.icon-mobilite_reduite:before {
+  content: "\e931";
+}
+.icon-cycliste:before {
+  content: "\e932";
+}
+.icon-pecheur:before {
+  content: "\e933";
+}
+.icon-cavalier:before {
+  content: "\e980";
+}
+.icon-randonneur:before {
+  content: "\e9aa";
+}
+.icon-accueil:before {
+  content: "\e9ab";
+}
+.icon-train_TGV:before {
+  content: "\e934";
+}
+.icon-nageur:before {
+  content: "\e9bd";
+}
+.icon-attente:before {
+  content: "\e9be";
+}
+.icon-train_TER:before {
+  content: "\e935";
+}
+.icon-metro:before {
+  content: "\e9bf";
+}
+.icon-tramway:before {
+  content: "\e9c0";
+}
+.icon-telepherique:before {
+  content: "\e9c1";
+}
+.icon-bateau:before {
+  content: "\e936";
+}
+.icon-cargo:before {
+  content: "\e9ac";
+}
+.icon-car:before {
+  content: "\e937";
+}
+.icon-bus:before {
+  content: "\e9c2";
+}
+.icon-camion:before {
+  content: "\e938";
+}
+.icon-transport_scolaire:before {
+  content: "\e9c3";
+}
+.icon-voiture:before {
+  content: "\e939";
+}
+.icon-covoiturage:before {
+  content: "\e9c4";
+}
+.icon-auto_electrique:before {
+  content: "\e93a";
+}
+.icon-auto_partage:before {
+  content: "\e9c5";
+}
+.icon-tracteur:before {
+  content: "\e97d";
+}
+.icon-moto:before {
+  content: "\e93b";
+}
+.icon-velo:before {
+  content: "\e93c";
+}
+.icon-canoe:before {
+  content: "\e93d";
+}
+.icon-arret_transport:before {
+  content: "\e9c6";
+}
+.icon-aire_covoiturage:before {
+  content: "\e9c7";
+}
+.icon-station_autopartage:before {
+  content: "\e9c8";
+}
+.icon-parking_velo:before {
+  content: "\e9c9";
+}
+.icon-mer:before {
+  content: "\e93e";
+}
+.icon-rail:before {
+  content: "\e93f";
+}
+.icon-route:before {
+  content: "\e940";
+}
+.icon-port:before {
+  content: "\e941";
+}
+.icon-aeroport:before {
+  content: "\e942";
+}
+.icon-titre_transport:before {
+  content: "\e943";
+}
+.icon-carte:before {
+  content: "\e944";
+}
+.icon-electricite:before {
+  content: "\e945";
+}
+.icon-outil:before {
+  content: "\e946";
+}
+.icon-tournevis:before {
+  content: "\e9ad";
+}
+.icon-perceuse:before {
+  content: "\e9ae";
+}
+.icon-travaux:before {
+  content: "\e9ca";
+}
+.icon-tondeuse:before {
+  content: "\e9af";
+}
+.icon-chariot:before {
+  content: "\e9b0";
+}
+.icon-chariot_entretien:before {
+  content: "\e9b1";
+}
+.icon-vaporisateur:before {
+  content: "\e9b2";
+}
+.icon-conserve:before {
+  content: "\e9b3";
+}
+.icon-toque:before {
+  content: "\e9b4";
+}
+.icon-fouet_cuisine:before {
+  content: "\e9b5";
+}
+.icon-alimentation:before {
+  content: "\e947";
+}
+.icon-cafe:before {
+  content: "\e948";
+}
+.icon-fontaine_eau:before {
+  content: "\e949";
+}
+.icon-douche:before {
+  content: "\e94a";
+}
+.icon-ascenseur:before {
+  content: "\e94b";
+}
+.icon-escalier:before {
+  content: "\e94c";
+}
+.icon-issue_secours:before {
+  content: "\e94d";
+}
+.icon-eaux_usees:before {
+  content: "\e94e";
+}
+.icon-panier:before {
+  content: "\e94f";
+}
+.icon-laverie:before {
+  content: "\e950";
+}
+.icon-frigidaire:before {
+  content: "\e9b6";
+}
+.icon-carburant:before {
+  content: "\e951";
+}
+.icon-pain:before {
+  content: "\e952";
+}
+.icon-vestiaire:before {
+  content: "\e9cb";
+}
+.icon-vestiaire_f:before {
+  content: "\e9cc";
+}
+.icon-vestiaire_h:before {
+  content: "\e9cd";
+}
+.icon-service:before {
+  content: "\e9ce";
+}
+.icon-fleche_bas:before {
+  content: "\e953";
+}
+.icon-fleche_gauche:before {
+  content: "\e954";
+}
+.icon-fleche_haut:before {
+  content: "\e955";
+}
+.icon-fleche_droite:before {
+  content: "\e956";
+}
+.icon-demi_tour:before {
+  content: "\e957";
+}
+.icon-fleche_double:before {
+  content: "\e9b7";
+}
+.icon-deviation:before {
+  content: "\e9cf";
+}
+.icon-telephone_interdit:before {
+  content: "\e958";
+}
+.icon-information:before {
+  content: "\e959";
+}
+.icon-parking:before {
+  content: "\e95a";
+}
+.icon-alerte:before {
+  content: "\e9d0";
+}
+.icon-documentation:before {
+  content: "\e95b";
+}
+.icon-archives:before {
+  content: "\e95c";
+}
+.icon-observatoire:before {
+  content: "\e95d";
+}
+.icon-commerce:before {
+  content: "\e95e";
+}
+.icon-assemblee:before {
+  content: "\e95f";
+}
+.icon-administration:before {
+  content: "\e960";
+}
+.icon-institution:before {
+  content: "\e961";
+}
+.icon-gare:before {
+  content: "\e962";
+}
+.icon-hopital:before {
+  content: "\e963";
+}
+.icon-lycee:before {
+  content: "\e964";
+}
+.icon-epicerie:before {
+  content: "\e965";
+}
+.icon-usine:before {
+  content: "\e966";
+}
+.icon-chantier_naval:before {
+  content: "\e9d1";
+}
+.icon-musee:before {
+  content: "\e967";
+}
+.icon-eglise:before {
+  content: "\e968";
+}
+.icon-village:before {
+  content: "\e969";
+}
+.icon-chateau:before {
+  content: "\e96a";
+}
+.icon-camping:before {
+  content: "\e96b";
+}
+.icon-banc:before {
+  content: "\e96c";
+}
+.icon-table_banc:before {
+  content: "\e96d";
+}
+.icon-hebergement:before {
+  content: "\e96e";
+}
+.icon-site_remarquable:before {
+  content: "\e96f";
+}
+.icon-lieu_culte:before {
+  content: "\e9d2";
+}
+.icon-espace_remarquable:before {
+  content: "\e970";
+}
+.icon-poisson:before {
+  content: "\e971";
+}
+.icon-chauve_souris:before {
+  content: "\e972";
+}
+.icon-poule:before {
+  content: "\e9b8";
+}
+.icon-abeille:before {
+  content: "\e973";
+}
+.icon-flore:before {
+  content: "\e974";
+}
+.icon-algue:before {
+  content: "\e975";
+}
+.icon-calvaire:before {
+  content: "\e976";
+}
+.icon-menhir:before {
+  content: "\e977";
+}
+.icon-dolmen:before {
+  content: "\e978";
+}
+.icon-eolienne:before {
+  content: "\e979";
+}
+.icon-ecluse:before {
+  content: "\e97a";
+}
+.icon-plage:before {
+  content: "\e9b9";
+}
+.icon-borne_kilometrique:before {
+  content: "\e97b";
+}
+.icon-ponton:before {
+  content: "\e97c";
+}
+.icon-cale_eau:before {
+  content: "\e97e";
+}
+.icon-malentendant:before {
+  content: "\e97f";
+}
+.icon-deficience_visuelle:before {
+  content: "\e981";
+}
+.icon-etiquette:before {
+  content: "\e982";
+}
+.icon-etiquettes:before {
+  content: "\e983";
+}
+.icon-commentaire:before {
+  content: "\e984";
+}
+.icon-commentaires:before {
+  content: "\e985";
+}
+.icon-loupe:before {
+  content: "\e986";
+}
+.icon-zoom_moins:before {
+  content: "\e987";
+}
+.icon-zoom_plus:before {
+  content: "\e988";
+}
+.icon-moins:before {
+  content: "\e989";
+}
+.icon-plus:before {
+  content: "\e98a";
+}
+.icon-etoile:before {
+  content: "\e98b";
+}
+.icon-marqueur:before {
+  content: "\e98c";
+}
+.icon-lecture:before {
+  content: "\e98d";
+}
+.icon-son:before {
+  content: "\e98e";
+}
+.icon-plein_ecran:before {
+  content: "\e98f";
+}
+.icon-coche:before {
+  content: "\e990";
+}
+.icon-formulaire:before {
+  content: "\e991";
+}
+.icon-agenda:before {
+  content: "\e992";
+}
+.icon-liste:before {
+  content: "\e993";
+}
+.icon-calendrier:before {
+  content: "\e994";
+}
+.icon-annuaire:before {
+  content: "\e995";
+}
+.icon-journal:before {
+  content: "\e996";
+}
+.icon-corbeille:before {
+  content: "\e997";
+}
+.icon-RSS:before {
+  content: "\e998";
+}
+.icon-organigramme:before {
+  content: "\e999";
+}
+.icon-reseau:before {
+  content: "\e99a";
+}
+.icon-dossier:before {
+  content: "\e99b";
+}
+.icon-fichier:before {
+  content: "\e99c";
+}
+.icon-fichier_texte:before {
+  content: "\e99d";
+}
+.icon-fichier_image:before {
+  content: "\e99e";
+}
+.icon-fichier_pdf:before {
+  content: "\e99f";
+}
+.icon-fichier_doc:before {
+  content: "\e9a0";
+}
+.icon-fichier_xls:before {
+  content: "\e9a1";
+}
+.icon-fichier_ppt:before {
+  content: "\e9a2";
+}
+.icon-facebook:before {
+  content: "\e9a3";
+}
+.icon-twitter:before {
+  content: "\e9a4";
+}
+.icon-vimeo:before {
+  content: "\e9a5";
+}
+.icon-linkedin:before {
+  content: "\e9a6";
+}
+.icon-youtube:before {
+  content: "\e9a7";
+}
+.icon-pinterest:before {
+  content: "\e9a8";
+}
+.icon-google:before {
+  content: "\e9ba";
+}

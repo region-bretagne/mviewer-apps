@@ -1,0 +1,9 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h3 class="rb-title-feature">{{stop_name}}</h3>
+		<p class="rb-text-feature">
+			<span style="font-weight:bold">ID Stop :</span> {{stop_id}}<br/>
+			<span style="font-weight:bold">Accessibilité fauteuil  :</span> {{wheelchair_boarding}}<br/>
+		</p>
+	</li>
+{{/features}}

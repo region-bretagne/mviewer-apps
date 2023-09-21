@@ -1,0 +1,50 @@
+<config xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" mviewerversion="3.9.2" mviewerstudioversion="4">
+<metadata>
+
+                <rdf:RDF>
+                    <rdf:Description rdf:about="http://www.ilrt.bristol.ac.uk/people/cmdjb/">
+                        <dc:title>MOS</dc:title>
+                        <dc:creator>tanguy.jacq</dc:creator>
+                        <dc:identifier>9a62b4259745</dc:identifier>
+                        <dc:keywords />
+                        <dc:publisher>region_bretagne</dc:publisher>
+                        <dc:description>21-07-2023-13-23-20</dc:description>
+                        <dc:date>2023-07-21T11:23:20.714Z</dc:date>
+                        <dc:relation />
+                        <dc:subject>MOS</dc:subject>
+<dc:subject>Decoupages administratifs</dc:subject>
+<dc:subject>Limites cadastrales</dc:subject>
+                    </rdf:Description>
+                </rdf:RDF>
+</metadata>
+<application title="MOS" logo="" favicon="" help="" titlehelp="" iconhelp="fas fa-home" home="" style="css/themes/default.css" zoomtools="true" initialextenttool="true" exportpng="false" showhelp="false" coordinates="false" measuretools="true" mouseposition="false" geoloc="false" studio="" togglealllayersfromtheme="false">
+</application>
+<mapoptions maxzoom="20" projection="EPSG:3857" center="-307903.74898791354,6141345.088741366" zoom="8" />
+<proxy url="/proxy/?url=" />
+<olscompletion type="ban" url="https://api-adresse.data.gouv.fr/search/" attribution="Base adresse nationale (BAN)" />
+<searchparameters bbox="true" localities="true" features="false" static="false" querymaponclick="true" closeafterclick="true" inputlabel="Saisir l'adresse" />
+<baselayers style="default"> 
+    <baselayer visible="true" id="positron" thumbgallery="img/basemap/positron.png" title="CartoDb" label="Positron" type="OSM" url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" attribution="Map tiles by  &lt;a href=&quot;https://cartodb.com/attributions&quot;&gt;CartoDb&lt;/a&gt;, under  &lt;a href=&quot;https://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY 3.0 &lt;/a&gt;" /> 
+    <baselayer visible="false" id="ortho_ign" thumbgallery="img/basemap/ortho.jpg" title="IGN" label="Photographies aériennes IGN" type="WMTS" url="https://wxs.ign.fr/choisirgeoportail/geoportail/wmts?" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" fromcapacity="false" attribution="&lt;a href='https://geoservices.ign.fr' target='_blank'&gt;&lt;img src='https://geoservices.ign.fr/images/logoIGN.png'&gt;&lt;/a&gt;" style="normal" matrixset="PM" maxzoom="22" /> 
+</baselayers>
+<themes mini="false"> 
+    <theme id="theme-20230721132349" name="MOS" collapsed="false" icon="fab fa-codepen"> 
+        <layer id="mos" name="MOS" type="wms" url="https://geobretagne.fr/geoserver/geobretagne/ows" 
+		scalemin="0" scalemax="20000"
+		tiled="true" expanded="true"
+		visible="true" 
+		infoformat="application/vnd.ogc.gml" 
+		fields="type,nom_commun,code4_2021,lib4_2021,num_parc"
+		aliases="Type,Commune,Code occupation,Type d'occupation,N° de parcelle"
+		opacity="0.5"
+		style="mos_2021"
+		attribution=" Seuil de visibilité : 1/20 000"
+		metadata="" metadata-csw="" queryable="true">
+        </layer> 
+    </theme>
+    <theme id="admin" url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/administratif.xml" name="Découpages administratifs" collapsed="true" icon="false" layersvisibility="default"> 
+    </theme> 
+    <theme id="cadastre" url="https://geobretagne.fr/pub/dgfip/apps/dvf/config.xml" name="Limites cadastrales" collapsed="true" icon="false" layersvisibility="default"> 
+    </theme> 
+</themes>
+</config>

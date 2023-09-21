@@ -1,0 +1,25 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{nom}}</h2>
+		<p class="rb-text-feature">		
+			<b>Site </b> {{site}}<br>
+			<b>Adresse </b> {{adresse}} {{code_postal}} {{ville}}<br>
+			<b>Code ASCOL </b> {{code_ascol}}<br>
+			<b>Surface </b> {{surface}}<br>
+			<b>Occupant Principal </b> {{occupant_principal}}<br>
+			<b>Usage Principal </b> {{usage_principal}}<br>
+		{{#photo}}
+			<img src="{{photo}}" class="img-responsive" style="margin-top:5%;" />
+		{{/photo}}        
+
+		</p>
+	</li>
+{{/features}}
+
+<style>
+/* test icon rb*/
+.icon-information{
+	font-size : 20px;
+	color : #FFFFFF;
+}
+</style>

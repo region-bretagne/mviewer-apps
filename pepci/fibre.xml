@@ -13,8 +13,8 @@
 </metadata>
 <application
     title="Disponibilité de la fibre en Bretagne"
-    logo=""
-    style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/css/kartenn_port.css"
+    logo="" 
+    style="https://geobretagne.fr/pub/sm-megalis/apps/fibre/css/simple2.css"
     exportpng="false"
     showhelp="false"
     coordinates="false"
@@ -52,8 +52,7 @@
             visible="true"
             infoformat="text/html"
             style="epci_region_fin"
-            stylesalias="epci,epci_region_fin,EPCI_random,epci_region,EPCI_orange"
-			attribution="DREAL Bretagne"
+			attribution="IGN"
             metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/2298d744-49cb-4fcb-9487-26f916fecdff"
             metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=2298d744-49cb-4fcb-9487-26f916fecdff"
             queryable="false"
@@ -61,18 +60,39 @@
             infopanel="right-panel"
             opacity="1">
         </layer>
+		
+		<layer 
+            id="pactes"
+            name="pactes"
+            url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+            visible="false"
+			attribution="Région Bretagne"
+            metadata=""
+            metadata-csw=""
+            queryable="false"
+            featurecount="10"
+            infopanel="right-panel"
+            opacity="1">
+        </layer>
+
+		
     </theme>
     <theme id="fibre" name="fibre" collapsed="true" icon="fas fa-code-branch"> 
         <layer 
             id="zdep_fin_travaux"
-            name="Disponibilite prévisionnelle de la fibre"
+            name="Etat d'avancement du déploiement de la fibre"
+            type="wms"
+			expanded="true"	
             url="https://geobretagne.fr/geoserver/megalis/ows?"
             visible="true"
             infoformat="application/vnd.ogc.gml"
 			infohighlight="false"
 			featurecount="1"
             queryable="true"
+			style="style_zdep_bretagne-bzh"
+			legendurl="https://geobretagne.fr/pub/sm-megalis/apps/fibre/image/legende.png"
 			opacity="0.7"
+			attributefilter="true" attributefield="Statut" attributevalues="zone privée,raccordé,en cours de travaux" attributelabel="statut"
 			attribution="Mégalis Bretagne"
 			metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/c6857d43-90c8-4164-90b1-1c6838dfff59"
             metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ELEMENTSETNAME=full&amp;ID&amp;ID=c6857d43-90c8-4164-90b1-1c6838dfff59"			

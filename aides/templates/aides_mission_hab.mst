@@ -1,0 +1,55 @@
+
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<div class="row">
+			<div class="col-xs-4">
+				<div class="rb-title">{{nom_epci}}</div>
+			</div>
+			<div class=" col-xs-6">
+				<div class="rb-title-feature">Mission {{mission_id}} - {{mission_lib_long}}</div>
+			</div>
+			<div class=" col-xs-1">
+				<span class="rb-critere glyphicon glyphicon-calendar" aria-hidden="true" style="margin-left:20px;"><span id="rb-text">{{millesime}}</span></span>
+			</div>	
+		</div>
+		<div class="row">
+				<div class="col-md-4" style="position:relative;display:block;height:0; padding:0px;overflow:hidden;padding-bottom:40%;"> 
+				<iframe style="border:0;" src="https://kartenn.region-bretagne.fr/mreport/aide_territo_mission{{mission_id}}_{{millesime}}/{{code_siren}}/epci_aide_territo_total_hab_mission_{{mission_id}}_{{millesime}}"></iframe><br>
+				</div>
+				
+				<!-- <div class="col-md-3" style="position:relative;display:block;height:0; padding:0px;overflow:hidden;padding-bottom:70%;">  -->
+				<!-- <iframe style="border:0;" src="https://kartenn.region-bretagne.fr/mreport/aide_territo_mission{{mission_id}}_{{millesime}}/{{code_siren}}/epci_aide_territo_moyenne_hab_mission_{{mission_id}}"></iframe> -->
+				<!-- </div> -->
+				
+				<div class="col-md-4" style="position:relative;display:block;height:0; padding:10;overflow:hidden;padding-bottom:50%;"> 
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:80%;height:80%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/aide_territo_mission{{mission_id}}_{{millesime}}/{{code_siren}}/epci_aide_territo_hab_programme_mission_{{mission_id}}_{{millesime}}"></iframe>
+				<div id="over" align="center">Répartition par programme (€/hab)</div></div>
+											
+				<div class="col-md-4" style="position:relative;display:block;height:0; padding:3;overflow:hidden;padding-bottom:50%;"> 
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:80%;height:80%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/aide_territo_mission{{mission_id}}_{{millesime}}/{{code_siren}}/epci_aide_territo_evolution_hab_mission_{{mission_id}}"></iframe>
+				<div id="over" align="center">Evolution par année depuis 2018 (€/hab)</div></div>
+				
+		</div>
+
+
+	</li>
+{{/features}}
+
+<style>
+#over { 
+	color:#2F476C;
+	font-size:1em; 
+	font-weight:600;
+	position:absolute; 
+	z-index:2;
+	width:100%
+}
+.rb-title {
+    color: #2d4059;
+    font-family: "region_bold";
+    font-size: 18px;
+    margin-bottom: 3%;
+    line-height: 1;
+}
+</style>
+

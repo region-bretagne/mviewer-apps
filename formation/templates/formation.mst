@@ -1,0 +1,19 @@
+{{#features}}
+	<li class="item" align="center" id="{{feature_ol_uid}}">
+		<h3>{{intitule}}</h3>
+		<p class="rb-text-feature">		
+			<h3 class="rb-title-feature">{{organisme}}</h3> <br><br>
+			 {{sous_domaine}}<br><br>
+			Lot n° {{lot}}  -  Marché n° {{marche}} <br><br>
+			Commune :  <b> {{commune_session}}<br></b>
+		</p>
+	</li>
+{{/features}}
+
+<style>
+.rb-temoin-feature{
+	font-family:"Open Sans";
+	color:#555;
+	font-size:11px;
+}
+</style>

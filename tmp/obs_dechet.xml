@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<application
+		title="Observatoire déchets-matière"
+		logo="apps/img/logo/logo_odema_blanc.png"
+		help="mviewer_help.html"
+		style="apps/css/themes/odema.css"
+		exportpng="false"
+		showhelp="false"
+		coordinates="false"
+		measuretools="false"
+		togglealllayersfromtheme="true">
+	</application>
+	<mapoptions maxzoom="18" projection="EPSG:3857" center="318589,6449450" zoom="8" />
+	<olscompletion type="ban" url="https://api-adresse.data.gouv.fr/search/" attribution="" />
+	<searchparameters bbox="false" localities="true" features="false" static="false"/>
+	<baselayers style="gallery"><!-- style="default"||gallery" -->
+			<!--<baselayer  type="WMTS" id="cada" layers="CADASTRALPARCELS.PARCELLAIRE_EXPRESS" label="Cadastre" title="Cadastre" format="image/png" thumbgallery="img/basemap/cadastreGP.jpg" url="https://wxs.ign.fr/beta/geoportail/wmts" visible="false" attribution="IGN" />-->
+			<baselayer
+				type="WMS"
+				id="ortho2018"
+				layers="ortho_regionale_2018_rvb"
+				label="Orthophoto 2018"
+				title="Orthophoto 2018"
+				thumbgallery="apps/img/basemap/orthoGP.jpg"
+				url="https://www.geo2france.fr/geoserver/geo2france/ows?"
+				maxzoom="19"
+				visible="false"
+				format="image/png"
+				attribution="Géo2France-IGN"/>
+			<baselayer  type="WMS" id="osmgp1" layers="faded" label="OSM - Géo2France" title="OSM" thumbgallery="apps/img/basemap/osmGP.jpg"
+				url="https://osm.geo2france.fr/mapcache/" maxzoom="19"
+				visible="true" format="image/png" attribution="Geo2France/OSM" />
+	</baselayers>
+	<themes mini="false">
+		<theme name="Installations"  collapsed="false" id="traitement" icon="industry ">
+		    <layer
+		        id="isdnd"
+		        name="Installations de stockage de déchets non dangereux (ISDND)"
+				attribution="Sources : Odema, ADEME, Georisques"
+		        url="https://www.geo2france.fr/geoserver/odema/ows?"
+				queryable="true"
+		        visible="true"
+				infoformat="application/vnd.ogc.gml"
+		        metadata="https://www.geo2france.fr/datahub/dataset/e4881c08-7eb6-4eea-a309-c62adde1c0d4"
+		    ><template url="apps/templates/inst_traitement.mst"></template>
+		    </layer>
+		    <layer
+		        id="centre_tri"
+		        name="Centres de tri"
+				attribution="Sources : Odema, ADEME, Georisques"
+		        url="https://www.geo2france.fr/geoserver/odema/ows?"
+				queryable="true"
+		        visible="true"
+				infoformat="application/vnd.ogc.gml"
+		        metadata="https://www.geo2france.fr/datahub/dataset/5f4405ee-7f92-4b34-9a2d-b3430a928df5"
+		    ><template url="apps/templates/inst_traitement.mst"></template>
+		    </layer>
+		    <layer
+		        id="dechetterie"
+		        name="Déchetteries"
+				attribution="Sources : Odema, ADEME, CERC Hauts-de-France"
+		        url="https://www.geo2france.fr/geoserver/odema/ows?"
+				queryable="true"
+		        visible="true"
+				infoformat="application/vnd.ogc.gml"
+		        metadata="https://www.geo2france.fr/datahub/dataset/8546447f-6c47-470f-833f-384f2a51c122"
+		        filter="fermeture is NULL"
+		    ><template url="apps/templates/inst_traitement.mst"></template>
+		    </layer>
+			<!--<layer
+				id="carrieres_lt"
+				name="Carrières"
+				attribution="Source : DREAL (GEREP) / Elcimaï Environnement "
+				queryable="true"
+				visible="false"
+				infoformat="application/vnd.ogc.gml"
+				url="https://www.geo2france.fr/geoserver/ademe/ows?"
+				metadata-csw="https://www.geo2france.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=3959ca74-1fe1-4f3e-8367-48b39bf72cc9"
+				metadata="https://www.geo2france.fr/geonetwork/srv/fre/catalog.search#/metadata/3959ca74-1fe1-4f3e-8367-48b39bf72cc9">
+				<template url="apps/templates/carriere_lt.mst"></template>
+			</layer>
+			<layer
+				id="isdi_lt"
+				name="Installation de stockage de déchets inertes (ISDI)"
+				attribution="Source : DREAL (GEREP) / Elcimaï Environnement "
+				queryable="true"
+				visible="false"
+				infoformat="application/vnd.ogc.gml"
+				url="https://www.geo2france.fr/geoserver/ademe/ows?"
+				metadata-csw="https://www.geo2france.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=f1139721-91f9-4ce2-90aa-b2ac2d2638bf"
+				metadata="https://www.geo2france.fr/geonetwork/srv/fre/catalog.search#/metadata/f1139721-91f9-4ce2-90aa-b2ac2d2638bf">
+				<template url="apps/templates/isdi_lt.mst"></template>
+			</layer>-->
+		</theme>
+		<theme name="Territoires de compétences"  collapsed="true" id="territoires_competences" icon="landmark">
+		 <layer
+		        id="territoires_collecte"
+		        name="Territoires de collecte"
+				attribution="Sources : Odema"
+		        url="https://www.geo2france.fr/geoserver/odema/ows?"
+				queryable="true"
+		        visible="false"
+				infoformat="application/vnd.ogc.gml"
+				timefilter="true"
+				timeinterval="year"
+				timemin="2017"
+				timemax="2023"
+				timevalues="2017,2018,2019,2020,2021,2022,2023"
+				timecontrol="slider"
+		        metadata="https://www.geo2france.fr/datahub/dataset/0ae299e7-10d6-4290-944e-c6c62e2aeabf">
+		            <template url="apps/templates/territoires_competences.mst"></template>
+		    </layer>
+    		 <layer
+		        id="territoires_traitement"
+		        name="Territoires de traitement"
+				attribution="Sources : Odema"
+		        url="https://www.geo2france.fr/geoserver/odema/ows?"
+				queryable="true"
+		        visible="false"
+				infoformat="application/vnd.ogc.gml"
+				timefilter="true"
+				timeinterval="year"
+				timemin="2017"
+				timemax="2023"
+				timecontrol="slider"
+		        metadata="https://www.geo2france.fr/datahub/dataset/51ec9ae0-5c19-4525-83da-1488b569ec98">
+		            <template url="apps/templates/territoires_competences.mst"></template>
+		    </layer>
+    	   <layer
+		        id="territoires_dechetterie"
+		        name="Territoires de gestion des déchetteries"
+				attribution="Sources : Odema"
+		        url="https://www.geo2france.fr/geoserver/odema/ows?"
+				queryable="true"
+		        visible="false"
+				infoformat="application/vnd.ogc.gml"
+				timefilter="true"
+				timeinterval="year"
+				timemin="2017"
+				timemax="2023"
+				timecontrol="slider"
+		        metadata="https://www.geo2france.fr/datahub/dataset/c2aa1823-f838-4a63-8add-688090a51d71">
+		            <template url="apps/templates/territoires_competences.mst"></template>
+		    </layer>
+		</theme>
+		<!--<theme name="Données sensibles"  collapsed="true" id="datasensible" icon="bolt">
+			<layer
+				id="carrieres"
+				name="Carrières"
+				attribution="Source : DREAL (GEREP) / Elcimaï Environnement "
+				style="carriere_etat_dact,carriere_qan,carriere_can,carriere_crn"
+				stylesalias="Etat d’activité de l’installation ,Quantités annuelles reçues pour remblaiement en 2019,Capacités annuelles d’accueil en remblaiement,Capacités résiduelles en 2019"
+				queryable="true"
+				visible="true"
+				infoformat="application/vnd.ogc.gml"
+				url="https://www.geo2france.fr/geoserver/ademe/ows?"
+				metadata-csw="https://www.geo2france.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=3959ca74-1fe1-4f3e-8367-48b39bf72cc9"
+				metadata="https://www.geo2france.fr/geonetwork/srv/fre/catalog.search#/metadata/3959ca74-1fe1-4f3e-8367-48b39bf72cc9">
+				<template url="apps/templates/carriere.mst"></template>
+			</layer>
+			<layer
+				id="isdi"
+				name="Installation de stockage de déchets inertes (ISDI)"
+				attribution="Source : DREAL (GEREP) / Elcimaï Environnement "
+				style="isdi_etat_dact,isdi_qrn,isdi_cren"
+				stylesalias="Etat d’activité de l’installation ,Quantités annuelles reçues en 2019,Capacités résiduelles en 2019 "
+				queryable="true"
+				visible="true"
+				infoformat="application/vnd.ogc.gml"
+				url="https://www.geo2france.fr/geoserver/ademe/ows?"
+				metadata-csw="https://www.geo2france.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=f1139721-91f9-4ce2-90aa-b2ac2d2638bf"
+				metadata="https://www.geo2france.fr/geonetwork/srv/fre/catalog.search#/metadata/f1139721-91f9-4ce2-90aa-b2ac2d2638bf">
+				<template url="apps/templates/isdi.mst"></template>
+			</layer>
+		</theme>-->
+		<theme name="Données de contexte"  collapsed="true" id="environnement" icon="globe">
+			<layer
+				id="communes"
+				name="Communes"
+				attribution="Source : IGN/Région Hauts-de-France"
+				queryable="true"
+				style="polygon_pointilles,contour_bleu,contour_orange,contour_blanc,contour_jaune,contour jaune avec étiquettes,contour_noir,contour_rouge,contour_gris,polygon_blanc,polygon_violet,polygon_rouge,polygon_bleu,polygon_gris,polygon_vert,hachures_vers_la_gauche,hachures_horizontales,hachures_verticales,hachures_vers_la_droite"
+				infoformat="application/vnd.ogc.gml"
+				url="https://www.geo2france.fr/geoserver/spld/ows?"
+				legendurl="https://www.geo2france.fr/geoserver/insee/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=insee_ind_ha"
+				metadata-csw="https://www.geo2france.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=278fd502-b096-4491-a529-e617b71a1c8f"
+				metadata="https://www.geo2france.fr/geonetwork/srv/fre/catalog.search#/metadata/278fd502-b096-4491-a529-e617b71a1c8f">
+				<template url="apps/templates/communes.mst"></template>
+			</layer>
+			<layer
+				id="epci"
+				name="EPCI"
+				visible="false"
+				attribution="Source : IGN/Région Hauts-de-France"
+				queryable="true"
+				style="EPCI contour noir avec étiquettes,EPCI aplat bleu avec étiquettes,EPCI aplat blanc avec étiquettes,EPCI aplat jaune avec étiquettes,EPCI aplat orange avec étiquettes,EPCI aplat rouge avec étiquettes,EPCI contour bleu avec étiquettes,EPCI contour jaune avec étiquettes,EPCI contour blanc avec étiquettes,EPCI contour rouge avec étiquettes,EPCI contour orange avec étiquettes,contour_bleu,contour_orange,contour_blanc,contour_jaune,contour jaune avec étiquettes,contour_noir,contour_rouge,contour_gris,polygon_blanc,polygon_violet,polygon_rouge,polygon_bleu,polygon_gris,polygon_vert,hachures_vers_la_gauche,hachures_horizontales,hachures_verticales,hachures_vers_la_droite"
+				infoformat="application/vnd.ogc.gml"
+				url="https://www.geo2france.fr/geoserver/spld/ows?"
+				metadata-csw="https://www.geo2france.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=791b9687-7b77-4db1-a78e-61a517668c3b"
+				metadata="https://www.geo2france.fr/geonetwork/srv/fre/catalog.search#/metadata/791b9687-7b77-4db1-a78e-61a517668c3b">
+				<template url="apps/templates/epci.mst"></template>
+			</layer>
+			<layer
+				id="cadastre_2022"
+				name="Cadastre (PCI vecteur 2020)"
+				attribution="Source : DGFiP"
+				visible="false"
+				opacity="0.5"
+				queryable="true"
+				infoformat="application/vnd.ogc.gml"
+				metadata-csw="https://www.geo2france.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=85981e02-e82a-4b71-961f-29bdddcc85a1"
+				metadata="https://www.geo2france.fr/geonetwork/srv/fre/catalog.search#/metadata/85981e02-e82a-4b71-961f-29bdddcc85a1"
+				url="https://www.geo2france.fr:443/geoserver/pci/ows?">
+			</layer>
+			
+						<layer
+				id="DEPARTEMENT"
+				name="Départements"
+				visible="true"
+				attribution="Source : IGN/Région Hauts-de-France"
+				queryable="false"
+				style="contour_gris,contour_bleu,contour_orange,contour_blanc,contour_jaune,contour jaune avec étiquettes,contour_noir,contour_rouge"
+				infoformat="application/vnd.ogc.gml"
+				url="https://www.geo2france.fr/geoserver/spld/ows?"
+				metadata-csw="https://www.geo2france.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a8591404-c2f7-4080-87c4-266e9582a26f"
+				metadata="https://www.geo2france.fr/geonetwork/srv/fre/catalog.search#/metadata/a8591404-c2f7-4080-87c4-266e9582a26f">
+			</layer>
+			
+			<layer
+				id="ortho_regionale_2018_rvb"
+				name="Orthophoto 2018"
+				attribution="Source : IGN/Géo2France"
+				visible="false"
+				opacity="0.8"
+				queryable="false"
+				metadata-csw="https://www.geo2france.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b78820de-0104-4369-b4c5-7ff715b1a34e"
+				metadata="https://www.geo2france.fr/geonetwork/srv/fre/catalog.search#/metadata/b78820de-0104-4369-b4c5-7ff715b1a34e"
+				url="https://www.geo2france.fr/geoserver/geo2france/ows?">
+			</layer>
+			<layer
+				id="masque_hdf_ign_carto_latin1"
+				name="Masque Hauts-de-France"
+				attribution="Source : Géo2France"
+				opacity="0.7"
+				visible="true"
+				queryable="false"
+				infoformat="application/vnd.ogc.gml"
+				url="https://www.geo2france.fr:443/geoserver/cr_hdf/ows?"
+				legendurl="https://www.geo2france.fr/geoserver/cr_hdf/ows?service=WMS&amp;request=GetLegendGraphic&amp;format=image%2Fpng&amp;width=20&amp;height=20&amp;layer=masque_hdf_ign_carto_latin1">
+			</layer>
+		</theme>
+	</themes>
+</config>

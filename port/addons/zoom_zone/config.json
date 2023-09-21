@@ -1,0 +1,38 @@
+{
+    "js": ["js/ol-ext.min.js","js/zoom_zone.js"],
+    "css": "css/zoom_zone.css",
+    "html": "zoom_zone.html",
+    "target": "page-content-wrapper",
+	"duration": 1500,
+	"entities":[{
+		"id":1,
+		"label":"Brest",
+		"coord":[-496000,6170000],
+		"zoom": 14
+		},
+		{
+		"id":2,
+		"label":"Concarneau",
+		"coord":[-436000,6084000],
+		"zoom": 14
+		},
+		{
+		"id":3,
+		"label":"Le Légué",
+		"coord":[-302000,6195000],
+		"zoom": 14
+		},
+		{
+		"id":4,
+		"label":"Lorient",
+		"coord":[-373000,6063000],
+		"zoom": 14
+		},
+		{
+		"id":5,
+		"label":"Saint-Malo",
+		"coord":[-226000,6215000],
+		"zoom": 14
+		}
+	]
+}

@@ -1,0 +1,35 @@
+{
+  "js": ["js/filter.js", "js/jquery.easyDrag.min.js"],
+  "css": "css/filter.css",
+  "html": "filter.html",
+  "target": "page-content-wrapper",
+  "options": {
+    "mviewer":{
+		"deplacement_president":{
+		  "tooltipPosition": "bottom-left",
+		  "title": "Filtrer",
+		  "open": true,
+		  "zoomOnFeatures": false,
+		  "legendTitle": "Année du déplacement",
+		  "style": {
+			"border": "1px #AAAAAA solid",
+			"background": "#AAAAAA",
+			"text": "#FFFFFF",
+			"unSelectedBtnColor": "#CCCCCC",
+			"textSelectBtnColor": "#FFFFFF",
+			"selectedBtnColor": "#EED969"
+		  },
+		  "layers": [{
+			"layerId": "deplacement_president",
+			"filter": [{
+				"attribut": "annee",
+				"type": "button",
+				"label": "Année du déplacement"
+			  }
+			]
+		  }]
+		}
+
+    }
+  }
+}

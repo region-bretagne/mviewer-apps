@@ -1,0 +1,35 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<div class="row">
+			<div class="col-xs-7">
+				<div class="rb-title-feature">{{nom}}</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartenn_agriculture_{{niveau}}/{{code_geo}}/com_agreste_otex_dom"></iframe>
+			</div>
+			<div class="col-md-4" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartenn_agriculture_{{niveau}}/{{code_geo}}/com_agreste_nb_expl"></iframe>
+			</div>
+			<div class="col-md-4" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartenn_agriculture_{{niveau}}/{{code_geo}}/com_agreste_etp"></iframe>
+			</div>
+		</div>
+
+	</li>
+{{/features}}
+
+<style>
+
+  
+.rb-title {
+    color: #2d4059;
+    font-family: "region_bold";
+    font-size: 25px;
+    margin-bottom: 3%;
+    line-height: 1;
+}
+#over { font-size:1em; position:absolute; top:0px; left:20px; z-index:2 }
+</style>

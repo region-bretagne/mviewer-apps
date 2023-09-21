@@ -1,0 +1,33 @@
+{{#features}}
+	
+		<div class="row">
+			<div class="col-xs-7">
+				<div class="rb-title-feature">{{nom_iris}}</div>
+			</div>
+			<div class="col-xs-3">
+				<span class="rb-critere glyphicon glyphicon-calendar" aria-hidden="true" style="margin-left:10px;"><span id="rb-text">{{millesime}}</span></span>
+			</div>	
+		</div>
+		<div style="text-align: center; color: #2D4059; font-size: 12px; font-weight: bold;">
+				<img src="https://kartenn.region-bretagne.fr/img/picto/psy.svg" alt="psy" width="50px" height="50px" /> <br><br>
+				
+				Taux de recours à un psychiatre pour 1000 bénéficiaires du régime général de l'assurance maladie:<br>
+			<div style="font-size: 40px;">	{{tx_std_psy_15plus}}&nbsp ‰ </div>
+				
+		</div>
+		
+			<div style="color: #2D4059;  position: fixed; bottom:10px; right :0 ;text-align: left;  font-size: 10px; padding-right: 20px;"> 
+Taux standardisés de recours à un psychiatre pour 1 000 bénéficiaires du régime général de l'assurance maladie âgés de 15 ans et plus			</div>
+{{/features}}
+
+<style>
+#over { 
+	color:#0094AB;
+	font-size:1em; 
+	padding-left:20%;
+	font-weight:600;
+	position:absolute; 
+	z-index:2;
+	width:100%
+}
+</style>

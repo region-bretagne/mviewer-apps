@@ -11,7 +11,7 @@
 </rdf:Description>
 </rdf:RDF>
 </metadata>
-<application title=" " logo="" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme.css" exportpng="false" showhelp="false" coordinates="false" measuretools="false" togglealllayersfromtheme="false" hideprotectedlayers="false">
+<application title=" " logo="" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme.css" exportpng="false" showhelp="false" coordinates="false" measuretools="false" togglealllayersfromtheme="false" hideprotectedlayers="false">
 </application>
 <mapoptions maxzoom="20" projection="EPSG:3857" center="-292004.84710459685,6141956.584967648" zoom="8"/>
 <proxy url="../proxy/?url="/>
@@ -78,14 +78,14 @@
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72"
 				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72" >  
             </layer>
-            <layer id="departement_osm" name="Département" visible="true" tiled="false" namespace="rb"
+            <layer id="departement_metro" name="Département" visible="true" tiled="false" namespace="rb"
 				queryable="false"
                 showintoc="false"
-				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				url="https://geobretagne.fr/geoserver/ign/wms" 
 				style="bretagne_5_style" 
-				attribution="OSM" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=6583d262-ebc4-4e51-a1fd-ee493c2b355d"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/6583d262-ebc4-4e51-a1fd-ee493c2b355d" >  
+				attribution="IGN - Admin Express" 
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/c8884cac-bc25-41a0-92d1-b6566c86066e"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c8884cac-bc25-41a0-92d1-b6566c86066e" >
             </layer>
 
     </theme> 

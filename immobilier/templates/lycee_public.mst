@@ -1,0 +1,29 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h3 class="rb-title-feature">{{lib_etablissement}}</h3>
+		<p class="rb-text-feature">		
+			<b>Code : {{code_uai}}</b><br><br>
+			<b>Ville :</b> {{ville}}<br>
+			<b>Type etablissement :</b><br> {{type_etablissement}}<br>
+			<b>Reseau etablissement :</b><br> {{reseau_etablissement}}<br>
+			<b>Année ouverture :</b> {{annee_ouverture}}<br>
+			<b>Surface cadastrée :</b> {{surface_cadastree}} m²<br>
+			<b>Surface totale :</b> {{surface_totale}} m²<br>
+			<b>Classement radon :</b> {{classement_radon}}<br>
+			<b>EMAT :</b> {{emat}}<br>
+			<b>Numéro comptable :</b> {{numero_comptable}}<br>
+			<b>Numéro SIRET :</b> {{siret}}<br>
+			<b>Centralisation téléphonique :</b> {{cent_tel}}<br>
+			<b>Centralisation informatique :</b> {{cent_inf}}<br>
+			<b>Photovoltaïque :</b> {{photovoltaique}}<br>
+		</p>
+	</li>
+{{/features}}
+
+<style>
+/* test icon rb*/
+.icon-information{
+	font-size : 20px;
+	color : #FFFFFF;
+}
+</style>

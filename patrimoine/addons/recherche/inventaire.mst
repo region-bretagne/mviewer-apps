@@ -2,22 +2,24 @@
 	<li class="item">
 		<h3 class="rb-title-feature">{{title}}</h3>
         <p class="rb-description-feature" ><i>Source: <strong>{{source}}</strong></i></p>
+        <p class="rb-description-feature" ><i>Contact: <strong><a href="mailto:inventaire.patrimoine@bretagne.bzh">inventaire.patrimoine@bretagne.bzh</a></strong></i></p>
+
 		<p class="rb-text-feature">
             {{#denomination}}
                 <span style="font-weight:bold"> Dénomination :</span> {{denomination}}<br/>
             {{/denomination}}
-			{{#datation}}
-				<span style="font-weight:bold"> Datation :</span> {{datation}}<br/>
-			{{/datation}}
-			{{#murs}}
-				<span style="font-weight:bold"> Materiaux murs:</span> {{murs}}<br/>
-			{{/murs}}
-			{{#toit}}
-				<span style="font-weight:bold"> Matériaux toiture  :</span> {{toit}}<br/>
-			{{/toit}}
-			{{#materiaux}}
-				<span style="font-weight:bold"> Materiaux :</span> {{materiaux}}<br/>
-			{{/materiaux}}
+			{{#datation_principale}}
+				<span style="font-weight:bold"> Datation :</span> {{datation_principale}}<br/>
+			{{/datation_principale}}
+			{{#materiaux_murs}}
+				<span style="font-weight:bold"> Materiaux murs:</span> {{materiaux_murs}}<br/>
+			{{/materiaux_murs}}
+			{{#materiaux_toit}}
+				<span style="font-weight:bold"> Matériaux toiture  :</span> {{materiaux_toit}}<br/>
+			{{/materiaux_toit}}
+			{{#materiaux_mobilier}}
+				<span style="font-weight:bold"> Materiaux :</span> {{materiaux_mobilier}}<br/>
+			{{/materiaux_mobilier}}
 			<div class="wfs_complements" id="{{search_id}}" style="padding-left:0px;"><div>
 
         </p>

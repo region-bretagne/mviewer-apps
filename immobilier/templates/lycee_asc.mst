@@ -1,0 +1,27 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{ascol_asc_libelle}}</h2>
+		<p class="rb-text-feature">		
+			<!-- <b>Code batiment : </b> {{ascol_asc_bat_code}}<br> -->
+			<b>Code :  {{ascol_asc_code}}</b><br><br>
+			<!-- <b>Libellé : </b> {{ascol_asc_libelle}}<br> -->
+			<b>Type : </b> {{ascol_asc_type}}<br>
+			<b>Mise en service :  </b> {{ascol_asc_mis}}<br>
+			<b>Marque :  </b> {{ascol_asc_marque}} <br>
+			<b>Etat : </b> {{ascol_asc_etat}}<br>
+			<!-- <b>N° constructeur :  </b> {{ascol_asc_nocons}} <br> -->
+			<b>Système de traction :  </b> {{ascol_asc_syst}}<br>
+			<b>Niveaux déservis : </b> {{ascol_asc_nb_niv}}<br>
+			<!-- <b>CTQ :  </b> {{ascol_asc_ctq}}<br> -->
+			
+		</p>
+	</li>
+{{/features}}
+
+<style>
+/* test icon rb*/
+.icon-information{
+	font-size : 20px;
+	color : #FFFFFF;
+}
+</style>

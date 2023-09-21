@@ -1,0 +1,6 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{ULVES_LB}}</h2>
+		Référent : Alexandre MAMDY
+		
+{{/features}}

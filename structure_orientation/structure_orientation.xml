@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="Service public régional d'information et d'aide  à l'orientation" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" exportpng="false" measuretools="true" legend="true" legendasimage="false" popup="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/structure_orientation/css/theme_ultra.css"/>
+    <application title="Service public régional d'information et d'aide  à l'orientation" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/img/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" exportpng="false" measuretools="true" legend="true" legendasimage="false" popup="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/structure_orientation/css/theme_ultra.css"/>
     <mapoptions maxzoom="20" projection="EPSG:3857" center="-291072,6187119" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery">
@@ -35,8 +35,8 @@
 				featurecount="5"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution="OpenStreetMap" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=32555292-b231-491e-a825-7256545cc0fb"
-				metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/32555292-b231-491e-a825-7256545cc0fb" >  
+				metadata-csw=""
+				metadata="" >  
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/structure_orientation/templates/structure_information_orientation_commune.mst" />
             </layer>
 			<layer id="structure_information_orientation_epci" name="EPCI" scalemin="0" scalemax="50000000" visible="true" tiled="false" namespace="rb"
@@ -44,8 +44,8 @@
 				featurecount="5"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution="OpenStreetMap" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=667571ba-120f-4ae3-ae80-7d62428637a0"
-				metadata="http://applications.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/667571ba-120f-4ae3-ae80-7d62428637a0" >  
+				metadata-csw=""
+				metadata="" >  
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/structure_orientation/templates/structure_information_orientation_epci.mst" />
             </layer>
             <layer id="bretagne_5" name="Bretagne à 5" visible="true" tiled="false" namespace="rb"
@@ -56,14 +56,14 @@
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72"
 				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72" >  
             </layer>
-            <layer id="departement_osm" name="Département" visible="true" tiled="false" namespace="rb"
+            <layer id="departement_metro" name="Département" visible="true" tiled="false" namespace="rb"
 				queryable="false"
-				showintoc="false"
-				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+                showintoc="false"
+				url="https://geobretagne.fr/geoserver/ign/wms" 
 				style="bretagne_5_style" 
-				attribution="OSM" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=6583d262-ebc4-4e51-a1fd-ee493c2b355d"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/6583d262-ebc4-4e51-a1fd-ee493c2b355d" >  
+				attribution="IGN - Admin Express" 
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/c8884cac-bc25-41a0-92d1-b6566c86066e"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c8884cac-bc25-41a0-92d1-b6566c86066e" >
             </layer>
 		</theme>   
     </themes>

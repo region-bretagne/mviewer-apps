@@ -1,0 +1,50 @@
+{
+  "js": ["js/filter.js", "js/jquery.easyDrag.min.js"],
+  "css": "css/filter.css",
+  "html": "filter.html",
+  "target": "page-content-wrapper",
+  "options": {
+    "mviewer":{
+		"patrimoine_simple":{
+		  "tooltipPosition": "bottom-left",
+		  "title": "Filtrer",
+		  "open": true,
+		  "zoomOnFeatures": false,
+		  "legendTitle": "Titre",
+		  "style": {
+			"border": "1px #AAAAAA solid",
+			"background": "#AAAAAA",
+			"text": "#FFFFFF",
+			"unSelectedBtnColor": "#CCCCCC",
+			"textSelectBtnColor": "#FFFFFF",
+			"selectedBtnColor": "#EED969"
+		  },
+		  "layers": [{
+			"layerId": "patrimoine_simple",
+			"filter": [{
+				"attribut": "type_dossier",
+				"type": "button",
+				"label": "Type dossier"
+			  },
+			  {
+				"attribut": "denomination",
+				"type": "textbox",
+				"label": "Dénomination"
+			  },
+			  {
+				"attribut": "materiaux_principaux",
+				"type": "textbox",
+				"label": "Matériaux"
+			  },
+			  {
+				"attribut": "datation_principale",
+				"type": "textbox",
+				"label": "Datation"
+			  }
+			]
+		  }]
+		}
+
+    }
+  }
+}

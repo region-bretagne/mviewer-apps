@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application panelstate="open" title="Coopération internationale" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" exportpng="true" legend="true" measuretools="true" legendasimage="false" popup="false" print="false"  style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme_ultra.css" />
+    <application panelstate="open" title="Coopération internationale" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/img/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" exportpng="true" legend="true" measuretools="true" legendasimage="false" popup="false" print="false"  style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/css/theme_ultra.css" />
     <mapoptions maxzoom="18" projection="EPSG:3857" center="3460555,880678" zoom="3" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery"><!-- style="default"||gallery" -->          
@@ -13,7 +13,7 @@
     <searchparameters bbox="true" localities="true" features="true"/>
 
     <themes>
-        <theme name="Coopération"  id="cooperation" collapsed="true" icon="graduation-cap">
+        <theme name="Coopération"  id="cooperation" collapsed="true" icon="fas fa-graduation-cap">
             <layer id="region_cooperation_internationale" name="Coopération internationale"  visible="true" tiled="false"
                 infoformat="application/vnd.ogc.gml" featurecount="20" queryable="true"
                 url="https://ows.region-bretagne.fr/geoserver/rb/wms"

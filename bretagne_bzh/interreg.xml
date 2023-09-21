@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application panelstate="open" title="INTERREG" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" exportpng="true" legend="true" measuretools="true" legendasimage="false" popup="false" print="false"  style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme_ultra.css" />
+    <application panelstate="open" title="INTERREG" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/img/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" exportpng="true" legend="true" measuretools="true" legendasimage="false" popup="false" print="false"  style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/css/theme_ultra.css" />
     <mapoptions maxzoom="18" projection="EPSG:3857" center="1742571,5640942" zoom="4" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery"><!-- style="default"||gallery" -->          
@@ -11,7 +11,7 @@
     <searchparameters bbox="true" localities="true" features="true"/>
 
     <themes>
-        <theme name="INTERREG"  id="interreg" collapsed="false" icon="caret-right">
+        <theme name="INTERREG"  id="interreg" collapsed="false" icon="fas fa-caret-right">
             <layer id="interreg" name="Espace Atlantique - 2014-2020"  visible="true" tiled="false"
                 infoformat="application/vnd.ogc.gml" featurecount="20" queryable="true"
                 url="https://ows.region-bretagne.fr/geoserver/rb/wms"
