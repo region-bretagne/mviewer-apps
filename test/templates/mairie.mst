@@ -21,7 +21,7 @@
 	{{/features}}
 	
 	const map = mviewer.getMap();	
-	map.on('singleclick', function(evt) {
+	map.on('singleclick', function risque(evt) {
 		const coordinate = evt.coordinate;
 		var _projection;
 		_projection = mviewer.getProjection();
@@ -29,8 +29,9 @@
 		const coordy = ol.proj.transform(evt.coordinate, _projection.getCode(), "EPSG:4326")[1];
 		var url_risque = "https://www.georisques.gouv.fr/mes-risques/connaitre-les-risques-pres-de-chez-moi/rapport2?form-adresse=true&isCadastre=false&type=housenumber&typeForm=adresse&lon="+coordx+"&lat="+coordy;
 		console.log(url_risque);
+		return url_risque;
 	});
-
+	
 	// document.getElementById("url_risque").href="https://google.fr";
 	//var url_risque = "https://google.fr";
 	document.getElementById("url_risque").setAttribute("href",url_risque);
