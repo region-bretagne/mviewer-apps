@@ -1,0 +1,31 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h3 class="rb-title-feature">{{type_equip}}</h3>
+        {{#photo}}                
+			<img src="{{photo}}" class="img-responsive" />
+        {{/photo}}                
+
+		<p class="text-feature">
+			{{#ss_type_equip}}                
+				<span style="font-weight:bold"> Sous type :</span> {{ss_type_equip}}<br/>
+			{{/ss_type_equip}}
+			{{#etat}}                
+				<span style="font-weight:bold"> Etat :</span> {{etat}}<br/>
+			{{/etat}}
+			{{#commentaire}}                
+				<span style="font-weight:bold"> Commentaire :</span> {{commentaire}}<br/>
+			{{/commentaire}}     
+			{{#producteur}}                
+				<span style="font-weight:bold"> Etat :</span> {{producteur}}<br/>
+			{{/producteur}}
+			
+       </p>
+
+
+	</li>
+{{/features}}
+
+<style>
+@import url("https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/css/vn_mst.css");
+
+</style>

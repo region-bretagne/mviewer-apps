@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<application
+    title="MOS foncier 2011-2021"
+    logo=""
+    help=""
+    style="css/themes/default.css"
+    exportpng="false"
+    showhelp="false"
+    coordinates="false"
+    measuretools="false"
+    togglealllayersfromtheme="false"
+	stats="true" statsurl="../ws/kartenn/log.php" >
+</application>
+<mapoptions maxzoom="20" projection="EPSG:3857" center="-255418,6120890" zoom="8" />
+    <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par la BAN"/>
+    <searchparameters bbox="false" localities="true" features="false"  querymaponclick="true" closeafterclick="true" inputlabel="Saisir l'adresse"/>
+
+<baselayers style="gallery">
+		<baselayer  type="WMTS" id="plan" label="Plan IGN" title="GéoPortail" maxscale="2000" thumbgallery="img/basemap/plan_ign.png" opacity="0.4"
+            url="https://wxs.ign.fr/decouverte/geoportail/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2" format="image/png" visible="true" fromcapacity="false"
+            attribution="&lt;a href='https://geoservices.ign.fr/services-web-essentiels/' target='_blank'>&lt;img src='https://geoservices.ign.fr/themes/custom/ignpro/logo.svg' width=100px>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+		<baselayer  type="WMS" id="rapideye" label="Rapide Eye 2011" title="RapidEye" maxscale="1000" thumbgallery="https://geobretagne.fr/mviewer/img/basemap/rapideye2011.jpg" opacity="1"
+            url="https://wxs.ign.fr/satellite/geoportail/r/wms" layers="ORTHOIMAGERY.ORTHO-SAT.RAPIDEYE.2011" format="image/png" visible="false" fromcapacity="false"
+            attribution="&lt;a href='https://geoservices.ign.fr/services-web-essentiels/' target='_blank'>&lt;img src='https://geoservices.ign.fr/themes/custom/ignpro/logo.svg' width=100px>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+		<baselayer  type="WMS" id="spot2021" label="Spot 2021" title="Spot_2021" maxscale="1000" thumbgallery="https://geobretagne.fr/mviewer/img/basemap/spot2021.jpg" opacity="1"
+            url="https://wxs.ign.fr/satellite/geoportail/r/wms" layers="ORTHOIMAGERY.ORTHO-SAT.SPOT.2021" format="image/png" visible="false" fromcapacity="false"
+            attribution="&lt;a href='https://geoservices.ign.fr/services-web-essentiels/' target='_blank'>&lt;img src='https://geoservices.ign.fr/themes/custom/ignpro/logo.svg' width=100px>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+</baselayers>
+<themes mini="false" legendmini="false">
+    <theme name="Modèle d'occupation des sols"  collapsed="false" id="demo" icon="fas fa-cog">
+		
+	    <layer id="mos_grille_conso" name="Consommation foncière au km²"  visible="true" tiled="true"
+		scalemin="60000"
+		scalemax="7000000"
+        searchable="false" queryable="true" 
+        infoformat="application/vnd.ogc.gml" 
+		fields="id,surf_conso_sum,surf_renat_sum,conso"
+		aliases="id,Consommation,Renaturation,Consommation absolue"
+        url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+        attribution="Source: Région Bretagne" 
+        metadata=""
+        metadata-csw="" >
+<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/mos/templates/grille.mst"></template> 		
+	    </layer> 
+		<layer id="mos_foncier" name="MOS - 2021" type="wms" url="https://geobretagne.fr/geoserver/geobretagne/ows" 
+		scalemin="0"
+		scalemax="70000"
+		tiled="true" 
+		exclusive="true"
+		style="mos_2021"
+		visible="true"
+		infoformat="application/vnd.ogc.gml" 
+		fields="nom_commun,num_parc,lib4_2011,lib4_2021"
+		aliases="Commune,N° de parcelle,Occupation en 2011,Occupation en 2021"
+		opacity="0.8"
+		attribution=" "
+		metadata="" metadata-csw="" queryable="true">
+        </layer>
+		<layer id="mos_foncier" name="MOS - 2011" type="wms" url="https://geobretagne.fr/geoserver/geobretagne/ows" 
+		scalemin="0"
+		scalemax="70000"
+		tiled="true" 
+		exclusive="true"
+		style="mos_2011"
+		visible="false"
+		infoformat="application/vnd.ogc.gml" 
+		fields="nom_commun,num_parc,lib4_2011,lib4_2021"
+		aliases="Commune,N° de parcelle,Occupation en 2011,Occupation en 2021"
+		opacity="0.8"
+		attribution=" "
+		metadata="" metadata-csw="" queryable="true">
+        </layer>
+		<layer id="mos_difference" name="MOS - Différence" type="wms" url="https://geobretagne.fr/geoserver/geobretagne/ows" 
+		scalemin="0"
+		scalemax="70000"
+		tiled="true" 
+		exclusive="true"
+		style="mos_2021"
+		visible="false"
+		infoformat="application/vnd.ogc.gml" 
+		fields="nom_commun,num_parc,lib4_2011,lib4_2021"
+		aliases="Commune,N° de parcelle,Occupation en 2011,Occupation en 2021"
+		opacity="0.8"
+		attribution=" "
+		metadata="" metadata-csw="" queryable="true">
+        </layer> 
+		<layer id="mos_consommation" name="Consommation ENAF 2011-2021" type="wms" url="https://geobretagne.fr/geoserver/geobretagne/ows?" 
+		scalemin="0"
+		scalemax="70000"
+		tiled="true" 
+		exclusive="true"
+		style="mos_2021"
+		visible="false"
+		infoformat="application/vnd.ogc.gml" 
+		fields="nom_commun,num_parc,lib4_2011,lib4_2021"
+		aliases="Commune,N° de parcelle,Occupation en 2011,Occupation en 2021"
+		opacity="0.8"
+		attribution=" "
+		metadata="" metadata-csw="" queryable="true">
+        </layer>
+    </theme>
+	  <theme id="admin" url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/administratif.xml" name="Découpages administratifs" collapsed="true" icon="false" layersvisibility="default"> 
+    </theme> 
+    <theme id="cadastre" url="https://geobretagne.fr/pub/dgfip/apps/dvf/config.xml" name="Limites cadastrales" collapsed="true" icon="false" layersvisibility="default"> 
+    </theme> 
+</themes>
+</config>

@@ -3,8 +3,8 @@
 		<h2 class="rb-title-feature">CHAUFFERIE</h2><br>
 		<p class="rb-text-feature">		
 			<!-- <b>Code batiment : </b> {{ascol_cha_bat_code}}<br> -->
-			<b>Code : </b> {{ascol_cha_install_code}}<br>
-			<b>Nb de chaudiere(s) : </b> {{ascol_cha_nb_chaudiere}}<br>
+			<b>Code : </b> {{ascol_cha_install_code}}</b><br><br>
+			<b>Nombre de chaudières : </b> {{ascol_cha_nb_chaudiere}}<br>
 			<!-- <b>Libellé installation : </b><br> {{ascol_cha_install_type}}<br> -->
 			<b>Puissance : </b> {{ascol_cha_puissance}} kW<br>
 			<b>Production : </b> {{ascol_cha_prod}}<br>

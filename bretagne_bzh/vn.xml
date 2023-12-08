@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title=" " logo="" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" measuretools="true" legend="true" popup="false" exportpng="true" legendasimage="true" togglealllayersfromtheme="true" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme.css" hideprotectedlayers="true"/>
+    <application title="Canaux" logo="" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" measuretools="true" legend="true" popup="false" exportpng="true" legendasimage="true" togglealllayersfromtheme="true" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme.css" hideprotectedlayers="true" stats="true" statsurl="../ws/kartenn/log.php" />
     <mapoptions maxzoom="20" projection="EPSG:3857" center="-274562,6102733" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery">
@@ -313,7 +313,7 @@
                 infoformat="application/vnd.ogc.gml" featurecount="5"             
 				useproxy="true"
 				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
-				attribution="CARMEN" 
+				attribution="DREAL Bretagne" 
 				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/33665796-fb24-4117-91aa-3265c76d8031" 
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=33665796-fb24-4117-91aa-3265c76d8031" />
             <layer id="znieff2" name="ZNIEFF2" visible="false" tiled="true"
@@ -321,23 +321,23 @@
                 infoformat="application/vnd.ogc.gml" featurecount="5"             
 				useproxy="true"
 				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
-				attribution="CARMEN" 
+				attribution="DREAL Bretagne" 
 				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ce4d1839-b7a8-4b11-84a6-a3a9f77b1192" 
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ce4d1839-b7a8-4b11-84a6-a3a9f77b1192" />
-            <layer id="zsc" name="Directive habitats (Natura 2000)" visible="false" tiled="true"
+            <layer id="ZSC" name="Directive habitats (Natura 2000)" visible="false" tiled="true"
 				queryable="true" infoformat="application/vnd.ogc.gml" featurecount="5"             
 				style="polygon_vert"
 				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
-				attribution="CARMEN" 
+				attribution="DREAL Bretagne" 
 				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/0b4fe074-5827-47c6-b00e-1c74613ba9cf" 
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=0b4fe074-5827-47c6-b00e-1c74613ba9cf" >
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.directive_habitats_zsc.mst"></template>
 			</layer>		
-            <layer id="zps" name="Directive oiseaux (Natura 2000)" visible="false" tiled="true"
+            <layer id="ZPS" name="Directive oiseaux (Natura 2000)" visible="false" tiled="true"
 				queryable="true" infoformat="application/vnd.ogc.gml" featurecount="5"             
 				style="polygon_turquoise"
 				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
-				attribution="CARMEN" 
+				attribution="DREAL Bretagne" 
 				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/ddd7da8e-8275-40db-ab39-b5a3178ab570" 
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ddd7da8e-8275-40db-ab39-b5a3178ab570" >
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.directive_oiseaux_zps.mst"></template>

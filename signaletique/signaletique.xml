@@ -20,7 +20,8 @@
     showhelp="false"
     coordinates="false"
     measuretools="false"
-    togglealllayersfromtheme="false">
+    togglealllayersfromtheme="false"
+	stats="true" statsurl="../ws/kartenn/log.php" >
 </application>
 <mapoptions maxzoom="20" projection="EPSG:3857" center="-267476,6139625" zoom="9" />
 <searchparameters bbox="false" localities="true" features="false" static="false"/>

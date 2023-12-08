@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="Kartenn CANAUX" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/img/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" measuretools="true" legend="true" popup="false" exportpng="true" legendasimage="true" coordinates="true" togglealllayersfromtheme="true"  style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/css/vn.css" hideprotectedlayers="true" geoloc="true" stats="true" statsurl="../ws/kartenn/log.php"/>
+    <application id="vn" title="Kartenn CANAUX" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/img/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" measuretools="true" legend="true" popup="false" exportpng="true" legendasimage="true" coordinates="true" togglealllayersfromtheme="true"  style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/css/vn.css" hideprotectedlayers="true" geoloc="true" stats="true" mapprint="true" statsurl="../ws/kartenn/log.php"/>
     <mapoptions maxzoom="20" projection="EPSG:3857" center="-291072,6187119" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 	<baselayers style="gallery">
 <!--         <baselayer  type="WMS" id="plan2" label="OpenStreetMap" title="GéoBretagne" thumbgallery="img/basemap/osm.png" maxscale="1000" url="https://osm.geobretagne.fr/gwc01/service/wms" layers="osm:google" format="image/png" visible="true" attribution="OSM" style="_null" matrixset="EPSG:3857" minresolution="0.4"/> -->
@@ -34,6 +34,7 @@
         <extension type="component" id="layerfilter" path="https://kartenn.region-bretagne.fr/kartoviz/demo/addons"/>
         <extension type="component" id="fileimport" path="https://kartenn.region-bretagne.fr/kartoviz/demo/addons"/>
         <extension type="component" id="isochroneAddon" path="demo/addons"/>
+		<extension type="component" id="print" path="demo/addons"/>
     </extensions>
 
     <themes>
@@ -337,7 +338,26 @@
 				style="voie_navigable_proprietaire,voie_navigable" stylesalias="Propriétaire,Normal"
 				attribution="Région Bretagne" 
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=7cab44b0-4639-43f2-a824-3eecb7d3bf66"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/7cab44b0-4639-43f2-a824-3eecb7d3bf66" /> 
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/7cab44b0-4639-43f2-a824-3eecb7d3bf66" />
+
+			<layer id="halage" name="Chemin de halage" visible="false" tiled="false" expanded="true"
+				queryable="false"
+				infoformat="text/html" featurecount="20"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				style="halage_type_revetement,halage_etat_revetement" stylesalias="Type de revêtement,Etat du revêtement"
+				attribution="Région Bretagne" 
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=7cab44b0-4639-43f2-a824-3eecb7d3bf66"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/7cab44b0-4639-43f2-a824-3eecb7d3bf66" />
+			<layer id="inventaire_secu_ch" name="Inventaire de la sécurité du contre halage" visible="false" tiled="false" expanded="true"
+				queryable="true"
+				infoformat="application/vnd.ogc.gml" featurecount="1"
+				fields="bief,etat_pass,etat_berge,larg_passa,gabarit,longeur,num,num_bief" aliases="Bief,Etat du passage,Etat de la berge,Largeur du passage,Gabarit,Longueur,Numéro,Numéro du bief"
+				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+				attribution="Région Bretagne" 
+				metadata-csw=""
+				metadata=""/>
+
+			
 			<layer id="etang_vn" name="Etangs" visible="false" tiled="false" 
 				queryable="true"
 				infoformat="application/vnd.ogc.gml" featurecount="20"
@@ -512,7 +532,7 @@
                 metadata-csw="">
             </layer>
             <layer id="cad2" name="Cadastre complet" visible="false" queryable="false" expanded="true"
-                type="customlayer" opacity="0.8" legendurl="img/blank.gif"
+                type="customlayer" opacity="0.8" legendurl="img/blank.gif" showintoc="false"
                 url="https://kartenn.region-bretagne.fr/kartoviz/demo/cad/layer2.js"
                 attribution="Source: DGFIP. Cette couche affiche le cadastre de la commune sélectionnée dans le panneau &lt;strong&gt;Sélection parcellaire&lt;/strong&gt;"
                 metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/8728b29d-267e-4d31-bad7-de528ba9c899"
@@ -579,7 +599,7 @@
                 infoformat="text/html" featurecount="5"             
 				url="https://geobretagne.fr/geoserver/drac/wms" 
 				attribution="DRAC" 
-				metadata="http://metadata.carmen.developpement-durable.gouv.fr/geonetwork-10/srv/fre/metadata.show?uuid=ef4d5b43-a7cd-4237-a56c-0c1d2226dec1" 
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ef4d5b43-a7cd-4237-a56c-0c1d2226dec1" 
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ef4d5b43-a7cd-4237-a56c-0c1d2226dec1" />
             <layer id="bretagne_immeuble_mh" name="Immeubles MH" visible="false" tiled="false"
 				queryable="true" fields="SITE" aliases="Site"
@@ -588,20 +608,20 @@
 				attribution="DRAC" 
 				metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=ee3d8a9a-eeac-4fdd-8474-4720086f461b"
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ee3d8a9a-eeac-4fdd-8474-4720086f461b" />
-            <layer id="Sites_inscrits" name="Sites inscrits" visible="false" tiled="true"
+            <layer id="sites_inscrits" name="Sites inscrits" visible="false" tiled="true"
 				queryable="true" fields="NOM" aliases="Nom"
                 infoformat="application/vnd.ogc.gml" featurecount="5"             
 				useproxy="true"
-				url="http://ws.carmen.developpement-durable.gouv.fr/WMS/10/Nature_Paysage" 
-				attribution="CARMEN" 
-				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/31a41ed0-9945-41c1-bd68-df7ae572bba2" 
-				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=31a41ed0-9945-41c1-bd68-df7ae572bba2" />
-            <layer id="Sites_classes" name="Sites classés" visible="false" tiled="true"
+				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
+				attribution="DREAL Bretagne" 
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/675cfd33-d389-400d-9265-5ab7cad50a42" 
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=675cfd33-d389-400d-9265-5ab7cad50a42" />
+            <layer id="sites_classes" name="Sites classés" visible="false" tiled="true"
 				queryable="true" fields="NOM" aliases="Nom"
                 infoformat="application/vnd.ogc.gml" featurecount="5"             
 				useproxy="true"
-				url="http://ws.carmen.developpement-durable.gouv.fr/WMS/10/Nature_Paysage" 
-				attribution="CARMEN" 
+				url="https://geobretagne.fr/geoserver/dreal_b/wms" 
+				attribution="DREAL Bretagne" 
 				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ed5ad99c-a386-48c2-8f96-decdbb593643" 
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ed5ad99c-a386-48c2-8f96-decdbb593643" />
         </theme> 
@@ -665,15 +685,7 @@
 				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/659e1a01-6e5e-40f4-9ce9-24a9622b4b47" >    
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.zone_frayere_56.mst"></template>
 			</layer>		
-			<layer id="faune_vn" name="Faune" visible="false" tiled="false" 
-				queryable="true" style="faune_categorie,faune_enjeu" stylesalias="Catégorie,Enjeu"
-				infoformat="application/vnd.ogc.gml" featurecount="20"
-				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
-				attribution="Région Bretagne" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=e4984a30-7c67-4109-b33a-9937685ff623"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/e4984a30-7c67-4109-b33a-9937685ff623" >    
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.faune.mst"></template>
-			</layer>		
+	
 			<layer id="flore_patrimoniale_alerte_vn" name="Couche d'alerte - flore patrimoniale" visible="false" tiled="false" 
 				queryable="false"
 				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
@@ -990,10 +1002,10 @@
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=f3368c03-6636-4284-ae43-9acdb076285e"
 				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/f3368c03-6636-4284-ae43-9acdb076285e">  
 			</layer>
-			<layer id="extraire_zh_rpdzh_m" name="Zone humides" visible="false" tiled="true" 
-				searchable="true" queryable="true" 
+			<layer id="zones_humides" name="Zones humides" visible="false" tiled="true" 
+				searchable="true" queryable="false" scalemax="50000" scalemin="0"
 				infoformat="application/vnd.ogc.gml" featurecount="1"
-				url="http://wms.reseau-zones-humides.org/cgi-bin/wmsfma" 
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution=""
 				metadata-csw=""
 				metadata="">
@@ -1003,7 +1015,7 @@
 			<layer id="BDGEODESIQUE-RN_BDD-POI_WLD" name="Repère géodésique" visible="false" tiled="false"
 				queryable="true" 
                 infoformat="text/html" featurecount="5"                
-				url="https://wxs.ign.fr/geodesie/geoportail/v/wms" 
+				url="https://data.geopf.fr/wms-v/ows" 
 				attribution="IGN" 
 				metadata="https://geoservices.ign.fr/sites/default/files/2021-07/IGNF_DONNEES_GEODESIQUES.html"
 				metadata-csw="" />	

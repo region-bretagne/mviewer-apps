@@ -6,6 +6,7 @@
 			 {{sous_domaine}}<br><br>
 			Lot n° {{lot}}  -  Marché n° {{marche}} <br><br>
 			Commune :  <b> {{commune_session}}<br></b>
+			EPCI :  <b> {{nom_epci}}<br></b>
 		</p>
 	</li>
 {{/features}}

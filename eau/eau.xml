@@ -74,7 +74,7 @@
 				metadata="" >
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/eau/templates/sage_information.mst"></template>
 			</layer>
-			<layer id="zonages_7B_sdage2022" name="Zonages 7B - SDAGE 2022" visible="false" tiled="false"
+			<layer id="zonages_7b_sdage2022" name="Zonages 7B - SDAGE 2022" visible="false" tiled="false"
 				queryable="true" opacity="0.6"
 				infoformat="application/vnd.ogc.gml" featurecount="1"
 				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title=" " logo="img/no_logo.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/index_dd/indexdd_help.html" measuretools="true" exportpng="true" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/index_dd/css/index_dd.css" stats="true" statsurl="../ws/kartenn/log.php"/>
+    <application title="Dimension sociale, économique" logo="img/no_logo.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/index_dd/indexdd_help.html" measuretools="true" exportpng="true" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/index_dd/css/index_dd.css" stats="true" statsurl="../ws/kartenn/log.php"/>
     <!--<mapoptions projection="EPSG:2154" extent="145518,6726671,372058,6868691"  />-->
     <mapoptions maxzoom="19" projection="EPSG:3857" center="-220750.13768758904,6144925.57790189" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
   

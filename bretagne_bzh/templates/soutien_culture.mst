@@ -8,7 +8,7 @@
 			<span style="font-weight:bold"> Sous-Discipline :</span> {{sous_discipline}}<br/>
 			{{/sous_discipline}}
 			<span style="font-weight:bold"> Type d'activité :</span> {{type_activite}}<br/>
-			<span style="font-weight:bold"> Adresse :</span> {{adresse}} {{code_postal}} {{ville}}<br/>
+			<span style="font-weight:bold"> Ville :</span>{{ville}}<br/>
 			<span style="font-weight:bold"> Montant voté : </span> <span class="montant"> {{montant_vote}}</span><br/>
 		</p>
 	</li>

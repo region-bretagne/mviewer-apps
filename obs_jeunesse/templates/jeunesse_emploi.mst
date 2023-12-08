@@ -1,0 +1,47 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<div class="row">
+			<div class="col-xs-7">
+				<div class="rb-title-feature">{{nom_epci}}</div>
+			</div>			
+		</div>
+
+		<div class="row">
+
+			<div class="col-md-2" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartennjeunesse/{{code_siren}}/epci_jeunesse_nb_emploi_1629_tot"></iframe>
+			</div>
+
+			<div class="col-md-4" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;">
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:90%;height:90%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartennjeunesse/{{code_siren}}/epci_jeunesse_nb_emploi_1629"></iframe>
+					<div id="over">Moins de 29 ans en emploi, selon le temps de travail</div>
+			</div>
+
+			<div class="col-md-2" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:90%;height:90%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartennjeunesse/{{code_siren}}/epci_chom_nb_abc_jeun"></iframe>
+			</div>
+
+			<div class="col-md-4" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:90%;height:90%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartennjeunesse/{{code_siren}}/epci_chom_evol_jeun"></iframe>
+					<div id="over">Demandeurs·euses d'emploi de moins de 25 ans, par trimestre</div>
+			</div>
+
+
+		</div>
+
+
+	</li>
+{{/features}}
+
+<style>
+@import url("https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/css/kartenn_economie.css");
+#over { 
+	color:#0094AB;
+	font-size:1em; 
+	padding-left:20%;
+	font-weight:600;
+	position:absolute; 
+	z-index:2;
+	width:100%
+}
+</style>

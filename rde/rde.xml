@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application id="rde" title="Réseau des développeurs économiques" logo="https://kartenn.region-bretagne.fr/img/logos/reseau_dev_eco.jpg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" exportpng="false" measuretools="false" legend="true" legendasimage="false" popup="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/rde/css/rde.css"/>
+    <application id="rde" title="Réseau des développeurs économiques" logo="https://kartenn.region-bretagne.fr/img/logos/reseau_dev_eco.jpg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" exportpng="false" measuretools="false" legend="true" legendasimage="false" popup="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/rde/css/rde.css" stats="true" statsurl="../ws/kartenn/log.php" />
     <mapoptions maxzoom="20" projection="EPSG:3857" center="-338989,6129383" zoom="9" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery">
@@ -29,10 +29,10 @@
 			<layer id="rde" name="Réseau des développeurs économiques"  visible="true" tiled="false" type="customlayer"
                 infoformat="application/vnd.ogc.gml" featurecount="100" queryable="true" exclusive="true" expanded="true" vectorlegend="true"
                 url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/rde/customlayers/rde.js"
-                attribution="Source: Région Bretagne"
+                attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/rde/documents_rde/&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Boîte à outils&lt;/button&gt;&lt;/a&gt;"
 				searchable="true" searchengine="fuse" fusesearchkeys="commune,intitule_sequence" fusesearchresult="{{commune}} - {{intitule_sequence}}" fusesearchthreshold="0.1"
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5137794c-3994-4217-a850-4e33f97949e4"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/5137794c-3994-4217-a850-4e33f97949e4" >  
+				metadata-csw=""
+				metadata="" >  
 
             <!-- <layer id="rde" name="Ateliers" visible="true" tiled="false" namespace="rb" -->
 				<!-- searchable="true" queryable="true" infoformat="application/vnd.ogc.gml" -->

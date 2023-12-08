@@ -1,0 +1,19 @@
+{
+  "js": ["zoomToArea.js"],
+  "css": "style.css",
+  "html": "zoomToArea.html",
+  "target": "page-content-wrapper",
+  "options": {
+    "mviewer": {
+      "port": {
+        "dataUrl": "https://ows.region-bretagne.fr/geoserver/rb/wfs?service=wfs&version=1.0.0&request=getfeature&CQL_FILTER=type='Limite%20portuaire'&typename=contour_port_aero&outputformat=application%2Fjson&srsName=EPSG:4326",
+        "dataEPSG": "EPSG:4326",
+        "fieldNameAreas": "nom",
+        "fieldIdAreas": "id",
+        "fieldSortBy": "nom",
+        "bufferSize": 3000,
+        "selectLabel": "Zoomer sur un port"
+      }
+    }
+  }
+}

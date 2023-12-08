@@ -35,7 +35,9 @@
 	
 <baselayers style="default"> 
     <baselayer visible="false" id="positron" thumbgallery="img/basemap/positron.png" title="CartoDb" label="Positron" type="OSM" url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" attribution="Map tiles by  &lt;a href=&quot;https://cartodb.com/attributions&quot;&gt;CartoDb&lt;/a&gt;, under  &lt;a href=&quot;https://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY 3.0 &lt;/a&gt;"  ></baselayer> 
-    <baselayer visible="true" id="plan_ign" thumbgallery="img/basemap/scan-express.jpg" title="IGN" label="Plan IGN v2" type="WMTS" url="https://wxs.ign.fr/choisirgeoportail/geoportail/wmts?" layers="GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2" format="image/png" fromcapacity="false" attribution="&lt;a href='https://geoservices.ign.fr' target='_blank'&gt;&lt;img src='https://geoservices.ign.fr/images/logoIGN.png'&gt;&lt;/a&gt;" style="normal" matrixset="PM" maxzoom="22"  ></baselayer> 
+	
+    <baselayer visible="true" id="plan_ign" thumbgallery="img/basemap/scan-express.jpg" title="IGN" label="Plan IGN v2" type="WMTS" url="https://wxs.ign.fr/choisirgeoportail/geoportail/wmts?" layers="GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2" format="image/png" fromcapacity="false" attribution="&lt;a href='https://geoservices.ign.fr' target='_blank'&gt;&lt;img src='https://geoservices.ign.fr/images/logoIGN.png'&gt;&lt;/a&gt;" style="normal" matrixset="PM" maxzoom="22" opacity="0.5"  ></baselayer> 
+	
     <baselayer visible="false" id="ortho_ign" thumbgallery="img/basemap/ortho.jpg" title="IGN" label="Photographies aériennes IGN" type="WMTS" url="https://wxs.ign.fr/choisirgeoportail/geoportail/wmts?" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" fromcapacity="false" attribution="&lt;a href='https://geoservices.ign.fr' target='_blank'&gt;&lt;img src='https://geoservices.ign.fr/images/logoIGN.png'&gt;&lt;/a&gt;" style="normal" matrixset="PM" maxzoom="22"  ></baselayer> 
 </baselayers>
 
@@ -48,7 +50,48 @@
 
 <themes mini="false"> 
     <theme id="theme-20221208152226" name="Domanialité" collapsed="true" icon="fas fa-globe"> 
- <layer id="occupation_domaniale_aeroport" name="Occupations domaniales" visible="true" tiled="false" 
+			<layer id="occupation_domaniale_aeroport" name="Occupations domaniales" visible="false" tiled="false" 
+				searchable="true" searchid="search_id" searchengine="elasticsearch" queryable="true" expanded="true"
+                infoformat="application/vnd.ogc.gml" featurecount="20"    
+				secure="true"
+				attributefilter="true" attributefield="contrat_validite" attributevalues="AUTORISÉ ÉCHÉANCE TARDIVE,AUTORISÉ ÉCHÉANCE N+10,AUTORISÉ ÉCHÉANCE N+5,AUTORISÉ ÉCHÉANCE N+2,AUTORISÉ ÉCHÉANCE N+1,AUTORISÉ ÉCHÉANCE DANS l'ANNÉE,ÉCHÉANCE DÉPASSÉE,ÉCHÉANCE RÉSILIÉE,LOT VACANT,OCCUPATION SANS TITRE"  attributelabel="Filtre par occupation" attributestylesync="false" attributefilterenabled="false"
+                style="bddom_validite_contrat,bddom_type_contrat,bddom_gestionnaire,bddom_transparent" 
+				stylesalias="Validité contrats,Type contrats,Gestionnaire,Transparent"
+				url="../geoserver-proxy/interne/wms" 
+				attribution="Région Bretagne" 
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/43ce0e25-ef3c-4e88-a546-6197e1f84d99" 
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=43ce0e25-ef3c-4e88-a546-6197e1f84d99">
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.occupation_domaniale.mst"></template>
+            </layer>
+			
+			<layer id="occupation_domaniale_aeroport_brest" name="Occupations domaniales Brest" visible="false" tiled="false" 
+				searchable="true" searchid="search_id" searchengine="elasticsearch" queryable="true" expanded="true"
+                infoformat="application/vnd.ogc.gml" featurecount="20"    
+				secure="true"
+				attributefilter="true" attributefield="contrat_validite" attributevalues="AUTORISÉ ÉCHÉANCE TARDIVE,AUTORISÉ ÉCHÉANCE N+10,AUTORISÉ ÉCHÉANCE N+5,AUTORISÉ ÉCHÉANCE N+2,AUTORISÉ ÉCHÉANCE N+1,AUTORISÉ ÉCHÉANCE DANS l'ANNÉE,ÉCHÉANCE DÉPASSÉE,ÉCHÉANCE RÉSILIÉE,LOT VACANT,OCCUPATION SANS TITRE"  attributelabel="Filtre par occupation" attributestylesync="false" attributefilterenabled="false"
+                style="bddom_validite_contrat,bddom_type_contrat,bddom_gestionnaire,bddom_transparent" 
+				stylesalias="Validité contrats,Type contrats,Gestionnaire,Transparent"
+				url="../geoserver-proxy/interne/wms" 
+				attribution="Région Bretagne" 
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/43ce0e25-ef3c-4e88-a546-6197e1f84d99" 
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=43ce0e25-ef3c-4e88-a546-6197e1f84d99">
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aeroport/templates/aeroport.occupation_domaniale.mst"></template>
+            </layer>
+			
+			<layer id="occupation_domaniale_rennes_dinard" name="Occupations domaniales Rennes Dinard" visible="false" tiled="false" 
+				searchable="true" searchid="search_id" searchengine="elasticsearch" queryable="true" expanded="true"
+                infoformat="application/vnd.ogc.gml" featurecount="20"    
+				secure="true"
+				attributefilter="true" attributefield="contrat_validite" attributevalues="AUTORISÉ ÉCHÉANCE TARDIVE,AUTORISÉ ÉCHÉANCE N+10,AUTORISÉ ÉCHÉANCE N+5,AUTORISÉ ÉCHÉANCE N+2,AUTORISÉ ÉCHÉANCE N+1,AUTORISÉ ÉCHÉANCE DANS l'ANNÉE,ÉCHÉANCE DÉPASSÉE,ÉCHÉANCE RÉSILIÉE,LOT VACANT,OCCUPATION SANS TITRE"  attributelabel="Filtre par occupation" attributestylesync="false" attributefilterenabled="false"
+                style="bddom_validite_contrat,bddom_type_contrat,bddom_gestionnaire,bddom_transparent" 
+				stylesalias="Validité contrats,Type contrats,Gestionnaire,Transparent"
+				url="../geoserver-proxy/interne/wms" 
+				attribution="Région Bretagne" 
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/43ce0e25-ef3c-4e88-a546-6197e1f84d99" 
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=43ce0e25-ef3c-4e88-a546-6197e1f84d99">
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.occupation_domaniale.mst"></template>
+            </layer>
+			<layer id="occupation_domaniale_aeroport_quimper" name="Occupations domaniales Quimper" visible="false" tiled="false" 
 				searchable="true" searchid="search_id" searchengine="elasticsearch" queryable="true" expanded="true"
                 infoformat="application/vnd.ogc.gml" featurecount="20"    
 				secure="true"
@@ -247,7 +290,45 @@
             opacity="1">
         </layer> 
     </theme> 
-    <theme id="theme-20221208151857" name="Gaz" collapsed="true" icon="fas fa-fire"> 
+    <theme id="theme-reseau eau" name="Réseau eau" collapsed="true" icon="fas fa-tint"> 
+        <layer 
+            id="r_ep_troncon"
+            name="Réseau eaux pluviales"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/wms"
+            infoformat="text/html"
+            metadata=""
+            metadata-csw=""
+            queryable="false"
+            infopanel="right-panel"
+            opacity="1">
+        </layer> 
+        <layer 
+            id="r_aep_troncon"
+            name="Réseau d'adduction d'eau potable"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/wms"
+            infoformat="text/html"
+            metadata=""
+            metadata-csw=""
+            queryable="false"
+            infopanel="right-panel"
+            opacity="1">
+        </layer> 
+        <layer 
+            id="r_eu_troncon"
+            name="Réseau eaux usées"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/wms"
+            infoformat="text/html"
+            metadata=""
+            metadata-csw=""
+            queryable="false"
+            infopanel="right-panel"
+            opacity="1">
+        </layer> 		
+	</theme> 
+    <theme id="theme-20221208151857" name="Gaz" collapsed="true" icon="fab fa-gripfire"> 
         <layer 
             id="reseau_gaz"
             name="Canalisations en service du réseau de distribution de gaz exploité par GRDF en France"
@@ -256,6 +337,32 @@
             infoformat="text/html"
             metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/edf2819c-6ccf-4214-8a9e-186d66065640"
             metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ELEMENTSETNAME=full&amp;ID&amp;ID=edf2819c-6ccf-4214-8a9e-186d66065640"
+            queryable="true"
+            infopanel="right-panel"
+            opacity="1">
+        </layer> 
+    </theme> 
+	 <theme id="incendie" name="Défense incendie" collapsed="true" icon="fas fa-fire-extinguisher"> 
+        <layer 
+            id="point_eau_incendie_sdis29"
+            name="Points d'Eau Incendie en Finistère"
+            type="wms"
+            url="https://geobretagne.fr/geoserver/sdis29/wms"
+            infoformat="text/html"
+            metadata="hhttps://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/fd61f6e5-edb5-42f1-94fe-a8437dc5a9b8"
+            metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ELEMENTSETNAME=full&amp;ID&amp;ID=fd61f6e5-edb5-42f1-94fe-a8437dc5a9b8"
+            queryable="true"
+            infopanel="right-panel"
+            opacity="1">
+        </layer> 
+		<layer 
+            id="point_eau_incendie_sdis35"
+            name="Points d'Eau Incendie en Ille-et-Vilaine"
+            type="wms"
+            url="https://geobretagne.fr/geoserver/sdis35/wms"
+            infoformat="text/html"
+            metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/3c06a949-ae25-4a61-ac61-03680646ad7c"
+            metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ELEMENTSETNAME=full&amp;ID&amp;ID=3c06a949-ae25-4a61-ac61-03680646ad7c"
             queryable="true"
             infopanel="right-panel"
             opacity="1">

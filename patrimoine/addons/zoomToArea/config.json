@@ -1,0 +1,19 @@
+{
+  "js": ["zoomToArea.js"],
+  "css": "style.css",
+  "html": "zoomToArea.html",
+  "target": "page-content-wrapper",
+  "options": {
+    "mviewer": {
+      "patrimoine": {
+        "dataUrl": "https://geobretagne.fr/geoserver/ign/wfs?service=wfs&version=1.0.0&request=getfeature&typename=epci&outputformat=application%2Fjson&srsName=EPSG:4326",
+        "dataEPSG": "EPSG:4326",
+        "fieldNameAreas": "nom",
+        "fieldIdAreas": "code_epci",
+        "fieldSortBy": "nom",
+        "bufferSize": 3000,
+        "selectLabel": "Zoomer sur un EPCI"
+      }
+    }
+  }
+}

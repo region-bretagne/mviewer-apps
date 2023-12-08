@@ -1,0 +1,19 @@
+{
+  "js": ["zoomToArea.js"],
+  "css": "style.css",
+  "html": "zoomToArea.html",
+  "target": "page-content-wrapper",
+  "options": {
+    "mviewer": {
+      "formation": {
+        "dataUrl": "https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/data/departement_simple.geojson",
+        "dataEPSG": "EPSG:4326",
+        "fieldNameAreas": "nom_geo",
+        "fieldIdAreas": "code_geo",
+        "fieldSortBy": "nom_geo",
+        "bufferSize": 3000,
+        "selectLabel": "Zoomer sur un département"
+      }
+    }
+  }
+}

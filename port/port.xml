@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="Kartenn port" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/img/rb_blanc.svg"  help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/port_help.html"   exportpng="true" measuretools="true" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/css/kartenn_port.css" stats="true" statsurl="../ws/kartenn/log.php"/>
+    <application id="port" title="Kartenn port" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/img/rb_blanc.svg"  help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/port_help.html"   exportpng="true" measuretools="true" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/css/kartenn_port.css" stats="true" statsurl="../ws/kartenn/log.php"/>
     <mapoptions maxzoom="19" projection="EPSG:3857" center="-220750.13768758904,6144925.57790189" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 	<baselayers style="gallery">         		
         <baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="GéoPortail" thumbgallery="img/basemap/ortho.jpg"
@@ -26,24 +26,11 @@
     <extensions>    
         <extension type="javascript" src="https://kartenn.region-bretagne.fr/kartoviz/demo/cad/external/piklor.js" usededby="cad.js"/>
         <extension type="component" id="layerfilter" path="https://kartenn.region-bretagne.fr/kartoviz/demo/addons"/>
-		<extension type="component" id="zoom_zone" path="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/addons"/>
+		<extension type="component" id="zoomToArea" path="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/addons"/>
     </extensions>
 	
     <themes>
         <theme name="Occupations domaniales"  id="port" icon="home" collapsed="false">
-            <!-- <layer id="occupation_domaniale" name="Occupations domaniales" visible="true" tiled="false"  -->
-				<!-- searchable="true" queryable="true" expanded="true" -->
-                <!-- infoformat="application/vnd.ogc.gml" featurecount="20"     -->
-				<!-- secure="true" -->
-				<!-- attributefilter="true" attributefield="contrat_validite" attributevalues="AUTORISÉ ÉCHÉANCE TARDIVE,AUTORISÉ ÉCHÉANCE N+10,AUTORISÉ ÉCHÉANCE N+5,AUTORISÉ ÉCHÉANCE N+2,AUTORISÉ ÉCHÉANCE N+1,AUTORISÉ ÉCHÉANCE DANS l'ANNÉE,ÉCHÉANCE DÉPASSÉE,ÉCHÉANCE RÉSILIÉE,LOT VACANT,OCCUPATION SANS TITRE"  attributelabel="Filtre par occupation" attributestylesync="false" attributefilterenabled="false" -->
-                <!-- style="bddom_validite_contrat,bddom_type_contrat,bddom_gestionnaire,bddom_transparent"  -->
-				<!-- stylesalias="Validité contrats,Type contrats,Gestionnaire,Transparent" -->
-				<!-- url="../geoserver-proxy/interne/wms"  -->
-				<!-- attribution="Région Bretagne"  -->
-				<!-- metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/43ce0e25-ef3c-4e88-a546-6197e1f84d99"  -->
-				<!-- metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=43ce0e25-ef3c-4e88-a546-6197e1f84d99"> -->
-                <!-- <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/port/templates/port.occupation_domaniale.mst"></template> -->
-            <!-- </layer> -->
             <layer id="occupation_domaniale_port" name="Occupations domaniales" visible="true" tiled="false" 
 				searchable="true" queryable="true" expanded="true"
                 infoformat="application/vnd.ogc.gml" featurecount="20"    

@@ -20,7 +20,8 @@
     showhelp="false"
     coordinates="false"
     measuretools="false"
-    togglealllayersfromtheme="false">
+    togglealllayersfromtheme="false"
+	stats="true" statsurl="../ws/kartenn/log.php" >
 </application>
 <extensions>
     <extension type="javascript" src="lib/chartjs-2.5.0/Chart.min.js" />

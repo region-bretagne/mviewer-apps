@@ -25,7 +25,8 @@
     showhelp="false"
     coordinates="true"
     measuretools="true"
-    togglealllayersfromtheme="false">
+    togglealllayersfromtheme="false"
+	stats="true" statsurl="../ws/kartenn/log.php" >
 </application>
 <mapoptions maxzoom="20" projection="EPSG:3857" center="-255516,6140243" zoom="8" />
 <proxy url='/proxy/?url='/>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <application id="rde" title="Réseau des développeurs économiques" logo="https://kartenn.region-bretagne.fr/img/logos/reseau_dev_eco.jpg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" exportpng="false" measuretools="false" legend="true" legendasimage="false" popup="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/rde/css/rde.css" stats="true" statsurl="../ws/kartenn/log.php" />
+    <mapoptions maxzoom="20" projection="EPSG:3857" center="-338989,6129383" zoom="9" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
+
+	<baselayers style="gallery">
+	
+        <baselayer  type="OSM" id="positron" label="Positron" title="CartoDb" thumbgallery="img/basemap/positron.png"
+			url="https://cartodb-basemaps-{a-c}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png" maxzoom="20" 
+			visible="true" attribution=" &lt;a href='https://www.openstreetmap.org/copyright'>OpenStreetMap&lt;/a>  &lt;a href='https://cartodb.com/attributions'>CartoDB &lt;/a>" />	
+		<baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="GéoPortail" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
+            url="https://wxs.ign.fr/essentiels/geoportail/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
+            attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+        <baselayer  type="WMTS" id="scan2" label="Cartes IGN" title="GéoPortail" maxscale="2000" thumbgallery="img/basemap/scan.jpg"
+            url="https://wxs.ign.fr/n9z1z601p7cucx2uk3ibe30a/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.MAPS" format="image/jpeg" visible="false" fromcapacity="false"
+            attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+
+	</baselayers>  
+    <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par l'API adresse.data.gouv.fr"/>
+    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="current" />
+    <searchparameters bbox="false" localities="true" features="true"/>
+	<extensions>
+        <extension type="component" id="filter" path="apps/region/rde/addons_tmp"/>
+	</extensions>
+	
+    <themes>
+        <theme name="Données"  collapsed="false" id="rde">
+		
+			<layer id="rde" name="Réseau des développeurs économiques"  visible="true" tiled="false" type="customlayer"
+                infoformat="application/vnd.ogc.gml" featurecount="100" queryable="true" exclusive="true" expanded="true" vectorlegend="true"
+                url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/rde/customlayers/rde.js"
+                attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/rde/documents_rde/&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Boîte à outils&lt;/button&gt;&lt;/a&gt;"
+				searchable="true" searchengine="fuse" fusesearchkeys="commune,intitule_sequence" fusesearchresult="{{commune}} - {{intitule_sequence}}" fusesearchthreshold="0.1"
+				metadata-csw=""
+				metadata="" >  
+
+            <!-- <layer id="rde" name="Ateliers" visible="true" tiled="false" namespace="rb" -->
+				<!-- searchable="true" queryable="true" infoformat="application/vnd.ogc.gml" -->
+				<!-- featurecount="50" -->
+				<!-- url="https://ows.region-bretagne.fr/geoserver/rb/wms"  -->
+				<!-- attributefilter="true" attributefield="annee" attributevalues="2018,2019,2020,2021,2022"  attributelabel="Année"  -->
+				<!-- style=""  -->
+				<!-- attribution="Région Bretagne"  -->
+				<!-- metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/d3679e5a-ad7b-4266-844c-3111e9ac118b" -->
+				<!-- metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=d3679e5a-ad7b-4266-844c-3111e9ac118b" >	    -->
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/rde/templates/rde.mst"></template> 
+            </layer>
+            <!-- <layer id="rde_temoin" name="Témoins EPCI" visible="false" tiled="false" namespace="rb" -->
+				<!-- queryable="true" infoformat="application/vnd.ogc.gml" -->
+				<!-- featurecount="20" -->
+				<!-- url="https://ows.region-bretagne.fr/geoserver/rb/wms"  -->
+				<!-- style=""  -->
+				<!-- attribution="Région Bretagne"  -->
+				<!-- metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b4dfff79-1156-48ad-900b-a47a3e5b4ba2" -->
+				<!-- metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b4dfff79-1156-48ad-900b-a47a3e5b4ba2" >	    -->
+				<!-- <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/rde/templates/temoin_rde.mst"></template>  -->
+            <!-- </layer> -->
+		    <layer id="contact_dev_eco" name="Contacts des développeurs économiques" visible="false" tiled="false" namespace="rb"
+				queryable="true" infoformat="application/vnd.ogc.gml"
+				featurecount="20"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				style="" 
+				attribution="Région Bretagne" 
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/4c8d85d8-93fa-420d-9cd4-b7b845710fc3"
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=4c8d85d8-93fa-420d-9cd4-b7b845710fc3" >	   
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/rde/templates/contact_dev_eco.mst"></template> 
+            </layer>
+			<layer id="epci" name="EPCI" visible="true" tiled="false"
+				queryable="false"
+                infoformat="application/vnd.ogc.gml" featurecount="5"
+				style="epci_region_fin" 
+				url="https://geobretagne.fr/geoserver/ign/wms" 
+				attribution="GéoBretagne" 
+				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/2298d744-49cb-4fcb-9487-26f916fecdff" 
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=2298d744-49cb-4fcb-9487-26f916fecdff" >	
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.epci.mst"></template>
+			</layer>
+            <layer id="bretagne_5" name="Bretagne à 5" visible="true" tiled="false" namespace="rb"
+				queryable="false" 
+				showintoc="false"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attribution="OSM" 
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72" >  
+            </layer>
+            <layer id="departement_metro" name="Département" visible="true" tiled="false" namespace="rb"
+				queryable="false"
+                showintoc="false"
+				url="https://geobretagne.fr/geoserver/ign/wms" 
+				style="bretagne_5_style" 
+				attribution="IGN - Admin Express" 
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/c8884cac-bc25-41a0-92d1-b6566c86066e"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c8884cac-bc25-41a0-92d1-b6566c86066e" >
+            </layer>
+		</theme>   
+		
+    </themes>
+    <styles>
+        <selectionstyle>
+            <point radius="12" fillcolor="26, 188, 156" opacity="0" strokecolor="26, 188, 156" strokewidth="4" />
+            <line opacity="0.6" strokecolor="26, 188, 156" strokewidth="8" />
+            <polygon fillcolor="26, 188, 156" opacity="0" strokecolor="26, 188, 156" strokewidth="4" />
+        </selectionstyle>
+        <subselectionstyle>
+            <point radius="12" fillcolor="175, 122, 197" opacity="0.5" strokecolor="175, 122, 197" strokewidth="4" />
+            <line opacity="0.8" strokecolor="175, 122, 197"  strokewidth="8" />
+            <polygon fillcolor="175, 122, 197" opacity="0.2" strokecolor="175, 122, 197" strokewidth="6" />
+        </subselectionstyle>
+    </styles>
+</config>

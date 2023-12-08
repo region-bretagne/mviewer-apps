@@ -4,7 +4,7 @@
 		logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/formation/img/QUALIF_Emploi_RB_RVB.jpg" 
 		help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" 
 		exportpng="true" legend="true" measuretools="false" legendasimage="false" popup="false" print="false" 
-		style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/formation/css/kartenn.css"/>
+		style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/formation/css/kartenn.css" stats="true" statsurl="../ws/kartenn/log.php" />
     <mapoptions maxzoom="20" projection="EPSG:3857" center="-255418,6120890" zoom="9" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery">           		
@@ -24,9 +24,7 @@
     <!--<elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="current"/>-->
     <searchparameters bbox="true" localities="true" features="false"/>
 	
-    <!--<extensions>    
-        <extension type="component" id="layerfilter" path="https://kartenn.region-bretagne.fr/kartoviz/demo/addons"/>
-    </extensions>-->
+  
     
 
     <themes>
@@ -258,7 +256,7 @@
 		    	   
 		    </layer>
 			
-			
+	
 			
 			
 			
@@ -316,6 +314,7 @@
 			</layer>
 
 		</theme>
+
     </themes>
     <styles>
         <selectionstyle>

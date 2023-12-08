@@ -136,7 +136,7 @@ mviewer.customControls.inventaire = (function() {
         init: function() {
             // mandatory - code executed when panel is opened
             if (!_collection) {
-                $.getJSON("apps/region/patrimoine/addons/recherche/collection.json", function(data){
+                $.getJSON("https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/addons/recherche/collection.json", function(data){
                     _collection = $.map(data, function(item){
                         return {value: item, nor:normalize(item)};
                     });

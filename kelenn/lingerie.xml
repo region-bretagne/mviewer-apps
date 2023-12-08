@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-	<application title="Carte des lingeries supports des lycées"
+	<application title="Lingeries supports des lycées"
 	             logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/img/rb_blanc.svg"
 	             help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/help.html"
 	             exportpng="false"
@@ -9,7 +9,8 @@
 	             legendasimage="false"
 	             popup="false"
 	             showhelp="false"
-	             style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/css/theme_ultra.css"/>
+	             style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/css/theme_ultra.css"
+				 stats="true" statsurl="../ws/kartenn/log.php" />
 	<mapoptions maxzoom="20"
 	            projection="EPSG:3857"
 	            center="-278279,6121469"

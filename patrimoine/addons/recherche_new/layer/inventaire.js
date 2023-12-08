@@ -27,7 +27,7 @@ mviewer.customLayers.inventaire = (function () {
             var properties = getProperties(item._source);
             var prop = {};
             if (item._type === "etude_patrimoine_simple") {
-                prop.source = "dossiers d'études complets";
+                prop.source = "dossier d'étude complet";
             } else {
                 prop.source = "recensement avant étude";
             }

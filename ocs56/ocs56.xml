@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
     <application title="Démonstrateur occupation du sol" logo="" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ocs56/aide.html" measuretools="true" exportpng="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ocs56/css/ocs.css" />    
-    <mapoptions maxzoom="19" projection="EPSG:3857" center="-304831,6056870" zoom="9" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
+    <mapoptions maxzoom="19" projection="EPSG:3857" center="-304831,6056870" zoom="9" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" stats="true" statsurl="../ws/kartenn/log.php" />
   
 	<baselayers style="gallery"><!-- style="default"||gallery" -->            		
 <!--         <baselayer  type="WMTS" id="ortho2" label="Photo aérienne ortho express" title="GéoPortail" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"

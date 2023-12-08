@@ -1,0 +1,44 @@
+{
+  "js": ["js/filter.js", "js/jquery.easyDrag.min.js"],
+  "css": "css/filter.css",
+  "html": "filter.html",
+  "target": "page-content-wrapper",
+  "options": {
+    "mviewer":{
+		"rde":{
+		  "tooltipPosition": "bottom-left",
+		  "title": "Filtrer",
+		  "open": true,
+		  "zoomOnFeatures": false,
+		  "legendTitle": "Année de l'atelier",
+		  "style": {
+			"border": "1px #e3c213 solid",
+			"background": "#FFFFFF",
+			"top": "50%",
+			"left": "260px",
+			"text": "#e3c213",
+			"unSelectedBtnColor": "#CCCCCC",
+			"textSelectBtnColor": "#FFFFFF",
+			"selectedBtnColor": "#EED969"
+		  },
+		  "layers": [{
+			"layerId": "rde",
+			  "downloadFormats":[
+				{ "label": "CSV", "format": "CSV" }
+								],
+			"filter": [{
+				"attribut": "annee",
+				"type": "button",
+				"label": "Année de l'atelier"
+			  },
+			  {
+				"attribut": "type_atelier",
+				"type": "button",
+				"label": "Type d'atelier"
+			  }
+			]
+		  }]
+		}
+    }
+  }
+}

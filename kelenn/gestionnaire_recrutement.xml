@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="Gestionnaires et assistant.e.s de recrutement dans les lycées" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/img/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/aide.html" exportpng="false" measuretools="true" legend="true" legendasimage="false" popup="false" showhelp="true" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme_ultra.css"/>
+    <application title="Gestionnaires et assistant.e.s de recrutement dans les lycées" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/img/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/aide.html" exportpng="false" measuretools="true" legend="true" legendasimage="false" popup="false" showhelp="true" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme_ultra.css" stats="true" statsurl="../ws/kartenn/log.php" />
     <mapoptions maxzoom="20" projection="EPSG:3857" center="-291072,6187119" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery">

@@ -61,7 +61,8 @@
     measuretools="false"
 	stats="true" 
 	statsurl="../ws/kartenn/log.php"
-    togglealllayersfromtheme="false">
+    togglealllayersfromtheme="false"
+	>
 </application>
 <mapoptions maxzoom="20" projection="EPSG:3857" center="-220750.13768758904,6144925.57790189" zoom="8" />
 <searchparameters bbox="false" localities="false" features="false" static="false"/>

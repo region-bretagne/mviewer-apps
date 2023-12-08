@@ -11,7 +11,7 @@
 </rdf:Description>
 </rdf:RDF>
 </metadata>
-<application title=" " logo="" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme.css" exportpng="false" showhelp="false" coordinates="false" measuretools="false" togglealllayersfromtheme="false" hideprotectedlayers="false">
+<application title="Territoires" logo="" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/css/theme.css" exportpng="false" showhelp="false" coordinates="false" measuretools="false" togglealllayersfromtheme="false" hideprotectedlayers="false" stats="true" statsurl="../ws/kartenn/log.php" >
 </application>
 <mapoptions maxzoom="20" projection="EPSG:3857" center="-292004.84710459685,6141956.584967648" zoom="8"/>
 <proxy url="../proxy/?url="/>

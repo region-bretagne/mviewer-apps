@@ -1,12 +1,12 @@
 {{#features}}
 	<li class="item" id="{{feature_ol_uid}}">
-		<h2 class="rb-title-feature">Sous station</h2><br>
+		<h2 class="rb-title-feature">SOUS-STATION</h2><br>
 		<p class="rb-text-feature">		
 			<!-- <b>Code batiment : </b> {{ascol_sst_bat_code}}<br> -->
-			<b>Code : </b> {{ascol_sst_install_code}}<br>
+			<b>Code :  {{ascol_sst_install_code}}</b><br><br>
+			
 			<b>Distribution : </b> {{ascol_sst_distribution}}<br>
 			<b>Sources :  </b> {{ascol_sst_sources}}<br>
-			<b>Date intégration </b> {{ascol_sst_dt_integration}}<br>
 		</p>
 	</li>
 {{/features}}

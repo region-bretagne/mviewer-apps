@@ -8,7 +8,7 @@
 			<b>Reseau etablissement :</b><br> {{reseau_etablissement}}<br>
 			<b>Année ouverture :</b> {{annee_ouverture}}<br>
 			<b>Surface cadastrée :</b> {{surface_cadastree}} m²<br>
-			<b>Surface totale :</b> {{surface_totale}} m²<br>
+			<b>Surface de plancher :</b> {{surface_totale}} m²<br>
 			<b>Classement radon :</b> {{classement_radon}}<br>
 			<b>EMAT :</b> {{emat}}<br>
 			<b>Numéro comptable :</b> {{numero_comptable}}<br>

@@ -1,5 +1,5 @@
 <config>
-    <application title="Equipements sportifs des lycées rennais" logo="" help="" showhelp="" style="css/themes/nephritis.css" exportpng="false" measuretools="false" />
+    <application title="Equipements sportifs des lycées rennais" logo="" help="" showhelp="" style="css/themes/nephritis.css" exportpng="false" measuretools="false" stats="true" statsurl="../ws/kartenn/log.php" />
     <mapoptions maxzoom="20" projection="EPSG:3857" center="-185344,6126292" zoom="13" />
     <searchparameters localities="false" features="true" bbox="false"/>
     <baselayers style="default">

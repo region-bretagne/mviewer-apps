@@ -9,7 +9,7 @@
 			<b>Fonction principale :</b> {{fonction_principale}}<br>
 			<b>Année de construction :</b> {{annee_construction}}<br>
 			<b>Surface d'emprise :</b> {{surface_emprise}} m²<br>
-			<b>Nombre de niveau :</b> {{nb_niv}}<br>
+			<b>Nombre de niveaux :</b> {{nb_niv}}<br>
 			<b>Surface de plancher :</b> {{surface_bati}} m²<br>
 			<!-- <b>Fonction primaire :</b> {{fonction_primaire}}<br> -->
 			<!-- <b>Fonctions présentes :</b> {{fonction_presente}}<br> -->

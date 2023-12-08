@@ -21,7 +21,8 @@
 		showhelp="true"
 		coordinates="false"
 		measuretools="false"
-		togglealllayersfromtheme="false"/>
+		togglealllayersfromtheme="false"
+		stats="true" statsurl="../ws/kartenn/log.php" />
 	<mapoptions maxzoom="20"
 	            projection="EPSG:3857"
 	            center="-255418,6120890"
@@ -44,29 +45,12 @@
 		<baselayer visible="true" id="osm_gge" thumbgallery="img/basemap/osmGGE.png" title="OpenStreetMap GéoGrandEst" label="OpenStreetMap GéoGrandEst" type="WMS" 
 			url="https://osm.datagrandest.fr/mapcache/?" layers="grey" format="image/png" 
             attribution="DataGrandEst. Données : les contributeurs d'&lt;a href='https://www.openstreetmap.org/' target='_blank'>OpenStreetMap &lt;/a>,  &lt;a href='https://www.openstreetmap.org/copyright' target='_blank'>ODbL &lt;/a>"/>
-		<baselayer visible="false"
-		           id="ortho1"
-		           thumbgallery="img/basemap/ortho.jpg"
-		           title="GéoBretagne"
-		           label="Photo aérienne actuelle"
-		           type="WMTS"
-		           url="https://tile.geobretagne.fr/gwc02/service/wmts"
-		           layers="satellite"
-		           format="image/png"
-		           style="_null"
-		           matrixset="EPSG:3857"
-		           fromcapacity="false"
-		           attribution="&lt;a href=&quot;https://applications.region-bretagne.fr/geonetwork/?uuid=3a0ac2e3-7af1-4dec-9f36-dae6b5a8c731&quot; target=&quot;_blank&quot; &gt;partenaires GéoBretagne - IGN RGE BD ORTHO - PlanetObserver&lt;/a&gt;"/>
-		<baselayer visible="false"
-		           id="osm_google"
-		           thumbgallery="img/basemap/osm_google.png"
-		           title="GéoBretagne"
-		           label="OpenStreetMap"
-		           type="WMS"
-		           url="https://osm.geobretagne.fr/gwc01/service/wms"
-		           layers="osm:google"
-		           format="image/png"
-		           attribution="GéoBretagne. Données : les contributeurs d'&lt;a href=&quot;https://www.openstreetmap.org/&quot; target=&quot;_blank&quot;&gt;OpenStreetMap &lt;/a&gt;,  &lt;a href=&quot;https://www.openstreetmap.org/copyright&quot; target=&quot;_blank&quot;&gt;ODbL &lt;/a&gt;"/>
+        <baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="GéoPortail" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
+            url="https://wxs.ign.fr/essentiels/geoportail/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
+            attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+        <baselayer  type="OSM" id="positron" label="Positron" title="CartoDb" thumbgallery="img/basemap/positron.png" 
+			url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" maxzoom="20" 
+			visible="true" attribution="Map tiles by  &lt;a href='https://cartodb.com/attributions'>CartoDb &lt;/a>, under  &lt;a href='https://creativecommons.org/licenses/by/3.0/'>CC BY 3.0 &lt;/a>" />
 	</baselayers>
 	<themes mini="false">
 		<theme id="demo"
@@ -106,7 +90,7 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/demographie_sexe.mst"/>
 			</layer>
 			<layer id="iris_qpv_demographie"
-			       name="Part de femmes parmis les ménages seuls"
+			       name="Part de femmes parmi les ménages seuls"
 			       type="wms"
 			       tiled="true"
 				   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/3241d624-b1c1-4f42-a069-0dfce74ea1c3"
@@ -161,7 +145,7 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/demographie_csp.mst"/>
 			</layer>
 			<layer id="iris_qpv_cnam"
-			       name="Part de bénéficiaires de la C2S dans la population générale"
+			       name="Part de bénéficiaires de la C2S dans la population couverte bénéficiaire du régime général"
 			       type="wms"
 			       tiled="true"
 			       exclusive="true"
@@ -283,7 +267,7 @@
 		       collapsed="true"
 		       icon="fas fa-caret-right">
 			<layer id="iris_qpv_offre_soin"
-			       name="Densité de professionnel de santé libéraux en soins de premier recours pour 100 000 hab."
+			       name="Densité de professionnels de santé libéraux et de structures en soins primaires  pour 100 000 hab."
 			       style="iris_qpv_soin_primaire"
 			       type="wms"
 			       tiled="true"
@@ -317,7 +301,7 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/offre_soin_pediatre.mst"/>
 			</layer>
 			<layer id="iris_qpv_offre_soin"
-			       name="Densité de professionnel de santé en second recours pour 100 000 hab."
+			       name="Densité de professionnels de santé libéraux et de structures en second recours pour 100 000 hab."
 			       style="iris_qpv_second_recours"
 			       type="wms"
 			       tiled="true"
@@ -337,7 +321,7 @@ Les indicateurs portent sur les praticiens exerçant leur activité principale e
 			</layer>
 		</theme>
 		<theme id="iris_qpv_recours_soin"
-		       name="Recours aux soins"
+		       name="Recours aux soins libéraux"
 		       collapsed="true"
 		       icon="fas fa-caret-right">
 			<layer id="iris_qpv_recours"
@@ -415,25 +399,25 @@ Il s'agit d'un indicateur calculé par l'ORS Bretagne ; le sigle « &lt;a href=&
 			       infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/tx_std_mamdo_5074.mst"/>
 			</layer>
-			<layer id="iris_qpv_recours"
-			       name="Recours à un gynécologue lors d'une grossesse"
-			       style="iris_qpv_tx_std_gyngro_1549"
-			       type="wms"
-			       tiled="true"
-				   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/36e2eb4c-4118-4f67-ad6d-6331ad665790"
-				   metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=36e2eb4c-4118-4f67-ad6d-6331ad665790"
-			       exclusive="true"
-			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
-			       visible="true"
-				   expanded="true"
-			       infoformat="application/vnd.ogc.gml"
-			       attribution="Taux standardisés de recours à un gynécologue libéral dans le cadre d'un suivi de grossesse pour 1 000 bénéficiaires du régime général de l'assurance maladie âgées de 15 à 49 ans.
-Il s'agit d'un indicateur calculé par l'ORS Bretagne. 
-&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2021)."
-			       queryable="true"
-			       infopanel="bottom-panel">
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/tx_std_gyngro_1549.mst"/>
-			</layer>
+			<!-- <layer id="iris_qpv_recours" -->
+			       <!-- name="Recours à un gynécologue lors d'une grossesse" -->
+			       <!-- style="iris_qpv_tx_std_gyngro_1549" -->
+			       <!-- type="wms" -->
+			       <!-- tiled="true" -->
+				   <!-- metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/36e2eb4c-4118-4f67-ad6d-6331ad665790" -->
+				   <!-- metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=36e2eb4c-4118-4f67-ad6d-6331ad665790" -->
+			       <!-- exclusive="true" -->
+			       <!-- url="https://ows.region-bretagne.fr/geoserver/rb/ows?" -->
+			       <!-- visible="true" -->
+				   <!-- expanded="true" -->
+			       <!-- infoformat="application/vnd.ogc.gml" -->
+			       <!-- attribution="Taux standardisés de recours à un gynécologue libéral dans le cadre d'un suivi de grossesse pour 1 000 bénéficiaires du régime général de l'assurance maladie âgées de 15 à 49 ans. -->
+<!-- Il s'agit d'un indicateur calculé par l'ORS Bretagne.  -->
+<!-- &lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2021)." -->
+			       <!-- queryable="true" -->
+			       <!-- infopanel="bottom-panel"> -->
+				<!-- <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/tx_std_gyngro_1549.mst"/> -->
+			<!-- </layer> -->
 			<layer id="iris_qpv_recours"
 			       name="Recours à un gynécologue hors grossesse"
 			       style="tx_std_gynmed_15"
@@ -453,7 +437,7 @@ Il s'agit d'un indicateur calculé par l'ORS Bretagne.
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/tx_std_gynmed_15.mst"/>
 			</layer>			
 			<layer id="iris_qpv_recours"
-			       name="Non recours aux soins généralistes"
+			       name="Non recours aux soins"
 			       style="iris_qpv_p_nrec_soin"
 			       type="wms"
 			       tiled="true"
@@ -464,7 +448,7 @@ Il s'agit d'un indicateur calculé par l'ORS Bretagne.
 			       visible="true"
 				   expanded="true"
 			       infoformat="application/vnd.ogc.gml"
-			       attribution="Poids du non recours à tous types de soins. Il s'agit d'un indicateur calculé pour l'ORS Bretagne. 
+			       attribution="Poids du non recours à tous types de soins. 
 &lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2021)."
 			       queryable="true"
 			       infopanel="bottom-panel">
@@ -483,7 +467,7 @@ Il s'agit d'un indicateur calculé par l'ORS Bretagne.
 				   expanded="true"
 			       infoformat="application/vnd.ogc.gml"
 			       attribution="Taux standardisés de recours à un psychiatre pour 1 000 bénéficiaires du régime général de l'assurance maladie âgés de 15 ans et plus. Il s'agit d'un indicateur calculé par l'ORS Bretagne 
-&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2021)."
+&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d’information régional de l’assurance maladie - Base Erasme des affiliés au régime général 2021."
 			       queryable="true"
 			       infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/tx_std_psy_15plus.mst"/>
@@ -501,7 +485,7 @@ Il s'agit d'un indicateur calculé par l'ORS Bretagne.
 				   expanded="true"
 			       infoformat="application/vnd.ogc.gml"
 			       attribution="Poids des bénéficiaires sans consultation dentaire. Il s'agit d'un indicateur calculé par l'ORS Bretagne. 
-&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2021). "
+&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d’information régional de l’assurance maladie - Base Erasme des affiliés au régime général 2021. "
 			       queryable="true"
 			       infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/p_nrec_dent.mst"/>	
@@ -518,7 +502,7 @@ Il s'agit d'un indicateur calculé par l'ORS Bretagne.
 			       visible="true"
 				   expanded="true"
 			       infoformat="application/vnd.ogc.gml"
-			       attribution="ORS Bretagne  - Poids du non recours à la mammographie (femmes 50-74 ans)"
+			       attribution="Poids du non recours à la mammographie (femmes 50-74 ans)"
 			       queryable="true"
 			       infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/p_nrec_mam.mst"/>	
@@ -535,7 +519,7 @@ Il s'agit d'un indicateur calculé par l'ORS Bretagne.
 			       visible="true"
 				   expanded="true"
 			       infoformat="application/vnd.ogc.gml"
-			       attribution="ORS Bretagne - Poids du recours à des soins non programmés"
+			       attribution="Poids du recours à des soins non programmés"
 			       queryable="true"
 			       infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/p_rec_npgm.mst"/>	

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<application
+    title="Comparaison MOS 2011-2021 Swipe"
+    logo=""
+    help=""
+    style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/mos/css/mos.css"
+    exportpng="false"
+    showhelp="false"
+    coordinates="false"
+    measuretools="false"
+    togglealllayersfromtheme="false"
+	stats="true" statsurl="../ws/kartenn/log.php" >
+</application>
+<olscompletion type="ban" url="https://api-adresse.data.gouv.fr/search/" attribution="Base adresse nationale (BAN)" />
+<searchparameters bbox="false" localities="true" features="false" static="false"/>
+<mapoptions maxzoom="20" projection="EPSG:3857" center="-230072,6204699" zoom="14" />
+<baselayers style="default">
+		<baselayer  type="WMTS" id="plan" label="Plan IGN" title="GéoPortail" maxscale="2000" thumbgallery="img/basemap/plan_ign.png" opacity="0.4"
+            url="https://wxs.ign.fr/decouverte/geoportail/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2" format="image/png" visible="true" fromcapacity="false"
+            attribution="&lt;a href='https://geoservices.ign.fr/services-web-essentiels/' target='_blank'>&lt;img src='https://geoservices.ign.fr/themes/custom/ignpro/logo.svg' width=100px>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+			
+		<baselayer  visible="false" type="WMS" id="mos" label="MOS 2021"   title="MOS" thumbgallery="img/basemap/ir.jpg"
+            url="https://geobretagne.fr/geoserver/geobretagne/ows"   layers="geobretagne:mos" format="image/jpeg" style="geobretagne:mos_2021" matrixset="EPSG:3857"
+              attribution="&lt;a href='https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=434b82a8-8d3c-4d9f-9eb3-0485f1a63eb6' target='_blank' >partenaires GéoBretagne - IGN RGE BD ORTHO - PlanetObserver&lt;/a>" />
+	
+</baselayers>
+<themes mini="true" legendmini="true">
+	<theme name="Outils"  collapsed="true" id="swipe" icon="fas fa-cog">
+        <layer id="swipe" name="[SWIPE] image satellite" visible="true" queryable="false"
+            type="customlayer"
+            legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/mos/control/swipe.png"
+            customcontrolpath="https://kartenn.region-bretagne.fr/kartoviz/apps/region/mos/control"
+            opacity="1"
+            url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/mos/layer/swipe.js"
+            customcontrol="true"
+            expanded="true"
+            attribution="&lt;a href=&quot;https://geobretagne.fr/&quot; target=&quot;_blank&quot;&gt;&amp;copy; GéoBretagne&lt;/a&gt;"
+            metadata=""
+            metadata-csw="">
+        </layer>
+    </theme>
+
+
+	<theme name="Modèle d'occupation des sols"  collapsed="false" id="demo" icon="fas fa-cog">	
+		<layer id="mos" name="MOS - 2011" type="wms" url="https://geobretagne.fr/geoserver/geobretagne/ows" 
+		scalemin="0"
+		scalemax="70000" 
+		tiled="true" 
+		exclusive="true"
+		style="mos_2011"
+		visible="true"
+		infoformat="application/vnd.ogc.gml" 
+		fields="nom_commun,num_parc,lib4_2011,lib4_2021"
+		aliases="Commune,N° de parcelle,Type d'occupation en 2011,Type d'occupation en 2021"
+		opacity="1"
+		attribution=" "
+		metadata="" metadata-csw="" queryable="true">
+        </layer>
+    </theme>
+
+</themes>
+</config>

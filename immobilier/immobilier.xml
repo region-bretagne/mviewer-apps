@@ -4,7 +4,7 @@
 		<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 		         xmlns:dc="http://purl.org/dc/elements/1.1/">
 			<rdf:Description rdf:about="http://www.ilrt.bristol.ac.uk/people/cmdjb/">
-				<dc:title>Lycées gérés par la Région Bretagne !!! Test !!!</dc:title>
+				<dc:title>Patrimoine immobilier de la région Bretagne</dc:title>
 				<dc:creator>anonymous</dc:creator>
 				<dc:publisher>anonymous</dc:publisher>
 				<dc:subject>Lycées</dc:subject>
@@ -20,7 +20,8 @@
 		 showhelp="false"
 		 coordinates="false"
 		 measuretools="true"
-		 togglealllayersfromtheme="true"/>
+		 togglealllayersfromtheme="true"
+		 stats="true" statsurl="../ws/kartenn/log.php"/>
 	<mapoptions maxzoom="20"
 	            projection="EPSG:3857"
 	            center="-319361.60370307823,6126930.683325168"
@@ -40,36 +41,15 @@
 		<baselayer  type="WMTS" id="plan" label="Plan IGN" title="GéoPortail" maxscale="2000" thumbgallery="img/basemap/plan_ign.png" opacity="0.6"
             url="https://wxs.ign.fr/decouverte/geoportail/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2" format="image/png" visible="true" fromcapacity="false"
             attribution="&lt;a href='https://geoservices.ign.fr/services-web-essentiels/' target='_blank'>&lt;img src='https://geoservices.ign.fr/themes/custom/ignpro/logo.svg' width=100px>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
-		
-		<baselayer
-			visible="false"
-			id="osm_default"
-			thumbgallery="img/basemap/osm_google.png"
-			title="GéoBretagne"
-			label="OpenStreetMap GéoBretagne"
-			type="WMTS"
-			url="https://osm.geobretagne.fr/gwc01/service/wmts"
-			matrixset="EPSG:3857"
-			fromcapacity="false"
-			opacity="1"
-			layers="osm:map"
-			format="image/png"
-			attribution="GéoBretagne. Données : les contributeurs d'&lt;a href='https://www.openstreetmap.org/' target='_blank'&gt;OpenStreetMap &lt;/a&gt;, &lt;a href='https://www.openstreetmap.org/copyright' target='_blank'&gt;ODbL &lt;/a&gt;"/>    
-
-		<baselayer visible="false"
-		           id="positron"
-		           thumbgallery="img/basemap/positron.png"
-		           title="CartoDb"
-		           label="Positron"
-		           type="OSM"
-		           url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png"
-		           attribution="Map tiles by  &lt;a href=&quot;https://cartodb.com/attributions&quot;&gt;CartoDb&lt;/a&gt;, under  &lt;a href=&quot;https://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY 3.0 &lt;/a&gt;"/>
+		<baselayer visible="false" id="osm_grey" thumbgallery="https://tile.geobretagne.fr/osm/tms/osm:grey/EPSG3857/16/64287/85957.png" title="OpenStreetMap Grey" label="OpenStreetMap Grey" type="WMTS" 
+			url="https://tile.geobretagne.fr/osm/service" layers="osm:grey" format="image/png" matrixset="PM" fromcapacity="false" style="_null"
+            attribution="GéoBretagne. Données : les contributeurs d'&lt;a href='https://www.openstreetmap.org/' target='_blank'>OpenStreetMap &lt;/a>,  &lt;a href='https://www.openstreetmap.org/copyright' target='_blank'>ODbL &lt;/a>"/>
         <baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="GéoPortail" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
             url="https://wxs.ign.fr/essentiels/geoportail/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
             attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
 	</baselayers>
 	<themes mini="false"
-	        legendmini="true">
+	        legendmini="false">
 		<theme id="lycee"
 		       name="Lycées"
 		       collapsed="true"
@@ -117,7 +97,7 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/lycee_cha.mst"/>
 			</layer>
 			<layer id="lycee_sousstation_ascol"
-			       name="Sous stations"
+			       name="Sous-stations"
 			       type="wms"
 				   style="lycee_sousstation"
 			       visible="true"
@@ -142,11 +122,24 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/"/>
 			</layer>
 			<layer id="lycee_batiment"
+			       name="D.A.A.T"
+			       type="wms"
+			       visible="false"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       infoformat="application/vnd.ogc.gml"
+			       queryable="false"
+				   style="lycee_amiante_daat"
+			       infopanel="right-panel"
+			       scalemin="0"
+			       scalemax="10000">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/"/>
+			</layer>
+			<layer id="lycee_batiment2"
 			       name="Bâtiments"
 			       type="customlayer"
-			       url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/customlayers/lycee_batiment.js"
+			       url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/customlayers/lycee_batiment2.js"
 			       tooltip="true"
-			       tooltipcontent=" {{nom_batiment}}"
+			       tooltipcontent=" {{lib_batiment}}"
 			       vectorlegend="true"
 			       visible="true"
 			       infoformat="application/vnd.ogc.gml"
@@ -221,7 +214,7 @@
 				queryable="true"
 				secure="public"
 				infopanel="right-panel">
-					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/gestion_immo/templates/batiment_site_region.mst"></template> 
+					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/batiment_site_region.mst"></template> 
 			</layer> 
 		</theme>
 
@@ -240,6 +233,13 @@
                 nohighlight="false"
                 metadata=""
                 metadata-csw="">
+            </layer>
+            <layer id="cad2" name="Cadastre complet" visible="false" queryable="false" expanded="true"
+                type="customlayer" opacity="0.8" legendurl="img/blank.gif" showintoc="false"
+                url="https://kartenn.region-bretagne.fr/kartoviz/demo/cad/layer2.js"
+                attribution="Source: DGFIP. Cette couche affiche le cadastre de la commune sélectionnée dans le panneau &lt;strong&gt;Sélection parcellaire&lt;/strong&gt;"
+                metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/8728b29d-267e-4d31-bad7-de528ba9c899"
+                metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=8728b29d-267e-4d31-bad7-de528ba9c899" >	
             </layer>
 			 <layer id="CP.CadastralBuilding" name="Bâti" scalemin="0" scalemax="20000" visible="false" tiled="false"
 				queryable="false" fields="" aliases=""
