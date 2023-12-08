@@ -1,47 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application panelstate="open" title="Test données IGN" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/global_help.html" exportpng="true" legend="true" measuretools="true" legendasimage="false" popup="false" print="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/css/theme_global.css" />
+    <application panelstate="open" title="Réutilisation données IGN" logo="" help="" exportpng="true" legend="true" measuretools="true" legendasimage="false" popup="false" print="false" style="css/themes/default.css" />
     <mapoptions maxzoom="18" projection="EPSG:3857" center="-255516,6140243" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery"><!-- style="default"||gallery" -->     
-	<baselayer visible="false" id="osm_google" 
-	thumbgallery="img/basemap/osm_google.png" title="GéoBretagne" 
-	label="OpenStreetMap" type="WMS" 
-	url="https://osm.geobretagne.fr/gwc01/service/wms" layers="osm:google" 
-	format="image/png" attribution=""  ></baselayer>
-    <baselayer visible="false" id="positron" 
-	thumbgallery="img/basemap/positron.png" title="CartoDb" label="Positron" 
-	type="OSM" url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" attribution=""  ></baselayer>    
-
         <baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="GéoPortail" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
-            url="https://wxs.ign.fr/essentiels/geoportail/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
-            attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
-        <baselayer  type="WMTS" id="scan2" label="Cartes IGN" title="GéoPortail" maxscale="2000" thumbgallery="img/basemap/scan.jpg" opacity="0.8"
-            url="https://wxs.ign.fr/n9z1z601p7cucx2uk3ibe30a/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.MAPS" format="image/jpeg" visible="false" fromcapacity="false"
-            attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+            url="https://data.geopf.fr/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
+            attribution="&lt;a href='https://geoservices.ign.fr/services-geoplateforme-diffusion' target='_blank'>&lt;img src='img/basemap/geoservices.png'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
         <baselayer  type="WMTS" id="plan" label="Plan IGN" title="GéoPortail" maxscale="2000" thumbgallery="img/basemap/plan_ign.png" opacity="0.8"
-            url="https://wxs.ign.fr/decouverte/geoportail/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2" format="image/png" visible="true" fromcapacity="true"
-            attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+            url="https://data.geopf.fr/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2" format="image/png" visible="true" fromcapacity="false"
+            attribution="&lt;a href='https://geoservices.ign.fr/services-geoplateforme-diffusion' target='_blank'>&lt;img src='img/basemap/geoservices.png'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
         <baselayer  type="WMTS" id="rpg2020" label="RPG2020" title="RPG2020" thumbgallery="img/basemap/rpg.png" 
-            url="https://wxs.ign.fr/agriculture/geoportail/wmts" layers="LANDUSE.AGRICULTURE2020" format="image/png" visible="false" fromcapacity="false"
-            attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+            url="https://data.geopf.fr/wmts" layers="LANDUSE.AGRICULTURE2020" format="image/png" visible="false" fromcapacity="false"
+            attribution="&lt;a href='https://geoservices.ign.fr/services-geoplateforme-diffusion' target='_blank'>&lt;img src='img/basemap/geoservices.png'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
         <baselayer  type="WMTS" id="slopes" label="Elevation" title="Elevation" thumbgallery="img/basemap/elevation.png" 
-            url="https://wxs.ign.fr/altimetrie/geoportail/wmts" layers="ELEVATION.SLOPES" format="image/jpeg" visible="false" fromcapacity="false"
-            attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
-		<baselayer visible="false" label="Costel 2005" thumbgallery="https://geobretagne.fr/mviewer/img/basemap/ir.jpg" title="Occupation des sols en Bretagne en 2005 - COSTEL" id="costel_2005_dreal" styleurl="" style="Costel_raster" layers="costel:costel_2005_dreal" attribution="GéoBretagne" format="image/png" url="https://geobretagne.fr/geoserver/gwc/service/wmts" type="WMTS"  ></baselayer>  
+            url="https://data.geopf.fr/wmts" layers="ELEVATION.SLOPES" format="image/jpeg" visible="false" fromcapacity="false"
+            attribution="&lt;a href='https://geoservices.ign.fr/services-geoplateforme-diffusion' target='_blank'>&lt;img src='img/basemap/geoservices.png'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
     </baselayers> 
-    <olscompletion url="https://wxs.ign.fr/essentiels/ols/apis/completion" type="geoportail" attribution="IGN"/>
-    <searchparameters bbox="true" localities="true" features="true"/>
+    <olscompletion url="https://data.geopf.fr/geocodage/completion" type="IGN" attribution="IGN"/>
+    <searchparameters bbox="false" localities="false" features="false"/>
 
     <extensions>    
-        <extension type="component" id="isochroneAddon" path="https://kartenn.region-bretagne.fr/kartoviz/demo/addons"/>
+        <extension type="component" id="isochroneAddon" path="demo/addons"/>
     </extensions>
     <themes>
         <theme name="Géodésie"  id="geodesie" collapsed="false" icon="fas fa-caret-right">
-			<layer id="BDGEODESIQUE-RN_BDD-POI_WLD" name="Repère géodésique" visible="false" tiled="false"
+			<layer id="BDGEODESIQUE-RN_BDD-POI_WLD" name="Repère géodésique" visible="true" tiled="false"
 				queryable="true" 
                 infoformat="text/html" featurecount="5"                
-				url="https://wxs.ign.fr/geodesie/geoportail/v/wms" 
+				url="https://data.geopf.fr/wms-v/ows" 
 				attribution="IGN" 
 				metadata="https://geoservices.ign.fr/sites/default/files/2021-07/IGNF_DONNEES_GEODESIQUES.html"
 				metadata-csw="" />	
@@ -50,7 +37,7 @@
 			<layer id="LANDUSE.AGRICULTURE2020" name="RPG2020" visible="false" tiled="true"
 				queryable="true" 
                 infoformat="text/html" featurecount="5"                
-				url="https://wxs.ign.fr/agriculture/geoportail/r/wms" 
+				url="https://data.geopf.fr/wms-r/wms" 
 				attribution="IGN" 
 				metadata=""
 				metadata-csw="" />	
@@ -59,7 +46,7 @@
 			<layer id="PROTECTEDAREAS.RN" name="RN" visible="false" tiled="true"
 				queryable="true" 
                 infoformat="text/html" featurecount="5"                
-				url="https://wxs.ign.fr/environnement/geoportail/r/wms" 
+				url="https://data.geopf.fr/wms-r/wms" 
 				attribution="IGN" 
 				metadata=""
 				metadata-csw="" />	
@@ -69,14 +56,11 @@
 				queryable="true" 
                 infoformat="text/html" featurecount="5" 
 				tooltip="true"	tooltipcontent="{{nom}}"				
-				url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/tmp/customlayers/pnr.js" 
+				url="customlayers/pnr_ign.js" 
 				attribution="IGN" 
 				metadata=""
 				metadata-csw="" />	
 		</theme>
-		<theme id="gpu" url="https://geobretagne.fr/apps/gpu/config.xml" name="Documents d'urbanisme" collapsed="true" icon="fas fa-caret-right"> 
-		</theme> 
 
     </themes>
 </config>
-				<!--sld="https://kartenn.region-bretagne.fr/styles/test_geodesie.sld"-->

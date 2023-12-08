@@ -17,7 +17,7 @@
 <mapoptions maxzoom="20" projection="EPSG:3857" center="-230072,6204699" zoom="14" />
 <baselayers style="default">
 		<baselayer  type="WMTS" id="plan" label="Plan IGN" title="GéoPortail" maxscale="2000" thumbgallery="img/basemap/plan_ign.png" opacity="0.4"
-            url="https://wxs.ign.fr/decouverte/geoportail/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2" format="image/png" visible="true" fromcapacity="false"
+            url="https://data.geopf.fr/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2" format="image/png" visible="true" fromcapacity="false"
             attribution="&lt;a href='https://geoservices.ign.fr/services-web-essentiels/' target='_blank'>&lt;img src='https://geoservices.ign.fr/themes/custom/ignpro/logo.svg' width=100px>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
 			
 		<baselayer  visible="false" type="WMS" id="mos" label="MOS 2021"   title="MOS" thumbgallery="img/basemap/ir.jpg"

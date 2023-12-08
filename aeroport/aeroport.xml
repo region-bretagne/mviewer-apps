@@ -36,9 +36,9 @@
 <baselayers style="default"> 
     <baselayer visible="false" id="positron" thumbgallery="img/basemap/positron.png" title="CartoDb" label="Positron" type="OSM" url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" attribution="Map tiles by  &lt;a href=&quot;https://cartodb.com/attributions&quot;&gt;CartoDb&lt;/a&gt;, under  &lt;a href=&quot;https://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY 3.0 &lt;/a&gt;"  ></baselayer> 
 	
-    <baselayer visible="true" id="plan_ign" thumbgallery="img/basemap/scan-express.jpg" title="IGN" label="Plan IGN v2" type="WMTS" url="https://wxs.ign.fr/choisirgeoportail/geoportail/wmts?" layers="GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2" format="image/png" fromcapacity="false" attribution="&lt;a href='https://geoservices.ign.fr' target='_blank'&gt;&lt;img src='https://geoservices.ign.fr/images/logoIGN.png'&gt;&lt;/a&gt;" style="normal" matrixset="PM" maxzoom="22" opacity="0.5"  ></baselayer> 
+    <baselayer visible="true" id="plan_ign" thumbgallery="img/basemap/scan-express.jpg" title="IGN" label="Plan IGN v2" type="WMTS" url="https://data.geopf.fr/wmts?" layers="GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2" format="image/png" fromcapacity="false" attribution="&lt;a href='https://geoservices.ign.fr' target='_blank'&gt;&lt;img src='https://geoservices.ign.fr/images/logoIGN.png'&gt;&lt;/a&gt;" style="normal" matrixset="PM" maxzoom="22" opacity="0.5"  ></baselayer> 
 	
-    <baselayer visible="false" id="ortho_ign" thumbgallery="img/basemap/ortho.jpg" title="IGN" label="Photographies aériennes IGN" type="WMTS" url="https://wxs.ign.fr/choisirgeoportail/geoportail/wmts?" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" fromcapacity="false" attribution="&lt;a href='https://geoservices.ign.fr' target='_blank'&gt;&lt;img src='https://geoservices.ign.fr/images/logoIGN.png'&gt;&lt;/a&gt;" style="normal" matrixset="PM" maxzoom="22"  ></baselayer> 
+    <baselayer visible="false" id="ortho_ign" thumbgallery="img/basemap/ortho.jpg" title="IGN" label="Photographies aériennes IGN" type="WMTS" url="https://data.geopf.fr/wmts?" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" fromcapacity="false" attribution="&lt;a href='https://geoservices.ign.fr' target='_blank'&gt;&lt;img src='https://geoservices.ign.fr/images/logoIGN.png'&gt;&lt;/a&gt;" style="normal" matrixset="PM" maxzoom="22"  ></baselayer> 
 </baselayers>
 
 <authentification url="who" loginurl="?login" logouturl="../logout" enabled="true"/>
@@ -160,7 +160,7 @@
             id="MESURES_COMPENSATOIRES"
             name="Mesures compensatoires"
             type="wms"
-            url="https://wxs.ign.fr/environnement/geoportail/v/wms?"
+            url="https://data.geopf.fr/wms-v/wms"
             infoformat="application/vnd.ogc.gml"
             queryable="true"
 			featurecount='20'

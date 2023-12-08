@@ -18,7 +18,7 @@
 
 <baselayers style="gallery">
 		<baselayer  type="WMTS" id="plan" label="Plan IGN" title="GéoPortail" maxscale="2000" thumbgallery="img/basemap/plan_ign.png" opacity="0.4"
-            url="https://wxs.ign.fr/decouverte/geoportail/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2" format="image/png" visible="true" fromcapacity="false"
+            url="https://data.geopf.fr/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2" format="image/png" visible="true" fromcapacity="false"
             attribution="&lt;a href='https://geoservices.ign.fr/services-web-essentiels/' target='_blank'>&lt;img src='https://geoservices.ign.fr/themes/custom/ignpro/logo.svg' width=100px>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
 		<baselayer  type="WMS" id="rapideye" label="Rapide Eye 2011" title="RapidEye" maxscale="1000" thumbgallery="https://geobretagne.fr/mviewer/img/basemap/rapideye2011.jpg" opacity="1"
             url="https://wxs.ign.fr/satellite/geoportail/r/wms" layers="ORTHOIMAGERY.ORTHO-SAT.RAPIDEYE.2011" format="image/png" visible="false" fromcapacity="false"

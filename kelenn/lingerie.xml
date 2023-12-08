@@ -32,12 +32,12 @@
 		           title="GéoPortail"
 		           maxscale="1000"
 		           thumbgallery="img/basemap/ortho.jpg"
-		           url="https://wxs.ign.fr/essentiels/geoportail/wmts"
+		           url="https://data.geopf.fr/wmts"
 		           layers="ORTHOIMAGERY.ORTHOPHOTOS"
 		           format="image/jpeg"
 		           visible="false"
 		           fromcapacity="false"
-		           attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>"
+		           attribution="&lt;a href='https://geoservices.ign.fr/services-geoplateforme-diffusion' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>"
 		           style="normal"
 		           matrixset="PM"
 		           maxzoom="22"/>
@@ -52,7 +52,7 @@
 		           format="image/jpeg"
 		           visible="false"
 		           fromcapacity="false"
-		           attribution="&lt;a href='https://www.geoportail.gouv.fr/' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>"
+		           attribution="&lt;a href='https://geoservices.ign.fr/services-geoplateforme-diffusion' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>"
 		           style="normal"
 		           matrixset="PM"
 		           maxzoom="22"/>
