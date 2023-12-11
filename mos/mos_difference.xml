@@ -99,6 +99,20 @@
 		attribution=" "
 		metadata="" metadata-csw="" queryable="true">
         </layer>
+		<layer id="mos_foncier" name="conso oui non" type="wms" url="https://geobretagne.fr/geoserver/geobretagne/ows" 
+		scalemin="0"
+		scalemax="70000"
+		tiled="true" 
+		exclusive="true"
+		style="mos_foncier_conso"
+		visible="true"
+		infoformat="application/vnd.ogc.gml" 
+		fields="nom_commun,num_parc,lib4_2011,lib4_2021"
+		aliases="Commune,N° de parcelle,Occupation en 2011,Occupation en 2021"
+		opacity="0.8"
+		attribution=" "
+		metadata="" metadata-csw="" queryable="true">
+        </layer>
     </theme>
 	  <theme id="admin" url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/administratif.xml" name="Découpages administratifs" collapsed="true" icon="false" layersvisibility="default"> 
     </theme> 
