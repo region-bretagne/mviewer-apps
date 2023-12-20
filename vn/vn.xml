@@ -1013,7 +1013,7 @@
         </theme> 
 		<theme name="Géodésie" id="geodesie">
 			<layer id="BDGEODESIQUE-RN_BDD-POI_WLD" name="Repère géodésique" visible="false" tiled="false"
-				queryable="true" 
+				queryable="true"  owsoptions="VERSION:1.1.1"
                 infoformat="text/html" featurecount="5"                
 				url="https://data.geopf.fr/wms-v/ows" 
 				attribution="IGN" 

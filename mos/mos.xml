@@ -29,15 +29,15 @@
 </baselayers>
 <themes mini="false"> 
     <theme id="theme-20230721132349" name="MOS" collapsed="false" icon="fab fa-codepen"> 
-        <layer id="mos" name="MOS" type="wms" url="https://geobretagne.fr/geoserver/geobretagne/ows" 
+        <layer id="mos_foncier" name="MOS" type="wms" url="https://geobretagne.fr/geoserver/geobretagne/ows" 
 		scalemin="0" scalemax="20000"
 		tiled="true" expanded="true"
 		visible="true" 
 		infoformat="application/vnd.ogc.gml" 
-		fields="type,nom_commun,code4_2021,lib4_2021,num_parc"
+		fields="type_conso_2021,nom_commun,code4_2021,lib4_2021,num_parc"
 		aliases="Type,Commune,Code occupation,Type d'occupation,N° de parcelle"
 		opacity="0.5"
-		style="mos_2021_conso"
+		style="mos_foncier_conso"
 		attribution=" Seuil de visibilité : 1/20 000"
 		metadata="" metadata-csw="" queryable="true">
         </layer> 

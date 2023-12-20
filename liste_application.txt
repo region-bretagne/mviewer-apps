@@ -61,6 +61,7 @@
 ./bretagne_bzh/centralite.xml
 ./gouvernance_formation/gouvernance_formation.xml
 ./mos/mos_difference.xml
+./mos/mos_bak.xml
 ./mos/mos.xml
 ./mos/mos_swipe.xml
 ./a_suppr_swipe/swipe.xml
@@ -73,6 +74,7 @@
 ./transport/transports.xml
 ./transport/trafic.xml
 ./transport/okina.xml
+./transport/breizhgo_2023.xml
 ./transport/mobibreizh.xml
 ./mulette/mulette.xml
 ./rde/rde_new_filter.xml
@@ -93,6 +95,7 @@
 ./ocs56/ocs56.xml
 ./breizh_bocage/config.xml
 ./breizh_bocage/densite.xml
+./breizh_bocage/structure.xml
 ./index_dd/index_dd.xml
 ./test/modele.xml
 ./test/243500667.xml
