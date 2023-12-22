@@ -2,27 +2,27 @@
 	<li class="item" id="{{feature_ol_uid}}">
 		<div class="row">
 			<div class="col-xs-7">
-				<div class="rb-title">{{nom_epci}}</div>
+				<div class="rb-title">{{nom_geo}}</div>
 			</div>
 		</div>
 
 		<div class="row">
 
 			<div class="col-md-2" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
-				<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartennjeunesse/{{code_siren}}/epci_pop_1329"></iframe>
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartennjeunesse/{{code_geo}}/multi_pop_1329"></iframe>
 			</div>
 
 			<div class="col-md-2" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;">
-				<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartennjeunesse/{{code_siren}}/epci_indice_jeunesse"></iframe>
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartennjeunesse/{{code_geo}}/multi_ind_jeun"></iframe>
 			</div>
 
 			<div class="col-md-4" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
-				<iframe style="position:absolute;top:0;bottom:0; left:0;width:90%;height:90%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartennjeunesse/{{code_siren}}/epci_struct_pop_evol_1329"></iframe>
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:90%;height:90%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartennjeunesse/{{code_geo}}/multi_struct_pop_evol_1329"></iframe>
 					<div id="over">Évolution de la population des 13-29 ans</div>
 			</div>
 
 			<div class="col-md-4" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
-				<iframe style="position:absolute;top:0;bottom:0; left:0;width:90%;height:90%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartennjeunesse/{{code_siren}}/epci_pyramide_age_1329"></iframe>
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:90%;height:90%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartennjeunesse/{{code_geo}}/multi_pyramide_age_1329"></iframe>
 					<div id="over">Répartition de la population par âge (année)</div>
 			</div>
 
