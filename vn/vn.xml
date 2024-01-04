@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application id="vn" title="Kartenn CANAUX" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/img/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" measuretools="true" legend="true" popup="false" exportpng="true" legendasimage="true" coordinates="true" togglealllayersfromtheme="true"  style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/css/vn.css" hideprotectedlayers="true" geoloc="true" stats="true" mapprint="true" statsurl="../ws/kartenn/log.php"/>
+    <application id="vn" title="Kartenn CANAUX" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/img/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" measuretools="true" legend="true" popup="false" exportpng="true" legendasimage="true" coordinates="true" togglealllayersfromtheme="true"  style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/css/vn.css" hideprotectedlayers="true" geoloc="true" stats="true" statsurl="../ws/kartenn/log.php"/>
     <mapoptions maxzoom="20" projection="EPSG:3857" center="-291072,6187119" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 	<baselayers style="gallery">
 <!--         <baselayer  type="WMS" id="plan2" label="OpenStreetMap" title="GéoBretagne" thumbgallery="img/basemap/osm.png" maxscale="1000" url="https://tile.geobretagne.fr/osm/service" layers="osm:google" format="image/png" visible="true" attribution="OSM" style="_null" matrixset="EPSG:3857" minresolution="0.4"/> -->
@@ -33,8 +33,8 @@
         <extension type="javascript" src="https://kartenn.region-bretagne.fr/kartoviz/demo/cad/external/piklor.js" usededby="cad.js"/>
         <extension type="component" id="layerfilter" path="https://kartenn.region-bretagne.fr/kartoviz/demo/addons"/>
         <extension type="component" id="fileimport" path="https://kartenn.region-bretagne.fr/kartoviz/demo/addons"/>
-        <extension type="component" id="isochroneAddon" path="demo/addons"/>
-		<extension type="component" id="print" path="demo/addons"/>
+        <extension type="component" id="isochroneAddon" path="https://kartenn.region-bretagne.fr/kartoviz/demo/addons"/>
+		<extension type="component" id="print" path="https://kartenn.region-bretagne.fr/kartoviz/demo/addons_rb"/>
     </extensions>
 
     <themes>
