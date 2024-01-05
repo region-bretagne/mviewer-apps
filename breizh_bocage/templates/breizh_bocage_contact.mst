@@ -1,0 +1,57 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{nom_structure}}</h2>
+			
+			<h4 align="center"> Contact </h4><br>
+		<div style="float : left;">	
+		 {{#tech1}}
+			<img src="https://kartenn.region-bretagne.fr/img/picto/citoyen.svg" alt="citoyen" width="30px" /></div> <div align="center">  {{tech1}}</div>
+		 {{/tech1}}<br>
+		 <div style="float : left;">	
+		 {{#mail1}}
+			<img src="https://kartenn.region-bretagne.fr/img/picto/enveloppe.svg" alt="citoyen" width="30px" /></div> <div align="center">  {{mail1}}</div>
+		 {{/mail1}}<br>
+		 <div style="float : left;">	
+		 {{#tel1}}
+			<img src="https://kartenn.region-bretagne.fr/img/picto/telephone.svg" alt="citoyen" width="30px" /></div> <div align="center">  {{tel1}}</div>
+		 {{/tel1}}<br><br>
+		 
+		 	<div style="float : left;">	
+		 {{#tech2}}
+			<img src="https://kartenn.region-bretagne.fr/img/picto/citoyen.svg" alt="citoyen" width="30px" /></div> <div align="center">  {{tech2}}</div>
+		 {{/tech2}}<br>
+		 <div style="float : left;">	
+		 {{#mail2}}
+			<img src="https://kartenn.region-bretagne.fr/img/picto/enveloppe.svg" alt="citoyen" width="30px" /></div> <div align="center">  {{mail2}}</div>
+		 {{/mail2}}<br>
+		 <div style="float : left;">	
+		 {{#tel2}}
+			<img src="https://kartenn.region-bretagne.fr/img/picto/telephone.svg" alt="citoyen" width="30px" /></div> <div align="center">  {{tel2}}</div>
+		 {{/tel2}}<br><br>
+
+		 	<div style="float : left;">	
+		 {{#tech3}}
+			<img src="https://kartenn.region-bretagne.fr/img/picto/citoyen.svg" alt="citoyen" width="30px" /></div> <div align="center">  {{tech3}}</div>
+		 {{/tech3}}<br>
+		 <div style="float : left;">	
+		 {{#mail3}}
+			<img src="https://kartenn.region-bretagne.fr/img/picto/enveloppe.svg" alt="citoyen" width="30px" /></div> <div align="center">  {{mail3}}</div>
+		 {{/mail3}}<br>
+		 <div style="float : left;">	
+		 {{#tel3}}
+			<img src="https://kartenn.region-bretagne.fr/img/picto/telephone.svg" alt="citoyen" width="30px" /></div> <div align="center">  {{tel3}}</div>
+		 {{/tel3}}<br><br>
+			
+	</li>
+{{/features}}
+
+<style>
+/* test icon rb*/
+.icon-information{
+	font-size : 20px;
+	color : #FFFFFF;
+}
+.img{
+	vertical-align : middle;
+	}
+</style>

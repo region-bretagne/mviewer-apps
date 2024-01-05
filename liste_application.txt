@@ -13,7 +13,7 @@
 ./port/port_test_zoom.xml
 ./patrimoine/patrimoine.xml
 ./patrimoine/patrimoine_simple.xml
-./patrimoine/rec_patrimoine.xml
+./patrimoine/patrimoine_old.xml
 ./breizhgo/lieu_vente.xml
 ./tmp/modele.xml
 ./tmp/aubigne_genere.xml

@@ -1,0 +1,41 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<div class="row">
+			<div class="col-xs-7">
+				<div class="rb-title-feature">{{libellé}}</div>
+			</div>			
+		</div>
+
+		<div class="row">
+
+			<div class="col-md-4" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartennjeunesse/{{code}}/dep_jeunesse_csv_n"></iframe>
+			</div>
+
+			<div class="col-md-4" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;">
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:90%;height:90%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartennjeunesse/{{code}}/dep_jeunesse_csv_tx"></iframe>					
+			</div>
+
+			<div class="col-md-4" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:90%;height:90%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartennjeunesse/{{code}}/dep_jeunesse_csv_txf"></iframe>
+			</div>
+
+		</div>
+
+
+	</li>
+{{/features}}
+
+<style>
+@import url("https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/css/kartenn_economie.css");
+#over { 
+	color:#B0006B;	
+	font-size:1em; 
+	padding-left:20%;
+	font-weight:600;
+	position:absolute; 
+	z-index:2;
+	width:100%
+}
+
+</style>
