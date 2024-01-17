@@ -519,7 +519,6 @@ box-shadow: none !important;
     opacity: 0.9!important;	
 }
 .xs.mode-s #btn-mode-su-menu:after, .xs.mode-u #btn-mode-su-menu:after {
-	content:'Afficher la légende';
 	position: relative;
 	margin-left: 10px;
 }

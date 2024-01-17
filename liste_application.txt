@@ -25,7 +25,6 @@
 ./tmp/mst1.xml
 ./perequation/perequation.xml
 ./perequation/pactes.xml
-./territoire.xml
 ./obs_jeunesse/obs_jeunesse.xml
 ./pepci/fibre.xml
 ./a_suppr_immo2/immobilier.xml

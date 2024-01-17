@@ -164,6 +164,26 @@
 				metadata-csw=""
 				metadata="" /> 
 		</group>
+		<group name="Trait de côte" id="trait_de_cote">
+			<layer id="trait_cote" name="Trait de côte" visible="false" tiled="false"
+				queryable="false" fields="nom" aliases="nom" index="5" expanded="true"
+				infoformat="application/vnd.ogc.gml" featurecount="5"
+		        url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+				style="" 
+				attribution="Région Bretagne" 
+				metadata-csw=""
+				metadata="" >
+			</layer>
+			<layer id="trait_cote_5000m" name="5km du trait de côte" visible="false" tiled="false"
+				queryable="false"  index="5" expanded="true" opacity="0.5"
+				infoformat="application/vnd.ogc.gml" featurecount="5"
+		        url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+				style="" 
+				attribution="Région Bretagne" 
+				metadata-csw=""
+				metadata="" >
+			</layer>
+			</group>			
 				
 				
 			<layer id="passe_poisson_vn" name="Passes à poisson" visible="false" tiled="false" namespace="rb"

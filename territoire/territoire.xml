@@ -42,7 +42,7 @@
 		                style="rphab_total@commune" opacity="0.9"
 		                stylesalias=""
 		                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service connaissance dynamiques territoriales" 
+		                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service Aménagement, Foncier et Habitat" 
 		                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/26324529-e0b7-450c-9506-2dcdca608f5f"
 		                metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=26324529-e0b7-450c-9506-2dcdca608f5f">
 		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.pop.nbr_habitant.mst"></template>
@@ -56,7 +56,7 @@
 		                style="rphab_densite@commune"
 		                stylesalias=""
 		                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service connaissance dynamiques territoriales" 
+		                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service Aménagement, Foncier et Habitat" 
 		                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/26324529-e0b7-450c-9506-2dcdca608f5f"
 		                metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=26324529-e0b7-450c-9506-2dcdca608f5f">
 		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.pop.densite.mst"></template>
@@ -69,7 +69,7 @@
 		                style="rphab_evol@commune"
 		                stylesalias="Évolution de 2014 à 2020"
 		                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service connaissance dynamiques territoriales" 
+		                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service Aménagement, Foncier et Habitat" 
 		                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/6722241e-978d-4981-95e0-1b89e5dd06f3"
 		                metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=6722241e-978d-4981-95e0-1b89e5dd06f3">
 		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.pop.evolution.mst"></template>
@@ -82,7 +82,7 @@
 		                style="soldepop_naturel@commune,soldepop_migratoire@commune"
 		                stylesalias="Solde naturel, Solde migratoire"
 		                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service connaissance dynamiques territoriales" 
+		                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service Aménagement, Foncier et Habitat" 
 		                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/8ec4dea3-833d-4016-a1dd-06a21830d612"
 		                metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=8ec4dea3-833d-4016-a1dd-06a21830d612">
 		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.pop.solde.mst"></template>
@@ -96,7 +96,7 @@
 		                style="rphab_tx0014@commune, rphab_tx1529@commune, rphab_tx3044@commune, rphab_tx4559@commune, rphab_tx6074@commune, rphab_tx75p@commune"
 		                stylesalias="0 - 14 ans, 15 -29 ans, 30 - 44 ans, 45 - 59 ans, 60 -74 ans, 75 ans et plus "
 		                url="https://ows.region-bretagne.fr/geoserver/rb/wms" styletitle="Catégorie d'âge"
-		                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service connaissance dynamiques territoriales" 
+		                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service Aménagement, Foncier et Habitat" 
 		                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/26324529-e0b7-450c-9506-2dcdca608f5f"
 		                metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=26324529-e0b7-450c-9506-2dcdca608f5f">
 		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.pop.cat_age.mst"></template>
@@ -110,7 +110,7 @@
 		                style="rphab_txcs1@commune,rphab_txcs2@commune,rphab_txcs3@commune,rphab_txcs4@commune,rphab_txcs5@commune,rphab_txcs6@commune,rphab_txcs7@commune,rphab_txcs8@commune"
 		                stylesalias="Agriculteur.rice.s exploitants, Artisan.e.s - Commerçant.e.s - Chef.fe.s d'entreprise, Cadres - Professions intellectuelles supérieures, Professions intermédiaires, Employé.e.s, Ouvrier.ère.s, Retraité.e.s, Autres - Sans activité professionnelle"
 		                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service connaissance dynamiques territoriales" 
+		                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service Aménagement, Foncier et Habitat" 
 		                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/26324529-e0b7-450c-9506-2dcdca608f5f"
 		                metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=26324529-e0b7-450c-9506-2dcdca608f5f">
 		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.pop.csp.mst"></template>
@@ -124,7 +124,7 @@
 		                style="revenu_median_epci"
 		                stylesalias="" exclusive="true"
 		                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="Sources: DGFIP - INSEE - OpenStreetMap | Millésime: 2018 | Traitements: Région Bretagne - Service connaissance dynamiques territoriales" 
+		                attribution="Sources: DGFIP - INSEE - OpenStreetMap | Millésime: 2018 | Traitements: Région Bretagne - Service Aménagement, Foncier et Habitat" 
 						metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9c29be8b-8ba0-4921-82aa-5ef969504426"
 	                	metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9c29be8b-8ba0-4921-82aa-5ef969504426">
 		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.pop.revenu.mst"></template>
@@ -136,7 +136,7 @@
 		                style="taux_pauvrete_epci"
 		                stylesalias="" exclusive="true"
 		                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="Sources: DGFIP - INSEE - OpenStreetMap | Millésime: 2018 | Traitements: Région Bretagne - Service connaissance dynamiques territoriales" 
+		                attribution="Sources: DGFIP - INSEE - OpenStreetMap | Millésime: 2018 | Traitements: Région Bretagne - Service Aménagement, Foncier et Habitat" 
 						metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9c29be8b-8ba0-4921-82aa-5ef969504426"
 	                	metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9c29be8b-8ba0-4921-82aa-5ef969504426">
 		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.pop.revenu.mst"></template>
@@ -152,7 +152,7 @@
 		                style="rpmen_total@commune" opacity="0.9"
 		                stylesalias=""
 		                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service connaissance dynamiques territoriales" 
+		                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service Aménagement, Foncier et Habitat" 
 		                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/a181e808-68b8-4fc4-b781-78323cf5cb34"
 		                metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a181e808-68b8-4fc4-b781-78323cf5cb34">
 		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.pop.menage.mst"></template>
@@ -166,7 +166,7 @@
 		                style="rpmen_menpseul@commune,rpmen_mensfam@commune,rpmen_mencoupsenf@commune, rpmen_mencoupaenf@commune,rpmen_menfammono@commune"
 		                stylesalias="Ménage d'une personne, Autre ménage, Couple sans enfant, Couple avec enfant, Famille monoparentale"
 		                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service connaissance dynamiques territoriales" 
+		                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service Aménagement, Foncier et Habitat" 
 		                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/a181e808-68b8-4fc4-b781-78323cf5cb34"
 		                metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a181e808-68b8-4fc4-b781-78323cf5cb34">
 		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.pop.menage.mst"></template>
@@ -183,7 +183,7 @@
 	                style="rplog_total@commune" opacity="0.9"
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service connaissance dynamiques territoriales" 
+	                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service Aménagement, Foncier et Habitat" 
 	                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/7ee2db4e-3ac6-4e56-97da-2a16aaafe77c"
 	                metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=7ee2db4e-3ac6-4e56-97da-2a16aaafe77c">
 	                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.log.all.mst"></template>
@@ -197,7 +197,7 @@
 	                style="rplog_tx_logvac@commune,rplog_tx_rp@commune,rplog_tx_rsecocc@commune"
 	                stylesalias="Logement vacant,Logement principal,Logement secondaire"
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service connaissance dynamiques territoriales" 
+	                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service Aménagement, Foncier et Habitat" 
 	                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/7ee2db4e-3ac6-4e56-97da-2a16aaafe77c"
 	                metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=7ee2db4e-3ac6-4e56-97da-2a16aaafe77c">
 	                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.log.all.mst"></template>
@@ -211,7 +211,7 @@
 	                style="rplog_tx_maison@commune, rplog_tx_appart@commune"
 	                stylesalias="Maison, Appartement"
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service connaissance dynamiques territoriales" 
+	                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service Aménagement, Foncier et Habitat" 
 	                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/7ee2db4e-3ac6-4e56-97da-2a16aaafe77c"
 	                metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=7ee2db4e-3ac6-4e56-97da-2a16aaafe77c">
 	                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.log.all.mst"></template>
@@ -225,7 +225,7 @@
 	                style="rplog_tx_hlm@commune"
 	                stylesalias=""
 	                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-	                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service connaissance dynamiques territoriales" 
+	                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service Aménagement, Foncier et Habitat" 
 	                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/7ee2db4e-3ac6-4e56-97da-2a16aaafe77c"
 	                metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=7ee2db4e-3ac6-4e56-97da-2a16aaafe77c">
 	                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.log.hlm.mst"></template>
@@ -255,7 +255,7 @@
 		                style="rpemp_total@commune" opacity="0.9"
 		                stylesalias=""
 		                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service connaissance dynamiques territoriales" 
+		                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service Aménagement, Foncier et Habitat" 
 	                	metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/aa79265a-3179-409b-be99-a95ad6d62f21"
 	                	metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=aa79265a-3179-409b-be99-a95ad6d62f21">
 		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.eco.nbr_emploi.mst"></template>
@@ -268,7 +268,7 @@
 		                style="rpemp_evol@commune" opacity="1"
 		                stylesalias=""
 		                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service connaissance dynamiques territoriales" 
+		                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service Aménagement, Foncier et Habitat" 
 	                	metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b7674829-6ce0-4bda-a13a-4b2d58083444"
 	                	metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b7674829-6ce0-4bda-a13a-4b2d58083444">
 		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.eco.ev_emploi.mst"></template>
@@ -282,7 +282,7 @@
 		                style="rpemp_txempltagri@commune,rpemp_txempltindus@commune, rpemp_txempltconst@commune, rpemp_txempltcts@commune, rpemp_txempltapesas@commune"
 		                stylesalias="Agriculture, Industrie, Construction, Commerce - Transports - Services divers, Administration publique - Enseignement - Santé humaine - Action sociale"
 		                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service connaissance dynamiques territoriales" 
+		                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service Aménagement, Foncier et Habitat" 
 	                	metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/aa79265a-3179-409b-be99-a95ad6d62f21"
 	                	metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=aa79265a-3179-409b-be99-a95ad6d62f21">
 		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.eco.nbr_emploi.mst"></template>
@@ -297,7 +297,7 @@
 		                style="clapent_total@commune" opacity="0.9"
 		                stylesalias=""
 		                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="Sources: INSEE (FLORES) - OpenStreetMap | Traitements: Région Bretagne - Service connaissance dynamiques territoriales" 
+		                attribution="Sources: INSEE (FLORES) - OpenStreetMap | Traitements: Région Bretagne - Service Aménagement, Foncier et Habitat" 
 	                	metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/628687c0-c72f-49d9-8cb2-13f445c2744b"
 	                	metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=628687c0-c72f-49d9-8cb2-13f445c2744b">		                
 		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.eco.etablissement.mst"></template>
@@ -310,7 +310,7 @@
 		                style="clapent_txagri@commune,clapent_txind@commune,clapent_txconst@commune,clapent_txcts@commune,clapent_txapesas@commune"
 		                stylesalias="Agriculture - Sylviculture et Pêche,Industrie et Artisanat de production, Construction, Commerce - Transports et Services divers, Administration publique - Enseignement - Santé humaine - Action sociale"
 		                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="Sources: INSEE (FLORES) - OpenStreetMap | Traitements: Région Bretagne - Service connaissance dynamiques territoriales" 
+		                attribution="Sources: INSEE (FLORES) - OpenStreetMap | Traitements: Région Bretagne - Service Aménagement, Foncier et Habitat" 
 	                	metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/628687c0-c72f-49d9-8cb2-13f445c2744b"
 	                	metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=628687c0-c72f-49d9-8cb2-13f445c2744b">
 		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.eco.etablissement.mst"></template>
@@ -328,7 +328,7 @@
 		                style="dememp_catabc_total@epci" opacity="0.9"
 		                stylesalias=""
 		                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="Sources: DIRECCTE Bretagne - OpenStreetMap | Traitements: Région Bretagne - Service connaissance dynamiques territoriales" 
+		                attribution="Sources: DIRECCTE Bretagne - OpenStreetMap | Traitements: Région Bretagne - Service Aménagement, Foncier et Habitat" 
 	                	metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/81e59418-7f70-403c-b062-4fe3144b9f9d"
 	                	metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=81e59418-7f70-403c-b062-4fe3144b9f9d">	
 		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.dem_emp.cat_abc.mst"></template>	    
@@ -342,7 +342,7 @@
 		                style="dememp_catabc_fem@epci,dememp_catabc_jeu@epci,dememp_catabc_sen@epci,dememp_catabc_deld@epci" opacity="1"
 		                stylesalias="Part des femmes, Part des jeunes de moins de 25 ans, Part des seniors de plus de 50 ans, Part des chercheur.euse.s de longue durée (+1an)"
 		                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="Sources: DIRECCTE Bretagne - OpenStreetMap | Traitements: Région Bretagne - Service connaissance dynamiques territoriales" 
+		                attribution="Sources: DIRECCTE Bretagne - OpenStreetMap | Traitements: Région Bretagne - Service Aménagement, Foncier et Habitat" 
 	                	metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/81e59418-7f70-403c-b062-4fe3144b9f9d"
 	                	metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=81e59418-7f70-403c-b062-4fe3144b9f9d">		 
 		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.dem_emp.cat_abc.mst"></template>		            
@@ -358,7 +358,7 @@
 		                style="dememp_cata_total@epci" opacity="0.9"
 		                stylesalias=""
 		                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="Sources: DIRECCTE Bretagne - OpenStreetMap | Traitements: Région Bretagne - Service connaissance dynamiques territoriales" 
+		                attribution="Sources: DIRECCTE Bretagne - OpenStreetMap | Traitements: Région Bretagne - Service Aménagement, Foncier et Habitat" 
 	                	metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/81e59418-7f70-403c-b062-4fe3144b9f9d"
 	                	metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=81e59418-7f70-403c-b062-4fe3144b9f9d">	
 		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.dem_emp.cat_a.mst"></template>       
@@ -372,7 +372,7 @@
 		                style="dememp_cata_fem@epci,dememp_cata_jeu@epci,dememp_cata_sen@epci,dememp_cata_deld@epci" opacity="1"
 		                stylesalias="Part des femmes, Part des jeunes de moins de 25 ans, Part des seniors de plus de 50 ans, Part des chercheur.euse.s de longue durée (+1an)"
 		                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="Sources: DIRECCTE Bretagne - OpenStreetMap | Traitements: Région Bretagne - Service connaissance dynamiques territoriales" 
+		                attribution="Sources: DIRECCTE Bretagne - OpenStreetMap | Traitements: Région Bretagne - Service Aménagement, Foncier et Habitat" 
 	                	metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/81e59418-7f70-403c-b062-4fe3144b9f9d"
 	                	metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=81e59418-7f70-403c-b062-4fe3144b9f9d">	
 		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.dem_emp.cat_a.mst"></template>       
@@ -404,7 +404,7 @@
 		                style="rpform_diplmin@commune,rpform_capbep@commune, rpform_bac@commune, rpform_sup@commune"
 		                stylesalias="Aucun diplôme ou au plus BEPC, Certificats d'aptitudes professionnelles - Brevet d'études professionnelles, Baccalauréat (général - technologique - professionnel), Diplôme de l'enseignement supérieur"
 		                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service connaissance dynamiques territoriales" 
+		                attribution="Sources: INSEE (RP) - OpenStreetMap | Traitements: Région Bretagne - Service Aménagement, Foncier et Habitat" 
 		                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/5542d62f-14df-4e59-968b-c527dbdb45d6"
 		                metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5542d62f-14df-4e59-968b-c527dbdb45d6">
 		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.pop.formation.mst"></template>
