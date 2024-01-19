@@ -26,7 +26,7 @@
                 </rdf:RDF>
 </metadata>
 <application 
-	title="Observatoire breton des jeunesses" 
+	title="Observatoire breton des jeunesses (prototype)" 
 	logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/img/logo_jeun.svg" 
 	favicon="" help="" titlehelp="" iconhelp="fas fa-home" home="" 
 	style="css/themes/ripe_lemon.css" 
@@ -1345,7 +1345,39 @@
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c8884cac-bc25-41a0-92d1-b6566c86066e" >
             </layer>
         </group>
-		<group name="Autres" id="grp2" >	        
+		<group name="Autres" id="grp2" >	
+			<layer 
+				id="jeunesse_competence" 
+				name="Compétence jeunesse des EPCI" 
+				type="wms" 
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?" 
+				tiled="false" 
+				visible="true" 
+				infoformat="application/vnd.ogc.gml" 
+				fields="nom_epci"
+				aliases=""
+				style="jeunesse_competence"
+				stylesalias=""  						
+				metadata="" 
+				metadata-csw="" 
+				attribution="Source : Région Bretagne (Enquête 2024 auprès des intercommunalités)" 
+				queryable="false" 
+				searchable="false" 			
+				fusesearchkeys="" 
+				fusesearchresult="" 
+				secure="public" 
+				useproxy="false" 
+				legendurl="" 
+				featurecount="" 
+				infopanel="bottom-panel" 
+				opacity=".5" 
+				index="" 
+				styletitle="" 
+				dynamiclegend="false" 
+				toplayer="true" 
+				exclusive="false" 
+				showintoc="true">			
+			</layer>
 			<layer id="bassin_vie_bretagne" name="Bassin de vie"  visible="false" tiled="false"
 	            searchable="false" queryable="true"		                
                 infoformat="application/vnd.ogc.gml" featurecount="20"

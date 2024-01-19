@@ -93,8 +93,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022"
-				timemax="2022"
+				timevalues="2018,2019,2020,2021,2022,2023"
+				timemax="2023"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_totales_hab.mst"></template>
 				</layer>
@@ -119,8 +119,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022"
-				timemax="2022"
+				timevalues="2018,2019,2020,2021,2022,2023"
+				timemax="2023"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_totales.mst"></template>
 				</layer>
@@ -156,8 +156,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022"
-				timemax="2022"
+				timevalues="2018,2019,2020,2021,2022,2023"
+				timemax="2023"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
 				</layer>
@@ -180,8 +180,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022"
-				timemax="2022"
+				timevalues="2018,2019,2020,2021,2022,2023"
+				timemax="2023"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
 				</layer>
@@ -209,8 +209,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022"
-				timemax="2022"
+				timevalues="2018,2019,2020,2021,2022,2023"
+				timemax="2023"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
 				</layer>
@@ -233,8 +233,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022"
-				timemax="2022"
+				timevalues="2018,2019,2020,2021,2022,2023"
+				timemax="2023"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
 				</layer>
@@ -261,8 +261,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022"
-				timemax="2022"
+				timevalues="2018,2019,2020,2021,2022,2023"
+				timemax="2023"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
 				</layer>
@@ -285,8 +285,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022"
-				timemax="2022"
+				timevalues="2018,2019,2020,2021,2022,2023"
+				timemax="2023"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
 				</layer>
@@ -315,8 +315,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022"
-				timemax="2022"
+				timevalues="2018,2019,2020,2021,2022,2023"
+				timemax="2023"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
 				</layer>
@@ -339,8 +339,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022"
-				timemax="2022"
+				timevalues="2018,2019,2020,2021,2022,2023"
+				timemax="2023"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
 				</layer>
@@ -367,8 +367,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022"
-				timemax="2022"
+				timevalues="2018,2019,2020,2021,2022,2023"
+				timemax="2023"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
 				</layer>
@@ -391,8 +391,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022"
-				timemax="2022"
+				timevalues="2018,2019,2020,2021,2022,2023"
+				timemax="2023"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
 				</layer>
@@ -419,8 +419,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022"
-				timemax="2022"
+				timevalues="2018,2019,2020,2021,2022,2023"
+				timemax="2023"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
 				</layer>
@@ -443,8 +443,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022"
-				timemax="2022"
+				timevalues="2018,2019,2020,2021,2022,2023"
+				timemax="2023"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
 				</layer>
@@ -471,8 +471,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022"
-				timemax="2022"
+				timevalues="2018,2019,2020,2021,2022,2023"
+				timemax="2023"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
 				</layer>
@@ -495,8 +495,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022"
-				timemax="2022"
+				timevalues="2018,2019,2020,2021,2022,2023"
+				timemax="2023"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
 				</layer>
@@ -523,8 +523,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022"
-				timemax="2022"
+				timevalues="2018,2019,2020,2021,2022,2023"
+				timemax="2023"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
 				</layer>
@@ -547,8 +547,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022"
-				timemax="2022"
+				timevalues="2018,2019,2020,2021,2022,2023"
+				timemax="2023"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
 				</layer>
@@ -575,8 +575,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022"
-				timemax="2022"
+				timevalues="2018,2019,2020,2021,2022,2023"
+				timemax="2023"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
 				</layer>
@@ -599,8 +599,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022"
-				timemax="2022"
+				timevalues="2018,2019,2020,2021,2022,2023"
+				timemax="2023"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
 				</layer>
