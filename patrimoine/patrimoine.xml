@@ -38,9 +38,9 @@
        <theme name="Inventaire du patrimoine Bretagne"  collapsed="false" id="inventaire" icon="caret-right"> 
             <layer id="inventaire" name="Rechercher des éléments patrimoniaux" visible="true" queryable="true"
                 type="customlayer" opacity="0.9" toplayer="true"
-                url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/addons/recherche_new/layer/inventaire.js"
+                url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/addons/recherche/layer/inventaire.js"
                 customcontrol="true"
-                customcontrolpath="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/addons/recherche_new/html"
+                customcontrolpath="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/addons/recherche/html"
                 vectorlegend="false"
                 legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/addons/recherche/recensement_etudes.jpg"
                 expanded="true"
@@ -48,7 +48,7 @@
                 attribution="Source: Région Bretagne"
                 metadata=""
                 metadata-csw="">
-                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/addons/recherche_new/inventaire.mst" />
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/addons/recherche/inventaire.mst" />
             </layer>
             <layer id="inventaire_papiers" name="Dossiers 'papiers' avant 2000" visible="false" tiled="false"
 				queryable="true" infoformat="application/vnd.ogc.gml" featurecount="20" 
@@ -87,7 +87,7 @@
                 attribution="Source: Région Bretagne"
 				metadata-csw=""
 				metadata="" >
-                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/addons/recherche_new/inventaire.mst" />
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/addons/recherche/inventaire.mst" />
 			</layer>
 			<layer id="etude_recensement_patrimoine" name="Etude et recensement par domaine" visible="false" tiled="false" 
 				searchable="false" queryable="true"  toplayer="true" expanded="true" attributelabel="Domaine"
@@ -98,7 +98,7 @@
                 attribution="Source: Région Bretagne"
 				metadata-csw=""
 				metadata="" >
-                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/addons/recherche_new/inventaire.mst" />
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/addons/recherche/inventaire.mst" />
 			</layer>
 			<layer id="croix_calvaire" name="Croix et calvaires (association)" visible="false" tiled="true" 
 				queryable="true"

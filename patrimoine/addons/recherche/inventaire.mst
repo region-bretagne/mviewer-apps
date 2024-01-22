@@ -1,16 +1,22 @@
 {{#features}}
 	<li class="item">
-		<h3 class="rb-title-feature">{{title}}</h3>
-        <p class="rb-description-feature" ><i>Source: <strong>{{source}}</strong></i></p>
-        <p class="rb-description-feature" ><i>Contact: <strong><a href="mailto:inventaire.patrimoine@bretagne.bzh">inventaire.patrimoine@bretagne.bzh</a></strong></i></p>
-
+		<h3 class="rb-title-feature">{{titre}}</h3>
+		    {{#lien_image}}
+                <img src="{{lien_image}}" class="img-responsive center-block" />
+            {{/lien_image}}
 		<p class="rb-text-feature">
             {{#denomination}}
                 <span style="font-weight:bold"> Dénomination :</span> {{denomination}}<br/>
             {{/denomination}}
-			{{#datation_principale}}
-				<span style="font-weight:bold"> Datation :</span> {{datation_principale}}<br/>
-			{{/datation_principale}}
+            {{#commune}}
+                <span style="font-weight:bold"> Commune :</span> {{commune}}<br/>
+            {{/commune}}
+            {{#localisation}}
+                <span style="font-weight:bold"> Localisation :</span> {{localisation}}<br/>
+            {{/localisation}}
+			{{#datation}}
+				<span style="font-weight:bold"> Datation :</span> {{datation}}<br/>
+			{{/datation}}
 			{{#materiaux_murs}}
 				<span style="font-weight:bold"> Materiaux murs:</span> {{materiaux_murs}}<br/>
 			{{/materiaux_murs}}
@@ -20,9 +26,23 @@
 			{{#materiaux_mobilier}}
 				<span style="font-weight:bold"> Materiaux :</span> {{materiaux_mobilier}}<br/>
 			{{/materiaux_mobilier}}
-			<div class="wfs_complements" id="{{search_id}}" style="padding-left:0px;"><div>
-
+			{{#cadre_etude}}
+				<span style="font-weight:bold"> Enquête(s) :</span> {{cadre_etude}}<br/>
+			{{/cadre_etude}}
+			{{#date_bordereau}}
+				<span style="font-weight:bold"> Date(s) de bordereau :</span> {{date_bordereau}}<br/>
+			{{/date_bordereau}}
         </p>
+		    {{#lien_dossier}}
+				<div class="rb-but-list">
+                <p> <center><a href="{{lien_dossier}}" target="_blank" class="rb-but-link"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> En savoir plus...</a></center>
+                </p>
+                </div>            
+			{{/lien_dossier}}
+
+        <p class="rb-description-feature" ><i>Source: <strong>{{source}}</strong></i><br>
+        <i>Contact: <strong><a href="mailto:inventaire.patrimoine@bretagne.bzh">inventaire.patrimoine@bretagne.bzh</a></strong></i></p>
+
 	</li>
 {{/features}}
 

@@ -27,7 +27,7 @@ mviewer.customLayers.inventaire = (function () {
             var properties = getProperties(item._source);
             var prop = {};
             if (item._type === "etude_patrimoine_simple") {
-                prop.source = "dossiers d'études complets";
+                prop.source = "dossier d'étude complet";
             } else {
                 prop.source = "recensement avant étude";
             }
@@ -134,7 +134,7 @@ mviewer.customLayers.inventaire = (function () {
                 var json = JSON.parse(xhr.responseText);
                 var message = "* Affichage complet - " + json.hits.total + " éléments";
                 if (json.hits.total >  json.hits.hits.length) {
-                    message = "* Affichage partiel : " +parseInt(json.hits.hits.length/json.hits.total*100) + "% des éléments" ;
+                    message = "Affichage partiel : zoomer ou filtrer " ;
                 }
                 _featurescount = json.hits.hits.length;
                 $("#inventaire_search_message i").text(message);
@@ -250,52 +250,6 @@ mviewer.customLayers.inventaire = (function () {
     var _handle = function(clusters, views) {
         if (clusters.length > 0 && clusters[0].getProperties().features) {
         var features = clusters[0].getProperties().features;
-            var extraTemplate = [
-                '{{#lien_image}}',
-                '<img src="{{lien_image}}" class="img-responsive center-block" />',
-                '{{/lien_image}}',
-                '{{#photo_1}}',
-                '<img src="{{photo_1}}" class="img-responsive center-block" />',
-                '{{/photo_1}}',
-                '<p class="text-feature">',
-                '{{#datation_principale}}',
-                '<span > Datation :</span> {{datation_principale}}<br/>',
-                '{{/datation_principale}}',
-                '<span > Commune : </span>{{commune}}<br/>',
-                '{{#localisation}}',
-                '<span> Localisation :</span> {{localisation}}<br/>',
-                '{{/localisation}}',
-                '{{^localisation}}',
-                '<span > Localisation :</span> {{adresse}} {{lieudit}} {{commune}}<br/>',
-                '{{/localisation}}',
-                '{{#cadre_etude}}',
-                '<span > Enquête(s) :</span> {{cadre_etude}}<br/>',
-                '{{/cadre_etude}}',
-                '{{#date_bordereau}}',
-                '<span > Date(s) de bordereau  :</span> {{date_bordereau}}<br/>',
-                '{{/date_bordereau}}',
-                '{{#lien_dossier}}',
-                '<div class="rb-but-list">',
-                '<p> <a href="{{lien_dossier}}" target=_blank" class="rb-but-link"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Dossier complet</a>',
-                '</p>',
-                '</div>',
-                '{{/lien_dossier}}',
-                '{{#url}}',
-                '<div class="rb-but-list">',
-                '<p> <a href="{{url}}" target=_blank" class="rb-but-link"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Lien vers notice</a>',
-                '</p>',
-                '</div>',
-                '{{/url}}',
-                '</p>'
-            ].join(" ");
-            var _extendHTML = function (wfsfeatures) {
-                wfsfeatures.forEach(function (wfsfeature, i) {
-                    var html = Mustache.render(extraTemplate, wfsfeature.properties);
-                    $(document.getElementById(wfsfeature.properties.search_id)).append(html);
-                });
-
-            };
-
             var _renderHTML = function (features) {
                 var l = mviewer.getLayer("inventaire");
                 var html;
