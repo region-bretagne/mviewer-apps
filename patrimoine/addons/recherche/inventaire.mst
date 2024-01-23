@@ -1,6 +1,6 @@
 {{#features}}
 	<li class="item">
-		<h3 class="rb-title-feature">{{titre}}</h3>
+		<h3 class="rb-title-feature">{{title}}</h3>
 		    {{#lien_image}}
                 <img src="{{lien_image}}" class="img-responsive center-block" />
             {{/lien_image}}

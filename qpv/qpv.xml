@@ -393,7 +393,8 @@ Il s'agit d'un indicateur calculé par l'ORS Bretagne ; le sigle « &lt;a href=&
 			       visible="true"
 				   expanded="true"
 			       infoformat="application/vnd.ogc.gml"
-			       attribution="Poids du non recours à la mammographie (femmes 50-74 ans). Il s'agit d'un indicateur calculé par l'ORS Bretagne.
+			       attribution="Taux standardisés de recours à une mammographie dans le cadre du dépistage organisé du cancer du sein pour 100 patientes âgées de 50 à 74 ans.
+				   Il s'agit d'un indicateur calculé par l'ORS Bretagne.
 &lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2021). "
 			       queryable="true"
 			       infopanel="bottom-panel">
@@ -435,25 +436,25 @@ Il s'agit d'un indicateur calculé par l'ORS Bretagne ; le sigle « &lt;a href=&
 			       queryable="true"
 			       infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/tx_std_gynmed_15.mst"/>
-			</layer>			
+			</layer>
 			<layer id="iris_qpv_recours"
-			       name="Non recours aux soins"
-			       style="iris_qpv_p_nrec_soin"
+			       name="Recours aux soins non programmés"
+			       style="iris_qpv_p_rec_npgm"
 			       type="wms"
-			       tiled="true"
-			       exclusive="true"
 				   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/36e2eb4c-4118-4f67-ad6d-6331ad665790"
 				   metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=36e2eb4c-4118-4f67-ad6d-6331ad665790"
+			       tiled="true"
+			       exclusive="true"
 			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
 			       visible="true"
 				   expanded="true"
 			       infoformat="application/vnd.ogc.gml"
-			       attribution="Poids du non recours à tous types de soins. 
-&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2021)."
+			       attribution="Poids du recours à des soins non programmés"
 			       queryable="true"
 			       infopanel="bottom-panel">
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/p_nrec_soin.mst"/>
-			</layer>
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/p_rec_npgm.mst"/>	
+			</layer>	
+			
 			<layer id="iris_qpv_recours"
 			       name="Recours à un psychiatre"
 			       style="iris_qpv_tx_std_psy_15plus"
@@ -471,6 +472,24 @@ Il s'agit d'un indicateur calculé par l'ORS Bretagne ; le sigle « &lt;a href=&
 			       queryable="true"
 			       infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/tx_std_psy_15plus.mst"/>
+			</layer>
+			<layer id="iris_qpv_recours"
+			       name="Non recours aux soins (renoncement)"
+			       style="iris_qpv_p_nrec_soin"
+			       type="wms"
+			       tiled="true"
+			       exclusive="true"
+				   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/36e2eb4c-4118-4f67-ad6d-6331ad665790"
+				   metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=36e2eb4c-4118-4f67-ad6d-6331ad665790"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       visible="true"
+				   expanded="true"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="Poids du non recours à tous types de soins. 
+&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2021)."
+			       queryable="true"
+			       infopanel="bottom-panel">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/p_nrec_soin.mst"/>
 			</layer>
 			<layer id="iris_qpv_recours"
 			       name="Non recours aux soins dentaires"
@@ -507,23 +526,7 @@ Il s'agit d'un indicateur calculé par l'ORS Bretagne ; le sigle « &lt;a href=&
 			       infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/p_nrec_mam.mst"/>	
 			</layer>
-			<layer id="iris_qpv_recours"
-			       name="Recours aux soins non programmés"
-			       style="iris_qpv_p_rec_npgm"
-			       type="wms"
-				   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/36e2eb4c-4118-4f67-ad6d-6331ad665790"
-				   metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=36e2eb4c-4118-4f67-ad6d-6331ad665790"
-			       tiled="true"
-			       exclusive="true"
-			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
-			       visible="true"
-				   expanded="true"
-			       infoformat="application/vnd.ogc.gml"
-			       attribution="Poids du recours à des soins non programmés"
-			       queryable="true"
-			       infopanel="bottom-panel">
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/p_rec_npgm.mst"/>	
-			</layer>
+
 		</theme>
 		<theme id="admin"
 		       name="Référentiel administratif"

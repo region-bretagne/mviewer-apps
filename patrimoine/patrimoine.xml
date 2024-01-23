@@ -87,7 +87,7 @@
                 attribution="Source: Région Bretagne"
 				metadata-csw=""
 				metadata="" >
-                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/addons/recherche/inventaire.mst" />
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/addons/recherche/inventaire_theme.mst" />
 			</layer>
 			<layer id="etude_recensement_patrimoine" name="Etude et recensement par domaine" visible="false" tiled="false" 
 				searchable="false" queryable="true"  toplayer="true" expanded="true" attributelabel="Domaine"
@@ -98,7 +98,7 @@
                 attribution="Source: Région Bretagne"
 				metadata-csw=""
 				metadata="" >
-                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/addons/recherche/inventaire.mst" />
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/addons/recherche/inventaire_theme.mst" />
 			</layer>
 			<layer id="croix_calvaire" name="Croix et calvaires (association)" visible="false" tiled="true" 
 				queryable="true"
