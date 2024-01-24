@@ -46,6 +46,11 @@
 <proxy url="/proxy/?url=" />
 <olscompletion type="ban" url="https://api-adresse.data.gouv.fr/search/" attribution="Base adresse nationale (BAN)" />
 <searchparameters bbox="false" localities="true" features="false" static="false" />
+
+<extensions>
+	<extension type="component" id="isochroneAddon" path="https://kartenn.region-bretagne.fr/kartoviz/demo/addons"/>
+</extensions>
+
 <baselayers style="default"> 
     <baselayer visible="true" id="positron" thumbgallery="img/basemap/positron.png" title="CartoDb" label="Positron" type="OSM" url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" attribution="Map tiles by  &lt;a href=&quot;https://cartodb.com/attributions&quot;&gt;CartoDb&lt;/a&gt;, under  &lt;a href=&quot;https://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY 3.0 &lt;/a&gt;" /> 
     <baselayer visible="false" id="ortho_ign" thumbgallery="img/basemap/ortho.jpg" title="IGN" label="Photographies aériennes IGN" type="WMTS" url="https://data.geopf.fr/wmts?" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" fromcapacity="false" attribution="&lt;a href='https://geoservices.ign.fr' target='_blank'&gt;&lt;img src='https://geoservices.ign.fr/images/logoIGN.png'&gt;&lt;/a&gt;" style="normal" matrixset="PM" maxzoom="22" /> 
