@@ -16,7 +16,7 @@
 <dc:subject>Nombre de demandeur.euse d'emploi</dc:subject>
 <dc:subject>Taux de chômage des moins de 25 ans</dc:subject>
 <dc:subject>Effectif des 13-29 ans</dc:subject>
-<dc:subject>Décrocheurs scolaires</dc:subject>
+<!--<dc:subject>Décrocheurs scolaires</dc:subject>-->
 <dc:subject>Etablissements scolaires</dc:subject>
 <dc:subject>Découpages territoriaux</dc:subject>
 <dc:subject>Découpages territoriaux</dc:subject>
@@ -44,8 +44,8 @@
 
 <mapoptions maxzoom="20" projection="EPSG:3857" center="-307903.74898791354,6141345.088741366" zoom="8" />
 <proxy url="/proxy/?url=" />
-<olscompletion type="ban" url="https://api-adresse.data.gouv.fr/search/" attribution="Base adresse nationale (BAN)" />
-<searchparameters bbox="false" localities="true" features="false" static="false" />
+<elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" doctypes="unite_administrative" linkid="search_id" querymode="match" version="current" />
+<searchparameters bbox="false" localities="false" features="true" static="true"/>
 
 <extensions>
 	<extension type="component" id="isochroneAddon" path="https://kartenn.region-bretagne.fr/kartoviz/demo/addons"/>
@@ -309,6 +309,7 @@
 			showintoc="true">	
 			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_formation_epci.mst" />			
 		</layer>
+<!--
 		<layer 
 			id="jeunesse_formation" 
 			name="Décrocheurs scolaires par commune (2021)" 
@@ -343,6 +344,7 @@
 			exclusive="false" 
 			showintoc="true">			
 		</layer>
+-->
 		<layer id="poi_etablissement_scolaire" name="Établissements scolaires"  visible="false" tiled="false" expanded = "true"
 			searchable="false" queryable="true" fields="appellatio" aliases="appellatio"
 			attributefilter="true" attributefield="classe" 
