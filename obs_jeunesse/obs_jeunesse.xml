@@ -1359,7 +1359,7 @@
 				type="wms" 
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?" 
 				tiled="false" 
-				visible="true" 
+				visible="false" 
 				infoformat="application/vnd.ogc.gml" 
 				fields="nom_epci"
 				aliases=""
