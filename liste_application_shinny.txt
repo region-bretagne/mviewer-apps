@@ -18,3 +18,4 @@
 ./territo_aides_crb/app.R
 ./suivi_apps/app.R
 ./echantillon_lignes/app.R
+./agreg_mos/app.R
