@@ -696,6 +696,15 @@
         </theme> 
 		<theme name="Dragage" id="dragage" icon="fas fa-level-up-alt">
 		<group id="analyse" name="Analyse sédiment">
+			<layer id="analyse_sediment" name="2024" visible="false" tiled="false"
+				queryable="true" 
+                infoformat="application/vnd.ogc.gml" featurecount="5"                
+				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+				attribution="Région Bretagne" 
+				filter="datation=2024-02-01"
+				metadata=""
+				metadata-csw="" >
+			</layer>
 			<layer id="analyse_sediment" name="2023" visible="false" tiled="false"
 				queryable="true" 
                 infoformat="application/vnd.ogc.gml" featurecount="5"                
@@ -720,6 +729,15 @@
 				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
 				attribution="Région Bretagne" 
 				filter="datation=2021-02-01"
+				metadata=""
+				metadata-csw="" >
+			</layer>
+			<layer id="analyse_sediment" name="Historique" visible="false" tiled="false"
+				queryable="true" 
+                infoformat="application/vnd.ogc.gml" featurecount="5"                
+				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+				attribution="Région Bretagne" 
+				filter="datation between 2010-02-01 and 2021-02-01"
 				metadata=""
 				metadata-csw="" >
 			</layer>
