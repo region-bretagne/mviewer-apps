@@ -16,9 +16,33 @@
 				<span style="font-weight:bold"> Commentaire :</span> {{commentaire}}<br/>
 			{{/commentaire}}     
 			{{#producteur}}                
-				<span style="font-weight:bold"> Etat :</span> {{producteur}}<br/>
+				<span style="font-weight:bold"> Producteur :</span> {{producteur}}<br/>
 			{{/producteur}}
-			
+			{{#gestionnaire}}                
+				<span style="font-weight:bold"> Gestionnaire :</span> {{gestionnaire}}<br/>
+			{{/gestionnaire}}
+       </p>
+
+		<p class="text-feature">
+			{{#t_robinet}}                
+				<span style="font-weight:bold"> Type de robinets :</span> {{t_robinet}}<br/>
+			{{/t_robinet}}
+			{{#n_robinet}}                
+				<span style="font-weight:bold"> Nombre de robinets :</span> {{n_robinet}}<br/>
+			{{/n_robinet}}                
+			{{#t_prise}}                
+				<span style="font-weight:bold"> Type de prises :</span> {{t_prise}}<br/>
+			{{/t_prise}}
+			{{#n_prise}}                
+				<span style="font-weight:bold"> Nombre de prises :</span> {{n_prise}}<br/>
+			{{/n_prise}}                
+			{{#t_branche_eu}}                
+				<span style="font-weight:bold"> Type de prises :</span> {{t_branche_eu}}<br/>
+			{{/t_branche_eu}}
+			{{#n_branche_eu}}                
+				<span style="font-weight:bold"> Nombre de prises :</span> {{n_branche_eu}}<br/>
+			{{/n_branche_eu}}                
+
        </p>
 
 
