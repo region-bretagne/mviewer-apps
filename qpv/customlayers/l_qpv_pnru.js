@@ -7,7 +7,7 @@ l_qpv_pnru.legend = { items: [
         label: "Quartier Prioritaire de la Ville",
         geometry: "Polygon",
         styles: [new ol.style.Style({
-            stroke: new ol.style.Stroke({ color: 'rgba(45, 64, 89,1.0)', width: 3 }),
+            stroke: new ol.style.Stroke({ color: 'rgba(255, 78, 26,1.0)', width: 2 }),
             fill: new ol.style.Fill({ color: 'rgba(255, 255, 255,.01)'})
         })]
     }

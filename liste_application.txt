@@ -98,10 +98,10 @@
 ./transport/trafic.xml
 ./transport/transports.xml
 ./vn/vn_mergin.xml
-./vn/vn_print.xml
 ./vn/vn_public.xml
 ./vn/vn_reseaux.xml
 ./vn/vn.xml
+./vn/vn_new.xml
 ./a_suppr_gestion_immo/gestion_immo.xml
 ./a_suppr_immo2/immobilier.xml
 ./a_suppr_swipe/mos_swipe.xml

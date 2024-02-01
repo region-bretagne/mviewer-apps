@@ -1189,8 +1189,30 @@
 			showintoc="true">	
 			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_mne_ase.mst" />					
 		</layer>
+		<layer id="qpv"
+			       name="Périmètres QPV 2024"
+			       toplayer="true"
+			       tiled="true"
+			       type="customlayer"
+			       vectorlegend="true"
+			       url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/customlayers/qpv.js"
+			       visible="false"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="GéoBretagne"
+			       queryable="false"
+			       searchable="true"
+			       searchengine="fuse"
+			       fusesearchkeys="nom,commune"
+			       fusesearchresult="{{nom}} - {{commune}}"
+			       infopanel="bottom-panel"
+			       tooltip="true"
+			       tooltipcontent="{{nom}}"
+			       metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=33e57276-b6be-4e70-968d-f89c9ff69bb4"
+			       metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/33e57276-b6be-4e70-968d-f89c9ff69bb4">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/qpv.mst"/>
+			</layer>
 		<layer id="l_qpv_pnru"
-			name="Périmètre des QPV"
+			name="Anciens périmètres QPV"
 			toplayer="true"
 			tiled="true"
 			type="customlayer"

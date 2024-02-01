@@ -6,21 +6,24 @@
         {{/photo}}                
 
 		<p class="text-feature">
+			{{#id_plaque}}                
+				<span style="font-weight:bold"> Identifiant plaque :</span> {{id_plaque}}<br/>
+			{{/id_plaque}}
 			{{#ss_type_equip}}                
 				<span style="font-weight:bold"> Sous type :</span> {{ss_type_equip}}<br/>
 			{{/ss_type_equip}}
 			{{#etat}}                
 				<span style="font-weight:bold"> Etat :</span> {{etat}}<br/>
 			{{/etat}}
-			{{#commentaire}}                
-				<span style="font-weight:bold"> Commentaire :</span> {{commentaire}}<br/>
-			{{/commentaire}}     
-			{{#producteur}}                
-				<span style="font-weight:bold"> Producteur :</span> {{producteur}}<br/>
-			{{/producteur}}
+			{{#proprietaire}}                
+				<span style="font-weight:bold"> Propriétaire :</span> {{proprietaire}}<br/>
+			{{/proprietaire}}
 			{{#gestionnaire}}                
 				<span style="font-weight:bold"> Gestionnaire :</span> {{gestionnaire}}<br/>
 			{{/gestionnaire}}
+			{{#commentaire}}                
+				<span style="font-weight:bold"> Commentaire :</span> {{commentaire}}<br/>
+			{{/commentaire}}     
        </p>
 
 		<p class="text-feature">
