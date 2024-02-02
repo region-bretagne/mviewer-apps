@@ -12,8 +12,6 @@
 ./breizhgo/lieu_vente.xml
 ./bretagne_bzh/centralite.xml
 ./bretagne_bzh/cooperation_internationale.xml
-./bretagne_bzh/culture.xml
-./bretagne_bzh/culture_pepci.xml
 ./bretagne_bzh/deplacement_president.xml
 ./bretagne_bzh/destination_touristique.xml
 ./bretagne_bzh/environnement.xml
@@ -102,9 +100,5 @@
 ./vn/vn_reseaux.xml
 ./vn/vn.xml
 ./vn/vn_new.xml
-./a_suppr_gestion_immo/gestion_immo.xml
-./a_suppr_immo2/immobilier.xml
-./a_suppr_swipe/mos_swipe.xml
-./a_suppr_swipe/swipe.xml
 ./jeunesse/crj.xml
 ./obs_jeunesse/obs_jeunesse.xml
