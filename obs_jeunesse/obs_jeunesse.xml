@@ -758,7 +758,39 @@
                 attribution="SNCF réseau" 
                 metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/b8927600-5b49-11de-b5dc-0000c0a8230c"
                 metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b8927600-5b49-11de-b5dc-0000c0a8230c">
-			</layer>  
+			</layer> 
+			<layer 
+				id="jeunesse_mobilite_ter" 
+				name="Lignes TER les plus fréquentées par les jeunes" 
+				type="wms" 
+				url="https://ows.region-bretagne.fr/geoserver/interne/ows?" 
+				tiled="false" 
+				visible="false" 
+				infoformat="application/vnd.ogc.gml" 
+				fields="axe,total_voyage,jeune_plus_scolaire,voyage_jeunes_commerciaux,scolaires,millesime"
+				aliases="Ligne,Nombre total de voyage,Voyages par des jeunes,dont commerciaux,dont scolaires,Année"
+				style="jeunesse_mobilite_ter"
+				stylesalias=""  						
+				metadata="" 
+				metadata-csw="" 
+				attribution="Source : SNCF (2022)" 
+				queryable="true" 
+				searchable="false" 			
+				fusesearchkeys="" 
+				fusesearchresult="" 
+				secure="public" 
+				useproxy="false" 
+				legendurl="" 
+				featurecount="10" 
+				infopanel="right-panel" 
+				opacity=".9" 
+				index="" 
+				styletitle="" 
+				dynamiclegend="false" 
+				toplayer="false" 
+				exclusive="false" 
+				showintoc="true">
+			</layer>			
         </group>
         <group name="Transports routiers" id="grp2" >
             <layer id="reseau_breizhgo_car" name="Réseau Breizh Go"  visible="false" tiled="false" 
