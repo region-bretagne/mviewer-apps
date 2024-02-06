@@ -29,7 +29,7 @@
 	title="Observatoire breton des jeunesses (prototype)" 
 	logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/img/logo_jeun.svg" 
 	favicon="" help="" titlehelp="" iconhelp="fas fa-home" home="" 
-	style="css/themes/ripe_lemon.css" 
+	style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/css/kartenn_economie.css" 
 	zoomtools="true" 
 	initialextenttool="true" 
 	exportpng="false" 
@@ -38,7 +38,7 @@
 	measuretools="true" 
 	mouseposition="false" 
 	geoloc="false" 
-	studio="https://kartenn.region-bretagne.fr/mvs/index.html?xml=" togglealllayersfromtheme="false"
+	togglealllayersfromtheme="false"
 	stats="true" statsurl="../ws/kartenn/log.php" >
 </application>
 
@@ -767,8 +767,8 @@
 				tiled="false" 
 				visible="false" 
 				infoformat="application/vnd.ogc.gml" 
-				fields="axe,total_voyage,jeune_plus_scolaire,voyage_jeunes_commerciaux,scolaires,millesime"
-				aliases="Ligne,Nombre total de voyage,Voyages par des jeunes,dont commerciaux,dont scolaires,Année"
+				fields=""
+				aliases=""
 				style="jeunesse_mobilite_ter"
 				stylesalias=""  						
 				metadata="" 
@@ -782,7 +782,7 @@
 				useproxy="false" 
 				legendurl="" 
 				featurecount="10" 
-				infopanel="right-panel" 
+				infopanel="bottom-panel" 
 				opacity=".9" 
 				index="" 
 				styletitle="" 
@@ -790,6 +790,7 @@
 				toplayer="false" 
 				exclusive="false" 
 				showintoc="true">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_mobilite_ter.mst" />		
 			</layer>			
         </group>
         <group name="Transports routiers" id="grp2" >

@@ -98,12 +98,13 @@
 			</layer>
 			<layer id="lycee_sousstation_ascol"
 			       name="Sous-stations"
-			       type="wms"
-				   style="lycee_sousstation"
+   				   expanded="true"
+				   type="wms"
 			       visible="true"
 			       url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
 			       infoformat="application/vnd.ogc.gml"
-			       queryable="true"
+				   style="lycee_sousstation,lycee_sousstation_rcu" stylesalias="Sous-station,RCU-Interne"
+				   queryable="true"
 			       infopanel="right-panel"
 			       scalemin="0"
 			       scalemax="7500">
