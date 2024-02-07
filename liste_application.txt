@@ -39,6 +39,7 @@
 ./global/global.xml
 ./gouvernance_formation/gouvernance_formation.xml
 ./immobilier/immobilier.xml
+./immobilier/rec_immobilier.xml
 ./index_dd/index_dd.xml
 ./kelenn/gestionnaire_recrutement.xml
 ./kelenn/gestionnaire_rh.xml
