@@ -485,7 +485,7 @@
 			id="jeunesse_cls" 
 			name="Contrats locaux de santé en Bretagne" 
 			type="wms" 
-			url="https://ows.region-bretagne.fr/geoserver/formation_rb/ows?" 
+			url="https://ows.region-bretagne.fr/geoserver/interne/ows?" 
 			tiled="true" 
 			visible="false" 
 			infoformat="application/vnd.ogc.gml" 
