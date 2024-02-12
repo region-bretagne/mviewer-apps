@@ -12,16 +12,16 @@
 			</rdf:Description>
 		</rdf:RDF>
 	</metadata>
-	<application title="Patrimoine immobilier de la région Bretagne"
+	<application title="Patrimoine immobilier de la région Bretagne" id="immobilier"
 		logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/img/rb_blanc.svg" 
-		help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" 
+		help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/help.html" 
 		style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/css/theme.css"
 		 exportpng="true"
 		 showhelp="false"
 		 coordinates="false"
 		 measuretools="true"
 		 togglealllayersfromtheme="true"
-		 stats="true" statsurl="../ws/kartenn/log.php"/>
+		 stats="false" statsurl="../ws/kartenn/log.php"/>
 	<mapoptions maxzoom="20"
 	            projection="EPSG:3857"
 	            center="-319361.60370307823,6126930.683325168"
@@ -48,6 +48,13 @@
             url="https://data.geopf.fr/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
             attribution="&lt;a href='https://geoservices.ign.fr/services-geoplateforme-diffusion' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
 	</baselayers>
+	
+	
+	<extensions>    
+		<extension type="component" id="print" path="https://kartenn.region-bretagne.fr/kartoviz/demo/addons_rb"/>
+    </extensions> 
+	
+	
 	<themes mini="false"
 	        legendmini="false">
 		<theme id="lycee"
@@ -98,13 +105,12 @@
 			</layer>
 			<layer id="lycee_sousstation_ascol"
 			       name="Sous-stations"
-   				   expanded="true"
-				   type="wms"
+			       type="wms"
+				   style="lycee_sousstation_rcu"
 			       visible="true"
 			       url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
 			       infoformat="application/vnd.ogc.gml"
-				   style="lycee_sousstation,lycee_sousstation_rcu" stylesalias="Sous-station,RCU-Interne"
-				   queryable="true"
+			       queryable="true"
 			       infopanel="right-panel"
 			       scalemin="0"
 			       scalemax="7500">
@@ -166,13 +172,6 @@
 			<!-- scalemax="10000"> -->
 			<!-- <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/lycee_parcelle.mst"></template>  -->
 			<!-- </layer>  -->
-			<layer id="proprietes_region"
-			       name="Propriétés Région"
-			       type="wms"
-			       url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
-			       infoformat="application/vnd.ogc.gml"
-			       queryable="true"
-			       infopanel="right-panel"/>
 			<layer id="bretagne_5"
 			       name="Bretagne à 5"
 			       visible="true"
@@ -194,8 +193,12 @@
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c8884cac-bc25-41a0-92d1-b6566c86066e" >
             </layer>
 		</theme>
-		<theme id="services" name="Services" collapsed="true" icon="fas fa-building">
-			<layer id="site_lycee_region" name="Sites régions"  visible="false" tiled="false"
+		
+		<theme id="tertiaire"
+		       name="Tertiaire"
+		       collapsed="true"
+		       icon="fas fa-building">
+			<layer id="site_region" name="Sites de la Région"  visible="false" tiled="false"
 				infoformat="application/vnd.ogc.gml" featurecount="1" queryable="true"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 				attribution="Source: Région Bretagne" 
@@ -203,6 +206,45 @@
 				metadata-csw="" >	   
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/site_region/templates/site_region.mst"></template> 
 			</layer> 
+			<!--<layer id="v_lycees_ascenseur"
+			       name="Ascenseurs (à constuire)"
+			       type="wms"
+			       visible="false"
+			       url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+			       infoformat="application/vnd.ogc.gml"
+			       queryable="true"
+			       infopanel="right-panel"
+			       scalemin="0"
+			       scalemax="7500">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/lycee_asc.mst"/>
+			</layer>
+			<layer id="v_lycee_chauff_point"
+			       name="Chaufferies (à constuire)"
+				   expanded="true"
+			       type="wms"
+			       visible="false"
+			       url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+			       infoformat="application/vnd.ogc.gml"
+				   style="lycee_chaudiere,chauff_combustible,chauff_puissance" stylesalias="Chaufferie,Combustible,Puissance"
+			       queryable="true"
+			       infopanel="right-panel"
+			       scalemin="0"
+			       scalemax="7500">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/lycee_cha.mst"/>
+			</layer>
+			<layer id="lycee_sousstation_ascol"
+			       name="Sous-stations (à constuire)"
+			       type="wms"
+				   style="lycee_sousstation_rcu"
+			       visible="false"
+			       url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+			       infoformat="application/vnd.ogc.gml"
+			       queryable="true"
+			       infopanel="right-panel"
+			       scalemin="0"
+			       scalemax="7500">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/lycee_cha_ss.mst"/>
+			</layer>-->
 			<layer 
 				id="batiment_site_region"
 				name="Bâtiments des services"
@@ -217,9 +259,34 @@
 				infopanel="right-panel">
 					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/batiment_site_region.mst"></template> 
 			</layer> 
+				
 		</theme>
+		
+		<theme id="canaux" name="Canaux" collapsed="true" icon="fas fa-ship">
+			<layer id="batiment_vn" name="Bâtiments" visible="false" tiled="false" 
+				searchable="true" queryable="true" fields="nom,affecta,photo" aliases="Nom, Affectation,Photo"
+				infoformat="application/vnd.ogc.gml" featurecount="20"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attributefilter="true" attributefield="brigade" attributevalues="Evran,Hennebont,Josselin,Mons,Pontivy,Redon,Saint-Germain"
+				attribution="Région Bretagne" 
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b0265f77-f69f-4433-b79e-47bd59af7e71"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b0265f77-f69f-4433-b79e-47bd59af7e71">  
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.batiment_vn.mst"></template>
+			</layer>		
+		</theme>
+		<!--<theme id="transport" name="Transport" collapsed="true" icon="fas fa-train">
+		</theme>
+		<theme id="ports" name="Ports" collapsed="true" icon="fas fa-ship">
+		</theme>-->
 
         <theme name="Cadastre"  collapsed="true" id="cadastre" icon="fas fa-square"> 
+			<layer id="proprietes_region"
+			       name="Propriétés Région"
+			       type="wms"
+			       url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+			       infoformat="application/vnd.ogc.gml"
+			       queryable="true"
+			       infopanel="right-panel"/>
             <layer id="cad" name="Sélection cadastrale" visible="false" queryable="true"
                 type="customlayer" opacity="0.8" legendurl="img/blank.gif"
                 url="https://kartenn.region-bretagne.fr/kartoviz/demo/cad/layer.js"
@@ -304,6 +371,216 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/accessibilite/templates/batiment_region_accessibilite.mst"/>
 			</layer>
 		</theme>
+		
+<!--<theme id="aep" name="Reseaux" collapsed="true" icon="fas fa-code-branch"> 
+       
+	<group name="Adduction d'eau potable" id="group1">
+		<layer 
+            id="aep_ouvrage"
+            name="AEP Ouvrage"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/wms"
+            infoformat="application/vnd.ogc.gml"
+            metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
+            metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
+            attribution="Source: Région Bretagne"
+            queryable="true"
+            searchable="true"
+            secure="public"
+            featurecount="1"
+            infopanel="right-panel"
+            opacity="1">
+        </layer> 
+        <layer 
+            id="aep_equipement"
+            name="AEP equipement"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/wms"
+            visible="false"
+            infoformat="application/vnd.ogc.gml"
+            metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
+            metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
+            attribution="Source: Région Bretagne"
+            queryable="true"
+            searchable="true"
+            secure="public"
+            featurecount="1"
+            infopanel="right-panel">
+        </layer> 
+        <layer 
+            id="aep_troncon"
+            name="AEP Troncon"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/wms"
+            visible="false"
+            infoformat="application/vnd.ogc.gml"
+            metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
+            metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
+            attribution="Source: Région Bretagne"
+            queryable="true"
+            searchable="true"
+            secure="public"
+            featurecount="1"
+            infopanel="right-panel">
+        </layer> 
+    </group>
+		<group name="Assainissement" id="group2">
+
+        <layer 
+            id="ass_ouvrage"
+            name="Assainissement Ouvrage"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/wms"
+            visible="false"
+            infoformat="application/vnd.ogc.gml"
+            metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
+            metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
+            attribution="Source: Région Bretagne"
+            queryable="true"
+            searchable="true"
+            secure="public"
+            featurecount="1"
+            infopanel="right-panel">
+        </layer> 
+        <layer 
+            id="ass_equipement"
+            name="Assainissement Equipement"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/wms"
+            visible="false"
+            infoformat="application/vnd.ogc.gml"
+            metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
+            metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
+            attribution="Source: Région Bretagne"
+            queryable="true"
+            searchable="true"
+            secure="public"
+            featurecount="1"
+            infopanel="right-panel">
+        </layer> 
+        <layer 
+            id="ass_troncon"
+            name="Assainissement Troncon"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/wms"
+            visible="false"
+            infoformat="application/vnd.ogc.gml"
+            metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
+            metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
+            attribution="Source: Région Bretagne"
+            queryable="true"
+            searchable="true"
+            secure="public"
+            featurecount="1"
+            infopanel="right-panel">
+        </layer> 
+    </group>
+	<group name="Télécom" id="group3">	
+        <layer 
+            id="tel_equipement"
+            name="Equipement télécom"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/wms"
+            visible="false"
+            infoformat="application/vnd.ogc.gml"
+            metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
+            metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
+            attribution="Source: Région Bretagne"
+            queryable="true"
+            searchable="true"
+            secure="public"
+            featurecount="1"
+            infopanel="right-panel">
+        </layer> 
+        <layer 
+            id="tel_ouvrage"
+            name="Téléphonie ouvrage"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/wms"
+            visible="false"
+            infoformat="application/vnd.ogc.gml"
+            metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
+            metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
+            attribution="Source: Région Bretagne"
+            queryable="true"
+            searchable="true"
+            secure="public"
+            featurecount="1"
+            infopanel="right-panel">
+        </layer> 
+    </group>
+	<group name="Eclairage" id="group4">	
+        <layer 
+            id="ecl_equipement"
+            name="Eclairage équipement"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/wms"
+            visible="false"
+            infoformat="application/vnd.ogc.gml"
+            metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
+            metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
+            attribution="Source: Région Bretagne"
+            queryable="true"
+            searchable="true"
+            secure="public"
+            featurecount="1"
+            infopanel="right-panel"
+            opacity="1">
+        </layer> 
+    </group> 
+    <group name="Electricité" id="group5">
+        <layer 
+            id="elec_ouvrage"
+            name="electricité ouvrage"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/wms"
+            visible="false"
+            infoformat="application/vnd.ogc.gml"
+            metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
+            metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
+            attribution="Source: Région Bretagne"
+            queryable="true"
+            searchable="true"
+            secure="public"
+            featurecount="1"
+            infopanel="right-panel">
+        </layer> 
+        <layer 
+            id="elec_equipement"
+            name="electricité équipement"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/wms"
+            visible="false"
+            infoformat="application/vnd.ogc.gml"
+            metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
+            metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
+            attribution="Source: Région Bretagne"
+            queryable="true"
+            searchable="true"
+            secure="public"
+            featurecount="1"
+            infopanel="right-panel">
+        </layer> 
+        <layer 
+            id="elec_troncon"
+            name="electricité troncon"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/wms"
+            visible="false"
+            infoformat="application/vnd.ogc.gml"
+            metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
+            metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
+            attribution="Source: Région Bretagne"
+            queryable="true"
+            searchable="true"
+            secure="public"
+            featurecount="1"
+            infopanel="right-panel">
+        </layer> 
+    </group> 
+
+    </theme> -->
+		
     <theme id="pei" name="Point d'eau incendie" collapsed="true" icon="fas fa-fire-extinguisher"> 
         <layer 
             id="point_eau_incendie_sdis22"
