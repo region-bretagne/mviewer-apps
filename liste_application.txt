@@ -96,11 +96,10 @@
 ./transport/okina.xml
 ./transport/trafic.xml
 ./transport/transports.xml
-./vn/vn_mergin.xml
 ./vn/vn_public.xml
 ./vn/vn_reseaux.xml
+./vn/vn_old.xml
 ./vn/vn.xml
-./vn/vn_new.xml
 ./jeunesse/crj.xml
 ./obs_jeunesse/obs_jeunesse.xml
 ./obs_jeunesse/obs_jeunesse_2.xml
