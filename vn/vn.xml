@@ -90,8 +90,8 @@
 				filter="type='borne kilométrique'"
 				style="bornes_km"
 				attribution="Région Bretagne" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a09e5878-739c-46aa-ad0b-ace03ffe3886"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/a09e5878-739c-46aa-ad0b-ace03ffe3886" >  
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=cc512501-a408-492a-b917-141b9d84ce27"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/cc512501-a408-492a-b917-141b9d84ce27" >  
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/signalisation.mst"></template>
 			</layer>		
 		    <layer id="signalisation_vn" name="Signalétique touristique" visible="false" tiled="false" 
@@ -101,8 +101,8 @@
 				filter="type='signalétique touristique'"
 				style="signalisation_vn"
 				attribution="Région Bretagne" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ef335ae2-a6e2-4eb6-8edf-5fb30ac3ee9f"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ef335ae2-a6e2-4eb6-8edf-5fb30ac3ee9f" >  
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=cc512501-a408-492a-b917-141b9d84ce27"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/cc512501-a408-492a-b917-141b9d84ce27" >  
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/signalisation.mst"></template>
 			</layer>		
 		    <layer id="signalisation_vn" name="Signalisation de navigation" visible="false" tiled="false" 
@@ -112,8 +112,8 @@
 				filter="type='signalétique de navigation'"
 				style="signalisation_navigation"
 				attribution="Région Bretagne" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=58e1b1a6-2cf7-4088-b59a-bdc1c7526e3c"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/58e1b1a6-2cf7-4088-b59a-bdc1c7526e3c" >  
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=cc512501-a408-492a-b917-141b9d84ce27"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/cc512501-a408-492a-b917-141b9d84ce27" >  
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/signalisation.mst"></template>
 			</layer>
 		    <layer id="signalisation_vvv" name="Signalisation Véloroutes-Voies Vertes sur les chemins de halage" visible="false" tiled="false" 
@@ -132,8 +132,8 @@
 				filter="type='bouée'"
 				style="bouees_vn"
 				attribution="Région Bretagne" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=58e1b1a6-2cf7-4088-b59a-bdc1c7526e3c"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/58e1b1a6-2cf7-4088-b59a-bdc1c7526e3c" >  
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=cc512501-a408-492a-b917-141b9d84ce27"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/cc512501-a408-492a-b917-141b9d84ce27" >  
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/signalisation.mst"></template>
 			</layer>
         </theme> 
@@ -145,8 +145,8 @@
 				style="equipement_mobilier" stylesalias="Type" 
 				attributefilter="true" attributevalues="hors service,dégradé,moyen,bon" attributefield="etat"
 				attribution="Région Bretagne" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5d46b3e3-3a21-4f78-978d-fb38027ca971"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/5d46b3e3-3a21-4f78-978d-fb38027ca971" > 
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5bf220ec-d62a-4d1b-8588-6f23087bea55"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/5bf220ec-d62a-4d1b-8588-6f23087bea55" > 
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/equipement.mst"></template>
 			</layer>							
 			<layer id="equipement_vn" name="Parkings" visible="false" tiled="false" 
@@ -156,8 +156,8 @@
 				style="parking" 
 				filter="type_equip='parking auto'"
 				attribution="Région Bretagne" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=08835525-f372-4681-9c1d-527ee6a51e79"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/08835525-f372-4681-9c1d-527ee6a51e79" > 
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5bf220ec-d62a-4d1b-8588-6f23087bea55"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/5bf220ec-d62a-4d1b-8588-6f23087bea55" > 
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/equipement.mst"></template>
 			</layer>												
 		    <layer id="equipement_vn" name="Points d'eau randonneurs" visible="false" tiled="false" 
@@ -167,8 +167,8 @@
 				style="	point_eau_randonneur" 
 				filter="type_equip='point d’eau potable'"
 				attribution="Région Bretagne" 
-				metadata-csw=""
-				metadata="">  
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5bf220ec-d62a-4d1b-8588-6f23087bea55"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/5bf220ec-d62a-4d1b-8588-6f23087bea55" > 
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/equipement.mst"></template>
 			</layer>												
 			<layer id="equipement_vn" name="Sanitaires" visible="false" tiled="false" 
@@ -177,8 +177,8 @@
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="equipement_sanitaire_wc,equipement_sanitaire_douche" stylesalias="WC,Douche" 
 				attribution="Région Bretagne" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c1b02fac-b018-4c87-8a11-b032b34af3db"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/c1b02fac-b018-4c87-8a11-b032b34af3db" >  
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5bf220ec-d62a-4d1b-8588-6f23087bea55"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/5bf220ec-d62a-4d1b-8588-6f23087bea55" > 
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/equipement.mst"></template>
 			</layer>							
 			<layer id="equipement_vn" name="Bornes multiservices" visible="false" tiled="false" 
@@ -188,8 +188,8 @@
 				style="borne_multiservice,equipement_borne_eau_navigant,equipement_borne_electricite,equipement_borne_eu" stylesalias="Defaut,Eau navigant,Electricité,Eaux usées" 
 				filter="type_equip='borne multiservice'"
 				attribution="Région Bretagne" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c74aad0d-d6ba-4455-8948-3b68b8d32ea0"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/c74aad0d-d6ba-4455-8948-3b68b8d32ea0" >  
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5bf220ec-d62a-4d1b-8588-6f23087bea55"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/5bf220ec-d62a-4d1b-8588-6f23087bea55" > 
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/equipement.mst"></template>
 			</layer>	
 			<layer id="equipement_vn" name="Cale de mise à l'eau" visible="false" tiled="false" 
@@ -199,8 +199,8 @@
 				style="cale" 
 				filter="type_equip='cale de mise à l''eau'"
 				attribution="Région Bretagne" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5c8894b5-4375-4b77-96ea-a2b627f0c914"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/5c8894b5-4375-4b77-96ea-a2b627f0c914" >  
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5bf220ec-d62a-4d1b-8588-6f23087bea55"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/5bf220ec-d62a-4d1b-8588-6f23087bea55" > 
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/equipement.mst"></template>
 			</layer>		
 			<layer id="equipement_vn" name="Quai et ponton" visible="false" tiled="false" 
@@ -210,8 +210,8 @@
 				style="quai" 
 				filter="type_equip='quai'"				
 				attribution="Région Bretagne" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a44cc5d7-ecb6-451b-b805-1ecf52c30aab"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/a44cc5d7-ecb6-451b-b805-1ecf52c30aab" >  
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5bf220ec-d62a-4d1b-8588-6f23087bea55"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/5bf220ec-d62a-4d1b-8588-6f23087bea55" > 
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/equipement.mst"></template>
 			</layer>		
 			<layer id="equipement_vn" name="Ponton d'attente" visible="false" tiled="false" 
@@ -221,8 +221,8 @@
 				style="ponton_attente" 
 				filter="type_equip='ponton d''attente'"				
 				attribution="Région Bretagne" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=68b88c6b-a65b-4107-b4d8-b3ae7ce9b9e4"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/68b88c6b-a65b-4107-b4d8-b3ae7ce9b9e4" >
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5bf220ec-d62a-4d1b-8588-6f23087bea55"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/5bf220ec-d62a-4d1b-8588-6f23087bea55" > 
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/equipement.mst"></template>
 			</layer>					
 			<layer id="ecocompteur_vn" name="Ecocompteurs" visible="false" tiled="false" 
@@ -230,8 +230,8 @@
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution="Région Bretagne" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=adb30135-871b-4d5d-94d9-b95f90a24d62"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/adb30135-871b-4d5d-94d9-b95f90a24d62" >  
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5bf220ec-d62a-4d1b-8588-6f23087bea55"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/5bf220ec-d62a-4d1b-8588-6f23087bea55" > 
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.ecocompteur_vn.mst"></template>
 			</layer>							
 			<layer id="ecocompteur_trafic" name="Ecocompteurs - trafic annuel" visible="false" tiled="false" 
@@ -249,8 +249,8 @@
 				style="	station_reparation_gonflage_velo" 
 				filter="type_equip='atelier d''auto-réparation et d''entretien'"				
 				attribution="Région Bretagne" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=53b298ad-2c8e-4e39-a781-462ebcfb7e75"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/53b298ad-2c8e-4e39-a781-462ebcfb7e75" >  
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5bf220ec-d62a-4d1b-8588-6f23087bea55"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/5bf220ec-d62a-4d1b-8588-6f23087bea55" > 
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/equipement.mst"></template>
 			</layer>
 			<layer id="equipement_vn" name="Défibrillateur" visible="false" tiled="false" 
@@ -259,8 +259,8 @@
 				style="defibrillateur" 
 				filter="type_equip='défibrillateur'"				
 				attribution="Région Bretagne" 
-				metadata-csw=""
-				metadata="" >  
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5bf220ec-d62a-4d1b-8588-6f23087bea55"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/5bf220ec-d62a-4d1b-8588-6f23087bea55" > 
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/equipement.mst"></template>
 			</layer>
         </theme> 
