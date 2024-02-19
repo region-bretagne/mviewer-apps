@@ -204,7 +204,7 @@
 				attribution="Source: Région Bretagne" 
 				metadata=""
 				metadata-csw="" >	   
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/site_region/templates/site_region.mst"></template> 
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/site_region.mst"></template> 
 			</layer> 
 			<!--<layer id="v_lycees_ascenseur"
 			       name="Ascenseurs (à constuire)"
