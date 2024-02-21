@@ -19,7 +19,7 @@
 			<div class="floating-box pmr {{classe_h_mot}}"><span class="tooltiptext">{{classe_h_mot_txt}}</span></div>
 			<div class="floating-box visuel {{classe_h_vis}}"><span class="tooltiptext">{{classe_h_vis_txt}}</span></div>
 			<div class="floating-box mm {{classe_h_mm}}"><span class="tooltiptext">{{classe_h_mm_txt}}</span></div>
-        </div><br><br><br>
+        </div><br><br>
 		{{/accessibilite}}
 		<br>
 			Zoomer pour avoir le détail des bâtiments
