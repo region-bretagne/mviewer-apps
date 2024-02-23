@@ -6,7 +6,11 @@
 			<span style="font-weight:bold"> Diamètre :</span> {{diametre}} cm<br/>
 			{{#remarque}}                
 			<span style="font-weight:bold"> Remarque :</span> {{remarque}}<br/>
-			{{/remarque}}                
+			{{/remarque}} 
+			{{#brigade}}                
+				<span style="font-weight:bold"> Brigade :</span> {{brigade}}<br/>
+			{{/brigade}}     
+
        </p>
 	</li>
 {{/features}}

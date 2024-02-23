@@ -21,6 +21,9 @@
 			{{#gestionnaire}}                
 				<span style="font-weight:bold"> Gestionnaire :</span> {{gestionnaire}}<br/>
 			{{/gestionnaire}}
+			{{#brigade}}                
+				<span style="font-weight:bold"> Brigade :</span> {{brigade}}<br/>
+			{{/brigade}}     
 			{{#commentaire}}                
 				<span style="font-weight:bold"> Commentaire :</span> {{commentaire}}<br/>
 			{{/commentaire}}     
