@@ -50,7 +50,6 @@
 ./mulette/mulette.xml
 ./ocs56/ocs56.xml
 ./patrimoine/patrimoine.xml
-./patrimoine/patrimoine_old.xml
 ./patrimoine/patrimoine_simple.xml
 ./pepci/fibre.xml
 ./perequation/pactes.xml
