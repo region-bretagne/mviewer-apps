@@ -302,15 +302,6 @@
 				attribution="Région Bretagne" 
 				metadata-csw=""
 				metadata="" />
-			<layer id="ouvrage_hydraulique_secondaire_vn" name="Ouvrages hydrauliques secondaires" visible="false" tiled="false" 
-				queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
-				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-				attribution="Région Bretagne" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5b22269e-d6bd-4f25-8583-12697db4475f"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/5b22269e-d6bd-4f25-8583-12697db4475f" >  
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.ouvrage_hydraulique_secondaire_vn.mst"></template>
-			</layer>							
 			<layer id="ouvrage_conduite_vn" name="Ouvrages conduites" visible="false" tiled="false" 
 				queryable="true"
 				infoformat="application/vnd.ogc.gml" featurecount="20"
