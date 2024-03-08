@@ -734,6 +734,39 @@
 			exclusive="false" 
 			showintoc="true">
         </layer> 
+		<layer 
+			id="n_plh_zsup_r53" 
+			name="Plan Locaux de l'Habitat (PLH)"
+			type="wms" 
+			url="https://geobretagne.fr/geoserver/dreal_b/n_plh_zsup_r53/wms"
+			tiled="true" 
+			visible="false"
+			infoformat="application/vnd.ogc.gml" 
+			fields="NOM,ETAT,LEGENDE_DR,DATE_ENGAG,DEBUT_EXEC,DATE_APPRO,NB_COMMUNE,DUREE" 
+			aliases="Nom,État,Statut,Date d'engagement,Début d'exécution,Date d'approbation,Nombre de communes,Date d'échéance"
+			style="n_plh_zsup_r53"
+			stylesalias="" 
+			metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/650fa38b-1c32-4b7a-b673-991cb47850e0"
+			metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ELEMENTSETNAME=full&amp;ID&amp;ID=b5cb375d-7bb5-4b75-84f7-649e8f84e0dd" 
+			attribution="Source : DREAL Bretagne (état au 31/12/2023)"
+			queryable="true"
+			searchable="false" 
+			fusesearchkeys="" 
+			fusesearchresult="" 
+			useproxy="false"
+			filter="" 
+			sld="" 
+			legendurl=""
+			featurecount="" 
+			infopanel="right-panel"
+			opacity=".7" 
+			index=""
+			styletitle="" 
+			dynamiclegend="false" 
+			toplayer="false" 
+			exclusive="false" 
+			showintoc="true">
+        </layer> 
 	</theme> 
 	<theme id="jeunesse_mobilite" name="6- Mobilités" collapsed="true" icon="fas fa-bus"> 
 		<group name="Transports ferroviaires" id="grp1" >

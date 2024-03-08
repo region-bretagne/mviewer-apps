@@ -78,13 +78,13 @@
 				</layer>  
             </group>
             <group name="Transports routiers" id="grp2" >
-				<layer id="arret_logique_reseau_breizhgo_car" name="Arrêts logiques du réseau BreizhGo"  visible="false" tiled="false" 
+				<layer id="arret_reseau_breizhgo_car" name="Arrêts du réseau BreizhGo"  visible="false" tiled="false" 
                     searchable="false" queryable="true"
                     infoformat="application/vnd.ogc.gml" featurecount="20"
 					url="https://ows.region-bretagne.fr/geoserver/rb/wms"
                     attribution="Région Bretagne" 
-					metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/dfd88250-3931-48ba-a77c-a218ae55e0f1"
-					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=dfd88250-3931-48ba-a77c-a218ae55e0f1">
+					metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/252ee615-278d-4bc1-b5a7-9ea543348e72"
+					metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=252ee615-278d-4bc1-b5a7-9ea543348e72">
 		            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.arret_breizhgo.mst"></template>
 		        </layer>
 <!-- 				<layer id="arret_scolaire_bretagne" name="Arrêts scolaires"  visible="false" tiled="false"
