@@ -91,7 +91,6 @@
 ./tmp/mos.xml
 ./tmp/mst1.xml
 ./tmp/test_cadastre.xml
-./transport/breizhgo_2023.xml
 ./transport/mobibreizh.xml
 ./transport/okina.xml
 ./transport/trafic.xml
