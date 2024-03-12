@@ -292,7 +292,7 @@
     </theme> 
     <theme id="theme-reseau eau" name="Réseau eau" collapsed="true" icon="fas fa-tint"> 
         <layer 
-            id="r_ep_troncon"
+            id="r_ep_troncon_aeroport"
             name="Réseau eaux pluviales"
             type="wms"
             url="https://ows.region-bretagne.fr/geoserver/interne/wms"
@@ -304,7 +304,7 @@
             opacity="1">
         </layer> 
         <layer 
-            id="r_aep_troncon"
+            id="r_aep_troncon_aeroport"
             name="Réseau d'adduction d'eau potable"
             type="wms"
             url="https://ows.region-bretagne.fr/geoserver/interne/wms"
@@ -316,7 +316,7 @@
             opacity="1">
         </layer> 
         <layer 
-            id="r_eu_troncon"
+            id="r_eu_troncon_aeroport"
             name="Réseau eaux usées"
             type="wms"
             url="https://ows.region-bretagne.fr/geoserver/interne/wms"
