@@ -2,8 +2,6 @@
 ./_region/modele.xml
 ./accessibilite/accessibilite.xml
 ./aeroport/aeroport.xml
-./aeroport/aeroport_bak.xml
-./aeroport/aeroport_erreur.xml
 ./aides/aides.xml
 ./ame/ame.xml
 ./breizh_bocage/config.xml
