@@ -57,6 +57,21 @@
 </baselayers>
 
 <themes mini="false"> 
+	<theme name="Synthèse par EPCI"  collapsed="true" id="fiche_epci" icon="fas fa-file">
+		<layer id="mon_intercommunalite_2021" name="Fiches par EPCI" visible="false" queryable="true" 
+			toplayer="true"
+			expanded = "false" exclusive="true"
+			type="customlayer" style="" opacity="0.4" 
+			infoformat="application/vnd.ogc.gml" 
+			legendurl="https://geobretagne.fr/apps/mos/img/lgd_indicateur_epci.png"
+			url="https://geobretagne.fr/apps/mos/customlayers/mon_intercommunalite_2021.js" 
+			tooltip="true" fields="nom_epci" tooltipenabled="true"
+			attribution="Source : Région Bretagne" 
+			metadata="" infopanel="bottom-panel"
+			metadata-csw="">
+			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/fiche_jeunesse_epci.mst" />
+		</layer>
+	</theme>
     <theme id="jeunesse_demographie" name="Démographie des 13-29 ans" collapsed="false" icon="fas fa-fas fa-users"> 
 		<layer 
 			id="jeunesse_demographie" 
@@ -1365,7 +1380,7 @@
 			exclusive="false" 
 			showintoc="true">			
 		</layer>
-	</theme> 
+	</theme>
 	<theme name="Découpages territoriaux"  collapsed="true" id="territoire" icon="fas fa-globe"> 
         <group name="Limites administratives" id="grp1" >
 			<layer id="l_qpv_pnru"
@@ -1520,21 +1535,6 @@
 				style="polygone_contour_gris">
 			</layer>
 		</group>       
-	</theme>
-	<theme name="Synthèse par EPCI"  collapsed="true" id="fiche_epci" icon="fas fa-file">
-		<layer id="mon_intercommunalite_2021" name="Fiches par EPCI" visible="false" queryable="true" 
-			toplayer="false"
-			expanded = "false" exclusive="true"
-			type="customlayer" style="" opacity="0.4" 
-			infoformat="application/vnd.ogc.gml" 
-			legendurl="https://geobretagne.fr/apps/mos/img/lgd_indicateur_epci.png"
-			url="https://geobretagne.fr/apps/mos/customlayers/mon_intercommunalite_2021.js" 
-			tooltip="true" fields="nom_epci" tooltipenabled="true"
-			attribution="Sources : Insee, traitement Région Bretagne." 
-			metadata="" infopanel="modal-panel"
-			metadata-csw="">
-			<template url="https://geobretagne.fr/apps/mos/templates/fiche_jeunesse_epci.mst"></template>
-		</layer>
 	</theme>
  </themes>
 </config>
