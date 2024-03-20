@@ -1456,7 +1456,7 @@
             </layer>
         </group>
 		<group name="Autres" id="grp2" >	
-			<!--<layer 
+			<layer 
 				id="jeunesse_competence" 
 				name="Compétence jeunesse des EPCI" 
 				type="wms" 
@@ -1487,7 +1487,7 @@
 				toplayer="true" 
 				exclusive="false" 
 				showintoc="true">			
-			</layer>-->
+			</layer>
 			<layer id="bassin_vie_bretagne" name="Bassin de vie"  visible="false" tiled="false"
 	            searchable="false" queryable="true"		                
                 infoformat="application/vnd.ogc.gml" featurecount="20"
