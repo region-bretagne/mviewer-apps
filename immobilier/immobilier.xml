@@ -29,9 +29,8 @@
 	<searchparameters bbox="false"
 	                  localities="false"
 	                  features="true"
-	                  inputlabel="Rechercher lycée / ville"
-	                  querymaponclick="true"
-	                  closeafterclick="true"/>
+	                  inputlabel="Rechercher lycée / site"
+	                  closeafterclick="false"/>
 	<elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search"
 	               geometryfield="geometry"
 	               linkid="search_id"
@@ -64,7 +63,6 @@
 			<layer id="lycee_public"
 			       name="Lycées / EREA / Annexes"
 			       type="wms"
-			       searchable="true"
 			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
 			       visible="true"
 			       infoformat="application/vnd.ogc.gml"
@@ -79,6 +77,7 @@
 			</layer>
 			<layer id="v_lycees_ascenseur"
 			       name="Ascenseurs"
+				   filter ="ascol_asc_bat_code not like 'SIT%'"
 			       type="wms"
 			       visible="true"
 			       url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
@@ -91,6 +90,7 @@
 			</layer>
 			<layer id="v_lycee_chauff_point"
 			       name="Chaufferies"
+				   filter ="ascol_cha_bat_code not like 'SIT%'"
 				   expanded="true"
 			       type="wms"
 			       visible="true"
@@ -105,6 +105,7 @@
 			</layer>
 			<layer id="lycee_sousstation_ascol"
 			       name="Sous-stations"
+				   filter ="ascol_sst_bat_code not like 'SIT%'"
 			       type="wms"
 				   style="lycee_sousstation_rcu"
 			       visible="true"
@@ -159,19 +160,19 @@
 			       scalemax="10000">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/lycee_bati.mst"/>
 			</layer>
-						
-			<!-- <layer  -->
-			<!-- id="lycee_parcelle" -->
-			<!-- name="Parcelles" -->
-			<!-- type="wms" -->
-			<!-- url="https://ows.region-bretagne.fr/geoserver/rb/ows?" -->
-			<!-- infoformat="application/vnd.ogc.gml" -->
-			<!-- queryable="true" -->
-			<!-- infopanel="right-panel" -->
-			<!-- scalemin= "0" -->
-			<!-- scalemax="10000"> -->
-			<!-- <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/lycee_parcelle.mst"></template>  -->
-			<!-- </layer>  -->
+			<layer id="site_lycee_region"
+			       name="Sites région et lycée"
+			       visible="true"
+			       tiled="false"
+				   infoformat="application/vnd.ogc.gml"
+				   style="transparent"
+			       queryable="false"
+			       showintoc="false"
+				   searchable="true"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+			       attribution="Région Bretagne"
+			       metadata-csw=""
+			       metadata=""/>
 			<layer id="bretagne_5"
 			       name="Bretagne à 5"
 			       visible="true"
@@ -206,9 +207,10 @@
 				metadata-csw="" >	   
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/site_region.mst"></template> 
 			</layer> 
-			<!--<layer id="v_lycees_ascenseur"
-			       name="Ascenseurs (à constuire)"
+			<layer id="v_lycees_ascenseur"
+			       name="Ascenseurs"
 			       type="wms"
+				   filter ="ascol_asc_bat_code  like 'SIT%'"
 			       visible="false"
 			       url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
 			       infoformat="application/vnd.ogc.gml"
@@ -219,10 +221,11 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/lycee_asc.mst"/>
 			</layer>
 			<layer id="v_lycee_chauff_point"
-			       name="Chaufferies (à constuire)"
+			       name="Chaufferies"
 				   expanded="true"
 			       type="wms"
 			       visible="false"
+				   filter ="ascol_cha_bat_code  like 'SIT%'"
 			       url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
 			       infoformat="application/vnd.ogc.gml"
 				   style="lycee_chaudiere,chauff_combustible,chauff_puissance" stylesalias="Chaufferie,Combustible,Puissance"
@@ -233,8 +236,9 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/lycee_cha.mst"/>
 			</layer>
 			<layer id="lycee_sousstation_ascol"
-			       name="Sous-stations (à constuire)"
+			       name="Sous-stations"
 			       type="wms"
+				   filter ="ascol_sst_bat_code  like 'SIT%'"
 				   style="lycee_sousstation_rcu"
 			       visible="false"
 			       url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
@@ -244,7 +248,7 @@
 			       scalemin="0"
 			       scalemax="7500">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/lycee_cha_ss.mst"/>
-			</layer>-->
+			</layer>
 			<layer 
 				id="batiment_site_region"
 				name="Bâtiments des services"
@@ -264,7 +268,7 @@
 		
 		<theme id="canaux" name="Canaux" collapsed="true" icon="fas fa-ship">
 			<layer id="batiment_vn" name="Bâtiments" visible="false" tiled="false" 
-				searchable="true" queryable="true" fields="nom,affecta,photo" aliases="Nom, Affectation,Photo"
+				queryable="true" fields="nom,affecta,photo" aliases="Nom, Affectation,Photo"
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attributefilter="true" attributefield="brigade" attributevalues="Evran,Hennebont,Josselin,Mons,Pontivy,Redon,Saint-Germain"
@@ -647,6 +651,76 @@
             opacity="1">
         </layer> 
     </theme> 
+	
+    <theme name="Occupation du sol"  collapsed="true" id="ocs" icon="fas fa-cog">
+		<layer id="mos_foncier" name="MOS - 2021" type="wms" url="https://geobretagne.fr/geoserver/geobretagne/ows" 
+			scalemin="0"
+			scalemax="70000"
+			style="mos_simple_2021,mos_2021" stylesalias="Classification simplifiée, Classification complète"
+			tiled="true" 
+			visible="false"
+			infoformat="application/vnd.ogc.gml" 
+			opacity="0.8"
+			attribution="Source: Région Bretagne" 
+			metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/b783e48b-c811-4504-900a-4b3d8e49888e"
+			metadata-csw=""
+			queryable="true">
+			<template url="https://geobretagne.fr/apps/mos/templates/mos.mst"></template> 		
+        </layer>
+    </theme>
+	
+	<theme name="Limites administratives"  collapsed="true" id="territoire" icon="fas fa-globe">
+		<layer id="qpv"
+			   name="QPV"
+			   toplayer="true"
+			   tiled="true"
+			   type="customlayer"
+			   vectorlegend="true"
+			   url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/customlayers/qpv.js"
+			   visible="false"
+			   infoformat="application/vnd.ogc.gml"
+			   attribution="GéoBretagne"
+			   queryable="false"
+			   searchable="true"
+			   searchengine="fuse"
+			   fusesearchkeys="nom,commune"
+			   fusesearchresult="{{nom}} - {{commune}}"
+			   infopanel="bottom-panel"
+			   tooltip="true"
+			   tooltipcontent="{{nom}}"
+			   metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=33e57276-b6be-4e70-968d-f89c9ff69bb4"
+			   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/33e57276-b6be-4e70-968d-f89c9ff69bb4">
+			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/qpv.mst"/>
+		</layer>
+		<layer id="commune_contact" name="Commune" visible="false" tiled="false"
+			queryable="true"
+			infoformat="application/vnd.ogc.gml" featurecount="5"                
+			url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+			attribution="Les contributeurs d'OpenStreetMap, Région Bretagne" 
+			metadata=""
+			metadata-csw="" >	
+			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.commune_contact.mst"></template>
+		</layer>
+		<layer id="epci" name="Intercommunalité" visible="false" tiled="false"
+			queryable="true"
+			infoformat="application/vnd.ogc.gml" featurecount="5"
+			style="epci_region" 
+			url="https://geobretagne.fr/geoserver/ign/wms" 
+			attribution="IGN - ADMIN EXPRESS" 
+			metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/2298d744-49cb-4fcb-9487-26f916fecdff" 
+			metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=2298d744-49cb-4fcb-9487-26f916fecdff" >	
+			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.epci.mst"></template>
+		</layer>
+		<layer id="espace_territorial" name="Espace territorial" visible="false" tiled="false"
+			queryable="true"
+			infoformat="application/vnd.ogc.gml" featurecount="20" 
+			url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+			attribution="Région Bretagne" 
+			metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c90f07e5-ea47-44be-9e18-1eefa18b05fe"
+			metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/c90f07e5-ea47-44be-9e18-1eefa18b05fe">	
+			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.espace_territorial.mst"></template>
+		</layer>
+	</theme>
 
 	</themes>
 	<styles>

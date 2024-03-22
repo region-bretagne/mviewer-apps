@@ -1,32 +1,27 @@
 {{#features}}
 	<li class="item" id="{{feature_ol_uid}}">
-		<h2 class="rb-title-feature">{{nom}}</h2>
-		<p class="rb-text-feature" style="text-align:center">		
-            {{ville}}<br/>
-		</p>
-		<h3 class="rb-subtitle-feature">Gestionnaire carrière/paie</h3>
-
+		<h2 class="rb-title-feature">{{nom}} - {{ville}}</h2>
+		
+		<h3 class="rb-subtitle-feature">Gestionnaire carrière paye</h3>
 		<p class="rb-text-feature">
 			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{gestionnaire_paye_carriere}}<br/>
 			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_paye_carriere}}<br/>
 			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_paye_carriere}}<br/>
 		</p>
+		
 		<h3 class="rb-subtitle-feature">Instructeur.trice retraite / maladie prolongée ou professionnelle</h3>
 		<p class="rb-text-feature">
-			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{instructrice_retraite}}<br/>
-			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_retraite}}<br/>
-			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_retraite}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{instructeur_retraite_maladie}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_retraite_retraite_maladie}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_retraite_retraite_maladie}}<br/>
 		</p>
+
 		<h3 class="rb-subtitle-feature">Instructeurs.rices accidents</h3>
 		<p class="rb-text-feature">
-			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{gestionnaire_accident}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{instructeur_accident}}<br/>
 			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_accident}}<br/>
 			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_accident}}<br/>
 		</p>
 
 	</li>
 {{/features}}
-
-<style>
-@import url("https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/css/vn_mst.css");
-</style>

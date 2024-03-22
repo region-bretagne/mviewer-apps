@@ -1065,7 +1065,7 @@
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=2298d744-49cb-4fcb-9487-26f916fecdff" >	
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.epci.mst"></template>
 			</layer>
-            <layer id="CANTON" name="canton" visible="false" tiled="true"
+            <layer id="CANTON" name="Canton" visible="false" tiled="true"
 				queryable="true" 
                 infoformat="application/vnd.ogc.gml" featurecount="5"             
 				style="pays_region" 

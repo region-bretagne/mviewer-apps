@@ -29,8 +29,9 @@
 		    </layer>  
 			 
 			 
-			<layer id="gestionnaire_recrutement_lycee" name="Gestionnaire recrutement"  visible="true" tiled="false" 
+			<layer id="contact_lycee_drh" name="Gestionnaire recrutement"  visible="true" tiled="false" 
                 infoformat="application/vnd.ogc.gml" featurecount="1" queryable="true"
+				style = "gestionnaire_rh"
                 url="https://ows.region-bretagne.fr/geoserver/interne/wms"
                 attribution="Source: Région Bretagne" 
                 metadata=""
