@@ -3,7 +3,7 @@
 
 </metadata>
 <application title="Communauté de communes Arc Sud Bretagne" logo="https://geobretagne.fr/pub/logo/142_arc_sud_btg.png" favicon="https://geobretagne.fr/pub/logo/142_arc_sud_btg.png" help="" titlehelp="" iconhelp="fas fa-home" home="https://www.arc-sud-bretagne.fr/" style="css/themes/carrot.css" zoomtools="true" initialextenttool="true" exportpng="false" showhelp="false" coordinates="true" measuretools="true" mouseposition="false" geoloc="false" togglealllayersfromtheme="false">
-</application>
+</d<application>
 <mapoptions maxzoom="20" projection="EPSG:3857" center="-263436,6034466" zoom="11"></mapoptions>
 <proxy url="/proxy/?url="></proxy>
 <olscompletion type="ban" url="https://api-adresse.data.gouv.fr/search/" attribution="Base adresse nationale (BAN)"></olscompletion>
