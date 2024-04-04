@@ -1414,6 +1414,38 @@
 			exclusive="false" 
 			showintoc="true">			
 		</layer>
+		<layer 
+			id="jeunesse_zrr" 
+			name="Zonage ZRR des communes (zone de revitalisation rurale)"
+			type="wms"
+			url="https://ows.region-bretagne.fr/geoserver/interne/ows?" 
+			tiled="true"
+			visible="false"
+			infoformat="application/vnd.ogc.gml" 
+			fields="nom" 
+			aliases="Commune"
+			style="jeunesse_zrr" 
+			stylesalias="" 
+			metadata=""
+			metadata-csw="" 
+			attribution="Source : ANCT (2023)" 
+			queryable="true"
+			searchable="false"
+			fusesearchkeys="" 
+			fusesearchresult=""
+			useproxy="false" 
+			filter="" sld="" 
+			legendurl="" 
+			featurecount="" 
+			infopanel="right-panel"
+			opacity="1" 
+			index="" 
+			styletitle=""
+			dynamiclegend="false" 
+			toplayer="false" 
+			exclusive="false" 
+			showintoc="true">			
+		</layer>
 	</theme>
 	<theme name="Découpages territoriaux"  collapsed="true" id="territoire" icon="fas fa-globe"> 
         <group name="Limites administratives" id="grp1" >

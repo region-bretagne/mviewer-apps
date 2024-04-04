@@ -101,5 +101,5 @@
 ./obs_jeunesse/obs_jeunesse.xml
 ./obs_jeunesse/obs_jeunesse_2.xml
 ./eolien/fonds_geob.xml
-./eolien/config.xml
+./eolien/reunion_04_04_2024.xml
 ./contact_lycee/contact_lycee.xml
