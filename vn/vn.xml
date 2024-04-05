@@ -190,7 +190,18 @@
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5bf220ec-d62a-4d1b-8588-6f23087bea55"
 				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/5bf220ec-d62a-4d1b-8588-6f23087bea55" > 
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/equipement.mst"></template>
-			</layer>	
+			</layer>
+			<layer id="equipement_vn" name="Distributeur de badges" visible="false" tiled="false" 
+				queryable="true" searchable="true" 
+				infoformat="application/vnd.ogc.gml" featurecount="20"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				style="equipement_distributeur_badge" 
+				filter="type_equip='badge'"
+				attribution="Région Bretagne" 
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5bf220ec-d62a-4d1b-8588-6f23087bea55"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/5bf220ec-d62a-4d1b-8588-6f23087bea55" > 
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/equipement.mst"></template>
+			</layer>		
 			<layer id="equipement_vn" name="Cale de mise à l'eau" visible="false" tiled="false" 
 				queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
