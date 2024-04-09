@@ -28,6 +28,7 @@
 ./economie/agriculture_test.xml
 ./economie/economie.xml
 ./economie/sirene.xml
+./economie/economie_mreport.xml
 ./equipements/config.xml
 ./fiche_epci/fiche_epci_vecteur.xml
 ./formation/accompagnement_digitalisation.xml
