@@ -75,16 +75,18 @@
 			       scalemax="3000000">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/lycee_public.mst"/>
 			</layer>
-			<layer id="photovoltaique_ascol_geom"
-			       name="Photovoltaique"
+			<layer id="photovoltaique_ascol"
+			       name="Photovoltaique lycée"
 			       type="wms"
 			       visible="true"
+				   filter ="patrimoine like 'Patrimoine lycée'"
 			       url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
 			       infoformat="application/vnd.ogc.gml"
 			       queryable="true"
 			       infopanel="right-panel"
 			       scalemin="0"
 			       scalemax="7500">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/photovoltaique.mst"></template> 
 			</layer>
 			<layer id="v_lycees_ascenseur"
 			       name="Ascenseurs"
@@ -218,6 +220,19 @@
 				metadata-csw="" >	   
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/site_region.mst"></template> 
 			</layer> 
+			<layer id="photovoltaique_ascol"
+			       name="Photovoltaique tertiaire"
+			       type="wms"
+			       visible="true"
+				   filter ="patrimoine like 'Patrimoine tertiaire'"
+			       url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+			       infoformat="application/vnd.ogc.gml"
+			       queryable="true"
+			       infopanel="right-panel"
+			       scalemin="0"
+			       scalemax="7500">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/photovoltaique.mst"></template> 
+			</layer>
 			<layer id="v_lycees_ascenseur"
 			       name="Ascenseurs"
 			       type="wms"
