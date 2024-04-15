@@ -63,8 +63,8 @@
 			expanded = "false" exclusive="true"
 			type="customlayer" style="" opacity="0.4" 
 			infoformat="application/vnd.ogc.gml" 
-			legendurl="https://geobretagne.fr/apps/mos/img/lgd_indicateur_epci.png"
-			url="https://geobretagne.fr/apps/mos/customlayers/mon_intercommunalite_2021.js" 
+			legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse//img/lgd_indicateur_epci.png"
+			url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/customlayers/mon_intercommunalite.js" 
 			tooltip="true" fields="nom_epci" tooltipenabled="true"
 			attribution="Source : Région Bretagne" 
 			metadata="" infopanel="bottom-panel"
@@ -1414,38 +1414,38 @@
 			exclusive="false" 
 			showintoc="true">			
 		</layer>
-		<layer 
-			id="jeunesse_zrr" 
-			name="Zonage ZRR des communes (zone de revitalisation rurale)"
-			type="wms"
-			url="https://ows.region-bretagne.fr/geoserver/interne/ows?" 
-			tiled="true"
-			visible="false"
-			infoformat="application/vnd.ogc.gml" 
-			fields="nom" 
-			aliases="Commune"
-			style="jeunesse_zrr" 
-			stylesalias="" 
-			metadata=""
-			metadata-csw="" 
-			attribution="Source : ANCT (2023)" 
-			queryable="true"
-			searchable="false"
-			fusesearchkeys="" 
-			fusesearchresult=""
-			useproxy="false" 
-			filter="" sld="" 
-			legendurl="" 
-			featurecount="" 
-			infopanel="right-panel"
-			opacity=".7" 
-			index="" 
-			styletitle=""
-			dynamiclegend="false" 
-			toplayer="false" 
-			exclusive="false" 
-			showintoc="true">			
-		</layer>
+		<!-- <layer  -->
+			<!-- id="jeunesse_zrr"  -->
+			<!-- name="Zonage ZRR des communes (zone de revitalisation rurale)" -->
+			<!-- type="wms" -->
+			<!-- url="https://ows.region-bretagne.fr/geoserver/interne/ows?"  -->
+			<!-- tiled="true" -->
+			<!-- visible="false" -->
+			<!-- infoformat="application/vnd.ogc.gml"  -->
+			<!-- fields="nom"  -->
+			<!-- aliases="Commune" -->
+			<!-- style="jeunesse_zrr"  -->
+			<!-- stylesalias=""  -->
+			<!-- metadata="" -->
+			<!-- metadata-csw=""  -->
+			<!-- attribution="Source : ANCT (2023)"  -->
+			<!-- queryable="true" -->
+			<!-- searchable="false" -->
+			<!-- fusesearchkeys=""  -->
+			<!-- fusesearchresult="" -->
+			<!-- useproxy="false"  -->
+			<!-- filter="" sld=""  -->
+			<!-- legendurl=""  -->
+			<!-- featurecount=""  -->
+			<!-- infopanel="right-panel" -->
+			<!-- opacity=".7"  -->
+			<!-- index=""  -->
+			<!-- styletitle="" -->
+			<!-- dynamiclegend="false"  -->
+			<!-- toplayer="false"  -->
+			<!-- exclusive="false"  -->
+			<!-- showintoc="true">			 -->
+		<!-- </layer> -->
 	</theme>
 	<theme name="Découpages territoriaux"  collapsed="true" id="territoire" icon="fas fa-globe"> 
         <group name="Limites administratives" id="grp1" >
