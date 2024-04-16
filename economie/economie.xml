@@ -278,6 +278,7 @@
 				id="dja"
 				name="Dotation jeune agriculteur moyenne par EPCI"
 		        type="wms" expanded="true"
+				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2022" timemax="2023" timevalues="2022,2023"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
 				visible="false"
 				exclusive="true"
