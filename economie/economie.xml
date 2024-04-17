@@ -283,7 +283,7 @@
 				visible="false"
 				exclusive="true"
 				infoformat="application/vnd.ogc.gml"
-				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/dja_2022.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/dja_2023.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;
 				&lt;a href=&quot;https://www.bretagne.bzh/aides/fiches/soutien-a-linstallation-des-jeunes-agriculteurs/&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Information&lt;/button&gt;&lt;/a&gt;
 				&lt;/br&gt;&lt;a 
 				
@@ -295,14 +295,14 @@
 			<layer 
 				id="brit_agri"
 				name="Prêt d'honneur agricole "
-		        timefilter="true" timeinterval="year" timecontrol="slider" timemin="2022" timemax="2022" timevalues="2022"
+		        timefilter="true" timeinterval="year" timecontrol="slider" timemin="2022" timemax="2023" timevalues="2022,2023"
 				type="wms" expanded="true"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
 				visible="false"
 				style="brit_agri_epci"
 				exclusive="true"
 				infoformat="application/vnd.ogc.gml"
-				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/prets_honneur_2022.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/prets_honneur_2023.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;
 				&lt;/br&gt;&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=brit_agri&amp;outputFormat=excel2007&amp;propertyName=code_siren,nom,montant,nb,millesime&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt;Le prêt d'honneur agricole propose un prêt à taux zéro, sans intérêt, sans garantie avec la possibilité d'un différé jusqu'à 36 mois pour les nouveaux installés (DJA ou SIA 40-50 ans) en production viande bovine (dont veaux de boucherie), production porcine, production avicole et production sous serres verre."
 				queryable="true"
 				infopanel="bottom-panel">
@@ -311,18 +311,19 @@
 			<layer 
 				id="sia"
 				name="Aide à l'installation - SIA "
+				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2022" timemax="2023" timevalues="2022,2023"
 				type="wms" expanded="true"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
 				visible="false"
 				exclusive="true"
 				infoformat="application/vnd.ogc.gml"
-				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/sia.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/sia_2023.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;
 				&lt;a href=&quot;https://www.bretagne.bzh/aides/fiches/installation-agriculture-sia-40-50-ans/&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Information&lt;/button&gt;&lt;/a&gt;
 				&lt;/br&gt;&lt;a 
 				&lt;/br&gt;&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=sia&amp;outputFormat=excel2007&amp;propertyName=nom,montant,nb&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt;L'aide à l'installation en agriculture pour les 40-50 ans vise à soutenir les porteurs de projet désireux de s'installer en agriculture et candidats à l'installation."
 				queryable="true"
 				infopanel="bottom-panel">
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/"></template>
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/aide_sia_epci.mst"></template>
 			</layer> 
 			
 			

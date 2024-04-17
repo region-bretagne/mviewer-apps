@@ -22,7 +22,7 @@
             <layer id="contact_lycee_drh" name="Gestionnaire RH" visible="true" tiled="false" namespace="rb"
 				queryable="true" infoformat="application/vnd.ogc.gml"
 				style = "gestionnaire_rh"
-				featurecount="20" searchable="true"
+				featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
 				attribution="Région Bretagne" 
 				metadata-csw=""
@@ -46,6 +46,14 @@
 				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/c8884cac-bc25-41a0-92d1-b6566c86066e"
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c8884cac-bc25-41a0-92d1-b6566c86066e" >
             </layer>
+            <layer id="lycee_public" name="Lycée public"  visible="true" tiled="false"
+                infoformat="application/vnd.ogc.gml" featurecount="20" queryable="false" searchable="true" 
+                url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+                attribution="Source: Région Bretagne" showintoc="false" style="transparent"
+                metadata=""
+                metadata-csw="" >	   
+		    </layer> 
+
 		</theme> 
     </themes>
     <styles>

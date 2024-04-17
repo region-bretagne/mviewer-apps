@@ -14,8 +14,8 @@
             url="https://data.geopf.fr/private/wmts?apikey=ign_scan_ws" layers="GEOGRAPHICALGRIDSYSTEMS.MAPS"  style="normal" fromcapacity="false" attribution="© IGN 2022 - Copie et reproduction interdite" visible="false" format="image/jpeg" matrixset="PM" />
     </baselayers>    
     <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par l'API adresse.data.gouv.fr"/>
-    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="fussy_like_this" />
-    <searchparameters bbox="false" localities="true" features="false"/>
+    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="current" />
+    <searchparameters bbox="false" localities="false" features="true" inputlabel="Rechercher lycée / ville" querymaponclick="true" closeafterclick="true"/>
 
     <themes>
         <theme name="Gestionnaire Recrutement"  collapsed="false" id="gestionnaire">
@@ -46,7 +46,14 @@
                 metadata=""
                 metadata-csw="" >	   
 		    </layer> 
-			
+            <layer id="lycee_public" name="Lycée public"  visible="true" tiled="false"
+                infoformat="application/vnd.ogc.gml" featurecount="20" queryable="false" searchable="true" 
+                url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+                attribution="Source: Région Bretagne" showintoc="false" style="transparent"
+                metadata=""
+                metadata-csw="" >	   
+		    </layer> 
+
 		</theme>   
     </themes>
     <styles>
