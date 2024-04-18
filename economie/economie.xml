@@ -260,14 +260,14 @@
 			<layer 
 				id="cuma_eta"
 				name="Aide à l'investissement de matériels agro-environnementaux "
-		        timefilter="true" timeinterval="year" timecontrol="slider" timemin="2022" timemax="2022" timevalues="2022"
+		        timefilter="true" timeinterval="year" timecontrol="slider" timemin="2022" timemax="2023" timevalues="2022,2023"
 				type="wms" expanded="true"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
 				visible="false"
 				style="cuma_eta_epci"
 				exclusive="true"
 				infoformat="application/vnd.ogc.gml"
-				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/cuma.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/cuma_2023.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;
 				&lt;a href=&quot;https://www.bretagne.bzh/aides/fiches/investissements-materiels-agro-environnementaux-eta/&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Information&lt;/button&gt;&lt;/a&gt;
 				&lt;/br&gt;&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=cuma_eta&amp;outputFormat=excel2007&amp;propertyName=code_siren,nom,montant,nb,millesime&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt;L'aide aux investissements agri-envrionnementaux vise à soutenir les Entreprises de Travaux Agricoles (ETA) et des Coopératives d'Utilisation de Matériels Agricoles (CUMA) dans la modernisation de leurs  matériels agro-environnementaux."
 				queryable="true"

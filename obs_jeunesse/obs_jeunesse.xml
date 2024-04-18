@@ -1,29 +1,28 @@
 <config xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" mviewerversion="3.9.2" mviewerstudioversion="4">
 <metadata>
-
-                <rdf:RDF>
-                    <rdf:Description rdf:about="http://www.ilrt.bristol.ac.uk/people/cmdjb/">
-                        <dc:title>Observatoire de la jeunesse en Bretagne</dc:title>
-                        <dc:creator>Clément Bader</dc:creator>
-                        <dc:identifier>4b6ba2b5492b</dc:identifier>
-                        <dc:keywords />
-                        <dc:publisher>region_bretagne</dc:publisher>
-                        <dc:description>03-10-2023-16-35-13</dc:description>
-                        <dc:date>2023-10-03T07:26:25.693Z</dc:date>
-                        <dc:relation />
-                        <dc:subject>Plan breton pour la jeunesse</dc:subject>
-<dc:subject>Part de 13-29 ans</dc:subject>
-<dc:subject>Nombre de demandeur.euse d'emploi</dc:subject>
-<dc:subject>Taux de chômage des moins de 25 ans</dc:subject>
-<dc:subject>Effectif des 13-29 ans</dc:subject>
-<!--<dc:subject>Décrocheurs scolaires</dc:subject>-->
-<dc:subject>Etablissements scolaires</dc:subject>
-<dc:subject>Découpages territoriaux</dc:subject>
-<dc:subject>Découpages territoriaux</dc:subject>
-<dc:subject>Tension du logement </dc:subject>
-<dc:subject>Zonage ABC en Bretagne</dc:subject>
-                    </rdf:Description>
-                </rdf:RDF>
+	<rdf:RDF>
+		<rdf:Description rdf:about="http://www.ilrt.bristol.ac.uk/people/cmdjb/">
+			<dc:title>Observatoire de la jeunesse en Bretagne</dc:title>
+			<dc:creator>Clément Bader</dc:creator>
+			<dc:identifier>4b6ba2b5492b</dc:identifier>
+			<dc:keywords />
+			<dc:publisher>region_bretagne</dc:publisher>
+			<dc:description>03-10-2023-16-35-13</dc:description>
+			<dc:date>2023-10-03T07:26:25.693Z</dc:date>
+			<dc:relation />
+			<dc:subject>Plan breton pour la jeunesse</dc:subject>
+			<dc:subject>Part de 13-29 ans</dc:subject>
+			<dc:subject>Nombre de demandeur.euse d'emploi</dc:subject>
+			<dc:subject>Taux de chômage des moins de 25 ans</dc:subject>
+			<dc:subject>Effectif des 13-29 ans</dc:subject>
+			<!--<dc:subject>Décrocheurs scolaires</dc:subject>-->
+			<dc:subject>Etablissements scolaires</dc:subject>
+			<dc:subject>Découpages territoriaux</dc:subject>
+			<dc:subject>Découpages territoriaux</dc:subject>
+			<dc:subject>Tension du logement </dc:subject>
+			<dc:subject>Zonage ABC en Bretagne</dc:subject>
+		</rdf:Description>
+	</rdf:RDF>
 </metadata>
 <application 
 	title="Observatoire breton des jeunesses (prototype)" 
@@ -49,6 +48,7 @@
 
 <extensions>
 	<extension type="component" id="isochroneAddon" path="https://kartenn.region-bretagne.fr/kartoviz/demo/addons"/>
+    <extension type="component" id="layerfilter" path="https://kartenn.region-bretagne.fr/kartoviz/demo/addons"/>
 </extensions>
 
 <baselayers style="default"> 
@@ -60,6 +60,7 @@
 	<theme name="Synthèse par EPCI"  collapsed="true" id="fiche_epci" icon="fas fa-file">
 		<layer id="mon_intercommunalite_2021" name="Fiches par EPCI" visible="false" queryable="true" 
 			toplayer="true"
+			featurecount="1"
 			expanded = "false" exclusive="true"
 			type="customlayer" style="" opacity="0.4" 
 			infoformat="application/vnd.ogc.gml" 
@@ -141,7 +142,7 @@
 			styletitle="" 
 			dynamiclegend="false" 
 			toplayer="false" 
-			exclusive="false"
+			exclusive="true"
 			showintoc="true">
 			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_demographie.mst" />
         </layer> 
@@ -177,7 +178,7 @@
 			styletitle="" 
 			dynamiclegend="false" 
 			toplayer="false" 
-			exclusive="false" 
+			exclusive="true" 
 			showintoc="true">
 			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_demographie.mst" />
         </layer> 
@@ -375,7 +376,7 @@
 		</layer> 
 		<layer 
 			id="indice_position_sociale_ecole"
-			name="indice de position sociale par établissement"
+			name="Indice de position sociale par établissement"
 			type="wms"
 			url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 			visible="false"
@@ -876,6 +877,15 @@
 			</layer>			
         </group>
         <group name="Transports routiers" id="grp2" >
+			<layer id="arret_reseau_breizhgo_car" name="Arrêts du réseau BreizhGo"  visible="false" tiled="false" 
+				searchable="false" queryable="true"
+				infoformat="application/vnd.ogc.gml" featurecount="20"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+				attribution="Région Bretagne" 
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/252ee615-278d-4bc1-b5a7-9ea543348e72"
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=252ee615-278d-4bc1-b5a7-9ea543348e72">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.arret_breizhgo.mst"></template>
+			</layer>
             <layer id="reseau_breizhgo_car" name="Réseau Breizh Go"  visible="false" tiled="false" 
                 searchable="false" queryable="true" 
                 infoformat="application/vnd.ogc.gml" featurecount="20"

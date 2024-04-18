@@ -332,6 +332,9 @@ h4.title{
 	background-color:#E3C213;
 	border-color:#E3C213;
 }
+.btn {
+	padding: 6px 6px!important;
+}
 
 /* Tooltip measure */
 

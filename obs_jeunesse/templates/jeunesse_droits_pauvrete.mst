@@ -28,7 +28,6 @@
 {{/features}}
 
 <style>
-@import url("https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/css/kartenn_economie.css");
 #over { 
 	color:#0094AB;	
 	font-size:1em; 
