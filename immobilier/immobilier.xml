@@ -223,7 +223,7 @@
 			<layer id="photovoltaique_ascol"
 			       name="Photovoltaique tertiaire"
 			       type="wms"
-			       visible="true"
+			       visible="false"
 				   filter ="patrimoine like 'Patrimoine tertiaire'"
 			       url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
 			       infoformat="application/vnd.ogc.gml"
