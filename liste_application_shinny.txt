@@ -20,5 +20,4 @@
 ./echantillon_lignes/app.R
 ./agreg_mos/app.R
 ./entreprises/app.R
-./concours_diram/app.R
 ./score_concours_diram/app.R
