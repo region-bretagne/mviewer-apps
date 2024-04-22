@@ -409,19 +409,19 @@
 		                metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5542d62f-14df-4e59-968b-c527dbdb45d6">
 		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.pop.formation.mst"></template>
 		    </layer> 
-        	<layer id="poi_etablissement_scolaire" name="Établissements scolaires"  visible="false" tiled="false" 
-				searchable="false" queryable="true" fields="appellatio" aliases="appellatio"
-				attributefilter="true" attributefield="classe" 
-				attributevalues="Ecole maternelle,Ecole élémentaire,Collège,Lycée,EREA"  attributelabel="Filtre" attributestylesync="false" attributefilterenabled="false"
-                infoformat="application/vnd.ogc.gml" featurecount="20"
-				style="etablissement_scolaire_nature"
+			<layer id="etablissement_scolaire" name="Établissements scolaires"  visible="false" tiled="true" expanded = "true"
+				searchable="false" queryable="true"
+				attributefilter="true" attributefield="libl_nature" attributeoperator="like"
+				attributevalues="Ecole maternelle,Ecole élémentaire,Collège,Lycée,Etablissement régional d'enseignement adapté" attributelabel="Filtre" attributestylesync="false" attributefilterenabled="false"
+				infoformat="application/vnd.ogc.gml" featurecount="20"
+				style="etablissement_scolaire_nature_edr"
 				stylesalias=""
 				url="https://ows.region-bretagne.fr/geoserver/interne/wms"
-				attribution="Source: Data.gouv" 
-				metadata="https://www.data.gouv.fr/fr/datasets/adresse-et-geolocalisation-des-etablissements-denseignement-du-premier-et-second-degres/"
+				attribution="Source: Rectorat" 
+				metadata=""
 				metadata-csw="" >
-		        <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.poi.etab_scolaire.mst"></template>
-		    </layer>  
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/etablissement_scolaire.mst"></template>
+			</layer> 
 		    <layer id="lycee" name="Lycées"  visible="false" tiled="false"
                 searchable="false" queryable="true" fields="axe" aliases="axe" 
                 attributefilter="true" attributefield="secteur_li" 

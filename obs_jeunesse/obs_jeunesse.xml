@@ -78,7 +78,7 @@
 				type="wms" 
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?" 
 				tiled="false" 
-				visible="true" 
+				visible="false" 
 				infoformat="application/vnd.ogc.gml" 
 				fields="nom_epci"
 				aliases=""
@@ -246,7 +246,7 @@
 			styletitle="" 
 			dynamiclegend="false"
 			toplayer="false" 
-			exclusive="false"
+			exclusive="true"
 			showintoc="true">
 			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_emploi.mst" />
         </layer> 
@@ -283,6 +283,20 @@
 			showintoc="true">
 			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_emploi.mst" />
         </layer> 
+		<!-- <layer id="ma_mission_locale" name="Périmètres des missions locales" visible="false" -->
+			<!-- toplayer="true" -->
+			<!-- featurecount="1" -->
+			<!-- expanded = "false" exclusive="false" -->
+			<!-- type="customlayer" opacity="0.4"  -->
+			<!-- infoformat="application/vnd.ogc.gml"  -->
+			<!-- legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse//img/lgd_indicateur_epci.png" -->
+			<!-- url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/customlayers/ma_mission_locale.js"  -->
+			<!-- tooltip="true" fields="mission_locale" tooltipenabled="true" -->
+			<!-- attribution="Source : Région Bretagne"  -->
+			<!-- metadata=""  -->
+			<!-- metadata-csw=""> -->
+		<!-- </layer> -->
+
 		<layer 
 			id="mission_locale" 
 			name="Périmètres des missions locales" 
@@ -291,9 +305,9 @@
 			tiled="true" 
 			visible="false" 
 			infoformat="application/vnd.ogc.gml" 
-			fields="nom_commune,mission_locales"
-			aliases="Commune,Mission Locale"
-			attributefilter="true" attributefield="mission_locales" 
+			fields="mission_locale"
+			aliases="Mission Locale"
+			attributefilter="true" attributefield="mission_locale" 
 			attributevalues="Mission Locale Brest,Mission Locale Centre Bretagne,Mission Locale Centre Ouest Bretagne,Mission Locale Cornouaille,Mission Locale de la Presqu'île de Guérandaise,Mission Locale du Pays d'Auray,Mission Locale Fougères,Mission Locale Lorient,Mission Locale Morlaix,Mission Locale Pays de Dinan,Mission Locale Ploërmel,Mission Locale Redon,Mission Locale Saint Brieuc,Mission Locale Saint Malo,Mission Locale Vannes,Mission Locale Vitré,Ml Ouest Côtes d’Armor (AJOCA) ,We Ker - Antenne Brocéliande,We Ker - Antenne Des Vallons de Vilaine,We Ker - Antenne Nord Est,We Ker - secteur Brocéliande,We Ker - secteur Rennes Métropole"  
 			attributelabel="Filtrer par mission locale" attributestylesync="false" attributefilterenabled="false"				
 			style="mission_locale" 
@@ -393,18 +407,18 @@
 			showintoc="true">			
 		</layer>
 -->
-		<layer id="poi_etablissement_scolaire" name="Établissements scolaires"  visible="false" tiled="false" expanded = "true"
-			searchable="false" queryable="true" fields="appellatio" aliases="appellatio"
-			attributefilter="true" attributefield="classe" 
-			attributevalues="Ecole maternelle,Ecole élémentaire,Collège,Lycée,EREA"  attributelabel="Filtre" attributestylesync="false" attributefilterenabled="false"
+		<layer id="etablissement_scolaire" name="Établissements scolaires"  visible="false" tiled="true" expanded = "true"
+			searchable="false" queryable="true"
+			attributefilter="true" attributefield="nature" attributeoperator="like"
+			attributevalues="Ecole maternelle,Ecole élémentaire,Collège,Lycée,Etablissement régional d'enseignement adapté" attributelabel="Filtre" attributestylesync="false" attributefilterenabled="false"
             infoformat="application/vnd.ogc.gml" featurecount="20"
-			style="etablissement_scolaire_nature"
+			style="etablissement_scolaire_nature_edr"
 			stylesalias=""
 			url="https://ows.region-bretagne.fr/geoserver/interne/wms"
-			attribution="Source: Data.gouv" 
-			metadata="https://www.data.gouv.fr/fr/datasets/adresse-et-geolocalisation-des-etablissements-denseignement-du-premier-et-second-degres/"
+			attribution="Source: Rectorat" 
+			metadata=""
 			metadata-csw="" >
-		    <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.poi.etab_scolaire.mst"></template>
+		    <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/etablissement_scolaire.mst"></template>
 		</layer> 
 		<layer 
 			id="indice_position_sociale_ecole"
@@ -526,7 +540,7 @@
 			styletitle="" 
 			dynamiclegend="false" 
 			toplayer="false" 
-			exclusive="false" 
+			exclusive="true" 
 			showintoc="true">			
 		</layer>
 		<layer 
@@ -560,7 +574,7 @@
 			styletitle="" 
 			dynamiclegend="false" 
 			toplayer="false" 
-			exclusive="false" 
+			exclusive="true" 
 			showintoc="true">			
 		</layer>
 <!--		<layer 
@@ -663,7 +677,7 @@
 			styletitle="" 
 			dynamiclegend="false" 
 			toplayer="false" 
-			exclusive="false" 
+			exclusive="true" 
 			showintoc="true">		
 			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_sport.mst" />
 		</layer>
@@ -745,7 +759,7 @@
 			styletitle="" 
 			dynamiclegend="false" 
 			toplayer="false" 
-			exclusive="false" 
+			exclusive="true" 
 			showintoc="true">
         </layer> 
         <layer 
@@ -778,7 +792,7 @@
 			styletitle="" 
 			dynamiclegend="false" 
 			toplayer="false" 
-			exclusive="false" 
+			exclusive="true" 
 			showintoc="true">
         </layer> 
 		<layer 
@@ -811,7 +825,7 @@
 			styletitle="" 
 			dynamiclegend="false" 
 			toplayer="false" 
-			exclusive="false" 
+			exclusive="true" 
 			showintoc="true">
         </layer> 
 	</theme> 
@@ -958,7 +972,7 @@
 			styletitle="" 
 			dynamiclegend="false" 
 			toplayer="false" 
-			exclusive="false" 
+			exclusive="true" 
 			showintoc="true">		
 			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_culture.mst" />
 		</layer>
@@ -1135,7 +1149,7 @@
 			styletitle="" 
 			dynamiclegend="false" 
 			toplayer="false" 
-			exclusive="false" 
+			exclusive="true" 
 			showintoc="true">		
 			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_egal_demo.mst" />						
 		</layer>
@@ -1170,7 +1184,7 @@
 			styletitle="" 
 			dynamiclegend="false" 
 			toplayer="false" 
-			exclusive="false" 
+			exclusive="true" 
 			showintoc="true">	
 			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_egal_dipl_chom.mst" />			
 		</layer>
@@ -1203,7 +1217,7 @@
 			styletitle=""
 			dynamiclegend="false" 
 			toplayer="false" 
-			exclusive="false" 
+			exclusive="true" 
 			showintoc="true">		
 			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_egal_dipl_chom2.mst" />						
 		</layer>
@@ -1309,7 +1323,7 @@
 			styletitle=""
 			dynamiclegend="false" 
 			toplayer="false" 
-			exclusive="false" 
+			exclusive="true" 
 			showintoc="true">	
 			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_droits_pauvrete.mst" />					
 		</layer>
@@ -1347,27 +1361,27 @@
 			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_mne_ase.mst" />					
 		</layer>
 		<layer id="qpv"
-			       name="Périmètres QPV 2024"
-			       toplayer="true"
-			       tiled="true"
-			       type="customlayer"
-			       vectorlegend="true"
-			       url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/customlayers/qpv.js"
-			       visible="false"
-			       infoformat="application/vnd.ogc.gml"
-			       attribution="GéoBretagne"
-			       queryable="false"
-			       searchable="true"
-			       searchengine="fuse"
-			       fusesearchkeys="nom,commune"
-			       fusesearchresult="{{nom}} - {{commune}}"
-			       infopanel="bottom-panel"
-			       tooltip="true"
-			       tooltipcontent="{{nom}}"
-			       metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=33e57276-b6be-4e70-968d-f89c9ff69bb4"
-			       metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/33e57276-b6be-4e70-968d-f89c9ff69bb4">
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/qpv.mst"/>
-			</layer>
+			   name="Périmètres QPV 2024"
+			   toplayer="true"
+			   tiled="true"
+			   type="customlayer"
+			   vectorlegend="true"
+			   url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/customlayers/qpv.js"
+			   visible="false"
+			   infoformat="application/vnd.ogc.gml"
+			   attribution="GéoBretagne"
+			   queryable="false"
+			   searchable="true"
+			   searchengine="fuse"
+			   fusesearchkeys="nom,commune"
+			   fusesearchresult="{{nom}} - {{commune}}"
+			   infopanel="bottom-panel"
+			   tooltip="true"
+			   tooltipcontent="{{nom}}"
+			   metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=33e57276-b6be-4e70-968d-f89c9ff69bb4"
+			   metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/33e57276-b6be-4e70-968d-f89c9ff69bb4">
+			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/qpv.mst"/>
+		</layer>
 		<layer id="l_qpv_pnru"
 			name="Anciens périmètres QPV"
 			toplayer="true"
@@ -1453,7 +1467,7 @@
 			styletitle=""
 			dynamiclegend="false" 
 			toplayer="false" 
-			exclusive="false" 
+			exclusive="true" 
 			showintoc="true">			
 		</layer>
 		<!-- <layer  -->

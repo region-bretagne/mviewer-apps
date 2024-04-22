@@ -209,19 +209,19 @@
 		    </layer>
         </theme>		
 		<theme name="Points d'intérêt"  collapsed="false" id="poi" icon="fas fa-map-marker">   
-			<layer id="poi_etablissement_scolaire" name="Établissements scolaires"  visible="false" tiled="false" 
-                searchable="false" queryable="true" fields="appellatio" aliases="appellatio"
-                attributefilter="true" attributefield="classe" 
-                attributevalues="École maternelle,École élémentaire,Collège,Lycée,EREA"  attributelabel="Filtre" attributestylesync="false" attributefilterenabled="false"
-                infoformat="application/vnd.ogc.gml" featurecount="20"
-                style="etablissement_scolaire_nature"
-                stylesalias=""
-                url="https://ows.region-bretagne.fr/geoserver/interne/wms"
-                attribution="Source: Data.gouv" 
-                metadata="https://www.data.gouv.fr/fr/datasets/adresse-et-geolocalisation-des-etablissements-denseignement-du-premier-et-second-degres/"
-                metadata-csw="" >
-                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.poi.etab_scolaire.mst"></template>
-            </layer>				
+			<layer id="etablissement_scolaire" name="Établissements scolaires"  visible="false" tiled="true" expanded = "true"
+				searchable="false" queryable="true"
+				attributefilter="true" attributefield="libl_nature" attributeoperator="like"
+				attributevalues="Ecole maternelle,Ecole élémentaire,Collège,Lycée,Etablissement régional d'enseignement adapté" attributelabel="Filtre" attributestylesync="false" attributefilterenabled="false"
+				infoformat="application/vnd.ogc.gml" featurecount="20"
+				style="etablissement_scolaire_nature_edr"
+				stylesalias=""
+				url="https://ows.region-bretagne.fr/geoserver/interne/wms"
+				attribution="Source: Rectorat" 
+				metadata=""
+				metadata-csw="" >
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/etablissement_scolaire.mst"></template>
+			</layer> 
 			<layer id="poi_administration" name="Administrations"  visible="false" tiled="false" 
 				searchable="false" queryable="true" fields="appellatio" aliases="appellatio"
                 infoformat="application/vnd.ogc.gml" featurecount="20"

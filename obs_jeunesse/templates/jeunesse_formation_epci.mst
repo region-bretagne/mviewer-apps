@@ -9,11 +9,16 @@
 		<div class="row">
 
 			<div class="col-md-2" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
-				<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartennjeunesse/{{code_siren}}/epci_jeunesse_ppop_1529"></iframe>
-			</div>
-
-			<div class="col-md-2" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
 				<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartennjeunesse/{{code_siren}}/epci_jeunesse_pscol_1529"></iframe>
+			</div>
+			
+			<div class="col-md-2" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartennjeunesse/{{code_siren}}/epci_jeunesse_txscol_1529"></iframe>
+			</div>
+			
+			<div class="col-md-4" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;">
+				<iframe style="position:absolute;top:0;bottom:0; left:0;width:90%;height:90%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartennjeunesse/{{code_siren}}/epci_jeunesse_pscol_graph"></iframe>
+					<div id="over">Évolution du nombre de 15-29 ans scolarisé·e·s </div>
 			</div>
 
 			<div class="col-md-4" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;">
