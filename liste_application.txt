@@ -70,7 +70,6 @@
 ./site_region/lycee.xml
 ./site_region/site_region.xml
 ./structure_orientation/structure_orientation.xml
-./territoire/territoire2.xml
 ./territoire/territoire.xml
 ./test/annee_bati.xml
 ./test/api.xml
@@ -100,7 +99,6 @@
 ./vn/vn.xml
 ./jeunesse/crj.xml
 ./obs_jeunesse/obs_jeunesse.xml
-./obs_jeunesse/obs_jeunesse_2.xml
 ./eolien/fonds_geob.xml
 ./eolien/config.xml
 ./contact_lycee/contact_lycee.xml
