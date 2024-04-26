@@ -79,6 +79,7 @@
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?" 
 				tiled="false" 
 				visible="false" 
+				expanded = "true"
 				infoformat="application/vnd.ogc.gml" 
 				fields="nom_epci"
 				aliases=""
@@ -86,7 +87,7 @@
 				stylesalias=""  						
 				metadata="" 
 				metadata-csw="" 
-				attribution="Source : Région Bretagne (Enquête 2024 auprès des intercommunalités)" 
+				attribution="Source : Région Bretagne (Enquête 2024 auprès des intercommunalités). Sont considérés comme ayant une compétence jeunesse les intercommunalité ayant pris une délibération en ce sens." 
 				queryable="false" 
 				searchable="false" 			
 				fusesearchkeys="" 
@@ -426,6 +427,7 @@
 			type="wms"
 			url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 			visible="false"
+			expanded = "true"
 			infoformat="application/vnd.ogc.gml"
 			fields="nom,nom_commune,nature,secteur,ips,rentree_scolaire"
 			aliases="nom,Commune,Nature,Secteur,IPS,Année scolaire"
@@ -475,7 +477,7 @@
 		</layer>
 		<layer 
 			id="information_jeunesse_couverture" 
-			name="Localisation des structures d'information jeunesse" 
+			name="Communes d'implantation des structures d'information jeunesse" 
 			type="wms" 
 			url="https://ows.region-bretagne.fr/geoserver/interne/ows?" 
 			tiled="true" 
@@ -717,7 +719,7 @@
 		</layer>
 	</theme> 
 	<theme id="jeunesse_logement" name="5- Logement" collapsed="true" icon="fas fa-house-user"> 
-		    <layer id="commune_logement_loyer_moyen" name="Loyen moyen par commune et type de logement (€/m², 2022)"  visible="false" tiled="false"
+		    <layer id="commune_logement_loyer_moyen" name="Loyer moyen par commune et type de logement (€/m², 2022)"  visible="false" tiled="false"
 	            searchable="false" queryable="true"
 	            infopanel="bottom-panel" exclusive="true" expanded="true"
 	            infoformat="application/vnd.ogc.gml" featurecount="5"
@@ -949,6 +951,7 @@
 			url="https://ows.region-bretagne.fr/geoserver/interne/ows?" 
 			tiled="false" 
 			visible="false" 
+			expanded = "true"
 			infoformat="application/vnd.ogc.gml" 
 			fields="nom_geo,p_pop1329,n_equip_bibliotheque,dens_bibli,n_equip_cultu,dens_cultu"
 			aliases="Localisation,Population des 13-29 ans,Nombre de bibliothèques et médiathèques,Densité des bibliothèques et médiathèques pour 1000 jeunes (13-29 ans), Nombre d'équipements culturels,Densité en équipements culturels pour 1000 jeunes (13-29 ans)"
