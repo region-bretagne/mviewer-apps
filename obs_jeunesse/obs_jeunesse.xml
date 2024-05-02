@@ -416,8 +416,8 @@
 			style="etablissement_scolaire_nature_edr"
 			stylesalias=""
 			url="https://ows.region-bretagne.fr/geoserver/interne/wms"
-			attribution="Source: Rectorat" 
-			metadata=""
+			attribution="Source: Application ACCE éducation nationale" 
+			metadata="https://www.education.gouv.fr/acce_public/index.php"
 			metadata-csw="" >
 		    <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/etablissement_scolaire.mst"></template>
 		</layer> 
