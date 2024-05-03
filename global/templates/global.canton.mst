@@ -1,9 +1,6 @@
 {{#features}}
 	<li class="item" id="{{feature_ol_uid}}">
-		<h3 class="rb-title-feature">{{NOM}}</h3>
+		<h3 class="rb-title-feature">{{insee_can}}</h3>
 
-		<p class="rb-text-feature">		
-			<span style="font-weight:bold"> Code Canton :</span> {{ID_CANTON}}<br/>
-       </p>
 	</li>
 {{/features}}
