@@ -102,3 +102,5 @@
 ./eolien/fonds_geob.xml
 ./eolien/config.xml
 ./contact_lycee/contact_lycee.xml
+./paej_test/fonds_geob.xml
+./paej_test/config.xml
