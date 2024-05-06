@@ -1,6 +1,5 @@
 {{#features}}
 	<li class="item" id="{{feature_ol_uid}}">
-		<h3 class="rb-title-feature">{{insee_can}}</h3>
-
+		<h3 class="rb-title-feature">{{nom_can}}</h3>
 	</li>
 {{/features}}
