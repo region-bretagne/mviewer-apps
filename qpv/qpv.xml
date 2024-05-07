@@ -48,9 +48,9 @@
         <baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="GéoPortail" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
             url="https://data.geopf.fr/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
             attribution="&lt;a href='https://geoservices.ign.fr/services-geoplateforme-diffusion' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
-        <baselayer  type="OSM" id="positron" label="Positron" title="CartoDb" thumbgallery="img/basemap/positron.png" 
-			url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" maxzoom="20" 
-			visible="true" attribution="Map tiles by  &lt;a href='https://cartodb.com/attributions'>CartoDb &lt;/a>, under  &lt;a href='https://creativecommons.org/licenses/by/3.0/'>CC BY 3.0 &lt;/a>" />
+		<baselayer visible="true" id="osm_grey" thumbgallery="https://tile.geobretagne.fr/osm/tms/osm:grey/EPSG3857/16/64287/85957.png" title="OpenStreetMap Grey" label="OpenStreetMap Grey" type="WMTS" 
+			url="https://tile.geobretagne.fr/osm/service" layers="osm:grey" format="image/png" matrixset="PM" fromcapacity="false" style="_null"
+            attribution="GéoBretagne. Données : les contributeurs d'&lt;a href='https://www.openstreetmap.org/' target='_blank'>OpenStreetMap &lt;/a>,  &lt;a href='https://www.openstreetmap.org/copyright' target='_blank'>ODbL &lt;/a>"/>
 	</baselayers>
 	<themes mini="false">
 		<theme id="demo"
@@ -68,7 +68,7 @@
 			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
 			       visible="true"
 			       infoformat="application/vnd.ogc.gml"
-			       attribution="INSEE RP2019"
+			       attribution="INSEE RP2020"
 			       queryable="true"
 			       infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/demographie_generale.mst"/>
@@ -84,7 +84,7 @@
 			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
 			       visible="false"
 			       infoformat="application/vnd.ogc.gml"
-			       attribution="INSEE RP2019"
+			       attribution="INSEE RP2020"
 			       queryable="true"
 			       infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/demographie_sexe.mst"/>
@@ -100,7 +100,7 @@
 			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
 			       visible="false"
 			       infoformat="application/vnd.ogc.gml"
-			       attribution="INSEE RP2019"
+			       attribution="INSEE RP2020"
 			       queryable="true"
 			       infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/demographie_menfseul.mst"/>
@@ -116,7 +116,7 @@
 			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
 			       visible="false"
 			       infoformat="application/vnd.ogc.gml"
-			       attribution="&lt;b&gt;Source :&lt;/b&gt; INSEE RP2019 &lt;br&gt;
+			       attribution="&lt;b&gt;Source :&lt;/b&gt; INSEE RP2020 &lt;br&gt;
 &lt;b&gt;Définition :&lt;/b&gt; Une famille monoparentale comprend un parent isolé et un ou plusieurs enfants célibataires (n'ayant pas d'enfant)."
 			       queryable="true"
 			       infopanel="bottom-panel">
@@ -138,7 +138,7 @@
 			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
 			       visible="true"
 			       infoformat="application/vnd.ogc.gml"
-			       attribution="&lt;b&gt;Source :&lt;/b&gt; INSEE RP2019 &lt;br&gt;
+			       attribution="&lt;b&gt;Source :&lt;/b&gt; INSEE RP2020 &lt;br&gt;
 &lt;b&gt;Définition :&lt;/b&gt; La nomenclature des professions et catégories socioprofessionnelles, dite PCS, permet de classer les personnes en emploi au sens du Bureau international du travail (BIT) en fonction de leur profession et d’une combinaison de variables définissant l’environnement de travail (statut, nombre de salariés, position professionnelle et nature de l’employeur). La nomenclature propose six groupes socioprofessionnels : les agriculteurs exploitants, les artisans, commerçants et chefs d’entreprise, les cadres et professions intellectuelles supérieures, les professions intermédiaires, les employés et les ouvriers."
 			       queryable="true"
 			       infopanel="bottom-panel">
@@ -231,7 +231,6 @@
 			       infoformat="application/vnd.ogc.gml"
 			       attribution="INSEE"
 			       queryable="true"
-				   filter="millesime=2019"
 			       infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/p_nscol15p_diplmin.mst"/>
 			</layer>			
@@ -339,7 +338,7 @@ Les indicateurs portent sur les praticiens exerçant leur activité principale e
 			       visible="true"
 			       infoformat="application/vnd.ogc.gml"
 			       attribution="Taux standardisés de bénéficiaires d'au moins une ALD pour 100 bénéficiaires du régime général de l'assurance maladie. 
-Il s'agit d'un indicateur calculé par l'ORS Bretagne ; le sigle « &lt;a href=&quot;https://www.ameli.fr/llle-et-vilaine/assure/droits-demarches/maladie-accident-hospitalisation/affection-longue-duree-ald/affection-longue-duree-maladie-chronique&quot; title=&quot;Affection de Longue Durée&quot; target=&quot;_blank&quot;&gt;ALD&lt;/a&gt; » signifie « affection de longue durée ». Ce dispositif permet la prise en charge de pathologies qui nécessitent un traitement prolongé et coûteux. Il en existe plusieurs types, les ALD exonérantes et non exonérantes qui ne donnent pas les mêmes droits &lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2021).
+Il s'agit d'un indicateur calculé par l'ORS Bretagne ; le sigle « &lt;a href=&quot;https://www.ameli.fr/llle-et-vilaine/assure/droits-demarches/maladie-accident-hospitalisation/affection-longue-duree-ald/affection-longue-duree-maladie-chronique&quot; title=&quot;Affection de Longue Durée&quot; target=&quot;_blank&quot;&gt;ALD&lt;/a&gt; » signifie « affection de longue durée ». Ce dispositif permet la prise en charge de pathologies qui nécessitent un traitement prolongé et coûteux. Il en existe plusieurs types, les ALD exonérantes et non exonérantes qui ne donnent pas les mêmes droits &lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2022).
 "
 			       queryable="true"
 			       infopanel="bottom-panel">
@@ -358,7 +357,7 @@ Il s'agit d'un indicateur calculé par l'ORS Bretagne ; le sigle « &lt;a href=&
 				   expanded="true"
 			       infoformat="application/vnd.ogc.gml"
 			       attribution="Taux standardisés de recours au médecin généraliste libéral pour 100 bénéficiaires du régime général de l'assurance maladie. Il s'agit d'un indicateur calculé par l'ORS Bretagne.
-&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2021).				   "
+&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2022).				   "
 			       queryable="true"
 			       infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/tx_std_mg.mst"/>
@@ -376,7 +375,7 @@ Il s'agit d'un indicateur calculé par l'ORS Bretagne ; le sigle « &lt;a href=&
 			       visible="true"
 			       infoformat="application/vnd.ogc.gml"
 			       attribution="Taux standardisés de recours à un traitement anti-dépresseur régulier pour 1 000 bénéficiaires du régime général de l'assurance maladie âgés de 15 ans et plus. Il s'agit d'un indicateur calculé par l'ORS Bretagne.
-&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2021)."
+&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2022)."
 			       queryable="true"
 			       infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/tx_ttt_antidep_15plus.mst"/>
@@ -395,7 +394,7 @@ Il s'agit d'un indicateur calculé par l'ORS Bretagne ; le sigle « &lt;a href=&
 			       infoformat="application/vnd.ogc.gml"
 			       attribution="Taux standardisés de recours à une mammographie dans le cadre du dépistage organisé du cancer du sein pour 100 patientes âgées de 50 à 74 ans.
 				   Il s'agit d'un indicateur calculé par l'ORS Bretagne.
-&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2021). "
+&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2022). "
 			       queryable="true"
 			       infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/tx_std_mamdo_5074.mst"/>
@@ -414,7 +413,7 @@ Il s'agit d'un indicateur calculé par l'ORS Bretagne ; le sigle « &lt;a href=&
 			       <!-- infoformat="application/vnd.ogc.gml" -->
 			       <!-- attribution="Taux standardisés de recours à un gynécologue libéral dans le cadre d'un suivi de grossesse pour 1 000 bénéficiaires du régime général de l'assurance maladie âgées de 15 à 49 ans. -->
 <!-- Il s'agit d'un indicateur calculé par l'ORS Bretagne.  -->
-<!-- &lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2021)." -->
+<!-- &lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2022)." -->
 			       <!-- queryable="true" -->
 			       <!-- infopanel="bottom-panel"> -->
 				<!-- <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/tx_std_gyngro_1549.mst"/> -->
@@ -432,7 +431,7 @@ Il s'agit d'un indicateur calculé par l'ORS Bretagne ; le sigle « &lt;a href=&
 				   expanded="true"
 			       infoformat="application/vnd.ogc.gml"
 			       attribution="Taux standardisés de recours à un gynécologue libéral dans le cadre d'un suivi médical (hors grossesse) pour 1 000 bénéficiaires du régime général de l'assurance maladie âgées de 15 ans ou plus. Il s'agit d'un indicateur calculé par l'ORS Bretagne.
-&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2021). "
+&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2022). "
 			       queryable="true"
 			       infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/tx_std_gynmed_15.mst"/>
@@ -468,7 +467,7 @@ Il s'agit d'un indicateur calculé par l'ORS Bretagne ; le sigle « &lt;a href=&
 				   expanded="true"
 			       infoformat="application/vnd.ogc.gml"
 			       attribution="Taux standardisés de recours à un psychiatre pour 1 000 bénéficiaires du régime général de l'assurance maladie âgés de 15 ans et plus. Il s'agit d'un indicateur calculé par l'ORS Bretagne 
-&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d’information régional de l’assurance maladie - Base Erasme des affiliés au régime général 2021."
+&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d’information régional de l’assurance maladie - Base Erasme des affiliés au régime général 2022."
 			       queryable="true"
 			       infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/tx_std_psy_15plus.mst"/>
@@ -486,7 +485,7 @@ Il s'agit d'un indicateur calculé par l'ORS Bretagne ; le sigle « &lt;a href=&
 				   expanded="true"
 			       infoformat="application/vnd.ogc.gml"
 			       attribution="Poids du non recours à tous types de soins. 
-&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2021)."
+&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d'Information Régional de l'Assurance Maladie - base Erasme 2022)."
 			       queryable="true"
 			       infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/p_nrec_soin.mst"/>
@@ -504,7 +503,7 @@ Il s'agit d'un indicateur calculé par l'ORS Bretagne ; le sigle « &lt;a href=&
 				   expanded="true"
 			       infoformat="application/vnd.ogc.gml"
 			       attribution="Poids des bénéficiaires sans consultation dentaire. Il s'agit d'un indicateur calculé par l'ORS Bretagne. 
-&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d’information régional de l’assurance maladie - Base Erasme des affiliés au régime général 2021. "
+&lt;br&gt;&lt;b&gt;Source : &lt;/b&gt; Système d’information régional de l’assurance maladie - Base Erasme des affiliés au régime général 2022. "
 			       queryable="true"
 			       infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/p_nrec_dent.mst"/>	
