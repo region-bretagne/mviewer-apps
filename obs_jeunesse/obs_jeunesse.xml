@@ -439,6 +439,35 @@
 			metadata="https://www.education.gouv.fr/l-indice-de-position-sociale-ips-357755"
 			opacity="1">
 		</layer> 
+		<layer 
+			id="iav_lycee"
+			name="Taux de réussite au bac"
+			type="wms"
+			url="https://ows.region-bretagne.fr/geoserver/interne/wms"
+			timefilter="true" timeinterval="year" timecontrol="slider" timemin="2012" timemax="2023" timevalues="2016,2017,2018,2019,2020,2021,2022,2023"
+			visible="false"
+			expanded = "true"
+			infoformat="application/vnd.ogc.gml"
+			attributefilter="true" attributefield="type_lycee" attributevalues="Lycée général,Lycée professionnel"  
+			attributelabel="Type d'établissement" attributestylesync="false" attributefilterenabled="false"				
+			queryable="true"
+			infopanel="bottom-panel"
+			attribution="Source: Data.gouv" 
+			metadata="https://www.education.gouv.fr/l-indice-de-position-sociale-ips-357755"
+			opacity="1">
+			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_reussite_bac_lycee.mst" />
+		</layer> 
+		<layer id="formation_prepa" name="Formation Prépa Avenir Jeunes"  visible="false" tiled="false"
+                searchable="false" queryable="true"  expanded="true" exclusive="false" 
+				filter="formation LIKE 'PREPA Avenir Jeunes'" 
+				style ="point_bleu2"
+				fields="site,adresse,adresse_comp,ville,mail,telephone" aliases="Site,Adresse,,Commune,Mail,Téléphone"				
+                infoformat="application/vnd.ogc.gml" featurecount="70"
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source: Région Bretagne" 
+                metadata=""
+                metadata-csw="" >	  
+		    </layer> 
 	</theme> 
 	<theme id="jeunesse_information" name="3- Information des jeunes" collapsed="true" icon="fas fa-info"> 
 		<layer 
