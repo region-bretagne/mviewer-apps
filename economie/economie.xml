@@ -75,7 +75,7 @@
 				id="aide_brit_epci"
 				name="Prêts Bretagne Reprise Initiative Transmission (BRIT)"
 				type="wms" expanded="true"
-		        timefilter="true" timeinterval="year" timecontrol="slider" timemin="2021" timemax="2022" timevalues="2021,2022"
+		        timefilter="true" timeinterval="year" timecontrol="slider" timemin="2021" timemax="2023" timevalues="2021,2022,2023"
 				exclusive="true"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
 				visible="false"
