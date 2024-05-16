@@ -25,7 +25,7 @@
 	</rdf:RDF>
 </metadata>
 <application 
-	title="Observatoire breton des jeunesses (prototype)" 
+	title="Observatoire breton des jeunesses"  
 	logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/img/logo_jeun.svg" 
 	favicon="" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/aide.html"  titlehelp="" iconhelp="fas fa-home" home="" 
 	style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/css/kartenn_economie.css" 
@@ -52,7 +52,10 @@
 </extensions>
 
 <baselayers style="default"> 
-    <baselayer visible="true" id="positron" thumbgallery="img/basemap/positron.png" title="CartoDb" label="Positron" type="OSM" url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" attribution="Map tiles by  &lt;a href=&quot;https://cartodb.com/attributions&quot;&gt;CartoDb&lt;/a&gt;, under  &lt;a href=&quot;https://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY 3.0 &lt;/a&gt;" /> 
+    
+	<baselayer visible="true" id="osm_grey" thumbgallery="https://tile.geobretagne.fr/osm/tms/osm:grey/EPSG3857/16/64287/85957.png" title="OpenStreetMap Grey" label="OpenStreetMap Grey" type="WMTS" 
+			url="https://tile.geobretagne.fr/osm/service" layers="osm:grey" format="image/png" matrixset="PM" fromcapacity="false" style="_null"
+            attribution="GéoBretagne. Données : les contributeurs d'&lt;a href='https://www.openstreetmap.org/' target='_blank'>OpenStreetMap &lt;/a>,  &lt;a href='https://www.openstreetmap.org/copyright' target='_blank'>ODbL &lt;/a>"/>
     <baselayer visible="false" id="ortho_ign" thumbgallery="img/basemap/ortho.jpg" title="IGN" label="Photographies aériennes IGN" type="WMTS" url="https://data.geopf.fr/wmts?" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" fromcapacity="false" attribution="&lt;a href='https://geoservices.ign.fr' target='_blank'&gt;&lt;img src='https://geoservices.ign.fr/images/logoIGN.png'&gt;&lt;/a&gt;" style="normal" matrixset="PM" maxzoom="22" /> 
 </baselayers>
 
@@ -87,7 +90,7 @@
 				stylesalias=""  						
 				metadata="" 
 				metadata-csw="" 
-				attribution="Source : Région Bretagne (Enquête 2024 auprès des intercommunalités). Sont considérés comme ayant une compétence jeunesse les intercommunalité ayant pris une délibération en ce sens." 
+				attribution="Source : Région Bretagne (Enquête 2023 auprès des intercommunalités). Sont considérés comme ayant une compétence jeunesse les intercommunalité ayant pris une délibération en ce sens." 
 				queryable="false" 
 				searchable="false" 			
 				fusesearchkeys="" 
@@ -194,7 +197,7 @@
 			attributefilter="true" attributefield="type_geo" attributevalues="EPCI,Commune"  attributelabel="Échelle" attributestylesync="false" attributefilterenabled="true"
 			metadata="" 
 			metadata-csw="" 
-			attribution="Source : Insee (2020). L'indice de jeunesse correspond au ratio entre les individus de moins de 20 ans et ceux de 60 ans ou plus. Un indice de 0,5 signifie qu'un moins de 20 ans réside sur le territoire pour deux personnes de 60 ans ou plus." 
+			attribution="Source : Insee (2020). L'indice de jeunesse correspond au ratio entre les individus de moins de 20 ans et ceux de 60 ans ou plus. Un indice de 0,5 signifie qu'une personne de moins de 20 ans réside sur le territoire pour deux personnes de 60 ans ou plus." 
 			queryable="true" 
 			searchable="false" 
 			fusesearchkeys="" 
@@ -452,8 +455,8 @@
 			attributelabel="Type d'établissement" attributestylesync="false" attributefilterenabled="false"				
 			queryable="true"
 			infopanel="bottom-panel"
-			attribution="Source: Data.gouv" 
-			metadata="https://www.education.gouv.fr/l-indice-de-position-sociale-ips-357755"
+			attribution="Source: data.education.gouv.fr. L'ensemble des définitions sont disponibles via le bouton d'information." 
+			metadata="https://data.education.gouv.fr/explore/dataset/fr-en-indicateurs-de-resultat-des-lycees-denseignement-professionnels/information/?sort=-annee"
 			opacity="1">
 			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_reussite_bac_lycee.mst" />
 		</layer> 
@@ -554,7 +557,7 @@
 			stylesalias="" 
 			metadata="" 
 			metadata-csw="" 
-			attribution="Source : Agence Régional de Santé (2023)" 
+			attribution="Source : Agence Régionale de Santé (2023)" 
 			queryable="true" 
 			searchable="false" 
 			fusesearchkeys="" 
@@ -656,7 +659,7 @@
 			style="formation_sanitaire_social"
 			stylesalias=""  
 			attributefilter="true" attributefield="formation" 
-			attributevalues="Aide-soignant.e,Infirmier.e,Infirmier.e de bloc opératoire,Infirmier.e anesthésiste,Puéricultrice,Auxiliaire de puériculture,Auxiliaire de gérontologie,Moniteur éducateur,Educateur/Educatrice de jeunes enfants,Educateur/Educatrice spécialisé.e,Sage-Femme/Maïeuticien,Manipulateur/Manipuatrice en électroradiologie médicale,Masseur-kinésithérapeute,Assistant·e de vie aux familles,Médiateur/médiatrice familial.e,Accompagnant·e éducatif·ve petite enfance,Technicien.ne de l'intervention sociale et familiale,Assistant.e familial,Accompagnant·e éducatif·ve petite enfance,Diplôme d’Etat ingénierie sociale, Assistant.e de service social,Accompagnant.e éducatif et social,Pédicure-podologue,Ergothérapeute,Psychomotricien.ne,Conseiller.e en économie sociale et familiale,Educateur/Educatrice technique spécialisé.e,Ambulancier.e" 
+			attributevalues="Accompagnant.e éducatif et social,Accompagnant·e éducatif·ve petite enfance,Accompagnant·e éducatif·ve petite enfance,Aide-soignant.e,Ambulancier.e,Assistant.e de service social,Assistant.e familial,Assistant·e de vie aux familles,Auxiliaire de gérontologie,Auxiliaire de puériculture,Conseiller.e en économie sociale et familiale,Diplôme d’Etat ingénierie sociale,Educateur/Educatrice de jeunes enfants,Educateur/Educatrice spécialisé.e,Educateur/Educatrice technique spécialisé.e,Ergothérapeute,Infirmier.e,Infirmier.e anesthésiste,Infirmier.e de bloc opératoire,Manipulateur/Manipuatrice en électroradiologie médicale,Masseur-kinésithérapeute,Médiateur/médiatrice familial.e,Moniteur éducateur,Pédicure-podologue,Psychomotricien.ne,Puéricultrice,Sage-Femme/Maïeuticien,Technicien.ne de l'intervention sociale et familiale" 
 			attributelabel="Sélectionner une formation" attributestylesync="false" attributefilterenabled="false"			
 			metadata="" 
 			metadata-csw="" 
@@ -774,7 +777,7 @@
 			stylesalias=""
 			metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/f5eaf697-0e9e-4cfd-8781-e280153eea47" 
 			metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ELEMENTSETNAME=full&amp;ID&amp;ID=f5eaf697-0e9e-4cfd-8781-e280153eea47" 
-			attribution="Source : DREAL Bretagne (2018)"
+			attribution="Source : Direction Régionnal de l'Environnement de l'Aménagement et du Logement de Bretagne (DREAL, 2018)"
 			queryable="true" 
 			searchable="false" 
 			fusesearchkeys="" 
@@ -793,39 +796,39 @@
 			exclusive="true" 
 			showintoc="true">
         </layer> 
-        <layer 
-			id="l_zonage_abc" 
-			name="Zonage ABC en Bretagne"
-			type="wms" 
-			url="https://geobretagne.fr/geoserver/dreal_b/l_zonage_abc/wms"
-			tiled="true" 
-			visible="false"
-			infoformat="application/vnd.ogc.gml" 
-			fields="Nom_com,Zonage_ABC" 
-			aliases="Commune,Zonage"
-			style="l_zonage_abc"
-			stylesalias="" 
-			metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/b5cb375d-7bb5-4b75-84f7-649e8f84e0dd"
-			metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ELEMENTSETNAME=full&amp;ID&amp;ID=b5cb375d-7bb5-4b75-84f7-649e8f84e0dd" 
-			attribution="Source : DREAL Bretagne (2023)"
-			queryable="true"
-			searchable="false" 
-			fusesearchkeys="" 
-			fusesearchresult="" 
-			useproxy="false"
-			filter="" 
-			sld="" 
-			legendurl=""
-			featurecount="" 
-			infopanel="right-panel"
-			opacity="1" 
-			index=""
-			styletitle="" 
-			dynamiclegend="false" 
-			toplayer="false" 
-			exclusive="true" 
-			showintoc="true">
-        </layer> 
+        <!-- <layer  -->
+			<!-- id="l_zonage_abc"  -->
+			<!-- name="Zonage ABC en Bretagne" -->
+			<!-- type="wms"  -->
+			<!-- url="https://geobretagne.fr/geoserver/dreal_b/l_zonage_abc/wms" -->
+			<!-- tiled="true"  -->
+			<!-- visible="false" -->
+			<!-- infoformat="application/vnd.ogc.gml"  -->
+			<!-- fields="Nom_com,Zonage_ABC"  -->
+			<!-- aliases="Commune,Zonage" -->
+			<!-- style="l_zonage_abc" -->
+			<!-- stylesalias=""  -->
+			<!-- metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/b5cb375d-7bb5-4b75-84f7-649e8f84e0dd" -->
+			<!-- metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ELEMENTSETNAME=full&amp;ID&amp;ID=b5cb375d-7bb5-4b75-84f7-649e8f84e0dd"  -->
+			<!-- attribution="Source : Direction Régionnal de l'Environnement de l'Aménagement et du Logement de Bretagne  (DREAL, 2023)" -->
+			<!-- queryable="true" -->
+			<!-- searchable="false"  -->
+			<!-- fusesearchkeys=""  -->
+			<!-- fusesearchresult=""  -->
+			<!-- useproxy="false" -->
+			<!-- filter=""  -->
+			<!-- sld=""  -->
+			<!-- legendurl="" -->
+			<!-- featurecount=""  -->
+			<!-- infopanel="right-panel" -->
+			<!-- opacity="1"  -->
+			<!-- index="" -->
+			<!-- styletitle=""  -->
+			<!-- dynamiclegend="false"  -->
+			<!-- toplayer="false"  -->
+			<!-- exclusive="true"  -->
+			<!-- showintoc="true"> -->
+        <!-- </layer>  -->
 		<layer 
 			id="n_plh_zsup_r53" 
 			name="Plan Locaux de l'Habitat (PLH)"
@@ -840,7 +843,7 @@
 			stylesalias="" 
 			metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/650fa38b-1c32-4b7a-b673-991cb47850e0"
 			metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ELEMENTSETNAME=full&amp;ID&amp;ID=b5cb375d-7bb5-4b75-84f7-649e8f84e0dd" 
-			attribution="Source : DREAL Bretagne (état au 31/12/2023)"
+			attribution="Source : Direction Régionnal de l'Environnement de l'Aménagement et du Logement de Bretagne ( DREAL, état au 31/12/2023)"
 			queryable="true"
 			searchable="false" 
 			fusesearchkeys="" 
@@ -869,7 +872,7 @@
                 stylesalias="Par défaut, Distributeur automatique de billet, Guichet, Information dynamique,Nature des arrêts ferroviaires,Parking voiture,Parking vélo, Assistance PMR, Arrêts desservis par le TGV"
                 legendurl="https://kartenn.region-bretagne.fr/doc/transports/icons/gare.svg"
                 url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-                attribution="Région Bretagne" 
+                attribution="Source : Région Bretagne" 
                 metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/4a9d13f7-17be-4a98-9f8f-907cf223072f"
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=4a9d13f7-17be-4a98-9f8f-907cf223072f" >
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.arret_ferroviaire.mst"></template>
@@ -880,7 +883,7 @@
                 style="ligne_ferroviaire"
                 infoformat="application/vnd.ogc.gml" featurecount="20"
                 url="https://geobretagne.fr/geoserver/sncf/wms"
-                attribution="SNCF réseau" 
+                attribution="Source : SNCF réseau" 
                 metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/b8927600-5b49-11de-b5dc-0000c0a8230c"
                 metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b8927600-5b49-11de-b5dc-0000c0a8230c">
 			</layer> 
@@ -923,16 +926,16 @@
 				searchable="false" queryable="true"
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-				attribution="Région Bretagne" 
+				attribution="Source : Région Bretagne" 
 				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/252ee615-278d-4bc1-b5a7-9ea543348e72"
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=252ee615-278d-4bc1-b5a7-9ea543348e72">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.arret_breizhgo.mst"></template>
 			</layer>
-            <layer id="reseau_breizhgo_car" name="Réseau Breizh Go"  visible="false" tiled="false" 
+            <layer id="reseau_breizhgo_car" name="Réseau Breizh Go (Hors Finistère)"  visible="false" tiled="false" 
                 searchable="false" queryable="true" 
                 infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-                attribution="Région Bretagne" 
+                attribution="Source : Région Bretagne" 
 				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/b08c5f1b-79ed-441a-9198-7360e6338b89"
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b08c5f1b-79ed-441a-9198-7360e6338b89">
 		        <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.ligne_breizhgo.mst"></template>
@@ -1046,7 +1049,7 @@
 	<theme id="jeunesse_engagement" name="8- Engagement" collapsed="true" icon="fas fa-bullhorn"> 
 		<layer 
 			id="jeunesse_eng_liste" 
-			name="18-29 inscrit·e·s sur liste électorale (Effectif)" 
+			name="Nombre de 18-29 inscrit·e·s sur liste électorale (Effectif)" 
 			type="wms" 
 			url="https://ows.region-bretagne.fr/geoserver/interne/ows?" 
 			tiled="true" 
@@ -1118,7 +1121,7 @@
 	<theme id="jeunesse_mobilite_inter" name="9- Mobilité internationale" collapsed="true" icon="fas fa-suitcase"> 
 	</theme> 
 	<theme id="jeunesse_transition" name="10- Transition écologique" collapsed="true" icon="fas fa-leaf"> 
-	    <layer id="aire_educative" name="Aire éducative"  visible="false" tiled="false" expanded="true" toplayer="true"
+	    <layer id="aire_educative" name="Aires éducatives"  visible="false" tiled="false" expanded="true" toplayer="true"
             infoformat="application/vnd.ogc.gml" featurecount="1" queryable="true" searchable="true"
             url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 			style="aire_educative_nature,ame_statut,ame_structure" stylesalias="Nature,Statut,Type de structure référente"
@@ -1291,41 +1294,6 @@
 	</theme> 
 	<theme id="jeunesse_droits" name="12- Accès aux droits" collapsed="true" icon="fas fa-landmark"> 
 		<layer 
-			id="jeunesse_aeeh" 
-			name="Nombre de bénéficiaires de l'allocation d'éducation de l'enfant handicapé (AEEH)" 
-			type="wms" 
-			url="https://ows.region-bretagne.fr/geoserver/interne/ows?" 
-			tiled="true" 
-			visible="false" 
-			infoformat="application/vnd.ogc.gml" 
-			fields="deplib,eff,periode"
-			aliases="Département,Effectif,Période"
-			style="jeunesse_sante_aeeh" 
-			stylesalias="" 
-			metadata="" 
-			metadata-csw="" 
-			attribution="Source : CAF (AEEH : Allocation d'Education de l'Enfant Handicapé)." 
-			queryable="true" 
-			searchable="false" 			
-			timefilter="true" timeinterval="year" timecontrol="slider" timemin="2016" timemax="2022" timevalues="2016,2017,2018,2019,2020,2021,2022"
-			fusesearchkeys="" 
-			fusesearchresult="" 
-			secure="public" 
-			useproxy="false" 
-			filter="" 
-			sld="" 
-			legendurl="" 
-			featurecount="" 
-			infopanel="right-panel" 
-			opacity=".9" 
-			index="" 
-			styletitle="" 
-			dynamiclegend="false" 
-			toplayer="false" 
-			exclusive="false" 
-			showintoc="true">			
-		</layer>
-		<layer 
 			id="jeunesse_droits_pauvrete" 
 			name="Taux de pauvreté chez les moins de 30 ans"
 			type="wms"
@@ -1340,7 +1308,7 @@
 			stylesalias="" 
 			metadata=""
 			metadata-csw="" 
-			attribution="Source : Insee (FiLoSoFi, 2020)" 
+			attribution="Source : Insee (FiLoSoFi, 2020) Le secret statistique est lié a un effectif trop faible sur le territoire (peu de moins de 30 ans en situation de pauvreté ou non)" 
 			queryable="true"
 			searchable="false"
 			fusesearchkeys="" 
@@ -1360,20 +1328,21 @@
 			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_droits_pauvrete.mst" />					
 		</layer>
 		<layer 
-			id="jeunesse_droits_mne_ase" 
-			name="Moins de 21 ans bénéficiaires d'une mesure de l'aide sociale à l'enfance (ASE)"
+			id="jeunesse_droits_qpv" 
+			name="Population en QPV (données 2018)"
 			type="wms"
 			url="https://ows.region-bretagne.fr/geoserver/interne/ows?" 
 			tiled="true"
 			visible="false"
+			expanded="true"
 			infoformat="application/vnd.ogc.gml" 
 			fields="" 
 			aliases=""
-			style="jeunesse_droits_ase" 
-			stylesalias="Bénéficiaires de l'ASE (moins de 21 ans)" 
+			style="jeunesse_droits_qpv_15_24,jeunesse_droits_qpv,jeunesse_droits_qpv_0_14,jeunesse_droits_qpv_25_59,jeunesse_droits_qpv_60_74,jeunesse_droits_qpv_75p" 
+			stylesalias="15-24 ans,Toute tranche d'âge, 0-14 ans,25-59 ans,60-74 ans,Plus de 75 ans" 
 			metadata=""
 			metadata-csw="" 
-			attribution="Source : DREES 2021 (ASE, cat. minmaj_C1)" 
+			attribution="Source : Insee (2018)" 
 			queryable="true"
 			searchable="false"
 			fusesearchkeys="" 
@@ -1390,7 +1359,7 @@
 			toplayer="false" 
 			exclusive="false" 
 			showintoc="true">	
-			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_mne_ase.mst" />					
+			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_droits_qpv.mst" />				
 		</layer>
 		<layer id="qpv"
 			   name="Périmètres QPV 2024"
@@ -1437,40 +1406,6 @@
 			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/qpv.mst"/>
 		</layer>
 		<layer 
-			id="jeunesse_droits_qpv" 
-			name="Population en QPV (données 2018)"
-			type="wms"
-			url="https://ows.region-bretagne.fr/geoserver/interne/ows?" 
-			tiled="true"
-			visible="false"
-			expanded="true"
-			infoformat="application/vnd.ogc.gml" 
-			fields="" 
-			aliases=""
-			style="jeunesse_droits_qpv_15_24,jeunesse_droits_qpv,jeunesse_droits_qpv_0_14,jeunesse_droits_qpv_25_59,jeunesse_droits_qpv_60_74,jeunesse_droits_qpv_75p" 
-			stylesalias="15-24 ans,Toute tranche d'âge, 0-14 ans,25-59 ans,60-74 ans,Plus de 75 ans" 
-			metadata=""
-			metadata-csw="" 
-			attribution="Source : Insee (2018)" 
-			queryable="true"
-			searchable="false"
-			fusesearchkeys="" 
-			fusesearchresult=""
-			useproxy="false" 
-			filter="" sld="" 
-			legendurl="" 
-			featurecount="" 
-			infopanel="bottom-panel"
-			opacity="1" 
-			index="" 
-			styletitle=""
-			dynamiclegend="false" 
-			toplayer="false" 
-			exclusive="false" 
-			showintoc="true">	
-			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_droits_qpv.mst" />				
-		</layer>
-		<layer 
 			id="jeunesse_droits_rural" 
 			name="Typologie des communes"
 			type="wms"
@@ -1502,63 +1437,77 @@
 			exclusive="true" 
 			showintoc="true">			
 		</layer>
-		<!-- <layer  -->
-			<!-- id="jeunesse_zrr"  -->
-			<!-- name="Zonage ZRR des communes (zone de revitalisation rurale)" -->
-			<!-- type="wms" -->
-			<!-- url="https://ows.region-bretagne.fr/geoserver/interne/ows?"  -->
-			<!-- tiled="true" -->
-			<!-- visible="false" -->
-			<!-- infoformat="application/vnd.ogc.gml"  -->
-			<!-- fields="nom"  -->
-			<!-- aliases="Commune" -->
-			<!-- style="jeunesse_zrr"  -->
-			<!-- stylesalias=""  -->
-			<!-- metadata="" -->
-			<!-- metadata-csw=""  -->
-			<!-- attribution="Source : ANCT (2023)"  -->
-			<!-- queryable="true" -->
-			<!-- searchable="false" -->
-			<!-- fusesearchkeys=""  -->
-			<!-- fusesearchresult="" -->
-			<!-- useproxy="false"  -->
-			<!-- filter="" sld=""  -->
-			<!-- legendurl=""  -->
-			<!-- featurecount=""  -->
-			<!-- infopanel="right-panel" -->
-			<!-- opacity=".7"  -->
-			<!-- index=""  -->
-			<!-- styletitle="" -->
-			<!-- dynamiclegend="false"  -->
-			<!-- toplayer="false"  -->
-			<!-- exclusive="false"  -->
-			<!-- showintoc="true">			 -->
-		<!-- </layer> -->
+		<layer 
+			id="jeunesse_droits_mne_ase" 
+			name="Moins de 21 ans bénéficiaires d'une mesure de l'aide sociale à l'enfance (ASE)"
+			type="wms"
+			url="https://ows.region-bretagne.fr/geoserver/interne/ows?" 
+			tiled="true"
+			visible="false"
+			infoformat="application/vnd.ogc.gml" 
+			fields="" 
+			aliases=""
+			style="jeunesse_droits_ase" 
+			stylesalias="Bénéficiaires de l'ASE (moins de 21 ans)" 
+			metadata="https://data.drees.solidarites-sante.gouv.fr/explore/dataset/les-beneficiaires-de-l-aide-sociale-a-l-enfance/information/"
+			metadata-csw="" 
+			attribution="Source : Direction de la Recherche des Etudes de l'Evaluation et des Statistiques DREES 2021 (ASE, catégorie mineur majeur de type C1)" 
+			queryable="true"
+			searchable="false"
+			fusesearchkeys="" 
+			fusesearchresult=""
+			useproxy="false" 
+			filter="" sld="" 
+			legendurl="" 
+			featurecount="" 
+			infopanel="bottom-panel"
+			opacity="1" 
+			index="" 
+			styletitle=""
+			dynamiclegend="false" 
+			toplayer="false" 
+			exclusive="false" 
+			showintoc="true">	
+			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_mne_ase.mst" />					
+		</layer>
+		<layer 
+			id="jeunesse_aeeh" 
+			name="Nombre de bénéficiaires de l'allocation d'éducation de l'enfant handicapé (AEEH)" 
+			type="wms" 
+			url="https://ows.region-bretagne.fr/geoserver/interne/ows?" 
+			tiled="true" 
+			visible="false" 
+			infoformat="application/vnd.ogc.gml" 
+			fields="deplib,eff,periode"
+			aliases="Département,Effectif,Période"
+			style="jeunesse_sante_aeeh" 
+			stylesalias="" 
+			metadata="" 
+			metadata-csw="" 
+			attribution="Source : CAF (AEEH : Allocation d'Education de l'Enfant Handicapé)." 
+			queryable="true" 
+			searchable="false" 			
+			timefilter="true" timeinterval="year" timecontrol="slider" timemin="2016" timemax="2022" timevalues="2016,2017,2018,2019,2020,2021,2022"
+			fusesearchkeys="" 
+			fusesearchresult="" 
+			secure="public" 
+			useproxy="false" 
+			filter="" 
+			sld="" 
+			legendurl="" 
+			featurecount="" 
+			infopanel="right-panel" 
+			opacity=".9" 
+			index="" 
+			styletitle="" 
+			dynamiclegend="false" 
+			toplayer="false" 
+			exclusive="false" 
+			showintoc="true">			
+		</layer>
 	</theme>
 	<theme name="Découpages territoriaux"  collapsed="true" id="territoire" icon="fas fa-globe"> 
-        <group name="Limites administratives" id="grp1" >
-			<layer id="l_qpv_pnru"
-			       name="QPV"
-			       toplayer="true"
-			       tiled="true"
-			       type="customlayer"
-			       vectorlegend="true"
-			       url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/customlayers/l_qpv_pnru.js"
-			       visible="false"
-			       infoformat="application/vnd.ogc.gml"
-			       attribution="GéoBretagne"
-			       queryable="false"
-			       searchable="true"
-			       searchengine="fuse"
-			       fusesearchkeys="NOM_QUARTI,COMMUNE"
-			       fusesearchresult="{{NOM_QUARTI}} - {{COMMUNE}}"
-			       infopanel="bottom-panel"
-			       tooltip="true"
-			       tooltipcontent="{{NOM_QUARTI}}"
-			       metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=33e57276-b6be-4e70-968d-f89c9ff69bb4"
-			       metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/33e57276-b6be-4e70-968d-f89c9ff69bb4">
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/qpv.mst"/>
-			</layer>
+			
 			<layer id="commune" name="Commune" visible="false" queryable="false" 
                 fields="nom_geo" aliases="Nom" 
                 type="customlayer" style="" opacity="1" legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/img/commune.png" 
@@ -1608,55 +1557,54 @@
 				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/c8884cac-bc25-41a0-92d1-b6566c86066e"
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c8884cac-bc25-41a0-92d1-b6566c86066e" >
             </layer>
-        </group>
-		<group name="Autres" id="grp2" >	
-			<layer id="bassin_vie_bretagne" name="Bassin de vie"  visible="false" tiled="false"
-	            searchable="false" queryable="true"		                
-                infoformat="application/vnd.ogc.gml" featurecount="20"
-                url="https://geobretagne.fr/geoserver/insee/wms"
-                attribution="Sources: INSEE - GéoBretagne | 2012" 
-                metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/a536027f-7a66-4422-86b6-5cde9c35baec"
-                metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a536027f-7a66-4422-86b6-5cde9c35baec">
-                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.bassin_vie.mst"></template>
-	        </layer>		        
-	        <layer id="n_unites_urbaines" name="Unité urbaine"  visible="false" tiled="false"
-                 searchable="false" queryable="true"
-                 infoformat="application/vnd.ogc.gml" featurecount="20"     
-                 url="https://geobretagne.fr/geoserver/dreal_b/ows"
-                 sld="https://kartenn.region-bretagne.fr/styles/unite_urbaine.sld"  
-                 attribution="Sources: DREAL - GéoBretagne | 2015" 
-                 metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/6f79ace8-5aaa-47eb-a2a9-7be9778fc3e7"
-                 metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=6f79ace8-5aaa-47eb-a2a9-7be9778fc3e7" >
-	            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.unite_urbaine.mst"></template>
-	        </layer>
-	        <layer id="l_aires_attraction_villes" name="Aire d'attraction des villes"  visible="false" tiled="false"
-				searchable="false" queryable="true"
-				infoformat="application/vnd.ogc.gml" featurecount="20"
-				style=""
-                   url="https://geobretagne.fr/geoserver/dreal_b/ows"
-				attribution="Sources: INSEE - GéoBretagne | 2020" 
-				metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/6599fb14-391a-4c8b-b00e-8577b8d0ad3a"
-				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=6599fb14-391a-4c8b-b00e-8577b8d0ad3a">
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.aire_attraction_ville.mst"></template>
-	        </layer>
-	        <layer id="zone_emploi_bretagne" name="Zone d'emploi"  visible="false" tiled="false"
-                searchable="false" queryable="true" fields="axe" aliases="axe"
-                infoformat="application/vnd.ogc.gml" featurecount="20"     
-                url="https://geobretagne.fr/geoserver/insee/ows" 
-                sld="https://kartenn.region-bretagne.fr/styles/zone_emploi.sld" 
-                attribution="Sources: INSEE - GéoBretagne | 2020" 
-                metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/de7a586d-fffc-41c0-9c07-1f19c50ea068"
-                metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=de7a586d-fffc-41c0-9c07-1f19c50ea068" >
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.zone_emploi.mst"></template>
-			</layer>
-			<layer id="circonscription_academique" name="Circonscription academique"  visible="false" tiled="false" expanded="true"
-				infoformat="application/vnd.ogc.gml" featurecount="1" queryable="false" searchable="false"
-				fields="circonscription_academique" aliases="Circonscription académique"
-				url="https://ows.region-bretagne.fr/geoserver/interne/wms"
-				attribution="Source: Région Bretagne" 
-				style="polygone_contour_gris">
-			</layer>
-		</group>       
+		<!-- <group name="Autres" id="grp2" >	 -->
+			<!-- <layer id="bassin_vie_bretagne" name="Bassin de vie"  visible="false" tiled="false" -->
+	            <!-- searchable="false" queryable="true"		                 -->
+                <!-- infoformat="application/vnd.ogc.gml" featurecount="20" -->
+                <!-- url="https://geobretagne.fr/geoserver/insee/wms" -->
+                <!-- attribution="Sources: INSEE - GéoBretagne | 2012"  -->
+                <!-- metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/a536027f-7a66-4422-86b6-5cde9c35baec" -->
+                <!-- metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=a536027f-7a66-4422-86b6-5cde9c35baec"> -->
+                <!-- <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.bassin_vie.mst"></template> -->
+	        <!-- </layer>		         -->
+	        <!-- <layer id="n_unites_urbaines" name="Unité urbaine"  visible="false" tiled="false" -->
+                 <!-- searchable="false" queryable="true" -->
+                 <!-- infoformat="application/vnd.ogc.gml" featurecount="20"      -->
+                 <!-- url="https://geobretagne.fr/geoserver/dreal_b/ows" -->
+                 <!-- sld="https://kartenn.region-bretagne.fr/styles/unite_urbaine.sld"   -->
+                 <!-- attribution="Sources: DREAL - GéoBretagne | 2015"  -->
+                 <!-- metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/6f79ace8-5aaa-47eb-a2a9-7be9778fc3e7" -->
+                 <!-- metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=6f79ace8-5aaa-47eb-a2a9-7be9778fc3e7" > -->
+	            <!-- <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.unite_urbaine.mst"></template> -->
+	        <!-- </layer> -->
+	        <!-- <layer id="l_aires_attraction_villes" name="Aire d'attraction des villes"  visible="false" tiled="false" -->
+				<!-- searchable="false" queryable="true" -->
+				<!-- infoformat="application/vnd.ogc.gml" featurecount="20" -->
+				<!-- style="" -->
+                   <!-- url="https://geobretagne.fr/geoserver/dreal_b/ows" -->
+				<!-- attribution="Sources: INSEE - GéoBretagne | 2020"  -->
+				<!-- metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/6599fb14-391a-4c8b-b00e-8577b8d0ad3a" -->
+				<!-- metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=6599fb14-391a-4c8b-b00e-8577b8d0ad3a"> -->
+				<!-- <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.aire_attraction_ville.mst"></template> -->
+	        <!-- </layer> -->
+	        <!-- <layer id="zone_emploi_bretagne" name="Zone d'emploi"  visible="false" tiled="false" -->
+                <!-- searchable="false" queryable="true" fields="axe" aliases="axe" -->
+                <!-- infoformat="application/vnd.ogc.gml" featurecount="20"      -->
+                <!-- url="https://geobretagne.fr/geoserver/insee/ows"  -->
+                <!-- sld="https://kartenn.region-bretagne.fr/styles/zone_emploi.sld"  -->
+                <!-- attribution="Sources: INSEE - GéoBretagne | 2020"  -->
+                <!-- metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/de7a586d-fffc-41c0-9c07-1f19c50ea068" -->
+                <!-- metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=de7a586d-fffc-41c0-9c07-1f19c50ea068" > -->
+				<!-- <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.zone_emploi.mst"></template> -->
+			<!-- </layer> -->
+			<!-- <layer id="circonscription_academique" name="Circonscription academique"  visible="false" tiled="false" expanded="true" -->
+				<!-- infoformat="application/vnd.ogc.gml" featurecount="1" queryable="false" searchable="false" -->
+				<!-- fields="circonscription_academique" aliases="Circonscription académique" -->
+				<!-- url="https://ows.region-bretagne.fr/geoserver/interne/wms" -->
+				<!-- attribution="Source: Région Bretagne"  -->
+				<!-- style="polygone_contour_gris"> -->
+			<!-- </layer> -->
+		<!-- </group>        -->
 	</theme>
  </themes>
 </config>
