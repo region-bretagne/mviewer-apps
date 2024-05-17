@@ -101,7 +101,6 @@
 ./obs_jeunesse/obs_jeunesse.xml
 ./eolien/fonds_geob.xml
 ./eolien/config.xml
-./eolien/16-04-24.xml
 ./contact_lycee/contact_lycee.xml
 ./paej_test/fonds_geob.xml
 ./paej_test/config.xml
