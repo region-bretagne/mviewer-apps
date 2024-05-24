@@ -165,7 +165,7 @@
 			</layer> 
 			<layer 
 				id="aide_pass_invest_tpe_epci"
-				name="PASS invest TPE"
+				name="PASS investissement TPE"
 				type="wms" expanded="true"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
 				visible="false"
@@ -177,28 +177,11 @@
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/aide_pass_invest_tpe_epci.mst"></template>
 			</layer> 
-			<layer 
-				id="feder"
-				name="AAP Process et numérisation"
-				type="wms" expanded="true"
-				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
-				visible="false"
-				exclusive="true"
-				style="feder_epci"
-				infoformat="application/vnd.ogc.gml"
-				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2020-2022-Feder_par_commune.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte commune&lt;/button&gt;&lt;/a&gt;&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2020-2022-Feder_par_EPCI.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI&lt;/button&gt;&lt;/a&gt;&lt;a 
-				&lt;/br&gt;"
-				queryable="true"
-				infopanel="bottom-panel">
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/aide_feder_epci.mst"></template>
-			</layer> 		
-
-
 		</group> 
 		<group id="soutien_collectif" name="Soutien en conseil"> 
 			<layer 
 				id="aide_breizh_fab_epci"
-				name="Breizh Fab 2018-2022"
+				name="Breizh Fab 2018-2023"
 				type="wms" expanded="true"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
 				visible="false"
@@ -212,7 +195,7 @@
 			
 			<layer 
 				id="economie_conseil"
-				name="Dispositifs de conseil"
+				name="Dispositifs de conseil individuel"
 				type="wms" expanded="true"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
 				visible="false"
