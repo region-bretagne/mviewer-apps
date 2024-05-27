@@ -288,7 +288,7 @@
 			</layer>-->
 			<layer id="ecluse_trafic" name="Ecluse" visible="true" tiled="false" dynamiclegend="true"
 				queryable="true" infoformat="application/vnd.ogc.gml" featurecount="20"
-				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2008" timemax="2022" timevalues="2008,2010,2011,2013,2015,2017,2019,2021,2022"
+				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2008" timemax="2023" timevalues="2008,2010,2011,2013,2015,2017,2019,2021,2023"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" searchable="true"
 				style="ecluse_proprietaire,ecluse_trafic_millesime" stylesalias="Propriétaire,Trafic"
 				attribution="Région Bretagne" 

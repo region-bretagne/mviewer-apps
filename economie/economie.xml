@@ -53,14 +53,14 @@
 				id="aide_pass_creation_epci"
 				name="PASS Création"
 				type="wms"
-		        timefilter="true" timeinterval="year" timecontrol="slider" timemin="2021" timemax="2022" timevalues="2021,2022"
+		        timefilter="true" timeinterval="year" timecontrol="slider" timemin="2021" timemax="2023" timevalues="2021,2022,2023"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
 				visible="true"
 				exclusive="true" expanded="true"
 				infoformat="application/vnd.ogc.gml"
-				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/pass_creation_commune.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte commune&lt;/button&gt;&lt;/a&gt;
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2023-PASS_Creation-Communes.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte commune&lt;/button&gt;&lt;/a&gt;
 				
-				&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/pass_creation_epci.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI&lt;/button&gt;&lt;/a&gt;
+				&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2023-PASS_Creation-EPCI.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI&lt;/button&gt;&lt;/a&gt;
 				&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=aide_pass_creation_epci&amp;outputFormat=excel2007&amp;propertyName=code_siren,nom,nb,nb_femme,nb_1er_cycle,nb_cap_bep,nb_bac,nb_bac_2,nb_bac_4,nb_bac_5,nb_moins_30_ans,nb_30_50_ans,nb_plus_50_ans,nb_nc,millesime&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;
 				&lt;/br&gt;&lt;/br&gt;
 				
@@ -80,7 +80,7 @@
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
 				visible="false"
 				infoformat="application/vnd.ogc.gml"
-				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/brit_commune.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte commune&lt;/button&gt;&lt;/a&gt;&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/brit_epci.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI&lt;/button&gt;&lt;/a&gt;&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=aide_brit_epci&amp;outputFormat=excel2007&amp;propertyName=code_siren,nom,montant,nb,nb_emploi,millesime&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt;&lt;b&gt;BRIT et BRIT agricole&lt;/b&gt; sont des fonds régionaux abondés par la Région, Bpifrance et les banques de place pour faciliter la reprise et la transmission d’entreprises à travers le réseau des plateformes d’initiatives locales et Réseau Entreprendre Bretagne. Les fonds BRIT octroient des prêts d’honneur aux repreneurs, ce qui a pour objectif de constituer un effet levier important auprès des banques.&lt;/br&gt;&lt;/br&gt;&lt;a href=&quot;https://www.initiative-bretagne.bzh/pret-brit-reprise-entreprise.html&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Plus d'informations&lt;/button&gt;&lt;/a&gt;"
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2023-Beneficiaires_BRIT_et_BRIT_agricole_par_commune.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte commune&lt;/button&gt;&lt;/a&gt;&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2023-Beneficiaires_BRIT_et_BRIT_agricole_par_EPCI.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI&lt;/button&gt;&lt;/a&gt;&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=aide_brit_epci&amp;outputFormat=excel2007&amp;propertyName=code_siren,nom,montant,nb,nb_emploi,millesime&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt;&lt;b&gt;BRIT et BRIT agricole&lt;/b&gt; sont des fonds régionaux abondés par la Région, Bpifrance et les banques de place pour faciliter la reprise et la transmission d’entreprises à travers le réseau des plateformes d’initiatives locales et Réseau Entreprendre Bretagne. Les fonds BRIT octroient des prêts d’honneur aux repreneurs, ce qui a pour objectif de constituer un effet levier important auprès des banques.&lt;/br&gt;&lt;/br&gt;&lt;a href=&quot;https://www.initiative-bretagne.bzh/pret-brit-reprise-entreprise.html&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Plus d'informations&lt;/button&gt;&lt;/a&gt;"
 				queryable="true"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/aide_brit_epci.mst"></template>
@@ -96,7 +96,7 @@
 				visible="false"
 		        exclusive="true"
 				infoformat="application/vnd.ogc.gml"
-				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2022-Ingenierie_financiere.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2023-Ingenierie_financiere.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;
 				&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=aide_ingefi_epci_millesime&amp;outputFormat=excel2007&amp;propertyName=id,nom_epci,code_siren,prets_crea,garantie,prets_treso,millesime,datation&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt;En partenariat avec Bpifrance et les Plateforme forme d'initiative locales, la Région propose une gamme de prêts participatifs et de garanties à destination des entreprises.&lt;/b&gt;"
 				queryable="true"
 				infopanel="bottom-panel">
@@ -124,13 +124,13 @@
 			</layer> 
 			<layer 
 				id="aide_pass_commerce_artisanat"
-				name="PASS Commerce et artisanat entre 2017 et 2022"
+				name="PASS Commerce et artisanat entre 2017 et 2023"
 				type="wms" expanded="true"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
 				visible="false"
 				exclusive="true"
 				infoformat="application/vnd.ogc.gml"
-				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2017-2022-PCA_par_EPCI.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI&lt;/button&gt;&lt;/a&gt;&lt;a &lt;/br&gt;&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=aide_pass_commerce_artisanat&amp;outputFormat=excel2007&amp;propertyName=code_siren,nom,nb_dossier_annee_n,montant_annee_n,quote_part_region_annee_n,quote_part_epci_annee_n,nb_dossier_cumule,montant_cumule,quote_part_region_cumule,quote_part_epci_cumule,millesime&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt;Le &lt;b&gt;PASS Commerce et artisanat&lt;/b&gt; est un dispositif co-financé par la Région Bretagne et les intercommunalités bretonnes Il a pour objectif de moderniser et de dynamiser les activités commerciales et artisanales indépendantes qui contribuent activement à la vie locale et au développement de l’emploi.&lt;/br&gt;&lt;/br&gt;&lt;a href=&quot;https://www.bretagne.bzh/aides/fiches/pass-commerce-artisanat/&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Plus d'informations&lt;/button&gt;&lt;/a&gt;"
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/PCA_2017-2023-Bilan_par_EPCI.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI&lt;/button&gt;&lt;/a&gt;&lt;a &lt;/br&gt;&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=aide_pass_commerce_artisanat&amp;outputFormat=excel2007&amp;propertyName=code_siren,nom,nb_dossier_annee_n,montant_annee_n,quote_part_region_annee_n,quote_part_epci_annee_n,nb_dossier_cumule,montant_cumule,quote_part_region_cumule,quote_part_epci_cumule,millesime&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt;Le &lt;b&gt;PASS Commerce et artisanat&lt;/b&gt; est un dispositif co-financé par la Région Bretagne et les intercommunalités bretonnes Il a pour objectif de moderniser et de dynamiser les activités commerciales et artisanales indépendantes qui contribuent activement à la vie locale et au développement de l’emploi.&lt;/br&gt;&lt;/br&gt;&lt;a href=&quot;https://www.bretagne.bzh/aides/fiches/pass-commerce-artisanat/&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Plus d'informations&lt;/button&gt;&lt;/a&gt;"
 				queryable="true"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/aide_pca_epci_cumule.mst"></template>
@@ -143,7 +143,7 @@
 				visible="false"
 				exclusive="true"
 				infoformat="application/vnd.ogc.gml"
-				attribution="Communes avec au moins un dossier PCA &lt;/br&gt;(de 2018 au 1er semestre 2022)&lt;/br&gt;&lt;/br&gt;&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/PCA_communes_2018-2022.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot;&gt;Accès carte&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;Le &lt;b&gt;PASS Commerce et artisanat&lt;/b&gt; est un dispositif co-financé par la Région Bretagne et les intercommunalités bretonnes Il a pour objectif de moderniser et de dynamiser les activités commerciales et artisanales indépendantes qui contribuent activement à la vie locale et au développement de l’emploi.&lt;/br&gt;&lt;/br&gt;&lt;a href=&quot;https://www.bretagne.bzh/aides/fiches/pass-commerce-artisanat/&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Plus d'informations&lt;/button&gt;&lt;/a&gt;"
+				attribution="Communes avec au moins un dossier PCA &lt;/br&gt;(de 2018 au 1er semestre 2023)&lt;/br&gt;&lt;/br&gt;&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/PCA_2017-2023-Communes_couvertes.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot;&gt;Accès carte&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;Le &lt;b&gt;PASS Commerce et artisanat&lt;/b&gt; est un dispositif co-financé par la Région Bretagne et les intercommunalités bretonnes Il a pour objectif de moderniser et de dynamiser les activités commerciales et artisanales indépendantes qui contribuent activement à la vie locale et au développement de l’emploi.&lt;/br&gt;&lt;/br&gt;&lt;a href=&quot;https://www.bretagne.bzh/aides/fiches/pass-commerce-artisanat/&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Plus d'informations&lt;/button&gt;&lt;/a&gt;"
 				queryable="false"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/aide_pca_epci_cumule.mst"></template>
@@ -157,7 +157,7 @@
 				exclusive="true"
 				style="feader_epci"
 				infoformat="application/vnd.ogc.gml"
-				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2015-2022-Feader_par_commune.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte commune&lt;/button&gt;&lt;/a&gt;&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2015-2022-Feader_par_EPCI.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI&lt;/button&gt;&lt;/a&gt;&lt;a 
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2015-2023-PASS_Competitivite_IAA.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte commune&lt;/button&gt;&lt;/a&gt;&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2015-2022-Feader_par_EPCI.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI&lt;/button&gt;&lt;/a&gt;&lt;a 
 				&lt;/br&gt;"
 				queryable="true"
 				infopanel="bottom-panel">
@@ -171,7 +171,7 @@
 				visible="false"
 				exclusive="true"
 				infoformat="application/vnd.ogc.gml"
-				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2015-2022-Feader_par_commune.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI&lt;/button&gt;&lt;/a&gt;&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2019-2023-Pass_Invest_TPE_EPCI.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI 2019-2023&lt;/button&gt;&lt;/a&gt;&lt;a 
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2019-2023-Pass_Invest_TPE_EPCI.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI 2019-2023&lt;/button&gt;&lt;/a&gt;&lt;a 
 				&lt;/br&gt;"
 				queryable="true"
 				infopanel="bottom-panel">
@@ -187,7 +187,7 @@
 				visible="false"
 				exclusive="true"
 				infoformat="application/vnd.ogc.gml"
-				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/breizh_fab_commune.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte commune&lt;/button&gt;&lt;/a&gt;&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/breizh_fab_epci.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=aide_breizh_fab_epci&amp;outputFormat=excel2007&amp;propertyName=code_siren,nom,nb_entreprise_annee_n,nb_entreprise_total,millesime&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt;A destination des PME industrielles, &lt;b&gt;Breizh fab&lt;/b&gt; est un dispositif qui permet l’intervention de conseillers spécialisés dans les entreprises et un accompagnement correspondant aux enjeux identifiés. "
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2018-2023-BreizhFab_Communes.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte commune&lt;/button&gt;&lt;/a&gt;&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2018-2023-BreizhFab_EPCI.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=aide_breizh_fab_epci&amp;outputFormat=excel2007&amp;propertyName=code_siren,nom,nb_entreprise_annee_n,nb_entreprise_total,millesime&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt;A destination des PME industrielles, &lt;b&gt;Breizh fab&lt;/b&gt; est un dispositif qui permet l’intervention de conseillers spécialisés dans les entreprises et un accompagnement correspondant aux enjeux identifiés. "
 				queryable="true"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/aide_breizh_fab_epci.mst"></template>

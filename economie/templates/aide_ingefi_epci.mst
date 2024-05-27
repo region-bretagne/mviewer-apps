@@ -8,19 +8,50 @@
 				<span class="rb-critere glyphicon glyphicon-calendar" aria-hidden="true" style="margin-left:10px;"><span id="rb-text">{{millesime}}</span></span>
 			</div>	
 		</div>
-
+		
+		
+		<!-- Sans MReport !!!!!! -->
+		
+		
 		<div class="row">
-			
-			<div class="col-md-4" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
-				<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartenn_economie_{{millesime}}/{{code_siren}}/epci_economie_ingefi_crea_{{millesime}}"></iframe>
+			<div class="col-md-4" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;text-align: center;color: #0094ab;">
+				<div style=" font-weight: 900;font-size: 40px;font-family: Segoe ui;"> 
+				<img   src=" ../img/picto/argent_bleu.svg"   alt="argent"  height="50"  width="50" /><br>
+				{{prets_crea}}</div>
+				<div style=" font-weight: 600;font-size: 13px;font-family: Segoe ui;">
+				Nombre de pr&ecirc;ts &agrave; la cr&eacute;ation/reprise en {{millesime}}</div>
 			</div>
-			<div class="col-md-4" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
-				<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartenn_economie_{{millesime}}/{{code_siren}}/epci_economie_ingefi_treso_{{millesime}}"></iframe>
+			<div class="col-md-4" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;text-align: center;color: #0094ab;">
+				<div style=" font-weight: 900;font-size: 40px;font-family: Segoe ui;"> 
+				<img   src=" ../img/picto/argent_bleu.svg"   alt="dossier"  height="50"  width="50" /><br>
+				{{garantie}} </div>
+				<div style=" font-weight: 600;font-size: 13px;font-family: Segoe ui;">
+				Nombre de garanties bancaires en {{millesime}}</div>
 			</div>
-			<div class="col-md-4" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
-				<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartenn_economie_{{millesime}}/{{code_siren}}/epci_economie_ingefi_garantie_{{millesime}}"></iframe>
+			<div class="col-md-4" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;text-align: center;color: #0094ab;">
+				<div style=" font-weight: 900;font-size: 40px;font-family: Segoe ui;"> 
+				<img   src=" ../img/picto/argent_bleu.svg"   alt="dossier"  height="50"  width="50" /><br>
+				{{prets_treso}}</div>
+				<div style=" font-weight: 600;font-size: 13px;font-family: Segoe ui;">
+				Nombre de pr&ecirc;ts de tr&eacute;sorerie en {{millesime}}</div>
 			</div>
 		</div>
+
+
+
+		<!-- Avec MReport !!!!!! -->
+
+		<!-- <div class="row">			 -->
+			<!-- <div class="col-md-4" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;">  -->
+				<!-- <iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartenn_economie_{{millesime}}/{{code_siren}}/epci_economie_ingefi_crea_{{millesime}}"></iframe> -->
+			<!-- </div> -->
+			<!-- <div class="col-md-4" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;">  -->
+				<!-- <iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartenn_economie_{{millesime}}/{{code_siren}}/epci_economie_ingefi_treso_{{millesime}}"></iframe> -->
+			<!-- </div> -->
+			<!-- <div class="col-md-4" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;">  -->
+				<!-- <iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartenn_economie_{{millesime}}/{{code_siren}}/epci_economie_ingefi_garantie_{{millesime}}"></iframe> -->
+			<!-- </div> -->
+		<!-- </div> -->
 
 
 	</li>
