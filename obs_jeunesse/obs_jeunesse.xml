@@ -1153,7 +1153,7 @@
 			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.parc_naturel_regional.mst"></template>
 		</layer>    
 	</theme> 
-	<theme id="jeunesse_egalite_fh" name="11- Égalité femme-homme" collapsed="true" icon="fas fa-equals"> 
+	<theme id="jeunesse_egalite_fh" name="11- Égalité femmes-hommes" collapsed="true" icon="fas fa-equals"> 
 		<layer 
 			id="jeunesse_egal_demo" 
 			name="Part des femmes chez les 13-29 ans" 
