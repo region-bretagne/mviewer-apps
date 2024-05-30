@@ -31,7 +31,7 @@
 	style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/css/obs_jeunesse.css" 
 	zoomtools="true" 
 	initialextenttool="true" 
-	exportpng="false" 
+	exportpng="true" 
 	showhelp="true" 
 	coordinates="false" 
 	measuretools="true" 
