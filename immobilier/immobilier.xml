@@ -84,6 +84,8 @@
 			       url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
 			       infoformat="application/vnd.ogc.gml"
 			       queryable="true"
+				   expanded="true"
+				   style="photovoltaique_ascol,photovoltaique_etat,photovoltaique_contrat" stylesalias="Defaut, Etat, Contrat"
 			       infopanel="right-panel"
 			       scalemin="0"
 			       scalemax="7500">
@@ -106,7 +108,6 @@
 			       name="Chaufferies lycée"
 				   filter ="ascol_cha_bat_code not like 'SIT%'"
 				   expanded="true"
-			       type="wms"
 			       visible="true"
 			       url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
 			       infoformat="application/vnd.ogc.gml"
@@ -115,7 +116,7 @@
 			       infopanel="right-panel"
 			       scalemin="0"
 			       scalemax="7500">
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/lycee_cha.mst"/>
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/chaufferie.mst"/>
 			</layer>
 			<layer id="lycee_sousstation_ascol"
 			       name="Sous-stations lycée"
@@ -229,6 +230,8 @@
 			       url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
 			       infoformat="application/vnd.ogc.gml"
 			       queryable="true"
+				   expanded="true"
+				   style="photovoltaique_ascol,photovoltaique_etat,photovoltaique_contrat" stylesalias="Defaut, Etat, Contrat"
 			       infopanel="right-panel"
 			       scalemin="0"
 			       scalemax="7500">
@@ -260,7 +263,7 @@
 			       infopanel="right-panel"
 			       scalemin="0"
 			       scalemax="7500">
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/lycee_cha.mst"/>
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/chaufferie.mst"/>
 			</layer>
 			<layer id="lycee_sousstation_ascol"
 			       name="Sous-stations tertiaire"

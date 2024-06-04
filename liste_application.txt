@@ -50,6 +50,7 @@
 ./ocs56/ocs56.xml
 ./patrimoine/patrimoine.xml
 ./patrimoine/patrimoine_simple.xml
+./patrimoine/glad.xml
 ./pepci/fibre.xml
 ./perequation/pactes.xml
 ./perequation/perequation.xml
@@ -102,6 +103,7 @@
 ./eolien/fonds_geob.xml
 ./eolien/config.xml
 ./eolien/scenario_bak.xml
+./eolien/scenario_bak2.xml
 ./eolien/scenario.xml
 ./contact_lycee/contact_lycee.xml
 ./paej_test/fonds_geob.xml
