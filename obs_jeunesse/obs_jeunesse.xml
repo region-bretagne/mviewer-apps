@@ -545,7 +545,7 @@
 	<theme id="jeunesse_sante" name="4- Santé et sport" collapsed="true" icon="fas fa-briefcase-medical"> 
 		<layer 
 			id="zonage_medecin" 
-			name="Zonage médecin de l'ARS" 
+			name="Zonage médecin défini par l'ARS" 
 			type="wms" 
 			url="https://ows.region-bretagne.fr/geoserver/interne/ows?" 
 			tiled="true" 
