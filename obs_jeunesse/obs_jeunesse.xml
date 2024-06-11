@@ -414,7 +414,7 @@
 		<layer id="etablissement_scolaire" name="Établissements scolaires"  visible="false" tiled="true" expanded = "true"
 			searchable="false" queryable="true"
 			attributefilter="true" attributefield="nature" attributeoperator="like"
-			attributevalues="Ecole maternelle,Ecole élémentaire,Collège,Lycée,Etablissement régional d'enseignement adapté" attributelabel="Filtre" attributestylesync="false" attributefilterenabled="false"
+			attributevalues="Ecole maternelle,Ecole élémentaire,Collège,Lycée,Etablissement régional d'enseignement adapté,Maison familiale rurale d'éducation et d'orientation" attributelabel="Filtre" attributestylesync="false" attributefilterenabled="false"
             infoformat="application/vnd.ogc.gml" featurecount="20"
 			style="etablissement_scolaire_nature_edr"
 			stylesalias=""

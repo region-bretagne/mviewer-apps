@@ -809,6 +809,15 @@
 				attribution="Région Bretagne" 
 				metadata=""
 				metadata-csw="" />
+			<layer id="bathymetrie_point" name="Bathymetrie" visible="false" tiled="true"
+				queryable="true" secure="false"
+                infoformat="application/vnd.ogc.gml" featurecount="1"                
+				url="../geoserver-proxy/interne/wms" 
+				attribution="Région Bretagne" 
+				metadata=""
+				metadata-csw="" >
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/"></template>
+			</layer>
 		</group>
 
 		</theme>
