@@ -119,7 +119,7 @@
 			</group>
 			
 			<group name="GEMAPI" id="gemapi">
-			<layer id="gemapi_competence_epci" name="Compétence GEMAPI exercé par les EPIC" visible="false" tiled="false"
+			<layer id="gemapi_competence_epci" name="Compétence GEMAPI exercé par les EPCI" visible="false" tiled="false"
 				queryable="false" index="1" 
 				infoformat="application/vnd.ogc.gml" featurecount="1" opacity = "0.6"
 				url="https://geobretagne.fr/geoserver/dreal_b/gemapi_competence_epci/wms" 
