@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application id="deplacement_president" panelstate="open" title="Déplacements du président" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/img/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" exportpng="true" legend="true" measuretools="true" legendasimage="false" popup="false" print="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/css/theme_ultra.css" templaterightinfopanel="brut" stats="true" statsurl="../ws/kartenn/log.php"/>
+    <application id="deplacement_president" panelstate="open" title="Déplacements du président" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/img/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" exportpng="true" legend="true" measuretools="false" legendasimage="false" popup="false" print="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/css/theme_ultra.css" templaterightinfopanel="brut" stats="true" statsurl="../ws/kartenn/log.php"/>
     <mapoptions maxzoom="18" projection="EPSG:3857" center="-255516,6140243" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="default"><!-- style="default"||gallery" --> 
@@ -19,7 +19,7 @@
     <themes mini="true" legendmini="false">
         <theme name="Déplacement président"  id="site" collapsed="true" >
             <layer id="deplacement_president" name="Déplacements du président selon l'année"  visible="true" tiled="false" type="customlayer"
-                infoformat="application/vnd.ogc.gml" featurecount="100" queryable="true" exclusive="true" expanded="true" vectorlegend="true"
+                infoformat="application/vnd.ogc.gml" featurecount="100" queryable="true" exclusive="true" expanded="false" vectorlegend="true"
                 url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/bretagne_bzh/customlayers/deplacement_president.js"
                 attribution="Source: Région Bretagne"
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5137794c-3994-4217-a850-4e33f97949e4"

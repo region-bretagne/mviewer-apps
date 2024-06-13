@@ -90,6 +90,7 @@
 ./tmp/mos.xml
 ./tmp/mst1.xml
 ./tmp/test_cadastre.xml
+./tmp/test.xml
 ./transport/mobibreizh.xml
 ./transport/okina.xml
 ./transport/trafic.xml

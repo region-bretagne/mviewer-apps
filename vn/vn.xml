@@ -818,7 +818,16 @@
 				metadata-csw="" >
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/"></template>
 			</layer>
-			<layer id="bathymetrie_polygone" name="Bathymetrie polygone" visible="false" tiled="true"
+			<layer id="bathymetrie_polygone" name="Bathymetrie polygone" visible="false" tiled="false"
+				queryable="true" secure="false"
+                infoformat="application/vnd.ogc.gml" featurecount="1"                
+				url="../geoserver-proxy/interne/wms" 
+				attribution="Région Bretagne" 
+				metadata=""
+				metadata-csw="" > 
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/"></template>
+			</layer>
+			<layer id="bathymetrie_isobathe" name="Isobath" visible="false" tiled="false"
 				queryable="true" secure="false"
                 infoformat="application/vnd.ogc.gml" featurecount="1"                
 				url="../geoserver-proxy/interne/wms" 
