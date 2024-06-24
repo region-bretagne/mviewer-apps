@@ -17,7 +17,7 @@
                     </rdf:Description>
                 </rdf:RDF>
 </metadata>
-<application title="MOS - Consommé ou ENAF" logo="" favicon="" help="" titlehelp="" iconhelp="fas fa-home" home="" style="css/themes/default.css" zoomtools="true" initialextenttool="true" exportpng="false" showhelp="false" coordinates="false" measuretools="true" mouseposition="false" geoloc="false" studio="" togglealllayersfromtheme="false" stats="true" statsurl="../ws/kartenn/log.php" >
+<application title="MOS - Consommé ou ENAF" logo="" favicon="" help="" titlehelp="" iconhelp="fas fa-home" home="" style="css/themes/default.css" zoomtools="true" initialextenttool="true" exportpng="false" showhelp="false" coordinates="false" measuretools="true" mouseposition="false" geoloc="false" studio="" togglealllayersfromtheme="false">
 </application>
 <mapoptions maxzoom="20" projection="EPSG:3857" center="-307903.74898791354,6141345.088741366" zoom="8" />
 <proxy url="/proxy/?url=" />

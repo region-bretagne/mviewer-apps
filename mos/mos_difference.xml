@@ -9,8 +9,7 @@
     showhelp="false"
     coordinates="false"
     measuretools="false"
-    togglealllayersfromtheme="false"
-	stats="true" statsurl="../ws/kartenn/log.php" >
+    togglealllayersfromtheme="false">
 </application>
 <mapoptions maxzoom="20" projection="EPSG:3857" center="-255418,6120890" zoom="8" />
     <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par la BAN"/>

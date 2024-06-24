@@ -4,7 +4,7 @@
 		logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/formation/img/QUALIF_Emploi_RB_RVB.jpg" 
 		help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" 
 		exportpng="true" legend="true" measuretools="false" legendasimage="false" popup="false" print="false" 
-		style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/formation/css/kartenn.css" stats="true" statsurl="../ws/kartenn/log.php" />
+		style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/formation/css/kartenn.css" />
     <mapoptions maxzoom="20" projection="EPSG:3857" center="-255418,6120890" zoom="9" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 
 	<baselayers style="gallery">           		

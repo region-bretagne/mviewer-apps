@@ -9,8 +9,7 @@
     showhelp="false"
     coordinates="false"
     measuretools="false"
-    togglealllayersfromtheme="false"
-	stats="true" statsurl="../ws/kartenn/log.php" >
+    togglealllayersfromtheme="false" >
 </application>
 <olscompletion type="ban" url="https://api-adresse.data.gouv.fr/search/" attribution="Base adresse nationale (BAN)" />
 <searchparameters bbox="false" localities="true" features="false" static="false"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
-    <application title="Kartenn Transports Okina" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/transports_help.html" measuretools="true" exportpng="true" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/css/kartenn_transports.css" stats="true" statsurl="../ws/kartenn/log.php"/>
+    <application title="Kartenn Transports Okina" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/img/logo/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/transports_help.html" measuretools="true" exportpng="true" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/css/kartenn_transports.css" />
     <!--<mapoptions projection="EPSG:2154" extent="145518,6726671,372058,6868691"  />-->
     <mapoptions maxzoom="19" projection="EPSG:3857" center="-220750.13768758904,6144925.57790189" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
   
