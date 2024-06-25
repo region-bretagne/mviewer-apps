@@ -98,7 +98,6 @@
 ./transport/transports.xml
 ./vn/vn_public.xml
 ./vn/vn_reseaux.xml
-./vn/vn_old.xml
 ./vn/vn.xml
 ./jeunesse/crj.xml
 ./obs_jeunesse/obs_jeunesse.xml
