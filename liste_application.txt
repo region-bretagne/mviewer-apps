@@ -92,6 +92,7 @@
 ./tmp/mst1.xml
 ./tmp/test_cadastre.xml
 ./tmp/test.xml
+./tmp/zones_humides.xml
 ./transport/mobibreizh.xml
 ./transport/okina.xml
 ./transport/trafic.xml
@@ -99,6 +100,7 @@
 ./vn/vn_public.xml
 ./vn/vn_reseaux.xml
 ./vn/vn.xml
+./vn/vn_els7.xml
 ./jeunesse/crj.xml
 ./obs_jeunesse/obs_jeunesse.xml
 ./eolien/fonds_geob.xml

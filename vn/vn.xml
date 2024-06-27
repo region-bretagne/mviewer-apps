@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <config>
     <application id="vn" title="Kartenn CANAUX" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/img/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" measuretools="true" legend="true" popup="false" exportpng="true" legendasimage="true" coordinates="true" togglealllayersfromtheme="true"  style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/css/vn.css" hideprotectedlayers="true" geoloc="true" stats="true" statsurl="../ws/kartenn/log.php"/>
-    <mapoptions maxzoom="20" projection="EPSG:3857" center="-291072,6187119" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
+    <mapoptions maxzoom="22" projection="EPSG:3857" center="-291072,6187119" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 	<baselayers style="gallery">
         <baselayer visible="true"  type="OSM" id="plan2" label="OpenStreetMap" title="OpenStreetMap" thumbgallery="img/basemap/osm.png" 
             url="https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png" 
@@ -810,7 +810,7 @@
 				metadata=""
 				metadata-csw="" />
 			<layer id="bathymetrie_point" name="Bathymetrie" visible="false" tiled="true"
-				queryable="true" secure="false"
+				queryable="true" secure="false" scalemax="2000" scalemin="0"
                 infoformat="application/vnd.ogc.gml" featurecount="1"                
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
@@ -827,8 +827,8 @@
 				metadata-csw="" > 
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/"></template>
 			</layer>
-			<layer id="bathymetrie_isobathe" name="Isobath" visible="false" tiled="false"
-				queryable="true" secure="false"
+			<layer id="bathymetrie_isobathe" name="Isobathe" visible="false" tiled="false"
+				queryable="true" secure="false"  scalemax="2000" scalemin="0"
                 infoformat="application/vnd.ogc.gml" featurecount="1"                
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
