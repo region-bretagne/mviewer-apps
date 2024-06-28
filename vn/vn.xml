@@ -809,8 +809,8 @@
 				attribution="Région Bretagne" 
 				metadata=""
 				metadata-csw="" />
-			<layer id="bathymetrie_point" name="Bathymetrie" visible="false" tiled="true"
-				queryable="true" secure="false" scalemax="2000" scalemin="0"
+			<layer id="bathymetrie_point" name="Sonde" visible="false" tiled="true"
+				queryable="true" secure="false" scalemax="3000" scalemin="0"
                 infoformat="application/vnd.ogc.gml" featurecount="1"                
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
@@ -818,7 +818,7 @@
 				metadata-csw="" >
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/"></template>
 			</layer>
-			<layer id="bathymetrie_polygone" name="Bathymetrie polygone" visible="false" tiled="false"
+			<layer id="bathymetrie_polygone" name=" Carte bathymétrique (Profondeur par rapport à  la retenue normale)" visible="false" tiled="false"
 				queryable="true" secure="false"
                 infoformat="application/vnd.ogc.gml" featurecount="1"                
 				url="../geoserver-proxy/interne/wms" 
@@ -827,8 +827,8 @@
 				metadata-csw="" > 
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/"></template>
 			</layer>
-			<layer id="bathymetrie_isobathe" name="Isobathe" visible="false" tiled="false"
-				queryable="true" secure="false"  scalemax="2000" scalemin="0"
+			<layer id="bathymetrie_isobathe" name="Courbes de profondeurs (isobathes)" visible="false" tiled="false"
+				queryable="true" secure="false"  scalemax="5000" scalemin="0"
                 infoformat="application/vnd.ogc.gml" featurecount="1"                
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
