@@ -828,7 +828,7 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/"></template>
 			</layer>
 			<layer id="bathymetrie_isobathe" name="Courbes de profondeurs (isobathes)" visible="false" tiled="false"
-				queryable="true" secure="false"  scalemax="5000" scalemin="0"
+				queryable="true" secure="false"  scalemax="10000" scalemin="0"
                 infoformat="application/vnd.ogc.gml" featurecount="1"                
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
