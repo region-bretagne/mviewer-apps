@@ -104,10 +104,8 @@
 ./jeunesse/crj.xml
 ./obs_jeunesse/obs_jeunesse.xml
 ./eolien/fonds_geob.xml
-./eolien/config.xml
-./eolien/scenario_bak.xml
-./eolien/scenario_bak2.xml
-./eolien/scenario.xml
+./eolien/eolien.xml
+./eolien/eolien_scenario.xml
 ./contact_lycee/contact_lycee.xml
 ./paej_test/fonds_geob.xml
 ./paej_test/config.xml
