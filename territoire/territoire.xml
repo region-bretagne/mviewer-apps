@@ -117,19 +117,19 @@
 		        </layer>             
 	        </group>
 	        <group name="Revenu" id="grp2" >
-		        <layer id="revenu_geom" name="Revenu annuel médian par EPCI (€) en 2020"  visible="false" tiled="false"
+		        <layer id="revenu_geom" name="Revenu annuel médian par EPCI (€) en 2021"  visible="false" tiled="false"
 		                searchable="false" queryable="true"
 		                infopanel="bottom-panel"
 		                infoformat="application/vnd.ogc.gml" featurecount="5"
 		                style="revenu_median_epci"
 		                stylesalias="" exclusive="true"
 		                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-		                attribution="Sources: DGFIP - INSEE - OpenStreetMap | Millésime: 2020 | Traitements: Région Bretagne - Service Aménagement, Foncier et Habitat" 
+		                attribution="Sources: DGFIP - INSEE - OpenStreetMap | Millésime: 2021 | Traitements: Région Bretagne - Service Aménagement, Foncier et Habitat" 
 						metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9c29be8b-8ba0-4921-82aa-5ef969504426"
 	                	metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9c29be8b-8ba0-4921-82aa-5ef969504426">
 		                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/territoire.pop.revenu.mst"></template>
 		        </layer>
-		        <layer id="revenu_geom" name="Taux de pauvreté par EPCI en 2020"  visible="false" tiled="false"
+		        <layer id="revenu_geom" name="Taux de pauvreté par EPCI en 2021"  visible="false" tiled="false"
 		                searchable="false" queryable="true"
 		                infopanel="bottom-panel"
 		                infoformat="application/vnd.ogc.gml" featurecount="5"
