@@ -137,7 +137,7 @@
 			</layer> 
 			<layer 
 				id="pca_bilan_communes"
-				name="PASS Commerce et artisanat : couverture communale (2018-2022)"
+				name="PASS Commerce et artisanat : couverture communale (2018-2023)"
 				type="wms" expanded="true"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
 				visible="false"
