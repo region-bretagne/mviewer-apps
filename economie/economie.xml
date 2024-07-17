@@ -96,7 +96,7 @@
 				visible="false"
 		        exclusive="true"
 				infoformat="application/vnd.ogc.gml"
-				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2023-Ingenierie_financiere.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2023-Ingenierie_financiere.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte commune&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;
 				&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=aide_ingefi_epci_millesime&amp;outputFormat=excel2007&amp;propertyName=id,nom_epci,code_siren,prets_crea,garantie,prets_treso,millesime,datation&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt;En partenariat avec Bpifrance et les Plateforme forme d'initiative locales, la Région propose une gamme de prêts participatifs et de garanties à destination des entreprises.&lt;/b&gt;"
 				queryable="true"
 				infopanel="bottom-panel">
@@ -116,7 +116,7 @@
 				exclusive="true"
 				style="pca_annee_n"
 				infoformat="application/vnd.ogc.gml"
-				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2022-PCA_par_commune.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte commune&lt;/button&gt;&lt;/a&gt;&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2022-PCA_par_EPCI.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI&lt;/button&gt;&lt;/a&gt;&lt;a 
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2023-PCA_par_commune.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte commune&lt;/button&gt;&lt;/a&gt;&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2023-PCA_par_EPCI.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI&lt;/button&gt;&lt;/a&gt;&lt;a 
 				&lt;/br&gt;&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=aide_pass_commerce_artisanat&amp;outputFormat=excel2007&amp;propertyName=code_siren,nom,nb_dossier_annee_n,montant_annee_n,quote_part_region_annee_n,quote_part_epci_annee_n,nb_dossier_cumule,montant_cumule,quote_part_region_cumule,quote_part_epci_cumule,millesime&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt;Le &lt;b&gt;PASS Commerce et artisanat&lt;/b&gt; est un dispositif co-financé par la Région Bretagne et les intercommunalités bretonnes Il a pour objectif de moderniser et de dynamiser les activités commerciales et artisanales indépendantes qui contribuent activement à la vie locale et au développement de l’emploi.&lt;/br&gt;&lt;/br&gt;&lt;a href=&quot;https://www.bretagne.bzh/aides/fiches/pass-commerce-artisanat/&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Plus d'informations&lt;/button&gt;&lt;/a&gt;"
 				queryable="true"
 				infopanel="bottom-panel">
@@ -157,7 +157,7 @@
 				exclusive="true"
 				style="feader_epci"
 				infoformat="application/vnd.ogc.gml"
-				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2015-2023-PASS_Competitivite_IAA.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte commune&lt;/button&gt;&lt;/a&gt;&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2015-2022-Feader_par_EPCI.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI&lt;/button&gt;&lt;/a&gt;&lt;a 
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2015-2023-PASS_Competitivite_IAA.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI&lt;/button&gt;&lt;/a&gt;&lt;a 
 				&lt;/br&gt;"
 				queryable="true"
 				infopanel="bottom-panel">
@@ -171,7 +171,9 @@
 				visible="false"
 				exclusive="true"
 				infoformat="application/vnd.ogc.gml"
-				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2019-2023-Pass_Invest_TPE_EPCI.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI 2019-2023&lt;/button&gt;&lt;/a&gt;&lt;a 
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2023-Pass_Invest_TPE_par_EPCI.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI 2023&lt;/button&gt;&lt;/a&gt;&lt;a 
+				&lt;/br&gt;
+				&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2019-2023-Pass_Invest_TPE_EPCI.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI 2019-2023&lt;/button&gt;&lt;/a&gt;&lt;a 
 				&lt;/br&gt;"
 				queryable="true"
 				infopanel="bottom-panel">
@@ -213,7 +215,7 @@
 				id="aide_pass_export_epci"
 				name="Entreprises soutenues dans le cadre d'un dispositif PASS Export"
 				type="wms" expanded="true"
-		        timefilter="true" timeinterval="year" timecontrol="slider" timemin="2021" timemax="2022" timevalues="2021,2022"
+		        timefilter="true" timeinterval="year" timecontrol="slider" timemin="2021" timemax="2023" timevalues="2021,2022,2023"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
 				visible="false"
 				exclusive="true"
@@ -336,9 +338,9 @@
 				visible="true"
 				exclusive="true" expanded="true"
 				infoformat="application/vnd.ogc.gml"
-				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/CAE_2022_communes.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte commune&lt;/button&gt;&lt;/a&gt;
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/CAE_2023_communes.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte commune&lt;/button&gt;&lt;/a&gt;
 				
-				&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/CAE_2022_EPCI.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI&lt;/button&gt;&lt;/a&gt;
+				&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/CAE_2023_EPCI.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI&lt;/button&gt;&lt;/a&gt;
 				&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=ess_cae&amp;outputFormat=excel2007&amp;propertyName=millesime,datation,nom_epci,nb_porteur_projet&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;
 				&lt;/br&gt;&lt;/br&gt;
 				
@@ -360,9 +362,9 @@
 				visible="true"
 				exclusive="true" expanded="true"
 				infoformat="application/vnd.ogc.gml"
-				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/DLA_Secteur_2022.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI par secteur&lt;/button&gt;&lt;/a&gt;
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/DLA_Secteur_2023.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI par secteur&lt;/button&gt;&lt;/a&gt;
 				
-				&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/DLA_Theme_2022.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI par thème&lt;/button&gt;&lt;/a&gt;
+				&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/DLA_Theme_2023.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte EPCI par thème&lt;/button&gt;&lt;/a&gt;
 				
 				&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=ess_dla&amp;outputFormat=excel2007&amp;propertyName=millesime,datation,nom,nb&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;
 				&lt;/br&gt;&lt;/br&gt;
@@ -385,7 +387,7 @@
 				visible="true"
 				exclusive="true" expanded="true"
 				infoformat="application/vnd.ogc.gml"
-				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/FDVA_2022.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/FDVA_2023.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;
 				
 				&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=ess_fdva&amp;outputFormat=excel2007&amp;propertyName=millesime,datation,nb_jours_formation,nb_benevoles_formes,nom,id&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;
 				&lt;/br&gt;&lt;/br&gt;
@@ -408,7 +410,7 @@
 				visible="true"
 				exclusive="true" expanded="true"
 				infoformat="application/vnd.ogc.gml"
-				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/Bilan_is_2022.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/Bilan_is_2023-2024.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;
 				
 				&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=ess_inno_soc_epci&amp;outputFormat=excel2007&amp;propertyName=code_siren,millesime,datation,nb_projets,nom,id&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;
 				&lt;/br&gt;&lt;/br&gt;
@@ -431,7 +433,7 @@
 				visible="true"
 				exclusive="true" expanded="true"
 				infoformat="application/vnd.ogc.gml"
-				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/FAB2022.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/FAB2023.jpg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès carte&lt;/button&gt;&lt;/a&gt;
 				
 				&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=ess_fab_epci&amp;outputFormat=excel2007&amp;propertyName=code_siren,millesime,datation,total_etp_apres,nb_projets,total_garantie,montant_pret,montant_pret00,montant_pret01,dasess_ingenierie,fond_de_confiance___emergence,montant_pret_total,montant_subvention_total,nom,id&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;
 				&lt;/br&gt;&lt;/br&gt;
