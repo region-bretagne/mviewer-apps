@@ -9,15 +9,38 @@
 			</div>	
 		</div>
 
+		<!-- Sans MReport !!!!!! -->
+		
+		
 		<div class="row">
-
-			<div class="col-md-6" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> 
-				<iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartenn_economie_{{millesime}}/{{code_siren}}/epci_economie_innovation_nb_cumule"></iframe>
+			
+			<div class="col-md-6" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;text-align: center;color: #0094ab;">
+				<div style=" font-weight: 900;font-size: 40px;font-family: Segoe ui;"> 
+				<img   src=" ../img/picto/argent_bleu.svg"   alt="dossier"  height="50"  width="50" /><br>
+				{{nb_total}} </div>
+				<div style=" font-weight: 600;font-size: 13px;font-family: Segoe ui;">
+				Nombre de dossiers d'aide &agrave; l'innovation entre 2015  et {{millesime}}</div>
 			</div>
-
-			<div class="col-md-6" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;">
-				<iframe style="position:absolute;top:0;bottom:0; left:0;width:80%;height:80%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartenn_economie_{{millesime}}/{{code_siren}}/epci_economie_innovation_mt_cumule"></iframe>
+			<div class="col-md-6" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;text-align: center;color: #0094ab;">
+				<div style=" font-weight: 900;font-size: 40px;font-family: Segoe ui;"> 
+				<img   src=" ../img/picto/argent_bleu.svg"   alt="dossier"  height="50"  width="50" /><br>
+				{{mt_total_millier}}</div>
+				<div style=" font-weight: 600;font-size: 13px;font-family: Segoe ui;">
+				Montant des aides &agrave; l'innovation entre 2015 et {{millesime}}</div>
 			</div>
+		</div>
+		
+<!-- Avec MReport !!!!!! -->
+
+		<!-- <div class="row"> -->
+
+			<!-- <div class="col-md-6" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;">  -->
+				<!-- <iframe style="position:absolute;top:0;bottom:0; left:0;width:100%;height:100%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartenn_economie_{{millesime}}/{{code_siren}}/epci_economie_innovation_nb_cumule"></iframe> -->
+			<!-- </div> -->
+
+			<!-- <div class="col-md-6" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;"> -->
+				<!-- <iframe style="position:absolute;top:0;bottom:0; left:0;width:80%;height:80%;border:0;" src="https://kartenn.region-bretagne.fr/mreport/kartenn_economie_{{millesime}}/{{code_siren}}/epci_economie_innovation_mt_cumule"></iframe> -->
+			<!-- </div> -->
 
 
 		</div>

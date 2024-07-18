@@ -196,14 +196,14 @@
 			</layer> 
 			
 			<layer 
-				id="economie_conseil"
+				id="economie_conseil_epci"
 				name="Dispositifs de conseil individuel"
 				type="wms" expanded="true"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
 				visible="false"
 				exclusive="true"
 				infoformat="application/vnd.ogc.gml"
-				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2022-Synthese_Conseil.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte commune&lt;/button&gt;&lt;/a&gt;&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=economie_conseil&amp;outputFormat=excel2007&amp;propertyName=code_insee,breizhfab_nbets,boosteragro_nbets,passconseil_nbets,nb_ets_total&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt; "
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/cartes/2023-Conseil_individuel.jpeg&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Carte commune&lt;/button&gt;&lt;/a&gt;&lt;a href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=economie_conseil&amp;outputFormat=excel2007&amp;propertyName=code_insee,breizhfab_nbets,boosteragro_nbets,passconseil_nbets,nb_ets_total&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Accès aux données&lt;/button&gt;&lt;/a&gt;&lt;/br&gt;&lt;/br&gt; "
 				queryable="true"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/"></template>
@@ -243,7 +243,7 @@
 			<layer 
 				id="aide_entreprises_innovation_epci_millesime"
 				name="Aide aux programme d'innovation des entreprises"
-		        timefilter="true" timeinterval="year" timecontrol="slider" timemin="2021" timemax="2022" timevalues="2021,2022"
+		        timefilter="true" timeinterval="year" timecontrol="slider" timemin="2021" timemax="2023" timevalues="2021,2022,2023"
 				type="wms" expanded="true"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
 				visible="false"
