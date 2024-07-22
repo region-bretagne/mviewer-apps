@@ -1,3 +1,4 @@
-Contact sur les territoires de la stratégie Breizh bocage
+structure.xml : Contact sur les territoires de la stratégie Breizh bocage
+densite.xml : densité de bocage ar km²
 
-Contact : Pascal Renault
+Contact : Maëlig Le Beguec

@@ -802,13 +802,13 @@
 		</group>
 		<group id="bathymetrie" name="Bathymetrie">
 			
-			<layer id="bathymetrie_vn" name="Bathymétrie 2019" visible="false" tiled="true"
-				queryable="false" secure="true"
-				legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/legend/bathymetrie.jpg"
-				url="../geoserver-proxy/interne/wms" 
-				attribution="Région Bretagne" 
-				metadata=""
-				metadata-csw="" />
+			<!-- <layer id="bathymetrie_vn" name="Bathymétrie 2019" visible="false" tiled="true" -->
+				<!-- queryable="false" secure="true" -->
+				<!-- legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/legend/bathymetrie.jpg" -->
+				<!-- url="../geoserver-proxy/interne/wms"  -->
+				<!-- attribution="Région Bretagne"  -->
+				<!-- metadata="" -->
+				<!-- metadata-csw="" /> -->
 			<layer id="bathymetrie_point" name="Sonde" visible="false" tiled="true"
 				queryable="true" secure="false" scalemax="3000" scalemin="0"
                 infoformat="application/vnd.ogc.gml" featurecount="1"                
@@ -819,12 +819,17 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/"></template>
 			</layer>
 			<layer id="bathymetrie_polygone" name=" Carte bathymétrique (Profondeur par rapport à  la retenue normale)" visible="false" tiled="false"
-				queryable="true" secure="false"
+				queryable="true" secure="false" expanded="true"
                 infoformat="application/vnd.ogc.gml" featurecount="1"                
 				url="../geoserver-proxy/interne/wms" 
-				attribution="Région Bretagne" 
+				attribution="&lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/documents/Explications_bathy.pdf&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Explication bathymétrie&lt;/button&gt;&lt;/a&gt;" 
 				metadata=""
 				metadata-csw="" > 
+				
+				
+				
+				
+				
 				
 			</layer>
 			<layer id="bathymetrie_isobathe" name="Courbes de profondeurs (isobathes)" visible="false" tiled="false"
