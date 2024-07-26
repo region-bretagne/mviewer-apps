@@ -644,14 +644,6 @@
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ed5ad99c-a386-48c2-8f96-decdbb593643" />
         </theme> 
         <theme name="Patrimoine naturel"  collapsed="true" id="nature" icon="fas fa-leaf">
-			<layer id="habitat_vegetal" name="Unités homogènes de végétation du domaine public fluvial régional" visible="false" tiled="true" 
-				queryable="true" infoformat="application/vnd.ogc.gml" featurecount="5"
-				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
-				attribution="Région Bretagne" 
-				metadata-csw=""
-				metadata="" >  
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/habitat_vegetal.mst"></template>
-			</layer>		
             <layer id="znieff1" name="ZNIEFF1" visible="false" tiled="true"
 				queryable="true" fields="NOM" aliases="Nom"
                 infoformat="application/vnd.ogc.gml" featurecount="5"             
