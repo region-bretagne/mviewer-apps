@@ -54,6 +54,7 @@
 ./site_region/site_region.xml
 ./structure_orientation/structure_orientation.xml
 ./territoire/territoire.xml
+./territoire/territoire_superset.xml
 ./test/api.xml
 ./test/cadastre_mos.xml
 ./test/exemple.xml
