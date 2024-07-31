@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <config>
     <application id="patrimoine" title="Patrimoine culturel" htmltitle ="Inventaire du patrimoine &lt;a href=&quot;https://kartenn.region-bretagne.fr/kartoviz/?config=apps/region/patrimoine/patrimoine_simple.xml&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link-menu&quot; &gt;Accès version simplifiée&lt;/button&gt;&lt;/a&gt;" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/img/rb_blanc.svg" titlehelp="À propos de Kartenn Patrimoine Culturel" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/patrimoine_help.html" showhelp="false" exportpng="true" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/css/kartenn_patrimoine.css" measuretools="true" togglealllayersfromtheme="true" stats="true" statsurl="../ws/kartenn/log.php" templaterightinfopanel="accordion"/>
     <mapoptions maxzoom="20" projection="EPSG:3857" center="-287709,6137894" zoom="9" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
