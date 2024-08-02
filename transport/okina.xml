@@ -222,46 +222,6 @@
 				metadata-csw="" >
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/etablissement_scolaire.mst"></template>
 			</layer> 
-			<layer id="poi_administration" name="Administrations"  visible="false" tiled="false" 
-				searchable="false" queryable="true" fields="appellatio" aliases="appellatio"
-                infoformat="application/vnd.ogc.gml" featurecount="20"
-				style="transports_administration_defaut"
-                url="https://ows.region-bretagne.fr/geoserver/interne/wms"
-				attribution="BreizhGo" 
-				metadata=""
-				metadata-csw="" >
-		        <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.poi.administration.mst"></template>
-		    </layer>			
-			<layer id="poi_patrimoine_naturel" name="Patrimoine naturel"  visible="false" tiled="false" 
-				searchable="false" queryable="true" fields="appellatio" aliases="appellatio"
-                infoformat="application/vnd.ogc.gml" featurecount="20"
-				style="transports_patrimoine_naturel_defaut"
-                url="https://ows.region-bretagne.fr/geoserver/interne/wms"
-				attribution="OpenData Tourisme Bretagne" 
-				metadata=""
-				metadata-csw="">
-		        <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.poi.patrimoine_nat.mst"></template>
-		    </layer>			
-			<layer id="poi_patrimoine_culturel" name="Patrimoine culturel"  visible="false" tiled="false"
-				searchable="false" queryable="true" fields="appellatio" aliases="appellatio"
-                infoformat="application/vnd.ogc.gml" featurecount="20"
-				style="transports_patrimoine_culturel_defaut"
-                url="https://ows.region-bretagne.fr/geoserver/interne/wms"
-				attribution="BreizhGo" 
-				metadata=""
-				metadata-csw="">
-		        <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.poi.patrimoine_cult.mst"></template>
-		    </layer>			
-			<layer id="poi_equipement_sport" name="Sports et Loisirs"  visible="false" tiled="false"
-				searchable="false" queryable="true" fields="appellatio" aliases="appellatio"
-                infoformat="application/vnd.ogc.gml" featurecount="20"
-				style="transports_equip_sport_defaut"
-                url="https://ows.region-bretagne.fr/geoserver/interne/wms"
-				attribution="Data.gouv" 
-				metadata="https://www.data.gouv.fr/fr/datasets/recensement-des-equipements-sportifs-espaces-et-sites-de-pratiques/"
-				metadata-csw="">
-		        <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.poi.equi_sport.mst"></template>
-		    </layer>						
         </theme>
 		<theme name="Population"  collapsed="false" id="population" icon="fas fa-male"> 
 			<layer id="rp_struct_pop_geom" name="Densité de population (hab/km²)"  visible="false" tiled="false"
