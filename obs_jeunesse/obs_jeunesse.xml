@@ -27,7 +27,7 @@
 <application 
 	title="Observatoire breton des jeunesses"  
 	logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/img/logo_jeun.svg" 
-	favicon="" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/aide.html"  titlehelp="" iconhelp="fas fa-home" home="" 
+	favicon="" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/obs_jeunesse.html"  titlehelp="" iconhelp="fas fa-home" home="" 
 	style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/css/obs_jeunesse.css" 
 	zoomtools="true" 
 	initialextenttool="true" 
