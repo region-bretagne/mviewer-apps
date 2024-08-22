@@ -178,9 +178,11 @@
 				infoformat="application/vnd.ogc.gml" featurecount="5"
 		        url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
 				style="" 
-				attribution="Région Bretagne" 
-				metadata-csw=""
-				metadata="" >
+				attribution="&lt;a
+				href=&quot;https://ows.region-bretagne.fr/geoserver/interne/ows?service=WFS&amp;version=1.0.0&amp;request=GetFeature&amp;typeName=trait_cote_5000m&amp;outputFormat=shape-zip&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Acc&#232;s au Shapefile&lt;/button&gt;&lt;/a&gt;
+				&lt;/br&gt;&lt;/br&gt;" 
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=e80a0520-08fa-48b9-b1c4-25028a447971"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/e80a0520-08fa-48b9-b1c4-25028a447971" >
 			</layer>
 			</group>			
 				

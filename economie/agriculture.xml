@@ -116,8 +116,6 @@
 				   metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=3ed2a86c-8f30-483c-97c1-7816cc92c806">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/evol_sau.mst"/>
 			</layer>
-			
-			
 			<layer id="agreste"
 			       name="Emplois (ETP)"
 			       type="wms"
@@ -138,10 +136,6 @@
 				   metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=3ed2a86c-8f30-483c-97c1-7816cc92c806">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/etp.mst"/>	
 			</layer>
-			
-			
-			
-			
 		</theme>
 		   	<theme name="Découpages territoriaux"  collapsed="true" id="territoire" icon="fas fa-globe"> 
         	<group name="Limites administratives" id="grp1" >
