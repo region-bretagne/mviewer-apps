@@ -22,6 +22,7 @@
 ./economie/agriculture.xml
 ./economie/economie.xml
 ./economie/economie_mreport.xml
+./economie/agriculture_new.xml
 ./fiche_epci/fiche_epci_vecteur.xml
 ./formation/accompagnement_digitalisation.xml
 ./formation/offre_formation.xml
