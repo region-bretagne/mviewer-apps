@@ -97,7 +97,7 @@
 			<layer id="riviere_etat_eco" name="Rivière : état écologique" visible="false" tiled="false"
 				queryable="true" fields="nom" aliases="nom" index="5" expanded="true"
 				infoformat="application/vnd.ogc.gml" featurecount="5"
-		        timefilter="true" timeinterval="year" timecontrol="slider" timemin="2013" timemax="2019" timevalues="2013,2017,2019"
+		        timefilter="true" timeinterval="year" timecontrol="slider" timemin="2013" timemax="2017" timevalues="2013,2017"
 				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
 				style="" 
 				attribution="Région Bretagne" 
@@ -107,7 +107,7 @@
 			</layer>
 			<layer id="masse_eau_etat_eco" name="Masse d'eau : état écologique" visible="false" tiled="false"
 				queryable="true" fields="nom" aliases="nom" opacity="0.3" index="6" expanded="true"
-		        timefilter="true" timeinterval="year" timecontrol="slider" timemin="2013" timemax="2019" timevalues="2013,2017,2019"
+		        timefilter="true" timeinterval="year" timecontrol="slider" timemin="2013" timemax="2017" timevalues="2013,2017"
 				infoformat="application/vnd.ogc.gml" featurecount="5"
 				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
 				style="" 				
