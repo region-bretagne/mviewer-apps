@@ -38,7 +38,6 @@
 ./mos/mos.xml
 ./mos/mos_difference.xml
 ./mos/mos_swipe.xml
-./mulette/mulette.xml
 ./ocs56/ocs56.xml
 ./patrimoine/patrimoine.xml
 ./patrimoine/patrimoine_simple.xml
@@ -90,4 +89,5 @@
 ./contact_lycee/contact_lycee.xml
 ./ideo/fonds_geob.xml
 ./ideo/ingenieur.xml
+./_ARCHIVES/mulette/mulette.xml
 ./espace_territoriaux/config.xml
