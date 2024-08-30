@@ -32,6 +32,7 @@
 ./gouvernance_formation/gouvernance_formation.xml
 ./immobilier/immobilier.xml
 ./immobilier/rec_immobilier.xml
+./immobilier/arbre.xml
 ./kelenn/gestionnaire_recrutement.xml
 ./kelenn/gestionnaire_rh.xml
 ./kelenn/lingerie.xml
