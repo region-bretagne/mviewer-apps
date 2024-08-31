@@ -87,6 +87,7 @@
 ./obs_jeunesse/obs_jeunesse.xml
 ./eolien/eolien.xml
 ./eolien/eolien_scenario.xml
+./eolien/debug.xml
 ./contact_lycee/contact_lycee.xml
 ./ideo/fonds_geob.xml
 ./ideo/ingenieur.xml
