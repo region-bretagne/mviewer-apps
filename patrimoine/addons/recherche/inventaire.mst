@@ -39,6 +39,12 @@
                 </p>
                 </div>            
 			{{/lien_dossier}}
+		    {{#lien_glad}}
+				<div class="rb-but-list">
+                <p> <center><a href="{{lien_glad}}" target="_blank" class="rb-but-link"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Lien vers GLAD</a></center>
+                </p>
+                </div>            
+			{{/lien_glad}}
 
         <p class="rb-description-feature" ><i>Source: <strong>{{source}}</strong></i><br>
         <i>Contact: <strong><a href="mailto:inventaire.patrimoine@bretagne.bzh">inventaire.patrimoine@bretagne.bzh</a></strong></i></p>

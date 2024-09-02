@@ -12,9 +12,15 @@
         </p>
 		{{#url}}
 		<div class="rb-but-list">
-			<a href="{{url}}" target="_blank" title="Site web" class="rb-but-link"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> <b>Lien vers notice</b></a>
+			<center><a href="{{url}}" target="_blank" title="Site web" class="rb-but-link"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> <b>Lien vers notice complète</b></a></center>
 		</div>
 		{{/url}}
+		{{#url_fiche}}
+		<div class="rb-but-list">
+			<center><a href="{{url_fiche}}" target="_blank" title="Site web" class="rb-but-link"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> <b>Lien vers GLAD</b></a></center>
+		</div>
+		{{/url_fiche}}
+
         <p class="rb-description-feature" ><i>Contact: <strong><a href="mailto:inventaire.patrimoine@bretagne.bzh">inventaire.patrimoine@bretagne.bzh</a></strong></i></p>
 
 	</li>
