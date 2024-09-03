@@ -1268,7 +1268,7 @@
 			aliases=""
 			style="jeunesse_egal_monof@commune,jeunesse_egal_mono@commune,jeunesse_egal_monoh@commune"
 			stylesalias="Famille monoparentale (Femmes),Famille monoparentale,Famille monoparentale (Hommes)"  
-			attributefilter="true" attributefield="type_geo" attributevalues="Commune,EPCI"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"			
+			attributefilter="true" attributefield="type_geo" attributevalues="EPCI,Commune"  attributelabel="Échelle" attributestylesync="true" attributefilterenabled="true"			
 			metadata="" 
 			metadata-csw="" 
 			expanded="true"
