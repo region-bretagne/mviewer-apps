@@ -50,8 +50,7 @@
 				   metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/3ed2a86c-8f30-483c-97c1-7816cc92c806"
 				   metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=3ed2a86c-8f30-483c-97c1-7816cc92c806">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/nb_expl.mst"/>				   
-			</layer>
-			
+			</layer>			
 			<layer id="agreste"
 			       name="Otex principale des exploitations de la communes"
 			       type="wms"
@@ -71,8 +70,7 @@
 				   metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/3ed2a86c-8f30-483c-97c1-7816cc92c806"
 				   metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=3ed2a86c-8f30-483c-97c1-7816cc92c806">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/otex.mst"/>
-			</layer>
-			
+			</layer>			
 			<layer id="agreste"
 			       name="Surface agricole utilisée"
 			       type="wms"
@@ -93,9 +91,6 @@
 				   metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=3ed2a86c-8f30-483c-97c1-7816cc92c806">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/sau.mst"/>
 			</layer>
-			
-			
-
 			<layer id="agreste"
 			       name="Evolution communale de la SAU entre 2010 et 2020"
 			       type="wms"
@@ -137,7 +132,194 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/etp.mst"/>	
 			</layer>
 		</theme>
-		   	<theme name="Découpages territoriaux"  collapsed="true" id="territoire" icon="fas fa-globe"> 
+		<theme id="bio"
+		       name="Agriculture biologique"
+		       collapsed="true"
+		       icon="fas fa-caret-right">
+		<group name="Parcelles bio" id="grp_bio" >
+			<layer id="agriculture_surface_bio_commune"
+			       name="Surface bio par commune et EPCI"
+			       type="wms"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+			       tiled="false"
+			       exclusive="false"
+			       visible="false"
+			       infoformat="application/vnd.ogc.gml"
+				   style="agriculture_surface_bio_commune,agriculture_surface_bio_epci" stylesalias="Commune,EPCI" 
+			       queryable="true"
+				   fields="nom_commune,millesime,surface_ha" 
+				   aliases="Nom de la commune,Année,Surface (ha)"
+				   attribution="Source : Déclarations à la PAC (data.gouv)"
+			       toplayer="false"
+			       expanded="true"
+			       infopanel="bottom-panel"
+			       opacity=".7"
+				   metadata="https://www.data.gouv.fr/fr/datasets/parcelles-en-agriculture-biologique-ab-declarees-a-la-pac/"
+				   metadata-csw="">
+				   <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/agriculture_bio_com_epci.mst"/>	
+			</layer>
+			<layer id="agriculture_parcelle_bio_annee"
+			       name="Ensemble des parcelles bio par année"
+			       type="wms"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				   timefilter="true" timeinterval="year" timecontrol="slider" timemin="2019" timemax="2022" timevalues="2019,2020,2021,2022"
+			       tiled="true"
+			       exclusive="false"
+			       visible="false"
+			       infoformat="application/vnd.ogc.gml"
+			       style="agriculture_parcelles_bio_type_culture"
+			       stylesalias=""
+			       queryable="true"
+				   fields="lbl_cultu,millesime,surface_ha" 
+				   aliases="Culture,Année,Surface (ha)"
+				   attribution="Source : Déclarations à la PAC (data.gouv)"
+			       toplayer="false"
+			       expanded="true"
+			       infopanel="bottom-panel"
+			       opacity=".7"
+				   metadata="https://www.data.gouv.fr/fr/datasets/parcelles-en-agriculture-biologique-ab-declarees-a-la-pac/"
+				   metadata-csw="">
+				   <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/parcelle_bio_annee.mst"/>	
+			</layer>
+		</group>
+		<group name="Conversions au bio" id="grp_conv" >
+			<layer id="agriculture_parcelle_bio_conv_2020"
+			       name="Conversions au bio 2019-2020"
+			       type="wms"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"				   
+			       tiled="true"
+			       exclusive="false"
+			       visible="false"
+			       infoformat="application/vnd.ogc.gml"
+			       style="agriculture_parcelles_bio_conversion"
+			       stylesalias=""
+			       queryable="true"
+				   fields="lbl_cultu,surface_ha" 
+				   aliases="Culture,Surface (ha)"
+				   attribution="Source : Déclarations à la PAC (data.gouv)"
+			       toplayer="false"
+			       expanded="false"
+			       infopanel="bottom-panel"
+			       opacity=".5"
+				   metadata="https://www.data.gouv.fr/fr/datasets/parcelles-en-agriculture-biologique-ab-declarees-a-la-pac/"
+				   metadata-csw="">
+				   <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/parcelle_bio_conversion.mst"/>	
+			</layer>
+			<layer id="agriculture_parcelle_bio_conv_2021"
+			       name="Conversions au bio 2020-2021"
+			       type="wms"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"				   
+			       tiled="true"
+			       exclusive="false"
+			       visible="false"
+			       infoformat="application/vnd.ogc.gml"
+			       style="agriculture_parcelles_bio_conversion"
+			       stylesalias=""
+			       queryable="true"
+				   fields="lbl_cultu,surface_ha" 
+				   aliases="Culture,Surface (ha)"
+				   attribution="Source : Déclarations à la PAC (data.gouv)"
+			       toplayer="false"
+			       expanded="false"
+			       infopanel="bottom-panel"
+			       opacity=".5"
+				   metadata="https://www.data.gouv.fr/fr/datasets/parcelles-en-agriculture-biologique-ab-declarees-a-la-pac/"
+				   metadata-csw="">
+				   <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/parcelle_bio_conversion.mst"/>	
+			</layer>
+			<layer id="agriculture_parcelle_bio_conv_2022"
+			       name="Conversions au bio 2021-2022"
+			       type="wms"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"				   
+			       tiled="true"
+			       exclusive="false"
+			       visible="false"
+			       infoformat="application/vnd.ogc.gml"
+			       style="agriculture_parcelles_bio_conversion"
+			       stylesalias=""
+			       queryable="true"
+				   fields="lbl_cultu,surface_ha" 
+				   aliases="Culture,Surface (ha)"
+				   attribution="Source : Déclarations à la PAC (data.gouv)"
+			       toplayer="false"
+			       expanded="false"
+			       infopanel="bottom-panel"
+			       opacity=".5"
+				   metadata="https://www.data.gouv.fr/fr/datasets/parcelles-en-agriculture-biologique-ab-declarees-a-la-pac/"
+				   metadata-csw="">
+				   <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/parcelle_bio_conversion.mst"/>	
+			</layer>
+		</group>
+		<group name="Déconversion depuis le bio" id="grp_deconv" >
+		<layer id="agriculture_parcelle_bio_deconv_2020"
+			       name="Déconversions depuis le bio 2019-2020"
+			       type="wms"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"				   
+			       tiled="true"
+			       exclusive="false"
+			       visible="false"
+			       infoformat="application/vnd.ogc.gml"
+			       style="agriculture_parcelles_bio_deconversion"
+			       stylesalias=""
+			       queryable="true"
+				   fields="lbl_cultu,surface_ha" 
+				   aliases="Culture,Surface (ha)"
+				   attribution="Source : Déclarations à la PAC (data.gouv)"
+			       toplayer="false"
+			       expanded="false"
+			       infopanel="bottom-panel"
+			       opacity=".5"
+				   metadata="https://www.data.gouv.fr/fr/datasets/parcelles-en-agriculture-biologique-ab-declarees-a-la-pac/"
+				   metadata-csw="">
+				   <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/parcelle_bio_deconversion.mst"/>	
+			</layer>
+			<layer id="agriculture_parcelle_bio_deconv_2021"
+			       name="Déconversions depuis le bio 2020-2021"
+			       type="wms"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"				   
+			       tiled="true"
+			       exclusive="false"
+			       visible="false"
+			       infoformat="application/vnd.ogc.gml"
+			       style="agriculture_parcelles_bio_deconversion"
+			       stylesalias=""
+			       queryable="true"
+				   fields="lbl_cultu,surface_ha" 
+				   aliases="Culture,Surface (ha)"
+				   attribution="Source : Déclarations à la PAC (data.gouv)"
+			       toplayer="false"
+			       expanded="false"
+			       infopanel="bottom-panel"
+			       opacity=".5"
+				   metadata="https://www.data.gouv.fr/fr/datasets/parcelles-en-agriculture-biologique-ab-declarees-a-la-pac/"
+				   metadata-csw="">
+				   <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/parcelle_bio_deconversion.mst"/>
+			</layer>
+			<layer id="agriculture_parcelle_bio_deconv_2022"
+			       name="Déconversions depuis le bio 2021-2022"
+			       type="wms"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"				   
+			       tiled="true"
+			       exclusive="false"
+			       visible="false"
+			       infoformat="application/vnd.ogc.gml"
+			       style="agriculture_parcelles_bio_deconversion"
+			       stylesalias=""
+			       queryable="true"
+				   fields="lbl_cultu,surface_ha" 
+				   aliases="Culture,Surface (ha)"
+				   attribution="Source : Déclarations à la PAC (data.gouv)"
+			       toplayer="false"
+			       expanded="false"
+			       infopanel="bottom-panel"
+			       opacity=".5"
+				   metadata="https://www.data.gouv.fr/fr/datasets/parcelles-en-agriculture-biologique-ab-declarees-a-la-pac/"
+				   metadata-csw="">
+				   <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/parcelle_bio_deconversion.mst"/>
+			</layer>
+		</group>
+		</theme>
+		<theme name="Découpages territoriaux"  collapsed="true" id="territoire" icon="fas fa-globe"> 
         	<group name="Limites administratives" id="grp1" >
 			<layer id="commune" name="Commune" visible="false" queryable="false" 
                 fields="nom_geo" aliases="Nom" 
