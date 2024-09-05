@@ -19,10 +19,10 @@
 ./bretagne_bzh/port.xml
 ./bretagne_bzh/vn.xml
 ./eau/eau.xml
-./economie/agriculture.xml
 ./economie/economie.xml
 ./economie/economie_mreport.xml
-./economie/agriculture_new.xml
+./economie/agriculture_old.xml
+./economie/agriculture.xml
 ./fiche_epci/fiche_epci_vecteur.xml
 ./formation/accompagnement_digitalisation.xml
 ./formation/offre_formation.xml
@@ -85,6 +85,7 @@
 ./vn/vn_els7.xml
 ./jeunesse/crj.xml
 ./obs_jeunesse/obs_jeunesse.xml
+./obs_jeunesse/obs_jeunesse_new.xml
 ./eolien/eolien.xml
 ./eolien/eolien_scenario.xml
 ./eolien/debug.xml
