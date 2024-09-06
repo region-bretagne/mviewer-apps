@@ -7,6 +7,10 @@
 			<span style="font-weight:bold"> Réparation :</span> {{reparation}}<br/>		
 			<span style="font-weight:bold"> Etat :</span> {{etat}}<br/>		
 			<span style="font-weight:bold"> Remarques :</span> {{remarque}}<br/>		
+			{{#id_plaque}}                
+				<span style="font-weight:bold"> Identifiant :</span> {{id_plaque}}<br/>
+			{{/id_plaque}}		
+
        </p>
 
 
