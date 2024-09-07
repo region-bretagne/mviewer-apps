@@ -79,6 +79,7 @@
 ./transport/okina.xml
 ./transport/trafic.xml
 ./transport/transports.xml
+./transport/ouestgo_old.xml
 ./transport/ouestgo.xml
 ./vn/vn_public.xml
 ./vn/vn.xml
