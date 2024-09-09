@@ -157,6 +157,29 @@
 			       scalemax="10000">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/"/>
 			</layer>
+			<layer id="logement_fonction_cluster"
+                name="Logements de fonction"
+                visible="true"
+                type="customlayer"
+                expanded="true"
+                legendurl="img/blank.gif"
+                vectorlegend="true"
+                url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/customlayers/logement_fonction_cluster.js"
+                attribution="Ascol"
+                metadata=""
+                metadata-csw=""
+                queryable="true">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/logement_fonction.mst"/>
+			</layer>
+			<layer id="logement_fonction_stat_lycee"
+			       name="Taux d'occupation par lycée"
+			       type="wms" featurecount="20"
+			       visible="false"
+			       url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+			       infoformat="application/vnd.ogc.gml"
+			       queryable="true"
+			       infopanel="right-panel">
+			</layer>
 			<layer id="lycee_batiment2"
 			       name="Bâtiments lycée"
 			       type="customlayer"
