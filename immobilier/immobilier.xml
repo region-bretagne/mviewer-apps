@@ -20,7 +20,7 @@
 		 showhelp="false"
 		 coordinates="false"
 		 measuretools="true"
-		 togglealllayersfromtheme="true"
+		 togglealllayersfromtheme="true" templaterightinfopanel="brut"
 		 stats="true" statsurl="../ws/kartenn/log.php"/>
 	<mapoptions maxzoom="20"
 	            projection="EPSG:3857"
@@ -172,7 +172,7 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/immobilier/templates/logement_fonction.mst"/>
 			</layer>
 			<layer id="logement_fonction_stat_lycee"
-			       name="Taux d'occupation par lycée"
+			       name="Taux d'occupation logements par lycée"
 			       type="wms" featurecount="20"
 			       visible="false"
 			       url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
