@@ -23,7 +23,7 @@
     togglealllayersfromtheme="false"
 	stats="true" statsurl="../ws/kartenn/log.php" >
 </application>
-    <mapoptions maxzoom="20" projection="EPSG:3857" center="-255418,6120890" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
+    <mapoptions maxzoom="20" projection="EPSG:3857" center="-122277,6143216" zoom="9" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
 <olscompletion type="ban" url="https://api-adresse.data.gouv.fr/search/" attribution="BAN" />
 <searchparameters bbox="false" localities="true" features="true" static="false"/>
 <baselayers style="default"> 
