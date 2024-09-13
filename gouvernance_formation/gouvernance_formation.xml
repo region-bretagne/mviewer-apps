@@ -131,6 +131,20 @@
 			toplayer="true">
 			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/gouvernance_formation/templates/gouvernance_formation.mst"></template>
 		</layer> 
+		<layer 
+			id="gouvernance_formation"
+			name="Arrondissement"
+			type="wms" tiled="true"
+			style="formation_arrondissement"
+			url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+			visible="false"
+			infoformat="application/vnd.ogc.gml"
+			attribution="Région Bretagne"
+			queryable="true"
+			
+			toplayer="true">
+			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/gouvernance_formation/templates/gouvernance_formation.mst"></template>
+		</layer>
 		
 		
     </theme> 
