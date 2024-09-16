@@ -461,6 +461,28 @@
 	
 	</theme>
     <theme id="perimetre" name="Découpages territoriaux" collapsed="true" icon="fas fa-globe"> 
+			<layer id="qpv"
+			       name="QPV"
+			       toplayer="true"
+			       tiled="true"
+			       type="customlayer"
+			       vectorlegend="true"
+			       url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/customlayers/qpv.js"
+			       visible="false"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="GéoBretagne"
+			       queryable="false"
+			       searchable="true"
+			       searchengine="fuse"
+			       fusesearchkeys="nom,commune"
+			       fusesearchresult="{{nom}} - {{commune}}"
+			       infopanel="bottom-panel"
+			       tooltip="true"
+			       tooltipcontent="{{nom}}"
+			       metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=33e57276-b6be-4e70-968d-f89c9ff69bb4"
+			       metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/33e57276-b6be-4e70-968d-f89c9ff69bb4">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/qpv.mst"/>
+			</layer>
 		<layer id="commune" name="Commune" visible="false" queryable="false" 
 			fields="nom_geo" aliases="Nom" 
 			type="customlayer" style="" opacity="1" legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/img/commune.png" 

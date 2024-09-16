@@ -218,6 +218,41 @@
 			showintoc="true">
 			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_demographie.mst" />
         </layer> 
+		<layer 
+			id="jeunesse_demographie_projection" 
+			name="Projections de population 2018-2030 (13-29 ans)"
+			type="wms" 
+			url="https://ows.region-bretagne.fr/geoserver/rb/ows?" 
+			tiled="true" 
+			visible="false" 
+			infoformat="application/vnd.ogc.gml" 
+			fields="nom_scot,evol_pop,p_pop_2018, p_pop_2030"	
+			aliases="" 
+			style="jeunesse_proj_pop1329_2030" 
+			stylesalias="" 
+			metadata="" 
+			metadata-csw="" 
+			attribution="Source : Projections Omphale d'apèrs le scénario central (Insee, 2022). Les projections de population sont disponibles uniquement à l'échelle des SCoT."
+			queryable="true" 
+			searchable="false"
+			fusesearchkeys="" 
+			fusesearchresult="" 
+			secure="public" 
+			useproxy="false" 
+			filter="" 
+			sld="" 
+			legendurl="" 
+			featurecount="" 
+			infopanel="bottom-panel"
+			opacity=".9" 
+			index="" 
+			styletitle="" 
+			dynamiclegend="false"
+			toplayer="false" 
+			exclusive="false"
+			showintoc="true">
+			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_projection.mst" />
+        </layer> 
     </theme> 
     <theme id="jeunesse_emploi" name="1- Emploi des jeunes" collapsed="true" icon="fas fa-briefcase"> 
         <layer 
@@ -471,6 +506,15 @@
                 metadata=""
                 metadata-csw="" >	  
 		    </layer> 
+		<layer id="psad" name="Plateformes de suivi et d'appui aux décrocheurs"  visible="false" tiled="false"
+                searchable="false" queryable="true"  expanded="true" exclusive="false" opacity="0.5"
+				fields="nom_psad" aliases="PSAD"				
+                infoformat="application/vnd.ogc.gml" featurecount="70"
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Les plateformes de suivi et d&#39;appui aux d&#233;crocheurs sont, sur chaque territoire, co-pilot&#233;es par le CIO (Centre d&#39;information et d&#39;orientation) et la Mission locale. Les PSAD r&#233;alisent le rep&#233;rage des jeunes en d&#233;crochage scolaire, recherchent des solutions pour accompagner de mani&#232;re personnalis&#233;e chaque jeune et coordonnent l’action entre tous les acteurs impliqu&#233;s" 
+                metadata=""
+                metadata-csw="" >	  
+		    </layer> 	
 	</theme> 
 	<theme id="jeunesse_information" name="3- Information des jeunes" collapsed="true" icon="fas fa-info"> 
 		<layer 
@@ -541,6 +585,71 @@
 			exclusive="false" 
 			showintoc="true">			
 		</layer>
+		<!-- <layer  -->
+			<!-- id="jeunesse_paej"  -->
+			<!-- name="Permanence et lieu d'accueil PAEJ"  -->
+			<!-- type="wms"  -->
+			<!-- url="https://ows.region-bretagne.fr/geoserver/interne/ows?"  -->
+			<!-- tiled="true"  -->
+			<!-- visible="false"  -->
+			<!-- infoformat="application/vnd.ogc.gml"  -->
+			<!-- style="paej_permanence_accueil"  -->
+			<!-- metadata=""  -->
+			<!-- metadata-csw=""  -->
+			<!-- attribution="Source : Région Bretagne"  -->
+			<!-- queryable="false"  -->
+			<!-- searchable="false"  -->
+			<!-- fusesearchkeys=""  -->
+			<!-- fusesearchresult=""  -->
+			<!-- secure="public"  -->
+			<!-- useproxy="false"  -->
+			<!-- filter=""  -->
+			<!-- sld=""  -->
+			<!-- legendurl=""  -->
+			<!-- featurecount=""  -->
+			<!-- infopanel="right-panel"  -->
+			<!-- opacity=".9"  -->
+			<!-- index=""  -->
+			<!-- styletitle=""  -->
+			<!-- dynamiclegend="false"  -->
+			<!-- toplayer="false"  -->
+			<!-- exclusive="false"  -->
+			<!-- showintoc="true">			 -->
+		<!-- </layer> -->
+		<!-- <layer  -->
+			<!-- id="jeunesse_paej"  -->
+			<!-- name="Commune couverte par un PAEJ"  -->
+			<!-- type="wms"  -->
+			<!-- url="https://ows.region-bretagne.fr/geoserver/interne/ows?"  -->
+			<!-- tiled="true"  -->
+			<!-- visible="false"  -->
+			<!-- infoformat="application/vnd.ogc.gml"  -->
+			<!-- fields="commune,structure" -->
+			<!-- aliases="Commune,Structure" -->
+			<!-- style="paej"  -->
+			<!-- metadata=""  -->
+			<!-- metadata-csw=""  -->
+			<!-- attribution="Source : Région Bretagne"  -->
+			<!-- queryable="true"  -->
+			<!-- searchable="false"  -->
+			<!-- fusesearchkeys=""  -->
+			<!-- fusesearchresult=""  -->
+			<!-- secure="public"  -->
+			<!-- useproxy="false"  -->
+			<!-- filter=""  -->
+			<!-- sld=""  -->
+			<!-- legendurl=""  -->
+			<!-- featurecount=""  -->
+			<!-- infopanel="right-panel"  -->
+			<!-- opacity="0.7"  -->
+			<!-- index=""  -->
+			<!-- styletitle=""  -->
+			<!-- dynamiclegend="false"  -->
+			<!-- toplayer="false"  -->
+			<!-- exclusive="false"  -->
+			<!-- showintoc="true">			 -->
+		<!-- </layer> -->
+
 	</theme> 
 	<theme id="jeunesse_sante" name="4- Santé et sport" collapsed="true" icon="fas fa-briefcase-medical"> 
 		<layer 
