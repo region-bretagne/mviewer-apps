@@ -182,9 +182,9 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/equipement.mst"></template>
 			</layer>												
 			<layer id="equipement_vn" name="Sanitaires" visible="false" tiled="false" 
-				queryable="true" searchable="true" 
+				queryable="true" searchable="true" expanded="true"
 				infoformat="application/vnd.ogc.gml" featurecount="20"
-				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" styletitle="Type de sanitaire"
 				style="equipement_sanitaire_wc,equipement_sanitaire_douche" stylesalias="WC,Douche" 
 				attribution="Région Bretagne" 
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=5bf220ec-d62a-4d1b-8588-6f23087bea55"
