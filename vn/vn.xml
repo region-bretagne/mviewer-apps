@@ -12,7 +12,7 @@
 			<baselayer  type="WMTS" id="photo2" label="Photo aérienne 1950" title="IGN" thumbgallery="img/basemap/ortho-ancien.jpg"
             url="https://data.geopf.fr/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS.1950-1965" format="image/png" visible="false" fromcapacity="false"
             attribution="&lt;a href='https://geoservices.ign.fr/services-geoplateforme-diffusion' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="BDORTHOHISTORIQUE" matrixset="PM" maxzoom="22"/>
-			<baselayer  type="WMTS" id="Carte_IGN" label="Carte IGN" title="Carte IGN" thumbgallery="apps/chassev2/img/carteign_32.png"
+			<baselayer  type="WMTS" id="Carte_IGN" label="Carte IGN" title="Carte IGN" thumbgallery="img/basemap/scan.jpg"
             url="https://data.geopf.fr/private/wmts?apikey=ign_scan_ws" layers="GEOGRAPHICALGRIDSYSTEMS.MAPS"  style="normal" fromcapacity="false" attribution="© IGN 2022 - Copie et reproduction interdite" visible="false" format="image/jpeg" matrixset="PM" />
     </baselayers> 
     <authentification url="who" loginurl="?login" logouturl="../logout" enabled="true"/>
@@ -1058,14 +1058,14 @@
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=f3368c03-6636-4284-ae43-9acdb076285e"
 				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/f3368c03-6636-4284-ae43-9acdb076285e">  
 			</layer>		
-			<layer id="PPRN_PERIMETRE_INOND_FXX" name="Périmètre des PPR Inondation" visible="false" tiled="false" 
-				searchable="true" queryable="true" 
-				infoformat="application/vnd.ogc.gml" featurecount="20"
-				url="https://georisques.gouv.fr/services" 
-				attribution="Région Bretagne" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=f3368c03-6636-4284-ae43-9acdb076285e"
-				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/f3368c03-6636-4284-ae43-9acdb076285e">  
-			</layer>
+			<!-- <layer id="PPRN_PERIMETRE_INOND_FXX" name="Périmètre des PPR Inondation" visible="false" tiled="false"  -->
+				<!-- searchable="true" queryable="true"  -->
+				<!-- infoformat="application/vnd.ogc.gml" featurecount="20" -->
+				<!-- url="https://georisques.gouv.fr/services"  -->
+				<!-- attribution="Région Bretagne"  -->
+				<!-- metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=f3368c03-6636-4284-ae43-9acdb076285e" -->
+				<!-- metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/f3368c03-6636-4284-ae43-9acdb076285e">   -->
+			<!-- </layer> -->
 			<layer id="zones_humides" name="Zones humides" visible="false" tiled="true" 
 				searchable="true" queryable="false" scalemax="50000" scalemin="0"
 				infoformat="application/vnd.ogc.gml" featurecount="1"
