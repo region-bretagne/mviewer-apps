@@ -84,6 +84,7 @@
 ./vn/vn_public.xml
 ./vn/vn.xml
 ./vn/vn_els7.xml
+./vn/vn_els5.xml
 ./jeunesse/crj.xml
 ./obs_jeunesse/obs_jeunesse_old.xml
 ./obs_jeunesse/obs_jeunesse.xml

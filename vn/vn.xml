@@ -9,6 +9,9 @@
 			<baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="GéoPortail" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
 			url="https://data.geopf.fr/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
 			attribution="&lt;a href='https://geoservices.ign.fr/services-geoplateforme-diffusion' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+			<baselayer  type="WMS" id="pcrs" label="PCRS" title="GéoPortail" maxscale="1000" thumbgallery="img/basemap/ortho.jpg" owsoptions="VERSION:1.3.0"
+			url="https://data.geopf.fr/wms-r/wms" layers="PCRS.LAMB93" format="image/jpeg" visible="false"
+			attribution="&lt;a href='https://geoservices.ign.fr/services-geoplateforme-diffusion' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>"/>
 			<baselayer  type="WMTS" id="photo2" label="Photo aérienne 1950" title="IGN" thumbgallery="img/basemap/ortho-ancien.jpg"
             url="https://data.geopf.fr/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS.1950-1965" format="image/png" visible="false" fromcapacity="false"
             attribution="&lt;a href='https://geoservices.ign.fr/services-geoplateforme-diffusion' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="BDORTHOHISTORIQUE" matrixset="PM" maxzoom="22"/>
@@ -27,6 +30,7 @@
         <extension type="component" id="fileimport" path="https://kartenn.region-bretagne.fr/kartoviz/demo/addons"/>
         <extension type="component" id="isochroneAddon" path="https://kartenn.region-bretagne.fr/kartoviz/demo/addons"/>
 		<extension type="component" id="print" path="https://kartenn.region-bretagne.fr/kartoviz/demo/addons_rb"/>
+		<extension type="component" id="zoomToArea" path="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/addons"/>
     </extensions>
 
     <themes>
@@ -397,7 +401,7 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.etang_vn.mst"></template>
 			</layer>
 		</group>
-		<group name="Réseaux électriques" id="enedis">
+		<group name="Réseaux" id="reseaux">
 			<layer 
 				id="reseau_souterrain_hta"
 				scalemin="0" scalemax="100000"
@@ -442,6 +446,8 @@
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ELEMENTSETNAME=full&amp;ID&amp;ID=e9421773-f439-4354-b873-834f104e6a5e"
 				queryable="false">
 			</layer> 
+			<layer id="reseau_gaz" name="Canalisations en service du réseau de distribution de gaz exploité par GRDF en France" type="wms" url="https://geobretagne.fr/geoserver/grdf/wms" visible="false" scalemin="0" scalemax="50000" tiled="true" infoformat="application/vnd.ogc.gml" metadata="https://geobretagne.fr/datahub/dataset/edf2819c-6ccf-4214-8a9e-186d66065640" metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ELEMENTSETNAME=full&amp;ID&amp;ID=edf2819c-6ccf-4214-8a9e-186d66065640" attribution="grdf" queryable="false" infopanel="right-panel"> 
+			</layer>
 		</group>
         </theme> 
 		<theme name="Domanialité"  collapsed="true" id="domanialite" icon="fas fa-wrench"> 
