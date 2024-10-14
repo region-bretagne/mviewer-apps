@@ -164,7 +164,7 @@
 						" 
 				queryable="true" infoformat="application/vnd.ogc.gml" featurecount="5" 
 				opacity="0.7" 
-				url="https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v?" 
+				url="https://data.geopf.fr/wms-v/ows" 
 				attribution="Ministère de la Cohésion des terrritoires (MCT) et Institut national de l'information géographique et forestière (IGN)" 
 				metadata="" 
 				metadata-csw="">
@@ -173,7 +173,7 @@
 		<layer id="zone_secteur" name="Zonages PLU" visible="false" tiled="true" 
 			queryable="true" infoformat="application/vnd.ogc.gml" featurecount="5" 
 			opacity="0.7" scalemin="0" scalemax="100000"
-			url="https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v?" 
+			url="https://data.geopf.fr/wms-v/ows" 
 			attribution="Ministère de la Cohésion des terrritoires (MCT) et Institut national de l'information géographique et forestière (IGN)" 
 			metadata="" 
 			metadata-csw="">
@@ -183,7 +183,7 @@
 			queryable="true" infoformat="application/vnd.ogc.gml" featurecount="5" 
 			opacity="0.7" scalemin="0" scalemax="20000"
 			legendurl="https://kartenn.region-bretagne.fr/img/legend/legende_vide.png"
-			url="https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v?" 
+			url="https://data.geopf.fr/wms-v/ows" 
 			attribution="Ministère de la Cohésion des terrritoires (MCT) et Institut national de l'information géographique et forestière (IGN). &lt;/br&gt;&lt;/br&gt;
 			&lt;a href=&quot;https://kartenn.region-bretagne.fr/img/legend/legende_prescription.png&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Légende complète&lt;/button&gt;&lt;/a&gt;" 
 			expanded="true"
@@ -195,7 +195,7 @@
 			queryable="true" infoformat="application/vnd.ogc.gml" featurecount="5" 
 			opacity="0.7" scalemin="0" scalemax="20000"
 			legendurl="https://kartenn.region-bretagne.fr/img/legend/legende_vide.png"
-			url="https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v?" 
+			url="https://data.geopf.fr/wms-v/ows" 
 			attribution="Ministère de la Cohésion des terrritoires (MCT) et Institut national de l'information géographique et forestière (IGN). &lt;/br&gt;&lt;/br&gt;
 			&lt;a href=&quot;https://kartenn.region-bretagne.fr/img/legend/legende_info.png&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Légende complète&lt;/button&gt;&lt;/a&gt;" 
 			expanded="true"
@@ -208,7 +208,7 @@
 			<layer id="sup" name="Toutes les servitudes" visible="false" tiled="true" 
 				queryable="true" infoformat="application/vnd.ogc.gml" featurecount="5" 
 				opacity="0.7" scalemin="0" scalemax="1000000"
-				url="https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v?" 
+				url="https://data.geopf.fr/wms-v/ows" 
 				attribution="Ministère de la Cohésion des terrritoires (MCT) et Institut national de l'information géographique et forestière (IGN). &lt;/br&gt;&lt;/br&gt;
 				&lt;a href=&quot;https://kartenn.region-bretagne.fr/img/legend/legende_servitude.png&quot; target=&quot;_blank&quot;&gt;&lt;button class=&quot;rb-but-link&quot; &gt;Légende complète&lt;/button&gt;&lt;/a&gt;" 
 				expanded="true"
@@ -220,7 +220,7 @@
 			<layer id="conservation_du_patrimoine" name="Servitudes relatives à la conservation du patrimoine" visible="false" tiled="true" 
 				queryable="true" infoformat="application/vnd.ogc.gml" featurecount="5" 
 				opacity="0.7"
-				url="https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v?" 
+				url="https://data.geopf.fr/wms-v/ows" 
 				attribution="Ministère de la Cohésion des terrritoires (MCT) et Institut national de l'information géographique et forestière (IGN)" 
 				metadata="" 
 				metadata-csw="">
@@ -229,7 +229,7 @@
 			<!--<layer id="defense_nationale" name="Défense nationale" visible="false" tiled="true" 
 				queryable="true" infoformat="application/vnd.ogc.gml" featurecount="5" 
 				opacity="0.7"
-				url="https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v?" 
+				url="https://data.geopf.fr/wms-v/ows" 
 				attribution="Ministère de la Cohésion des terrritoires (MCT) et Institut national de l'information géographique et forestière (IGN)" 
 				metadata="" 
 				metadata-csw="">
@@ -237,7 +237,7 @@
 			<layer id="telecommunication" name="Télécommunication" visible="false" tiled="true" 
 				queryable="true" infoformat="application/vnd.ogc.gml" featurecount="5" 
 				opacity="0.7"
-				url="https://wxs-gpu.mongeoportail.ign.fr/externe/vkd1evhid6jdj5h4hkhyzjto/wms/v?" 
+				url="https://data.geopf.fr/wms-v/ows" 
 				attribution="Ministère de la Cohésion des terrritoires (MCT) et Institut national de l'information géographique et forestière (IGN)" 
 				metadata="" 
 				metadata-csw="">
