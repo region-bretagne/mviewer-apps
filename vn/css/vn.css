@@ -7,11 +7,24 @@
 /* Import des fonts*/
 @font-face {
   font-family: 'roboto_bold';
+															 
+   
+			  
+								 
   src: url("../../_region/font/Roboto/Roboto-Bold.ttf"); }
 
+			  
+								   
+															  
+   
 @font-face {
   font-family: 'roboto_regular';
   src: url("../../_region/font/Roboto/Roboto-Regular.ttf"); }
+   
+			  
+								
+													
+   
 
 @font-face {
   font-family: 'region_bold';
@@ -41,6 +54,12 @@
 	color:#ffffff!important;
 	font-size: 20px;
 }
+   #mv-navbar .navbar-toggle {
+    border-color: #5A9EAA;
+    color: white; }
+
+#mv-navbar.navbar-default .navbar-nav > li > a {
+  color: white; }
 
 p.navbar-text.mv-title{
 	font-size: 18px;
