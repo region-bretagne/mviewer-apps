@@ -5,14 +5,14 @@
   "target": "page-content-wrapper",
   "options": {
     "mviewer": {
-      "formation": {
-        "dataUrl": "https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/data/departement_simple.geojson",
+      "offre_formation": {
+        "dataUrl": "https://ows.region-bretagne.fr/geoserver/interne/wfs?service=wfs&version=1.0.0&request=getfeature&typename=formation_epci&outputformat=application%2Fjson&srsName=EPSG:4326",
         "dataEPSG": "EPSG:4326",
-        "fieldNameAreas": "nom_geo",
-        "fieldIdAreas": "code_geo",
-        "fieldSortBy": "nom_geo",
+        "fieldNameAreas": "nom",
+        "fieldIdAreas": "code_siren",
+        "fieldSortBy": "nom",
         "bufferSize": 3000,
-        "selectLabel": "Zoomer sur un département"
+        "selectLabel": "Zoomer sur un EPCI"
       }
     }
   }
