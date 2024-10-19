@@ -27,6 +27,7 @@
 ./formation/accompagnement_digitalisation.xml
 ./formation/offre_formation.xml
 ./formation/offre_formation_test.xml
+./formation/offre_formation_bak.xml
 ./global/administratif.xml
 ./global/global.xml
 ./gouvernance_formation/gouvernance_formation.xml
