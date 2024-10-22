@@ -38,7 +38,48 @@
 			  }
 			]
 		  }]
+		},
+		
+		"offre_formation":{
+		  "tooltipPosition": "bottom-left",
+		  "title": "Filtrer",
+		  "open": true,
+		  "zoomOnFeatures": false,
+		  "legendTitle": "Organisme",
+		  "style": {
+			"border": "2px #B0252E solid",
+			"background": "#fff",
+			"top": "15%",
+			"left": "60px",
+			
+			"text": "#000",
+			"unSelectedBtnColor": "#B0252E",
+			"textSelectBtnColor": "#FFFFFF",
+			"selectedBtnColor": "#641814"
+		  },
+		  "layers": [{
+			"layerId": "offre_formation",
+			"filter": [{
+				"attribut": "organisme",
+				"type": "textbox",
+				"label": "Organisme"
+			  },
+			  {
+				"attribut": "domaine",
+				"type": "button",
+				"label": "Domaine"
+			  },
+			  {
+				"attribut": "sous_domaine",
+				"type": "textbox",
+				"label": "Sous-domaine"
+			  }
+			  
+			]
+		  }]
 		}
+		
+		
     }
   }
 }
