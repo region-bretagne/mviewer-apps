@@ -21,13 +21,14 @@
 ./eau/eau.xml
 ./economie/economie.xml
 ./economie/economie_mreport.xml
-./economie/agriculture_old.xml
 ./economie/agriculture.xml
+./economie/agriculture_new.xml
 ./fiche_epci/fiche_epci_vecteur.xml
 ./formation/accompagnement_digitalisation.xml
 ./formation/offre_formation.xml
 ./formation/offre_formation_test.xml
 ./formation/offre_formation_bak.xml
+./formation/offre_formation_filtre.xml
 ./global/administratif.xml
 ./global/global.xml
 ./gouvernance_formation/gouvernance_formation.xml
@@ -86,6 +87,7 @@
 ./vn/vn.xml
 ./vn/vn_els7.xml
 ./vn/vn_els5.xml
+./vn/vn_reseaux.xml
 ./jeunesse/crj.xml
 ./obs_jeunesse/obs_jeunesse_old.xml
 ./obs_jeunesse/obs_jeunesse.xml
