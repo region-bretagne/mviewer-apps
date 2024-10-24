@@ -95,7 +95,6 @@
 ./eolien/eolien.xml
 ./eolien/eolien_scenario.xml
 ./eolien/debug.xml
-./eolien/07-10-24.xml
 ./eolien/scenario_07-10-24.xml
 ./contact_lycee/contact_lycee.xml
 ./ideo/fonds_geob.xml
