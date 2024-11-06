@@ -8,7 +8,7 @@ mviewer.customControls.napoleo = (function() {
     var _data = {};
     var _vectorSource = new ol.source.Vector();
 
-    $.getJSON("apps/region/patrimoine/addons/napoleon/data.json", function(data) {
+    $.getJSON("https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/addons/napoleon/data.json", function(data) {
         $.each(data, function(id, item) {
             _data[item.id] = item;
             var feature = new ol.Feature({
