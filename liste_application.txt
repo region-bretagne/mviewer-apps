@@ -78,6 +78,11 @@
 ./tmp/test.xml
 ./tmp/zones_humides.xml
 ./tmp/opsam-web.xml
+./tmp/bug.xml
+./tmp/issue1.xml
+./tmp/issue2.xml
+./tmp/issue3.xml
+./tmp/proxy.xml
 ./transport/mobibreizh.xml
 ./transport/okina.xml
 ./transport/trafic.xml
@@ -98,6 +103,7 @@
 ./eolien/eolien_scenario.xml
 ./eolien/debug.xml
 ./eolien/scenario_07-10-24.xml
+./eolien/config-06-11.xml
 ./contact_lycee/contact_lycee.xml
 ./ideo/fonds_geob.xml
 ./ideo/ingenieur.xml
