@@ -83,6 +83,7 @@
 ./tmp/issue2.xml
 ./tmp/issue3.xml
 ./tmp/proxy.xml
+./tmp/roi_morvan.xml
 ./transport/mobibreizh.xml
 ./transport/okina.xml
 ./transport/trafic.xml
