@@ -92,10 +92,10 @@
 ./transport/ouestgo.xml
 ./vn/vn_public.xml
 ./vn/vn.xml
-./vn/vn_els7.xml
-./vn/vn_els5.xml
 ./vn/vn_reseaux.xml
 ./vn/vn_test.xml
+./vn/vn_adresse.xml
+./vn/vn_els7.xml
 ./jeunesse/crj.xml
 ./obs_jeunesse/obs_jeunesse_old.xml
 ./obs_jeunesse/obs_jeunesse.xml
