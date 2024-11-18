@@ -22,9 +22,10 @@
     <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par l'API adresse.data.gouv.fr"/>
     <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" doctypes="unite_administrative" linkid="search_id" querymode="match" version="current" />
     <searchparameters bbox="false" localities="false" features="true" static="true"/>
-	<widgets>
-       <!--<widget name="gauge"/>-->       
-    </widgets> 
+	
+       <urlparams>
+           <qtype name="admin" url="https://geo.api.gouv.fr" />
+       </urlparams>
 
     <extensions>    
         <extension type="component" id="layerfilter" path="https://kartenn.region-bretagne.fr/kartoviz/demo/addons"/>
