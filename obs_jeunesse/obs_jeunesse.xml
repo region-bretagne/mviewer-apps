@@ -652,6 +652,7 @@
 
 	</theme> 
 	<theme id="jeunesse_sante" name="4- Santé et sport" collapsed="true" icon="fas fa-briefcase-medical"> 
+	<group name="Zonages en santé" id="grp_zone" >
 		<layer 
 			id="zonage_medecin" 
 			name="Zonage médecin défini par l'ARS" 
@@ -720,22 +721,55 @@
 			exclusive="true" 
 			showintoc="true">			
 		</layer>
-<!--		<layer 
+	</group>
+	<group name="Lieux d'accueil et d'écoute" id="grp_lieux" >
+		<!-- <layer  -->
+			<!-- id="jeunesse_paej"  -->
+			<!-- name="Périmètres des points d'accueil écoute jeune (PAEJ)"  -->
+			<!-- type="wms"  -->
+			<!-- url="https://ows.region-bretagne.fr/geoserver/interne/ows?"  -->
+			<!-- tiled="true"  -->
+			<!-- visible="false"  -->
+			<!-- infoformat="application/vnd.ogc.gml"  -->
+			<!-- fields="nom_paej,nom_commune" -->
+			<!-- aliases="Structure,Commune" -->
+			<!-- style="jeunesse_paej"  -->
+			<!-- stylesalias=""  -->
+			<!-- metadata=""  -->
+			<!-- metadata-csw=""  -->
+			<!-- attribution="Source : Région Bretagne"  -->
+			<!-- queryable="true"  -->
+			<!-- searchable="false"  -->
+			<!-- fusesearchkeys=""  -->
+			<!-- fusesearchresult=""  -->
+			<!-- secure="public"  -->
+			<!-- useproxy="false"  -->
+			<!-- filter=""  -->
+			<!-- sld=""  -->
+			<!-- legendurl=""  -->
+			<!-- featurecount=""  -->
+			<!-- infopanel="right-panel"  -->
+			<!-- opacity=".9"  -->
+			<!-- index=""  -->
+			<!-- styletitle=""  -->
+			<!-- dynamiclegend="false"  -->
+			<!-- toplayer="false"  -->
+			<!-- exclusive="false"  -->
+			<!-- showintoc="true">			 -->
+		<!-- </layer>  -->
+		<layer 
 			id="jeunesse_paej" 
-			name="Périmètres des points d'accueil écoute jeune (PAEJ)" 
+			name="Permanence et lieu d'accueil PAEJ" 
 			type="wms" 
 			url="https://ows.region-bretagne.fr/geoserver/interne/ows?" 
 			tiled="true" 
 			visible="false" 
 			infoformat="application/vnd.ogc.gml" 
-			fields="nom_paej,nom_commune"
-			aliases="Structure,Commune"
-			style="jeunesse_paej" 
-			stylesalias="" 
+			style="paej_permanence_accueil" 
 			metadata="" 
 			metadata-csw="" 
 			attribution="Source : Région Bretagne" 
-			queryable="true" 
+			queryable="false" 
 			searchable="false" 
 			fusesearchkeys="" 
 			fusesearchresult="" 
@@ -753,7 +787,75 @@
 			toplayer="false" 
 			exclusive="false" 
 			showintoc="true">			
-		</layer> -->
+		</layer>
+		<layer 
+			id="jeunesse_paej" 
+			name="Commune couverte par un PAEJ" 
+			type="wms" 
+			url="https://ows.region-bretagne.fr/geoserver/interne/ows?" 
+			tiled="true" 
+			visible="false" 
+			infoformat="application/vnd.ogc.gml" 
+			fields="commune,structure"
+			aliases="Commune,Structure"
+			style="paej" 
+			metadata="" 
+			metadata-csw="" 
+			attribution="Source : Région Bretagne" 
+			queryable="true" 
+			searchable="false" 
+			fusesearchkeys="" 
+			fusesearchresult="" 
+			secure="public" 
+			useproxy="false" 
+			filter="" 
+			sld="" 
+			legendurl="" 
+			featurecount="" 
+			infopanel="right-panel" 
+			opacity="0.7" 
+			index="" 
+			styletitle="" 
+			dynamiclegend="false" 
+			toplayer="false" 
+			exclusive="false" 
+			showintoc="true">			
+		</layer>
+		<layer 
+			id="maison_ado" 
+			name="Maison des adolescents" 
+			type="wms" 
+			url="https://ows.region-bretagne.fr/geoserver/interne/ows?" 
+			tiled="true" 
+			visible="false" 
+			infoformat="application/vnd.ogc.gml" 
+			fields="commune,maison_ado"
+			aliases="Commune,Nom"
+			style="maison_ado" 
+			metadata="" 
+			metadata-csw="" 
+			attribution="Source : Région Bretagne" 
+			queryable="true" 
+			searchable="false" 
+			fusesearchkeys="" 
+			fusesearchresult="" 
+			secure="public" 
+			useproxy="false" 
+			filter="" 
+			sld="" 
+			legendurl="" 
+			featurecount="" 
+			infopanel="right-panel" 
+			opacity="0.7" 
+			index="" 
+			styletitle="" 
+			dynamiclegend="false" 
+			toplayer="false" 
+			exclusive="false" 
+			showintoc="true">			
+		</layer> 
+	</group>	
+	<group name="Formations sanitaires et sociales" id="grp_form_sani_soc" >
 		<layer 
 			id="centre_formation_sanitaire_social" 
 			name="Centres de formation sanitaires et sociales en Bretagne" 
@@ -790,6 +892,8 @@
 			exclusive="false" 
 			showintoc="true">					
 		</layer>
+	</group>
+	<group name="Equip. sportifs" id="grp_eq_sport" >
 		<layer 
 			id="jeunesse_eq_sport" 
 			name="Densité des équipements sportifs (pour 1000 pers. de 13-29 ans)" 
@@ -858,106 +962,45 @@
 			showintoc="true">		
 			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_sport.mst" />
 		</layer>
-		<layer 
-			id="jeunesse_paej" 
-			name="Permanence et lieu d'accueil PAEJ" 
-			type="wms" 
-			url="https://ows.region-bretagne.fr/geoserver/interne/ows?" 
-			tiled="true" 
-			visible="false" 
-			infoformat="application/vnd.ogc.gml" 
-			style="paej_permanence_accueil" 
-			metadata="" 
-			metadata-csw="" 
-			attribution="Source : Région Bretagne" 
-			queryable="false" 
-			searchable="false" 
-			fusesearchkeys="" 
-			fusesearchresult="" 
-			secure="public" 
-			useproxy="false" 
-			filter="" 
-			sld="" 
-			legendurl="" 
-			featurecount="" 
-			infopanel="right-panel" 
-			opacity=".9" 
-			index="" 
-			styletitle="" 
-			dynamiclegend="false" 
-			toplayer="false" 
-			exclusive="false" 
-			showintoc="true">			
-		</layer>
-		<layer 
-			id="jeunesse_paej" 
-			name="Commune couverte par un PAEJ" 
-			type="wms" 
-			url="https://ows.region-bretagne.fr/geoserver/interne/ows?" 
-			tiled="true" 
-			visible="false" 
-			infoformat="application/vnd.ogc.gml" 
-			fields="commune,structure"
-			aliases="Commune,Structure"
-			style="paej" 
-			metadata="" 
-			metadata-csw="" 
-			attribution="Source : Région Bretagne" 
-			queryable="true" 
-			searchable="false" 
-			fusesearchkeys="" 
-			fusesearchresult="" 
-			secure="public" 
-			useproxy="false" 
-			filter="" 
-			sld="" 
-			legendurl="" 
-			featurecount="" 
-			infopanel="right-panel" 
-			opacity="0.7" 
-			index="" 
-			styletitle="" 
-			dynamiclegend="false" 
-			toplayer="false" 
-			exclusive="false" 
-			showintoc="true">			
-		</layer>
-				<layer 
-			id="maison_ado" 
-			name="Maison des adolescents" 
-			type="wms" 
-			url="https://ows.region-bretagne.fr/geoserver/interne/ows?" 
-			tiled="true" 
-			visible="false" 
-			infoformat="application/vnd.ogc.gml" 
-			fields="commune,maison_ado"
-			aliases="Commune,Nom"
-			style="maison_ado" 
-			metadata="" 
-			metadata-csw="" 
-			attribution="Source : Région Bretagne" 
-			queryable="true" 
-			searchable="false" 
-			fusesearchkeys="" 
-			fusesearchresult="" 
-			secure="public" 
-			useproxy="false" 
-			filter="" 
-			sld="" 
-			legendurl="" 
-			featurecount="" 
-			infopanel="right-panel" 
-			opacity="0.7" 
-			index="" 
-			styletitle="" 
-			dynamiclegend="false" 
-			toplayer="false" 
-			exclusive="false" 
-			showintoc="true">			
-		</layer> 
+	</group>
 	</theme> 
 	<theme id="jeunesse_logement" name="5- Logement" collapsed="true" icon="fas fa-house-user"> 
-		    <layer id="commune_logement_loyer_moyen" name="Loyer moyen par commune et type de logement (€/m², 2022)"  visible="false" tiled="false"
+		<layer 
+			id="jeunesse_caf_epci_al" 
+			name="Nombre de moins de 30 ans bénéficiaires d'une aide au logement" 
+			type="wms" 
+			url="https://ows.region-bretagne.fr/geoserver/rb/ows?" 
+			tiled="false" 
+			visible="false" 
+			expanded = "true"
+			infoformat="application/vnd.ogc.gml" 
+			fields="nom_epci,millesime,type,nb"
+			aliases="EPCI,Année,Allocataire,Effectif"
+			style="jeunesse_caf_epci"
+			stylesalias=""  			
+			timefilter="true" timeinterval="year" timecontrol="slider" timemin="2021" timemax="2023" timevalues="2021,2022,2023"	
+			metadata="https://www.caf.fr/allocataires/aides-et-demarches/droits-et-prestations/logement/les-aides-personnelles-au-logement" 
+			metadata-csw="" 
+			attribution="Source : Caisses d'allocations familiales de Bretagne. Les données présentées correspondent uniquement aux territoires bretons pour les EPCI limitrophes (Redon Agglomération et CAP Atlantique)." 
+			queryable="true" 
+			searchable="false" 			
+			fusesearchkeys="" 
+			fusesearchresult="" 
+			secure="public" 
+			useproxy="false" 
+			legendurl="" 
+			featurecount="" 
+			infopanel="bottom-panel" 
+			opacity=".8" 
+			index="" 
+			styletitle="" 
+			dynamiclegend="false" 
+			toplayer="true" 
+			exclusive="false" 
+			showintoc="true">		
+			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_caf_alloc_epci_al.mst" />					
+		</layer>
+		   <layer id="commune_logement_loyer_moyen" name="Loyer moyen par commune et type de logement (€/m², 2022)"  visible="false" tiled="false"
 	            searchable="false" queryable="true"
 	            infopanel="bottom-panel" exclusive="true" expanded="true"
 	            infoformat="application/vnd.ogc.gml" featurecount="5"
@@ -1534,6 +1577,77 @@
 			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_droits_pauvrete.mst" />					
 		</layer>
 		<layer 
+			id="jeunesse_caf_epci_rsa" 
+			name="Nombre de moins de 30 ans bénéficiaires du RSA" 
+			type="wms" 
+			url="https://ows.region-bretagne.fr/geoserver/rb/ows?" 
+			tiled="false" 
+			visible="false" 
+			expanded = "true"
+			infoformat="application/vnd.ogc.gml" 
+			fields="nom_epci,millesime,type,nb"
+			aliases="EPCI,Année,Allocataire,Effectif"
+			style="jeunesse_caf_epci"
+			stylesalias=""  			
+			timefilter="true" timeinterval="year" timecontrol="slider" timemin="2021" timemax="2023" timevalues="2021,2022,2023"	
+			metadata="https://www.caf.fr/allocataires/aides-et-demarches/droits-et-prestations/vie-professionnelle/le-revenu-de-solidarite-active-rsa" 
+			metadata-csw="" 
+			attribution="Source : Caisses d'allocations familiales de Bretagne. Les données présentées correspondent uniquement aux territoires bretons pour les EPCI limitrophes (Redon Agglomération et CAP Atlantique)." 
+			queryable="true" 
+			searchable="false" 			
+			fusesearchkeys="" 
+			fusesearchresult="" 
+			secure="public" 
+			useproxy="false" 
+			legendurl="" 
+			featurecount="" 
+			infopanel="bottom-panel" 
+			opacity=".8" 
+			index="" 
+			styletitle="" 
+			dynamiclegend="false" 
+			toplayer="true" 
+			exclusive="false" 
+			showintoc="true">		
+			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_droits_pauvrete.mst" />					
+		</layer>
+		<layer 
+			id="jeunesse_caf_epci" 
+			name="Jeunes bénéficiaires d'allocations pour situation de handicap" 
+			type="wms" 
+			url="https://ows.region-bretagne.fr/geoserver/rb/ows?" 
+			tiled="false" 
+			visible="false" 
+			expanded = "true"
+			infoformat="application/vnd.ogc.gml" 
+			fields="nom_epci,millesime,type,nb"
+			aliases="EPCI,Année,Allocataire,Effectif"
+			style="jeunesse_caf_epci"
+			stylesalias=""  			
+			timefilter="true" timeinterval="year" timecontrol="slider" timemin="2021" timemax="2023" timevalues="2021,2022,2023"	
+			attributefilter="true" attributefield="type" attributevalues="Alloc. adulte handicapé de moins de 30 ans,Allocation d'éducation de l'enfant handicapé"  attributelabel="Allocation" attributestylesync="false" attributefilterenabled="true"					
+			metadata="https://www.caf.fr/allocataires/aides-et-demarches/droits-et-prestations/handicap" 
+			metadata-csw="" 
+			attribution="Source : Caisses d'allocations familiales de Bretagne. Les données présentées correspondent uniquement aux territoires bretons pour les EPCI limitrophes (Redon Agglomération et CAP Atlantique)." 
+			queryable="true" 
+			searchable="false" 			
+			fusesearchkeys="" 
+			fusesearchresult="" 
+			secure="public" 
+			useproxy="false" 
+			legendurl="" 
+			featurecount="" 
+			infopanel="bottom-panel" 
+			opacity=".8" 
+			index="" 
+			styletitle="" 
+			dynamiclegend="false" 
+			toplayer="true" 
+			exclusive="false" 
+			showintoc="true">		
+			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_caf_alloc_epci.mst" />							
+		</layer>
+		<layer 
 			id="jeunesse_droits_qpv" 
 			name="Population en QPV (données 2018)"
 			type="wms"
@@ -1675,41 +1789,6 @@
 			exclusive="false" 
 			showintoc="true">	
 			<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/obs_jeunesse/templates/jeunesse_mne_ase.mst" />					
-		</layer>
-		<layer 
-			id="jeunesse_aeeh" 
-			name="Nombre de bénéficiaires de l'allocation d'éducation de l'enfant handicapé (AEEH)" 
-			type="wms" 
-			url="https://ows.region-bretagne.fr/geoserver/interne/ows?" 
-			tiled="true" 
-			visible="false" 
-			infoformat="application/vnd.ogc.gml" 
-			fields="deplib,eff,periode"
-			aliases="Département,Effectif,Période"
-			style="jeunesse_sante_aeeh" 
-			stylesalias="" 
-			metadata="" 
-			metadata-csw="" 
-			attribution="Source : CAF (AEEH : Allocation d'Education de l'Enfant Handicapé)." 
-			queryable="true" 
-			searchable="false" 			
-			timefilter="true" timeinterval="year" timecontrol="slider" timemin="2016" timemax="2022" timevalues="2016,2017,2018,2019,2020,2021,2022"
-			fusesearchkeys="" 
-			fusesearchresult="" 
-			secure="public" 
-			useproxy="false" 
-			filter="" 
-			sld="" 
-			legendurl="" 
-			featurecount="" 
-			infopanel="right-panel" 
-			opacity=".9" 
-			index="" 
-			styletitle="" 
-			dynamiclegend="false" 
-			toplayer="false" 
-			exclusive="false" 
-			showintoc="true">			
 		</layer>
 	</theme>
 	<theme name="Découpages territoriaux"  collapsed="true" id="territoire" icon="fas fa-globe"> 
