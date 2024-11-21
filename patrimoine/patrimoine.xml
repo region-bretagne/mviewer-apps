@@ -32,8 +32,7 @@
     </extensions>
     <proxy url="../proxy/?url="/> <!--Utilisation du proxy pour les couches http ex Carmen-->
     <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par la BAN"/>
-    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="current" />
-    <searchparameters bbox="false" localities="true" features="true"/>
+    <searchparameters bbox="false" localities="true" features="false"/>
     <themes>
        <theme name="Inventaire du patrimoine Bretagne"  collapsed="false" id="inventaire" icon="caret-right"> 
             <layer id="inventaire" name="Rechercher des éléments patrimoniaux" visible="true" queryable="true"
