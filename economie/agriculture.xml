@@ -136,7 +136,80 @@
 		       name="Agriculture biologique"
 		       collapsed="true"
 		       icon="fas fa-caret-right">
-		<group name="Parcelles bio" id="grp_bio" >
+		<group name="Nombre d'exploitations" id="grp_expl" >
+			<layer id="agriculture_nb_expl_cheptels"
+					name="Nombre d'exploitations bio par type de production"
+					type="wms"
+					url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+					timefilter="true" timeinterval="year" timecontrol="slider" timemin="2013" timemax="2023" timevalues="2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023"
+					tiled="false"
+					exclusive="false"
+					visible="false"
+					infoformat="application/vnd.ogc.gml"
+					style="agriculture_expl_bio_type"
+					attributefilter="true" attributefield="productionprincipale" 
+					attributevalues="Apiculture,Bovins lait,Bovins viande,Bovins autres,Caprins,Grandes Cultures,Légumes,Œufs,Ovins Autres,Ovins Viande,Ovins Lait,Porcins,Volaille de chair,Viticulture"  
+					attributelabel="Production principale" attributestylesync="false" attributefilterenabled="true"					
+					stylesalias=""	   
+					queryable="true"
+					fields="commune,productionprincipale,activites,millesime,nboperateur" 
+					aliases="Commune,Production principale,Type(s) d'activité(s),Année,Nombre d'opérateur(s)"
+					attribution="Source : Agence bio (data.gouv)"
+					toplayer="false"
+					expanded="true"
+					infopanel="right-panel"
+					opacity=".7"
+					metadata="https://www.data.gouv.fr/fr/datasets/historique-detaille-des-surfaces-cheptels-et-nombre-doperateurs-par-commune/"
+					metadata-csw="">				   
+			</layer>	
+		</group>
+		<group name="Cheptels bio" id="gpe_cheptel">
+			<layer id="agriculture_cheptel_bio_taille"
+			       name="Cheptels en agriculture biologique par commune"
+			       type="wms"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				   timefilter="true" timeinterval="year" timecontrol="slider" timemin="2013" timemax="2023" timevalues="2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023"
+			       tiled="false"
+			       exclusive="false"
+			       visible="false"
+			       infoformat="application/vnd.ogc.gml"
+			       style="agriculture_cheptel_bio_taille_api,agriculture_cheptel_bio_taille_auvol,agriculture_cheptel_bio_taille_bl,agriculture_cheptel_bio_taille_bv,agriculture_cheptel_bio_taille_ch,agriculture_cheptel_bio_taille_la,agriculture_cheptel_bio_taille_lar,agriculture_cheptel_bio_taille_pc,agriculture_cheptel_bio_taille_po,agriculture_cheptel_bio_taille_tr,agriculture_cheptel_bio_taille_va,agriculture_cheptel_bio_taille_vl"
+			       stylesalias="Apiculture,Autres volailles de chair,Brebis lait,Brebis viande,Chèvres,Lapins,Lapines,Poulets de chair,Poules pondeuses,Truies reproductrices,Vaches allaitantes,Vaches laitières"	   
+			       queryable="true"
+				   fields="commune,code_groupe,millesime,tetesab" 
+				   aliases="Commune,Type de cheptel,Année,Nombre de têtes (ou ruches)"
+				   attribution="Source : Agence bio (data.gouv)"
+			       toplayer="false"
+			       expanded="true"
+			       infopanel="right-panel"
+			       opacity=".7"
+				   metadata="https://www.data.gouv.fr/fr/datasets/historique-detaille-des-surfaces-cheptels-et-nombre-doperateurs-par-commune/"
+				   metadata-csw="">				   
+			</layer>
+			<layer id="agriculture_cheptel_bio_taille_epci"
+			       name="Cheptels en agriculture biologique par intercommunalité"
+			       type="wms"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/ows?"
+				   timefilter="true" timeinterval="year" timecontrol="slider" timemin="2013" timemax="2023" timevalues="2013,2014,2015,2016,2017,2018,2019,2020,2021,2022,2023"
+			       tiled="false"
+			       exclusive="false"
+			       visible="false"
+			       infoformat="application/vnd.ogc.gml"
+			       style="agriculture_cheptel_bio_taille_api_epci,agriculture_cheptel_bio_taille_auvol_epci,agriculture_cheptel_bio_taille_bl_epci,agriculture_cheptel_bio_taille_bv_epci,agriculture_cheptel_bio_taille_ch_epci,agriculture_cheptel_bio_taille_la_epci,agriculture_cheptel_bio_taille_lar_epci,agriculture_cheptel_bio_taille_pc_epci,agriculture_cheptel_bio_taille_po_epci,agriculture_cheptel_bio_taille_tr_epci,agriculture_cheptel_bio_taille_va_epci,agriculture_cheptel_bio_taille_vl_epci"
+			       stylesalias="Apiculture,Autres volailles de chair,Brebis lait,Brebis viande,Chèvres,Lapins,Lapines,Poulets de chair,Poules pondeuses,Truies reproductrices,Vaches allaitantes,Vaches laitières"	   
+			       queryable="true"
+				   fields="nom_epci,code_groupe,millesime,tetesab" 
+				   aliases="Intercommunalité,Type de cheptel,Année,Nombre de têtes (ou ruches)"
+				   attribution="Source : Agence bio (data.gouv)"
+			       toplayer="false"
+			       expanded="true"
+			       infopanel="right-panel"
+			       opacity=".7"
+				   metadata="https://www.data.gouv.fr/fr/datasets/historique-detaille-des-surfaces-cheptels-et-nombre-doperateurs-par-commune/"
+				   metadata-csw="">				   
+			</layer>		
+		</group>
+		<group name="Parcelles bio délcarées à la PAC" id="grp_bio" >
 			<layer id="agriculture_surface_bio_commune"
 			       name="Surface bio par commune et EPCI"
 			       type="wms"
@@ -182,7 +255,7 @@
 				   <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/parcelle_bio_annee.mst"/>	
 			</layer>
 		</group>
-		<group name="Conversions au bio" id="grp_conv" >
+		<group name="Conversions au bio au sens de la PAC" id="grp_conv" >
 			<layer id="agriculture_parcelle_bio_conv_2020"
 			       name="Conversions au bio 2019-2020"
 			       type="wms"
@@ -250,7 +323,7 @@
 				   <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/economie/templates/parcelle_bio_conversion.mst"/>	
 			</layer>
 		</group>
-		<group name="Déconversion depuis le bio" id="grp_deconv" >
+		<group name="Déconversion depuis le bio au sens de la PAC" id="grp_deconv" >
 		<layer id="agriculture_parcelle_bio_deconv_2020"
 			       name="Déconversions depuis le bio 2019-2020"
 			       type="wms"

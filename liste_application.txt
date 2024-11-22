@@ -2,8 +2,10 @@
 ./_region/modele.xml
 ./accessibilite/accessibilite.xml
 ./aeroport/aeroport.xml
+./aeroport/aeroport_els7.xml
 ./aides/aides.xml
 ./ame/ame.xml
+./ame/ame_els7.xml
 ./breizh_bocage/densite.xml
 ./breizh_bocage/structure.xml
 ./breizhgo/lieu_vente.xml
@@ -36,6 +38,7 @@
 ./immobilier/immobilier.xml
 ./immobilier/rec_immobilier.xml
 ./immobilier/arbre.xml
+./immobilier/immobilier_els7.xml
 ./kelenn/gestionnaire_recrutement.xml
 ./kelenn/gestionnaire_rh.xml
 ./kelenn/lingerie.xml
@@ -46,6 +49,7 @@
 ./patrimoine/patrimoine.xml
 ./patrimoine/patrimoine_simple.xml
 ./patrimoine/glad.xml
+./patrimoine/patrimoine_els7.xml
 ./pepci/fibre.xml
 ./perequation/pactes.xml
 ./perequation/perequation.xml
@@ -96,6 +100,8 @@
 ./vn/vn_reseaux.xml
 ./vn/vn_test.xml
 ./vn/vn_adresse.xml
+./vn/vn_1couche_els7.xml
+./vn/vn_2couches_els7.xml
 ./vn/vn_els7.xml
 ./jeunesse/crj.xml
 ./obs_jeunesse/obs_jeunesse_old.xml
@@ -106,6 +112,7 @@
 ./eolien/scenario_07-10-24.xml
 ./eolien/config-06-11.xml
 ./contact_lycee/contact_lycee.xml
+./contact_lycee/contact_lycee_els7.xml
 ./ideo/fonds_geob.xml
 ./ideo/ingenieur.xml
 ./_ARCHIVES/mulette/mulette.xml
