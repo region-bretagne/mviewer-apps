@@ -2,7 +2,10 @@
 	<li class="item" id="{{feature_ol_uid}}">
 		<h2 class="rb-title-feature">{{nom_structure}}</h2>
 			
-			<h4 align="center"> Contact </h4><br>
+			<h4 align="center"> Contact </h4><br><br>
+			{{#tel_bureau}}
+			<img src="https://kartenn.region-bretagne.fr/img/picto/telephone.svg" alt="citoyen" width="15px" /></div> <div align="left"> &nbsp;Bureau : {{tel_bureau}}</div>
+		 {{/tel_bureau}}<br><br>
 		<div style="float : left;">	
 		 {{#tech1}}
 			<img src="https://kartenn.region-bretagne.fr/img/picto/citoyen.svg" alt="citoyen" width="15px" /></div> <div align="left">&nbsp; {{tech1}}</div>
@@ -41,7 +44,33 @@
 		 {{#tel3}}
 			<img src="https://kartenn.region-bretagne.fr/img/picto/telephone.svg" alt="citoyen" width="15px" /></div> <div align="left"> &nbsp; {{tel3}}</div>
 		 {{/tel3}}<br><br>
-			
+		 
+			<div style="float : left;">	
+		 {{#tech4}}
+			<img src="https://kartenn.region-bretagne.fr/img/picto/citoyen.svg" alt="citoyen" width="15px" /></div> <div align="left"> &nbsp; {{tech4}}</div>
+		 {{/tech4}}<br>
+		 <div style="float : left;">	
+		 {{#mail4}}
+			<img src="https://kartenn.region-bretagne.fr/img/picto/enveloppe.svg" alt="citoyen" width="15px" /></div> <div align="left">&nbsp;  {{mail4}}</div>
+		 {{/mail4}}<br>
+		 <div style="float : left;">	
+		 {{#tel4}}
+			<img src="https://kartenn.region-bretagne.fr/img/picto/telephone.svg" alt="citoyen" width="15px" /></div> <div align="left"> &nbsp; {{tel4}}</div>
+		 {{/tel4}}<br><br>
+		 
+		 <div style="float : left;">	
+		 {{#tech5}}
+			<img src="https://kartenn.region-bretagne.fr/img/picto/citoyen.svg" alt="citoyen" width="15px" /></div> <div align="left"> &nbsp; {{tech5}}</div>
+		 {{/tech5}}<br>
+		 <div style="float : left;">	
+		 {{#mail5}}
+			<img src="https://kartenn.region-bretagne.fr/img/picto/enveloppe.svg" alt="citoyen" width="15px" /></div> <div align="left">&nbsp;  {{mail5}}</div>
+		 {{/mail5}}<br>
+		 <div style="float : left;">	
+		 {{#tel5}}
+			<img src="https://kartenn.region-bretagne.fr/img/picto/telephone.svg" alt="citoyen" width="15px" /></div> <div align="left"> &nbsp; {{tel5}}</div>
+		 {{/tel5}}<br><br>
+		 
 	</li>
 {{/features}}
 

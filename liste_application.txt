@@ -20,6 +20,7 @@
 ./bretagne_bzh/pass_creation.xml
 ./bretagne_bzh/port.xml
 ./bretagne_bzh/vn.xml
+./bretagne_bzh/solidarite_internationale.xml
 ./eau/eau.xml
 ./economie/economie.xml
 ./economie/economie_mreport.xml
