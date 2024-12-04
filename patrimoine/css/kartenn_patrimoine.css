@@ -2,33 +2,18 @@
 --------------------------- CSS KARTENN PATRIMOINE  -----------------
 ********************************************************************************/
 @import url("../../_region/crbicon/crbicon.css");
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
-/* Import des fonts*/
-		@font-face {
-		    font-family: 'roboto_black';
-		    src: url('../../_region/font/Roboto/Roboto-Black.ttf');
-		}
-		@font-face {
-		    font-family: 'roboto_bold';
-		    src: url('../../_region/font/Roboto/Roboto-Bold.ttf');
-		}
-		@font-face {
-		    font-family: 'roboto_medium';
-		    src: url('../../_region/font/Roboto/Roboto-Medium.ttf');
-		}
-		@font-face {
-		    font-family: 'roboto_regular';
-		    src: url('../../_region/font/Roboto/Roboto-Regular.ttf');
-		}
-		@font-face {
-		    font-family: 'spotkabold';
-		    src: url('../../_region/font/spotkabold.ttf');
-		}
-		
+@font-face {
+  font-family: 'region_black';
+  src: url("../../_region/font/RB/RegionBretagneNew-Black.ttf"); }
+
 @font-face {
   font-family: 'region_bold';
   src: url("../../_region/font/RB/RegionBretagneNew-Bold.ttf"); }
+
+@font-face {
+  font-family: 'region_medium';
+  src: url("../../_region/font/RB/RegionBretagneNew-Medium.ttf"); }
 
 @font-face {
   font-family: 'region_regular';
@@ -83,7 +68,7 @@ p.navbar-text.mv-title{
 }
 
 .gml-item-title {
-    font-family: 'roboto_regular', Arial, Sans-serif;
+    font-family: 'region_medium', Arial, Sans-serif;
 	color:#BA88A4;
     font-size: 24px;
 }
@@ -98,7 +83,7 @@ p.navbar-text.mv-title{
 }
 
 #right-panel .mv-header h5{
-  font-family: 'roboto_bold', sans-serif;
+  font-family: 'region_bold', sans-serif;
   font-size: 13px;
 }
 
@@ -107,11 +92,11 @@ p.navbar-text.mv-title{
 ********************************/
 
 #sidebar-wrapper a{
-	font-family:'roboto_regular', Arial, Sans-serif;
+	font-family:'region_medium', Arial, Sans-serif;
 }
 
 #menu>li>a{
-	font-family:'roboto_bold', Arial, Sans-serif;
+	font-family:'region_bold', Arial, Sans-serif;
 }
 
 #menu li a:hover{
@@ -136,7 +121,7 @@ p.navbar-text.mv-title{
 ------------- BOTTOM PANEL
 ********************************/
 #bottom-panel .mv-header h5{
-	font-family:'roboto_bold', Arial, Sans-serif;
+	font-family:'region_bold', Arial, Sans-serif;
 	color: #BA88A4;
 	font-size:13px;
 }
@@ -154,19 +139,19 @@ p.navbar-text.mv-title{
 
 #layers-container a {
 	color: #BA88A4;
-	font-family: 'roboto_bold', Arial, Sans-serif;
+	font-family: 'region_bold', Arial, Sans-serif;
 }
 
 .form-group label {
-	font-family: 'roboto_bold', Arial, Sans-serif;
+	font-family: 'region_bold', Arial, Sans-serif;
 }
 
 #layers-container .mv-layer-options p {
-	font-family: 'roboto_regular', Arial, Sans-serif;
+	font-family: 'region_medium', Arial, Sans-serif;
 }
 
 .form-control{
-	font-family: 'roboto_regular', Arial, Sans-serif;
+	font-family: 'region_medium', Arial, Sans-serif;
 	color:#555!important;
 }
 
@@ -177,13 +162,13 @@ p.navbar-text.mv-title{
 /* Sub-title layers */
 .selected-sld.fa span{
   font-style: italic;
-  font-family: 'roboto_regular', Arial, Sans-serif;
+  font-family: 'region_medium', Arial, Sans-serif;
 }
 
 /*Filtres*/
 .selected-attribute.fa span{
   font-style: italic;
-  font-family: 'roboto_regular', Arial, Sans-serif;
+  font-family: 'region_medium', Arial, Sans-serif;
 }
 
 /* Opacité */
@@ -198,7 +183,7 @@ p.navbar-text.mv-title{
 .mv-layer-options .tooltip-inner{
 	background-color:#BA88A4;
 	border-radius: 4px;
-	font-family: 'roboto_regular', Arial, Sans-serif;
+	font-family: 'region_medium', Arial, Sans-serif;
 }
 
 .mv-layer-options .tooltip.top .tooltip-arrow{
@@ -213,7 +198,7 @@ p.navbar-text.mv-title{
 }
 
 .slider.slider-horizontal .slider-tick-label-container{
-	font-family:'roboto_regular', Arial, Sans-serif;
+	font-family:'region_medium', Arial, Sans-serif;
 }
 
 .slider-tick.round.in-selection{
@@ -252,7 +237,7 @@ span.mv-time-player-selection {
 ********************************/
 
 ul#basemapslist p {
-	font-family: 'roboto_regular', Arial, Sans-serif;
+	font-family: 'region_medium', Arial, Sans-serif;
 }
 
 ul#basemapslist  li.active{
@@ -260,7 +245,7 @@ ul#basemapslist  li.active{
 }
 
 .ol-scale-line-inner{
-    font-family: 'roboto_regular', Arial, Sans-serif;
+    font-family: 'region_medium', Arial, Sans-serif;
 }
 
 /*******************************
@@ -268,19 +253,19 @@ ul#basemapslist  li.active{
 ********************************/
 
 h3.title{
-	font-family: 'roboto_regular', Arial, Sans-serif;
+	font-family: 'region_medium', Arial, Sans-serif;
 	font-size: 24px;
 	color:#BA88A4;
 	}
 
 h4.title{
-    font-family: 'roboto_regular', Arial, Sans-serif;
+    font-family: 'region_medium', Arial, Sans-serif;
     font-size: 16px;
     color:#BA88A4;
 }
 
 .info{
-	font-family:'roboto_regular', Arial, Sans-serif;
+	font-family:'region_medium', Arial, Sans-serif;
 	}
 
 .mv-theme.panel-heading{
@@ -288,7 +273,7 @@ h4.title{
 }
 
 h4.panel-title{
-    font-family: 'roboto_regular', Arial, Sans-serif;
+    font-family: 'region_medium', Arial, Sans-serif;
     font-size: 16px;
 	color:#FFFFFF;
 
@@ -302,11 +287,11 @@ h4.panel-title{
 ------------- POPOVER
 ********************************/
 .popover-content{
-	font-family: 'roboto_regular', sans-serif!important;
+	font-family: 'region_medium', sans-serif!important;
 }
 
 .popover-title{
-	font-family: 'roboto_bold', sans-serif!important;
+	font-family: 'region_bold', sans-serif!important;
 }
 
 .popover-content p {
@@ -317,7 +302,7 @@ h4.panel-title{
 ------------- POPUP
 ********************************/
 .popup-content {
-    font-family: 'roboto_regular', Arial, Sans-serif;
+    font-family: 'region_medium', Arial, Sans-serif;
 }
 
 
@@ -362,12 +347,12 @@ h4.panel-title{
 
 .tooltip2 {
   background: #BA88A4;
-  font-family: 'roboto_regular', Arial, Sans-serif;
+  font-family: 'region_medium', Arial, Sans-serif;
 }
 
 .tooltip-measure-static {
   background-color: #BA88A4;
-  font-family: 'roboto_regular', Arial, Sans-serif;
+  font-family: 'region_medium', Arial, Sans-serif;
 }
 
 .tooltip-measure:before,
@@ -384,7 +369,7 @@ h4.panel-title{
     background-color: rgba(51, 51, 51, 0.95);
     padding: 8px 8px 8px;
     color: #fff;
-    font-family: "roboto_regular", Arial, Sans-serif;
+    font-family: "region_medium", Arial, Sans-serif;
     font-size: 12px;
     letter-spacing: 1;
 }
@@ -414,7 +399,7 @@ h4.panel-title{
     background-color: #BA88A4;
     padding: 8px 8px 8px;
     color: #fff;
-    font-family: "roboto_regular", Arial, Sans-serif;
+    font-family: "region_medium", Arial, Sans-serif;
     font-size: 11px;
     letter-spacing: 1;
 }
@@ -438,12 +423,12 @@ h4.panel-title{
 /* Searchresult */
 
 #searchresults{
-	font-family:'roboto_regular',Arial, Sans-serif!important;
+	font-family:'region_medium',Arial, Sans-serif!important;
 	color: #555!important;
 }
 
 ul#searchparameters{
-	font-family: 'roboto_regular',Arial, Sans-serif;
+	font-family: 'region_medium',Arial, Sans-serif;
 }
 
 /* Search toolbar */
@@ -452,18 +437,18 @@ li.geoportail.list-group-item.disabled{
 	background-color:#BA88A4;
 	border-color:#BA88A4;
 	color: white!important;
-	font-family: 'roboto_bold', Arial, Sans-serif!important;
+	font-family: 'region_bold', Arial, Sans-serif!important;
 }
 
 li.elasticsearch.list-group-item.disabled{
 	background-color:#BA88A4!important;
 	border-color:#BA88A4;
 	color: white!important;
-	font-family: 'roboto_bold', Arial, Sans-serif!important;
+	font-family: 'region_bold', Arial, Sans-serif!important;
 }
 
 #searchresults li a:hover{
-	font-family:'roboto_bold', Arial, Sans-serif!important;
+	font-family:'region_bold', Arial, Sans-serif!important;
 	color:#BA88A4!important;
 }
 
@@ -482,7 +467,7 @@ a:hover{
 #parameterspanel .modal-header{
 	color: #333;
 	font-size: 13px;
-	font-family: 'roboto_regular', Arial, Sans-serif!important;
+	font-family: 'region_medium', Arial, Sans-serif!important;
 }
 
 /*******************************
@@ -491,15 +476,15 @@ a:hover{
 
 /* Partager la carte*/
 #sharepanel{
-	font-family:'roboto_regular', Arial, Sans-serif;
+	font-family:'region_medium', Arial, Sans-serif;
 }
 
 a#permalinklink{
-	font-family:'roboto_regular', Arial, Sans-serif;
+	font-family:'region_medium', Arial, Sans-serif;
 }
 
 .modal-content{
-	font-family: 'roboto_regular', Arial, Sans-serif;
+	font-family: 'region_medium', Arial, Sans-serif;
 }
 
 /*******************************
@@ -514,7 +499,7 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn{
 	height:34px;
 	min-width:34px;
 	border: 0px!important;
-	font-family: 'roboto_black', Arial, Sans-serif;
+	font-family: 'region_black', Arial, Sans-serif;
 	color:#BA88A4;
 	font-size: 15px;
 }
@@ -530,7 +515,7 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 /* Help panel */
 
 #help .modal-content{
-	font-family: 'roboto_regular', Arial, Sans-serif!important;
+	font-family: 'region_medium', Arial, Sans-serif!important;
 }
 
 #help .nav-tabs{
@@ -558,26 +543,26 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 
 #help .modal-title{
     font-size: 25px;
-    font-family: 'roboto_bold', Arial, Sans-serif;
+    font-family: 'region_bold', Arial, Sans-serif;
     color: #BA88A4;
 }
 
 #help .tab-pane h4{
-	font-family: 'roboto_bold', Arial, Sans-serif;
+	font-family: 'region_bold', Arial, Sans-serif;
     color: #BA88A4;
     font-size: 22px;
     margin-top: 20px;
 }
 
 #help .tab-pane h5{
-	font-family: 'roboto_bold', Arial, Sans-serif;
+	font-family: 'region_bold', Arial, Sans-serif;
     color: #BA88A4;
     font-size: 16px;
     margin-bottom: 2px;
 }
 
 #help .tab-pane h6{
-	font-family: 'roboto_bold', Arial, Sans-serif;
+	font-family: 'region_bold', Arial, Sans-serif;
     color: #BA88A4;
     font-size: 14px;
     margin-bottom: 2px;
@@ -602,11 +587,11 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 -------------CSS Fiche info GML
 ********************************/
 .gml-item-field-name {
-	font-family: 'roboto_regular', Arial, Sans-serif;
+	font-family: 'region_medium', Arial, Sans-serif;
 }
 
 .gml-item-field-value{
-	font-family: 'roboto_regular', Arial, Sans-serif;
+	font-family: 'region_medium', Arial, Sans-serif;
 }
 
 /*******************************
@@ -654,14 +639,14 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 	line-height:1;
 }
 .rb-text-feature{
-	font-family:"Open Sans";
+	font-family:"region_medium";
 	color:#555;
 	font-size:13px;
 	margin-top:2%;
 	margin-bottom:2%;
 }
 .rb-description-feature{
-	font-family:"Open Sans";
+	font-family:"region_medium";
 	color:#555;
 	font-size:11px;
 	margin:2%;
@@ -677,7 +662,7 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 	border-radius:0.3em;
 	box-sizing: border-box;
 	text-decoration:none;
-	font-family:'OpenSans-Bold',sans-serif;
+	font-family:'region_bold',sans-serif;
 	font-weight:300;
 	color:#FFFFFF;
 	background-color:#BA88A4;
@@ -694,7 +679,7 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 	border-radius:0.3em;
 	box-sizing: border-box;
 	text-decoration:none;
-	font-family:'OpenSans-Bold',sans-serif;
+	font-family:'region_bold',sans-serif;
 	font-weight:300;
 	color:#BA88A4;
 	background-color:#FFFFFF;
@@ -713,7 +698,7 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
   background-color: #BA88A4;
   border-color: #BA88A4;
   color: white;
-  font-family: "roboto_bold", Arial, Sans-serif; }
+  font-family: "region_bold", Arial, Sans-serif; }
 
 .searchresults-title .close,
 .searchresults-title .close:hover,
@@ -728,19 +713,19 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 
 /* Search results */
 #searchresults {
-  font-family: "roboto_regular", Arial, Sans-serif;
+  font-family: "region_medium", Arial, Sans-serif;
   color: #555555; }
   #searchresults a.list-group-item.disabled {
-    font-family: "roboto_bold", Arial, Sans-serif; }
+    font-family: "region_bold", Arial, Sans-serif; }
   #searchresults a:hover {
-    font-family: "roboto_bold", Arial, Sans-serif;
+    font-family: "region_bold", Arial, Sans-serif;
     color: #BA88A4; }
 
 .searchresults-title {
   background-color: #BA88A4;
   border-color: #BA88A4;
   color: white;
-  font-family: "roboto_bold", Arial, Sans-serif; }
+  font-family: "region_bold", Arial, Sans-serif; }
 
 .searchresults-title .close,
 .searchresults-title .close:hover,

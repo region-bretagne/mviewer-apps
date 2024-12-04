@@ -2,20 +2,18 @@
 --------------------------- CSS KARTENN VN  -----------------
 ********************************************************************************/
 @import url("../../_region/crbicon/crbicon.css");
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
-/* Import des fonts*/
-@font-face {
-  font-family: 'roboto_bold';
-  src: url("../../_region/font/Roboto/Roboto-Bold.ttf"); }
 
 @font-face {
-  font-family: 'roboto_regular';
-  src: url("../../_region/font/Roboto/Roboto-Regular.ttf"); }
+  font-family: 'region_black';
+  src: url("../../_region/font/RB/RegionBretagneNew-Black.ttf"); }
 
 @font-face {
   font-family: 'region_bold';
   src: url("../../_region/font/RB/RegionBretagneNew-Bold.ttf"); }
+
+@font-face {
+  font-family: 'region_medium';
+  src: url("../../_region/font/RB/RegionBretagneNew-Medium.ttf"); }
 
 @font-face {
   font-family: 'region_regular';
@@ -45,14 +43,14 @@
 	line-height:1;
 }
 .rb-text-feature{
-	font-family:"Open Sans";
+	font-family:"region_medium";
 	color:#555;
 	font-size:15px;
 	margin-top:2%;
 	margin-bottom:2%;
 }
 .rb-description-feature{
-	font-family:"Open Sans";
+	font-family:"region_medium";
 	color:#555;
 	font-size:13px;
 	margin-top:2%;
@@ -68,7 +66,7 @@
 	border-radius:0.3em;
 	box-sizing: border-box;
 	text-decoration:none;
-	font-family:'OpenSans-Bold',sans-serif;
+	font-family:'region_bold',sans-serif;
 	font-weight:300;
 	color:#FFFFFF;
 	text-align:center;

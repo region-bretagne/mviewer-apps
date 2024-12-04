@@ -2,27 +2,23 @@
 /******************************************************************************
 ------------------------ CSS THEME MVIEWER BRETAGNE BZH ULTRA -----------------
 ******************************************************************************/
-@import url("../../crbicon/crbicon.css");
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
-/*******************************
-------------- FONTS -----------
-********************************/
-@font-face {
-  font-family: 'roboto_bold';
-  src: url("../../global/font/Roboto/Roboto-Bold.ttf"); }
+@import url("../../_region/crbicon/crbicon.css");
 
 @font-face {
-  font-family: 'roboto_regular';
-  src: url("../../global/font/Roboto/Roboto-Regular.ttf"); }
+  font-family: 'region_black';
+  src: url("../../_region/font/RB/RegionBretagneNew-Black.ttf"); }
 
 @font-face {
   font-family: 'region_bold';
-  src: url("../../global/font/RB/RegionBretagneNew-Bold.ttf"); }
+  src: url("../../_region/font/RB/RegionBretagneNew-Bold.ttf"); }
+
+@font-face {
+  font-family: 'region_medium';
+  src: url("../../_region/font/RB/RegionBretagneNew-Medium.ttf"); }
 
 @font-face {
   font-family: 'region_regular';
-  src: url("../../global/font/RB/RegionBretagneNew-Regular.ttf"); }
+  src: url("../../_region/font/RB/RegionBretagneNew-Regular.ttf"); }
 
 /*******************************
 ------------- GENERAL -----------
@@ -44,7 +40,7 @@
   #mv-navbar .mv-title {
     color: white;
     font-size: 18px;
-    font-family: "roboto_bold", Arial, Sans-serif;
+    font-family: "region_bold", Arial, Sans-serif;
     letter-spacing: 0.5px; }
   #mv-navbar .navbar-toggle {
     border-color: #a5b3d9;
@@ -61,18 +57,18 @@
 #map .ol-control button:focus, #map #map .ol-control button:hover {
   background-color: #a5b3d9; }
 #map .ol-scale-line-inner {
-  font-family: "roboto_regular", Arial, Sans-serif; }
+  font-family: "region_medium", Arial, Sans-serif; }
 
 /*******************************
 ------------- LEFT PANEL -------
 ********************************/
 /* thematic title */
 #menu > li > a {
-  font-family: "roboto_bold", Arial, Sans-serif; }
+  font-family: "region_bold", Arial, Sans-serif; }
 
 /* group & layer title */
 #sidebar-wrapper a {
-  font-family: "roboto_regular", Arial, Sans-serif; }
+  font-family: "region_medium", Arial, Sans-serif; }
 
 /* all titles hover */
 #menu li a:hover {
@@ -88,7 +84,7 @@
   background-color: #a5b3d9; }
   #right-panel .mv-header h5 {
     color: white;
-    font-family: "roboto_bold", Arial, Sans-serif;
+    font-family: "region_bold", Arial, Sans-serif;
     font-size: 13px;
     background-color: #a5b3d9; }
 
@@ -97,7 +93,7 @@
 ********************************/
 /* Titre de la couche interrogée active */
 #bottom-panel .mv-header h5 {
-  font-family: "roboto_bold", Arial, Sans-serif;
+  font-family: "region_bold", Arial, Sans-serif;
   color: #a5b3d9;
   font-size: 13px; }
 
@@ -110,7 +106,7 @@
 ------------- INFO FEATURE------
 ********************************/
 .popup-content {
-  font-family: "roboto_regular", Arial, Sans-serif; }
+  font-family: "region_medium", Arial, Sans-serif; }
 
 .popup-content .nav-tabs > li.active > a,
 .popup-content .nav-tabs > li.active > a:hover,
@@ -126,13 +122,13 @@
 -------------CSS Fiche info GML
 ********************************/
 .gml-item-field-name {
-  font-family: "roboto_regular", Arial, Sans-serif; }
+  font-family: "region_medium", Arial, Sans-serif; }
 
 .gml-item-field-value {
-  font-family: "roboto_regular", Arial, Sans-serif; }
+  font-family: "region_medium", Arial, Sans-serif; }
 
 .gml-item-title {
-  font-family: "roboto_regular", Arial, Sans-serif;
+  font-family: "region_medium", Arial, Sans-serif;
   color: #a5b3d9;
   font-size: 24px; }
 
@@ -147,15 +143,15 @@
   /* Temporalité */ }
   #layers-container a {
     color: #a5b3d9;
-    font-family: "roboto_bold", Arial, Sans-serif; }
+    font-family: "region_bold", Arial, Sans-serif; }
   #layers-container .mv-layer-options {
     color: #555555; }
   #layers-container .mv-layer-options p {
-    font-family: "roboto_regular", Arial, Sans-serif; }
+    font-family: "region_medium", Arial, Sans-serif; }
   #layers-container .form-group label {
-    font-family: "roboto_bold", Arial, Sans-serif; }
+    font-family: "region_bold", Arial, Sans-serif; }
   #layers-container .form-control {
-    font-family: "roboto_regular", Arial, Sans-serif;
+    font-family: "region_medium", Arial, Sans-serif;
     color: #555555; }
   #layers-container .datepicker .active {
     background-color: #a5b3d9; }
@@ -166,14 +162,14 @@
   #layers-container .mv-layer-options .tooltip-inner {
     background-color: #a5b3d9;
     border-radius: 4px;
-    font-family: "roboto_regular", Arial, Sans-serif; }
+    font-family: "region_medium", Arial, Sans-serif; }
   #layers-container .mv-layer-options .tooltip.top .tooltip-arrow {
     border-top-color: #a5b3d9; }
   #layers-container .mv-layer-options .form-group-timer .slider-selection {
     background: #a5b3d9;
     -webkit-box-shadow: inset 0 0px 0 rgba(0, 0, 0, 0); }
   #layers-container .slider.slider-horizontal .slider-tick-label-container {
-    font-family: "roboto_regular", Arial, Sans-serif; }
+    font-family: "region_medium", Arial, Sans-serif; }
   #layers-container .slider-tick.round.in-selection {
     background: #a5b3d9;
     background-image: none;
@@ -196,10 +192,10 @@
 ------------- POPOVER
 ********************************/
 body .popover-content {
-  font-family: "roboto_regular", Arial, Sans-serif; }
+  font-family: "region_medium", Arial, Sans-serif; }
 
 body .popover-title {
-  font-family: "roboto_bold", Arial, Sans-serif; }
+  font-family: "region_bold", Arial, Sans-serif; }
 
 /*******************************
 ---------- BASEMAP CONTROL -----
@@ -237,11 +233,11 @@ body .popover-title {
 ********************************/
 .tooltip2 {
   background: #a5b3d9;
-  font-family: "roboto_regular", Arial, Sans-serif; }
+  font-family: "region_medium", Arial, Sans-serif; }
 
 .tooltip-measure-static {
   background-color: #a5b3d9;
-  font-family: "roboto_regular", Arial, Sans-serif; }
+  font-family: "region_medium", Arial, Sans-serif; }
 
 .tooltip-measure:before,
 .tooltip-measure-static:before {
@@ -255,7 +251,7 @@ body .popover-title {
   background-color: #a5b3d9;
   padding: 8px 8px 8px;
   color: white;
-  font-family: "roboto_regular", Arial, Sans-serif;
+  font-family: "region_medium", Arial, Sans-serif;
   font-size: 11px;
   letter-spacing: 1; }
 
@@ -275,26 +271,26 @@ body .popover-title {
   color: #a5b3d9; }
 
 #parameterspanel {
-  font-family: "roboto_regular", Arial, Sans-serif; }
+  font-family: "region_medium", Arial, Sans-serif; }
   #parameterspanel .modal-header {
     color: #555555;
     font-size: 13px; }
 
 /* Search results */
 #searchresults {
-  font-family: "roboto_regular", Arial, Sans-serif;
+  font-family: "region_medium", Arial, Sans-serif;
   color: #555555; }
   #searchresults a.list-group-item.disabled {
-    font-family: "roboto_bold", Arial, Sans-serif; }
+    font-family: "region_bold", Arial, Sans-serif; }
   #searchresults a:hover {
-    font-family: "roboto_bold", Arial, Sans-serif;
+    font-family: "region_bold", Arial, Sans-serif;
     color: #a5b3d9; }
 
 .searchresults-title {
   background-color: #a5b3d9;
   border-color: #a5b3d9;
   color: white;
-  font-family: "roboto_bold", Arial, Sans-serif; }
+  font-family: "region_bold", Arial, Sans-serif; }
 
 .searchresults-title .close,
 .searchresults-title .close:hover,
@@ -305,7 +301,7 @@ body .popover-title {
 
 /* Partager la carte*/
 #sharepanel {
-  font-family: "roboto_regular", Arial, Sans-serif; }
+  font-family: "region_medium", Arial, Sans-serif; }
 
 /*******************************
 ------------- HELP PANEL -----
@@ -326,20 +322,20 @@ body .popover-title {
   color: #a5b3d9; }
 #help .modal-title {
   font-size: 25px;
-  font-family: "roboto_bold", Arial, Sans-serif;
+  font-family: "region_bold", Arial, Sans-serif;
   color: #a5b3d9; }
 #help .tab-pane h4 {
-  font-family: "roboto_bold", Arial, Sans-serif;
+  font-family: "region_bold", Arial, Sans-serif;
   color: #a5b3d9;
   font-size: 22px;
   margin-top: 20px; }
 #help .tab-pane h5 {
-  font-family: "roboto_bold", Arial, Sans-serif;
+  font-family: "region_bold", Arial, Sans-serif;
   color: #a5b3d9;
   font-size: 16px;
   margin-bottom: 2px; }
 #help .tab-pane h6 {
-  font-family: "roboto_bold", Arial, Sans-serif;
+  font-family: "region_bold", Arial, Sans-serif;
   color: #a5b3d9;
   font-size: 14px;
   margin-bottom: 2px; }
@@ -369,7 +365,7 @@ body .popover-title {
   border-left: 1.1em solid #a5b3d9; }
 
 #mv-navbar {
-  font-family: "roboto_bold", Arial, Sans-serif; }
+  font-family: "region_bold", Arial, Sans-serif; }
 
 #mv-navbar.navbar-default .navbar-nav > li > a {
   color: white; }
@@ -382,7 +378,7 @@ body .popover-title {
     /*background: #a5b3d9;*/
     color: white;
     /*padding: 12px 15px;*/
-    font-family: "roboto_regular", Arial, Sans-serif; }
+    font-family: "region_medium", Arial, Sans-serif; }
 
   #legend-modal .modal-header .close,
   #sharepanel .modal-header .close,
@@ -454,14 +450,14 @@ body .popover-title {
 	line-height:1;
 }
 .rb-text-feature{
-	font-family:"Open Sans";
+	font-family:"region_medium";
 	color:#555;
 	font-size:15px;
 	margin-top:2%;
 	margin-bottom:2%;
 }
 .rb-description-feature{
-	font-family:"Open Sans";
+	font-family:"region_medium";
 	color:#555;
 	font-size:13px;
 	margin-top:2%;
@@ -477,7 +473,7 @@ body .popover-title {
 	border-radius:0.3em;
 	box-sizing: border-box;
 	text-decoration:none;
-	font-family:'OpenSans-Bold',sans-serif;
+	font-family:'region_bold',sans-serif;
 	font-weight:300;
 	color:#FFFFFF;
 	background-color:#a5b3d9;
