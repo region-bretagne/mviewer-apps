@@ -107,7 +107,6 @@
 ./obs_jeunesse/obs_jeunesse.xml
 ./eolien/eolien.xml
 ./eolien/eolien_scenario.xml
-./eolien/debug.xml
 ./eolien/scenario_07-10-24.xml
 ./eolien/config-06-11.xml
 ./contact_lycee/contact_lycee.xml
