@@ -45,7 +45,7 @@
 	<theme id="aides_annees" name="Ensemble des aides régionales" collapsed="false" icon="far fa-money-bill-alt">
 	
 	
-	<layer id="bretagne_5" name="Bretagne à 5" visible="true" tiled="false" namespace="rb"
+	<layer id="bretagne_5" name="Bretagne à 5" visible="true" tiled="true" namespace="rb"
 				queryable="false" 
 				showintoc="false"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
@@ -53,7 +53,7 @@
 				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72"
 				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72" >  
             </layer>
-            <layer id="departement_metro" name="Département" visible="true" tiled="false" namespace="rb"
+            <layer id="departement_metro" name="Département" visible="true" tiled="true" namespace="rb"
 				queryable="false"
                 showintoc="false"
 				url="https://geobretagne.fr/geoserver/ign/wms" 
@@ -62,7 +62,7 @@
 				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/c8884cac-bc25-41a0-92d1-b6566c86066e"
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c8884cac-bc25-41a0-92d1-b6566c86066e" >
             </layer>
-			<layer id="aide_iles" name="Iles hors intercommunalités" visible="true" tiled="false" namespace="interne"
+			<layer id="aide_iles" name="Iles hors intercommunalités" visible="true" tiled="true" namespace="interne"
 				queryable="true"
                 showintoc="false"
 				infoformat="application/vnd.ogc.gml"
@@ -79,7 +79,7 @@
 				name="Montant des aides par habitants"
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
-				tiled="false"
+				tiled="true"
 				visible="true"
 				style="at_mission_annee_hab"
 				infoformat="application/vnd.ogc.gml"
@@ -93,8 +93,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022,2023"
-				timemax="2023"
+				timevalues="2018,2019,2020,2021,2022,2023,2024"
+				timemax="2024"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_totales_hab.mst"></template>
 				</layer>
@@ -105,7 +105,7 @@
 				name="Montant des aides"
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
-				tiled="false"
+				tiled="true"
 				visible="true"
 				style="at_montant_annee"
 				infoformat="application/vnd.ogc.gml"
@@ -119,8 +119,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022,2023"
-				timemax="2023"
+				timevalues="2018,2019,2020,2021,2022,2023,2024"
+				timemax="2024"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_totales.mst"></template>
 				</layer>
@@ -142,7 +142,7 @@
 				name="Montant par année et par hab."
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
-				tiled="false"
+				tiled="true"
 				visible="true"
 				style="at_mission_1_hab"
 				infoformat="application/vnd.ogc.gml"
@@ -156,8 +156,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022,2023"
-				timemax="2023"
+				timevalues="2018,2019,2020,2021,2022,2023,2024"
+				timemax="2024"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
 				</layer>
@@ -166,7 +166,7 @@
 				name="Montant par année"
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
-				tiled="false"
+				tiled="true"
 				visible="true"
 				style="at_mission_1"
 				infoformat="application/vnd.ogc.gml"
@@ -180,8 +180,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022,2023"
-				timemax="2023"
+				timevalues="2018,2019,2020,2021,2022,2023,2024"
+				timemax="2024"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
 				</layer>
@@ -195,7 +195,7 @@
 				name="Montant par année et par hab."
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
-				tiled="false"
+				tiled="true"
 				visible="true"
 				attribution="Montant : montant voté &lt;/br&gt;Date : date du vote initial &lt;/br&gt;Population de référence : dernier millésime Insee" 
 				style="at_mission_2_hab"
@@ -209,8 +209,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022,2023"
-				timemax="2023"
+				timevalues="2018,2019,2020,2021,2022,2023,2024"
+				timemax="2024"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
 				</layer>
@@ -219,7 +219,7 @@
 				name="Montant par année"
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
-				tiled="false"
+				tiled="true"
 				visible="true"
 				style="at_mission_2"
 				infoformat="application/vnd.ogc.gml"
@@ -233,8 +233,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022,2023"
-				timemax="2023"
+				timevalues="2018,2019,2020,2021,2022,2023,2024"
+				timemax="2024"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
 				</layer>
@@ -247,7 +247,7 @@
 				name="Montant par année et par hab."
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
-				tiled="false"
+				tiled="true"
 				visible="true"
 				style="at_mission_3_hab"
 				infoformat="application/vnd.ogc.gml"
@@ -261,8 +261,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022,2023"
-				timemax="2023"
+				timevalues="2018,2019,2020,2021,2022,2023,2024"
+				timemax="2024"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
 				</layer>
@@ -271,7 +271,7 @@
 				name="Montant par année"
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
-				tiled="false"
+				tiled="true"
 				visible="true"
 				style="at_mission_3"
 				infoformat="application/vnd.ogc.gml"
@@ -285,8 +285,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022,2023"
-				timemax="2023"
+				timevalues="2018,2019,2020,2021,2022,2023,2024"
+				timemax="2024"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
 				</layer>
@@ -301,7 +301,7 @@
 				name="Montant par année et par hab."
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
-				tiled="false"
+				tiled="true"
 				visible="true"
 				style="at_mission_4_hab"
 				infoformat="application/vnd.ogc.gml"
@@ -315,8 +315,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022,2023"
-				timemax="2023"
+				timevalues="2018,2019,2020,2021,2022,2023,2024"
+				timemax="2024"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
 				</layer>
@@ -325,7 +325,7 @@
 				name="Montant par année"
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
-				tiled="false"
+				tiled="true"
 				visible="true"
 				style="at_mission_4"
 				infoformat="application/vnd.ogc.gml"
@@ -339,8 +339,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022,2023"
-				timemax="2023"
+				timevalues="2018,2019,2020,2021,2022,2023,2024"
+				timemax="2024"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
 				</layer>
@@ -354,7 +354,7 @@
 				type="wms"
 				attribution="Montant : montant voté &lt;/br&gt;Date : date du vote initial &lt;/br&gt;Population de référence : dernier millésime Insee" 
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
-				tiled="false"
+				tiled="true"
 				visible="true"
 				style="at_mission_5_hab"
 				infoformat="application/vnd.ogc.gml"
@@ -367,8 +367,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022,2023"
-				timemax="2023"
+				timevalues="2018,2019,2020,2021,2022,2023,2024"
+				timemax="2024"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
 				</layer>
@@ -377,7 +377,7 @@
 				name="Montant par année"
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
-				tiled="false"
+				tiled="true"
 				visible="true"
 				style="at_mission_5"
 				infoformat="application/vnd.ogc.gml"
@@ -391,8 +391,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022,2023"
-				timemax="2023"
+				timevalues="2018,2019,2020,2021,2022,2023,2024"
+				timemax="2024"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
 				</layer>
@@ -405,7 +405,7 @@
 				name="Montant par année et par hab."
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
-				tiled="false"
+				tiled="true"
 				attribution="Montant : montant voté &lt;/br&gt;Date : date du vote initial &lt;/br&gt;Population de référence : dernier millésime Insee" 
 				visible="true"
 				style="at_mission_6_hab"
@@ -419,8 +419,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022,2023"
-				timemax="2023"
+				timevalues="2018,2019,2020,2021,2022,2023,2024"
+				timemax="2024"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
 				</layer>
@@ -429,7 +429,7 @@
 				name="Montant par année"
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
-				tiled="false"
+				tiled="true"
 				visible="true"
 				style="at_mission_6"
 				infoformat="application/vnd.ogc.gml"
@@ -443,8 +443,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022,2023"
-				timemax="2023"
+				timevalues="2018,2019,2020,2021,2022,2023,2024"
+				timemax="2024"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
 				</layer>
@@ -457,7 +457,7 @@
 				name="Montant par année et par hab."
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
-				tiled="false"
+				tiled="true"
 				visible="true"
 				style="at_mission_7_hab"
 				infoformat="application/vnd.ogc.gml"
@@ -471,8 +471,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022,2023"
-				timemax="2023"
+				timevalues="2018,2019,2020,2021,2022,2023,2024"
+				timemax="2024"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
 				</layer>
@@ -481,7 +481,7 @@
 				name="Montant par année"
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
-				tiled="false"
+				tiled="true"
 				visible="true"
 				style="at_mission_7"
 				attribution="Montant : montant voté &lt;/br&gt;Date : date du vote initial" 
@@ -495,8 +495,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022,2023"
-				timemax="2023"
+				timevalues="2018,2019,2020,2021,2022,2023,2024"
+				timemax="2024"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
 				</layer>
@@ -509,7 +509,7 @@
 				name="Montant par année et par hab."
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
-				tiled="false"
+				tiled="true"
 				visible="true"
 				style="at_mission_8_hab"
 				infoformat="application/vnd.ogc.gml"
@@ -523,8 +523,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022,2023"
-				timemax="2023"
+				timevalues="2018,2019,2020,2021,2022,2023,2024"
+				timemax="2024"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
 				</layer>
@@ -533,7 +533,7 @@
 				name="Montant par année"
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
-				tiled="false"
+				tiled="true"
 				visible="true"
 				style="at_mission_8"
 				infoformat="application/vnd.ogc.gml"
@@ -547,8 +547,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022,2023"
-				timemax="2023"
+				timevalues="2018,2019,2020,2021,2022,2023,2024"
+				timemax="2024"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
 				</layer>
@@ -561,7 +561,7 @@
 				name="Montant par année et par hab."
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
-				tiled="false"
+				tiled="true"
 				visible="true"
 				attribution="Montant : montant voté &lt;/br&gt;Date : date du vote initial &lt;/br&gt;Population de référence : dernier millésime Insee" 
 				style="at_mission_9_hab"
@@ -575,8 +575,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022,2023"
-				timemax="2023"
+				timevalues="2018,2019,2020,2021,2022,2023,2024"
+				timemax="2024"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission_hab.mst"></template>
 				</layer>
@@ -585,7 +585,7 @@
 				name="Montant par année"
 				type="wms"
 				url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
-				tiled="false"
+				tiled="true"
 				visible="true"
 				style="at_mission_9"
 				infoformat="application/vnd.ogc.gml"
@@ -599,8 +599,8 @@
 				timeinterval="year"
 				timecontrol="slider"
 				timemin="2018"
-				timevalues="2018,2019,2020,2021,2022,2023"
-				timemax="2023"
+				timevalues="2018,2019,2020,2021,2022,2023,2024"
+				timemax="2024"
 				infopanel="bottom-panel">
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/aides/templates/aides_mission.mst"></template>
 				</layer>

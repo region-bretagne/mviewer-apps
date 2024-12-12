@@ -23,7 +23,7 @@
     togglealllayersfromtheme="false"
 	stats="true" statsurl="../ws/kartenn/log.php" >
 </application>
-<mapoptions maxzoom="20" projection="EPSG:3857" center="-267476,6139625" zoom="9" />
+<mapoptions maxzoom="22" projection="EPSG:3857" center="-267476,6139625" zoom="9" />
 <searchparameters bbox="false" localities="true" features="false" static="false"/>
 <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par l'API adresse.data.gouv.fr"/>
 <baselayers style="default"> 
