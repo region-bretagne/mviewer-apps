@@ -23,6 +23,7 @@
                 infoformat="application/vnd.ogc.gml" featurecount="1" queryable="true" searchable="true"
                 url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 				style="aire_educative_nature,ame_statut,ame_structure" stylesalias="Nature,Statut,Type de structure référente"
+				attributefilter="true" attributefield ="nature" attributevalues="AME,ATE" attributelabel="Filtre Aire marine-Aire terrestre"
                 attribution="Source: Région Bretagne" 
                 metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
                 metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9fbbae5d-4f2b-4691-916a-6acdbdf24b2d" >	   
