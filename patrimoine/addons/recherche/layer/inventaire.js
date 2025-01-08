@@ -23,6 +23,7 @@ mviewer.customLayers.inventaire = (function () {
             }
             return properties;
         };
+		
         data.hits.hits.forEach(function(item) {
             var properties = getProperties(item._source);
             var prop = {};
@@ -132,6 +133,7 @@ mviewer.customLayers.inventaire = (function () {
         xhr.onload = function() {
             if (xhr.status == 200) {
                 var json = JSON.parse(xhr.responseText);
+
                 var message = "* Affichage complet - " + json.hits.total + " éléments";
                 if (json.hits.total >  json.hits.hits.length) {
                     message = "Affichage partiel : zoomer ou filtrer " ;
@@ -149,6 +151,8 @@ mviewer.customLayers.inventaire = (function () {
             }
         }
         xhr.send(geofilter);
+										debugger;
+
     };
 
 

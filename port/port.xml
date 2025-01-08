@@ -107,7 +107,7 @@
             </layer>
 		</theme>
 		<theme name="Foncier"  id="Foncier" collapsed="true" icon="square">
-		    <layer id="za_terrain" name="AUDELOR terrain"  visible="false" tiled="false"
+		    <layer id="t_za_terrain" name="AUDELOR terrain"  visible="false" tiled="false"
 				queryable="true" fields="" aliases=""
 				infoformat="text/html" featurecount="10"
 				opacity="1" useproxy="true"
@@ -116,7 +116,7 @@
 				metadata=""
 				metadata-csw="" />
 				
-		    <layer id="zone_activite" name="AUDELOR zone activité"  visible="false" tiled="false"
+		    <layer id="v_zone_activite" name="AUDELOR zone activité"  visible="false" tiled="false"
 				queryable="true" 
 				infoformat="text/html" featurecount="10"
 				opacity="1" useproxy="true"
