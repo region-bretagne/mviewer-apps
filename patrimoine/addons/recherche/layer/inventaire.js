@@ -151,8 +151,6 @@ mviewer.customLayers.inventaire = (function () {
             }
         }
         xhr.send(geofilter);
-										debugger;
-
     };
 
 
