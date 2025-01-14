@@ -64,6 +64,7 @@
 ./structure_orientation/structure_orientation.xml
 ./territoire/territoire.xml
 ./territoire/territoire_superset.xml
+./territoire/communes_nouvelles.xml
 ./test/api.xml
 ./test/cadastre_mos.xml
 ./test/exemple.xml
