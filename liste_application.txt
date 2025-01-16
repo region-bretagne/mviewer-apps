@@ -51,6 +51,7 @@
 ./patrimoine/patrimoine_simple.xml
 ./patrimoine/glad.xml
 ./patrimoine/patrimoine_els7.xml
+./patrimoine/patrimoine_simple_els7.xml
 ./pepci/fibre.xml
 ./perequation/pactes.xml
 ./perequation/perequation.xml
