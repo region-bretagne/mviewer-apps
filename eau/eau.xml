@@ -192,7 +192,7 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.passe_poisson_vn.mst"></template>
 			</layer>							
 			<layer id="bief" name="Voies navigables Région (Biefs)" visible="false" tiled="false" namespace="rb"
-				searchable="true" queryable="true" fields="nom" aliases="Nom"
+				searchable="false" queryable="true" fields="nom" aliases="Nom"
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="" 

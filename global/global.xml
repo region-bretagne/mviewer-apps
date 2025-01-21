@@ -24,7 +24,6 @@
     </baselayers> 
     <authentification url="who" loginurl="?login" logouturl="../j_spring_security_logout" enabled="true"/>
     <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par l'API adresse.data.gouv.fr"/>
-    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="current"/>
     <searchparameters bbox="true" localities="true" features="true"/>
 	
     <extensions>    
@@ -37,7 +36,7 @@
     <themes>
         <theme name="Formation"  id="formation" collapsed="true" icon="graduation-cap">
             <layer id="lycee" name="Lycées formation"  visible="false" tiled="false"
-                searchable="false" queryable="true" fields="axe" aliases="axe" 
+                queryable="true" fields="axe" aliases="axe" 
                 attributefilter="true" attributefield="secteur_li" 
 				attributevalues="Public,Privé sous contrat avec l'éducation nationale"  attributelabel="Secteur" attributestylesync="false" attributefilterenabled="false"  
                 infoformat="application/vnd.ogc.gml" featurecount="20"
@@ -49,7 +48,7 @@
                 <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.lycee.mst"></template> 
 		    </layer> 
             <layer id="lycee" name="Lycées"  visible="false" tiled="false"
-                searchable="false" queryable="true" fields="axe" aliases="axe" 
+                queryable="true" fields="axe" aliases="axe" 
                 attributefilter="true" attributefield="secteur_li" 
 				attributevalues="Public,Privé sous contrat avec l'éducation nationale"  attributelabel="Secteur" attributestylesync="false" attributefilterenabled="false"  
                 infoformat="application/vnd.ogc.gml" featurecount="20"
@@ -63,7 +62,7 @@
 		</theme>
         <theme name="Transport collectif régional"  collapsed="true" id="transport" icon="train">
         	<layer id="arret_ferroviaire" name="Arrêts ferroviaires régionaux"  visible="false" tiled="false" 
-				searchable="true" queryable="true" fields="" aliases=""                    
+				 queryable="true" fields="" aliases=""                    
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				style="arret_ferroviaire_defaut, arret_ferroviaire_nature, arret_ferroviaire_tgv"
 				stylesalias="Par défaut,Nature des arrêts ferroviaires, Arrêts desservis par le TGV"
@@ -75,7 +74,7 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.arret_ferroviaire.mst"></template>
             </layer>
 			<layer id="pem" name="Pôles d'échanges multimodaux"  visible="false" tiled="false"
-				searchable="false" queryable="true" fields="nom" aliases="nom"
+				queryable="true" fields="nom" aliases="nom"
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				style="transports_pem_defaut"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
@@ -93,7 +92,7 @@
 				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=b8927600-5b49-11de-b5dc-0000c0a8230c">
 			</layer>  
 			<layer id="arret_reseau_breizhgo_car" name="Arrêts du réseau BreizhGo"  visible="false" tiled="false" 
-				searchable="false" queryable="true"
+				queryable="true"
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 				attribution="Région Bretagne" 
@@ -102,7 +101,7 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/transport/templates/transport.arret_breizhgo.mst"></template>
 			</layer>
             <layer id="reseau_breizhgo_car" name="Réseau Breizh Go"  visible="false" tiled="false" 
-				searchable="false" queryable="true" 
+				queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 				attribution="Région Bretagne" 
@@ -114,7 +113,7 @@
         </theme>
         <theme name="Transport aérien"  collapsed="true" id="avion" icon="plane">
         	<layer id="aeroports" name="Aéroports et aérodromes"  visible="false" tiled="false"
-				searchable="false" queryable="true" fields="axe" aliases="axe"
+				queryable="true" fields="axe" aliases="axe"
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				sld="https://kartenn.region-bretagne.fr/styles/aeroport.sld" 
 				url="https://geobretagne.fr/geoserver/dreal_b/ows"
@@ -127,7 +126,7 @@
         </theme>
         <theme name="Transport maritime"  collapsed="true" id="maritime" icon="far fa-life-ring">
 			<layer id="port" name="Ports"  visible="false" tiled="false"
-				searchable="false" queryable="true"
+				queryable="true"
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 				attribution="Source: Région Bretagne" 
@@ -136,7 +135,7 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.port.mst"></template>
 			</layer>
 			<layer id="liaison_maritime" name="Liaisons maritime assurées par la Région"  visible="false" tiled="false"
-				searchable="false" queryable="true" fields="nom" aliases="nom"   
+				queryable="true" fields="nom" aliases="nom"   
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 				attribution="Source: Région Bretagne" 
@@ -145,7 +144,7 @@
         </theme>	
         <theme name="Transport fluvial"  collapsed="true" id="fluvial" icon="ship"> 
 			<layer id="ecluse" name="Ecluse" visible="false" tiled="false" dynamiclegend="true"
-				queryable="true" searchable="true" infoformat="application/vnd.ogc.gml" featurecount="20"
+				queryable="true"  infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="ecluse_style,ecluse_proprietaire" stylesalias="Défaut,Propriétaire"
 				attribution="Région Bretagne" 
@@ -165,7 +164,7 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/equipement.mst"></template>
 			</layer>												
 			<layer id="equipement_vn" name="Sanitaires" visible="false" tiled="false" 
-				queryable="true" searchable="true" 
+				queryable="true"  
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="equipement_sanitaire_wc,equipement_sanitaire_douche" stylesalias="WC,Douche" 
@@ -175,7 +174,7 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/equipement.mst"></template>
 			</layer>							
 			<layer id="equipement_vn" name="Bornes multiservices" visible="false" tiled="false" 
-				queryable="true" searchable="true" 
+				queryable="true"  
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="borne_multiservice,equipement_borne_eau_navigant,equipement_borne_electricite,equipement_borne_eu" stylesalias="Defaut,Eau navigant,Electricité,Eaux usées" 
@@ -207,7 +206,7 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/equipement.mst"></template>
 			</layer>		
 			<layer id="equipement_vn" name="Quai et ponton" visible="false" tiled="false" 
-				queryable="true" searchable="true" 
+				queryable="true"  
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 				style="quai" 
@@ -272,7 +271,7 @@
         </theme>        
         <theme name="Espaces naturels"  collapsed="true" id="nature" icon="leaf"> 
             <layer id="reserve_naturelle_regionale" name="Réserves naturelles régionales"  visible="false" tiled="false"
-				searchable="false" queryable="true" fields="axe" aliases="axe"   
+				queryable="true" fields="axe" aliases="axe"   
 				infoformat="application/vnd.ogc.gml" featurecount="1"
 				sld="https://kartenn.region-bretagne.fr/styles/reserve_naturelle.sld" 
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
@@ -283,7 +282,7 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.reserve_naturelle_reg.mst"></template>
 		    </layer> 
 		    <layer id="parc_naturel_regional" name="Parcs naturels régionaux"  visible="false" tiled="false"
-				searchable="false" queryable="true" fields="axe" aliases="axe" 
+				queryable="true" fields="axe" aliases="axe" 
 				infoformat="application/vnd.ogc.gml" featurecount="1"
 				style="pnr_defaut" 
 				stylesalias=""
@@ -416,7 +415,7 @@
 					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.espace_territorial.mst"></template>
 				</layer>
 				<layer id="bassin_vie_bretagne" name="Bassin de vie"  visible="false" tiled="false"
-		            searchable="false" queryable="true"		                
+		            queryable="true"		                
 	                infoformat="application/vnd.ogc.gml" featurecount="20"
 	                url="https://geobretagne.fr/geoserver/insee/wms"
 	                attribution="Sources: INSEE - GéoBretagne | 2012" 
@@ -425,7 +424,7 @@
 	                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.bassin_vie.mst"></template>
 		        </layer>		        
 		        <layer id="n_unites_urbaines" name="Unité urbaine"  visible="false" tiled="false"
-                    searchable="false" queryable="true"
+                    queryable="true"
                     infoformat="application/vnd.ogc.gml" featurecount="20"     
                     url="https://geobretagne.fr/geoserver/dreal_b/ows"
                     sld="https://kartenn.region-bretagne.fr/styles/unite_urbaine.sld"  
@@ -435,7 +434,7 @@
 		            <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.unite_urbaine.mst"></template>
 		        </layer>
 		        <layer id="l_aires_attraction_villes" name="Aire d'attraction des villes"  visible="false" tiled="false"
-					searchable="false" queryable="true"
+					queryable="true"
 					infoformat="application/vnd.ogc.gml" featurecount="20"
 					style=""
                     url="https://geobretagne.fr/geoserver/dreal_b/ows"
@@ -445,7 +444,7 @@
 					<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/templates/global.aire_attraction_ville.mst"></template>
 		        </layer>
 		        <layer id="zone_emploi_bretagne" name="Zone d'emploi"  visible="false" tiled="false"
-                    searchable="false" queryable="true" fields="axe" aliases="axe"
+                    queryable="true" fields="axe" aliases="axe"
                     infoformat="application/vnd.ogc.gml" featurecount="20"     
                     url="https://geobretagne.fr/geoserver/insee/ows" 
                     sld="https://kartenn.region-bretagne.fr/styles/zone_emploi.sld" 

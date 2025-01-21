@@ -477,7 +477,7 @@
         <theme name="Transports"  collapsed="true" id="transport" icon="fas fa-bus">            
             <group name="Transport ferroviaire" id="grp1" >                
                 <layer id="arret_ferroviaire" name="Arrêts ferroviaires régionaux"  visible="false" tiled="false" 
-                    searchable="true" queryable="true" fields="" aliases="" secure="true"                   
+                    searchable="false" queryable="true" fields="" aliases="" secure="true"                   
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     style="arret_ferroviaire_defaut, arret_ferroviaire_nature, arret_ferroviaire_tgv"
                     stylesalias="Par défaut,Nature des arrêts ferroviaires, Arrêts desservis par le TGV"

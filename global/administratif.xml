@@ -26,7 +26,6 @@
     </baselayers> 
     <proxy url=""/>
     <olscompletion url="https://wxs.ign.fr/bth43bbhz4oga1hosf94bre2/ols/apis/completion"/>
-    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" doctypes="unite_administrative" linkid="search_id" querymode="match" version="current" />
     <searchparameters bbox="false" localities="true" features="true" static="true"/>
 	<widgets>
        <!--<widget name="gauge"/>-->       

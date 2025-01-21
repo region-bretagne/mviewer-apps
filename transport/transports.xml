@@ -36,7 +36,7 @@
         <theme name="Infrastructures de transports"  collapsed="false" id="transport" icon="fas fa-train">            
             <group name="Transports ferroviaires" id="grp1" >
             	<layer id="arret_ferroviaire" name="Arrêts ferroviaires régionaux"  visible="true" tiled="false" 
-                    searchable="true" queryable="true" fields="" aliases="" 
+                    searchable="false" queryable="true" fields="" aliases="" 
                     infoformat="application/vnd.ogc.gml" featurecount="20"
                     style="transports_arret_ferr_defaut, transports_arret_ferr_borne,transports_arret_ferr_guichet,transports_arret_ferr_info_dynami,transports_arret_ferr_nature,transports_arret_ferr_parking,transports_arret_ferr_velo,transports_arret_ferr_pmr,transports_arret_ferr_tgv"
                     stylesalias="Par défaut, Distributeur automatique de billet, Guichet, Information dynamique,Nature des arrêts ferroviaires,Parking voiture,Parking vélo, Assistance PMR, Arrêts desservis par le TGV"
