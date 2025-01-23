@@ -1,0 +1,12 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h3 class="rb-title-feature">{{activite}}</h3>
+		<p class="rb-text-feature">
+			<span style="font-weight:bold">Commune :</span> {{commune}}<br/>
+			<span style="font-weight:bold">Description :</span> {{description}}<br/>
+			{{#site_web}}<br/><a href="{{site_web}}" target="_blank"><button class="rb-but-link" >Site internet</button></a><br/><br/>{{/site_web}}
+						<span style="font-weight:bold">Services :</span>{{services}} <br/>
+
+		</p>
+	</li>
+{{/features}}

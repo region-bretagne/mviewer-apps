@@ -1,0 +1,13 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h3 class="rb-title-feature">Bief : {{nom}}</h3>
+		<p class="rb-text-feature date">		
+			<span style="font-weight:bold"> Date du sondage :</span> {{date_text}} <br>
+			
+			  </p>
+	</li>
+{{/features}}
+
+<style>
+@import url("https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/css/vn_mst.css");
+</style>

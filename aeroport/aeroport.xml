@@ -30,7 +30,11 @@
 <mapoptions maxzoom="20" projection="EPSG:3857" center="-343799.49824816175,6150523.462789579" zoom="7.333333333333334" maxextent="-612195.2149177382,5975799.307272314,-75403.78157858533,6325247.6183068445"/>
 <proxy url='../proxy/?url='/>
 
-    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="current"/>
+	<elasticsearchs>
+		<elasticsearch url="https://ows.region-bretagne.fr/els/occupation_domaniale_aeroport/_search" geometryfield="location" linkid="search_id" querymode="match" 
+			version="7.17" geometryformat="WKT" mouseoverfields="title" displayfields="title" layer="occupation_domaniale_aeroport"/>
+	</elasticsearchs>
+
     <searchparameters bbox="false" localities="false" features="true"/>
 	
 <baselayers style="default"> 

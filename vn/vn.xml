@@ -21,7 +21,16 @@
     <authentification url="who" loginurl="?login" logouturl="../logout" enabled="true"/>
     <proxy url="../proxy/?url="/><!--Utilisation du proxy pour les couches http ex Carmen-->
     <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par l'API adresse.data.gouv.fr"/>
-    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="current" />
+	<elasticsearchs>
+		<elasticsearch url="https://ows.region-bretagne.fr/els/batiment_vn/_search" geometryfield="location" linkid="search_id" querymode="match" 
+			version="7.17" geometryformat="WKT" mouseoverfields="title" displayfields="title" layer="batiment_vn"/>
+		<elasticsearch url="https://ows.region-bretagne.fr/els/equipement_vn/_search" geometryfield="location" linkid="search_id" querymode="match" 
+			version="7.17" geometryformat="WKT" mouseoverfields="title" displayfields="title" layer="equipement_vn"/>
+		<elasticsearch url="https://ows.region-bretagne.fr/els/ecluse_trafic/_search" geometryfield="location" linkid="search_id" querymode="match" 
+			version="7.17" geometryformat="WKT" mouseoverfields="title" displayfields="title" layer="ecluse_trafic"/>
+		<elasticsearch url="https://ows.region-bretagne.fr/els/bief/_search" geometryfield="location" linkid="search_id" querymode="match" 
+			version="7.17" geometryformat="WKT" mouseoverfields="title" displayfields="title" layer="bief"/>
+	</elasticsearchs>
     <searchparameters bbox="false" localities="true" features="true"/>
 
     <extensions>    
@@ -143,7 +152,7 @@
         </theme> 
         <theme name="Equipements"  collapsed="true" id="equipement" icon="fas fa-plug"> 
 			<layer id="equipement_vn" name="Mobiliers" visible="false" tiled="false" 
-				queryable="true" searchable="true" 
+				queryable="true" searchable="false" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="equipement_mobilier" stylesalias="Type" 
@@ -187,7 +196,7 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/equipement.mst"></template>
 			</layer>												
 			<layer id="equipement_vn" name="Sanitaires" visible="false" tiled="false" 
-				queryable="true" searchable="true" expanded="true"
+				queryable="true" searchable="false" expanded="true"
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" styletitle="Type de sanitaire"
 				style="equipement_sanitaire_wc,equipement_sanitaire_douche" stylesalias="WC,Douche" 
@@ -197,7 +206,7 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/equipement.mst"></template>
 			</layer>							
 			<layer id="equipement_vn" name="Bornes multiservices" visible="false" tiled="false" 
-				queryable="true" searchable="true" 
+				queryable="true" searchable="false" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="borne_multiservice,equipement_borne_eau_navigant,equipement_borne_electricite,equipement_borne_eu" stylesalias="Defaut,Eau navigant,Electricité,Eaux usées" 
@@ -208,7 +217,7 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/equipement.mst"></template>
 			</layer>
 			<layer id="equipement_vn" name="Distributeur de badges" visible="false" tiled="false" 
-				queryable="true" searchable="true" 
+				queryable="true" searchable="false" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="equipement_distributeur_badge" 
@@ -230,7 +239,7 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/equipement.mst"></template>
 			</layer>		
 			<layer id="equipement_vn" name="Quai et ponton" visible="false" tiled="false" 
-				queryable="true" searchable="true" 
+				queryable="true" searchable="false" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
 				style="quai" 
@@ -241,7 +250,7 @@
 				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/equipement.mst"></template>
 			</layer>		
 			<layer id="equipement_vn" name="Ponton d'attente" visible="false" tiled="false" 
-				queryable="true" searchable="true" 
+				queryable="true" searchable="false" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				style="ponton_attente" 
@@ -283,16 +292,6 @@
         </theme> 
         <theme name="Infrastructures"  collapsed="true" id="infrastructures" icon="fas fa-ship"> 
 		<group name="Voies navigables" id="vn">
-			<!--Couche écluse trasparente pour la recherche-->
-			<!--<layer id="ecluse" name="Ecluse" visible="true" tiled="false" 
-				searchable="true" 
-				url="https://ows.region-bretagne.fr/geoserver/rb/wms"
-				style="transparent" infoformat="application/vnd.ogc.gml"
-				attribution="Région Bretagne" 
-				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=774a2065-339f-4802-a50f-4b84b6ca249f"
-				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/774a2065-339f-4802-a50f-4b84b6ca249f"> 
-				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/templates/vn.ecluse.mst"></template>
-			</layer>-->
 			<layer id="ecluse_trafic" name="Ecluse" visible="true" tiled="false" dynamiclegend="true"
 				queryable="true" infoformat="application/vnd.ogc.gml" featurecount="20"
 				timefilter="true" timeinterval="year" timecontrol="slider" timemin="2008" timemax="2023" timevalues="2008,2010,2011,2013,2015,2017,2019,2021,2023"
@@ -444,7 +443,7 @@
         </theme> 
 		<theme name="Domanialité"  collapsed="true" id="domanialite" icon="fas fa-wrench"> 
 			<layer id="maison_eclusiere_aap" name="Activités maisons éclusières" visible="false" tiled="false" 
-				searchable="true" queryable="true" secure="true"
+				queryable="true" secure="true"
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="../geoserver-proxy/interne/wms" 
 				attribution="Région Bretagne" 
@@ -1039,7 +1038,7 @@
 	
 			<theme name="hydrographie"  collapsed="true" id="hydro" icon="fas fa-tint">
 			<layer id="azibretagne" name="Atlas des zones inondables" visible="false" tiled="false" 
-				searchable="true" queryable="true" 
+				queryable="true" 
 				infoformat="application/vnd.ogc.gml" featurecount="20"
 				url="https://geobretagne.fr/geoserver/dreal_b/azibretagne/wms" 
 				attribution="Région Bretagne" 
@@ -1055,7 +1054,7 @@
 				<!-- metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/f3368c03-6636-4284-ae43-9acdb076285e">   -->
 			<!-- </layer> -->
 			<layer id="zones_humides" name="Zones humides" visible="false" tiled="true" 
-				searchable="true" queryable="false" scalemax="50000" scalemin="0"
+				queryable="false" scalemax="50000" scalemin="0"
 				infoformat="application/vnd.ogc.gml" featurecount="1"
 				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
 				attribution=""

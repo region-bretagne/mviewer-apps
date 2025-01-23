@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <application panelstate="open" coordinates="false" title="Région Bretagne - Offre de formation" 
+		logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/formation/img/QUALIF_Emploi_RB_RVB.jpg" 
+		help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" 
+		exportpng="true" legend="true" measuretools="false" legendasimage="false" popup="false" print="false" 
+		style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/formation/css/kartenn.css" stats="true" statsurl="../ws/kartenn/log.php" />
+    <mapoptions maxzoom="20" projection="EPSG:3857" center="-255418,6120890" zoom="9" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
+
+	<baselayers style="gallery">           		
+        <baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="Orthophoto IGN" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
+            url="https://data.geopf.fr/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
+            attribution="&lt;a href='https://geoservices.ign.fr/services-web-essentiels/' target='_blank'>&lt;img src='https://geoservices.ign.fr/themes/custom/ignpro/logo.svg' width=100px>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+		<baselayer visible="true" id="osm_gge" thumbgallery="img/basemap/osmGGE.png" title="OpenStreetMap GéoGrandEst" label="OpenStreetMap GéoGrandEst" type="WMS" 
+			url="https://osm.datagrandest.fr/mapcache/?" layers="grey" format="image/png" 
+            attribution="DataGrandEst. Données : les contributeurs d'&lt;a href='https://www.openstreetmap.org/' target='_blank'>OpenStreetMap &lt;/a>,  &lt;a href='https://www.openstreetmap.org/copyright' target='_blank'>ODbL &lt;/a>"/>
+        <baselayer  type="WMTS" id="plan" label="Plan IGN" title="GéoPortail" maxscale="2000" thumbgallery="img/basemap/plan_ign.png" opacity="0.8"
+            url="https://data.geopf.fr/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2" format="image/png" visible="false" fromcapacity="false"
+            attribution="&lt;a href='https://geoservices.ign.fr/services-web-essentiels/' target='_blank'>&lt;img src='https://geoservices.ign.fr/themes/custom/ignpro/logo.svg' width=100px>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+    </baselayers> 
+    <authentification url="who" loginurl="?login" logouturl="../j_spring_security_logout" enabled="true"/>
+    <!---Activation du proxy nécessaire pour couches externes à GéoBretagne et la région <proxy url="../proxy/?url="/>-->
+    <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par l'API adresse.data.gouv.fr"/>
+    <!--<elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="current"/>-->
+    <searchparameters bbox="true" localities="true" features="false"/>
+	
+  
+    
+
+    <themes>
+	
+		<theme name="Formations"  collapsed="false" id="Formation" icon="fas fa-graduation-cap"> 
+            <layer id="offre_formation" name="Toutes formations"  visible="true" tiled="false"
+                searchable="false" queryable="true" fields="intitule,sous_domaine,marche,lot,code_posta_session,commune_session,dpt,organisme" expanded="true" exclusive="true" aliases=",Sous_domaine,Marche,Lot,Code postal,Commune,Département,Organisme" 
+                attributefilter="true" attributefield="sous_domaine" 
+				attributevalues="01-1 Productions Agricoles - Agroéquipement,01-2 Productions Horticoles Et Maraichage,01-3 Aménagement Paysagers Et Travaux Forestiers,02-1 Navigation,02-2 Mareyage Et Poissonnerie,03-1 Construction Et Maintenance Nautique,03-2 Services Nautiques,04-1 Etudes Bâtiment - Génie Civil,04-2 Gros Œuvre - Maçonnerie,04-3 Second Œuvre,04-4 Aménagement Bois - Toit Et Ossature,04-5 Travaux Publics,04-6 Eco-Construction - Patrimoine,04-7 Maintenance Des Bâtiments,05-1 Plomberie - Chauffage - Climatisation Et Froid,05-3 Electricité - Fibre Optique,06-1 Etude Automatisation Et Conception,06-2 Métiers De La Métallurgie,06-3 Productions Industrielles-Maintenance-Mécanique Industrielle,08-1 Hôtellerie,08-2 Restauration,08-3 Tourisme,09-1 Animation,09-2 Sport,09-3 Activités Nautiques,11-1 Enseignement De La Conduite,11-2 Logistique,11-3 Transports,11-4 Maintenance Des Véhicules Et Carroserie,12-1 Gestion - Comptabilité - Rh - Secrétariat,12-4 Formation - Insertion,13.1 Métiers Techniques Du Numérique,13.2 Création Et Conception Numérique,13.3 Marketing Et Communication Digitale,13.4 Cybersécurité - Data - Ia,14.1 Distribution,14.2 Développement Commercial,14-3 Commerce Artisanal Et De Détail,16-2 Social-Educatif,16-3 Accompagnement Des Personnes À Domicile Et En Structure,18-1 Environnement - Valorisation Des Déchets-Réemploi,18-2 Propreté,18-3 Sécurité - Proximité,19-1 Art Et Design,19-2 Audiovisuel,19-3 Spectacle Vivant"  attributelabel="Sous domaine" attributestylesync="false" attributefilterenabled="false" 
+                infoformat="application/vnd.ogc.gml" featurecount="70"
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source: Région Bretagne" 
+                metadata=""
+                metadata-csw="" >	  
+               <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/formation/templates/formation.mst"></template> 				
+		    </layer> 
+			
+		</theme>
+	
+	
+	
+        <theme name="Formations par domaine"  collapsed="false" id="offre_formation" icon="fas fa-graduation-cap"> 
+            <layer id="offre_formation" name="01 - Agriculture - Horticulture - Paysage"  visible="false" tiled="false"
+                searchable="false" queryable="true" fields="intitule,sous_domaine,marche,lot,code_posta_session,commune_session,dpt,organisme" expanded="true" exclusive="true" aliases=",Sous_domaine,Marche,Lot,Code postal,Commune,Département,Organisme" 
+                attributefilter="true" attributefield="sous_domaine" 
+				attributevalues="01-1 Productions Agricoles - Agroéquipement,01-2 Productions Horticoles Et Maraichage,01-3 Aménagement Paysagers Et Travaux Forestiers"  attributelabel="Sous domaine"  attributestylesync="false" attributefilterenabled="false" 
+                infoformat="application/vnd.ogc.gml" featurecount="20"
+                style="offre_formation_01"
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source: Région Bretagne" 
+                metadata=""
+                metadata-csw="" >	  
+               <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/formation/templates/formation.mst"></template> 				
+		    </layer> 
+			
+            <layer id="offre_formation" name="02 - Pêche - Transports Maritimes - Elevages Aquacoles"  visible="false" tiled="false"
+                searchable="false" queryable="true" fields="intitule,sous_domaine,marche,lot,code_posta_session,commune_session,dpt,organisme" expanded="true" exclusive="true" aliases=",Sous_domaine,Marche,Lot,Code postal,Commune,Département,Organisme"
+                attributefilter="true" attributefield="sous_domaine" 
+				attributevalues="02-1 Navigation,02-2 Mareyage Et Poissonnerie"  attributelabel="Sous domaine" attributestylesync="false" attributefilterenabled="false" 
+                infoformat="application/vnd.ogc.gml" featurecount="20"
+                style="offre_formation_02"
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source: Région Bretagne" 
+                metadata=""
+                metadata-csw="" >	  
+               <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/formation/templates/formation.mst"></template> 				
+		    	   
+		    </layer>	
+			
+            <layer id="offre_formation" name="03 - Nautisme"  visible="false" tiled="false"
+                searchable="false" queryable="true" fields="intitule,sous_domaine,marche,lot,code_posta_session,commune_session,dpt,organisme" expanded="true" exclusive="true" aliases=",Sous_domaine,Marche,Lot,Code postal,Commune,Département,Organisme"
+                attributefilter="true" attributefield="sous_domaine" 
+				attributevalues="03-1 Construction Et Maintenance Nautique,03-2 Services Nautiques"  attributelabel="Sous domaine"  attributestylesync="false" attributefilterenabled="false" 
+                infoformat="application/vnd.ogc.gml" featurecount="20"
+                style="offre_formation_03"
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source: Région Bretagne" 
+                metadata=""
+                metadata-csw="" >		  
+               <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/formation/templates/formation.mst"></template> 				
+		       
+		    </layer>	
+			
+            <layer id="offre_formation" name="04 - Bâtiment - Travaux Publics"  visible="false" tiled="false"
+                searchable="false" queryable="true" fields="intitule,sous_domaine,marche,lot,code_posta_session,commune_session,dpt,organisme" expanded="true" exclusive="true" aliases=",Sous_domaine,Marche,Lot,Code postal,Commune,Département,Organisme"
+                attributefilter="true" attributefield="sous_domaine" 
+				attributevalues="04-1 Etudes Bâtiment - Génie Civil,04-2 Gros Œuvre - Maçonnerie,04-3 Second Œuvre,04-4 Aménagement Bois - Toit Et Ossature,04-5 Travaux Publics,04-6 Eco-Construction - Patrimoine,04-7 Maintenance Des Bâtiments"  attributelabel="Sous domaine" attributestylesync="false" attributefilterenabled="false" 
+                infoformat="application/vnd.ogc.gml" featurecount="20"
+                style="offre_formation_04"
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source: Région Bretagne" 
+                metadata=""
+                metadata-csw="" >	  
+               <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/formation/templates/formation.mst"></template> 				
+		    	   
+		    </layer>	
+			
+            <layer id="offre_formation" name="05 - Métiers De L'énergie"  visible="false" tiled="false"
+                searchable="false" queryable="true" fields="intitule,sous_domaine,marche,lot,code_posta_session,commune_session,dpt,organisme" expanded="true" exclusive="true" aliases=",Sous_domaine,Marche,Lot,Code postal,Commune,Département,Organisme"
+                attributefilter="true" attributefield="sous_domaine" 
+				attributevalues="05-1 Plomberie - Chauffage - Climatisation Et Froid,05-3 Electricité - Fibre Optique"  attributelabel="Sous domaine"  attributestylesync="false" attributefilterenabled="false" 
+                infoformat="application/vnd.ogc.gml" featurecount="20"
+                style="offre_formation_05"
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source: Région Bretagne" 
+                metadata=""
+                metadata-csw="" >	  
+               <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/formation/templates/formation.mst"></template> 				
+		    	   
+		    </layer>	
+			
+            <layer id="offre_formation" name="06 - Industries"  visible="false" tiled="false"
+                searchable="false" queryable="true" fields="intitule,sous_domaine,marche,lot,code_posta_session,commune_session,dpt,organisme" expanded="true" exclusive="true" aliases=",Sous_domaine,Marche,Lot,Code postal,Commune,Département,Organisme"
+                attributefilter="true" attributefield="sous_domaine" 
+				attributevalues="06-1 Etude Automatisation Et Conception,06-2 Métiers De La Métallurgie,06-3 Productions Industrielles-Maintenance-Mécanique Industrielle"  attributelabel="Sous domaine" attributestylesync="false" attributefilterenabled="false" 
+                infoformat="application/vnd.ogc.gml" featurecount="20"
+                style="offre_formation_06"
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source: Région Bretagne" 
+                metadata=""
+                metadata-csw="" >	  
+               <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/formation/templates/formation.mst"></template> 				
+		    	   
+		    </layer>	
+			
+            <layer id="offre_formation" name="08 - Hôtellerie - Restauration - Tourisme"  visible="false" tiled="false"
+                searchable="false" queryable="true" fields="intitule,sous_domaine,marche,lot,code_posta_session,commune_session,dpt,organisme" expanded="true" exclusive="true" aliases=",Sous_domaine,Marche,Lot,Code postal,Commune,Département,Organisme"
+                attributefilter="true" attributefield="sous_domaine" 
+				attributevalues="08-1 Hôtellerie,08-2 Restauration,08-3 Tourisme"  attributelabel="Sous domaine"  attributestylesync="false" attributefilterenabled="false" 
+                infoformat="application/vnd.ogc.gml" featurecount="20"
+                style="offre_formation_08"
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source: Région Bretagne" 
+                metadata=""
+                metadata-csw="" >	  
+               <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/formation/templates/formation.mst"></template> 				
+		    	   
+		    </layer>	
+			
+            <layer id="offre_formation" name="09 - Sport - Animation"  visible="false" tiled="false"
+                searchable="false" queryable="true" fields="intitule,sous_domaine,marche,lot,code_posta_session,commune_session,dpt,organisme" expanded="true" exclusive="true" aliases=",Sous_domaine,Marche,Lot,Code postal,Commune,Département,Organisme"
+                attributefilter="true" attributefield="sous_domaine" 
+				attributevalues="09-1 Animation,09-2 Sport,09-3 Activités Nautiques"  attributelabel="Sous domaine"  attributestylesync="false" attributefilterenabled="false" 
+                infoformat="application/vnd.ogc.gml" featurecount="20"
+                style="offre_formation_09"
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source: Région Bretagne" 
+                metadata=""
+                metadata-csw="" >	  
+               <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/formation/templates/formation.mst"></template> 				
+		    	   
+		    </layer>	
+					
+            <layer id="offre_formation" name="11 - Transports - Logistique"  visible="false" tiled="false"
+                searchable="false" queryable="true" fields="intitule,sous_domaine,marche,lot,code_posta_session,commune_session,dpt,organisme" expanded="true" exclusive="true" aliases=",Sous_domaine,Marche,Lot,Code postal,Commune,Département,Organisme"
+                attributefilter="true" attributefield="sous_domaine" 
+				attributevalues="11-1 Enseignement De La Conduite,11-2 Logistique,11-3 Transports,11-4 Maintenance Des Véhicules Et Carroserie"  attributelabel="Sous domaine"  attributestylesync="false" attributefilterenabled="false" 
+                infoformat="application/vnd.ogc.gml" featurecount="20"
+                style="offre_formation_11"
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source: Région Bretagne" 
+                metadata=""
+                metadata-csw="" >	  
+               <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/formation/templates/formation.mst"></template> 				
+		    	   
+		    </layer>	
+			
+            <layer id="offre_formation" name="12 - Gestion - Comptabilité - Formation"  visible="false" tiled="false"
+                searchable="false" queryable="true" fields="intitule,sous_domaine,marche,lot,code_posta_session,commune_session,dpt,organisme" expanded="true" exclusive="true" aliases=",Sous_domaine,Marche,Lot,Code postal,Commune,Département,Organisme"
+                attributefilter="true" attributefield="sous_domaine" 
+				attributevalues="12-1 Gestion - Comptabilité - Rh - Secrétariat,12-4 Formation - Insertion"  attributelabel="Sous domaine" attributestylesync="false" attributefilterenabled="false" 
+                infoformat="application/vnd.ogc.gml" featurecount="20"
+                style="offre_formation_12"
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source: Région Bretagne" 
+                metadata=""
+                metadata-csw="" >	  
+               <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/formation/templates/formation.mst"></template> 				
+		    	   
+		    </layer>	
+			
+            <layer id="offre_formation" name="13 - Numérique - Digitalisation"  visible="false" tiled="false"
+                searchable="false" queryable="true" fields="intitule,sous_domaine,marche,lot,code_posta_session,commune_session,dpt,organisme" expanded="true" exclusive="true" aliases=",Sous_domaine,Marche,Lot,Code postal,Commune,Département,Organisme"
+                attributefilter="true" attributefield="sous_domaine" 
+				attributevalues="13.1 Métiers Techniques Du Numérique,13.2 Création Et Conception Numérique,13.3 Marketing Et Communication Digitale,13.4 Cybersécurité - Data - Ia"  attributelabel="Sous domaine" attributestylesync="false" attributefilterenabled="false" 
+                infoformat="application/vnd.ogc.gml" featurecount="20"
+                style="offre_formation_13"
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source: Région Bretagne" 
+                metadata=""
+                metadata-csw="" >	  
+               <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/formation/templates/formation.mst"></template> 				
+		    	   
+		    </layer>	
+			
+            <layer id="offre_formation" name="14 - Commerce - Vente"  visible="false" tiled="false"
+                searchable="false" queryable="true" fields="intitule,sous_domaine,marche,lot,code_posta_session,commune_session,dpt,organisme" expanded="true" exclusive="true" aliases=",Sous_domaine,Marche,Lot,Code postal,Commune,Département,Organisme"
+                attributefilter="true" attributefield="sous_domaine" 
+				attributevalues="14.1 Distribution,14.2 Développement Commercial,14-3 Commerce Artisanal Et De Détail"  attributelabel="Sous domaine" attributestylesync="false" attributefilterenabled="false" 
+                infoformat="application/vnd.ogc.gml" featurecount="20"
+                style="offre_formation_14"
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source: Région Bretagne" 
+                metadata=""
+                metadata-csw="" >	  
+               <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/formation/templates/formation.mst"></template> 				
+		    	   
+		    </layer>	
+			
+            <layer id="offre_formation" name="16 - Sanitaire Et Social"  visible="false" tiled="false"
+                searchable="false" queryable="true" fields="intitule,sous_domaine,marche,lot,code_posta_session,commune_session,dpt,organisme" expanded="true" exclusive="true" aliases=",Sous_domaine,Marche,Lot,Code postal,Commune,Département,Organisme"
+                attributefilter="true" attributefield="sous_domaine" 
+				attributevalues="16-2 Social-Educatif,16-3 Accompagnement Des Personnes À Domicile Et En Structure"  attributelabel="Sous domaine" attributestylesync="false" attributefilterenabled="false" 
+                infoformat="application/vnd.ogc.gml" featurecount="20"
+                style="offre_formation_16"
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source: Région Bretagne" 
+                metadata=""
+                metadata-csw="" >	  
+               <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/formation/templates/formation.mst"></template> 				
+		    	   
+		    </layer>	
+			
+            <layer id="offre_formation" name="18 - Environnement - Propreté - Sécurité"  visible="false" tiled="false"
+                searchable="false" queryable="true" fields="intitule,sous_domaine,marche,lot,code_posta_session,commune_session,dpt,organisme" expanded="true" exclusive="true" aliases=",Sous_domaine,Marche,Lot,Code postal,Commune,Département,Organisme"
+                attributefilter="true" attributefield="sous_domaine" 
+				attributevalues="18-1 Environnement - Valorisation Des Déchets-Réemploi,18-2 Propreté,18-3 Sécurité - Proximité"  attributelabel="Sous domaine" attributestylesync="false" attributefilterenabled="false" 
+                infoformat="application/vnd.ogc.gml" featurecount="20"
+                style="offre_formation_18"
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source: Région Bretagne" 
+                metadata=""
+                metadata-csw="" >	  
+               <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/formation/templates/formation.mst"></template> 				
+		    	   
+		    </layer>	
+			
+            <layer id="offre_formation" name="19 - Arts - Design - Spectacle - Audiovisuel"  visible="false" tiled="false"
+                searchable="false" queryable="true" fields="intitule,sous_domaine,marche,lot,code_posta_session,commune_session,dpt,organisme" expanded="true" exclusive="true" aliases=",Sous_domaine,Marche,Lot,Code postal,Commune,Département,Organisme"
+                attributefilter="true" attributefield="sous_domaine" 
+				attributevalues="19-1 Art Et Design,19-2 Audiovisuel,19-3 Spectacle Vivant"  attributelabel="Sous domaine" attributestylesync="false" attributefilterenabled="false" 
+                infoformat="application/vnd.ogc.gml" featurecount="20"
+                style="offre_formation_19"
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source: Région Bretagne" 
+                metadata=""
+                metadata-csw="" >	  
+               <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/formation/templates/formation.mst"></template> 				
+		    	   
+		    </layer>
+			
+	
+			
+			
+			
+			
+			
+			
+			
+			<layer id="departement" name="Département-" visible="true" queryable="false" 
+				showintoc="false"
+                aliases="Nom" 
+                type="customlayer" style="" opacity="0.5" legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/img/departement.png" 
+                url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/customlayers/departement.js" 
+                tooltip="true" tooltipenabled="true"
+                attribution="Source: GéoBretagne" 
+                metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/e16d50d4-746d-44e3-a5e7-5fc000f97665" 
+                metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=e16d50d4-746d-44e3-a5e7-5fc000f97665"/> 
+            
+			
+			<layer id="epci" name="Intercommunalité" visible="true" queryable="false" 
+                fields="nom_epci" aliases="Nom" toplayer="true"
+                type="customlayer" style="" opacity="1" legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/img/epci.png" 
+                url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/customlayers/epci.js" 
+                tooltip="true" tooltipenabled="true"
+								showintoc="false"
+
+                attribution="Source: GéoBretagne" 
+                metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/2298d744-49cb-4fcb-9487-26f916fecdff" 
+                metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=2298d744-49cb-4fcb-9487-26f916fecdff"/> 
+			
+			
+			<!-- <layer id="epci" name="Intercommunalité" visible="true" queryable="false"  -->
+                <!-- aliases="Nom"  showintoc="false" -->
+                <!-- type="customlayer" style="" opacity="0.5" legendurl="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/img/epci.png"  -->
+                <!-- url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/customlayers/epci.js"  -->
+                <!-- tooltip="true" tooltipenabled="true" -->
+                <!-- attribution="Source: GéoBretagne"  -->
+                <!-- metadata="https://geobretagne.fr/geonetwork/srv/eng/catalog.search?node=srv#/metadata/2298d744-49cb-4fcb-9487-26f916fecdff"  -->
+                <!-- metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=2298d744-49cb-4fcb-9487-26f916fecdff"/>				 -->
+			<layer id="bretagne_5" name="Bretagne à 5" visible="true" tiled="false"
+				queryable="false" 
+				showintoc="false"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attribution="Source : IGN - Admin Express" 
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72" >  
+			</layer>
+			<layer id="departement_metro" name="Département" visible="true" tiled="false"
+				queryable="false"
+				showintoc="false"
+				url="https://geobretagne.fr/geoserver/ign/wms" 
+				style="bretagne_5_style" 
+				attribution="SSource : IGN - Admin Express" 
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/c8884cac-bc25-41a0-92d1-b6566c86066e"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c8884cac-bc25-41a0-92d1-b6566c86066e" >
+			</layer>
+
+		</theme>
+
+    </themes>
+    <styles>
+        <selectionstyle>
+            <point radius="12" fillcolor="26, 188, 156" opacity="0" strokecolor="26, 188, 156" strokewidth="4" />
+            <line opacity="0.6" strokecolor="26, 188, 156" strokewidth="8" />
+            <polygon fillcolor="26, 188, 156" opacity="0" strokecolor="26, 188, 156" strokewidth="4" />
+        </selectionstyle>
+        <subselectionstyle>
+            <point radius="12" fillcolor="175, 122, 197" opacity="0.5" strokecolor="175, 122, 197" strokewidth="4" />
+            <line opacity="0.8" strokecolor="175, 122, 197"  strokewidth="8" />
+            <polygon fillcolor="175, 122, 197" opacity="0.2" strokecolor="175, 122, 197" strokewidth="6" />
+        </subselectionstyle>
+    </styles>
+
+</config>

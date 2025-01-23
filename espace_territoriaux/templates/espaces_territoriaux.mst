@@ -1,0 +1,47 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{nom_et}}</h2><br>
+		<img src="{{photo}}" /> <br>
+		<div style=" font-size: 20px; color: #2F476C"> Directeur.ice</div>
+		
+		<p class="rb-text-feature">		
+			<b> {{prenom_directeur}}	{{nom_directeur}} </b><br><br>
+			<b>Adresse :</b><br> {{adresse}} <br> {{cp}} {{commune}}	<br>
+			<b>Contact :</b> {{contact}} <br>
+		</p>
+		<div style=" font-size:20px; color: #2F476C">Caractéristiques</div>
+		<p class="rb-text-feature">		
+			
+			<b>Nombre d'agents :</b> {{nombre_agent}} <br>
+			<b>Population :</b> {{population}} <br>
+			<b>Superficie :</b> {{superficie}} <br>
+			<b>Nombre d'EPCI :</b> {{nb_epci}} <br>
+			<b>Nombre de communes :</b> {{nb_commune}} <br>
+			
+
+		<!-- </p> -->
+		<!-- <div style=" font-size: 20px; color: #2F476C">Elu.e.s</div> -->
+		<!-- <p class="rb-text-feature">	 -->
+			<!-- {{elu}} -->
+		<!-- <ul> -->
+          <!-- {{#elu}}<li>{{.}}</li>{{/elu}} -->
+      <!-- </ul> -->
+		<!-- </p> -->
+		
+	
+
+	</li>
+{{/features}}
+
+<style>
+
+		#titre{
+			
+  background-color: #ddd;
+  opacity: .8;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size: 15px;
+}
+		
+</style>

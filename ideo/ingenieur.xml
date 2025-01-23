@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <application panelstate="open" coordinates="false" title="Formation ingénieur" id="ideo_ingenieur" 
+		logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/img/rb_blanc.svg" 
+		help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" 
+		exportpng="true" legend="true" measuretools="false" legendasimage="false" popup="false" print="false" 
+		style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ideo/css/ingenieur.css"/>
+    <mapoptions maxzoom="20" projection="EPSG:3857" center="-255418,6120890" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
+
+	<baselayers style="gallery">           		
+        <baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="Orthophoto IGN" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
+            url="https://data.geopf.fr/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
+            attribution="&lt;a href='https://geoservices.ign.fr/services-web-essentiels/' target='_blank'>&lt;img src='https://geoservices.ign.fr/themes/custom/ignpro/logo.svg' width=100px>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+		<baselayer visible="true" id="osm_gge" thumbgallery="img/basemap/osmGGE.png" title="OpenStreetMap GéoGrandEst" label="OpenStreetMap GéoGrandEst" type="WMS" 
+			url="https://osm.datagrandest.fr/mapcache/?" layers="grey" format="image/png" 
+            attribution="DataGrandEst. Données : les contributeurs d'&lt;a href='https://www.openstreetmap.org/' target='_blank'>OpenStreetMap &lt;/a>,  &lt;a href='https://www.openstreetmap.org/copyright' target='_blank'>ODbL &lt;/a>"/>
+        <baselayer  type="WMTS" id="plan" label="Plan IGN" title="GéoPortail" maxscale="2000" thumbgallery="img/basemap/plan_ign.png" opacity="0.8"
+            url="https://data.geopf.fr/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2" format="image/png" visible="false" fromcapacity="false"
+            attribution="&lt;a href='https://geoservices.ign.fr/services-web-essentiels/' target='_blank'>&lt;img src='https://geoservices.ign.fr/themes/custom/ignpro/logo.svg' width=100px>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+    </baselayers> 
+    <authentification url="who" loginurl="?login" logouturl="../j_spring_security_logout" enabled="true"/>
+    <!---Activation du proxy nécessaire pour couches externes à GéoBretagne et la région <proxy url="../proxy/?url="/>-->
+    <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par l'API adresse.data.gouv.fr"/>
+    <!--<elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="current"/>-->
+    <searchparameters bbox="true" localities="true" features="false"/>
+	
+	<extensions>
+        <extension type="component" id="filter" path="apps/region/ideo/addons"/>
+		<extension type="component" id="fullscreen" path="demo/addons"/>
+	</extensions>
+    
+
+    <themes>
+        <theme name="Formation"  collapsed="false" id="formation" icon="globe"> 
+            <layer id="ideo_ingenieur" name="Ecole d'ingénieur"  visible="true" tiled="false" type="customlayer"
+                infoformat="application/vnd.ogc.gml" featurecount="100" queryable="true" exclusive="true" expanded="false" vectorlegend="true"
+                url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ideo/customlayers/ideo_ingenieur.js"
+                attribution="Source: Région Bretagne"
+				metadata-csw=""
+				metadata="" >  
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ideo/templates/ingenieur.mst"></template> 
+		    </layer> 
+
+			<!-- <layer id="ideo_ingenieur" name="Niveau de recrutement"  visible="true" tiled="false" expanded="true" -->
+                <!-- searchable="false" queryable="true" fields="axe" aliases="axe" exclusive="true" -->
+                <!-- attributefilter="true" attributefield="niveau_recrutement"  -->
+				<!-- attributevalues="bac,bac+2,bac / bac+2"  attributelabel="Niveau de recrutement" attributestylesync="false" attributefilterenabled="false"   -->
+                <!-- infoformat="application/vnd.ogc.gml" featurecount="20" -->
+                <!-- style="ideo_ingenieur_niveau_recrutement" -->
+                <!-- url="https://ows.region-bretagne.fr/geoserver/interne/wms"  -->
+                <!-- attribution="Source: Idéo "  -->
+                <!-- metadata="" -->
+                <!-- metadata-csw="" >	    -->
+                <!-- <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ideo/templates/ingenieur.mst"></template>  -->
+		    <!-- </layer>  -->
+			
+            <!-- <layer id="ideo_ingenieur" name="Statut de la formation"  visible="false" tiled="false" expanded="true" -->
+                <!-- searchable="false" queryable="true" fields="axe" aliases="axe" exclusive="true" -->
+                <!-- attributefilter="true" attributefield="statut"  -->
+				<!-- attributevalues="public,privé reconnu"  attributelabel="Statut" attributestylesync="false" attributefilterenabled="false"   -->
+                <!-- infoformat="application/vnd.ogc.gml" featurecount="20" -->
+                <!-- style="ideo_ingenieur_statut" -->
+                <!-- url="https://ows.region-bretagne.fr/geoserver/interne/wms"  -->
+                <!-- attribution="Source: Idéo "  -->
+                <!-- metadata="" -->
+                <!-- metadata-csw="" >	    -->
+                <!-- <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ideo/templates/ingenieur.mst"></template>  -->
+		    <!-- </layer>  -->
+			<!-- <layer id="ideo_ingenieur" name="Type de formation"  visible="false" tiled="false" expanded="true" -->
+                <!-- searchable="false" queryable="true" fields="axe" aliases="axe" exclusive="true" -->
+                <!-- attributefilter="true" attributefield="type_formation"  -->
+				<!-- attributevalues="Scolaire,Apprentissage,Scolaire et apprentissage"  attributelabel="Type de formation" attributestylesync="false" attributefilterenabled="false"   -->
+                <!-- infoformat="application/vnd.ogc.gml" featurecount="20" -->
+                <!-- style="ideo_ingenieur_type_formation" -->
+                <!-- url="https://ows.region-bretagne.fr/geoserver/interne/wms"  -->
+                <!-- attribution="Source: Idéo "  -->
+                <!-- metadata="" -->
+                <!-- metadata-csw="" >	    -->
+                <!-- <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ideo/templates/ingenieur.mst"></template>  -->
+		    <!-- </layer>  -->
+			<layer id="bretagne_5" name="Bretagne à 5" visible="true" tiled="false"
+				queryable="false" 
+				showintoc="false"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attribution="Source : IGN - Admin Express" 
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72" >  
+			</layer>
+			<layer id="departement_metro" name="Département" visible="true" tiled="false"
+				queryable="false"
+				showintoc="false"
+				url="https://geobretagne.fr/geoserver/ign/wms" 
+				style="bretagne_5_style" 
+				attribution="SSource : IGN - Admin Express" 
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/c8884cac-bc25-41a0-92d1-b6566c86066e"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c8884cac-bc25-41a0-92d1-b6566c86066e" >
+			</layer>
+
+		</theme>
+    </themes>
+    <styles>
+        <selectionstyle>
+            <point radius="12" fillcolor="26, 188, 156" opacity="0" strokecolor="26, 188, 156" strokewidth="4" />
+            <line opacity="0.6" strokecolor="26, 188, 156" strokewidth="8" />
+            <polygon fillcolor="26, 188, 156" opacity="0" strokecolor="26, 188, 156" strokewidth="4" />
+        </selectionstyle>
+        <subselectionstyle>
+            <point radius="12" fillcolor="175, 122, 197" opacity="0.5" strokecolor="175, 122, 197" strokewidth="4" />
+            <line opacity="0.8" strokecolor="175, 122, 197"  strokewidth="8" />
+            <polygon fillcolor="175, 122, 197" opacity="0.2" strokecolor="175, 122, 197" strokewidth="6" />
+        </subselectionstyle>
+    </styles>
+
+</config>

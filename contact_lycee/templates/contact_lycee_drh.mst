@@ -1,0 +1,86 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{nom}} - {{ville}}</h2>
+		
+		<h3 class="rb-subtitle-feature">Gestionnaire carrière paye</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{gestionnaire_paye_carriere}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_paye_carriere}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_paye_carriere}}<br/>
+		</p>
+		
+		<h3 class="rb-subtitle-feature">Instructeur retraite</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{instructeur_retraite_maladie}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_retraite_retraite_maladie}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_retraite_retraite_maladie}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">Instructeur accident</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{instructeur_accident}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_accident}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_accident}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">Gestionnaire recrutement</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{gestionnaire_recrutement}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_gestionnaire_recrutement}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_gestionnaire_recrutement}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">Assistant recrutement</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{assistant_recrutement}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_assistant_recrutement}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_assistant_recrutement}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">Contact divers</h3>
+		<p class="rb-text-feature">
+			Formation : {{contact_formation}}<br/>
+			Déplacements : {{contact_deplacements}}<br/>
+			Horaires : {{contact_horaires}}<br/>
+
+		</p>
+
+		<h3 class="rb-subtitle-feature">Référent sécurité prévention</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{referent_securite_prevention}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_securite_prevention}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">Référent entretien pro</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{referents_entretien_pro}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_entretien_pro}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">Référent signalement</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{referent_signalement}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_signalement}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_signalement}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">Référent handicap</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{referents_handicap}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_handicap}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">Médecin</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{referent_medecin}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_medecin}}<br/>
+		</p>
+		
+		<h3 class="rb-subtitle-feature">Infirmier</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{referent_infirmier}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_infirmier}}<br/>
+		</p>
+
+	</li>
+{{/features}}

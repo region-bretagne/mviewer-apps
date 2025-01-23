@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <application title="Test cadastre - RECETTE" logo="https://www.megalis.bretagne.bzh/wp-content/uploads/2022/01/MegalisBretagneSm-e1642779686390.png" 
+		templaterightinfopanel="default" home="https://www.megalis.bretagne.bzh" 
+		titlehelp="Information sur l'avancement du déploiement pour chaque adresse" iconhelp="info" showhelp="false"
+		help="apps/help/help_suivi_adresse.html" mouseposition="true"
+		studio="http://kartenn.region-bretagne.fr/mviewerstudio/?xml="
+		exportpng="true" togglealllayersfromtheme="true" geoloc="true" coordinates="true" measuretools="true" style="css/themes/alizarin.css"/>
+    <mapoptions maxzoom="30" projection="EPSG:3857" center="-325000,6115000" zoom="15" scalebar="false" scalesteps="1" scaletext="false"
+			projextent="-20037508.342789244,-20037508.342789244,20037508.34278924420037508.342789244" />
+    
+<baselayers style="gallery"> 
+    <baselayer visible="false" id="darkmatter" title="CartoDb"      label="fond sombre" 	type="OSM"        			
+			  		maxzoom="22" 
+				thumbgallery="img/basemap/darkmatter.png"   
+				url="https://{a-c}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"  
+				attribution="Map tiles by &lt;a href='https://cartodb.com/attributions' target='_blank'>CartoDb &lt;/a>,&lt;a href='https://creativecommons.org/licenses/by/3.0/' target='_blank'>CC BY 3.0 &lt;/a>"  ></baselayer>
+	<baselayer visible="false" id="osm_grey"   title="GéoBretagne"  label="OSM gris"  	   	type="WMS"  layers="osm:grey" 					      
+				format="image/png" 	
+				thumbgallery="img/basemap/osm_google.png"   
+				url="https://tile.geobretagne.fr/osm/service" 
+				attribution="GéoBretagne. Données : les contributeurs d'&lt;a href=&quot;https://www.openstreetmap.org/&quot; target=&quot;_blank&quot;&gt;OpenStreetMap &lt;/a&gt;,  &lt;a href=&quot;https://www.openstreetmap.org/copyright&quot; target=&quot;_blank&quot;&gt;ODbL &lt;/a&gt;"  ></baselayer> 
+    <baselayer visible="false" id="osm_nature" title="GéoBretagne"  label="OSM naturaliste" type="WMS"  layers="osm:naturaliste" 				  
+				format="image/png" 	
+				thumbgallery="img/basemap/osm_google.png"   
+				url="https://tile.geobretagne.fr/osm/service" 						 
+				attribution="GéoBretagne. Données : les contributeurs d'&lt;a href=&quot;https://www.openstreetmap.org/&quot; target=&quot;_blank&quot;&gt;OpenStreetMap &lt;/a&gt;,  &lt;a href=&quot;https://www.openstreetmap.org/copyright&quot; target=&quot;_blank&quot;&gt;ODbL &lt;/a&gt;"  ></baselayer> 
+	<baselayer visible="false" id="osm"        title="OSM"          label="OSM" 			   type="OSM"        																														
+				thumbgallery="img/basemap/osm.png"          
+				url="https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png"  		 
+				attribution="Données : les contributeurs d'&lt;a href=&quot;https://www.openstreetmap.org/&quot; target=&quot;_blank&quot;&gt;OpenStreetMap &lt;/a&gt;&lt;a href=&quot;https://www.openstreetmap.org/copyright&quot; target=&quot;_blank&quot;&gt;ODbL &lt;/a&gt;"  ></baselayer> 
+	<baselayer visible="false" id="plan_ign"   title="IGN"          label="Plan IGN" 	   	type="WMTS" layers="GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2" 
+				format="image/png" 			   fromcapacity="false" style="normal" matrixset="PM" maxzoom="22" 
+				thumbgallery="img/basemap/scan-express.jpg" 
+				url="https://tile.geobretagne.fr/geopf/service"					 
+				attribution="&lt;a href='https://geoservices.ign.fr' target='_blank'&gt;&lt;img src='https://geoservices.ign.fr/images/logoIGN.png'&gt;&lt;/a&gt;"  ></baselayer> 
+	<baselayer visible="false" id="ortho_ign2" title="IGN" 		    label="Photo aérienne"  type="WMTS" layers="HR.ORTHOIMAGERY.ORTHOPHOTO"  	  
+				format="image/png" 			   fromcapacity="false" style="normal" matrixset="PM" maxzoom="22" 
+				thumbgallery="img/basemap/ortho.jpg" 		 
+				url="https://tile.geobretagne.fr/photo/service"            		 
+				attribution="&lt;a href='https://geoservices.ign.fr' target='_blank'&gt;&lt;img src='https://geoservices.ign.fr/images/logoIGN.png'&gt;&lt;/a&gt;"  ></baselayer> 
+	<baselayer visible="false" id="ortho_ign"  title="IGN"    		opacity="0.9"       label="Ancienne Photo IGN" type="WMTS"  layers="ORTHOIMAGERY.ORTHOPHOTOS"     
+				format="image/jpeg" 		   fromcapacity="false" style="normal" matrixset="PM" maxzoom="22" 
+				thumbgallery="img/basemap/ortho.jpg"       
+				url="https://wxs.ign.fr/choisirgeoportail/geoportail/wmts?"         
+				attribution="&lt;a href='https://geoservices.ign.fr' target='_blank'&gt;&lt;img src='https://geoservices.ign.fr/images/logoIGN.png'&gt;&lt;/a&gt;"  ></baselayer> 
+	<baselayer visible="true"  id="positron"   title="CartoDb"      label="Fond clair"      type="OSM"        																														 thumbgallery="img/basemap/positron.png"   	 
+				url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" 
+				attribution="Map tiles by  &lt;a href=&quot;https://cartodb.com/attributions&quot;&gt;CartoDb&lt;/a&gt;, under  &lt;a href=&quot;https://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY 3.0 &lt;/a&gt;"  ></baselayer> 
+</baselayers>
+    <authentification url="who" loginurl="?login" logouturl="../j_spring_security_logout" enabled="true"/>
+
+    <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="API adresse.data.gouv.fr"/>
+    <searchparameters bbox="false" inputlabel="ZDEP/S(N)RO/adresse" localities="true" features="true" static="true" 
+		imgurl="" imgwidth="50px" svgcolor="orange"
+		animate="true" duration="50" querymaponclick="true" closeafterclick="true"/>
+	
+    <themes mini="false" legendmini="false">    
+        <theme name="BTHD" id="bthd" icon="sitemap" collapsed="false">
+			<layer id="AMORCES_CAD,LIEUDIT,CP.CadastralParcel,SUBFISCAL,CLOTURE,DETAIL_TOPO,HYDRO,VOIE_COMMUNICATION,BU.Building,BORNE_REPERE"
+				name="Parcelles cadastrales" visible="false" tiled="true"
+				queryable="false"
+				url="https://kartenn.region-bretagne.fr/ws/cadastre/france.wms"
+				attribution=" Région Bretagne" metadata-csw="" metadata="" />
+
+			<layer id="CP.CadastralParcel" name="geobzh_cadastre mviewer" visible="false" tiled="true"
+				queryable="true" infoformat="text/html" featurecount="1"
+				url="https://geobretagne.fr/geoserver/cadastre/wms"
+				attribution="GeoBretagne" metadata-csw="" metadata="" />
+
+			<layer id="departement_metro" name="Département" visible="false" tiled="false"
+				queryable="false" fields="nom,insee_dep" aliases="Nom,numéro"
+                infoformat="application/vnd.ogc.gml" featurecount="1"
+				style="" 
+				url="https://geobretagne.fr/geoserver/ign/wms" 
+				attribution="IGN - BDCARTO" 
+				metadata="https://geobretagne.fr/geonetwork/apps/georchestra/?uuid=e16d50d4-746d-44e3-a5e7-5fc000f97665" 
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=e16d50d4-746d-44e3-a5e7-5fc000f97665" />			
+        
+		</theme>
+    </themes>
+	<styles>
+		<selectionstyle>
+			<point radius="7" fillcolor="26, 188, 156" opacity="0.5" strokecolor="26, 188, 156" strokewidth="6" />
+			<line opacity="0.5" strokecolor="26, 188, 156" strokewidth="10" />
+			<polygon fillcolor="26, 188, 156" opacity="0" strokecolor="26, 188, 156" strokewidth="5" />
+		</selectionstyle>
+		<subselectionstyle>
+			<point radius="7" fillcolor="175, 122, 197" opacity="0.5" strokecolor="175, 122, 197" strokewidth="2" />
+			<line opacity="0.5" strokecolor="175, 122, 197"  strokewidth="2" />
+			<polygon fillcolor="175, 122, 197" opacity="0.0" strokecolor="175, 122, 197" strokewidth="4" />
+     	</subselectionstyle>
+ 	</styles>
+</config>

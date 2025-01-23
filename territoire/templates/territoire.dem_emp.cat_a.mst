@@ -1,7 +1,23 @@
 {{#features}}
-        <li class="item">
-                <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://superset.bretagne.bzh/superset/dashboard/pepci/?siren={{code_siren}}&standalone=3"></iframe>
-                </div>
-        </li>
+	<li class="item" id="{{feature_ol_uid}}">
+		<div class="row">
+			<div class="col-xs-7">
+				<div class="rb-title-feature">{{nom_geo}}</div>
+			</div>
+			<div class="col-xs-3">
+				<span class="rb-critere glyphicon glyphicon-map-marker" aria-hidden="true"><span id="rb-text">{{level}}</span></span><span class="rb-critere glyphicon glyphicon-calendar" aria-hidden="true" style="margin-left:10px;"><span id="rb-text">{{periode}}</span></span>
+			</div>	
+		</div>
+		{{#EPCI}}
+			<iframe class="rb-iframe-bottom"src="https://kartenn.region-bretagne.fr/ws/territoire/dem_emp.cat_a.epci.php?code_geo={{code_geo}}&time={{datation}}"></iframe>
+		{{/EPCI}}
+		{{#Pays}}
+			<iframe class="rb-iframe-bottom"src="https://kartenn.region-bretagne.fr/ws/territoire/dem_emp.cat_a.pays.php?code_geo={{code_geo}}&time={{datation}}"></iframe>
+		{{/Pays}}			
+	</li>
+		
 {{/features}}
+
+<style>
+@import url("https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/css/kartenn_territoire.css");
+</style>

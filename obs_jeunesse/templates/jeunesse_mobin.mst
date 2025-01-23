@@ -1,0 +1,45 @@
+<hash style="display:none;">-1523936475</hash>{{#features}}
+      <li id="{{feature_ol_uid}}" class="item mstudio_template" style="width:100%;">
+        
+    
+    <div class="textH1Component template-component mb-2" id="de05fdc4-3285-46d0-87dc-9cc60dba9a14"
+      data-type-selector="static"
+      data-color="#e3c213"
+      data-value="Wimoov"
+      data-component="textH1Component"
+    >
+        <!--
+        Variable : nom
+        Prop : color
+        -->
+        <h3 style="font-weight:bold; color:#e3c213;">Mob'in</h3>
+    </div>
+    {{#structure}}
+    <div class="TextH3Component template-component mb-2" id="3d89842a-3773-4956-aba5-4ea2fb4343ff"
+      data-type-selector="field"
+      data-color="#545454"
+      data-value="structure"
+      data-component="TextH3Component"
+    >
+        <!--
+        Variable : nom
+        Prop : color
+        -->
+        <h4 style="font-weight:bold; color:#545454;">{{#structure}}{{structure}}{{/structure}}</h4>
+        </div>{{/structure}}
+		 </div>
+    {{#activite}}
+    <div class="TextH3Component template-component mb-2" id="3d89842a-3773-4956-aba5-4ea2fb4343ff"
+      data-type-selector="field"
+      data-color="#545454"
+      data-value="activite"
+      data-component="TextH3Component"
+    >
+        <!--
+        Variable : nom
+        Prop : color
+        -->
+        <h4 style=" color:#545454;">{{#activite}}{{activite}}{{/activite}}</h4>
+        </div>{{/activite}}
+      </li>
+    {{/features}}

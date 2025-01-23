@@ -19,7 +19,16 @@
     <proxy url="../proxy/?url="/>	
 
     <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par l'API adresse.data.gouv.fr"/>
-    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="current"/>
+	<elasticsearchs>
+		<elasticsearch url="https://ows.region-bretagne.fr/els/occupation_domaniale_port/_search" geometryfield="location" linkid="search_id" querymode="match" 
+			version="7.17" geometryformat="WKT" mouseoverfields="title" displayfields="title" layer="occupation_domaniale_port"/>
+		<elasticsearch url="https://ows.region-bretagne.fr/els/contour_port_aero/_search" geometryfield="location" linkid="search_id" querymode="match" 
+			version="7.17" geometryformat="WKT" mouseoverfields="title" displayfields="title" layer="contour_port_aero"/>
+		<elasticsearch url="https://ows.region-bretagne.fr/els/port/_search" geometryfield="location" linkid="search_id" querymode="match" 
+			version="7.17" geometryformat="WKT" mouseoverfields="title" displayfields="title" layer="port"/>
+		<elasticsearch url="https://ows.region-bretagne.fr/els/batiment_portuaire/_search" geometryfield="location" linkid="search_id" querymode="match" 
+			version="7.17" geometryformat="WKT" mouseoverfields="title" displayfields="title" layer="batiment_portuaire"/>
+	</elasticsearchs>
     <searchparameters bbox="false" localities="true" features="true"/>
 	
     <extensions>    

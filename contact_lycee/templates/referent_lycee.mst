@@ -1,0 +1,13 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{nom}} - {{ville}}</h2>
+		
+		<h3 class="rb-subtitle-feature">Référent lycée</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{referents_lycee}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_referents}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_referents}}<br/>
+		</p>
+
+	</li>
+{{/features}}

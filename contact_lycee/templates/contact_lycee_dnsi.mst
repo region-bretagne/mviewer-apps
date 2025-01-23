@@ -1,0 +1,18 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{nom}} - {{ville}}</h2>
+		
+		<h3 class="rb-subtitle-feature">Responsable</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{responsable_nom}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{responsable_telephone}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{responsable_mail}}<br/>
+		</p>
+		
+		<h3 class="rb-subtitle-feature">Equipe</h3>
+		<p class="rb-text-feature">
+			{{equipe}}
+		</p>
+
+	</li>
+{{/features}}

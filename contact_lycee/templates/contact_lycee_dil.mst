@@ -1,0 +1,128 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{nom}} - {{ville}}</h2>
+		
+		<h3 class="rb-subtitle-feature">Chef.f.e de service immobilier</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{si_chef_service}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{si_chef_service_telephone}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{si_chef_service_mail}}<br/>
+		</p>
+		
+		<h3 class="rb-subtitle-feature">Assistant.e service immobilier</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{si_assistant}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{si_assistant_telephone}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{si_assistant_mail}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">Chef.f.e de projet immobilier</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{si_chef_projet}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{si_chef_projet_telephone}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{si_chef_projet_mail}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">Responsable du Pôle maintenance</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{pm_responsable}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{pm_responsable_telephone}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{pm_responsable_mail}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">Chef.f.e d'EMAT</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{pm_chef_emat}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{pm_chef_emat_telephone}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{pm_chef_emat_mail}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">Chef.f.e de Pôle Sûreté et Accessibilité</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{par_chef}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{par_chef_mail}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">Sécurité incendie</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{par_securite_incendie}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{par_securite_incendie_mail}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">Radon - Qualité air intérieur</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{par_radon}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{par_radon_mail}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">Amiante</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{par_amiante}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{par_amiante_mail}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">PPMS</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{par_ppms}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{par_ppms_mail}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">Chef.f.e service expertise technique et environnementale et de la programmation</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{petep_chef_service}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{petep_chef_service_telephone}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{petep_chef_service_mail}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">Chef.f.e pôle programmation</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{pprog_chef}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{pprog_chef_telephone}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{pprog_chef_mail}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">Chef.f.e pôle expertise technique et environnementale</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{petep_chef_pole}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{petep_chef_pole_telephone}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{petep_chef_pole_mail}}<br/>
+		</p>
+
+
+		<h3 class="rb-subtitle-feature">Chef.f.e service stratégie foncière et gestion patrimoniale</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{sfgp_chef_service}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{sfgp_chef_service_telephone}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{sfgp_chef_service_mail}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">Sinistre assurance</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{sinistre_assurance}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{sinistre_assurance_telephone}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{sinistre_assurance_mail}}<br/>
+		</p>
+		
+		<h3 class="rb-subtitle-feature">Foncier</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{foncier}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{foncier_telephone}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{foncier_mail}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">Instruction CPP</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{polcoo_instruction}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{polcoo_instruction_telephone}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{polcoo_instruction_mail}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">Paiements CPP</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{pofim_paiements_cpp}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{pofim_paiements_cpp_telephone}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{pofim_paiements_cpp_mail}}<br/>
+		</p>
+
+	</li>
+{{/features}}

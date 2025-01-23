@@ -737,3 +737,7 @@ button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
 .modal-dialog{
 	width: 800px!important;
 }
+
+.col-md-offset-1{
+  margin-left: 6px!important;
+}

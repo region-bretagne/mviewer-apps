@@ -1,0 +1,55 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<div class="row">
+			<div class="col-xs-7">
+				<div class="rb-title-feature">{{nom}}</div>
+			</div>
+			<div class="col-xs-3">
+				<span class="rb-critere glyphicon glyphicon-calendar" aria-hidden="true" style="margin-left:10px;"><span id="rb-text">{{millesime}}</span></span>
+			</div>	
+		</div>
+
+		<!-- <div class="row"> -->
+			<!-- <div class="col-md-6" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;text-align: center;color: #03689b;">  -->
+				<!-- <img   src=" ../img/picto/dossier_bleu.svg"   alt="argent"  height="50"  width="50" /><br> -->
+				<!-- <h1>{{nb}} dossier(s)</h1> -->
+			<!-- </div> -->
+			<!-- <div class="col-md-6" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;text-align: center;color: #03689b;">  -->
+				<!-- <img   src=" ../img/picto/argent_bleu.svg"   alt="argent"  height="50"  width="50" /><br> -->
+				<!-- <h1>{{montant_affichage}} &#x20AC;</h1> -->
+				<!-- Montant des aides &agrave; l'investissement de<br> mat&eacute;riels agro-environnementaux en {{millesime}} -->
+			<!-- </div> -->
+		<!-- </div> -->
+
+
+		<div class="row">
+			
+			<div class="col-md-3" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;text-align: center;color: #0094ab;">
+				<div style=" font-weight: 900;font-size: 30px;font-family: Segoe ui;"> 
+				<img   src=" ../img/picto/tracteur_champ_blue.svg"   alt="dossier"  height="70"  width="70" /><br>
+				{{grp_cultu}}</div>
+				<div style=" font-weight: 600;font-size: 13px;font-family: Segoe ui;">
+				Type de culture (convertie en {{millesime}})</div>				
+			</div>
+			<div class="col-md-3" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;text-align: center;color: #0094ab;">
+				<div style=" font-weight: 900;font-size: 30px;font-family: Segoe ui;"> 
+				<img   src=" ../img/picto/plein_ecran_bleu.svg"   alt="dossier"  height="70"  width="70" /><br>
+				{{surface_ha}} ha</div>
+				<div style=" font-weight: 600;font-size: 13px;font-family: Segoe ui;">
+				Surface de la parcelle</div>
+			</div>
+			<div class="col-md-5" style="position:relative;display:block;height:0; padding:0;overflow:hidden;padding-bottom:50%;text-align: center;color: #0094ab;">
+				<div style=" font-weight: 900;font-size: 25px;font-family: Segoe ui;"> 
+				<img   src=" ../img/picto/tracteur_bleu.svg"   alt="dossier"  height="70"  width="70" /><br>
+				{{lbl_cultu}}</div>
+				<div style=" font-weight: 600;font-size: 13px;font-family: Segoe ui;">
+				Détail de la culture (convertie en {{millesime}})</div>
+			</div>
+		</div>
+
+
+
+	</li>
+{{/features}}
+
+

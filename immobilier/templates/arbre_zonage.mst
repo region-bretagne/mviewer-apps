@@ -1,0 +1,18 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{lycee}}</h2><br>
+		<p class="rb-text-feature">		
+		{{#interventi}}
+			<b>intervention : </b> {{interventi}}<br>
+		{{/interventi}}
+		</p>
+	</li>
+{{/features}}
+
+<style>
+/* test icon rb*/
+.icon-information{
+	font-size : 20px;
+	color : #FFFFFF;
+}
+</style>

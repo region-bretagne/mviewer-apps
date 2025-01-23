@@ -1,0 +1,18 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{nom_batiment}}</h2>
+		<p class="rb-text-feature">		
+			<b>Type :</b> {{type}}	<br>
+			<b>Adresse :</b> {{adresse}} {{code_postal}} {{ville}}	<br>
+		{{#code_ascol}}
+			<b>Code ASCOL :</b> {{code_ascol}}
+		{{/code_ascol}}        
+		{{#lien_dossier}}
+		<div class="rb-but-list">
+			<a href="{{lien_dossier}}" target="_blank" title="Site web" class="rb-but-link"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> <b>Dossier d'inventaire</b></a>
+		</div>
+		{{/lien_dossier}}
+
+		</p>
+	</li>
+{{/features}}

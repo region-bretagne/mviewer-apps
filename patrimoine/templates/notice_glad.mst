@@ -1,0 +1,29 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h3 class="rb-title-feature">{{titre}}</h3>
+        {{#photo_principale}}
+			<img src="{{photo_principale}}" class="img-responsive center-block" />
+        {{/photo_principale}}
+		<p class="rb-text-feature">
+			<span style="font-weight:bold"> Commune : </span>{{commune}}<br/>
+			{{#localisation}}
+				<span style="font-weight:bold"> Localisation :</span> {{localisation}}<br/>
+			{{/localisation}}
+        </p>
+		{{#url}}
+		<div class="rb-but-list">
+			<a href="{{url}}" target="_blank" title="Site web" class="rb-but-link"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> <b>Lien vers notice</b></a>
+		</div>
+		{{/url}}
+        <p class="rb-description-feature" ><i>Contact: <strong><a href="mailto:inventaire.patrimoine@bretagne.bzh">inventaire.patrimoine@bretagne.bzh</a></strong></i></p>
+
+	</li>
+{{/features}}
+
+<style>
+@import url("https://kartenn.region-bretagne.fr/kartoviz/apps/region/patrimoine/css/kartenn_patrimoine_mst.css");
+#slide-right-panel-1{
+	padding-bottom: 30%;
+}
+
+</style>

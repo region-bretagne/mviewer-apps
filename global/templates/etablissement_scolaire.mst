@@ -1,0 +1,10 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h3 class="rb-title-feature">{{nom}}</h3>
+		<p class="rb-text-feature">
+			<span style="font-weight:bold">Secteur :</span> {{secteur}}<br/>
+			<span style="font-weight:bold">Nature :</span> {{nature}}<br/>
+			<span style="font-weight:bold">Numéro UAI :</span> {{code_uai}}<br/>
+		</p>
+	</li>
+{{/features}}

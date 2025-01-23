@@ -1,0 +1,26 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{maison_eclusiere}}</h2>
+		<p class="rb-text-feature">		
+			<b>Commune </b> {{commune}}<br>
+			<b>Occupation actuelle </b> {{occupation_actuelle}}<br>
+			<b>Etat </b> {{etat}}<br>
+			<b>Future occupation </b> {{futur_occupation}}<br>
+			<b>Accès </b> {{acces}}<br>
+			<b>Raccordée </b> {{raccordee}}<br>
+			<b>Inondable </b> {{inondable}}<br>
+		{{#photo}}
+			<img src="{{photo}}" class="img-responsive" style="margin-top:5%;" />
+		{{/photo}}        
+
+		</p>
+	</li>
+{{/features}}
+
+<style>
+/* test icon rb*/
+.icon-information{
+	font-size : 20px;
+	color : #FFFFFF;
+}
+</style>

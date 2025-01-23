@@ -1,6 +1,6 @@
 mviewer.customLayers.inventaire = (function () {
 
-    _ELSVERSION = 5.3;
+    _ELSVERSION = 7;
     _filter = false;
     _ready = false;
     _mode = "AND"; /*AND | OR*/
@@ -23,21 +23,17 @@ mviewer.customLayers.inventaire = (function () {
             }
             return properties;
         };
-		
+
         data.hits.hits.forEach(function(item) {
             var properties = getProperties(item._source);
             var prop = {};
-            if (item._type === "etude_patrimoine_simple") {
-                prop.source = "dossier d'étude complet";
-            } else {
-                prop.source = "recensement avant étude";
-            }
-            properties.type = item._type;
+            prop.source = "dossier d'étude complet";
+            properties.type = item._index;
             properties.source = prop.source;
             var feature = {
                 "type": "Feature",
                 "id": item._id,
-                "geometry": item._source.geometry,
+                "geometry": item._source.location,
                 "properties": properties
             };
             geojson.features.push(feature);
@@ -64,6 +60,7 @@ mviewer.customLayers.inventaire = (function () {
                     matchQuery = {
                         "multi_match" : {
                             "query":    text,
+							"type": "best_fields",
                             "operator": "and",
                             "fields": _searchinfields
                         }
@@ -76,51 +73,43 @@ mviewer.customLayers.inventaire = (function () {
                     "should": matchQueries,
                     "minimum_should_match": (_mode === "AND")? matchQueries.length: 1
                 }
+				
             };
         }
         var proj = projection.getCode();
         var e = ol.proj.transformExtent(extent, proj, 'EPSG:4326');
-        var url = "https://ows.region-bretagne.fr/kartenn/_search?";
+        var url = "https://prod-owsig5/els/_search?index=etude_patrimoine_simple,recensement_patrimoine&track_total_hits=true&size=10000";
         var geofilter = JSON.stringify({
             "from": 0,
             "size": (_ready)? _maxfeatures: 10,
             "query": {
-                "bool": {
-                    "must": [
-                        filter,
-                        {
-                            "bool": {
-                                "should": [{
-                                    "type": {
-                                        "value": "etude_patrimoine_simple"
-                                    }
-                                },
-                                {
-                                    "type": {
-                                        "value": "recensement_patrimoine"
-                                    }
-                                }]
-                            }
-                        }
-                    ],
-                    "filter": {
-                        "geo_shape": {
-                            "geometry": {
-                                "shape": {
-                                    "type": "envelope",
-                                    "coordinates": [
-                                        [e[0], e[1]],
-                                        [e[2], e[3]]
-                                    ]
-                                }
-                            }
-                        }
-                    }
-                }
+				"bool": {
+				  "must": [
+					filter,
+					  {
+						"match_all": {}
+					  }
+				  ],
+					"filter": {
+						"geo_shape": {
+							"location": {
+								"shape": {
+									"type": "envelope",
+									"coordinates": [
+										[e[0], e[3]],
+										[e[2], e[1]]
+									]
+								},
+								"relation": "intersects"
+							}
+						}
+					}
+				}
             }
         });
         var xhr = new XMLHttpRequest();
         xhr.open('POST', url);
+
         if ( _ELSVERSION >= 6 ) {
             xhr.setRequestHeader('Content-Type', 'application/json');
         } else {
@@ -134,8 +123,8 @@ mviewer.customLayers.inventaire = (function () {
             if (xhr.status == 200) {
                 var json = JSON.parse(xhr.responseText);
 
-                var message = "* Affichage complet - " + json.hits.total + " éléments";
-                if (json.hits.total >  json.hits.hits.length) {
+                var message = "* Affichage complet - " + json.hits.total.value + " éléments";
+                if (json.hits.total.value >  json.hits.hits.length) {
                     message = "Affichage partiel : zoomer ou filtrer " ;
                 }
                 _featurescount = json.hits.hits.length;
@@ -151,6 +140,7 @@ mviewer.customLayers.inventaire = (function () {
             }
         }
         xhr.send(geofilter);
+
     };
 
 

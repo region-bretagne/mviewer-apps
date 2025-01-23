@@ -1,0 +1,12 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{nom}}</h2>
+		<p class="rb-text-feature">		
+			<b>Nombre de logements : </b>  {{nb}}<br>
+			<b>Nombre de logements occupés : </b>  {{nb_occup}}<br>
+			<b>Nombre de logements vacants : </b>  {{nb_vacant}}<br>
+			<b>Nombre de logements C.A.T. </b>  {{nb_cat}}<br>
+		</p>
+	</li>
+{{/features}}
+

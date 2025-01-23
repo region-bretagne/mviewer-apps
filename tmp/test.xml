@@ -1,0 +1,87 @@
+<config xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" mviewerversion="3.9.2" mviewerstudioversion="4">
+<metadata>
+
+</metadata>
+<application title="Zones humides et Urbanisme sur le SAGE GMRE" logo="https://geobretagne.fr/pub/logo/057_sage_gmre.jpg" favicon="https://geobretagne.fr/pub/sm-loch-sal/sigle_seul.png" help="" titlehelp="" iconhelp="fas fa-home" home="" style="css/themes/default.css" zoomtools="true" initialextenttool="true" exportpng="false" showhelp="false" coordinates="true" measuretools="true" mouseposition="false" geoloc="false" studio="https://geobretagne.fr/mviewerstudio/index.html?xml=" togglealllayersfromtheme="false">
+</application>
+<mapoptions maxzoom="20" projection="EPSG:3857" center="-321631.6863214145,6047501.456167652" zoom="8.302306921647796" maxextent="-448828.92969555315,5958488.180590038,-194434.4429472758,6136514.731745266" />
+<proxy url="/proxy/?url=" />
+<olscompletion type="ban" url="https://api-adresse.data.gouv.fr/search/" attribution="Base adresse nationale (BAN)" />
+<searchparameters bbox="false" localities="true" features="false" static="false" />
+<baselayers style="gallery">
+        <baselayer  type="OSM" id="positron" label="Positron" title="Carto" thumbgallery="img/basemap/positron.png" 
+            url="http://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" maxzoom="20" 
+            visible="true" attribution="Map tiles by  &lt;a href='https://carto.com/attributions' target='_blank'>Carto &lt;/a>, under  &lt;a href='https://creativecommons.org/licenses/by/3.0/' target='_blank'>CC BY 3.0 &lt;/a>" />
+        <baselayer  type="OSM" id="osm1" label="OpenStreetMap" title="OpenStreetMap" thumbgallery="img/basemap/osm.png" 
+            url="http://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png" 
+            attribution="© MapQuest. Données : les contributeurs d'&lt;a href='https://www.openstreetmap.org/' target='_blank'>OpenStreetMap &lt;/a>,  &lt;a href='https://www.openstreetmap.org/copyright' target='_blank'>ODbL &lt;/a>" visible="false"/>
+		<baselayer visible="false" id="osm_google" thumbgallery="img/basemap/osm_google.png" title="OpenStreetMap Google" label="OpenStreetMap Google" type="WMTS" 
+			url="https://tile.geobretagne.fr/osm/service" layers="osm:google" format="image/png" matrixset="PM" fromcapacity="false" style="_null"
+            attribution="GéoBretagne. Données : les contributeurs d'&lt;a href='https://www.openstreetmap.org/' target='_blank'>OpenStreetMap &lt;/a>,  &lt;a href='https://www.openstreetmap.org/copyright' target='_blank'>ODbL &lt;/a>"/>
+		<baselayer visible="false" id="osm_grey" thumbgallery="https://tile.geobretagne.fr/osm/tms/osm:grey/EPSG3857/16/64287/85957.png" title="OpenStreetMap Grey" label="OpenStreetMap Grey" type="WMTS" 
+			url="https://tile.geobretagne.fr/osm/service" layers="osm:grey" format="image/png" matrixset="PM" fromcapacity="false" style="_null"
+            attribution="GéoBretagne. Données : les contributeurs d'&lt;a href='https://www.openstreetmap.org/' target='_blank'>OpenStreetMap &lt;/a>,  &lt;a href='https://www.openstreetmap.org/copyright' target='_blank'>ODbL &lt;/a>"/>
+		<baselayer  type="OSM" id="darkmatter" label="Dark Matter" title="CartoDb" thumbgallery="img/basemap/darkmatter.png" 
+            url="http://{a-c}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png" maxzoom="20" 
+            visible="false" attribution="Map tiles by  &lt;a href='https://cartodb.com/attributions' target='_blank'>CartoDb &lt;/a>, under  &lt;a href='https://creativecommons.org/licenses/by/3.0/' target='_blank'>CC BY 3.0 &lt;/a>" />
+		<baselayer visible="false" id="photo_ancienne" thumbgallery="img/basemap/ortho-ancien.jpg" title="Ortho ancienne" label="Ortho ancienne" type="WMTS" 
+			url="https://tile.geobretagne.fr/photo/service" layers="ORTHOIMAGERY.ORTHOPHOTOS.1950-1965" format="image/png" 
+            attribution="IGN" matrixset="PM" fromcapacity="false" style="default"/>
+		<baselayer visible="false" id="photo_ir" thumbgallery="img/basemap/ir.jpg" title="Ortho actuelle IGN IR" label="Ortho actuelle IGN IR" type="WMTS" 
+			url="https://tile.geobretagne.fr/photo/service" layers="ORTHOIMAGERY.ORTHOPHOTOS.IRC" format="image/png" 
+            attribution="IGN" matrixset="PM" fromcapacity="false" style="default"/>
+        <baselayer  type="WMTS" id="ortho2" label="Photo aérienne IGN" title="GéoPortail" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
+            url="https://data.geopf.fr/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
+            attribution="&lt;a href='https://geoservices.ign.fr/services-geoplateforme-diffusion' target='_blank'>&lt;img src='img/basemap/geoservices.png'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+        <baselayer  type="WMTS" id="plan" label="Plan IGN" title="GéoPortail" maxscale="2000" thumbgallery="img/basemap/plan_ign.png" opacity="0.8"
+            url="https://data.geopf.fr/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2" format="image/png" visible="false" fromcapacity="false"
+            attribution="&lt;a href='https://geoservices.ign.fr/services-geoplateforme-diffusion' target='_blank'>&lt;img src='img/basemap/geoservices.png'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+    </baselayers> 
+<themes mini="false">
+    <!-- <theme id="themexxxx" name="test" collapsed="true" icon="fab fa-digital-ocean">  -->
+
+		<!-- <layer id="N_ZMEL_S_056" name="Zones de mouillage et d'equipements legers ZMEL departement du Morbihan" type="wms" url="https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38054/501680f5-9211-409c-bfaf-85e5e1ea58d6.internet.map" infoformat="application/vnd.ogc.gml" metadata="http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/fre/catalog.search;jsessionid=60AEB3C24F1D293A0D1FD2DC10C5D26A.tc_geoide-catalogue-fo-inter_171_25#/metadata/fr-120066022-jdd-60cb355d-07f2-4b32-b5d5-fdb4eb5e8d3e" metadata-csw="http://catalogue.geo-ide.developpement-durable.gouv.fr/catalogue/srv/api/records/fr-120066022-jdd-1b30560d-5f62-468c-a49d-bcf4e570e533/formatters/xml" attribution="DTTM56" queryable="true"> </layer> -->
+	<!-- </theme> -->
+    <theme id="theme-20240614100104" name="Cours d'eau" collapsed="true" icon="fab fa-digital-ocean"> 
+
+        <layer id="CARTO_CE_COMPLETE_2024" name="Cours d'eau sur le Morbihan" type="wms" url="https://ogc.geo-ide.developpement-durable.gouv.fr/wxs?map=/opt/data/carto/geoide-catalogue/1.4/org_38054/75160c1f-b3c1-4428-b22b-4f8816c4246b.internet.map" tiled="true" visible="true" infoformat="text/html" stylesalias="" metadata="" metadata-csw="" attribution="geoide" queryable="false">
+        </layer>
+    </theme> 
+    <theme id="theme-20240606142457" name="Zones humides" collapsed="true" icon="fas fa-certificate"> 
+        <layer id="zones_humides_sagegmre" name="Zones humides sur le SAGE" type="wms" url="https://geobretagne.fr/geoserver/smls/wms" tiled="true" visible="true" infoformat="text/html" fields="" aliases="" style="Zh - Style hachuré carré bleu" stylesalias="" metadata="https://geobretagne.fr/datahub/dataset/b891a3f4-6e39-42d5-889c-6535f3891b49" metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ELEMENTSETNAME=full&amp;ID&amp;ID=b891a3f4-6e39-42d5-889c-6535f3891b49" attribution="" queryable="true" searchable="false" fusesearchkeys="" fusesearchresult="" secure="public" filter="" sld="" legendurl="" featurecount="" infopanel="right-panel" opacity="1" index="" styletitle="" dynamiclegend="false" toplayer="false" exclusive="false" showintoc="true">
+        </layer> 
+        <layer id="probabilité de présence des zones humides seuillée sage gmre" name="Zones humides potentielles sur le SAGE" type="wms" url="https://geobretagne.fr/geoserver/smls/wms" tiled="true" visible="true" infoformat="text/html" fields="" aliases="" style="Zones Humides Potentielles - 3 niveaux SAGE GMRE 2" stylesalias="" metadata="https://geobretagne.fr/datahub/dataset/9ab5f8c9-6eb5-409b-86aa-99d21bdb2c68" metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ELEMENTSETNAME=full&amp;ID&amp;ID=9ab5f8c9-6eb5-409b-86aa-99d21bdb2c68" attribution="" queryable="true" searchable="false" fusesearchkeys="" fusesearchresult="" secure="public" filter="" sld="" legendurl="" featurecount="" infopanel="right-panel" opacity="1" index="" styletitle="" dynamiclegend="false" toplayer="false" exclusive="false" showintoc="true" attributefilter="true" attributefield="Classe" attributevalues="Zone probablement humide (probabilité très forte 51-100),Zone probablement humide artificialisée (102),Zone probablement humide (probabilité assez forte 20-50)" attributelabel="Classe">
+        </layer>
+    </theme> 
+    <theme id="cadastre" url="https://geobretagne.fr/pub/dgfip/apps/dvf/config.xml" name="Limites cadastrales" collapsed="true" icon="false" layersvisibility="all"> 
+    </theme> 
+    <theme id="gpu" url="https://geobretagne.fr/apps/gpu/config.xml" name="Documents d'urbanisme" collapsed="true" icon="false" layersvisibility="none"> 
+    </theme> 
+    <theme id="admin" url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/global/administratif.xml" name="Découpages administratifs" collapsed="true" icon="false" layersvisibility="none"> 
+    </theme>
+    <theme name="Outils" collapsed="true" id="import" icon="fas fa-chart-area">
+	<layer id="profile" name="Profil en long (WPS)" visible="false" queryable="false" type="customlayer" opacity="0.8" legendurl="img/blank.gif" url="customlayers/profile.js" customcontrol="true" expanded="true" attribution="Source: GéoBretagne" metadata="" metadata-csw=""> 
+	</layer>
+    	<layer type="import" id="import_file" name="Import de données locales"  visible="false"
+        legendurl="img/blank.gif"
+        queryable="true"
+        vectorlegend="true"
+        geocoder="ban"
+        xfield="longitude"
+        yfield="latitude"
+        attribution="Attention, le résultat n'est pas persistant. Il s'agit d'un affichage temporaire."
+        expanded="true">
+        <projections>
+            <projection proj4js="'EPSG:3857','+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext  +no_defs'"/>
+            <projection proj4js="'EPSG:2154','+proj=lcc +lat_1=49 +lat_2=44 +lat_0=46.5 +lon_0=3 +x_0=700000 +y_0=6600000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs'"/>
+        </projections>
+    	</layer>
+	<layer id="commune_metro" name="Limites communales" type="wms" url="https://geobretagne.fr/geoserver/ign/wms" tiled="true" visible="false" infoformat="text/html" fields="" aliases="" style="administratif_violet" stylesalias="" metadata="https://geobretagne.fr/datahub/dataset/b08e6cb1-236c-49b7-88f9-42b500d274d5" metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ELEMENTSETNAME=full&amp;ID&amp;ID=b08e6cb1-236c-49b7-88f9-42b500d274d5" attribution="" queryable="true" searchable="true" searchengine="elasticsearch" fusesearchkeys="" fusesearchresult="" secure="public" filter="insee_com IN ('56067','56175','56010','56013','56007','56046','56130','56248','56084','56148','56193','56258','56088','56168','56005','56106','56116','56205','56214','56055','56262','56109','56247','56120','56263','56087','56259','56101','56023','56137','56260','56003','56243','56233','56053','56231','56132','56034','56161','56097','56115','56251','56157','56008','56167','56054','56255','56222','56206','56031','56096','56158','56220','56177','56169','56021','56186','56240','56234','56015','56176','56164','56094','56119','56022','56042')" sld="" legendurl="" featurecount="" infopanel="right-panel" opacity="1" index="" styletitle="" dynamiclegend="false" toplayer="false" exclusive="false" showintoc="true" attributefilter="true" attributefield="nom_com" attributevalues="Arradon,Arzon,Auray,Baden,Baud,Belz,Berric,Brandérion,Brandivy,Brech,Camors,Carnac,Colpo,Crach,Elven,Erdeven,Étel,Grand-Champ,Île-aux-Moines,Île-d'Arz,Kervignac,Landaul,Landévant,Languidic,Lauzach,La Trinité-sur-Mer,La Trinité-Surzur,Larmor-Baden,Le Hézo,Locmaria-Grand-Champ,Locmariaquer,Locoal-Mendon,Locqueltas,Merlevenez,Meucon,Monterblanc,Nostang,Plescop,Ploemel,Ploeren,Plougoumelen,Plouharnel,Plouhinec,Plumergat,Pluneret,Pluvigner,Plaudren,Quiberon,Riantec,Sainte-Anne-d'Auray,Sainte-Hélène,Saint-Armel,Saint-Avé,Saint-Gildas-de-Rhuys,Saint-Jean-Brévelay,Saint-Nolff,Saint-Philibert,Saint-Pierre-Quiberon,Sarzeau,Séné,Sulniac,Surzur,Theix-Noyalo,Treffléan,Vannes" attributelabel="Commune">
+        </layer>
+   </theme>
+   <theme id="theme-20240614112136" name="Périmètre du SAGE" collapsed="true" icon="far fa-square"> 
+        <layer id="perimetre_sagegmre" name="Périmètre du SAGE Golfe du Morbihan et Ria d'Etel" type="wms" url="https://geobretagne.fr/geoserver/smls/wms" tiled="true" visible="true" infoformat="text/html" fields="" aliases="" style="" stylesalias="" metadata="https://geobretagne.fr/datahub/dataset/c033caf2-07d7-49eb-9903-5ad32c8622ff" metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ELEMENTSETNAME=full&amp;ID&amp;ID=c033caf2-07d7-49eb-9903-5ad32c8622ff" attribution="" queryable="true" searchable="false" fusesearchkeys="" fusesearchresult="" secure="public" filter="" sld="" legendurl="" featurecount="" infopanel="right-panel" opacity="1" index="" styletitle="" dynamiclegend="false" toplayer="false" exclusive="false" showintoc="true">
+        </layer> 
+    </theme>
+</themes>
+</config>

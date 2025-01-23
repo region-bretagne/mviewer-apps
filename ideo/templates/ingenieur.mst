@@ -1,0 +1,21 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h3 class="rb-title-feature">{{etablissement}}</h3>
+		<p class="rb-text-feature">
+			<h4 class="rb-subtitle-feature">Coordonnées</h4>
+			<span style="font-weight:bold"> Adresse :</span> {{adresse}}<br/>
+			<span style="font-weight:bold"> Téléphone :</span> {{tel}}<br/><br/>
+			
+			<h4 class="rb-subtitle-feature">Caractéristiques</h4>
+			<span style="font-weight:bold"> Type de formation:</span> {{type_formation}}<br/>
+			<span style="font-weight:bold"> Spécialité :</span> {{specialite}}<br/>
+			<span style="font-weight:bold"> Niveau de recrutement :</span> {{niveau_recrutement}}<br/>
+			<span style="font-weight:bold"> Statut :</span> {{statut}}<br/>
+			<span style="font-weight:bold"> site web :</span> <a href="{{site_web}}">{{site_web}}</a><br/>
+			
+		</p>
+		{{#photo}}
+			<img src="{{photo}}" class="img-responsive" style="margin-top:5%;" />
+		{{/photo}}        
+	</li>
+{{/features}}

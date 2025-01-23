@@ -25,7 +25,6 @@
     </baselayers>
     <olscompletion url="https://wxs.ign.fr/essentiels/ols/apis/completion" type="geoportail" attribution="IGN"/>
     <searchparameters bbox="true" localities="true" features="true"/>
-    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="current" />
 	<extensions>
 		<extension type="component" id="fullscreen" path="demo/addons"/>
 	</extensions>

@@ -1,0 +1,730 @@
+/******************************************************************************
+--------------------------- CSS KARTENN -------------------------
+********************************************************************************/
+@import url("../../_region/crbicon/crbicon.css");
+
+@font-face {
+  font-family: 'region_black';
+  src: url("../../_region/font/RB/RegionBretagneNew-Black.ttf"); }
+
+@font-face {
+  font-family: 'region_bold';
+  src: url("../../_region/font/RB/RegionBretagneNew-Bold.ttf"); }
+
+@font-face {
+  font-family: 'region_medium';
+  src: url("../../_region/font/RB/RegionBretagneNew-Medium.ttf"); }
+
+@font-face {
+  font-family: 'region_regular';
+  src: url("../../_region/font/RB/RegionBretagneNew-Regular.ttf"); }
+
+
+/*******************************
+------------- NAVBAR
+********************************/
+.navbar-default{
+	border-color:#B0252E ;
+}
+img.mv-logo {
+	max-width: 200px!important;
+}	
+#mv-navbar{
+	border-color:#B0252E ;
+	background-color: #B0252E ;
+}
+
+.navbar-header.fixed-brand{
+	background-color: #B0252E ;
+}
+
+#mv-navbar a.navbar-brand, .mv-title{
+	color:#ffffff!important;
+	font-size: 20px;
+}
+  #mv-navbar .navbar-toggle {
+    border-color: #5A9EAA;
+    color: white; }
+
+#mv-navbar.navbar-default .navbar-nav > li > a {
+  color: white; }
+
+p.navbar-text.mv-title{
+	font-size: 18px;
+	font-family: 'spotkabold', Arial, Sans-serif;
+	letter-spacing: 0.5px;
+}
+
+.navbar-default .navbar-toggle{
+	border-color: #ffffff;
+}
+
+.glyphicon-th-large:before{
+	color:#ffffff;
+}
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+	background-color:#B0252E ;
+}
+
+.ol-control button {
+  color: #fff!important;
+  background-color: #B0252E !important;
+}
+
+.ol-control button:focus, .ol-control button:hover {
+  background-color: #B0252E ;
+}
+
+.gml-item-title {
+    font-family: 'region_medium', Arial, Sans-serif;
+	color:#B0252E ;
+    font-size: 24px;
+}
+
+.popup-content .nav-tabs > li.active > a, .popup-content .nav-tabs > li.active > a:hover, .popup-content .nav-tabs > li.active > a:focus {
+  border-left: thick solid #B0252E !important;
+}
+
+#right-panel .mv-header {
+  background-color: #B0252E ;
+  color: #fff;
+}
+
+#right-panel .mv-header h5{
+  font-family: 'region_bold', sans-serif;
+  font-size: 13px;
+}
+
+/*******************************
+------------- MENU
+********************************/
+
+#sidebar-wrapper a{
+	font-family:'region_medium', Arial, Sans-serif;
+}
+
+#menu>li>a{
+	font-family:'region_bold', Arial, Sans-serif;
+}
+
+#menu li a:hover{
+	border-left:#B0252E  0px solid;
+	background:#B0252E ;
+	color: #f8f8f8;
+}
+
+/* Séparation de la thématique Les fiches de l'Observatoire */
+#theme-layers-fiche{
+	border-top:#777 1.5px dotted!important;
+}
+
+/*******************************
+------------- BOTTOM PANEL
+********************************/
+#bottom-panel .mv-header h5{
+	font-family:'region_bold', Arial, Sans-serif;
+	color: #B0252E ;
+	font-size:13px;
+}
+
+.fa-chevron-down{
+	color:#fff;
+}
+#bottom-panel-btn .fa-chevron-down {
+    background: #B0252E ;
+}
+
+/*******************************
+-------------LEGEND LAYER
+********************************/
+
+#layers-container a {
+	color: #B0252E ;
+	font-family: 'region_bold', Arial, Sans-serif;
+}
+
+.form-group label {
+	font-family: 'region_bold', Arial, Sans-serif;
+	font-weight: normal!important;
+}
+
+#layers-container .mv-layer-options p {
+	font-family: 'region_medium', Arial, Sans-serif;
+}
+
+.form-control{
+	font-family: 'region_medium', Arial, Sans-serif;
+	color:#555!important;
+}
+
+.mv-layer-options{
+	color:#555!important;
+}
+
+/* Sub-title layers */
+.selected-sld.fa span{
+  font-style: italic;
+  font-family: 'region_medium', Arial, Sans-serif;
+}
+
+/*Filtres*/
+.selected-attribute.fa span{
+  font-style: italic;
+  font-family: 'region_medium', Arial, Sans-serif;
+}
+
+/* Opacité */
+.mv-layer-options  .slider-selection{
+	background:#B0252E ;
+}
+
+.mv-layer-options .slider-handle {
+    background: #B0252E ;
+}
+
+.mv-layer-options .tooltip-inner{
+	background-color:#B0252E ;
+	border-radius: 4px;
+	font-family: 'region_medium', Arial, Sans-serif;
+}
+
+.mv-layer-options .tooltip.top .tooltip-arrow{
+	border-top-color:#B0252E ;
+}
+
+/* Temporalité */
+
+.mv-layer-options  .form-group-timer .slider-selection{
+	background:#B0252E ;
+	-webkit-box-shadow:inset 0 0px 0 rgba(0,0,0,0);
+}
+
+.slider.slider-horizontal .slider-tick-label-container{
+	font-family:'region_medium', Arial, Sans-serif;
+}
+
+.slider-tick.round.in-selection{
+	background: #B0252E ;
+	background-image: none;
+	-webkit-box-shadow:inset 0 0px 0 rgba(0,0,0,0);
+}
+
+.form-group-timer .slider-tick.round{
+	background:#B0252E ;
+	background-image:none;
+	-webkit-box-shadow:inset 0 0px 0 rgba(0,0,0,0);
+	opacity: 1;
+}
+
+.form-group-timer .tooltip.bottom .tooltip-arrow{
+	border-bottom-color:#B0252E ;
+}
+
+.mv-layer-options  .form-group-timer .slider-track-high{
+	background:#B0252E ;
+}
+
+#layers-container-box-header {
+  background-color: #B0252E ;
+}
+
+span.mv-time-player-selection {
+    color: #fff;
+    font-size: 13px;
+    background-color: #B0252E ;
+}
+
+/*******************************
+------------- BASEMAP
+********************************/
+
+ul#basemapslist p {
+	font-family: 'region_medium', Arial, Sans-serif;
+}
+
+ul#basemapslist  li.active{
+    border:2px #B0252E  outset;
+}
+
+.ol-scale-line-inner{
+    font-family: 'region_medium', Arial, Sans-serif;
+}
+
+/*******************************
+------------- RIGHT PANEL
+********************************/
+
+h3.title{
+	font-family: 'region_medium', Arial, Sans-serif;
+	font-size: 24px;
+	color:#B0252E ;
+	}
+
+h4.title{
+    font-family: 'region_medium', Arial, Sans-serif;
+    font-size: 16px;
+    color:#B0252E ;
+}
+
+.info{
+	font-family:'region_medium', Arial, Sans-serif;
+	}
+
+/*******************************
+------------- POPOVER
+********************************/
+.popover-content{
+	font-family: 'region_medium', sans-serif!important;
+}
+
+.popover-content p {
+	width: 250px;
+}
+
+.popover-title{
+	font-family: 'region_bold', sans-serif!important;
+}
+
+/*******************************
+------------- POPUP
+********************************/
+.popup-content {
+    font-family: 'region_medium', Arial, Sans-serif;
+}
+
+
+/*******************************
+------------- BUTTON RIGHT TOOLBAR
+********************************/
+#toolstoolbar.btn-warning{
+	background-color: #B0252E ;
+	border-color: #B0252E ;
+}
+
+#toolstoolbar.btn-warning:hover{
+	background-color: #B0252E ;
+	border-color: #B0252E ;
+}
+
+#alerts-zone .alert.alert-info {
+  background-color: #B0252E ;
+  color: #fff;
+}
+
+#alerts-zone .close {
+  color: #fff;
+  text-shadow: 0 1px 0 #000;
+}
+
+.datepicker .active {
+    background-color: #B0252E !important;
+}
+
+.leftpanel-btn:hover {
+   color: #B0252E ;
+}
+
+/* Buttons tools*/
+#drawtoolsoptions .btn-default.active, #drawtoolsoptions .btn-default:active, #drawtoolsoptions .btn-default.focus, #drawtoolsoptions .btn-default:focus {
+	background-color:#B0252E ;
+	border-color:#B0252E ;
+}
+
+/* Tooltip measure */
+
+.tooltip2 {
+  background: #B0252E ;
+  font-family: 'region_medium', Arial, Sans-serif;
+}
+
+.tooltip-measure-static {
+  background-color: #B0252E ;
+  font-family: 'region_medium', Arial, Sans-serif;
+}
+
+.tooltip-measure:before,
+.tooltip-measure-static:before {
+  border-top: 6px solid #B0252E ;
+}
+
+.tooltip-measure-static:before {
+  border-top-color: #B0252E ;
+}
+
+ /* custom-tooltip-feature */
+.tooltip-feature.tooltip-inner {
+    background-color: rgba(45, 64, 89, 0.95);
+    padding: 8px 8px 8px;
+    color: #fff;
+    font-family: "region_medium", Arial, Sans-serif;
+    font-size: 12px;
+    letter-spacing: 1;
+}
+
+.tooltip.right .tooltip-feature.tooltip-arrow {
+    border-right-color: #B0252E ;
+}
+
+.tooltip.top .tooltip-feature.tooltip-arrow {
+    border-top-color: #B0252E ;
+}
+
+.tooltip.left .tooltip-feature.tooltip-arrow {
+    border-left-color: #B0252E ;
+}
+
+.tooltip-feature h5 {
+    margin-bottom: 0;
+}
+
+.tooltip-feature.tooltip.in {
+    opacity: 1;
+}
+
+/* Custom-tooltip-infopanel */
+.mv-tooltip.tooltip-inner {
+    background-color: #B0252E ;
+    padding: 8px 8px 8px;
+    color: #fff;
+    font-family: "region_medium", Arial, Sans-serif;
+    font-size: 11px;
+    letter-spacing: 1;
+}
+
+.tooltip.right .mv-tooltip.tooltip-arrow {
+    border-right-color: #B0252E ;
+}
+
+.tooltip.top .mv-tooltip.tooltip-arrow {
+    border-top-color: #B0252E ;
+}
+
+.tooltip.left .mv-tooltip.tooltip-arrow {
+    border-left-color: #B0252E ;
+}
+
+/*******************************
+------------- SEARCH TOOLBAR
+********************************/
+
+/* Searchresult */
+
+#searchresults{
+	font-family:'region_medium',Arial, Sans-serif!important;
+	color: #555!important;
+}
+
+ul#searchparameters{
+	font-family: 'region_medium',Arial, Sans-serif;
+}
+
+/* Search toolbar */
+
+li.geoportail.list-group-item.disabled{
+	background-color:#B0252E ;
+	border-color:#B0252E ;
+	color: white!important;
+	font-family: 'region_bold', Arial, Sans-serif!important;
+}
+
+li.elasticsearch.list-group-item.disabled{
+	background-color:#B0252E !important;
+	border-color:#B0252E ;
+	color: white!important;
+	font-family: 'region_bold', Arial, Sans-serif!important;
+}
+
+#searchresults li a:hover{
+	font-family:'region_bold', Arial, Sans-serif!important;
+	color:#B0252E !important;
+}
+
+.popup-content .nav-tabs .active .glyphicon, .popup-content .nav-tabs .active .fa {
+  color: #B0252E ;
+}
+
+a:hover{
+	color: #B0252E ;
+}
+
+#searchtool .btn-default{
+	color:#B0252E ;
+}
+
+#parameterspanel .modal-header{
+	color: #333;
+	font-size: 13px;
+	font-family: 'region_medium', Arial, Sans-serif!important;
+}
+
+/*******************************
+------------- MAP OPTIONS
+********************************/
+
+/* Partager la carte*/
+#sharepanel{
+	font-family:'region_medium', Arial, Sans-serif;
+}
+
+a#permalinklink{
+	font-family:'region_medium', Arial, Sans-serif;
+}
+
+.modal-content{
+	font-family: 'region_medium', Arial, Sans-serif;
+}
+
+/*******************************
+------------- HELP / DOCUMENTATION
+********************************/
+
+/* Help button */
+
+button.btn.btn-default.navbar-btn.mv-navbar-btn{
+	border-radius:50%;
+	width:34px;
+	height:34px;
+	min-width:34px;
+	border: 0px!important;
+	font-family: 'region_black', Arial, Sans-serif;
+	color:#B0252E ;
+	font-size: 15px;
+}
+
+button.btn.btn-default.navbar-btn.mv-navbar-btn:hover{
+	background-color: rgba(255, 255, 255, 0.89);
+}
+
+button.btn.btn-default.navbar-btn.mv-navbar-btn:focus{
+	background-color: rgba(255, 255, 255, 255);
+}
+
+/* Help panel */
+
+#help .modal-content{
+	font-family: 'region_medium', Arial, Sans-serif!important;
+	height: auto;
+}
+
+#help .nav-tabs{
+	border-bottom: 2px solid #B0252E ;
+}
+
+#help .nav-tabs>li>a{
+	border-radius: 0px 0px 0 0px!important;
+	color: #555;
+}
+
+#help .nav-tabs>li.active>a{
+	background-color: #B0252E ;
+	border-color: #B0252E ;
+	color: white!important;
+}
+
+#help .nav-tabs>li>a:hover{
+	border-color: #eee #eee #B0252E !important;
+}
+
+#help a:hover{
+	color: #B0252E !important;
+}
+
+#help .modal-title{
+    font-size: 25px;
+    font-family: 'region_bold', Arial, Sans-serif;
+    color: #B0252E ;
+}
+
+#help .tab-pane h4{
+	font-family: 'region_bold', Arial, Sans-serif;
+    color: #B0252E ;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+#help .tab-pane h5{
+	font-family: 'region_bold', Arial, Sans-serif;
+    color: #B0252E ;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+#help .tab-pane h6{
+	font-family: 'region_bold', Arial, Sans-serif;
+    color: #B0252E ;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+#help .movie{
+	margin-bottom: 20px;
+}
+
+#help .tab-pane p{
+    color: #555;
+    font-size: 13px;
+    text-align: justify;
+}
+
+#help .tab-pane .visuel_tx{
+    color: #555;
+    font-size: 13px;
+}
+
+#help .tab-pane .visuel{
+    text-align: center;
+}
+
+
+/*******************************
+-------------CSS Fiche info GML
+********************************/
+.gml-item-field-name {
+	font-family: 'region_medium', Arial, Sans-serif;
+}
+
+.gml-item-field-value{
+	font-family: 'region_medium', Arial, Sans-serif;
+}
+
+/*******************************
+-------------LOADER INDICATOR
+********************************/
+.mv-layer-indicator .loader {
+    border-top: 1.1em solid rgba(3, 46, 70, 0.2);
+    border-right: 1.1em solid rgba(3, 46, 70, 0.2);
+    border-bottom: 1.1em solid rgba(3, 46, 70, 0.2);
+    border-left: 1.1em solid #B0252E ;
+}
+
+.mv-iframe-indicator .loader {
+    border-top: 1.1em solid rgba(3, 46, 70, 0.2);
+    border-right: 1.1em solid rgba(3, 46, 70, 0.2);
+    border-bottom: 1.1em solid rgba(3, 46, 70, 0.2);
+    border-left: 1.1em solid #B0252E ;
+}
+
+/*Mise en forme des MST*/
+#rb-puces li {
+	list-style: none;
+	color: #555;
+}
+#rb-puces li:before{
+	content:"· ";
+	font-size:50px;
+	vertical-align:middle;
+	line-height:20px;
+	color: #B0252E ;
+}
+.rb-title-feature {
+	color: #B0252E ;
+	font-family:"region_bold";
+	font-size:25px;
+	margin-bottom:3%;
+	line-height:1;
+}
+.rb-subtitle-feature {
+	color: #B0252E ;
+	font-family:"region_bold";
+	font-size:18px;
+	margin-top:2%;
+	line-height:1;
+}
+.rb-text-feature{
+	font-family:"region_medium";
+	color:#555;
+	font-size:13px;
+	margin-top:2%;
+	margin-bottom:2%;
+}
+.rb-description-feature{
+	font-family:"region_medium";
+	color:#555;
+	font-size:11px;
+	margin:2%;
+	text-align: justify;
+}
+.rb-source-feature{
+	font-family:"region_medium";
+	color:#555;
+	font-size:10px;
+	margin:2%;
+	text-align: justify;
+}
+.rb-but-list{
+	margin-top:4%;
+}
+.rb-but-link, .rb-but-link:focus, .rb-but-link:hover{
+	display:inline-block;
+	padding:0.5em 1em;
+	margin:0 0.3em 0.3em 0;
+	border-radius:0.3em;
+	box-sizing: border-box;
+	text-decoration:none;
+	font-family:'region_bold',sans-serif;
+	font-weight:300;
+	color:#FFFFFF;
+	background-color:#B0252E ;
+	text-align:center;
+	transition: all 0.2s;
+}
+.rb-but-link:hover{
+	background-color:#b0006b;
+}
+.rb-iframe-bottom{
+		width:970px;
+		height:300px;
+		border: none;
+		overflow:hidden;
+		margin-left:-20px;
+	}
+.rb-critere {
+	color: #fff;
+	font-size:13px;
+	background-color:#B0252E ;
+	border-radius:3px;
+	padding:7px 16px 8px 13px;
+}
+#rb-text{
+	font-family:"region_medium";
+	margin-left:3px;
+}
+
+/* Search results */
+#searchresults {
+	font-family: "region_medium", Arial, Sans-serif;
+	color: #555555; }
+	#searchresults a.list-group-item.disabled {
+	  font-family: "region_bold", Arial, Sans-serif; }
+	#searchresults a:hover {
+	  font-family: "region_bold", Arial, Sans-serif;
+	  color: #B0252E ; }
+
+  .searchresults-title {
+	background-color: #B0252E ;
+	border-color: #B0252E ;
+	color: white;
+	font-family: "region_bold", Arial, Sans-serif; }
+
+  .searchresults-title .close,
+  .searchresults-title .close:hover,
+  .searchresults-title .close:focus,
+  .searchresults-title .close:active,
+  .searchresults-title .close:visited {
+	color: white; }
+
+
+/* Personnalisations */
+
+.xs.mode-u #btn-mode-su-menu {
+    display:none!important;
+}
+
+.ol-attribution.ol-unselectable.ol-control.ol-collapsed {
+    display:none!important;
+}
+
+.panel-group .panel-heading{
+	display:none!important;
+}

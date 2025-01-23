@@ -1,0 +1,23 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h3 class="rb-title-feature">{{nom}}</h3>
+		<p class="rb-text-feature">
+			<span style="font-weight:bold"> Type de communauté :</span> {{type_libelle}}<br/>
+			<span style="font-weight:bold"> Nombre de trajets :</span> {{voyages}}<br/>
+			<span style="font-weight:bold"> Nombre de membres :</span> {{membres}}<br/>
+		</p><br/>
+		<h3 class="rb-subtitle-feature">Référent</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{referent_prenom}} {{referent_nom}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{referent_tel}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{referent_mail}}<br/>
+		</p>
+
+		{{#url}}
+		<div class="rb-but-list">
+			<a href="{{url}}" target="_blank" title="Site web" class="rb-but-link"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> <b>Lien vers communauté</b></a>
+		</div>
+		{{/url}}
+
+	</li>
+{{/features}}

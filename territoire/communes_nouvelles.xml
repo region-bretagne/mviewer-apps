@@ -1,0 +1,37 @@
+<config xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" mviewerversion="3.10" mviewerstudioversion="4">
+<metadata>
+
+                <rdf:RDF>
+                    <rdf:Description rdf:about="http://www.ilrt.bristol.ac.uk/people/cmdjb/">
+                        <dc:title>Communes nouvelles</dc:title>
+                        <dc:creator>lecault</dc:creator>
+                        <dc:identifier>a05d30425286</dc:identifier>
+                        <dc:keywords />
+                        <dc:publisher>rb</dc:publisher>
+                        <dc:description>13-01-2025-17-20-21</dc:description>
+                        <dc:date>2025-01-13T16:20:21.009Z</dc:date>
+                        <dc:relation />
+                        <dc:subject>Communes nouvelles</dc:subject>
+                    </rdf:Description>
+                </rdf:RDF>
+</metadata>
+<application title="Communes nouvelles" logo="" favicon="" help="" titlehelp="" iconhelp="fas fa-home" home="" style="css/themes/default.css" zoomtools="true" initialextenttool="true" exportpng="false" showhelp="false" coordinates="false" measuretools="true" mouseposition="false" geoloc="false" studio="" togglealllayersfromtheme="false" mapprint="false" addlayerstools="false">
+</application>
+<mapoptions projection="EPSG:3857" center="-279791,6121101" maxzoom="" zoom="8" />
+<proxy url="/proxy/?url=" />
+<olscompletion type="ban" url="https://api-adresse.data.gouv.fr/search/" attribution="Base adresse nationale (BAN)" />
+<searchparameters bbox="false" localities="true" features="false" static="false" />
+<baselayers style="default"> 
+    <baselayer visible="true" id="positron" thumbgallery="img/basemap/positron.png" title="CartoDb" label="Positron" type="OSM" url="https://{a-c}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png" attribution="Map tiles by  &lt;a href=&quot;https://cartodb.com/attributions&quot;&gt;CartoDb&lt;/a&gt;, under  &lt;a href=&quot;https://creativecommons.org/licenses/by/3.0/&quot;&gt;CC BY 3.0 &lt;/a&gt;" /> 
+    <baselayer visible="false" id="ortho_ign" thumbgallery="img/basemap/ortho.jpg" title="IGN" label="Photographies aériennes" type="WMTS" url="https://data.geopf.fr/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" fromcapacity="false" attribution="&lt;a href='https://geoservices.ign.fr/services-geoplateforme-diffusion' target='_blank'&gt;&lt;img src='https://geobretagne.fr/pub/logo/099_ign.jpg'&gt;&lt;/a&gt;" style="normal" matrixset="PM" maxzoom="22" /> 
+</baselayers>
+<themes mini="false"> 
+    <theme id="theme-20250113172031" name="Communes nouvelles" collapsed="true" icon="fas fa-caret-right"> 
+        <layer id="commune_nouvelle_geom" name="Périmètre communes nouvelles" type="wms" url="https://ows.region-bretagne.fr/geoserver/rb/wms" tiled="true" visible="true" infoformat="application/vnd.ogc.gml" fields="" aliases="" style="" stylesalias="" metadata="" metadata-csw="" attribution="Région Bretagne" queryable="false" searchable="false" fusesearchkeys="" fusesearchresult="" useproxy="false" filter="" sld="" legendurl="" featurecount="" infopanel="right-panel" opacity="1" index="" styletitle="" dynamiclegend="false" toplayer="false" expanded="false" exclusive="false" showintoc="true">
+        </layer> 
+        <layer id="commune_nouvelle_suivi_geom" name="Commune nouvelle suivi" type="wms" url="https://ows.region-bretagne.fr/geoserver/rb/wms" tiled="true" visible="true" infoformat="application/vnd.ogc.gml" fields="" aliases="" style="" stylesalias="" metadata="" metadata-csw="" attribution="Région Bretagne" queryable="true" searchable="false" fusesearchkeys="" fusesearchresult="" useproxy="false" filter="" sld="" legendurl="" featurecount="" infopanel="right-panel" opacity="1" index="" styletitle="" dynamiclegend="false" toplayer="false" expanded="false" exclusive="false" showintoc="true">
+        	<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/territoire/templates/communes_nouvelles.mst"></template>
+		</layer> 
+    </theme> 
+</themes>
+</config>

@@ -1,0 +1,8 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{porteur}}</h2>
+		<p class="rb-text-feature">
+			<b>Projet :</b> {{libelle_projet}}	<br>
+		</p>
+	</li>
+{{/features}}

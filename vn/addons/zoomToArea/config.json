@@ -1,0 +1,19 @@
+{
+  "js": ["zoomToArea.js"],
+  "css": "style.css",
+  "html": "zoomToArea.html",
+  "target": "page-content-wrapper",
+  "options": {
+    "mviewer": {
+      "vn": {
+        "dataUrl": "https://ows.region-bretagne.fr/geoserver/interne/wfs?service=wfs&version=1.0.0&request=getfeature&typename=brigade&outputformat=application%2Fjson&srsName=EPSG:4326",
+        "dataEPSG": "EPSG:4326",
+        "fieldNameAreas": "nom_brigad",
+        "fieldIdAreas": "objectid",
+        "fieldSortBy": "nom_brigad",
+        "bufferSize": 3000,
+        "selectLabel": "Zoomer sur un centre d'exploitation"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{nom}}</h2>
+		<p class="rb-text-feature">		
+			<b>Ancien nom (le cas échéant) :</b> {{nom_2015}}	<br>
+			{{#date_fusion}}
+			<span style="font-weight:bold"> Date de fusion :</span> {{date_fusion}}<br/>
+			{{/date_fusion}}
+		</p>
+	</li>
+{{/features}}

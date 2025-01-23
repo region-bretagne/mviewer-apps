@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <application panelstate="open" coordinates="false" title="Potentiel éolien en mer"  
+		logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/img/rb_blanc.svg" 
+		help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" 
+		exportpng="true" legend="true" measuretools="true" legendasimage="false" popup="false" print="false" 
+		stats="true" 
+		statsurl="../ws/kartenn/log.php"
+		style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/css/kartenn.css"/>
+    <mapoptions maxzoom="20" projection="EPSG:3857" center="-132275,6140342" zoom="7" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
+
+	<baselayers style="gallery">           		
+        <baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="Orthophoto IGN" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
+            url="https://data.geopf.fr/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
+            attribution="&lt;a href='https://geoservices.ign.fr/services-web-essentiels/' target='_blank'>&lt;img src='https://geoservices.ign.fr/themes/custom/ignpro/logo.svg' width=100px>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+        <baselayer  type="WMTS" id="plan" label="Plan IGN" title="GéoPortail" maxscale="2000" thumbgallery="img/basemap/plan_ign.png" opacity="0.8"
+            url="https://data.geopf.fr/wmts" layers="GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2" format="image/png" visible="false" fromcapacity="false"
+            attribution="&lt;a href='https://geoservices.ign.fr/services-web-essentiels/' target='_blank'>&lt;img src='https://geoservices.ign.fr/themes/custom/ignpro/logo.svg' width=100px>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+		<!-- <baselayer  type="WMTS" id="SHOM" label="SHOM" title="SHOM" maxscale="2000" thumbgallery="img/basemap/plan_ign.png" opacity="0.8" -->
+            <!-- url="https://osm.geobretagne.fr/nonopen/service?" layers="SHOM-RASTER_MARINE" format="image/png" visible="false" fromcapacity="false" -->
+            <!-- attribution="&lt;a href='https://geoservices.ign.fr/services-web-essentiels/' target='_blank'>&lt;img src='https://geoservices.ign.fr/themes/custom/ignpro/logo.svg' width=100px>&lt;/a>" -->
+			<!-- style="normal" matrixset="PM" maxzoom="22"/> -->
+		<!-- <baselayer visible="false" id="SHOM" thumbgallery="img/basemap/shom.jpg" title="SHOM" label="SHOM" type="WMS"  -->
+			<!-- url="https://ows.region-bretagne.fr/geoserver/interne/wms?" layers="interne:shom" format="image/png"  -->
+            <!-- attribution="SHOM"/> -->
+		<baselayer visible="true" id="osm" thumbgallery="https://kartenn.region-bretagne.fr/kartoviz/apps/region/eolien/img/bathymetrie.jpg" title="Bathymétrie" label="Bathymétrie" type="WMS" 
+			url="https://ows.emodnet-bathymetry.eu/wms?" layers="emodnet:mean_atlas_land" format="image/png" 
+            attribution="DataGrandEst. Données : les contributeurs d'&lt;a href='https://www.openstreetmap.org/' target='_blank'>OpenStreetMap &lt;/a>,  &lt;a href='https://www.openstreetmap.org/copyright' target='_blank'>ODbL &lt;/a>"/>
+		<baselayer visible="true" id="shom" thumbgallery="img/basemap/shom.jpg" title="SHOM" label="SHOM" type="WMS" 
+			url="https://services.data.shom.fr/dz2gfkzwlxjiloef3xhtyvdd/wms/r" layers="RASTER_MARINE_400_WMSR_3857" format="image/png"
+            attribution="SHOM"/>
+    </baselayers> 
+    <authentification url="who" loginurl="?login" logouturl="../j_spring_security_logout" enabled="true"/>
+    <proxy url="../proxy/?url="/>
+    <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par l'API adresse.data.gouv.fr"/>
+    <!--<elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="current"/>-->
+    <searchparameters bbox="true" localities="true" features="false"/>
+	
+    <!-- <extensions>    -->
+		<!-- <extension type="javascript" src="https://kartenn.region-bretagne.fr/kartoviz/demo/cad/external/piklor.js" usededby="cad.js"/>	 -->
+    <!-- </extensions> -->
+    <themes>
+        
+		
+		<theme name="Zones d'étude"  collapsed="true" id="etudes" icon="fas fa-map-marker-alt"> 
+            <layer id="eolien_zonage_eoflo" name="Emprise"  visible="true" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_emprise"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : GeoLittoral" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>  <layer id="eolien_zonage_eoflo" name="Zone d'étude 2034"  visible="true" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_2034"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : GeoLittoral" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer> 
+			<layer id="eolien_zonage_eoflo" name="Zone d'étude 2050"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_2050"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : GeoLittoral" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>			
+		</theme>
+
+
+		<theme name="Synthèse"  collapsed="true" id="synthese" icon="far fa-folder"> 
+            <layer id="eolien_zonage_eoflo" name="Zones non compatibles"  visible="true" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_zone_non_compatible"   opacity="0.5"            
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : GeoLittoral" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer> 
+			<layer id="eolien_zonage_eoflo" name="Zones contraignantes"  visible="true" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_zone_contraignante"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : GeoLittoral" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>
+		</theme>
+		<theme name="Zone d'importance de la pêche"  collapsed="true" id="zonage peche" icon="fa fa-fish"> 
+            <layer id="eolien_zonage_eoflo" name="ZIP"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_zonage_peche"   opacity="0.7"            
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Article France 3 region - https://france3-regions.francetvinfo.fr/pays-de-la-loire/projets-de-parcs-eoliens-en-mer-les-pecheurs-veulent-etre-consultes-2942148.html " 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer> 
+		</theme>
+		
+		<theme name="Scénario filière"  collapsed="true" id="scenario" icon="far fa-caret-square-right"> 
+            <layer id="eolien_zonage_eoflo" name="Scénario equilibre 1"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_scenario_ser_fr"   opacity="0.7"            
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : SER et FR " 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer> 
+		</theme>
+		<theme name="Proposition site grande puissance Open-C"  collapsed="true" id="Open-C" icon="far fa-caret-square-right"> 
+            <layer id="eolien_zonage_eoflo" name="Open-C A"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_open-c_A"   opacity="0.7"            
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : Open-C" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer> 
+			 <layer id="eolien_zonage_eoflo" name="Open-C B"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_open-c_B"   opacity="0.7"            
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : Open-C" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer> 
+			 <layer id="eolien_zonage_eoflo" name="Open-C BJ"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_open-c_BJ"   opacity="0.7"            
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : Open-C" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer> 
+		</theme>
+		<theme name="LCOE"  collapsed="true" id="LCOE" icon="fa fa-euro-sign"> 
+            <layer id="lcoe" name="LCOE"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                opacity="0.7"            
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : FEM" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer> 
+			  <layer id="lcoe-2034" name="LCOE 2034"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                opacity="0.7"            
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : FEM" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer> 
+			  <layer id="lcoe-2050" name="LCOE 2050"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                opacity="0.7"            
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : FEM" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer> 
+		</theme>		
+		<theme name="Zonage Etat"  collapsed="true" id="zonage etat" icon="fas fa-flag"> 
+            <layer id="eolien_zonage_eoflo" name="Zone d'étude des raccordements"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_zone_etude_etat"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : GeoLittoral" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>  
+			<layer id="eoflo_propice_etat" name="Zone propice au développement de l'éolien"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style=""                
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : GeoLittoral" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>
+			<layer id="eolien_zonage_eoflo" name="Aires et zones d’études pour le raccordement - AO10"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eolien_ao10_aire_raccordement"  opacity="0.7"             
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : GeoLittoral" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>
+			<layer id="eolien_zonage_eoflo" name="Autres zones prioritaires à l’horizon 10 ans"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eolien_zonage_prioritaire_10ans"  opacity="0.7"             
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : GeoLittoral" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>
+			<layer id="eolien_zonage_eoflo" name="Zones prioritaires à l’horizon 2050"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eolien_zonage_prioritaire_2050"   opacity="0.7"            
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : GeoLittoral" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer><layer id="eolien_zonage_eoflo" name="Zones prioritaires retenues pour la procédure de mise en concurrence - AO10"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eolien_zonage_prioritaire_AO10" opacity="0.7"              
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : GeoLittoral" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>
+			</theme>
+			
+		<!-- <theme name="Zonage d'exclusion technique"  collapsed="true" id="zonage exlusion" icon="fas fa-ban">  -->
+            <!-- <layer id="eolien_zonage_eoflo" name="Zonage exclusion flottant"  visible="false" tiled="false" -->
+                <!-- searchable="false" queryable="false"   -->
+                <!-- style="eoflo_exclusion_flottant"                -->
+                <!-- url="https://ows.region-bretagne.fr/geoserver/interne/wms"  -->
+                <!-- attribution=""  -->
+                <!-- metadata="" -->
+                <!-- metadata-csw="" >	    -->
+		    <!-- </layer>  -->
+            <!-- <layer id="eolien_zonage_eoflo" name="Zonage exclusion posé"  visible="false" tiled="false" -->
+                <!-- searchable="false" queryable="false"   -->
+                <!-- style="eoflo_exclusion_pose"                -->
+                <!-- url="https://ows.region-bretagne.fr/geoserver/interne/wms"  -->
+                <!-- attribution=""  -->
+                <!-- metadata="" -->
+                <!-- metadata-csw="" >	    -->
+		    <!-- </layer> -->
+            <!-- <layer id="eolien_zonage_eoflo" name="Zonage mixte flottant-posé"  visible="false" tiled="false" -->
+                <!-- searchable="false" queryable="false"   -->
+                <!-- style="eoflo_zonage_mixte"                -->
+                <!-- url="https://ows.region-bretagne.fr/geoserver/interne/wms"  -->
+                <!-- attribution=""  -->
+                <!-- metadata="" -->
+                <!-- metadata-csw="" >	    -->
+		    <!-- </layer>			 -->
+			
+		<!-- </theme> -->
+		<!-- <theme name="Zonage pêche"  collapsed="true" id="zonage peche" icon="fas fa-flag">  -->
+            <!-- <layer id="eolien_zonage_eoflo" name="Zone d'importance de pêche"  visible="false" tiled="false" -->
+                <!-- searchable="false" queryable="false"   -->
+                <!-- style="eoflo_importance_peche"                -->
+                <!-- url="https://ows.region-bretagne.fr/geoserver/interne/wms"  -->
+                <!-- attribution=""  -->
+                <!-- metadata="" -->
+                <!-- metadata-csw="" >	    -->
+		    <!-- </layer>   -->
+			
+		<!-- </theme> -->
+		<!-- <theme name="Zonage développeurs éoliens"  collapsed="true" id="zonage developpeur" icon="fas fa-flag">  -->
+            <!-- <layer id="eolien_zonage_eoflo" name="Scénario d’équilibre"  visible="false" tiled="false" -->
+                <!-- searchable="false" queryable="false"   -->
+                <!-- style="eoflo_developpeurs_eoliens"                -->
+                <!-- url="https://ows.region-bretagne.fr/geoserver/interne/wms"  -->
+                <!-- attribution=""  -->
+                <!-- metadata="" -->
+                <!-- metadata-csw="" >	    -->
+		    		    <!-- </layer>  -->
+
+			
+		<!-- </theme> -->
+
+		<theme name="Limites maritimes"  collapsed="true" id="limite" icon="far fa-dot-circle"> 
+            <layer id="eolien_ligne_eoflo" name="Limites"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : GeoLittoral" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer> 
+		</theme>
+		<theme name="Fonds marins"  collapsed="true" id="bathymetrie" icon="fas fa-angle-down"> 
+			<layer id="SEDIM_MONDIALE_BDD_4326_WMSV" name="Carte sédimentaire"  visible="false" tiled="false"
+                searchable="false" queryable="true"  
+                url="https://services.data.shom.fr/INSPIRE/wms/v" 
+                attribution="Source: SHOM" 
+                metadata="" useproxy="true"
+                metadata-csw="" >	   
+		    </layer> 
+            <layer id="eolien_bathymetrie_eoflo" name="Limites"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="" 
+                metadata="Source : SHOM"
+                metadata-csw="" >	   
+		    </layer> 
+			<layer id="eolien_zonage_eoflo" name="Bathymetrie zonage"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_zonage_bathymetrie"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : GeoLittoral" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>
+			<layer id="RASTER_MARINE_400_WMSR_3857" name="Carte SHOM"  visible="false" tiled="false"
+                searchable="false" queryable="false" useproxy="true"
+                url="https://services.data.shom.fr/dz2gfkzwlxjiloef3xhtyvdd/wms/r" 
+                attribution="Source : SHOM" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>
+		</theme>
+		
+	   <theme name="Servitude"  collapsed="true" id="servitude" icon="far fa-map"> 
+            <group name="Radars" id="radars" >
+			<layer id="eolien_zonage_eoflo" name="Radars protection"  visible="false" tiled="false" toplayer="true" index="1"
+                searchable="false" queryable="false"  
+                style="eoflo_radar_protection"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : GeoLittoral" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer> 
+			<layer id="eolien_zonage_eoflo" name="Radars coordination"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_radar_coordination"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : GeoLittoral" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>
+			</group>
+			<group name="Navigation" id="navigation" >
+			<layer id="eolien_zonage_eoflo" name="Navigation maritime"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+				opacity="1"
+                style="eoflo_zonage_navigation"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : GeoLittoral" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>
+			<layer id="eolien_zonage_eoflo" name="Restriction de navigation - zone sécurité"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+				opacity="0.7"
+                style="eoflo_restriction_navigation_zone_securite"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer> 
+			<layer id="eolien_zonage_eoflo" name="Restriction de navigation"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_restriction_navigation"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>
+			</group>
+			<group name="Militaire" id="militaire" >
+			<layer id="eolien_zonage_eoflo" name="Restriction militaire "  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_restriction_militaire"               
+                opacity="0.7"
+				url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer> 
+			</group>
+			<group name="Autres activités" id="autre" >
+			<layer id="eolien_zonage_eoflo" name="Ferme marine"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_ferme_marine"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : GeoLittoral" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer> 
+			<layer id="eolien_zonage_eoflo" name="zone de dépot"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_zone_depot"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : GeoLittoral" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>
+			<!-- <layer id="eolien_zonage_eoflo" name="Parcs éoliens"  visible="false" tiled="false" -->
+                <!-- searchable="false" queryable="false"   -->
+                <!-- style="eoflo_parcs_eoliens"                -->
+                <!-- url="https://ows.region-bretagne.fr/geoserver/interne/wms"  -->
+                <!-- attribution=""  -->
+                <!-- metadata="" -->
+                <!-- metadata-csw="" >	    -->
+		    <!-- </layer>  -->
+			<layer id="eolien_zonage_eoflo" name="Trafic maritime"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_trafic_maritime"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : GeoLittoral" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>
+			</group>
+		</theme>
+
+        <theme name="Enjeux environnementaux"  collapsed="true" id="enj_env" icon="fas fa-leaf"> 
+            <group name="Non compatible" id="grp1" >
+			<layer id="eolien_zonage_eoflo" name="Arrêté de protection biotope"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_biotope"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer> 
+			<layer id="eolien_zonage_eoflo" name="RAMSAR"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_ramsar"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>
+			<layer id="eolien_zonage_eoflo" name="Réserves naturelles nationales"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_reserve_naturelle_nationale"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>
+			<layer id="eolien_zonage_eoflo" name="Zone de protection forte"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_zpf"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>			
+			</group>
+			<group name="Contraignants" id="grp2" >
+			<layer id="eolien_zonage_eoflo" name="biosphère"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+				filter="zone='biosphère'"
+                style="eoflo_biosphere"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer> 
+            <layer id="eolien_zonage_eoflo" name="OSPAR"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_ospar"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>
+			<layer id="eolien_zonage_eoflo" name="Parc naturel marin"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_parc_naturel_marin"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>
+			<layer id="eolien_zonage_eoflo" name="Natura 2000 ZPS"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_natura2000_zps"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="" 
+                metadata=""
+                metadata-csw="" >
+			</layer>
+			<layer id="eolien_zonage_eoflo" name="Natura 2000 ZSC-PSIC-SIC"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_natura2000_zsc"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>
+			<layer id="eolien_zonage_eoflo" name="ZICO"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_zico"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>
+			<layer id="eolien_zonage_eoflo" name="Sites inscrits UNESCO"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_unesco"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>
+			<layer id="eolien_zonage_eoflo" name="ZNIEFF 1 Mer"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_znieff1mer"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>
+			<layer id="eolien_zonage_eoflo" name="ZNIEFF 2 Mer"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                style="eoflo_znieff2mer"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>
+			<layer id="distribution_fou_bassan" name="Dsitribution d'utilisation des fous de bassan nicheur des 7 îles"  visible="false" tiled="false"
+                searchable="false" queryable="false"  expanded="true"
+				opacity="1" 
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : Alice Bernard, Pascal Provost &amp; David Gr&#233;millet (CEFE-CNRS/LPO)"
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>
+			<layer id="eolien_zonage_eoflo" name="Parc eolien"  visible="true" tiled="false"
+                searchable="false" queryable="false" 
+				showintoc="false" opacity="0.5" 
+                style="eoflo_parc_eolien"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>
+			
+			<layer id="bretagne_5" name="Bretagne à 5" visible="true" tiled="false"
+				queryable="false" 
+				showintoc="false"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attribution="Source : IGN - Admin Express" 
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72" >  
+			</layer>
+			<layer id="departement_metro" name="Département" visible="true" tiled="false"
+				queryable="false"
+				showintoc="false"
+				url="https://geobretagne.fr/geoserver/ign/wms" 
+				style="bretagne_5_style" 
+				attribution="SSource : IGN - Admin Express" 
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/c8884cac-bc25-41a0-92d1-b6566c86066e"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c8884cac-bc25-41a0-92d1-b6566c86066e" >
+			</layer>
+			</group>
+			
+			<group name="Autres" id="autre" >
+			<layer id="bio_atl_bzhnd_suivi_megaf_2020_2021_obs_ofb_pt_3857" name="Bretagne nord : campagne aérienne de suivi de la mégafaune marine (2020-2021)"  visible="false" tiled="false"
+                searchable="false" queryable="false" 
+				opacity="0.5" 
+                style=""               
+                url="https://wxs.ofb.fr/geoserver/espece/ows?version=2.0.0" 
+                attribution="" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer>
+			<layer id="eolien_zonage_eoflo" name="Périmètre d'intervention du Conservatoire du Littoral"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+				opacity="0.7"
+                style="eoflo_perimetre_conservatoire"               
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer> 
+			
+			</group>
+		</theme>
+		
+		<theme name="Vent"  collapsed="true" id="vent" icon="fas fa-map-marker-alt"> 
+            <layer id="vitesse de vent" name="Force du vent à 180 m"  visible="false" tiled="false"
+                searchable="false" queryable="false"  
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : GeoLittoral" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer> 
+		</theme>
+		
+		<theme id="theme-20221208095849" name="Réseaux électrique" collapsed="true" icon="far fa-lightbulb"> 
+			<layer id="eolien_ligne_eoflo" name="Réseau haute tension"  visible="false" tiled="false"
+                searchable="false" queryable="false"  style="eoflo_rte"
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="Source : RTE" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer> 
+			<layer 
+			id="postes_electriques" 
+			name="Postes électriques - 400kV" 
+			type="wms" 
+            url="https://geobretagne.fr/geoserver/rte/wms"
+			tiled="true" visible="false" infoformat="application/vnd.ogc.gml" 
+			filter="tension like '400kV' and (longitude_poste between -8 and -1) and (latitude_poste between 46 and 50)"
+            metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/86f38670-2bcc-45af-ae29-f3c922bb8975"
+            metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ELEMENTSETNAME=full&amp;ID&amp;ID=86f38670-2bcc-45af-ae29-f3c922bb8975"
+			attribution="RTE" queryable="true" searchable="false" infopanel="right-panel"> 
+			<template url="https://geobretagne.fr/pub/geobretagne/apps/templates/rte-poste_electrique.mst" />
+        </layer> 
+		</theme> 
+	
+		<theme id="brouillon" name="Périmètre de travail" collapsed="true" icon="fas fa-pencil-alt"> 
+			<layer id="eolien_brouillon_eoflo" name="Exemples"  visible="false" tiled="false" expanded="true"
+				 filter="observation='exemple'"
+                searchable="false" queryable="true"  style=""
+				infoformat="application/vnd.ogc.gml" field ="surface,puissance" aliases="Surface en km²,Puissance en mW"
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms" 
+                attribution="" 
+                metadata=""
+                metadata-csw="" >	   
+		    </layer> 
+			<!-- <layer id="eolien_brouillon_eoflo" name="Travail"  visible="false" tiled="false" expanded="true" -->
+				 <!-- attributefilter="true" attributefield="observation"  -->
+				<!-- attributevalues="option 1,option 2,option 3,option 4," attributelabel="Options" -->
+                <!-- searchable="false" queryable="true"  style="" -->
+				<!-- infoformat="application/vnd.ogc.gml" field ="surface,puissance" aliases="Surface en km²,Puissance en mW" -->
+                <!-- url="https://ows.region-bretagne.fr/geoserver/interne/wms"  -->
+                <!-- attribution=""  -->
+                <!-- metadata="" -->
+                <!-- metadata-csw="" >	    -->
+		    <!-- </layer>  -->
+			
+			<!-- <layer id="eolien_projet_eoflo" name="Projet"  visible="false" tiled="false" -->
+                <!-- searchable="false" queryable="true"  style="" -->
+				<!-- infoformat="application/vnd.ogc.gml" field ="surface,puissance" aliases="Surface en km²,Puissance en mW" -->
+                <!-- url="https://ows.region-bretagne.fr/geoserver/interne/wms"  -->
+                <!-- attribution=""  -->
+                <!-- metadata="" -->
+                <!-- metadata-csw="" >	    -->
+		    <!-- </layer>  -->
+		</theme> 
+	
+    </themes>
+    <styles>
+        <selectionstyle>
+            <point radius="12" fillcolor="26, 188, 156" opacity="0" strokecolor="26, 188, 156" strokewidth="4" />
+            <line opacity="0.6" strokecolor="26, 188, 156" strokewidth="8" />
+            <polygon fillcolor="26, 188, 156" opacity="0" strokecolor="26, 188, 156" strokewidth="4" />
+        </selectionstyle>
+        <subselectionstyle>
+            <point radius="12" fillcolor="175, 122, 197" opacity="0.5" strokecolor="175, 122, 197" strokewidth="4" />
+            <line opacity="0.8" strokecolor="175, 122, 197"  strokewidth="8" />
+            <polygon fillcolor="175, 122, 197" opacity="0.2" strokecolor="175, 122, 197" strokewidth="6" />
+        </subselectionstyle>
+    </styles>
+
+</config>

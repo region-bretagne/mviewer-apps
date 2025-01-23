@@ -1,0 +1,76 @@
+<hash style="display:none;">-1445309760</hash>{{#features}}
+      <li id="{{feature_ol_uid}}" class="item mstudio_template" style="width:100%;">
+        
+    {{#nom}}
+    <div class="textH1Component template-component mb-2" id="a1266998-f874-42b2-96f8-c640b65b7298"
+      data-type-selector="field"
+      data-color="#b0252e"
+      data-value="nom"
+      data-component="textH1Component"
+    >
+        <!--
+        Variable : nom
+        Prop : color
+        -->
+        <h3 style="font-weight:bold; color:#b0252e;">{{#nom}}{{nom}}{{/nom}}</h3>
+    </div>{{/nom}}
+    {{#nb_formation}}
+    <div class="numberComponent template-component mb-2"
+      style="margin: 12px 0px;display:flex; align-items:center; color:#f4f4f4; justify-content:flex-start;background: #b0252e; padding: 14px;border-radius: 5px;width: fit-content;"
+      data-type-selector="field"
+      data-value="nb_formation"
+      data-text="Nombre de formation"
+      data-icon="fas fa-graduation-cap "
+      data-color="#f4f4f4"
+      data-bg-color="#b0252e"
+      data-component="numberComponent"
+      >
+      <div style="font-size: 40px;"><i class="fas fa-graduation-cap "></i></div>
+      <div style="line-height: 1.2;padding: 0px 15px;">
+            <div style="font-size: 24px;font-weight: bold;">{{#nb_formation}}{{nb_formation}}{{/nb_formation}}</div>
+            <div>Nombre de formation</div>
+        </div>
+    </div>
+    {{/nb_formation}}
+  
+    {{#nb_organisme}}
+    <div class="numberComponent template-component mb-2"
+      style="margin: 12px 0px;display:flex; align-items:center; color:#f4f4f4; justify-content:flex-start;background: #b0252e; padding: 14px;border-radius: 5px;width: fit-content;"
+      data-type-selector="field"
+      data-value="nb_organisme"
+      data-text="Nombre d'organisme"
+      data-icon="fas fa-school "
+      data-color="#f4f4f4"
+      data-bg-color="#b0252e"
+      data-component="numberComponent"
+      >
+      <div style="font-size: 40px;"><i class="fas fa-school "></i></div>
+      <div style="line-height: 1.2;padding: 0px 15px;">
+            <div style="font-size: 24px;font-weight: bold;">{{#nb_organisme}}{{nb_organisme}}{{/nb_organisme}}</div>
+            <div>Nombre d'organisme</div>
+        </div>
+    </div>
+    {{/nb_organisme}}
+  
+    
+    <div class="textTextComponent template-component mb-2"
+      data-type-selector="static"
+      data-value="Liste des organismes de formation"
+      data-component="textTextComponent"
+    >
+        <p>Liste des organismes de formation : </p>
+    </div>
+    
+    <div class="listComponent template-component mb-2"
+      data-type-selector="liField"
+      data-value="liste_organisme"
+      data-sub-value="nom_organisme"
+      data-component="listComponent"
+    >
+      <ul>
+          {{#liste_organisme}}<li>{{.}}</li>{{/liste_organisme}}
+      </ul>
+    </div>
+    
+      </li>
+    {{/features}}

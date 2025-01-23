@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <application panelstate="open" title="Aires éducatives en Bretagne" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/img/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" exportpng="true" legend="true" legendasimage="false" popup="false" print="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/css/theme_ultra.css"  stats="true" statsurl="../ws/kartenn/log.php"/>
+    <mapoptions maxzoom="20" projection="EPSG:3857" center="-255418,6120890" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
+
+	<baselayers style="gallery"><!-- style="default"||gallery" -->          
+        <baselayer  type="OSM" id="positron" label="Positron" title="CartoDb" thumbgallery="img/basemap/positron.png"
+			url="https://cartodb-basemaps-{a-c}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png" maxzoom="20" 
+			visible="true" attribution=" &lt;a href='https://www.openstreetmap.org/copyright'>OpenStreetMap&lt;/a>  &lt;a href='https://cartodb.com/attributions'>CartoDB &lt;/a>" />	
+		<baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="GéoPortail" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
+            url="https://data.geopf.fr/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
+            attribution="&lt;a href='https://geoservices.ign.fr/services-geoplateforme-diffusion' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+		<baselayer  type="WMTS" id="Carte_IGN" label="Carte IGN" title="Carte IGN" thumbgallery="apps/chassev2/img/carteign_32.png"
+            url="https://data.geopf.fr/private/wmts?apikey=ign_scan_ws" layers="GEOGRAPHICALGRIDSYSTEMS.MAPS"  style="normal" fromcapacity="false" attribution="© IGN 2022 - Copie et reproduction interdite" visible="false" format="image/jpeg" matrixset="PM" />
+    </baselayers> 
+    <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par l'API adresse.data.gouv.fr"/>
+    <elasticsearch url="https://ows.region-bretagne.fr/kartenn/_search" geometryfield="geometry" linkid="search_id" querymode="match" version="current" />
+    <searchparameters bbox="true" localities="true" features="true"/>
+
+    <themes mini="true" legendmini="false">
+        <theme name="Aire éducative"  id="ame" collapsed="true" icon="fas fa-university">
+            <layer id="aire_educative" name="Aire éducative"  visible="true" tiled="false" expanded="true" toplayer="true"
+                infoformat="application/vnd.ogc.gml" featurecount="1" queryable="true" searchable="true"
+                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+				style="aire_educative_nature,ame_statut,ame_structure" stylesalias="Nature,Statut,Type de structure référente"
+				attributefilter="true" attributefield ="nature" attributevalues="AME,ATE" attributelabel="Filtre Aire marine-Aire terrestre"
+                attribution="Source: Région Bretagne" 
+                metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/9fbbae5d-4f2b-4691-916a-6acdbdf24b2d"
+                metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9fbbae5d-4f2b-4691-916a-6acdbdf24b2d" >	   
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/ame/templates/ame.mst"></template> 
+		    </layer> 
+		</theme>
+        <theme name="Limites administratives"  collapsed="true" id="territoire" icon="fas fa-globe"> 
+			<layer id="epci" name="Intercommunalité" visible="false" tiled="false"
+				queryable="true" fields="nom,code_epci" aliases="Nom,SIREN"
+                infoformat="application/vnd.ogc.gml" featurecount="1"
+				style="epci_region" 
+				url="https://geobretagne.fr/geoserver/ign/wms" 
+				attribution="IGN - ADMIN EXPRESS" 
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/2298d744-49cb-4fcb-9487-26f916fecdff" 
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=2298d744-49cb-4fcb-9487-26f916fecdff" />			
+	    	<layer id="pays" name="Pays" visible="false" tiled="true"
+				queryable="true" fields="nom" aliases="Nom"
+                infoformat="application/vnd.ogc.gml" featurecount="5"             
+				style="pays_region" 
+				url="https://geobretagne.fr/geoserver/ign/wms" 
+				attribution="IGN - ADMIN EXPRESS" 
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/9722d181-75f9-40ab-a136-a9f9ed6f29a5" 
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=9722d181-75f9-40ab-a136-a9f9ed6f29a5" />        	
+			<layer id="departement_metro" name="Département" visible="false" tiled="false"
+				queryable="true" fields="nom" aliases="Nom"
+                infoformat="application/vnd.ogc.gml" featurecount="1"
+				style="administratif_noir" 
+				filter="insee_reg=53"
+				url="https://geobretagne.fr/geoserver/ign/wms" 
+				attribution="IGN - ADMIN EXPRESS" 
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/c8884cac-bc25-41a0-92d1-b6566c86066e" 
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c8884cac-bc25-41a0-92d1-b6566c86066e" />
+            <layer id="bretagne_5" name="Bretagne à 5" visible="true" tiled="false" namespace="rb"
+				queryable="false" 
+				showintoc="false"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attribution="OSM" 
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72" >  
+            </layer>
+            <layer id="departement_metro" name="Département" visible="true" tiled="false" namespace="rb"
+				queryable="false"
+                showintoc="false"
+				url="https://geobretagne.fr/geoserver/ign/wms" 
+				style="bretagne_5_style" 
+				attribution="IGN - Admin Express" 
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/c8884cac-bc25-41a0-92d1-b6566c86066e"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c8884cac-bc25-41a0-92d1-b6566c86066e" >
+            </layer>
+        </theme>
+				<theme id="admin"
+		       name="Référentiel administratif"
+		       collapsed="true"
+		       icon="fas fa-caret-right">
+			   
+			   
+			<layer id="circonscription_academique" name="Circonscription academique"  visible="true" tiled="false" expanded="true"
+                infoformat=" text/html" featurecount="1" queryable="true" searchable="true"
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms"
+                attribution="Source: Région Bretagne" 
+				style="polygone_contour_gris">
+				</layer>
+
+			
+			<layer id="l_qpv_pnru"
+			       name="QPV"
+			       tiled="true"
+			       type="customlayer"
+			       vectorlegend="true"
+			       url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/customlayers/l_qpv_pnru.js"
+			       visible="false"
+			       infoformat="application/vnd.ogc.gml"
+			       attribution="GéoBretagne"
+			       queryable="false"
+			       searchable="true"
+			       searchengine="fuse"
+			       fusesearchkeys="NOM_QUARTI,COMMUNE"
+			       fusesearchresult="{{NOM_QUARTI}} - {{COMMUNE}}"
+			       infopanel="bottom-panel"
+			       tooltip="true"
+			       tooltipcontent="{{NOM_QUARTI}}"
+			       metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=33e57276-b6be-4e70-968d-f89c9ff69bb4"
+			       metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/33e57276-b6be-4e70-968d-f89c9ff69bb4">
+				<template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/qpv/templates/qpv.mst"/>
+			</layer>
+			<layer id="bretagne_5"
+			       name="Bretagne à 5"
+			       visible="true"
+			       tiled="false"
+			       namespace="rb"
+			       queryable="false"
+			       showintoc="false"
+			       url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+			       attribution="OSM"
+			       metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72"
+			       metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72"/>
+            <layer id="departement_metro" name="Département" visible="true" tiled="false" namespace="rb"
+				queryable="false"
+                showintoc="false"
+				url="https://geobretagne.fr/geoserver/ign/wms" 
+				style="bretagne_5_style" 
+				attribution="IGN - Admin Express" 
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/c8884cac-bc25-41a0-92d1-b6566c86066e"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c8884cac-bc25-41a0-92d1-b6566c86066e" >
+            </layer>
+			<layer 
+            id="perequation_2021_geom"
+            name="Indice de péréquation"
+            type="wms"
+            url="https://ows.region-bretagne.fr/geoserver/interne/ows?"
+            visible="false"
+			style="perequation_perequation"
+            infoformat="application/vnd.ogc.gml"
+            queryable="true"
+            secure="public"
+			exclusive = "true"
+			tiled="true"
+			fields="nom_epci,perequation"
+			aliases="EPCI,Indice de péréquation (moyenne = 0)"
+            infopanel="right-panel">
+        </layer> 
+		</theme>
+    </themes>
+    <styles>
+        <selectionstyle>
+            <point radius="12" fillcolor="26, 188, 156" opacity="0" strokecolor="26, 188, 156" strokewidth="4" />
+            <line opacity="0.6" strokecolor="26, 188, 156" strokewidth="8" />
+            <polygon fillcolor="26, 188, 156" opacity="0" strokecolor="26, 188, 156" strokewidth="4" />
+        </selectionstyle>
+        <subselectionstyle>
+            <point radius="12" fillcolor="175, 122, 197" opacity="0.5" strokecolor="175, 122, 197" strokewidth="4" />
+            <line opacity="0.8" strokecolor="175, 122, 197"  strokewidth="8" />
+            <polygon fillcolor="175, 122, 197" opacity="0.2" strokecolor="175, 122, 197" strokewidth="6" />
+        </subselectionstyle>
+    </styles>
+</config>

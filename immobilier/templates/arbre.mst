@@ -1,0 +1,85 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{essence}}</h2><br>
+		<p class="rb-text-feature">
+			<b>Type arbre : </b> {{feuillus_resineux}}</b><br>
+			<b>Référence botanique : </b> {{reference_botanique}}</b><br>
+			<b>Structure arborée : </b> {{structure_arboree}}<br>
+		{{#controle_suivi}}
+			<b>Contrôle suivi : </b> {{controle_suivi}}<br>
+		{{/controle_suivi}}
+		{{#intervention}}
+			<b>Intervention : </b> {{intervention}}<br>
+		{{/intervention}}
+		{{#categorie_diametre}}
+			<b>Catégorie diamètre : </b> {{categorie_diametre}}<br>
+		{{/categorie_diametre}}
+		{{#categorie_hauteur}}
+			<b>Catégorie hauteur : </b> {{categorie_hauteur}}<br>
+		{{/categorie_hauteur}}
+		{{#mode_de_conduite}}
+			<b>Mode de conduite : </b> {{mode_de_conduite}}<br>
+		{{/mode_de_conduite}}
+		{{#cepee}}
+			<b>Cépée : </b> {{cepee}}<br>
+		{{/cepee}}
+		{{#nombre_brins_cepee}}
+			<b>Nombre de brins de cépée : </b> {{nombre_brins_cepee}}<br>
+		{{/nombre_brins_cepee}}
+		{{#surface_pied_arbre}}
+			<b>Surface pied de l'arbre : </b> {{surface_pied_arbre}}<br>
+		{{/surface_pied_arbre}}
+		{{#environnement_contraignant}}
+			<b>Environnement contraignant : </b> {{environnement_contraignant}}<br>
+		{{/environnement_contraignant}}
+		{{#arbre_remarquable}}
+			<b>Arbre remarquable : </b> {{arbre_remarquable}}<br>
+		{{/arbre_remarquable}}
+		{{#stade_developpement}}
+			<b>Stade de développement : </b> {{stade_developpement}}<br>
+		{{/stade_developpement}}
+		{{#fonctionnement_physiologique}}
+			<b>Fonctionnement physiologique : </b> {{fonctionnement_physiologique}}<br>
+		{{/fonctionnement_physiologique}}
+		{{#exposition}}
+			<b>Exposition : </b> {{exposition}}<br>
+		{{/exposition}}
+		{{#singularite_principale}}
+			<b>Singularité principale : </b> {{singularite_principale}}<br>
+		{{/singularite_principale}}
+		{{#localisation_singularite}}
+			<b>Localisation singularité : </b> {{localisation_singularite}}<br>
+		{{/localisation_singularite}}
+		{{#orientation_singularite}}
+			<b>Orientation singularité : </b> {{orientation_singularite}}<br>
+		{{/orientation_singularite}}
+		{{#champignon}}
+			<b>Champignons : </b> {{champignon}}<br>
+		{{/champignon}}
+		{{#ravageurs}}
+			<b>Ravageurs : </b> {{ravageurs}}<br>
+		{{/ravageurs}}
+		{{#commentaires_singularite_principale}}
+			<b>Commentaires singularité principale : </b> {{commentaires_singularite_principale}}<br>
+		{{/commentaires_singularite_principale}}
+		{{#commentaires_autre_singularite}}
+			<b>Commentaires autre singularité : </b> {{commentaires_autre_singularite}}<br>
+		{{/commentaires_autre_singularite}}
+		{{#danger}}
+			<b>Danger : </b> {{danger}}<br>
+		{{/danger}}
+		{{#autres_observations}}
+			<b>Autres observations : </b> {{autres_observations}}<br>
+		{{/autres_observations}}
+
+		</p>
+	</li>
+{{/features}}
+
+<style>
+/* test icon rb*/
+.icon-information{
+	font-size : 20px;
+	color : #FFFFFF;
+}
+</style>

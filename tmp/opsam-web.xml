@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config mviewerstudioversion="3.1">
+<metadata>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description rdf:about="http://www.ilrt.bristol.ac.uk/people/cmdjb/">
+<dc:title>OPSAM Web</dc:title>
+<dc:creator>324670</dc:creator>
+<dc:publisher>atmo-bfc</dc:publisher>
+<dc:subject>Trafic et flux routiers</dc:subject>
+<dc:subject>Accessibilité</dc:subject>
+<dc:subject>Données partenaires</dc:subject>
+<dc:subject>Environnement</dc:subject>
+<dc:date>2024-10-28T13:47:40.928Z</dc:date>
+</rdf:Description>
+</rdf:RDF>
+</metadata>
+<application
+    title="OPSAM Web"
+    logo="apps/atmo-bfc/img/icon_opsam-web-noSlogan_692x239.png"
+    help="apps/atmo-bfc/accueil.html"
+    style="css/themes/chambray.css"
+    exportpng="true"
+    showhelp="false"
+    coordinates="true"
+    measuretools="true"
+    togglealllayersfromtheme="true">
+</application>
+<mapoptions maxzoom="20" projection="EPSG:3857" center="611023,6009749" zoom="8" />
+<proxy url='https://studiocarto.ternum-bfc.fr/studiocarto/proxy/?url='/>
+<olscompletion type="ban" url="https://api-adresse.data.gouv.fr/search/" attribution="Base d'adresses nationale" />
+<searchparameters bbox="false" localities="true" features="false" static="false"/>
+<baselayers style="gallery"> 
+    <baselayer visible="false" attribution="IGN" format="image/jpeg" fromcapacity="false" id="bdortho_hr_ign" label="Photo aérienne HR" layers="HR.ORTHOIMAGERY.ORTHOPHOTOS" matrixset="PM" maxzoom="22" style="normal" thumbgallery="img/basemap-ideobfc/ortho.png" title="GéoPortail Orthophoto HR" type="WMTS" url="https://data.geopf.fr/wmts?SERVICE=WMTS"  ></baselayer> 
+    <baselayer visible="true" attribution="Données : les contributeurs d'&lt;a href=&quot;https://www.openstreetmap.org/&quot; target=&quot;_blank&quot;&gt;OpenStreetMap &lt;/a&gt;&lt;a href=&quot;https://www.openstreetmap.org/copyright&quot; target=&quot;_blank&quot;&gt;ODbL &lt;/a&gt;" id="osm" label="OpenStreetMap" thumbgallery="img/basemap-ideobfc/osm.png" title="OSM" type="OSM" url="https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png"  ></baselayer> 
+    <baselayer visible="false" attribution="IGN, plan IGN" format="image/png" fromcapacity="false" id="plan_ign" label="Plan IGN" layers="GEOGRAPHICALGRIDSYSTEMS.PLANIGNV2" matrixset="PM" maxzoom="22" style="normal" thumbgallery="img/basemap-ideobfc/plan_ign.png" title="Plan IGN" type="WMTS" url="https://data.geopf.fr/wmts?SERVICE=WMTS"  ></baselayer> 
+    <baselayer visible="false" attribution="IGN" format="image/jpeg" fromcapacity="false" id="scan_ign" label="Cartes IGN" layers="GEOGRAPHICALGRIDSYSTEMS.MAPS" matrixset="PM" maxzoom="22" style="normal" thumbgallery="img/basemap-ideobfc/scan_ign.png" title="GéoPortail Cartes" type="WMTS" url="https://data.geopf.fr/private/wmts?apikey=ign_scan_ws"  ></baselayer> 
+</baselayers>
+<themes mini="false"> 
+    <theme id="theme-20231204140749" name="Accessibilité" collapsed="false" icon="fab fa-hubspot"> 
+        <layer 
+            id="accessibilite_commerces_prox_voiture"
+            name="Accessibilité moyenne en voiture aux commerces de proximité - (Accès libre)"
+            type="wms" visible="true"
+            url="https://atmo-bfc.iad-informatique.com/geoserver/opsam/wfs?version=1.1.0"
+            infoformat="application/vnd.ogc.gml"
+            fields="numcom,nom_com,mode_transport,type_commerce,tps_moy"
+            aliases="numcom,nom_com,mode_transport,type_commerce,tps_moy"
+            queryable="true"
+            secure="public"
+            useproxy="true"
+            filter="type_commerce = 'Ensemble des commerces de proximité'"
+            infopanel="right-panel"
+            opacity="0.8"
+            attributefilter="true" attributefield="type_commerce" attributefilterenabled="true"
+			attributevalues="Ensemble des commerces de proximité,Boucherie charcuterie,Boulangerie,Fleuriste jardinerie animalerie,Épicerie supérette" 
+			attributelabel="Type de commerce">
+        </layer> 
+	</theme>
+</themes>
+</config>

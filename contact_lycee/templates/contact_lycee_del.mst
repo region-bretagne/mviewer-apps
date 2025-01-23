@@ -1,0 +1,148 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{nom}} - {{ville}}</h2>
+		
+		<h3 class="rb-subtitle-feature">Technicien conseil service général et technique</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{technicien_conseil_management_organisation}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_technicien_conseil_management_organisation}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_technicien_conseil_management_organisation}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">Technicien restauration</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{technicien_restauration}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_technicien_restauration}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_technicien_restauration}}<br/>
+		</p>
+		
+		<h3 class="rb-subtitle-feature">En charge des astreintes des agents lycées</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{en_charge_astreintes_agents_lycees}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_en_charge_astreintes_agents_lycees}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_en_charge_astreintes_agents_lycees}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">En charge de l'allocation des moyens humains des lycees</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{en_charge_allocation_moyens_humains_lycees}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_en_charge_allocation_moyens_humains_lycees}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_en_charge_allocation_moyens_humains_lycees}}<br/>
+		</p>
+
+
+		<h3 class="rb-subtitle-feature">Gestion des suppléances</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{gestion_suppleances}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_suppleances}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_suppleances}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">Bien manger</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{bien_manger}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{bien_manger_telephone}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{bien_manger_mail}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">Tarification</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{responsable_tarification}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{tarification_telephone}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{tarification_mail}}<br/>
+		</p>
+		<h3 class="rb-subtitle-feature">Reversement tarification</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{reversement_tarification}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{reversement_tarification_telephone}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{reversement_tarification_mail}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">Gestionnaire des équipements et du fonctionnement</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{gestionnaire_des_equipements_et_du_fonctionnement}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_gestionnaire_des_equipements_et_du_fonctionnement}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_gestionnaire_des_equipements_et_du_fonctionnement}}<br/>
+		</p>
+		
+		<h3 class="rb-subtitle-feature">Ressources numériques et aide au premier équipement</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{en_charge_des_ressources_numeriques_et_aide_au_premier_equipeme}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_en_charge_des_ressources_numeriques_et_aide_au_premie}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_en_charge_des_ressources_numeriques_et_aide_au_premier_equ}}<br/>
+		</p>
+
+		<h3 class="rb-subtitle-feature">Référent accompagnement constructions nouvelles</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{en_charge_accompagnement_des_constructions_nouvelles}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_en_charge_accompagnement_des_constructions_nouvelles}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_en_charge_accompagnement_des_constructions_nouvelles}}<br/>
+		</p>
+		<h3 class="rb-subtitle-feature">Equipements exploitation et pédagogique</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{en_charge_des_equipements_exploitation_et_pedagogique}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_en_charge_des_equipements_exploitation_et_pedagogique}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_en_charge_des_equipements_exploitation_et_pedagogique}}<br/>
+		</p>
+		<h3 class="rb-subtitle-feature">Equipements pédagogique et sécurité</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{en_charge_des_equipements_pedagogiques_et_de__leur_securite}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_en_charge_des_equipements_pedagogiques_et_de__leur_se}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_en_charge_des_equipements_pedagogiques_et_de__leur_securit}}<br/>
+		</p>
+		<h3 class="rb-subtitle-feature">Equipements informatiques</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{en_charge_des_equipements_informatiques}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_en_charge_des_equipements_informatiques}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_en_charge_des_equipements_informatiques}}<br/>
+		</p>
+		<h3 class="rb-subtitle-feature">Responsable convention</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{en_charge_des_conventions}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_en_charge_des_conventions}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_en_charge_des_conventions}}<br/>
+		</p>
+		
+		
+		<h3 class="rb-subtitle-feature">Logements de fonction</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{gestionnaire_logements_de_fonction}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_logements_de_fonction}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_logements_de_fonction}}<br/>
+		</p>
+		
+		<h3 class="rb-subtitle-feature">Convention utilisation des locaux</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{gestionnaire_convention_utilisation_de_locaux}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_convention_utilisation_de_locaux}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_convention_utilisation_de_locaux}}<br/>
+		</p>
+		
+		<h3 class="rb-subtitle-feature">Responsable carte formation</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{responsable_carte_formations}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_carte_formation}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_carte_formations_pro}}<br/>
+		</p>
+		<h3 class="rb-subtitle-feature">Responsable projets éducatifs</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{en_charge_des_projets_educatifs}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_projets_educatifs}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_projets_educatifs}}<br/>
+		</p>
+		<h3 class="rb-subtitle-feature">Responsable suivi administratif et financier</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{en_charge_du_suivi_financier}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_en_charge_du_suivi_financier}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_en_charge_du_suivi_financier}}<br/>
+		</p>
+		<h3 class="rb-subtitle-feature">Chef service resources matérielles et financières</h3>
+		<p class="rb-text-feature">
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/citoyen.svg" width=25 height=25>{{chef_service_ressources_materielles_et_financieres}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/telephone.svg" width=25 height=25> {{telephone_chef_service_ressources_materielles_et_financieres}}<br/>
+			<img src="https://kartenn.region-bretagne.fr/kartoviz/apps/region/kelenn/img/enveloppe.svg" width=25 height=25> {{mail_chef_service_ressources_materielles_et_financieres}}<br/>
+		</p>
+
+
+	</li>
+{{/features}}

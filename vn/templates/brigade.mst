@@ -1,0 +1,10 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h3 class="rb-title-feature">{{nom_brigad}}</h3>
+
+	</li>
+{{/features}}
+
+<style>
+@import url("https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/css/vn_mst.css");
+</style>

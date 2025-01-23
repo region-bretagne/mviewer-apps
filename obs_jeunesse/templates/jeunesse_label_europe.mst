@@ -1,0 +1,11 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h3 class="rb-title-feature">{{type_structure}}</h3>
+		<p class="rb-text-feature">
+			<span style="font-weight:bold">structure :</span> {{structure}}<br/>
+			<span style="font-weight:bold">Adresse :</span> {{adresse}}<br/>
+			
+
+		</p>
+	</li>
+{{/features}}

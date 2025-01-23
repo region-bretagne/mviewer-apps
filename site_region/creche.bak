@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <application panelstate="open" coordinates="true" title="Crèches" logo="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/img/rb_blanc.svg" help="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/aide.html" exportpng="true" legend="true" measuretools="true" legendasimage="false" popup="false" print="false" style="https://kartenn.region-bretagne.fr/kartoviz/apps/region/_region/css/theme_ultra.css" 
+	stats="true" statsurl="../ws/kartenn/log.php" />
+    <mapoptions maxzoom="18" projection="EPSG:3857" center="-255516,6140243" zoom="8" projextent="-20037508.342789244, -20037508.342789244, 20037508.342789244, 20037508.342789244" />
+
+	<baselayers style="gallery"><!-- style="default"||gallery" -->          
+        <baselayer  type="OSM" id="positron" label="Positron" title="CartoDb" thumbgallery="img/basemap/positron.png"
+			url="https://cartodb-basemaps-{a-c}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png" maxzoom="20" 
+			visible="true" attribution=" &lt;a href='https://www.openstreetmap.org/copyright'>OpenStreetMap&lt;/a>  &lt;a href='https://cartodb.com/attributions'>CartoDB &lt;/a>" />	
+		<baselayer  type="WMTS" id="ortho1" label="Photo aérienne actuelle" title="GéoPortail" maxscale="1000" thumbgallery="img/basemap/ortho.jpg"
+            url="https://data.geopf.fr/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" visible="false" fromcapacity="false"
+            attribution="&lt;a href='https://geoservices.ign.fr/services-geoplateforme-diffusion' target='_blank'>&lt;img src='https://www.geoportail.gouv.fr/assets/images/logo-geoportail.svg'>&lt;/a>" style="normal" matrixset="PM" maxzoom="22"/>
+		<baselayer  type="WMTS" id="Carte_IGN" label="Carte IGN" title="Carte IGN" thumbgallery="apps/chassev2/img/carteign_32.png"
+            url="https://data.geopf.fr/private/wmts?apikey=ign_scan_ws" layers="GEOGRAPHICALGRIDSYSTEMS.MAPS"  style="normal" fromcapacity="false" attribution="© IGN 2022 - Copie et reproduction interdite" visible="false" format="image/jpeg" matrixset="PM" />
+    </baselayers> 
+    <olscompletion url="https://api-adresse.data.gouv.fr/search/" type="ban" attribution="La recherche d'adresse est un service proposé par l'API adresse.data.gouv.fr"/>
+    <searchparameters bbox="true" localities="true" features="true"/>
+
+    <themes>
+        <theme name="Site région"  id="site" collapsed="true" icon="fas fa-ship">
+         
+			
+			<layer id="site_lycee_region" name="Sites régions"  visible="true" tiled="false"
+                infoformat="application/vnd.ogc.gml" featurecount="1" queryable="true"
+                url="https://ows.region-bretagne.fr/geoserver/rb/wms"
+                attribution="Source: Région Bretagne" 
+                metadata=""
+                metadata-csw="" >	   
+                <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/site_region/templates/site_region.mst"></template> 
+		    </layer> 
+            <layer id="bretagne_5" name="Bretagne à 5" visible="true" tiled="false" namespace="rb"
+				queryable="false" 
+				showintoc="false"
+				url="https://ows.region-bretagne.fr/geoserver/rb/wms" 
+				attribution="OSM" 
+				metadata-csw="https://kartenn.region-bretagne.fr/geonetwork/srv/eng/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72"
+				metadata="https://kartenn.region-bretagne.fr/geonetwork/srv/fre/catalog.search#/metadata/ebb4b0ff-0eb2-429e-a606-fb8ad7c11a72" >  
+            </layer>
+            <layer id="departement_metro" name="Département" visible="true" tiled="false" namespace="rb"
+				queryable="false"
+                showintoc="false"
+				url="https://geobretagne.fr/geoserver/ign/wms" 
+				style="bretagne_5_style" 
+				attribution="IGN - Admin Express" 
+				metadata="https://geobretagne.fr/geonetwork/srv/fre/catalog.search?node=srv#/metadata/c8884cac-bc25-41a0-92d1-b6566c86066e"
+				metadata-csw="https://geobretagne.fr/geonetwork/srv/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;elementSetName=full&amp;ID=c8884cac-bc25-41a0-92d1-b6566c86066e" >
+            </layer>
+			   <layer id="creche" name="Crèches"  visible="true" tiled="false"
+                infoformat="application/vnd.ogc.gml" featurecount="1" queryable="true"
+                url="https://ows.region-bretagne.fr/geoserver/interne/wms"
+                attribution="Source: Région Bretagne" 
+				opacity="0.8"
+                metadata=""
+                metadata-csw="" >	   
+                <!-- <template url="https://kartenn.region-bretagne.fr/kartoviz/apps/region/site_region/templates/site_region.mst"></template>  -->
+		    </layer> 
+			
+		</theme>
+    </themes>
+</config>

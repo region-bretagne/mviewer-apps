@@ -1,0 +1,39 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h3 class="rb-title-feature">{{libelle}}</h3>
+		<p class="rb-text-feature">		
+			<b>Code : {{code_cpv}}</b><br>
+			{{#financement}}
+				<b>Financement :</b> {{financement}}<br>
+			{{/financement}}        
+				<b>Etat :</b> {{etat}}<br>
+			{{#surface}}
+				<b>Surface :</b> {{surface}} m²<br>
+			{{/surface}}
+			{{#puissance}}
+				<b>Puissance :</b> {{puissance}}<br>
+			{{/puissance}}
+				<b>Date de mise en service :</b> {{date_mes}}<br>
+			{{#contrat}}
+				<b>Contrat :</b> {{contrat}}<br>
+			{{/contrat}}
+			{{#beneficiaire}}
+				<b>Bénéficiaire :</b> {{beneficiaire}}<br>
+			{{/beneficiaire}}
+			{{#autoconso}}
+				<b>Auto consommation :</b> {{autoconso}}<br>
+			{{/autoconso}}
+			{{#commentaire}}
+				<b>Commentaire :</b> {{commentaire}}<br>
+			{{/commentaire}}
+		</p>
+	</li>
+{{/features}}
+
+<style>
+/* test icon rb*/
+.icon-information{
+	font-size : 20px;
+	color : #FFFFFF;
+}
+</style>

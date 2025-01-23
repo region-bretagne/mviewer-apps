@@ -1,0 +1,21 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{nom}}</h2>
+		<p class="rb-text-feature">		
+			<b>Structure : </b>  {{structure}}<br>
+			<b>Type : </b>  {{type}}<br>
+			<b>Emploi : </b>  {{emploi}}<br>
+			<b>Etat : </b>  {{etat}}<br>
+		{{#nature}}
+			<b>Nature : </b>  {{nature}}<br>
+		{{/nature}}
+		{{#situation}}
+			<b>Situation : </b>  {{situation}}<br>
+		{{/situation}}
+		{{#commentaire}}
+			<b>Commentaire : </b>  {{commentaire}}<br>
+		{{/commentaire}}
+		</p>
+	</li>
+{{/features}}
+

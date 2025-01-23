@@ -1,0 +1,25 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<h2 class="rb-title-feature">{{essence}}</h2>
+		<h3 class="rb-title-feature">{{regime}}</h3>
+		<p class="rb-text-feature">	
+			{{#ess_principale}}                
+			<span style="font-weight:bold"> Essence principale :</span> {{ess_principale}}<br/>
+			<span style="font-weight:bold"> Autres essences :</span> {{ess_1}} {{ess_2}} {{ess_3}}<br/>
+			{{/ess_principale}} 
+			<span style="font-weight:bold"> Hauteur :</span> {{hauteur}} m<br/>
+			<span style="font-weight:bold"> Diamètre :</span> {{diametre}} cm<br/>
+			{{#remarque}}                
+			<span style="font-weight:bold"> Remarque :</span> {{remarque}}<br/>
+			{{/remarque}} 
+			{{#brigade}}                
+				<span style="font-weight:bold"> Brigade :</span> {{brigade}}<br/>
+			{{/brigade}}     
+
+       </p>
+	</li>
+{{/features}}
+
+<style>
+@import url("https://kartenn.region-bretagne.fr/kartoviz/apps/region/vn/css/vn_mst.css");
+</style>

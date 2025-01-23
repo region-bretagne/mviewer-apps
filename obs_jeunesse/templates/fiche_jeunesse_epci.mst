@@ -1,0 +1,40 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<div class="row">
+			<div class="col-xs-7">
+				<div class="rb-title">{{nom_geo}}</div>
+			</div>
+		</div>
+
+		<div class="col-xs-7">
+			<div class="row">				
+			<div class="rb-but-list"><center>
+				<a href="https://kartenn.region-bretagne.fr/mreport/kartennjeunesse135/{{code_geo}}" target="_blank" title="Accéder à la fiche de synthèse" class="rb-but-link"><span class="fa fa-globe" aria-hidden="true"></span> Accéder à la fiche de synthèse</a>    </center>
+			</div>
+
+			</div>
+		</div>
+
+	</li>
+{{/features}}
+
+<style>
+#over { 
+	color:#0094AB;
+	font-size:1em; 
+	padding-left:20%;
+	font-weight:600;
+	position:absolute; 
+	z-index:2;
+	width:100%
+}
+  
+.rb-title {
+    color: #0094AB;
+    font-family: "region_bold";
+    font-size: 25px;
+    margin-bottom: 3%;
+    line-height: 1;
+}
+
+</style>

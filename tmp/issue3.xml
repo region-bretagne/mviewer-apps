@@ -1,0 +1,34 @@
+<config xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" mviewerversion="3.11" mviewerstudioversion="4">
+<metadata>
+
+                <rdf:RDF>
+                    <rdf:Description rdf:about="http://www.ilrt.bristol.ac.uk/people/cmdjb/">
+                        <dc:title>issue</dc:title>
+                        <dc:creator>loic.ecault</dc:creator>
+                        <dc:identifier>dc3681cd27c5</dc:identifier>
+                        <dc:keywords />
+                        <dc:publisher>rb</dc:publisher>
+                        <dc:description>06-11-2024-15-39-57</dc:description>
+                        <dc:date>2024-11-06-15-40-53</dc:date>
+                        <dc:relation />
+                        <dc:subject>Nouvelle thématique</dc:subject>
+                    </rdf:Description>
+                </rdf:RDF>
+</metadata>
+<application title="issue" logo="" favicon="" help="" titlehelp="" iconhelp="fas fa-home" home="" style="css/themes/default.css" zoomtools="true" initialextenttool="true" exportpng="false" showhelp="false" coordinates="false" measuretools="true" mouseposition="false" geoloc="false" studio="" togglealllayersfromtheme="false">
+</application>
+<mapoptions maxzoom="20" projection="EPSG:3857" center="-307903.74898791354,6141345.088741366" zoom="8" />
+<proxy url="/proxy/?url=" />
+<olscompletion type="ban" url="https://api-adresse.data.gouv.fr/search/" attribution="Base adresse nationale (BAN)" />
+<searchparameters bbox="false" localities="true" features="false" static="false" />
+<baselayers style="default"> 
+    <baselayer visible="true" id="osm_grey" thumbgallery="img/basemap/osm_grey.png" title="GéoBretagne" label="OpenStreetMap style noir et blanc" type="WMTS" url="https://tile.geobretagne.fr/osm/service" layers="osm:grey" format="image/png" fromcapacity="false" attribution="GéoBretagne - GéoGrandEst. Données : les contributeurs d'&lt;a href=&quot;https://www.openstreetmap.org/&quot; target=&quot;_blank&quot;&gt;OpenStreetMap &lt;/a&gt;,  &lt;a href=&quot;https://www.openstreetmap.org/copyright&quot; target=&quot;_blank&quot;&gt;ODbL &lt;/a&gt;" style="normal" matrixset="PM" maxzoom="22" /> 
+    <baselayer visible="false" id="ortho_ign" thumbgallery="img/basemap/ortho.jpg" title="IGN" label="Photographies aériennes IGN" type="WMTS" url="https://data.geopf.fr/wmts" layers="ORTHOIMAGERY.ORTHOPHOTOS" format="image/jpeg" fromcapacity="false" attribution="&lt;a href='https://geoservices.ign.fr/services-geoplateforme-diffusion' target='_blank'&gt;&lt;img src='https://geobretagne.fr/pub/logo/099_ign.jpg'&gt;&lt;/a&gt;" style="normal" matrixset="PM" maxzoom="22" /> 
+</baselayers>
+<themes mini="false"> 
+    <theme id="theme-20241106154002" name="Nouvelle thématique" collapsed="true" icon="fas fa-caret-right"> 
+        <layer id="gare_ferroviaire" name="Gares ferroviaires (Bretagne et Pays de Loire)" type="wms" url="https://geobretagne.fr/geoserver/sncf/wms" tiled="true" visible="true" infoformat="text/html" metadata="https://geobretagne.fr/datahub/dataset/232517e0-5b48-11de-b5dc-0000c0a8230c" metadata-csw="https://geobretagne.fr/geonetwork/mviewerstudio/fre/csw?SERVICE=CSW&amp;VERSION=2.0.2&amp;REQUEST=GetRecordById&amp;ELEMENTSETNAME=full&amp;ID&amp;ID=232517e0-5b48-11de-b5dc-0000c0a8230c" queryable="true">
+        </layer> 
+    </theme> 
+</themes>
+</config>

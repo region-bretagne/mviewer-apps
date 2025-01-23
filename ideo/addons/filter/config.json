@@ -1,0 +1,45 @@
+{
+  "js": ["js/filter.js", "js/jquery.easyDrag.min.js"],
+  "css": "css/filter.css",
+  "html": "filter.html",
+  "target": "page-content-wrapper",
+  "options": {
+    "mviewer":{
+		"ideo_ingenieur":{
+		  "tooltipPosition": "bottom-left",
+		  "title": "Filtrer",
+		  "open": true,
+		  "zoomOnFeatures": false,
+		  "legendTitle": "Titre",
+		  "style": {
+			"border": "1px #C18A7E solid",
+			"background": "#C18A7E",
+			"text": "white",
+			"unSelectedBtnColor": "#B0252E",
+			"textSelectBtnColor": "#FFFFFF",
+			"selectedBtnColor": "#641814"
+		  },
+		  "layers": [{
+			"layerId": "ideo_ingenieur",
+			"filter": [{
+				"attribut": "type_formation",
+				"type": "button",
+				"label": "Type"
+			  },
+			  {
+				"attribut": "niveau_recrutement",
+				"type": "button",
+				"label": "Niveau"
+			  },
+			  {
+				"attribut": "statut",
+				"type": "button",
+				"label": "Statut"
+			  }
+			]
+		  }]
+		}
+
+    }
+  }
+}

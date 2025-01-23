@@ -1,0 +1,228 @@
+{{#features}}
+	<li class="item" id="{{feature_ol_uid}}">
+		<!-- NameDim-->
+		<div class="name-dim-eco">
+			<h4>- Dimension économique -</h4>			
+		</div>
+		<!-- ./NameDim-->
+		<!-- SelectFeature-->
+		<div class="select-feature">
+			<h3><span class="glyphicon glyphicon-map-marker" aria-hidden="true"><span class="TitleFeature"> {{nom_geo}}</span></h3>
+		</div>	
+		<!-- ./SelectFeature-->
+
+		<!-- Categorie-->
+        <div id="idCategory">
+          <div class="panel panel-default">
+            <div class="panel-body">
+            	<div class="category-dim">         
+                    <h4 class="Title"><B>Comment se positionne le territoire ?</B></h4>
+	                <div class="iconCat" style="margin:20px;">
+	                    <img src="apps/region/index_dd/img/econ_cat_{{categorie_a}}.svg" style="width: 280px;">
+	                </div>
+	                <div class="textCat">
+	                    <h4 class="NameCatEco" id="name-cat-{{categorie_a}}"></h4>
+	                    <p class="SubTextJustify" id="cat-{{categorie_a}}"></p>
+	                </div>               
+                </div>             
+            </div>
+          </div>
+        </div>
+        <!-- ./Categorie-->
+
+        <!-- ChartRadar-->
+        <div id="idChart">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h4 class="Title"><b>Quelle est la répartition des indicateurs ?</b></h4>
+              <canvas class="chart" id="RadarChartEcoA" data-codegeo="{{code_geo}}" data-a1="{{a1_ind}}" data-a2="{{a2_ind}}" data-a3="{{a3_ind}}" width="220" height="189"></canvas>
+              <p class="ChartLabel">
+              	Indicateur 1: Evolution du nombre de chercheur.euse.s d'emploi de cat. ABC </br>Indicateur 2: Taux d'emploi </br>Indicateur 3: Part des salarié.e.s en CDI 
+              </p>                          
+            </div>
+          </div>
+        </div> 
+        <!-- /.ChartRadar--> 
+
+	</li>
+{{/features}}
+
+<style>
+	.panel-body{
+		padding:10px;
+	}
+	.panel-default{
+		border-radius: 2px;
+    	box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+    	border: 1px solid #eee!important;
+	}
+	.name-dim-eco{
+		background-color: #FFC939;
+    	padding: 1px;
+    	text-align: center;
+    	text-transform: uppercase;
+	}
+	.name-dim-eco h4{
+		color: white;
+		font-size: 14px;
+		font-family:"roboto_bold";
+		letter-spacing: 1px;
+	}
+	.select-feature{
+		color: #2D4059;
+		font-size:18px;
+		margin-bottom: 10px;
+    	margin-top: 10px;
+    	text-align:center;
+	}
+	.TitleFeature {
+		color: #2D4059;
+		font-family:"roboto_bold";
+		font-size:20px;
+		margin-bottom:1%;
+		line-height:1;
+		text-transform:uppercase;
+	}
+	.Title{
+	  text-align: center;
+	  font-size: 18px;
+	  margin-top: 10.5px;
+      margin-bottom: 10.5px;
+      color: #2D4059;
+      font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+      font-weight: 400;
+      line-height: 1.1;
+	}
+	.ChartLabel{
+	  text-align: left;
+	  font-size: 12px;
+      color: #555;
+	}
+	.SubText{
+	  text-align: center;
+	  font-size: 13px;
+      color: #555;
+	}
+	.SubTextJustify{
+	  text-align: justify;
+	  font-size: 13px;
+      color: #555;
+	}
+	.iconCat{
+		text-align: center;
+	}
+	.NameCatEco{
+		color:#FFC939;
+		font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+		text-align: center;		
+      	font-weight: 500;
+      	margin: 5px 0px 5px 0px;
+	}
+	#name-cat-A:after{
+		content:"Territoires équilibrés";
+	}
+	#name-cat-B:after{
+		content:"Territoires intermédiaires";
+	}
+	#name-cat-C:after{
+		content:"Territoires fragiles";
+	}
+	#cat-A:after{
+		content:"Les territoires équilibrés représentent les territoires affichant l'indice le plus élevé: dans le classement des EPCI bretons, le territoire fait partie de la première partie de tableau (dans les 15 premiers).";
+	}
+	#cat-B:after{
+		content:"Les territoires intermédiaires représentent les territoires avec un indice moyen: dans le classement des EPCI bretons, le territoire est compris entre la 16ème et la 45ème place.";
+	}
+	#cat-C:after{
+		content:"Les territoires fragiles représentent les territoires avec un indice faible: dans le classement des EPCI bretons, le territoire fait partie de la dernière partie de tableau (de la 46 à la 59ème place).";
+	}
+	.chart{
+		margin-bottom:15px;
+	}
+	#idChart{
+		margin-bottom:100px;
+	}
+
+</style>
+
+
+<script>
+	var indicateur_a = {};
+	indicateur_a.getData = function () {
+		var code_geo = $("#RadarChartEcoA").attr("data-codegeo");
+		var data = {chart_eco_a: {labels:["Indicateur 1","Indicateur 2","Indicateur 3"], data: {datasets:[[parseFloat($("#RadarChartEcoA").attr("data-a1")),parseFloat($("#RadarChartEcoA").attr("data-a2")),parseFloat($("#RadarChartEcoA").attr("data-a3"))]]}}};
+		console.log(data);
+		//drawChart(data);	
+
+		$.getJSON( "../ws/index_dd/data_eco_template.php", function(data2) {
+	                    console.log(data2);
+	                    indicateur_a.drawChart(data, data2);	       
+	    });
+	};	 	
+
+	indicateur_a.drawChart = function (data, data2) {
+	var ctx = document.getElementById("RadarChartEcoA");
+    var RadarChartEcoA = new Chart(ctx, {
+          type: 'radar',
+          data: {
+              labels: data.chart_eco_a.labels,
+              datasets: [{
+                  label: "Moyenne des territoires",
+                  backgroundColor: "rgba(45, 64, 89, 0)",
+                  borderColor: "rgba(45, 64, 89, 1)",
+                  pointBackgroundColor: "rgba(45, 64, 89, 1)",
+                  pointBorderColor: "rgba(45, 64, 89, 1)",
+                  pointHoverBackgroundColor: "#fff",
+                  pointHoverBorderColor: "rgba(45, 90, 89, 1)",
+                  data: data2.data_avg_a
+              },
+              {                  
+                  label: "EPCI",
+                  backgroundColor: "rgba(255, 201, 57, 0.7)",
+                  borderColor: "rgba(255, 201, 57, 1)",
+                  pointBackgroundColor: "rgba(255, 201, 57, 1)",
+                  pointBorderColor: "rgba(255, 201, 57, 1)",
+                  pointHoverBackgroundColor: "#fff",
+                  pointHoverBorderColor: "rgba(255, 201, 57, 1)",
+                  data: data.chart_eco_a.data.datasets[0]
+              }]
+          },
+          options: {
+          	layout:{
+          		padding:{
+          			bottom:10
+          		}
+          	},
+            scale: {
+                ticks: {
+                    beginAtZero: true,
+                    max:1,
+                    stepSize:0.2
+                },
+                pointLabels:{
+                	fontSize:10
+                }
+            },
+            responsive: true,
+          	tooltips: {
+              callbacks: {
+                  label: function(tooltipItem, data) {
+                      return data.datasets[tooltipItem.datasetIndex].label +': ' + parseFloat(tooltipItem.yLabel.toFixed(2)).toLocaleString();
+                  }
+              }
+          	}
+          }
+      });
+    };  
+
+    if  (typeof Chart === 'function') {
+			indicateur_a.getData();
+	} else {
+			$.get('https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js', function() {
+				indicateur_a.getData();
+    		
+			}); 
+	}
+
+
+</script>
